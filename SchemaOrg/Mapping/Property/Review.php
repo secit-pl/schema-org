@@ -1,0 +1,32 @@
+<?php
+
+namespace SecIT\SchemaOrg\Mapping\Property;
+
+use SecIT\SchemaOrg\Mapping\Type;
+
+/**
+ * Review class.
+ * 
+ * @method Review setValue($value)
+ */
+class Review extends AbstractProperty {
+
+	/**
+	 * Get schema URL.
+	 * 
+	 * @return string
+	 */
+	public function getSchemaUrl() {
+		return 'https://schema.org/review';
+	}
+
+	/**
+	 * Check is value valid.
+	 * 
+	 * @param string $value
+	 * @return bool
+	 */
+	public function isValueValid($value) {
+		return $value instanceof Type\Review;
+	}
+}
