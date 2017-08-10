@@ -11,6 +11,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method Place setAlternateName(Property\AlternateName $alternateName)
  * @method Place setDescription(Property\Description $description)
  * @method Place setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
+ * @method Place setIdentifier(Property\Identifier $identifier)
  * @method Place setImage(Property\Image $image)
  * @method Place setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
  * @method Place setName(Property\Name $name)
@@ -89,6 +90,11 @@ class Place extends Thing {
 	 * @var Property\Logo
 	 */
 	private $logo;
+
+	/**
+	 * @var Property\MaximumAttendeeCapacity
+	 */
+	private $maximumAttendeeCapacity;
 
 	/**
 	 * @var Property\OpeningHoursSpecification
@@ -244,6 +250,15 @@ class Place extends Thing {
 	 */
 	public function getLogo() {
 		return $this->logo;
+	}
+
+	/**
+	 * Get maximum attendee capacity.
+	 * 
+	 * @return Property\MaximumAttendeeCapacity
+	 */
+	public function getMaximumAttendeeCapacity() {
+		return $this->maximumAttendeeCapacity;
 	}
 
 	/**
@@ -473,6 +488,18 @@ class Place extends Thing {
 	 */
 	public function setLogo(Property\Logo $logo) {
 		$this->logo = $logo;
+
+		return $this;
+	}
+
+	/**
+	 * Set maximum attendee capacity.
+	 * 
+	 * @param Property\MaximumAttendeeCapacity $maximumAttendeeCapacity
+	 * @return Place
+	 */
+	public function setMaximumAttendeeCapacity(Property\MaximumAttendeeCapacity $maximumAttendeeCapacity) {
+		$this->maximumAttendeeCapacity = $maximumAttendeeCapacity;
 
 		return $this;
 	}

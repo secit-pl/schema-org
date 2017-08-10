@@ -6,94 +6,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class TVSeries.
- * 
- * @method TVSeries setAbout(Property\About $about)
- * @method TVSeries setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)
- * @method TVSeries setAccessibilityControl(Property\AccessibilityControl $accessibilityControl)
- * @method TVSeries setAccessibilityFeature(Property\AccessibilityFeature $accessibilityFeature)
- * @method TVSeries setAccessibilityHazard(Property\AccessibilityHazard $accessibilityHazard)
- * @method TVSeries setAccountablePerson(Property\AccountablePerson $accountablePerson)
- * @method TVSeries setAdditionalType(Property\AdditionalType $additionalType)
- * @method TVSeries setAggregateRating(Property\AggregateRating $aggregateRating)
- * @method TVSeries setAlternateName(Property\AlternateName $alternateName)
- * @method TVSeries setAlternativeHeadline(Property\AlternativeHeadline $alternativeHeadline)
- * @method TVSeries setAssociatedMedia(Property\AssociatedMedia $associatedMedia)
- * @method TVSeries setAudience(Property\Audience $audience)
- * @method TVSeries setAudio(Property\Audio $audio)
- * @method TVSeries setAuthor(Property\Author $author)
- * @method TVSeries setAward(Property\Award $award)
- * @method TVSeries setCharacter(Property\Character $character)
- * @method TVSeries setCitation(Property\Citation $citation)
- * @method TVSeries setComment(Property\Comment $comment)
- * @method TVSeries setCommentCount(Property\CommentCount $commentCount)
- * @method TVSeries setContentLocation(Property\ContentLocation $contentLocation)
- * @method TVSeries setContentRating(Property\ContentRating $contentRating)
- * @method TVSeries setContributor(Property\Contributor $contributor)
- * @method TVSeries setCopyrightHolder(Property\CopyrightHolder $copyrightHolder)
- * @method TVSeries setCopyrightYear(Property\CopyrightYear $copyrightYear)
- * @method TVSeries setCreator(Property\Creator $creator)
- * @method TVSeries setDateCreated(Property\DateCreated $dateCreated)
- * @method TVSeries setDateModified(Property\DateModified $dateModified)
- * @method TVSeries setDatePublished(Property\DatePublished $datePublished)
- * @method TVSeries setDescription(Property\Description $description)
- * @method TVSeries setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method TVSeries setDiscussionUrl(Property\DiscussionUrl $discussionUrl)
- * @method TVSeries setEditor(Property\Editor $editor)
- * @method TVSeries setEducationalAlignment(Property\EducationalAlignment $educationalAlignment)
- * @method TVSeries setEducationalUse(Property\EducationalUse $educationalUse)
- * @method TVSeries setEncoding(Property\Encoding $encoding)
- * @method TVSeries setEndDate(Property\EndDate $endDate)
- * @method TVSeries setExampleOfWork(Property\ExampleOfWork $exampleOfWork)
- * @method TVSeries setFileFormat(Property\FileFormat $fileFormat)
- * @method TVSeries setFunder(Property\Funder $funder)
- * @method TVSeries setGenre(Property\Genre $genre)
- * @method TVSeries setHasPart(Property\HasPart $hasPart)
- * @method TVSeries setHeadline(Property\Headline $headline)
- * @method TVSeries setImage(Property\Image $image)
- * @method TVSeries setInLanguage(Property\InLanguage $inLanguage)
- * @method TVSeries setInteractionStatistic(Property\InteractionStatistic $interactionStatistic)
- * @method TVSeries setInteractivityType(Property\InteractivityType $interactivityType)
- * @method TVSeries setIsAccessibleForFree(Property\IsAccessibleForFree $isAccessibleForFree)
- * @method TVSeries setIsBasedOn(Property\IsBasedOn $isBasedOn)
- * @method TVSeries setIsFamilyFriendly(Property\IsFamilyFriendly $isFamilyFriendly)
- * @method TVSeries setIsPartOf(Property\IsPartOf $isPartOf)
- * @method TVSeries setKeywords(Property\Keywords $keywords)
- * @method TVSeries setLearningResourceType(Property\LearningResourceType $learningResourceType)
- * @method TVSeries setLicense(Property\License $license)
- * @method TVSeries setLocationCreated(Property\LocationCreated $locationCreated)
- * @method TVSeries setMainEntity(Property\MainEntity $mainEntity)
- * @method TVSeries setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method TVSeries setMentions(Property\Mentions $mentions)
- * @method TVSeries setName(Property\Name $name)
- * @method TVSeries setOffers(Property\Offers $offers)
- * @method TVSeries setPosition(Property\Position $position)
- * @method TVSeries setPotentialAction(Property\PotentialAction $potentialAction)
- * @method TVSeries setProducer(Property\Producer $producer)
- * @method TVSeries setProvider(Property\Provider $provider)
- * @method TVSeries setPublication(Property\Publication $publication)
- * @method TVSeries setPublisher(Property\Publisher $publisher)
- * @method TVSeries setPublishingPrinciples(Property\PublishingPrinciples $publishingPrinciples)
- * @method TVSeries setRecordedAt(Property\RecordedAt $recordedAt)
- * @method TVSeries setReleasedEvent(Property\ReleasedEvent $releasedEvent)
- * @method TVSeries setReview(Property\Review $review)
- * @method TVSeries setSameAs(Property\SameAs $sameAs)
- * @method TVSeries setSchemaVersion(Property\SchemaVersion $schemaVersion)
- * @method TVSeries setSourceOrganization(Property\SourceOrganization $sourceOrganization)
- * @method TVSeries setSpatialCoverage(Property\SpatialCoverage $spatialCoverage)
- * @method TVSeries setSponsor(Property\Sponsor $sponsor)
- * @method TVSeries setStartDate(Property\StartDate $startDate)
- * @method TVSeries setTemporalCoverage(Property\TemporalCoverage $temporalCoverage)
- * @method TVSeries setText(Property\Text $text)
- * @method TVSeries setThumbnailUrl(Property\ThumbnailUrl $thumbnailUrl)
- * @method TVSeries setTimeRequired(Property\TimeRequired $timeRequired)
- * @method TVSeries setTranslator(Property\Translator $translator)
- * @method TVSeries setTypicalAgeRange(Property\TypicalAgeRange $typicalAgeRange)
- * @method TVSeries setUrl(Property\Url $url)
- * @method TVSeries setVersion(Property\Version $version)
- * @method TVSeries setVideo(Property\Video $video)
- * @method TVSeries setWorkExample(Property\WorkExample $workExample)
  */
-class TVSeries extends CreativeWorkSeries {
+class TVSeries {
 
 	/**
 	 * @var Property\Actor
@@ -121,6 +35,10 @@ class TVSeries extends CreativeWorkSeries {
 	private $episode;
 
 	/**
+	 */
+	private $id;
+
+	/**
 	 * @var Property\MusicBy
 	 */
 	private $musicBy;
@@ -144,6 +62,15 @@ class TVSeries extends CreativeWorkSeries {
 	 * @var Property\Trailer
 	 */
 	private $trailer;
+
+	/**
+	 * TVSeries constructor.
+	 * 
+	 * @param string $id
+	 */
+	public function __construct($id = null) {
+		$this->id = $id;
+	}
 
 	/**
 	 * Get actor.
@@ -188,6 +115,15 @@ class TVSeries extends CreativeWorkSeries {
 	 */
 	public function getEpisode() {
 		return $this->episode;
+	}
+
+	/**
+	 * Get id.
+	 * 
+	 * @return string
+	 */
+	public function getId() {
+		return $this->id;
 	}
 
 	/**

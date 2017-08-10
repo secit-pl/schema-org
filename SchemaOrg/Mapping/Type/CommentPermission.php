@@ -2,23 +2,32 @@
 
 namespace SecIT\SchemaOrg\Mapping\Type;
 
-use SecIT\SchemaOrg\Mapping\Property;
-
 /**
  * Class CommentPermission.
- * 
- * @method CommentPermission setAdditionalType(Property\AdditionalType $additionalType)
- * @method CommentPermission setAlternateName(Property\AlternateName $alternateName)
- * @method CommentPermission setDescription(Property\Description $description)
- * @method CommentPermission setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method CommentPermission setImage(Property\Image $image)
- * @method CommentPermission setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method CommentPermission setName(Property\Name $name)
- * @method CommentPermission setPotentialAction(Property\PotentialAction $potentialAction)
- * @method CommentPermission setSameAs(Property\SameAs $sameAs)
- * @method CommentPermission setUrl(Property\Url $url)
  */
-class CommentPermission extends DigitalDocumentPermissionType {
+class CommentPermission {
+
+	/**
+	 */
+	private $id;
+
+	/**
+	 * CommentPermission constructor.
+	 * 
+	 * @param string $id
+	 */
+	public function __construct($id = null) {
+		$this->id = $id;
+	}
+
+	/**
+	 * Get id.
+	 * 
+	 * @return string
+	 */
+	public function getId() {
+		return $this->id;
+	}
 
 	/**
 	 * Get schema URL.

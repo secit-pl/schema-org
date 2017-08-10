@@ -2,23 +2,32 @@
 
 namespace SecIT\SchemaOrg\Mapping\Type;
 
-use SecIT\SchemaOrg\Mapping\Property;
-
 /**
  * Class UsedCondition.
- * 
- * @method UsedCondition setAdditionalType(Property\AdditionalType $additionalType)
- * @method UsedCondition setAlternateName(Property\AlternateName $alternateName)
- * @method UsedCondition setDescription(Property\Description $description)
- * @method UsedCondition setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method UsedCondition setImage(Property\Image $image)
- * @method UsedCondition setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method UsedCondition setName(Property\Name $name)
- * @method UsedCondition setPotentialAction(Property\PotentialAction $potentialAction)
- * @method UsedCondition setSameAs(Property\SameAs $sameAs)
- * @method UsedCondition setUrl(Property\Url $url)
  */
-class UsedCondition extends OfferItemCondition {
+class UsedCondition {
+
+	/**
+	 */
+	private $id;
+
+	/**
+	 * UsedCondition constructor.
+	 * 
+	 * @param string $id
+	 */
+	public function __construct($id = null) {
+		$this->id = $id;
+	}
+
+	/**
+	 * Get id.
+	 * 
+	 * @return string
+	 */
+	public function getId() {
+		return $this->id;
+	}
 
 	/**
 	 * Get schema URL.

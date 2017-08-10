@@ -6,17 +6,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class GameServer.
- * 
- * @method GameServer setAdditionalType(Property\AdditionalType $additionalType)
- * @method GameServer setAlternateName(Property\AlternateName $alternateName)
- * @method GameServer setDescription(Property\Description $description)
- * @method GameServer setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method GameServer setImage(Property\Image $image)
- * @method GameServer setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method GameServer setName(Property\Name $name)
- * @method GameServer setPotentialAction(Property\PotentialAction $potentialAction)
- * @method GameServer setSameAs(Property\SameAs $sameAs)
- * @method GameServer setUrl(Property\Url $url)
  */
 class GameServer extends Intangible {
 

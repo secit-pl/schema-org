@@ -8,28 +8,18 @@ use SecIT\SchemaOrg\Mapping\Property;
  * Class TipAction.
  * 
  * @method TipAction setActionStatus(Property\ActionStatus $actionStatus)
- * @method TipAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method TipAction setAgent(Property\Agent $agent)
- * @method TipAction setAlternateName(Property\AlternateName $alternateName)
- * @method TipAction setDescription(Property\Description $description)
- * @method TipAction setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
  * @method TipAction setEndTime(Property\EndTime $endTime)
  * @method TipAction setError(Property\Error $error)
- * @method TipAction setImage(Property\Image $image)
  * @method TipAction setInstrument(Property\Instrument $instrument)
  * @method TipAction setLocation(Property\Location $location)
- * @method TipAction setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method TipAction setName(Property\Name $name)
  * @method TipAction setObject(Property\Object $object)
  * @method TipAction setParticipant(Property\Participant $participant)
- * @method TipAction setPotentialAction(Property\PotentialAction $potentialAction)
  * @method TipAction setPrice(Property\Price $price)
  * @method TipAction setPriceSpecification(Property\PriceSpecification $priceSpecification)
  * @method TipAction setResult(Property\Result $result)
- * @method TipAction setSameAs(Property\SameAs $sameAs)
  * @method TipAction setStartTime(Property\StartTime $startTime)
  * @method TipAction setTarget(Property\Target $target)
- * @method TipAction setUrl(Property\Url $url)
  */
 class TipAction extends TradeAction {
 

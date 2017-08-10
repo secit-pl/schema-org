@@ -6,92 +6,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class MediaObject.
- * 
- * @method MediaObject setAbout(Property\About $about)
- * @method MediaObject setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)
- * @method MediaObject setAccessibilityControl(Property\AccessibilityControl $accessibilityControl)
- * @method MediaObject setAccessibilityFeature(Property\AccessibilityFeature $accessibilityFeature)
- * @method MediaObject setAccessibilityHazard(Property\AccessibilityHazard $accessibilityHazard)
- * @method MediaObject setAccountablePerson(Property\AccountablePerson $accountablePerson)
- * @method MediaObject setAdditionalType(Property\AdditionalType $additionalType)
- * @method MediaObject setAggregateRating(Property\AggregateRating $aggregateRating)
- * @method MediaObject setAlternateName(Property\AlternateName $alternateName)
- * @method MediaObject setAlternativeHeadline(Property\AlternativeHeadline $alternativeHeadline)
- * @method MediaObject setAssociatedMedia(Property\AssociatedMedia $associatedMedia)
- * @method MediaObject setAudience(Property\Audience $audience)
- * @method MediaObject setAudio(Property\Audio $audio)
- * @method MediaObject setAuthor(Property\Author $author)
- * @method MediaObject setAward(Property\Award $award)
- * @method MediaObject setCharacter(Property\Character $character)
- * @method MediaObject setCitation(Property\Citation $citation)
- * @method MediaObject setComment(Property\Comment $comment)
- * @method MediaObject setCommentCount(Property\CommentCount $commentCount)
- * @method MediaObject setContentLocation(Property\ContentLocation $contentLocation)
- * @method MediaObject setContentRating(Property\ContentRating $contentRating)
- * @method MediaObject setContributor(Property\Contributor $contributor)
- * @method MediaObject setCopyrightHolder(Property\CopyrightHolder $copyrightHolder)
- * @method MediaObject setCopyrightYear(Property\CopyrightYear $copyrightYear)
- * @method MediaObject setCreator(Property\Creator $creator)
- * @method MediaObject setDateCreated(Property\DateCreated $dateCreated)
- * @method MediaObject setDateModified(Property\DateModified $dateModified)
- * @method MediaObject setDatePublished(Property\DatePublished $datePublished)
- * @method MediaObject setDescription(Property\Description $description)
- * @method MediaObject setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method MediaObject setDiscussionUrl(Property\DiscussionUrl $discussionUrl)
- * @method MediaObject setEditor(Property\Editor $editor)
- * @method MediaObject setEducationalAlignment(Property\EducationalAlignment $educationalAlignment)
- * @method MediaObject setEducationalUse(Property\EducationalUse $educationalUse)
- * @method MediaObject setEncoding(Property\Encoding $encoding)
- * @method MediaObject setExampleOfWork(Property\ExampleOfWork $exampleOfWork)
- * @method MediaObject setFileFormat(Property\FileFormat $fileFormat)
- * @method MediaObject setFunder(Property\Funder $funder)
- * @method MediaObject setGenre(Property\Genre $genre)
- * @method MediaObject setHasPart(Property\HasPart $hasPart)
- * @method MediaObject setHeadline(Property\Headline $headline)
- * @method MediaObject setImage(Property\Image $image)
- * @method MediaObject setInLanguage(Property\InLanguage $inLanguage)
- * @method MediaObject setInteractionStatistic(Property\InteractionStatistic $interactionStatistic)
- * @method MediaObject setInteractivityType(Property\InteractivityType $interactivityType)
- * @method MediaObject setIsAccessibleForFree(Property\IsAccessibleForFree $isAccessibleForFree)
- * @method MediaObject setIsBasedOn(Property\IsBasedOn $isBasedOn)
- * @method MediaObject setIsFamilyFriendly(Property\IsFamilyFriendly $isFamilyFriendly)
- * @method MediaObject setIsPartOf(Property\IsPartOf $isPartOf)
- * @method MediaObject setKeywords(Property\Keywords $keywords)
- * @method MediaObject setLearningResourceType(Property\LearningResourceType $learningResourceType)
- * @method MediaObject setLicense(Property\License $license)
- * @method MediaObject setLocationCreated(Property\LocationCreated $locationCreated)
- * @method MediaObject setMainEntity(Property\MainEntity $mainEntity)
- * @method MediaObject setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method MediaObject setMentions(Property\Mentions $mentions)
- * @method MediaObject setName(Property\Name $name)
- * @method MediaObject setOffers(Property\Offers $offers)
- * @method MediaObject setPosition(Property\Position $position)
- * @method MediaObject setPotentialAction(Property\PotentialAction $potentialAction)
- * @method MediaObject setProducer(Property\Producer $producer)
- * @method MediaObject setProvider(Property\Provider $provider)
- * @method MediaObject setPublication(Property\Publication $publication)
- * @method MediaObject setPublisher(Property\Publisher $publisher)
- * @method MediaObject setPublishingPrinciples(Property\PublishingPrinciples $publishingPrinciples)
- * @method MediaObject setRecordedAt(Property\RecordedAt $recordedAt)
- * @method MediaObject setReleasedEvent(Property\ReleasedEvent $releasedEvent)
- * @method MediaObject setReview(Property\Review $review)
- * @method MediaObject setSameAs(Property\SameAs $sameAs)
- * @method MediaObject setSchemaVersion(Property\SchemaVersion $schemaVersion)
- * @method MediaObject setSourceOrganization(Property\SourceOrganization $sourceOrganization)
- * @method MediaObject setSpatialCoverage(Property\SpatialCoverage $spatialCoverage)
- * @method MediaObject setSponsor(Property\Sponsor $sponsor)
- * @method MediaObject setTemporalCoverage(Property\TemporalCoverage $temporalCoverage)
- * @method MediaObject setText(Property\Text $text)
- * @method MediaObject setThumbnailUrl(Property\ThumbnailUrl $thumbnailUrl)
- * @method MediaObject setTimeRequired(Property\TimeRequired $timeRequired)
- * @method MediaObject setTranslator(Property\Translator $translator)
- * @method MediaObject setTypicalAgeRange(Property\TypicalAgeRange $typicalAgeRange)
- * @method MediaObject setUrl(Property\Url $url)
- * @method MediaObject setVersion(Property\Version $version)
- * @method MediaObject setVideo(Property\Video $video)
- * @method MediaObject setWorkExample(Property\WorkExample $workExample)
  */
-class MediaObject extends CreativeWork {
+class MediaObject {
 
 	/**
 	 * @var Property\AssociatedArticle
@@ -144,6 +60,10 @@ class MediaObject extends CreativeWork {
 	private $height;
 
 	/**
+	 */
+	private $id;
+
+	/**
 	 * @var Property\PlayerType
 	 */
 	private $playerType;
@@ -172,6 +92,15 @@ class MediaObject extends CreativeWork {
 	 * @var Property\Width
 	 */
 	private $width;
+
+	/**
+	 * MediaObject constructor.
+	 * 
+	 * @param string $id
+	 */
+	public function __construct($id = null) {
+		$this->id = $id;
+	}
 
 	/**
 	 * Get associated article.
@@ -261,6 +190,15 @@ class MediaObject extends CreativeWork {
 	 */
 	public function getHeight() {
 		return $this->height;
+	}
+
+	/**
+	 * Get id.
+	 * 
+	 * @return string
+	 */
+	public function getId() {
+		return $this->id;
 	}
 
 	/**

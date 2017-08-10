@@ -6,17 +6,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class Invoice.
- * 
- * @method Invoice setAdditionalType(Property\AdditionalType $additionalType)
- * @method Invoice setAlternateName(Property\AlternateName $alternateName)
- * @method Invoice setDescription(Property\Description $description)
- * @method Invoice setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method Invoice setImage(Property\Image $image)
- * @method Invoice setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method Invoice setName(Property\Name $name)
- * @method Invoice setPotentialAction(Property\PotentialAction $potentialAction)
- * @method Invoice setSameAs(Property\SameAs $sameAs)
- * @method Invoice setUrl(Property\Url $url)
  */
 class Invoice extends Intangible {
 

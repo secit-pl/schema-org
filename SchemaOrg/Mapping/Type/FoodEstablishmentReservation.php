@@ -6,36 +6,17 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class FoodEstablishmentReservation.
- * 
- * @method FoodEstablishmentReservation setAdditionalType(Property\AdditionalType $additionalType)
- * @method FoodEstablishmentReservation setAlternateName(Property\AlternateName $alternateName)
- * @method FoodEstablishmentReservation setBookingTime(Property\BookingTime $bookingTime)
- * @method FoodEstablishmentReservation setBroker(Property\Broker $broker)
- * @method FoodEstablishmentReservation setDescription(Property\Description $description)
- * @method FoodEstablishmentReservation setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method FoodEstablishmentReservation setImage(Property\Image $image)
- * @method FoodEstablishmentReservation setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method FoodEstablishmentReservation setModifiedTime(Property\ModifiedTime $modifiedTime)
- * @method FoodEstablishmentReservation setName(Property\Name $name)
- * @method FoodEstablishmentReservation setPotentialAction(Property\PotentialAction $potentialAction)
- * @method FoodEstablishmentReservation setPriceCurrency(Property\PriceCurrency $priceCurrency)
- * @method FoodEstablishmentReservation setProgramMembershipUsed(Property\ProgramMembershipUsed $programMembershipUsed)
- * @method FoodEstablishmentReservation setProvider(Property\Provider $provider)
- * @method FoodEstablishmentReservation setReservationFor(Property\ReservationFor $reservationFor)
- * @method FoodEstablishmentReservation setReservationId(Property\ReservationId $reservationId)
- * @method FoodEstablishmentReservation setReservationStatus(Property\ReservationStatus $reservationStatus)
- * @method FoodEstablishmentReservation setReservedTicket(Property\ReservedTicket $reservedTicket)
- * @method FoodEstablishmentReservation setSameAs(Property\SameAs $sameAs)
- * @method FoodEstablishmentReservation setTotalPrice(Property\TotalPrice $totalPrice)
- * @method FoodEstablishmentReservation setUnderName(Property\UnderName $underName)
- * @method FoodEstablishmentReservation setUrl(Property\Url $url)
  */
-class FoodEstablishmentReservation extends Reservation {
+class FoodEstablishmentReservation {
 
 	/**
 	 * @var Property\EndTime
 	 */
 	private $endTime;
+
+	/**
+	 */
+	private $id;
 
 	/**
 	 * @var Property\PartySize
@@ -48,12 +29,30 @@ class FoodEstablishmentReservation extends Reservation {
 	private $startTime;
 
 	/**
+	 * FoodEstablishmentReservation constructor.
+	 * 
+	 * @param string $id
+	 */
+	public function __construct($id = null) {
+		$this->id = $id;
+	}
+
+	/**
 	 * Get end time.
 	 * 
 	 * @return Property\EndTime
 	 */
 	public function getEndTime() {
 		return $this->endTime;
+	}
+
+	/**
+	 * Get id.
+	 * 
+	 * @return string
+	 */
+	public function getId() {
+		return $this->id;
 	}
 
 	/**

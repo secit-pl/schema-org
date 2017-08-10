@@ -6,17 +6,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class Seat.
- * 
- * @method Seat setAdditionalType(Property\AdditionalType $additionalType)
- * @method Seat setAlternateName(Property\AlternateName $alternateName)
- * @method Seat setDescription(Property\Description $description)
- * @method Seat setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method Seat setImage(Property\Image $image)
- * @method Seat setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method Seat setName(Property\Name $name)
- * @method Seat setPotentialAction(Property\PotentialAction $potentialAction)
- * @method Seat setSameAs(Property\SameAs $sameAs)
- * @method Seat setUrl(Property\Url $url)
  */
 class Seat extends Intangible {
 

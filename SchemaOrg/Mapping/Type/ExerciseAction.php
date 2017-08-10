@@ -8,28 +8,18 @@ use SecIT\SchemaOrg\Mapping\Property;
  * Class ExerciseAction.
  * 
  * @method ExerciseAction setActionStatus(Property\ActionStatus $actionStatus)
- * @method ExerciseAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method ExerciseAction setAgent(Property\Agent $agent)
- * @method ExerciseAction setAlternateName(Property\AlternateName $alternateName)
  * @method ExerciseAction setAudience(Property\Audience $audience)
- * @method ExerciseAction setDescription(Property\Description $description)
- * @method ExerciseAction setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
  * @method ExerciseAction setEndTime(Property\EndTime $endTime)
  * @method ExerciseAction setError(Property\Error $error)
  * @method ExerciseAction setEvent(Property\Event $event)
- * @method ExerciseAction setImage(Property\Image $image)
  * @method ExerciseAction setInstrument(Property\Instrument $instrument)
  * @method ExerciseAction setLocation(Property\Location $location)
- * @method ExerciseAction setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method ExerciseAction setName(Property\Name $name)
  * @method ExerciseAction setObject(Property\Object $object)
  * @method ExerciseAction setParticipant(Property\Participant $participant)
- * @method ExerciseAction setPotentialAction(Property\PotentialAction $potentialAction)
  * @method ExerciseAction setResult(Property\Result $result)
- * @method ExerciseAction setSameAs(Property\SameAs $sameAs)
  * @method ExerciseAction setStartTime(Property\StartTime $startTime)
  * @method ExerciseAction setTarget(Property\Target $target)
- * @method ExerciseAction setUrl(Property\Url $url)
  */
 class ExerciseAction extends PlayAction {
 

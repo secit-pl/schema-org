@@ -6,17 +6,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class WarrantyPromise.
- * 
- * @method WarrantyPromise setAdditionalType(Property\AdditionalType $additionalType)
- * @method WarrantyPromise setAlternateName(Property\AlternateName $alternateName)
- * @method WarrantyPromise setDescription(Property\Description $description)
- * @method WarrantyPromise setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method WarrantyPromise setImage(Property\Image $image)
- * @method WarrantyPromise setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method WarrantyPromise setName(Property\Name $name)
- * @method WarrantyPromise setPotentialAction(Property\PotentialAction $potentialAction)
- * @method WarrantyPromise setSameAs(Property\SameAs $sameAs)
- * @method WarrantyPromise setUrl(Property\Url $url)
  */
 class WarrantyPromise extends StructuredValue {
 

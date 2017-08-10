@@ -34,6 +34,11 @@ class Thing {
 	private $id;
 
 	/**
+	 * @var Property\Identifier
+	 */
+	private $identifier;
+
+	/**
 	 * @var Property\Image
 	 */
 	private $image;
@@ -115,6 +120,15 @@ class Thing {
 	 */
 	public function getId() {
 		return $this->id;
+	}
+
+	/**
+	 * Get identifier.
+	 * 
+	 * @return Property\Identifier
+	 */
+	public function getIdentifier() {
+		return $this->identifier;
 	}
 
 	/**
@@ -224,6 +238,18 @@ class Thing {
 	 */
 	public function setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription) {
 		$this->disambiguatingDescription = $disambiguatingDescription;
+
+		return $this;
+	}
+
+	/**
+	 * Set identifier.
+	 * 
+	 * @param Property\Identifier $identifier
+	 * @return Thing
+	 */
+	public function setIdentifier(Property\Identifier $identifier) {
+		$this->identifier = $identifier;
 
 		return $this;
 	}

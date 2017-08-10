@@ -2,23 +2,32 @@
 
 namespace SecIT\SchemaOrg\Mapping\Type;
 
-use SecIT\SchemaOrg\Mapping\Property;
-
 /**
  * Class ActionStatusType.
- * 
- * @method ActionStatusType setAdditionalType(Property\AdditionalType $additionalType)
- * @method ActionStatusType setAlternateName(Property\AlternateName $alternateName)
- * @method ActionStatusType setDescription(Property\Description $description)
- * @method ActionStatusType setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method ActionStatusType setImage(Property\Image $image)
- * @method ActionStatusType setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method ActionStatusType setName(Property\Name $name)
- * @method ActionStatusType setPotentialAction(Property\PotentialAction $potentialAction)
- * @method ActionStatusType setSameAs(Property\SameAs $sameAs)
- * @method ActionStatusType setUrl(Property\Url $url)
  */
-class ActionStatusType extends Enumeration {
+class ActionStatusType {
+
+	/**
+	 */
+	private $id;
+
+	/**
+	 * ActionStatusType constructor.
+	 * 
+	 * @param string $id
+	 */
+	public function __construct($id = null) {
+		$this->id = $id;
+	}
+
+	/**
+	 * Get id.
+	 * 
+	 * @return string
+	 */
+	public function getId() {
+		return $this->id;
+	}
 
 	/**
 	 * Get schema URL.

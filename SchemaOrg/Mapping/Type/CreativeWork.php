@@ -11,6 +11,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method CreativeWork setAlternateName(Property\AlternateName $alternateName)
  * @method CreativeWork setDescription(Property\Description $description)
  * @method CreativeWork setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
+ * @method CreativeWork setIdentifier(Property\Identifier $identifier)
  * @method CreativeWork setImage(Property\Image $image)
  * @method CreativeWork setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
  * @method CreativeWork setName(Property\Name $name)
@@ -44,6 +45,21 @@ class CreativeWork extends Thing {
 	 * @var Property\AccessibilityHazard
 	 */
 	private $accessibilityHazard;
+
+	/**
+	 * @var Property\AccessibilitySummary
+	 */
+	private $accessibilitySummary;
+
+	/**
+	 * @var Property\AccessMode
+	 */
+	private $accessMode;
+
+	/**
+	 * @var Property\AccessModeSufficient
+	 */
+	private $accessModeSufficient;
 
 	/**
 	 * @var Property\AccountablePerson
@@ -266,6 +282,11 @@ class CreativeWork extends Thing {
 	private $mainEntity;
 
 	/**
+	 * @var Property\Material
+	 */
+	private $material;
+
+	/**
 	 * @var Property\Mentions
 	 */
 	private $mentions;
@@ -428,6 +449,33 @@ class CreativeWork extends Thing {
 	 */
 	public function getAccessibilityHazard() {
 		return $this->accessibilityHazard;
+	}
+
+	/**
+	 * Get accessibility summary.
+	 * 
+	 * @return Property\AccessibilitySummary
+	 */
+	public function getAccessibilitySummary() {
+		return $this->accessibilitySummary;
+	}
+
+	/**
+	 * Get access mode.
+	 * 
+	 * @return Property\AccessMode
+	 */
+	public function getAccessMode() {
+		return $this->accessMode;
+	}
+
+	/**
+	 * Get access mode sufficient.
+	 * 
+	 * @return Property\AccessModeSufficient
+	 */
+	public function getAccessModeSufficient() {
+		return $this->accessModeSufficient;
 	}
 
 	/**
@@ -827,6 +875,15 @@ class CreativeWork extends Thing {
 	}
 
 	/**
+	 * Get material.
+	 * 
+	 * @return Property\Material
+	 */
+	public function getMaterial() {
+		return $this->material;
+	}
+
+	/**
 	 * Get mentions.
 	 * 
 	 * @return Property\Mentions
@@ -1107,6 +1164,42 @@ class CreativeWork extends Thing {
 	 */
 	public function setAccessibilityHazard(Property\AccessibilityHazard $accessibilityHazard) {
 		$this->accessibilityHazard = $accessibilityHazard;
+
+		return $this;
+	}
+
+	/**
+	 * Set accessibility summary.
+	 * 
+	 * @param Property\AccessibilitySummary $accessibilitySummary
+	 * @return CreativeWork
+	 */
+	public function setAccessibilitySummary(Property\AccessibilitySummary $accessibilitySummary) {
+		$this->accessibilitySummary = $accessibilitySummary;
+
+		return $this;
+	}
+
+	/**
+	 * Set access mode.
+	 * 
+	 * @param Property\AccessMode $accessMode
+	 * @return CreativeWork
+	 */
+	public function setAccessMode(Property\AccessMode $accessMode) {
+		$this->accessMode = $accessMode;
+
+		return $this;
+	}
+
+	/**
+	 * Set access mode sufficient.
+	 * 
+	 * @param Property\AccessModeSufficient $accessModeSufficient
+	 * @return CreativeWork
+	 */
+	public function setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient) {
+		$this->accessModeSufficient = $accessModeSufficient;
 
 		return $this;
 	}
@@ -1635,6 +1728,18 @@ class CreativeWork extends Thing {
 	 */
 	public function setMainEntity(Property\MainEntity $mainEntity) {
 		$this->mainEntity = $mainEntity;
+
+		return $this;
+	}
+
+	/**
+	 * Set material.
+	 * 
+	 * @param Property\Material $material
+	 * @return CreativeWork
+	 */
+	public function setMaterial(Property\Material $material) {
+		$this->material = $material;
 
 		return $this;
 	}

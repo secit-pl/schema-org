@@ -6,19 +6,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class Audience.
- * 
- * @method Audience setAdditionalType(Property\AdditionalType $additionalType)
- * @method Audience setAlternateName(Property\AlternateName $alternateName)
- * @method Audience setDescription(Property\Description $description)
- * @method Audience setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method Audience setImage(Property\Image $image)
- * @method Audience setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method Audience setName(Property\Name $name)
- * @method Audience setPotentialAction(Property\PotentialAction $potentialAction)
- * @method Audience setSameAs(Property\SameAs $sameAs)
- * @method Audience setUrl(Property\Url $url)
  */
-class Audience extends Intangible {
+class Audience {
 
 	/**
 	 * @var Property\AudienceType
@@ -29,6 +18,19 @@ class Audience extends Intangible {
 	 * @var Property\GeographicArea
 	 */
 	private $geographicArea;
+
+	/**
+	 */
+	private $id;
+
+	/**
+	 * Audience constructor.
+	 * 
+	 * @param string $id
+	 */
+	public function __construct($id = null) {
+		$this->id = $id;
+	}
 
 	/**
 	 * Get audience type.
@@ -46,6 +48,15 @@ class Audience extends Intangible {
 	 */
 	public function getGeographicArea() {
 		return $this->geographicArea;
+	}
+
+	/**
+	 * Get id.
+	 * 
+	 * @return string
+	 */
+	public function getId() {
+		return $this->id;
 	}
 
 	/**

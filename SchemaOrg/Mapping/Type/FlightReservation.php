@@ -7,17 +7,9 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class FlightReservation.
  * 
- * @method FlightReservation setAdditionalType(Property\AdditionalType $additionalType)
- * @method FlightReservation setAlternateName(Property\AlternateName $alternateName)
  * @method FlightReservation setBookingTime(Property\BookingTime $bookingTime)
  * @method FlightReservation setBroker(Property\Broker $broker)
- * @method FlightReservation setDescription(Property\Description $description)
- * @method FlightReservation setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method FlightReservation setImage(Property\Image $image)
- * @method FlightReservation setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
  * @method FlightReservation setModifiedTime(Property\ModifiedTime $modifiedTime)
- * @method FlightReservation setName(Property\Name $name)
- * @method FlightReservation setPotentialAction(Property\PotentialAction $potentialAction)
  * @method FlightReservation setPriceCurrency(Property\PriceCurrency $priceCurrency)
  * @method FlightReservation setProgramMembershipUsed(Property\ProgramMembershipUsed $programMembershipUsed)
  * @method FlightReservation setProvider(Property\Provider $provider)
@@ -25,10 +17,8 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method FlightReservation setReservationId(Property\ReservationId $reservationId)
  * @method FlightReservation setReservationStatus(Property\ReservationStatus $reservationStatus)
  * @method FlightReservation setReservedTicket(Property\ReservedTicket $reservedTicket)
- * @method FlightReservation setSameAs(Property\SameAs $sameAs)
  * @method FlightReservation setTotalPrice(Property\TotalPrice $totalPrice)
  * @method FlightReservation setUnderName(Property\UnderName $underName)
- * @method FlightReservation setUrl(Property\Url $url)
  */
 class FlightReservation extends Reservation {
 

@@ -7,18 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class BusinessAudience.
  * 
- * @method BusinessAudience setAdditionalType(Property\AdditionalType $additionalType)
- * @method BusinessAudience setAlternateName(Property\AlternateName $alternateName)
  * @method BusinessAudience setAudienceType(Property\AudienceType $audienceType)
- * @method BusinessAudience setDescription(Property\Description $description)
- * @method BusinessAudience setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
  * @method BusinessAudience setGeographicArea(Property\GeographicArea $geographicArea)
- * @method BusinessAudience setImage(Property\Image $image)
- * @method BusinessAudience setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method BusinessAudience setName(Property\Name $name)
- * @method BusinessAudience setPotentialAction(Property\PotentialAction $potentialAction)
- * @method BusinessAudience setSameAs(Property\SameAs $sameAs)
- * @method BusinessAudience setUrl(Property\Url $url)
  */
 class BusinessAudience extends Audience {
 

@@ -11,6 +11,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method Event setAlternateName(Property\AlternateName $alternateName)
  * @method Event setDescription(Property\Description $description)
  * @method Event setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
+ * @method Event setIdentifier(Property\Identifier $identifier)
  * @method Event setImage(Property\Image $image)
  * @method Event setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
  * @method Event setName(Property\Name $name)
@@ -19,6 +20,11 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method Event setUrl(Property\Url $url)
  */
 class Event extends Thing {
+
+	/**
+	 * @var Property\About
+	 */
+	private $about;
 
 	/**
 	 * @var Property\Actor
@@ -34,6 +40,11 @@ class Event extends Thing {
 	 * @var Property\Attendee
 	 */
 	private $attendee;
+
+	/**
+	 * @var Property\Audience
+	 */
+	private $audience;
 
 	/**
 	 * @var Property\Composer
@@ -91,6 +102,11 @@ class Event extends Thing {
 	private $location;
 
 	/**
+	 * @var Property\MaximumAttendeeCapacity
+	 */
+	private $maximumAttendeeCapacity;
+
+	/**
 	 * @var Property\Offers
 	 */
 	private $offers;
@@ -114,6 +130,11 @@ class Event extends Thing {
 	 * @var Property\RecordedIn
 	 */
 	private $recordedIn;
+
+	/**
+	 * @var Property\RemainingAttendeeCapacity
+	 */
+	private $remainingAttendeeCapacity;
 
 	/**
 	 * @var Property\Review
@@ -161,6 +182,15 @@ class Event extends Thing {
 	private $workPerformed;
 
 	/**
+	 * Get about.
+	 * 
+	 * @return Property\About
+	 */
+	public function getAbout() {
+		return $this->about;
+	}
+
+	/**
 	 * Get actor.
 	 * 
 	 * @return Property\Actor
@@ -185,6 +215,15 @@ class Event extends Thing {
 	 */
 	public function getAttendee() {
 		return $this->attendee;
+	}
+
+	/**
+	 * Get audience.
+	 * 
+	 * @return Property\Audience
+	 */
+	public function getAudience() {
+		return $this->audience;
 	}
 
 	/**
@@ -287,6 +326,15 @@ class Event extends Thing {
 	}
 
 	/**
+	 * Get maximum attendee capacity.
+	 * 
+	 * @return Property\MaximumAttendeeCapacity
+	 */
+	public function getMaximumAttendeeCapacity() {
+		return $this->maximumAttendeeCapacity;
+	}
+
+	/**
 	 * Get offers.
 	 * 
 	 * @return Property\Offers
@@ -329,6 +377,15 @@ class Event extends Thing {
 	 */
 	public function getRecordedIn() {
 		return $this->recordedIn;
+	}
+
+	/**
+	 * Get remaining attendee capacity.
+	 * 
+	 * @return Property\RemainingAttendeeCapacity
+	 */
+	public function getRemainingAttendeeCapacity() {
+		return $this->remainingAttendeeCapacity;
 	}
 
 	/**
@@ -422,6 +479,18 @@ class Event extends Thing {
 	}
 
 	/**
+	 * Set about.
+	 * 
+	 * @param Property\About $about
+	 * @return Event
+	 */
+	public function setAbout(Property\About $about) {
+		$this->about = $about;
+
+		return $this;
+	}
+
+	/**
 	 * Set actor.
 	 * 
 	 * @param Property\Actor $actor
@@ -453,6 +522,18 @@ class Event extends Thing {
 	 */
 	public function setAttendee(Property\Attendee $attendee) {
 		$this->attendee = $attendee;
+
+		return $this;
+	}
+
+	/**
+	 * Set audience.
+	 * 
+	 * @param Property\Audience $audience
+	 * @return Event
+	 */
+	public function setAudience(Property\Audience $audience) {
+		$this->audience = $audience;
 
 		return $this;
 	}
@@ -590,6 +671,18 @@ class Event extends Thing {
 	}
 
 	/**
+	 * Set maximum attendee capacity.
+	 * 
+	 * @param Property\MaximumAttendeeCapacity $maximumAttendeeCapacity
+	 * @return Event
+	 */
+	public function setMaximumAttendeeCapacity(Property\MaximumAttendeeCapacity $maximumAttendeeCapacity) {
+		$this->maximumAttendeeCapacity = $maximumAttendeeCapacity;
+
+		return $this;
+	}
+
+	/**
 	 * Set offers.
 	 * 
 	 * @param Property\Offers $offers
@@ -645,6 +738,18 @@ class Event extends Thing {
 	 */
 	public function setRecordedIn(Property\RecordedIn $recordedIn) {
 		$this->recordedIn = $recordedIn;
+
+		return $this;
+	}
+
+	/**
+	 * Set remaining attendee capacity.
+	 * 
+	 * @param Property\RemainingAttendeeCapacity $remainingAttendeeCapacity
+	 * @return Event
+	 */
+	public function setRemainingAttendeeCapacity(Property\RemainingAttendeeCapacity $remainingAttendeeCapacity) {
+		$this->remainingAttendeeCapacity = $remainingAttendeeCapacity;
 
 		return $this;
 	}

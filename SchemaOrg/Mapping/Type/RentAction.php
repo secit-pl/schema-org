@@ -8,28 +8,18 @@ use SecIT\SchemaOrg\Mapping\Property;
  * Class RentAction.
  * 
  * @method RentAction setActionStatus(Property\ActionStatus $actionStatus)
- * @method RentAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method RentAction setAgent(Property\Agent $agent)
- * @method RentAction setAlternateName(Property\AlternateName $alternateName)
- * @method RentAction setDescription(Property\Description $description)
- * @method RentAction setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
  * @method RentAction setEndTime(Property\EndTime $endTime)
  * @method RentAction setError(Property\Error $error)
- * @method RentAction setImage(Property\Image $image)
  * @method RentAction setInstrument(Property\Instrument $instrument)
  * @method RentAction setLocation(Property\Location $location)
- * @method RentAction setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method RentAction setName(Property\Name $name)
  * @method RentAction setObject(Property\Object $object)
  * @method RentAction setParticipant(Property\Participant $participant)
- * @method RentAction setPotentialAction(Property\PotentialAction $potentialAction)
  * @method RentAction setPrice(Property\Price $price)
  * @method RentAction setPriceSpecification(Property\PriceSpecification $priceSpecification)
  * @method RentAction setResult(Property\Result $result)
- * @method RentAction setSameAs(Property\SameAs $sameAs)
  * @method RentAction setStartTime(Property\StartTime $startTime)
  * @method RentAction setTarget(Property\Target $target)
- * @method RentAction setUrl(Property\Url $url)
  */
 class RentAction extends TradeAction {
 

@@ -6,17 +6,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class ListItem.
- * 
- * @method ListItem setAdditionalType(Property\AdditionalType $additionalType)
- * @method ListItem setAlternateName(Property\AlternateName $alternateName)
- * @method ListItem setDescription(Property\Description $description)
- * @method ListItem setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method ListItem setImage(Property\Image $image)
- * @method ListItem setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method ListItem setName(Property\Name $name)
- * @method ListItem setPotentialAction(Property\PotentialAction $potentialAction)
- * @method ListItem setSameAs(Property\SameAs $sameAs)
- * @method ListItem setUrl(Property\Url $url)
  */
 class ListItem extends Intangible {
 

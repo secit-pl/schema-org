@@ -6,23 +6,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class EmployeeRole.
- * 
- * @method EmployeeRole setAdditionalType(Property\AdditionalType $additionalType)
- * @method EmployeeRole setAlternateName(Property\AlternateName $alternateName)
- * @method EmployeeRole setDescription(Property\Description $description)
- * @method EmployeeRole setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method EmployeeRole setEndDate(Property\EndDate $endDate)
- * @method EmployeeRole setImage(Property\Image $image)
- * @method EmployeeRole setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method EmployeeRole setName(Property\Name $name)
- * @method EmployeeRole setNumberedPosition(Property\NumberedPosition $numberedPosition)
- * @method EmployeeRole setPotentialAction(Property\PotentialAction $potentialAction)
- * @method EmployeeRole setRoleName(Property\RoleName $roleName)
- * @method EmployeeRole setSameAs(Property\SameAs $sameAs)
- * @method EmployeeRole setStartDate(Property\StartDate $startDate)
- * @method EmployeeRole setUrl(Property\Url $url)
  */
-class EmployeeRole extends OrganizationRole {
+class EmployeeRole {
 
 	/**
 	 * @var Property\BaseSalary
@@ -30,9 +15,22 @@ class EmployeeRole extends OrganizationRole {
 	private $baseSalary;
 
 	/**
+	 */
+	private $id;
+
+	/**
 	 * @var Property\SalaryCurrency
 	 */
 	private $salaryCurrency;
+
+	/**
+	 * EmployeeRole constructor.
+	 * 
+	 * @param string $id
+	 */
+	public function __construct($id = null) {
+		$this->id = $id;
+	}
 
 	/**
 	 * Get base salary.
@@ -41,6 +39,15 @@ class EmployeeRole extends OrganizationRole {
 	 */
 	public function getBaseSalary() {
 		return $this->baseSalary;
+	}
+
+	/**
+	 * Get id.
+	 * 
+	 * @return string
+	 */
+	public function getId() {
+		return $this->id;
 	}
 
 	/**

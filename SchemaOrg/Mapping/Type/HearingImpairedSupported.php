@@ -2,23 +2,32 @@
 
 namespace SecIT\SchemaOrg\Mapping\Type;
 
-use SecIT\SchemaOrg\Mapping\Property;
-
 /**
  * Class HearingImpairedSupported.
- * 
- * @method HearingImpairedSupported setAdditionalType(Property\AdditionalType $additionalType)
- * @method HearingImpairedSupported setAlternateName(Property\AlternateName $alternateName)
- * @method HearingImpairedSupported setDescription(Property\Description $description)
- * @method HearingImpairedSupported setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method HearingImpairedSupported setImage(Property\Image $image)
- * @method HearingImpairedSupported setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method HearingImpairedSupported setName(Property\Name $name)
- * @method HearingImpairedSupported setPotentialAction(Property\PotentialAction $potentialAction)
- * @method HearingImpairedSupported setSameAs(Property\SameAs $sameAs)
- * @method HearingImpairedSupported setUrl(Property\Url $url)
  */
-class HearingImpairedSupported extends ContactPointOption {
+class HearingImpairedSupported {
+
+	/**
+	 */
+	private $id;
+
+	/**
+	 * HearingImpairedSupported constructor.
+	 * 
+	 * @param string $id
+	 */
+	public function __construct($id = null) {
+		$this->id = $id;
+	}
+
+	/**
+	 * Get id.
+	 * 
+	 * @return string
+	 */
+	public function getId() {
+		return $this->id;
+	}
 
 	/**
 	 * Get schema URL.

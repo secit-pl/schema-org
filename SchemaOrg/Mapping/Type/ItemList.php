@@ -6,19 +6,12 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class ItemList.
- * 
- * @method ItemList setAdditionalType(Property\AdditionalType $additionalType)
- * @method ItemList setAlternateName(Property\AlternateName $alternateName)
- * @method ItemList setDescription(Property\Description $description)
- * @method ItemList setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method ItemList setImage(Property\Image $image)
- * @method ItemList setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method ItemList setName(Property\Name $name)
- * @method ItemList setPotentialAction(Property\PotentialAction $potentialAction)
- * @method ItemList setSameAs(Property\SameAs $sameAs)
- * @method ItemList setUrl(Property\Url $url)
  */
-class ItemList extends Intangible {
+class ItemList {
+
+	/**
+	 */
+	private $id;
 
 	/**
 	 * @var array|Property\ItemListElement[]
@@ -58,6 +51,15 @@ class ItemList extends Intangible {
 		$this->itemListElement[] = $itemListElement;
 
 		return $this;
+	}
+
+	/**
+	 * Get id.
+	 * 
+	 * @return string
+	 */
+	public function getId() {
+		return $this->id;
 	}
 
 	/**

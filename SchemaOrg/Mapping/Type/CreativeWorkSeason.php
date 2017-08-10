@@ -6,92 +6,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class CreativeWorkSeason.
- * 
- * @method CreativeWorkSeason setAbout(Property\About $about)
- * @method CreativeWorkSeason setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)
- * @method CreativeWorkSeason setAccessibilityControl(Property\AccessibilityControl $accessibilityControl)
- * @method CreativeWorkSeason setAccessibilityFeature(Property\AccessibilityFeature $accessibilityFeature)
- * @method CreativeWorkSeason setAccessibilityHazard(Property\AccessibilityHazard $accessibilityHazard)
- * @method CreativeWorkSeason setAccountablePerson(Property\AccountablePerson $accountablePerson)
- * @method CreativeWorkSeason setAdditionalType(Property\AdditionalType $additionalType)
- * @method CreativeWorkSeason setAggregateRating(Property\AggregateRating $aggregateRating)
- * @method CreativeWorkSeason setAlternateName(Property\AlternateName $alternateName)
- * @method CreativeWorkSeason setAlternativeHeadline(Property\AlternativeHeadline $alternativeHeadline)
- * @method CreativeWorkSeason setAssociatedMedia(Property\AssociatedMedia $associatedMedia)
- * @method CreativeWorkSeason setAudience(Property\Audience $audience)
- * @method CreativeWorkSeason setAudio(Property\Audio $audio)
- * @method CreativeWorkSeason setAuthor(Property\Author $author)
- * @method CreativeWorkSeason setAward(Property\Award $award)
- * @method CreativeWorkSeason setCharacter(Property\Character $character)
- * @method CreativeWorkSeason setCitation(Property\Citation $citation)
- * @method CreativeWorkSeason setComment(Property\Comment $comment)
- * @method CreativeWorkSeason setCommentCount(Property\CommentCount $commentCount)
- * @method CreativeWorkSeason setContentLocation(Property\ContentLocation $contentLocation)
- * @method CreativeWorkSeason setContentRating(Property\ContentRating $contentRating)
- * @method CreativeWorkSeason setContributor(Property\Contributor $contributor)
- * @method CreativeWorkSeason setCopyrightHolder(Property\CopyrightHolder $copyrightHolder)
- * @method CreativeWorkSeason setCopyrightYear(Property\CopyrightYear $copyrightYear)
- * @method CreativeWorkSeason setCreator(Property\Creator $creator)
- * @method CreativeWorkSeason setDateCreated(Property\DateCreated $dateCreated)
- * @method CreativeWorkSeason setDateModified(Property\DateModified $dateModified)
- * @method CreativeWorkSeason setDatePublished(Property\DatePublished $datePublished)
- * @method CreativeWorkSeason setDescription(Property\Description $description)
- * @method CreativeWorkSeason setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method CreativeWorkSeason setDiscussionUrl(Property\DiscussionUrl $discussionUrl)
- * @method CreativeWorkSeason setEditor(Property\Editor $editor)
- * @method CreativeWorkSeason setEducationalAlignment(Property\EducationalAlignment $educationalAlignment)
- * @method CreativeWorkSeason setEducationalUse(Property\EducationalUse $educationalUse)
- * @method CreativeWorkSeason setEncoding(Property\Encoding $encoding)
- * @method CreativeWorkSeason setExampleOfWork(Property\ExampleOfWork $exampleOfWork)
- * @method CreativeWorkSeason setFileFormat(Property\FileFormat $fileFormat)
- * @method CreativeWorkSeason setFunder(Property\Funder $funder)
- * @method CreativeWorkSeason setGenre(Property\Genre $genre)
- * @method CreativeWorkSeason setHasPart(Property\HasPart $hasPart)
- * @method CreativeWorkSeason setHeadline(Property\Headline $headline)
- * @method CreativeWorkSeason setImage(Property\Image $image)
- * @method CreativeWorkSeason setInLanguage(Property\InLanguage $inLanguage)
- * @method CreativeWorkSeason setInteractionStatistic(Property\InteractionStatistic $interactionStatistic)
- * @method CreativeWorkSeason setInteractivityType(Property\InteractivityType $interactivityType)
- * @method CreativeWorkSeason setIsAccessibleForFree(Property\IsAccessibleForFree $isAccessibleForFree)
- * @method CreativeWorkSeason setIsBasedOn(Property\IsBasedOn $isBasedOn)
- * @method CreativeWorkSeason setIsFamilyFriendly(Property\IsFamilyFriendly $isFamilyFriendly)
- * @method CreativeWorkSeason setIsPartOf(Property\IsPartOf $isPartOf)
- * @method CreativeWorkSeason setKeywords(Property\Keywords $keywords)
- * @method CreativeWorkSeason setLearningResourceType(Property\LearningResourceType $learningResourceType)
- * @method CreativeWorkSeason setLicense(Property\License $license)
- * @method CreativeWorkSeason setLocationCreated(Property\LocationCreated $locationCreated)
- * @method CreativeWorkSeason setMainEntity(Property\MainEntity $mainEntity)
- * @method CreativeWorkSeason setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method CreativeWorkSeason setMentions(Property\Mentions $mentions)
- * @method CreativeWorkSeason setName(Property\Name $name)
- * @method CreativeWorkSeason setOffers(Property\Offers $offers)
- * @method CreativeWorkSeason setPosition(Property\Position $position)
- * @method CreativeWorkSeason setPotentialAction(Property\PotentialAction $potentialAction)
- * @method CreativeWorkSeason setProducer(Property\Producer $producer)
- * @method CreativeWorkSeason setProvider(Property\Provider $provider)
- * @method CreativeWorkSeason setPublication(Property\Publication $publication)
- * @method CreativeWorkSeason setPublisher(Property\Publisher $publisher)
- * @method CreativeWorkSeason setPublishingPrinciples(Property\PublishingPrinciples $publishingPrinciples)
- * @method CreativeWorkSeason setRecordedAt(Property\RecordedAt $recordedAt)
- * @method CreativeWorkSeason setReleasedEvent(Property\ReleasedEvent $releasedEvent)
- * @method CreativeWorkSeason setReview(Property\Review $review)
- * @method CreativeWorkSeason setSameAs(Property\SameAs $sameAs)
- * @method CreativeWorkSeason setSchemaVersion(Property\SchemaVersion $schemaVersion)
- * @method CreativeWorkSeason setSourceOrganization(Property\SourceOrganization $sourceOrganization)
- * @method CreativeWorkSeason setSpatialCoverage(Property\SpatialCoverage $spatialCoverage)
- * @method CreativeWorkSeason setSponsor(Property\Sponsor $sponsor)
- * @method CreativeWorkSeason setTemporalCoverage(Property\TemporalCoverage $temporalCoverage)
- * @method CreativeWorkSeason setText(Property\Text $text)
- * @method CreativeWorkSeason setThumbnailUrl(Property\ThumbnailUrl $thumbnailUrl)
- * @method CreativeWorkSeason setTimeRequired(Property\TimeRequired $timeRequired)
- * @method CreativeWorkSeason setTranslator(Property\Translator $translator)
- * @method CreativeWorkSeason setTypicalAgeRange(Property\TypicalAgeRange $typicalAgeRange)
- * @method CreativeWorkSeason setUrl(Property\Url $url)
- * @method CreativeWorkSeason setVersion(Property\Version $version)
- * @method CreativeWorkSeason setVideo(Property\Video $video)
- * @method CreativeWorkSeason setWorkExample(Property\WorkExample $workExample)
  */
-class CreativeWorkSeason extends CreativeWork {
+class CreativeWorkSeason {
 
 	/**
 	 * @var Property\Actor
@@ -112,6 +28,10 @@ class CreativeWorkSeason extends CreativeWork {
 	 * @var Property\Episode
 	 */
 	private $episode;
+
+	/**
+	 */
+	private $id;
 
 	/**
 	 * @var Property\NumberOfEpisodes
@@ -142,6 +62,15 @@ class CreativeWorkSeason extends CreativeWork {
 	 * @var Property\Trailer
 	 */
 	private $trailer;
+
+	/**
+	 * CreativeWorkSeason constructor.
+	 * 
+	 * @param string $id
+	 */
+	public function __construct($id = null) {
+		$this->id = $id;
+	}
 
 	/**
 	 * Get actor.
@@ -177,6 +106,15 @@ class CreativeWorkSeason extends CreativeWork {
 	 */
 	public function getEpisode() {
 		return $this->episode;
+	}
+
+	/**
+	 * Get id.
+	 * 
+	 * @return string
+	 */
+	public function getId() {
+		return $this->id;
 	}
 
 	/**

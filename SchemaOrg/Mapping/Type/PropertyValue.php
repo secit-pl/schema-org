@@ -6,17 +6,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class PropertyValue.
- * 
- * @method PropertyValue setAdditionalType(Property\AdditionalType $additionalType)
- * @method PropertyValue setAlternateName(Property\AlternateName $alternateName)
- * @method PropertyValue setDescription(Property\Description $description)
- * @method PropertyValue setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method PropertyValue setImage(Property\Image $image)
- * @method PropertyValue setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method PropertyValue setName(Property\Name $name)
- * @method PropertyValue setPotentialAction(Property\PotentialAction $potentialAction)
- * @method PropertyValue setSameAs(Property\SameAs $sameAs)
- * @method PropertyValue setUrl(Property\Url $url)
  */
 class PropertyValue extends StructuredValue {
 

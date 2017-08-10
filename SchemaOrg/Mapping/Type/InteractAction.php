@@ -2,34 +2,32 @@
 
 namespace SecIT\SchemaOrg\Mapping\Type;
 
-use SecIT\SchemaOrg\Mapping\Property;
-
 /**
  * Class InteractAction.
- * 
- * @method InteractAction setActionStatus(Property\ActionStatus $actionStatus)
- * @method InteractAction setAdditionalType(Property\AdditionalType $additionalType)
- * @method InteractAction setAgent(Property\Agent $agent)
- * @method InteractAction setAlternateName(Property\AlternateName $alternateName)
- * @method InteractAction setDescription(Property\Description $description)
- * @method InteractAction setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method InteractAction setEndTime(Property\EndTime $endTime)
- * @method InteractAction setError(Property\Error $error)
- * @method InteractAction setImage(Property\Image $image)
- * @method InteractAction setInstrument(Property\Instrument $instrument)
- * @method InteractAction setLocation(Property\Location $location)
- * @method InteractAction setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method InteractAction setName(Property\Name $name)
- * @method InteractAction setObject(Property\Object $object)
- * @method InteractAction setParticipant(Property\Participant $participant)
- * @method InteractAction setPotentialAction(Property\PotentialAction $potentialAction)
- * @method InteractAction setResult(Property\Result $result)
- * @method InteractAction setSameAs(Property\SameAs $sameAs)
- * @method InteractAction setStartTime(Property\StartTime $startTime)
- * @method InteractAction setTarget(Property\Target $target)
- * @method InteractAction setUrl(Property\Url $url)
  */
-class InteractAction extends Action {
+class InteractAction {
+
+	/**
+	 */
+	private $id;
+
+	/**
+	 * InteractAction constructor.
+	 * 
+	 * @param string $id
+	 */
+	public function __construct($id = null) {
+		$this->id = $id;
+	}
+
+	/**
+	 * Get id.
+	 * 
+	 * @return string
+	 */
+	public function getId() {
+		return $this->id;
+	}
 
 	/**
 	 * Get schema URL.

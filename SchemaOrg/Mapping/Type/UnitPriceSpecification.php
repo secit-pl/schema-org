@@ -6,33 +6,17 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class UnitPriceSpecification.
- * 
- * @method UnitPriceSpecification setAdditionalType(Property\AdditionalType $additionalType)
- * @method UnitPriceSpecification setAlternateName(Property\AlternateName $alternateName)
- * @method UnitPriceSpecification setDescription(Property\Description $description)
- * @method UnitPriceSpecification setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method UnitPriceSpecification setEligibleQuantity(Property\EligibleQuantity $eligibleQuantity)
- * @method UnitPriceSpecification setEligibleTransactionVolume(Property\EligibleTransactionVolume $eligibleTransactionVolume)
- * @method UnitPriceSpecification setImage(Property\Image $image)
- * @method UnitPriceSpecification setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method UnitPriceSpecification setMaxPrice(Property\MaxPrice $maxPrice)
- * @method UnitPriceSpecification setMinPrice(Property\MinPrice $minPrice)
- * @method UnitPriceSpecification setName(Property\Name $name)
- * @method UnitPriceSpecification setPotentialAction(Property\PotentialAction $potentialAction)
- * @method UnitPriceSpecification setPrice(Property\Price $price)
- * @method UnitPriceSpecification setPriceCurrency(Property\PriceCurrency $priceCurrency)
- * @method UnitPriceSpecification setSameAs(Property\SameAs $sameAs)
- * @method UnitPriceSpecification setUrl(Property\Url $url)
- * @method UnitPriceSpecification setValidFrom(Property\ValidFrom $validFrom)
- * @method UnitPriceSpecification setValidThrough(Property\ValidThrough $validThrough)
- * @method UnitPriceSpecification setValueAddedTaxIncluded(Property\ValueAddedTaxIncluded $valueAddedTaxIncluded)
  */
-class UnitPriceSpecification extends PriceSpecification {
+class UnitPriceSpecification {
 
 	/**
 	 * @var Property\BillingIncrement
 	 */
 	private $billingIncrement;
+
+	/**
+	 */
+	private $id;
 
 	/**
 	 * @var Property\PriceType
@@ -55,12 +39,30 @@ class UnitPriceSpecification extends PriceSpecification {
 	private $unitText;
 
 	/**
+	 * UnitPriceSpecification constructor.
+	 * 
+	 * @param string $id
+	 */
+	public function __construct($id = null) {
+		$this->id = $id;
+	}
+
+	/**
 	 * Get billing increment.
 	 * 
 	 * @return Property\BillingIncrement
 	 */
 	public function getBillingIncrement() {
 		return $this->billingIncrement;
+	}
+
+	/**
+	 * Get id.
+	 * 
+	 * @return string
+	 */
+	public function getId() {
+		return $this->id;
 	}
 
 	/**

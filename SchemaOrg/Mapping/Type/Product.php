@@ -11,6 +11,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method Product setAlternateName(Property\AlternateName $alternateName)
  * @method Product setDescription(Property\Description $description)
  * @method Product setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
+ * @method Product setIdentifier(Property\Identifier $identifier)
  * @method Product setImage(Property\Image $image)
  * @method Product setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
  * @method Product setName(Property\Name $name)
@@ -119,6 +120,11 @@ class Product extends Thing {
 	 * @var Property\Manufacturer
 	 */
 	private $manufacturer;
+
+	/**
+	 * @var Property\Material
+	 */
+	private $material;
 
 	/**
 	 * @var Property\Model
@@ -353,6 +359,15 @@ class Product extends Thing {
 	 */
 	public function getManufacturer() {
 		return $this->manufacturer;
+	}
+
+	/**
+	 * Get material.
+	 * 
+	 * @return Property\Material
+	 */
+	public function getMaterial() {
+		return $this->material;
 	}
 
 	/**
@@ -699,6 +714,18 @@ class Product extends Thing {
 	 */
 	public function setManufacturer(Property\Manufacturer $manufacturer) {
 		$this->manufacturer = $manufacturer;
+
+		return $this;
+	}
+
+	/**
+	 * Set material.
+	 * 
+	 * @param Property\Material $material
+	 * @return Product
+	 */
+	public function setMaterial(Property\Material $material) {
+		$this->material = $material;
 
 		return $this;
 	}

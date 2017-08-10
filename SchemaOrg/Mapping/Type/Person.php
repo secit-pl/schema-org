@@ -11,6 +11,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method Person setAlternateName(Property\AlternateName $alternateName)
  * @method Person setDescription(Property\Description $description)
  * @method Person setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
+ * @method Person setIdentifier(Property\Identifier $identifier)
  * @method Person setImage(Property\Image $image)
  * @method Person setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
  * @method Person setName(Property\Name $name)

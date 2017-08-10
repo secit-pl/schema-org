@@ -6,28 +6,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class JoinAction.
- * 
- * @method JoinAction setActionStatus(Property\ActionStatus $actionStatus)
- * @method JoinAction setAdditionalType(Property\AdditionalType $additionalType)
- * @method JoinAction setAgent(Property\Agent $agent)
- * @method JoinAction setAlternateName(Property\AlternateName $alternateName)
- * @method JoinAction setDescription(Property\Description $description)
- * @method JoinAction setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method JoinAction setEndTime(Property\EndTime $endTime)
- * @method JoinAction setError(Property\Error $error)
- * @method JoinAction setImage(Property\Image $image)
- * @method JoinAction setInstrument(Property\Instrument $instrument)
- * @method JoinAction setLocation(Property\Location $location)
- * @method JoinAction setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method JoinAction setName(Property\Name $name)
- * @method JoinAction setObject(Property\Object $object)
- * @method JoinAction setParticipant(Property\Participant $participant)
- * @method JoinAction setPotentialAction(Property\PotentialAction $potentialAction)
- * @method JoinAction setResult(Property\Result $result)
- * @method JoinAction setSameAs(Property\SameAs $sameAs)
- * @method JoinAction setStartTime(Property\StartTime $startTime)
- * @method JoinAction setTarget(Property\Target $target)
- * @method JoinAction setUrl(Property\Url $url)
  */
 class JoinAction extends InteractAction {
 

@@ -6,17 +6,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class QuantitativeValue.
- * 
- * @method QuantitativeValue setAdditionalType(Property\AdditionalType $additionalType)
- * @method QuantitativeValue setAlternateName(Property\AlternateName $alternateName)
- * @method QuantitativeValue setDescription(Property\Description $description)
- * @method QuantitativeValue setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method QuantitativeValue setImage(Property\Image $image)
- * @method QuantitativeValue setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method QuantitativeValue setName(Property\Name $name)
- * @method QuantitativeValue setPotentialAction(Property\PotentialAction $potentialAction)
- * @method QuantitativeValue setSameAs(Property\SameAs $sameAs)
- * @method QuantitativeValue setUrl(Property\Url $url)
  */
 class QuantitativeValue extends StructuredValue {
 

@@ -6,17 +6,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class Rating.
- * 
- * @method Rating setAdditionalType(Property\AdditionalType $additionalType)
- * @method Rating setAlternateName(Property\AlternateName $alternateName)
- * @method Rating setDescription(Property\Description $description)
- * @method Rating setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method Rating setImage(Property\Image $image)
- * @method Rating setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method Rating setName(Property\Name $name)
- * @method Rating setPotentialAction(Property\PotentialAction $potentialAction)
- * @method Rating setSameAs(Property\SameAs $sameAs)
- * @method Rating setUrl(Property\Url $url)
  */
 class Rating extends Intangible {
 

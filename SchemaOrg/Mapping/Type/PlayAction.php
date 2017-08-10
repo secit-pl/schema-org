@@ -8,26 +8,16 @@ use SecIT\SchemaOrg\Mapping\Property;
  * Class PlayAction.
  * 
  * @method PlayAction setActionStatus(Property\ActionStatus $actionStatus)
- * @method PlayAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method PlayAction setAgent(Property\Agent $agent)
- * @method PlayAction setAlternateName(Property\AlternateName $alternateName)
- * @method PlayAction setDescription(Property\Description $description)
- * @method PlayAction setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
  * @method PlayAction setEndTime(Property\EndTime $endTime)
  * @method PlayAction setError(Property\Error $error)
- * @method PlayAction setImage(Property\Image $image)
  * @method PlayAction setInstrument(Property\Instrument $instrument)
  * @method PlayAction setLocation(Property\Location $location)
- * @method PlayAction setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method PlayAction setName(Property\Name $name)
  * @method PlayAction setObject(Property\Object $object)
  * @method PlayAction setParticipant(Property\Participant $participant)
- * @method PlayAction setPotentialAction(Property\PotentialAction $potentialAction)
  * @method PlayAction setResult(Property\Result $result)
- * @method PlayAction setSameAs(Property\SameAs $sameAs)
  * @method PlayAction setStartTime(Property\StartTime $startTime)
  * @method PlayAction setTarget(Property\Target $target)
- * @method PlayAction setUrl(Property\Url $url)
  */
 class PlayAction extends Action {
 

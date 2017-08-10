@@ -2,21 +2,8 @@
 
 namespace SecIT\SchemaOrg\Mapping\Type;
 
-use SecIT\SchemaOrg\Mapping\Property;
-
 /**
  * Class OrderReturned.
- * 
- * @method OrderReturned setAdditionalType(Property\AdditionalType $additionalType)
- * @method OrderReturned setAlternateName(Property\AlternateName $alternateName)
- * @method OrderReturned setDescription(Property\Description $description)
- * @method OrderReturned setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method OrderReturned setImage(Property\Image $image)
- * @method OrderReturned setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method OrderReturned setName(Property\Name $name)
- * @method OrderReturned setPotentialAction(Property\PotentialAction $potentialAction)
- * @method OrderReturned setSameAs(Property\SameAs $sameAs)
- * @method OrderReturned setUrl(Property\Url $url)
  */
 class OrderReturned extends OrderStatus {
 

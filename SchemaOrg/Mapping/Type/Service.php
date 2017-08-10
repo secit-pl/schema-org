@@ -6,17 +6,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class Service.
- * 
- * @method Service setAdditionalType(Property\AdditionalType $additionalType)
- * @method Service setAlternateName(Property\AlternateName $alternateName)
- * @method Service setDescription(Property\Description $description)
- * @method Service setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method Service setImage(Property\Image $image)
- * @method Service setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method Service setName(Property\Name $name)
- * @method Service setPotentialAction(Property\PotentialAction $potentialAction)
- * @method Service setSameAs(Property\SameAs $sameAs)
- * @method Service setUrl(Property\Url $url)
  */
 class Service extends Intangible {
 
@@ -49,6 +38,11 @@ class Service extends Intangible {
 	 * @var Property\Brand
 	 */
 	private $brand;
+
+	/**
+	 * @var Property\Broker
+	 */
+	private $broker;
 
 	/**
 	 * @var Property\Category
@@ -162,6 +156,15 @@ class Service extends Intangible {
 	 */
 	public function getBrand() {
 		return $this->brand;
+	}
+
+	/**
+	 * Get broker.
+	 * 
+	 * @return Property\Broker
+	 */
+	public function getBroker() {
+		return $this->broker;
 	}
 
 	/**
@@ -349,6 +352,18 @@ class Service extends Intangible {
 	 */
 	public function setBrand(Property\Brand $brand) {
 		$this->brand = $brand;
+
+		return $this;
+	}
+
+	/**
+	 * Set broker.
+	 * 
+	 * @param Property\Broker $broker
+	 * @return Service
+	 */
+	public function setBroker(Property\Broker $broker) {
+		$this->broker = $broker;
 
 		return $this;
 	}

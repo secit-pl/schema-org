@@ -7,10 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class FoodEstablishment.
  * 
- * @method FoodEstablishment setAdditionalType(Property\AdditionalType $additionalType)
  * @method FoodEstablishment setAddress(Property\Address $address)
  * @method FoodEstablishment setAggregateRating(Property\AggregateRating $aggregateRating)
- * @method FoodEstablishment setAlternateName(Property\AlternateName $alternateName)
  * @method FoodEstablishment setAlumni(Property\Alumni $alumni)
  * @method FoodEstablishment setAreaServed(Property\AreaServed $areaServed)
  * @method FoodEstablishment setAward(Property\Award $award)
@@ -18,8 +16,6 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method FoodEstablishment setContactPoint(Property\ContactPoint $contactPoint)
  * @method FoodEstablishment setCurrenciesAccepted(Property\CurrenciesAccepted $currenciesAccepted)
  * @method FoodEstablishment setDepartment(Property\Department $department)
- * @method FoodEstablishment setDescription(Property\Description $description)
- * @method FoodEstablishment setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
  * @method FoodEstablishment setDissolutionDate(Property\DissolutionDate $dissolutionDate)
  * @method FoodEstablishment setDuns(Property\Duns $duns)
  * @method FoodEstablishment setEmail(Property\Email $email)
@@ -33,33 +29,27 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method FoodEstablishment setGlobalLocationNumber(Property\GlobalLocationNumber $globalLocationNumber)
  * @method FoodEstablishment setHasOfferCatalog(Property\HasOfferCatalog $hasOfferCatalog)
  * @method FoodEstablishment setHasPOS(Property\HasPOS $hasPOS)
- * @method FoodEstablishment setImage(Property\Image $image)
  * @method FoodEstablishment setIsicV4(Property\IsicV4 $isicV4)
  * @method FoodEstablishment setLegalName(Property\LegalName $legalName)
  * @method FoodEstablishment setLeiCode(Property\LeiCode $leiCode)
  * @method FoodEstablishment setLocation(Property\Location $location)
  * @method FoodEstablishment setLogo(Property\Logo $logo)
- * @method FoodEstablishment setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
  * @method FoodEstablishment setMakesOffer(Property\MakesOffer $makesOffer)
  * @method FoodEstablishment setMember(Property\Member $member)
  * @method FoodEstablishment setMemberOf(Property\MemberOf $memberOf)
  * @method FoodEstablishment setNaics(Property\Naics $naics)
- * @method FoodEstablishment setName(Property\Name $name)
  * @method FoodEstablishment setNumberOfEmployees(Property\NumberOfEmployees $numberOfEmployees)
  * @method FoodEstablishment setOpeningHours(Property\OpeningHours $openingHours)
  * @method FoodEstablishment setOwns(Property\Owns $owns)
  * @method FoodEstablishment setParentOrganization(Property\ParentOrganization $parentOrganization)
  * @method FoodEstablishment setPaymentAccepted(Property\PaymentAccepted $paymentAccepted)
- * @method FoodEstablishment setPotentialAction(Property\PotentialAction $potentialAction)
  * @method FoodEstablishment setPriceRange(Property\PriceRange $priceRange)
  * @method FoodEstablishment setReview(Property\Review $review)
- * @method FoodEstablishment setSameAs(Property\SameAs $sameAs)
  * @method FoodEstablishment setSeeks(Property\Seeks $seeks)
  * @method FoodEstablishment setSponsor(Property\Sponsor $sponsor)
  * @method FoodEstablishment setSubOrganization(Property\SubOrganization $subOrganization)
  * @method FoodEstablishment setTaxID(Property\TaxID $taxID)
  * @method FoodEstablishment setTelephone(Property\Telephone $telephone)
- * @method FoodEstablishment setUrl(Property\Url $url)
  * @method FoodEstablishment setVatID(Property\VatID $vatID)
  */
 class FoodEstablishment extends LocalBusiness {
@@ -70,9 +60,9 @@ class FoodEstablishment extends LocalBusiness {
 	private $acceptsReservations;
 
 	/**
-	 * @var Property\Menu
+	 * @var Property\HasMenu
 	 */
-	private $menu;
+	private $hasMenu;
 
 	/**
 	 * @var Property\ServesCuisine
@@ -94,12 +84,12 @@ class FoodEstablishment extends LocalBusiness {
 	}
 
 	/**
-	 * Get menu.
+	 * Get has menu.
 	 * 
-	 * @return Property\Menu
+	 * @return Property\HasMenu
 	 */
-	public function getMenu() {
-		return $this->menu;
+	public function getHasMenu() {
+		return $this->hasMenu;
 	}
 
 	/**
@@ -142,13 +132,13 @@ class FoodEstablishment extends LocalBusiness {
 	}
 
 	/**
-	 * Set menu.
+	 * Set has menu.
 	 * 
-	 * @param Property\Menu $menu
+	 * @param Property\HasMenu $hasMenu
 	 * @return FoodEstablishment
 	 */
-	public function setMenu(Property\Menu $menu) {
-		$this->menu = $menu;
+	public function setHasMenu(Property\HasMenu $hasMenu) {
+		$this->hasMenu = $hasMenu;
 
 		return $this;
 	}

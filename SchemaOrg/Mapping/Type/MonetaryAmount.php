@@ -6,17 +6,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class MonetaryAmount.
- * 
- * @method MonetaryAmount setAdditionalType(Property\AdditionalType $additionalType)
- * @method MonetaryAmount setAlternateName(Property\AlternateName $alternateName)
- * @method MonetaryAmount setDescription(Property\Description $description)
- * @method MonetaryAmount setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method MonetaryAmount setImage(Property\Image $image)
- * @method MonetaryAmount setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method MonetaryAmount setName(Property\Name $name)
- * @method MonetaryAmount setPotentialAction(Property\PotentialAction $potentialAction)
- * @method MonetaryAmount setSameAs(Property\SameAs $sameAs)
- * @method MonetaryAmount setUrl(Property\Url $url)
  */
 class MonetaryAmount extends StructuredValue {
 

@@ -6,35 +6,26 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class TrackAction.
- * 
- * @method TrackAction setActionStatus(Property\ActionStatus $actionStatus)
- * @method TrackAction setAdditionalType(Property\AdditionalType $additionalType)
- * @method TrackAction setAgent(Property\Agent $agent)
- * @method TrackAction setAlternateName(Property\AlternateName $alternateName)
- * @method TrackAction setDescription(Property\Description $description)
- * @method TrackAction setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method TrackAction setEndTime(Property\EndTime $endTime)
- * @method TrackAction setError(Property\Error $error)
- * @method TrackAction setImage(Property\Image $image)
- * @method TrackAction setInstrument(Property\Instrument $instrument)
- * @method TrackAction setLocation(Property\Location $location)
- * @method TrackAction setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method TrackAction setName(Property\Name $name)
- * @method TrackAction setObject(Property\Object $object)
- * @method TrackAction setParticipant(Property\Participant $participant)
- * @method TrackAction setPotentialAction(Property\PotentialAction $potentialAction)
- * @method TrackAction setResult(Property\Result $result)
- * @method TrackAction setSameAs(Property\SameAs $sameAs)
- * @method TrackAction setStartTime(Property\StartTime $startTime)
- * @method TrackAction setTarget(Property\Target $target)
- * @method TrackAction setUrl(Property\Url $url)
  */
-class TrackAction extends FindAction {
+class TrackAction {
 
 	/**
 	 * @var Property\DeliveryMethod
 	 */
 	private $deliveryMethod;
+
+	/**
+	 */
+	private $id;
+
+	/**
+	 * TrackAction constructor.
+	 * 
+	 * @param string $id
+	 */
+	public function __construct($id = null) {
+		$this->id = $id;
+	}
 
 	/**
 	 * Get delivery method.
@@ -43,6 +34,15 @@ class TrackAction extends FindAction {
 	 */
 	public function getDeliveryMethod() {
 		return $this->deliveryMethod;
+	}
+
+	/**
+	 * Get id.
+	 * 
+	 * @return string
+	 */
+	public function getId() {
+		return $this->id;
 	}
 
 	/**

@@ -6,19 +6,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class Reservation.
- * 
- * @method Reservation setAdditionalType(Property\AdditionalType $additionalType)
- * @method Reservation setAlternateName(Property\AlternateName $alternateName)
- * @method Reservation setDescription(Property\Description $description)
- * @method Reservation setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method Reservation setImage(Property\Image $image)
- * @method Reservation setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method Reservation setName(Property\Name $name)
- * @method Reservation setPotentialAction(Property\PotentialAction $potentialAction)
- * @method Reservation setSameAs(Property\SameAs $sameAs)
- * @method Reservation setUrl(Property\Url $url)
  */
-class Reservation extends Intangible {
+class Reservation {
 
 	/**
 	 * @var Property\BookingTime
@@ -29,6 +18,10 @@ class Reservation extends Intangible {
 	 * @var Property\Broker
 	 */
 	private $broker;
+
+	/**
+	 */
+	private $id;
 
 	/**
 	 * @var Property\ModifiedTime
@@ -81,6 +74,15 @@ class Reservation extends Intangible {
 	private $underName;
 
 	/**
+	 * Reservation constructor.
+	 * 
+	 * @param string $id
+	 */
+	public function __construct($id = null) {
+		$this->id = $id;
+	}
+
+	/**
 	 * Get booking time.
 	 * 
 	 * @return Property\BookingTime
@@ -96,6 +98,15 @@ class Reservation extends Intangible {
 	 */
 	public function getBroker() {
 		return $this->broker;
+	}
+
+	/**
+	 * Get id.
+	 * 
+	 * @return string
+	 */
+	public function getId() {
+		return $this->id;
 	}
 
 	/**

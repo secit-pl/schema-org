@@ -9,26 +9,16 @@ use SecIT\SchemaOrg\Mapping\Property;
  * 
  * @method VoteAction setActionOption(Property\ActionOption $actionOption)
  * @method VoteAction setActionStatus(Property\ActionStatus $actionStatus)
- * @method VoteAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method VoteAction setAgent(Property\Agent $agent)
- * @method VoteAction setAlternateName(Property\AlternateName $alternateName)
- * @method VoteAction setDescription(Property\Description $description)
- * @method VoteAction setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
  * @method VoteAction setEndTime(Property\EndTime $endTime)
  * @method VoteAction setError(Property\Error $error)
- * @method VoteAction setImage(Property\Image $image)
  * @method VoteAction setInstrument(Property\Instrument $instrument)
  * @method VoteAction setLocation(Property\Location $location)
- * @method VoteAction setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method VoteAction setName(Property\Name $name)
  * @method VoteAction setObject(Property\Object $object)
  * @method VoteAction setParticipant(Property\Participant $participant)
- * @method VoteAction setPotentialAction(Property\PotentialAction $potentialAction)
  * @method VoteAction setResult(Property\Result $result)
- * @method VoteAction setSameAs(Property\SameAs $sameAs)
  * @method VoteAction setStartTime(Property\StartTime $startTime)
  * @method VoteAction setTarget(Property\Target $target)
- * @method VoteAction setUrl(Property\Url $url)
  */
 class VoteAction extends ChooseAction {
 

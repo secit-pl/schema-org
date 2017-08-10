@@ -6,19 +6,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class DigitalDocumentPermission.
- * 
- * @method DigitalDocumentPermission setAdditionalType(Property\AdditionalType $additionalType)
- * @method DigitalDocumentPermission setAlternateName(Property\AlternateName $alternateName)
- * @method DigitalDocumentPermission setDescription(Property\Description $description)
- * @method DigitalDocumentPermission setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method DigitalDocumentPermission setImage(Property\Image $image)
- * @method DigitalDocumentPermission setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method DigitalDocumentPermission setName(Property\Name $name)
- * @method DigitalDocumentPermission setPotentialAction(Property\PotentialAction $potentialAction)
- * @method DigitalDocumentPermission setSameAs(Property\SameAs $sameAs)
- * @method DigitalDocumentPermission setUrl(Property\Url $url)
  */
-class DigitalDocumentPermission extends Intangible {
+class DigitalDocumentPermission {
 
 	/**
 	 * @var Property\Grantee
@@ -26,9 +15,22 @@ class DigitalDocumentPermission extends Intangible {
 	private $grantee;
 
 	/**
+	 */
+	private $id;
+
+	/**
 	 * @var Property\PermissionType
 	 */
 	private $permissionType;
+
+	/**
+	 * DigitalDocumentPermission constructor.
+	 * 
+	 * @param string $id
+	 */
+	public function __construct($id = null) {
+		$this->id = $id;
+	}
 
 	/**
 	 * Get grantee.
@@ -37,6 +39,15 @@ class DigitalDocumentPermission extends Intangible {
 	 */
 	public function getGrantee() {
 		return $this->grantee;
+	}
+
+	/**
+	 * Get id.
+	 * 
+	 * @return string
+	 */
+	public function getId() {
+		return $this->id;
 	}
 
 	/**

@@ -6,17 +6,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class ParcelDelivery.
- * 
- * @method ParcelDelivery setAdditionalType(Property\AdditionalType $additionalType)
- * @method ParcelDelivery setAlternateName(Property\AlternateName $alternateName)
- * @method ParcelDelivery setDescription(Property\Description $description)
- * @method ParcelDelivery setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method ParcelDelivery setImage(Property\Image $image)
- * @method ParcelDelivery setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method ParcelDelivery setName(Property\Name $name)
- * @method ParcelDelivery setPotentialAction(Property\PotentialAction $potentialAction)
- * @method ParcelDelivery setSameAs(Property\SameAs $sameAs)
- * @method ParcelDelivery setUrl(Property\Url $url)
  */
 class ParcelDelivery extends Intangible {
 

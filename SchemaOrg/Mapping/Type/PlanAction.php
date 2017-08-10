@@ -6,35 +6,35 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class PlanAction.
- * 
- * @method PlanAction setActionStatus(Property\ActionStatus $actionStatus)
- * @method PlanAction setAdditionalType(Property\AdditionalType $additionalType)
- * @method PlanAction setAgent(Property\Agent $agent)
- * @method PlanAction setAlternateName(Property\AlternateName $alternateName)
- * @method PlanAction setDescription(Property\Description $description)
- * @method PlanAction setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method PlanAction setEndTime(Property\EndTime $endTime)
- * @method PlanAction setError(Property\Error $error)
- * @method PlanAction setImage(Property\Image $image)
- * @method PlanAction setInstrument(Property\Instrument $instrument)
- * @method PlanAction setLocation(Property\Location $location)
- * @method PlanAction setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method PlanAction setName(Property\Name $name)
- * @method PlanAction setObject(Property\Object $object)
- * @method PlanAction setParticipant(Property\Participant $participant)
- * @method PlanAction setPotentialAction(Property\PotentialAction $potentialAction)
- * @method PlanAction setResult(Property\Result $result)
- * @method PlanAction setSameAs(Property\SameAs $sameAs)
- * @method PlanAction setStartTime(Property\StartTime $startTime)
- * @method PlanAction setTarget(Property\Target $target)
- * @method PlanAction setUrl(Property\Url $url)
  */
-class PlanAction extends OrganizeAction {
+class PlanAction {
+
+	/**
+	 */
+	private $id;
 
 	/**
 	 * @var Property\ScheduledTime
 	 */
 	private $scheduledTime;
+
+	/**
+	 * PlanAction constructor.
+	 * 
+	 * @param string $id
+	 */
+	public function __construct($id = null) {
+		$this->id = $id;
+	}
+
+	/**
+	 * Get id.
+	 * 
+	 * @return string
+	 */
+	public function getId() {
+		return $this->id;
+	}
 
 	/**
 	 * Get scheduled time.

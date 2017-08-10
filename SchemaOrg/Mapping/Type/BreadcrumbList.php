@@ -2,27 +2,32 @@
 
 namespace SecIT\SchemaOrg\Mapping\Type;
 
-use SecIT\SchemaOrg\Mapping\Property;
-
 /**
  * Class BreadcrumbList.
- * 
- * @method BreadcrumbList setAdditionalType(Property\AdditionalType $additionalType)
- * @method BreadcrumbList setAlternateName(Property\AlternateName $alternateName)
- * @method BreadcrumbList setDescription(Property\Description $description)
- * @method BreadcrumbList setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method BreadcrumbList setImage(Property\Image $image)
- * @method BreadcrumbList setItemListElements(array|Property\ItemListElement[] $itemListElements)
- * @method BreadcrumbList addItemListElement(Property\ItemListElement $itemListElement)
- * @method BreadcrumbList setItemListOrder(Property\ItemListOrder $itemListOrder)
- * @method BreadcrumbList setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method BreadcrumbList setName(Property\Name $name)
- * @method BreadcrumbList setNumberOfItems(Property\NumberOfItems $numberOfItems)
- * @method BreadcrumbList setPotentialAction(Property\PotentialAction $potentialAction)
- * @method BreadcrumbList setSameAs(Property\SameAs $sameAs)
- * @method BreadcrumbList setUrl(Property\Url $url)
  */
-class BreadcrumbList extends ItemList {
+class BreadcrumbList {
+
+	/**
+	 */
+	private $id;
+
+	/**
+	 * BreadcrumbList constructor.
+	 * 
+	 * @param string $id
+	 */
+	public function __construct($id = null) {
+		$this->id = $id;
+	}
+
+	/**
+	 * Get id.
+	 * 
+	 * @return string
+	 */
+	public function getId() {
+		return $this->id;
+	}
 
 	/**
 	 * Get schema URL.

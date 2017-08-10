@@ -6,17 +6,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class PriceSpecification.
- * 
- * @method PriceSpecification setAdditionalType(Property\AdditionalType $additionalType)
- * @method PriceSpecification setAlternateName(Property\AlternateName $alternateName)
- * @method PriceSpecification setDescription(Property\Description $description)
- * @method PriceSpecification setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method PriceSpecification setImage(Property\Image $image)
- * @method PriceSpecification setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method PriceSpecification setName(Property\Name $name)
- * @method PriceSpecification setPotentialAction(Property\PotentialAction $potentialAction)
- * @method PriceSpecification setSameAs(Property\SameAs $sameAs)
- * @method PriceSpecification setUrl(Property\Url $url)
  */
 class PriceSpecification extends StructuredValue {
 

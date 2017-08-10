@@ -7,18 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class PeopleAudience.
  * 
- * @method PeopleAudience setAdditionalType(Property\AdditionalType $additionalType)
- * @method PeopleAudience setAlternateName(Property\AlternateName $alternateName)
  * @method PeopleAudience setAudienceType(Property\AudienceType $audienceType)
- * @method PeopleAudience setDescription(Property\Description $description)
- * @method PeopleAudience setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
  * @method PeopleAudience setGeographicArea(Property\GeographicArea $geographicArea)
- * @method PeopleAudience setImage(Property\Image $image)
- * @method PeopleAudience setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method PeopleAudience setName(Property\Name $name)
- * @method PeopleAudience setPotentialAction(Property\PotentialAction $potentialAction)
- * @method PeopleAudience setSameAs(Property\SameAs $sameAs)
- * @method PeopleAudience setUrl(Property\Url $url)
  */
 class PeopleAudience extends Audience {
 

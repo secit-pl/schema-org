@@ -6,17 +6,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class BusTrip.
- * 
- * @method BusTrip setAdditionalType(Property\AdditionalType $additionalType)
- * @method BusTrip setAlternateName(Property\AlternateName $alternateName)
- * @method BusTrip setDescription(Property\Description $description)
- * @method BusTrip setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method BusTrip setImage(Property\Image $image)
- * @method BusTrip setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method BusTrip setName(Property\Name $name)
- * @method BusTrip setPotentialAction(Property\PotentialAction $potentialAction)
- * @method BusTrip setSameAs(Property\SameAs $sameAs)
- * @method BusTrip setUrl(Property\Url $url)
  */
 class BusTrip extends Intangible {
 

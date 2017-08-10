@@ -6,17 +6,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class JobPosting.
- * 
- * @method JobPosting setAdditionalType(Property\AdditionalType $additionalType)
- * @method JobPosting setAlternateName(Property\AlternateName $alternateName)
- * @method JobPosting setDescription(Property\Description $description)
- * @method JobPosting setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method JobPosting setImage(Property\Image $image)
- * @method JobPosting setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method JobPosting setName(Property\Name $name)
- * @method JobPosting setPotentialAction(Property\PotentialAction $potentialAction)
- * @method JobPosting setSameAs(Property\SameAs $sameAs)
- * @method JobPosting setUrl(Property\Url $url)
  */
 class JobPosting extends Intangible {
 

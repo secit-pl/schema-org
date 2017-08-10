@@ -6,17 +6,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class BroadcastChannel.
- * 
- * @method BroadcastChannel setAdditionalType(Property\AdditionalType $additionalType)
- * @method BroadcastChannel setAlternateName(Property\AlternateName $alternateName)
- * @method BroadcastChannel setDescription(Property\Description $description)
- * @method BroadcastChannel setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method BroadcastChannel setImage(Property\Image $image)
- * @method BroadcastChannel setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method BroadcastChannel setName(Property\Name $name)
- * @method BroadcastChannel setPotentialAction(Property\PotentialAction $potentialAction)
- * @method BroadcastChannel setSameAs(Property\SameAs $sameAs)
- * @method BroadcastChannel setUrl(Property\Url $url)
  */
 class BroadcastChannel extends Intangible {
 
@@ -29,6 +18,11 @@ class BroadcastChannel extends Intangible {
 	 * @var Property\BroadcastServiceTier
 	 */
 	private $broadcastServiceTier;
+
+	/**
+	 * @var Property\Genre
+	 */
+	private $genre;
 
 	/**
 	 * @var Property\InBroadcastLineup
@@ -56,6 +50,15 @@ class BroadcastChannel extends Intangible {
 	 */
 	public function getBroadcastServiceTier() {
 		return $this->broadcastServiceTier;
+	}
+
+	/**
+	 * Get genre.
+	 * 
+	 * @return Property\Genre
+	 */
+	public function getGenre() {
+		return $this->genre;
 	}
 
 	/**
@@ -105,6 +108,18 @@ class BroadcastChannel extends Intangible {
 	 */
 	public function setBroadcastServiceTier(Property\BroadcastServiceTier $broadcastServiceTier) {
 		$this->broadcastServiceTier = $broadcastServiceTier;
+
+		return $this;
+	}
+
+	/**
+	 * Set genre.
+	 * 
+	 * @param Property\Genre $genre
+	 * @return BroadcastChannel
+	 */
+	public function setGenre(Property\Genre $genre) {
+		$this->genre = $genre;
 
 		return $this;
 	}

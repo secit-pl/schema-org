@@ -6,17 +6,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class PropertyValueSpecification.
- * 
- * @method PropertyValueSpecification setAdditionalType(Property\AdditionalType $additionalType)
- * @method PropertyValueSpecification setAlternateName(Property\AlternateName $alternateName)
- * @method PropertyValueSpecification setDescription(Property\Description $description)
- * @method PropertyValueSpecification setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method PropertyValueSpecification setImage(Property\Image $image)
- * @method PropertyValueSpecification setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method PropertyValueSpecification setName(Property\Name $name)
- * @method PropertyValueSpecification setPotentialAction(Property\PotentialAction $potentialAction)
- * @method PropertyValueSpecification setSameAs(Property\SameAs $sameAs)
- * @method PropertyValueSpecification setUrl(Property\Url $url)
  */
 class PropertyValueSpecification extends Intangible {
 

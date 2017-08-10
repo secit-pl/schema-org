@@ -6,17 +6,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class QualitativeValue.
- * 
- * @method QualitativeValue setAdditionalType(Property\AdditionalType $additionalType)
- * @method QualitativeValue setAlternateName(Property\AlternateName $alternateName)
- * @method QualitativeValue setDescription(Property\Description $description)
- * @method QualitativeValue setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method QualitativeValue setImage(Property\Image $image)
- * @method QualitativeValue setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method QualitativeValue setName(Property\Name $name)
- * @method QualitativeValue setPotentialAction(Property\PotentialAction $potentialAction)
- * @method QualitativeValue setSameAs(Property\SameAs $sameAs)
- * @method QualitativeValue setUrl(Property\Url $url)
  */
 class QualitativeValue extends Enumeration {
 

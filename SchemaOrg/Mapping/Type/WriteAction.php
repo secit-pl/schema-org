@@ -6,35 +6,35 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class WriteAction.
- * 
- * @method WriteAction setActionStatus(Property\ActionStatus $actionStatus)
- * @method WriteAction setAdditionalType(Property\AdditionalType $additionalType)
- * @method WriteAction setAgent(Property\Agent $agent)
- * @method WriteAction setAlternateName(Property\AlternateName $alternateName)
- * @method WriteAction setDescription(Property\Description $description)
- * @method WriteAction setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method WriteAction setEndTime(Property\EndTime $endTime)
- * @method WriteAction setError(Property\Error $error)
- * @method WriteAction setImage(Property\Image $image)
- * @method WriteAction setInstrument(Property\Instrument $instrument)
- * @method WriteAction setLocation(Property\Location $location)
- * @method WriteAction setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method WriteAction setName(Property\Name $name)
- * @method WriteAction setObject(Property\Object $object)
- * @method WriteAction setParticipant(Property\Participant $participant)
- * @method WriteAction setPotentialAction(Property\PotentialAction $potentialAction)
- * @method WriteAction setResult(Property\Result $result)
- * @method WriteAction setSameAs(Property\SameAs $sameAs)
- * @method WriteAction setStartTime(Property\StartTime $startTime)
- * @method WriteAction setTarget(Property\Target $target)
- * @method WriteAction setUrl(Property\Url $url)
  */
-class WriteAction extends CreateAction {
+class WriteAction {
+
+	/**
+	 */
+	private $id;
 
 	/**
 	 * @var Property\InLanguage
 	 */
 	private $inLanguage;
+
+	/**
+	 * WriteAction constructor.
+	 * 
+	 * @param string $id
+	 */
+	public function __construct($id = null) {
+		$this->id = $id;
+	}
+
+	/**
+	 * Get id.
+	 * 
+	 * @return string
+	 */
+	public function getId() {
+		return $this->id;
+	}
 
 	/**
 	 * Get in language.

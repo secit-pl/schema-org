@@ -8,28 +8,18 @@ use SecIT\SchemaOrg\Mapping\Property;
  * Class ReceiveAction.
  * 
  * @method ReceiveAction setActionStatus(Property\ActionStatus $actionStatus)
- * @method ReceiveAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method ReceiveAction setAgent(Property\Agent $agent)
- * @method ReceiveAction setAlternateName(Property\AlternateName $alternateName)
- * @method ReceiveAction setDescription(Property\Description $description)
- * @method ReceiveAction setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
  * @method ReceiveAction setEndTime(Property\EndTime $endTime)
  * @method ReceiveAction setError(Property\Error $error)
  * @method ReceiveAction setFromLocation(Property\FromLocation $fromLocation)
- * @method ReceiveAction setImage(Property\Image $image)
  * @method ReceiveAction setInstrument(Property\Instrument $instrument)
  * @method ReceiveAction setLocation(Property\Location $location)
- * @method ReceiveAction setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method ReceiveAction setName(Property\Name $name)
  * @method ReceiveAction setObject(Property\Object $object)
  * @method ReceiveAction setParticipant(Property\Participant $participant)
- * @method ReceiveAction setPotentialAction(Property\PotentialAction $potentialAction)
  * @method ReceiveAction setResult(Property\Result $result)
- * @method ReceiveAction setSameAs(Property\SameAs $sameAs)
  * @method ReceiveAction setStartTime(Property\StartTime $startTime)
  * @method ReceiveAction setTarget(Property\Target $target)
  * @method ReceiveAction setToLocation(Property\ToLocation $toLocation)
- * @method ReceiveAction setUrl(Property\Url $url)
  */
 class ReceiveAction extends TransferAction {
 

@@ -6,17 +6,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class Order.
- * 
- * @method Order setAdditionalType(Property\AdditionalType $additionalType)
- * @method Order setAlternateName(Property\AlternateName $alternateName)
- * @method Order setDescription(Property\Description $description)
- * @method Order setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method Order setImage(Property\Image $image)
- * @method Order setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method Order setName(Property\Name $name)
- * @method Order setPotentialAction(Property\PotentialAction $potentialAction)
- * @method Order setSameAs(Property\SameAs $sameAs)
- * @method Order setUrl(Property\Url $url)
  */
 class Order extends Intangible {
 

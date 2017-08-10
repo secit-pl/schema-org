@@ -6,19 +6,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class NutritionInformation.
- * 
- * @method NutritionInformation setAdditionalType(Property\AdditionalType $additionalType)
- * @method NutritionInformation setAlternateName(Property\AlternateName $alternateName)
- * @method NutritionInformation setDescription(Property\Description $description)
- * @method NutritionInformation setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method NutritionInformation setImage(Property\Image $image)
- * @method NutritionInformation setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method NutritionInformation setName(Property\Name $name)
- * @method NutritionInformation setPotentialAction(Property\PotentialAction $potentialAction)
- * @method NutritionInformation setSameAs(Property\SameAs $sameAs)
- * @method NutritionInformation setUrl(Property\Url $url)
  */
-class NutritionInformation extends StructuredValue {
+class NutritionInformation {
 
 	/**
 	 * @var Property\Calories
@@ -44,6 +33,10 @@ class NutritionInformation extends StructuredValue {
 	 * @var Property\FiberContent
 	 */
 	private $fiberContent;
+
+	/**
+	 */
+	private $id;
 
 	/**
 	 * @var Property\ProteinContent
@@ -79,6 +72,15 @@ class NutritionInformation extends StructuredValue {
 	 * @var Property\UnsaturatedFatContent
 	 */
 	private $unsaturatedFatContent;
+
+	/**
+	 * NutritionInformation constructor.
+	 * 
+	 * @param string $id
+	 */
+	public function __construct($id = null) {
+		$this->id = $id;
+	}
 
 	/**
 	 * Get calories.
@@ -123,6 +125,15 @@ class NutritionInformation extends StructuredValue {
 	 */
 	public function getFiberContent() {
 		return $this->fiberContent;
+	}
+
+	/**
+	 * Get id.
+	 * 
+	 * @return string
+	 */
+	public function getId() {
+		return $this->id;
 	}
 
 	/**

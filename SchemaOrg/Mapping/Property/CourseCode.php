@@ -5,11 +5,11 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * Menu class.
+ * CourseCode class.
  * 
- * @method Menu setValue($value)
+ * @method CourseCode setValue($value)
  */
-class Menu extends AbstractProperty {
+class CourseCode extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
@@ -17,7 +17,7 @@ class Menu extends AbstractProperty {
 	 * @return string
 	 */
 	public function getSchemaUrl() {
-		return 'https://schema.org/menu';
+		return 'https://schema.org/courseCode';
 	}
 
 	/**
@@ -27,6 +27,6 @@ class Menu extends AbstractProperty {
 	 * @return bool
 	 */
 	public function isValueValid($value) {
-		return $value instanceof DataType\TextType || $value instanceof DataType\URLType;
+		return $value instanceof DataType\TextType;
 	}
 }

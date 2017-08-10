@@ -2,23 +2,32 @@
 
 namespace SecIT\SchemaOrg\Mapping\Type;
 
-use SecIT\SchemaOrg\Mapping\Property;
-
 /**
  * Class Intangible.
- * 
- * @method Intangible setAdditionalType(Property\AdditionalType $additionalType)
- * @method Intangible setAlternateName(Property\AlternateName $alternateName)
- * @method Intangible setDescription(Property\Description $description)
- * @method Intangible setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method Intangible setImage(Property\Image $image)
- * @method Intangible setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method Intangible setName(Property\Name $name)
- * @method Intangible setPotentialAction(Property\PotentialAction $potentialAction)
- * @method Intangible setSameAs(Property\SameAs $sameAs)
- * @method Intangible setUrl(Property\Url $url)
  */
-class Intangible extends Thing {
+class Intangible {
+
+	/**
+	 */
+	private $id;
+
+	/**
+	 * Intangible constructor.
+	 * 
+	 * @param string $id
+	 */
+	public function __construct($id = null) {
+		$this->id = $id;
+	}
+
+	/**
+	 * Get id.
+	 * 
+	 * @return string
+	 */
+	public function getId() {
+		return $this->id;
+	}
 
 	/**
 	 * Get schema URL.

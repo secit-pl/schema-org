@@ -7,19 +7,9 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class OrganizationRole.
  * 
- * @method OrganizationRole setAdditionalType(Property\AdditionalType $additionalType)
- * @method OrganizationRole setAlternateName(Property\AlternateName $alternateName)
- * @method OrganizationRole setDescription(Property\Description $description)
- * @method OrganizationRole setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
  * @method OrganizationRole setEndDate(Property\EndDate $endDate)
- * @method OrganizationRole setImage(Property\Image $image)
- * @method OrganizationRole setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method OrganizationRole setName(Property\Name $name)
- * @method OrganizationRole setPotentialAction(Property\PotentialAction $potentialAction)
  * @method OrganizationRole setRoleName(Property\RoleName $roleName)
- * @method OrganizationRole setSameAs(Property\SameAs $sameAs)
  * @method OrganizationRole setStartDate(Property\StartDate $startDate)
- * @method OrganizationRole setUrl(Property\Url $url)
  */
 class OrganizationRole extends Role {
 
