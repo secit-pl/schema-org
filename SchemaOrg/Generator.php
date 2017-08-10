@@ -313,7 +313,14 @@ final class Generator
             $class->setParentClassName(end($data['ancestors']));
 
             $phpdocMethods = '';
-            foreach ($this->getInheritedProperties($type, $schema) as $inheritedProperty) {
+            try {
+                $inheritedProperties = $this->getInheritedProperties($type, $schema);
+            } catch (\Exception $e) {
+                printf("\n > Type %s declaration not found. Is it defined in extension?", $type);
+                return;
+            }
+
+            foreach ($inheritedProperties as $inheritedProperty) {
                 if ($inheritedProperty == 'itemListElement') {
                     $phpdocMethods .= '@method '.$type.' setItemListElements(array|Property\\'.ucfirst($inheritedProperty).'[] $itemListElements)'."\n";
                     $phpdocMethods .= '@method '.$type.' addItemListElement(Property\\'.ucfirst($inheritedProperty).' $itemListElement)'."\n";
@@ -459,9 +466,15 @@ final class Generator
      * @param bool   $isRoot
      *
      * @return array
+     *
+     * @throws \Exception
      */
     protected function getInheritedProperties($type, array $schema, $isRoot = true)
     {
+        if (!isset($schema['types'][$type])) {
+            throw new \Exception('Unknown type '.$type);
+        }
+
         $typeSchema = $schema['types'][$type];
         $properties = [];
         if (!$isRoot) {
