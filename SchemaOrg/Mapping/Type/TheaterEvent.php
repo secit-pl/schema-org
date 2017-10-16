@@ -7,7 +7,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class TheaterEvent.
  * 
- * @method TheaterEvent setAbout(Property\About $about)
  * @method TheaterEvent setActor(Property\Actor $actor)
  * @method TheaterEvent setAdditionalType(Property\AdditionalType $additionalType)
  * @method TheaterEvent setAggregateRating(Property\AggregateRating $aggregateRating)
@@ -20,7 +19,6 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method TheaterEvent setDirector(Property\Director $director)
  * @method TheaterEvent setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
  * @method TheaterEvent setDoorTime(Property\DoorTime $doorTime)
- * @method TheaterEvent setDuration(Property\Duration $duration)
  * @method TheaterEvent setEndDate(Property\EndDate $endDate)
  * @method TheaterEvent setEventStatus(Property\EventStatus $eventStatus)
  * @method TheaterEvent setFunder(Property\Funder $funder)

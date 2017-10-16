@@ -5,11 +5,11 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * Qualifications class.
+ * PublicAccess class.
  * 
- * @method Qualifications setValue($value)
+ * @method PublicAccess setValue($value)
  */
-class Qualifications extends AbstractProperty {
+class PublicAccess extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
@@ -17,7 +17,7 @@ class Qualifications extends AbstractProperty {
 	 * @return string
 	 */
 	public function getSchemaUrl() {
-		return 'https://schema.org/qualifications';
+		return 'https://schema.org/publicAccess';
 	}
 
 	/**
@@ -27,6 +27,6 @@ class Qualifications extends AbstractProperty {
 	 * @return bool
 	 */
 	public function isValueValid($value) {
-		return $value instanceof DataType\TextType;
+		return $value instanceof DataType\BooleanType;
 	}
 }

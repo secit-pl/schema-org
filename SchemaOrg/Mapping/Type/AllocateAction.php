@@ -5,29 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 /**
  * Class AllocateAction.
  */
-class AllocateAction {
-
-	/**
-	 */
-	private $id;
-
-	/**
-	 * AllocateAction constructor.
-	 * 
-	 * @param string $id
-	 */
-	public function __construct($id = null) {
-		$this->id = $id;
-	}
-
-	/**
-	 * Get id.
-	 * 
-	 * @return string
-	 */
-	public function getId() {
-		return $this->id;
-	}
+class AllocateAction extends OrganizeAction {
 
 	/**
 	 * Get schema URL.

@@ -7,7 +7,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class ContactPage.
  * 
- * @method ContactPage setAbout(Property\About $about)
  * @method ContactPage setAccessMode(Property\AccessMode $accessMode)
  * @method ContactPage setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method ContactPage setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)
@@ -47,6 +46,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ContactPage setEducationalUse(Property\EducationalUse $educationalUse)
  * @method ContactPage setEncoding(Property\Encoding $encoding)
  * @method ContactPage setExampleOfWork(Property\ExampleOfWork $exampleOfWork)
+ * @method ContactPage setExpires(Property\Expires $expires)
  * @method ContactPage setFileFormat(Property\FileFormat $fileFormat)
  * @method ContactPage setFunder(Property\Funder $funder)
  * @method ContactPage setGenre(Property\Genre $genre)

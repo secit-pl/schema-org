@@ -7,8 +7,19 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class EducationalAudience.
  * 
+ * @method EducationalAudience setAdditionalType(Property\AdditionalType $additionalType)
+ * @method EducationalAudience setAlternateName(Property\AlternateName $alternateName)
  * @method EducationalAudience setAudienceType(Property\AudienceType $audienceType)
+ * @method EducationalAudience setDescription(Property\Description $description)
+ * @method EducationalAudience setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
  * @method EducationalAudience setGeographicArea(Property\GeographicArea $geographicArea)
+ * @method EducationalAudience setIdentifier(Property\Identifier $identifier)
+ * @method EducationalAudience setImage(Property\Image $image)
+ * @method EducationalAudience setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
+ * @method EducationalAudience setName(Property\Name $name)
+ * @method EducationalAudience setPotentialAction(Property\PotentialAction $potentialAction)
+ * @method EducationalAudience setSameAs(Property\SameAs $sameAs)
+ * @method EducationalAudience setUrl(Property\Url $url)
  */
 class EducationalAudience extends Audience {
 

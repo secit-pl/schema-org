@@ -6,18 +6,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class PaymentChargeSpecification.
- * 
- * @method PaymentChargeSpecification setEligibleQuantity(Property\EligibleQuantity $eligibleQuantity)
- * @method PaymentChargeSpecification setEligibleTransactionVolume(Property\EligibleTransactionVolume $eligibleTransactionVolume)
- * @method PaymentChargeSpecification setMaxPrice(Property\MaxPrice $maxPrice)
- * @method PaymentChargeSpecification setMinPrice(Property\MinPrice $minPrice)
- * @method PaymentChargeSpecification setPrice(Property\Price $price)
- * @method PaymentChargeSpecification setPriceCurrency(Property\PriceCurrency $priceCurrency)
- * @method PaymentChargeSpecification setValidFrom(Property\ValidFrom $validFrom)
- * @method PaymentChargeSpecification setValidThrough(Property\ValidThrough $validThrough)
- * @method PaymentChargeSpecification setValueAddedTaxIncluded(Property\ValueAddedTaxIncluded $valueAddedTaxIncluded)
  */
-class PaymentChargeSpecification extends PriceSpecification {
+class PaymentChargeSpecification {
 
 	/**
 	 * @var Property\AppliesToDeliveryMethod
@@ -28,6 +18,19 @@ class PaymentChargeSpecification extends PriceSpecification {
 	 * @var Property\AppliesToPaymentMethod
 	 */
 	private $appliesToPaymentMethod;
+
+	/**
+	 */
+	private $id;
+
+	/**
+	 * PaymentChargeSpecification constructor.
+	 * 
+	 * @param string $id
+	 */
+	public function __construct($id = null) {
+		$this->id = $id;
+	}
 
 	/**
 	 * Get applies to delivery method.
@@ -45,6 +48,15 @@ class PaymentChargeSpecification extends PriceSpecification {
 	 */
 	public function getAppliesToPaymentMethod() {
 		return $this->appliesToPaymentMethod;
+	}
+
+	/**
+	 * Get id.
+	 * 
+	 * @return string
+	 */
+	public function getId() {
+		return $this->id;
 	}
 
 	/**

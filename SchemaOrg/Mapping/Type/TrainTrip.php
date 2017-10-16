@@ -6,6 +6,18 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class TrainTrip.
+ * 
+ * @method TrainTrip setAdditionalType(Property\AdditionalType $additionalType)
+ * @method TrainTrip setAlternateName(Property\AlternateName $alternateName)
+ * @method TrainTrip setDescription(Property\Description $description)
+ * @method TrainTrip setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
+ * @method TrainTrip setIdentifier(Property\Identifier $identifier)
+ * @method TrainTrip setImage(Property\Image $image)
+ * @method TrainTrip setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
+ * @method TrainTrip setName(Property\Name $name)
+ * @method TrainTrip setPotentialAction(Property\PotentialAction $potentialAction)
+ * @method TrainTrip setSameAs(Property\SameAs $sameAs)
+ * @method TrainTrip setUrl(Property\Url $url)
  */
 class TrainTrip extends Intangible {
 

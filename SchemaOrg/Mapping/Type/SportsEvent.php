@@ -7,7 +7,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class SportsEvent.
  * 
- * @method SportsEvent setAbout(Property\About $about)
  * @method SportsEvent setActor(Property\Actor $actor)
  * @method SportsEvent setAdditionalType(Property\AdditionalType $additionalType)
  * @method SportsEvent setAggregateRating(Property\AggregateRating $aggregateRating)
@@ -20,7 +19,6 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SportsEvent setDirector(Property\Director $director)
  * @method SportsEvent setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
  * @method SportsEvent setDoorTime(Property\DoorTime $doorTime)
- * @method SportsEvent setDuration(Property\Duration $duration)
  * @method SportsEvent setEndDate(Property\EndDate $endDate)
  * @method SportsEvent setEventStatus(Property\EventStatus $eventStatus)
  * @method SportsEvent setFunder(Property\Funder $funder)

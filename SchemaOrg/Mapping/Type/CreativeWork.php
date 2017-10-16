@@ -22,11 +22,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 class CreativeWork extends Thing {
 
 	/**
-	 * @var Property\About
-	 */
-	private $about;
-
-	/**
 	 * @var Property\AccessibilityAPI
 	 */
 	private $accessibilityAPI;
@@ -195,6 +190,11 @@ class CreativeWork extends Thing {
 	 * @var Property\ExampleOfWork
 	 */
 	private $exampleOfWork;
+
+	/**
+	 * @var Property\Expires
+	 */
+	private $expires;
 
 	/**
 	 * @var Property\FileFormat
@@ -405,15 +405,6 @@ class CreativeWork extends Thing {
 	 * @var Property\WorkExample
 	 */
 	private $workExample;
-
-	/**
-	 * Get about.
-	 * 
-	 * @return Property\About
-	 */
-	public function getAbout() {
-		return $this->about;
-	}
 
 	/**
 	 * Get accessibilityapi.
@@ -719,6 +710,15 @@ class CreativeWork extends Thing {
 	 */
 	public function getExampleOfWork() {
 		return $this->exampleOfWork;
+	}
+
+	/**
+	 * Get expires.
+	 * 
+	 * @return Property\Expires
+	 */
+	public function getExpires() {
+		return $this->expires;
 	}
 
 	/**
@@ -1106,18 +1106,6 @@ class CreativeWork extends Thing {
 	 */
 	public function getWorkExample() {
 		return $this->workExample;
-	}
-
-	/**
-	 * Set about.
-	 * 
-	 * @param Property\About $about
-	 * @return CreativeWork
-	 */
-	public function setAbout(Property\About $about) {
-		$this->about = $about;
-
-		return $this;
 	}
 
 	/**
@@ -1524,6 +1512,18 @@ class CreativeWork extends Thing {
 	 */
 	public function setExampleOfWork(Property\ExampleOfWork $exampleOfWork) {
 		$this->exampleOfWork = $exampleOfWork;
+
+		return $this;
+	}
+
+	/**
+	 * Set expires.
+	 * 
+	 * @param Property\Expires $expires
+	 * @return CreativeWork
+	 */
+	public function setExpires(Property\Expires $expires) {
+		$this->expires = $expires;
 
 		return $this;
 	}

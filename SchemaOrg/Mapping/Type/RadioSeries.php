@@ -6,8 +6,100 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class RadioSeries.
+ * 
+ * @method RadioSeries setAccessMode(Property\AccessMode $accessMode)
+ * @method RadioSeries setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
+ * @method RadioSeries setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)
+ * @method RadioSeries setAccessibilityControl(Property\AccessibilityControl $accessibilityControl)
+ * @method RadioSeries setAccessibilityFeature(Property\AccessibilityFeature $accessibilityFeature)
+ * @method RadioSeries setAccessibilityHazard(Property\AccessibilityHazard $accessibilityHazard)
+ * @method RadioSeries setAccessibilitySummary(Property\AccessibilitySummary $accessibilitySummary)
+ * @method RadioSeries setAccountablePerson(Property\AccountablePerson $accountablePerson)
+ * @method RadioSeries setAdditionalType(Property\AdditionalType $additionalType)
+ * @method RadioSeries setAggregateRating(Property\AggregateRating $aggregateRating)
+ * @method RadioSeries setAlternateName(Property\AlternateName $alternateName)
+ * @method RadioSeries setAlternativeHeadline(Property\AlternativeHeadline $alternativeHeadline)
+ * @method RadioSeries setAssociatedMedia(Property\AssociatedMedia $associatedMedia)
+ * @method RadioSeries setAudience(Property\Audience $audience)
+ * @method RadioSeries setAudio(Property\Audio $audio)
+ * @method RadioSeries setAuthor(Property\Author $author)
+ * @method RadioSeries setAward(Property\Award $award)
+ * @method RadioSeries setCharacter(Property\Character $character)
+ * @method RadioSeries setCitation(Property\Citation $citation)
+ * @method RadioSeries setComment(Property\Comment $comment)
+ * @method RadioSeries setCommentCount(Property\CommentCount $commentCount)
+ * @method RadioSeries setContentLocation(Property\ContentLocation $contentLocation)
+ * @method RadioSeries setContentRating(Property\ContentRating $contentRating)
+ * @method RadioSeries setContributor(Property\Contributor $contributor)
+ * @method RadioSeries setCopyrightHolder(Property\CopyrightHolder $copyrightHolder)
+ * @method RadioSeries setCopyrightYear(Property\CopyrightYear $copyrightYear)
+ * @method RadioSeries setCreator(Property\Creator $creator)
+ * @method RadioSeries setDateCreated(Property\DateCreated $dateCreated)
+ * @method RadioSeries setDateModified(Property\DateModified $dateModified)
+ * @method RadioSeries setDatePublished(Property\DatePublished $datePublished)
+ * @method RadioSeries setDescription(Property\Description $description)
+ * @method RadioSeries setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
+ * @method RadioSeries setDiscussionUrl(Property\DiscussionUrl $discussionUrl)
+ * @method RadioSeries setEditor(Property\Editor $editor)
+ * @method RadioSeries setEducationalAlignment(Property\EducationalAlignment $educationalAlignment)
+ * @method RadioSeries setEducationalUse(Property\EducationalUse $educationalUse)
+ * @method RadioSeries setEncoding(Property\Encoding $encoding)
+ * @method RadioSeries setEndDate(Property\EndDate $endDate)
+ * @method RadioSeries setExampleOfWork(Property\ExampleOfWork $exampleOfWork)
+ * @method RadioSeries setExpires(Property\Expires $expires)
+ * @method RadioSeries setFileFormat(Property\FileFormat $fileFormat)
+ * @method RadioSeries setFunder(Property\Funder $funder)
+ * @method RadioSeries setGenre(Property\Genre $genre)
+ * @method RadioSeries setHasPart(Property\HasPart $hasPart)
+ * @method RadioSeries setHeadline(Property\Headline $headline)
+ * @method RadioSeries setIdentifier(Property\Identifier $identifier)
+ * @method RadioSeries setImage(Property\Image $image)
+ * @method RadioSeries setInLanguage(Property\InLanguage $inLanguage)
+ * @method RadioSeries setInteractionStatistic(Property\InteractionStatistic $interactionStatistic)
+ * @method RadioSeries setInteractivityType(Property\InteractivityType $interactivityType)
+ * @method RadioSeries setIsAccessibleForFree(Property\IsAccessibleForFree $isAccessibleForFree)
+ * @method RadioSeries setIsBasedOn(Property\IsBasedOn $isBasedOn)
+ * @method RadioSeries setIsFamilyFriendly(Property\IsFamilyFriendly $isFamilyFriendly)
+ * @method RadioSeries setIsPartOf(Property\IsPartOf $isPartOf)
+ * @method RadioSeries setIssn(Property\Issn $issn)
+ * @method RadioSeries setKeywords(Property\Keywords $keywords)
+ * @method RadioSeries setLearningResourceType(Property\LearningResourceType $learningResourceType)
+ * @method RadioSeries setLicense(Property\License $license)
+ * @method RadioSeries setLocationCreated(Property\LocationCreated $locationCreated)
+ * @method RadioSeries setMainEntity(Property\MainEntity $mainEntity)
+ * @method RadioSeries setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
+ * @method RadioSeries setMaterial(Property\Material $material)
+ * @method RadioSeries setMentions(Property\Mentions $mentions)
+ * @method RadioSeries setName(Property\Name $name)
+ * @method RadioSeries setOffers(Property\Offers $offers)
+ * @method RadioSeries setPosition(Property\Position $position)
+ * @method RadioSeries setPotentialAction(Property\PotentialAction $potentialAction)
+ * @method RadioSeries setProducer(Property\Producer $producer)
+ * @method RadioSeries setProvider(Property\Provider $provider)
+ * @method RadioSeries setPublication(Property\Publication $publication)
+ * @method RadioSeries setPublisher(Property\Publisher $publisher)
+ * @method RadioSeries setPublishingPrinciples(Property\PublishingPrinciples $publishingPrinciples)
+ * @method RadioSeries setRecordedAt(Property\RecordedAt $recordedAt)
+ * @method RadioSeries setReleasedEvent(Property\ReleasedEvent $releasedEvent)
+ * @method RadioSeries setReview(Property\Review $review)
+ * @method RadioSeries setSameAs(Property\SameAs $sameAs)
+ * @method RadioSeries setSchemaVersion(Property\SchemaVersion $schemaVersion)
+ * @method RadioSeries setSourceOrganization(Property\SourceOrganization $sourceOrganization)
+ * @method RadioSeries setSpatialCoverage(Property\SpatialCoverage $spatialCoverage)
+ * @method RadioSeries setSponsor(Property\Sponsor $sponsor)
+ * @method RadioSeries setStartDate(Property\StartDate $startDate)
+ * @method RadioSeries setTemporalCoverage(Property\TemporalCoverage $temporalCoverage)
+ * @method RadioSeries setText(Property\Text $text)
+ * @method RadioSeries setThumbnailUrl(Property\ThumbnailUrl $thumbnailUrl)
+ * @method RadioSeries setTimeRequired(Property\TimeRequired $timeRequired)
+ * @method RadioSeries setTranslator(Property\Translator $translator)
+ * @method RadioSeries setTypicalAgeRange(Property\TypicalAgeRange $typicalAgeRange)
+ * @method RadioSeries setUrl(Property\Url $url)
+ * @method RadioSeries setVersion(Property\Version $version)
+ * @method RadioSeries setVideo(Property\Video $video)
+ * @method RadioSeries setWorkExample(Property\WorkExample $workExample)
  */
-class RadioSeries {
+class RadioSeries extends CreativeWorkSeries {
 
 	/**
 	 * @var Property\Actor
@@ -28,10 +120,6 @@ class RadioSeries {
 	 * @var Property\Episode
 	 */
 	private $episode;
-
-	/**
-	 */
-	private $id;
 
 	/**
 	 * @var Property\MusicBy
@@ -57,15 +145,6 @@ class RadioSeries {
 	 * @var Property\Trailer
 	 */
 	private $trailer;
-
-	/**
-	 * RadioSeries constructor.
-	 * 
-	 * @param string $id
-	 */
-	public function __construct($id = null) {
-		$this->id = $id;
-	}
 
 	/**
 	 * Get actor.
@@ -101,15 +180,6 @@ class RadioSeries {
 	 */
 	public function getEpisode() {
 		return $this->episode;
-	}
-
-	/**
-	 * Get id.
-	 * 
-	 * @return string
-	 */
-	public function getId() {
-		return $this->id;
 	}
 
 	/**

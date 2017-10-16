@@ -7,7 +7,11 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class MenuItem.
  */
-class MenuItem extends Intangible {
+class MenuItem {
+
+	/**
+	 */
+	private $id;
 
 	/**
 	 * @var Property\Nutrition
@@ -23,6 +27,24 @@ class MenuItem extends Intangible {
 	 * @var Property\SuitableForDiet
 	 */
 	private $suitableForDiet;
+
+	/**
+	 * MenuItem constructor.
+	 * 
+	 * @param string $id
+	 */
+	public function __construct($id = null) {
+		$this->id = $id;
+	}
+
+	/**
+	 * Get id.
+	 * 
+	 * @return string
+	 */
+	public function getId() {
+		return $this->id;
+	}
 
 	/**
 	 * Get nutrition.

@@ -7,7 +7,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Festival.
  * 
- * @method Festival setAbout(Property\About $about)
  * @method Festival setActor(Property\Actor $actor)
  * @method Festival setAdditionalType(Property\AdditionalType $additionalType)
  * @method Festival setAggregateRating(Property\AggregateRating $aggregateRating)
@@ -20,7 +19,6 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method Festival setDirector(Property\Director $director)
  * @method Festival setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
  * @method Festival setDoorTime(Property\DoorTime $doorTime)
- * @method Festival setDuration(Property\Duration $duration)
  * @method Festival setEndDate(Property\EndDate $endDate)
  * @method Festival setEventStatus(Property\EventStatus $eventStatus)
  * @method Festival setFunder(Property\Funder $funder)

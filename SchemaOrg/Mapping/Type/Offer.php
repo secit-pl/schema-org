@@ -6,6 +6,18 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class Offer.
+ * 
+ * @method Offer setAdditionalType(Property\AdditionalType $additionalType)
+ * @method Offer setAlternateName(Property\AlternateName $alternateName)
+ * @method Offer setDescription(Property\Description $description)
+ * @method Offer setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
+ * @method Offer setIdentifier(Property\Identifier $identifier)
+ * @method Offer setImage(Property\Image $image)
+ * @method Offer setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
+ * @method Offer setName(Property\Name $name)
+ * @method Offer setPotentialAction(Property\PotentialAction $potentialAction)
+ * @method Offer setSameAs(Property\SameAs $sameAs)
+ * @method Offer setUrl(Property\Url $url)
  */
 class Offer extends Intangible {
 

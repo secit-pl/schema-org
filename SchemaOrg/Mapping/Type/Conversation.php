@@ -7,7 +7,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Conversation.
  * 
- * @method Conversation setAbout(Property\About $about)
  * @method Conversation setAccessMode(Property\AccessMode $accessMode)
  * @method Conversation setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method Conversation setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)
@@ -46,6 +45,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method Conversation setEducationalUse(Property\EducationalUse $educationalUse)
  * @method Conversation setEncoding(Property\Encoding $encoding)
  * @method Conversation setExampleOfWork(Property\ExampleOfWork $exampleOfWork)
+ * @method Conversation setExpires(Property\Expires $expires)
  * @method Conversation setFileFormat(Property\FileFormat $fileFormat)
  * @method Conversation setFunder(Property\Funder $funder)
  * @method Conversation setGenre(Property\Genre $genre)

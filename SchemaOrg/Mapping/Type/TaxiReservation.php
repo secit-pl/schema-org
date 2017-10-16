@@ -6,21 +6,12 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class TaxiReservation.
- * 
- * @method TaxiReservation setBookingTime(Property\BookingTime $bookingTime)
- * @method TaxiReservation setBroker(Property\Broker $broker)
- * @method TaxiReservation setModifiedTime(Property\ModifiedTime $modifiedTime)
- * @method TaxiReservation setPriceCurrency(Property\PriceCurrency $priceCurrency)
- * @method TaxiReservation setProgramMembershipUsed(Property\ProgramMembershipUsed $programMembershipUsed)
- * @method TaxiReservation setProvider(Property\Provider $provider)
- * @method TaxiReservation setReservationFor(Property\ReservationFor $reservationFor)
- * @method TaxiReservation setReservationId(Property\ReservationId $reservationId)
- * @method TaxiReservation setReservationStatus(Property\ReservationStatus $reservationStatus)
- * @method TaxiReservation setReservedTicket(Property\ReservedTicket $reservedTicket)
- * @method TaxiReservation setTotalPrice(Property\TotalPrice $totalPrice)
- * @method TaxiReservation setUnderName(Property\UnderName $underName)
  */
-class TaxiReservation extends Reservation {
+class TaxiReservation {
+
+	/**
+	 */
+	private $id;
 
 	/**
 	 * @var Property\PartySize
@@ -36,6 +27,24 @@ class TaxiReservation extends Reservation {
 	 * @var Property\PickupTime
 	 */
 	private $pickupTime;
+
+	/**
+	 * TaxiReservation constructor.
+	 * 
+	 * @param string $id
+	 */
+	public function __construct($id = null) {
+		$this->id = $id;
+	}
+
+	/**
+	 * Get id.
+	 * 
+	 * @return string
+	 */
+	public function getId() {
+		return $this->id;
+	}
 
 	/**
 	 * Get party size.

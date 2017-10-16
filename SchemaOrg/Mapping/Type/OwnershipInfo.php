@@ -6,6 +6,18 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class OwnershipInfo.
+ * 
+ * @method OwnershipInfo setAdditionalType(Property\AdditionalType $additionalType)
+ * @method OwnershipInfo setAlternateName(Property\AlternateName $alternateName)
+ * @method OwnershipInfo setDescription(Property\Description $description)
+ * @method OwnershipInfo setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
+ * @method OwnershipInfo setIdentifier(Property\Identifier $identifier)
+ * @method OwnershipInfo setImage(Property\Image $image)
+ * @method OwnershipInfo setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
+ * @method OwnershipInfo setName(Property\Name $name)
+ * @method OwnershipInfo setPotentialAction(Property\PotentialAction $potentialAction)
+ * @method OwnershipInfo setSameAs(Property\SameAs $sameAs)
+ * @method OwnershipInfo setUrl(Property\Url $url)
  */
 class OwnershipInfo extends StructuredValue {
 

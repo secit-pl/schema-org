@@ -7,7 +7,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class MusicRecording.
  * 
- * @method MusicRecording setAbout(Property\About $about)
  * @method MusicRecording setAccessMode(Property\AccessMode $accessMode)
  * @method MusicRecording setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method MusicRecording setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)
@@ -46,6 +45,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MusicRecording setEducationalUse(Property\EducationalUse $educationalUse)
  * @method MusicRecording setEncoding(Property\Encoding $encoding)
  * @method MusicRecording setExampleOfWork(Property\ExampleOfWork $exampleOfWork)
+ * @method MusicRecording setExpires(Property\Expires $expires)
  * @method MusicRecording setFileFormat(Property\FileFormat $fileFormat)
  * @method MusicRecording setFunder(Property\Funder $funder)
  * @method MusicRecording setGenre(Property\Genre $genre)
@@ -104,11 +104,6 @@ class MusicRecording extends CreativeWork {
 	private $byArtist;
 
 	/**
-	 * @var Property\Duration
-	 */
-	private $duration;
-
-	/**
 	 * @var Property\InAlbum
 	 */
 	private $inAlbum;
@@ -135,15 +130,6 @@ class MusicRecording extends CreativeWork {
 	 */
 	public function getByArtist() {
 		return $this->byArtist;
-	}
-
-	/**
-	 * Get duration.
-	 * 
-	 * @return Property\Duration
-	 */
-	public function getDuration() {
-		return $this->duration;
 	}
 
 	/**
@@ -199,18 +185,6 @@ class MusicRecording extends CreativeWork {
 	 */
 	public function setByArtist(Property\ByArtist $byArtist) {
 		$this->byArtist = $byArtist;
-
-		return $this;
-	}
-
-	/**
-	 * Set duration.
-	 * 
-	 * @param Property\Duration $duration
-	 * @return MusicRecording
-	 */
-	public function setDuration(Property\Duration $duration) {
-		$this->duration = $duration;
 
 		return $this;
 	}

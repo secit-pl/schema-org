@@ -7,7 +7,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class WebSite.
  * 
- * @method WebSite setAbout(Property\About $about)
  * @method WebSite setAccessMode(Property\AccessMode $accessMode)
  * @method WebSite setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method WebSite setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)
@@ -46,6 +45,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method WebSite setEducationalUse(Property\EducationalUse $educationalUse)
  * @method WebSite setEncoding(Property\Encoding $encoding)
  * @method WebSite setExampleOfWork(Property\ExampleOfWork $exampleOfWork)
+ * @method WebSite setExpires(Property\Expires $expires)
  * @method WebSite setFileFormat(Property\FileFormat $fileFormat)
  * @method WebSite setFunder(Property\Funder $funder)
  * @method WebSite setGenre(Property\Genre $genre)
@@ -99,11 +99,37 @@ use SecIT\SchemaOrg\Mapping\Property;
 class WebSite extends CreativeWork {
 
 	/**
+	 * @var Property\Issn
+	 */
+	private $issn;
+
+	/**
+	 * Get issn.
+	 * 
+	 * @return Property\Issn
+	 */
+	public function getIssn() {
+		return $this->issn;
+	}
+
+	/**
 	 * Get schema URL.
 	 * 
 	 * @return string
 	 */
 	public function getSchemaUrl() {
 		return 'https://schema.org/WebSite';
+	}
+
+	/**
+	 * Set issn.
+	 * 
+	 * @param Property\Issn $issn
+	 * @return WebSite
+	 */
+	public function setIssn(Property\Issn $issn) {
+		$this->issn = $issn;
+
+		return $this;
 	}
 }

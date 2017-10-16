@@ -7,7 +7,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class WPAdBlock.
  * 
- * @method WPAdBlock setAbout(Property\About $about)
  * @method WPAdBlock setAccessMode(Property\AccessMode $accessMode)
  * @method WPAdBlock setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method WPAdBlock setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)
@@ -46,6 +45,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method WPAdBlock setEducationalUse(Property\EducationalUse $educationalUse)
  * @method WPAdBlock setEncoding(Property\Encoding $encoding)
  * @method WPAdBlock setExampleOfWork(Property\ExampleOfWork $exampleOfWork)
+ * @method WPAdBlock setExpires(Property\Expires $expires)
  * @method WPAdBlock setFileFormat(Property\FileFormat $fileFormat)
  * @method WPAdBlock setFunder(Property\Funder $funder)
  * @method WPAdBlock setGenre(Property\Genre $genre)

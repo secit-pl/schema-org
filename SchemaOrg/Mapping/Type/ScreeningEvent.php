@@ -6,52 +6,12 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class ScreeningEvent.
- * 
- * @method ScreeningEvent setAbout(Property\About $about)
- * @method ScreeningEvent setActor(Property\Actor $actor)
- * @method ScreeningEvent setAdditionalType(Property\AdditionalType $additionalType)
- * @method ScreeningEvent setAggregateRating(Property\AggregateRating $aggregateRating)
- * @method ScreeningEvent setAlternateName(Property\AlternateName $alternateName)
- * @method ScreeningEvent setAttendee(Property\Attendee $attendee)
- * @method ScreeningEvent setAudience(Property\Audience $audience)
- * @method ScreeningEvent setComposer(Property\Composer $composer)
- * @method ScreeningEvent setContributor(Property\Contributor $contributor)
- * @method ScreeningEvent setDescription(Property\Description $description)
- * @method ScreeningEvent setDirector(Property\Director $director)
- * @method ScreeningEvent setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method ScreeningEvent setDoorTime(Property\DoorTime $doorTime)
- * @method ScreeningEvent setDuration(Property\Duration $duration)
- * @method ScreeningEvent setEndDate(Property\EndDate $endDate)
- * @method ScreeningEvent setEventStatus(Property\EventStatus $eventStatus)
- * @method ScreeningEvent setFunder(Property\Funder $funder)
- * @method ScreeningEvent setIdentifier(Property\Identifier $identifier)
- * @method ScreeningEvent setImage(Property\Image $image)
- * @method ScreeningEvent setInLanguage(Property\InLanguage $inLanguage)
- * @method ScreeningEvent setIsAccessibleForFree(Property\IsAccessibleForFree $isAccessibleForFree)
- * @method ScreeningEvent setLocation(Property\Location $location)
- * @method ScreeningEvent setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method ScreeningEvent setMaximumAttendeeCapacity(Property\MaximumAttendeeCapacity $maximumAttendeeCapacity)
- * @method ScreeningEvent setName(Property\Name $name)
- * @method ScreeningEvent setOffers(Property\Offers $offers)
- * @method ScreeningEvent setOrganizer(Property\Organizer $organizer)
- * @method ScreeningEvent setPerformer(Property\Performer $performer)
- * @method ScreeningEvent setPotentialAction(Property\PotentialAction $potentialAction)
- * @method ScreeningEvent setPreviousStartDate(Property\PreviousStartDate $previousStartDate)
- * @method ScreeningEvent setRecordedIn(Property\RecordedIn $recordedIn)
- * @method ScreeningEvent setRemainingAttendeeCapacity(Property\RemainingAttendeeCapacity $remainingAttendeeCapacity)
- * @method ScreeningEvent setReview(Property\Review $review)
- * @method ScreeningEvent setSameAs(Property\SameAs $sameAs)
- * @method ScreeningEvent setSponsor(Property\Sponsor $sponsor)
- * @method ScreeningEvent setStartDate(Property\StartDate $startDate)
- * @method ScreeningEvent setSubEvent(Property\SubEvent $subEvent)
- * @method ScreeningEvent setSuperEvent(Property\SuperEvent $superEvent)
- * @method ScreeningEvent setTranslator(Property\Translator $translator)
- * @method ScreeningEvent setTypicalAgeRange(Property\TypicalAgeRange $typicalAgeRange)
- * @method ScreeningEvent setUrl(Property\Url $url)
- * @method ScreeningEvent setWorkFeatured(Property\WorkFeatured $workFeatured)
- * @method ScreeningEvent setWorkPerformed(Property\WorkPerformed $workPerformed)
  */
-class ScreeningEvent extends Event {
+class ScreeningEvent {
+
+	/**
+	 */
+	private $id;
 
 	/**
 	 * @var Property\SubtitleLanguage
@@ -67,6 +27,24 @@ class ScreeningEvent extends Event {
 	 * @var Property\WorkPresented
 	 */
 	private $workPresented;
+
+	/**
+	 * ScreeningEvent constructor.
+	 * 
+	 * @param string $id
+	 */
+	public function __construct($id = null) {
+		$this->id = $id;
+	}
+
+	/**
+	 * Get id.
+	 * 
+	 * @return string
+	 */
+	public function getId() {
+		return $this->id;
+	}
 
 	/**
 	 * Get schema URL.

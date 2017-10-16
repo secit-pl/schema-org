@@ -7,7 +7,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class EducationEvent.
  * 
- * @method EducationEvent setAbout(Property\About $about)
  * @method EducationEvent setActor(Property\Actor $actor)
  * @method EducationEvent setAdditionalType(Property\AdditionalType $additionalType)
  * @method EducationEvent setAggregateRating(Property\AggregateRating $aggregateRating)
@@ -20,7 +19,6 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method EducationEvent setDirector(Property\Director $director)
  * @method EducationEvent setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
  * @method EducationEvent setDoorTime(Property\DoorTime $doorTime)
- * @method EducationEvent setDuration(Property\Duration $duration)
  * @method EducationEvent setEndDate(Property\EndDate $endDate)
  * @method EducationEvent setEventStatus(Property\EventStatus $eventStatus)
  * @method EducationEvent setFunder(Property\Funder $funder)

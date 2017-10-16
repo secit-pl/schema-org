@@ -7,7 +7,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class ClaimReview.
  * 
- * @method ClaimReview setAbout(Property\About $about)
  * @method ClaimReview setAccessMode(Property\AccessMode $accessMode)
  * @method ClaimReview setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method ClaimReview setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)
@@ -46,6 +45,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ClaimReview setEducationalUse(Property\EducationalUse $educationalUse)
  * @method ClaimReview setEncoding(Property\Encoding $encoding)
  * @method ClaimReview setExampleOfWork(Property\ExampleOfWork $exampleOfWork)
+ * @method ClaimReview setExpires(Property\Expires $expires)
  * @method ClaimReview setFileFormat(Property\FileFormat $fileFormat)
  * @method ClaimReview setFunder(Property\Funder $funder)
  * @method ClaimReview setGenre(Property\Genre $genre)

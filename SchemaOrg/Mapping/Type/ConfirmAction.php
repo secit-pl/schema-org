@@ -7,7 +7,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class ConfirmAction.
  * 
- * @method ConfirmAction setAbout(Property\About $about)
  * @method ConfirmAction setEvent(Property\Event $event)
  * @method ConfirmAction setInLanguage(Property\InLanguage $inLanguage)
  * @method ConfirmAction setRecipient(Property\Recipient $recipient)

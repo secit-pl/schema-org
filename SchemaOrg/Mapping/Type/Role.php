@@ -6,6 +6,18 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class Role.
+ * 
+ * @method Role setAdditionalType(Property\AdditionalType $additionalType)
+ * @method Role setAlternateName(Property\AlternateName $alternateName)
+ * @method Role setDescription(Property\Description $description)
+ * @method Role setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
+ * @method Role setIdentifier(Property\Identifier $identifier)
+ * @method Role setImage(Property\Image $image)
+ * @method Role setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
+ * @method Role setName(Property\Name $name)
+ * @method Role setPotentialAction(Property\PotentialAction $potentialAction)
+ * @method Role setSameAs(Property\SameAs $sameAs)
+ * @method Role setUrl(Property\Url $url)
  */
 class Role extends Intangible {
 

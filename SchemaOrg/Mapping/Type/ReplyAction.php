@@ -6,17 +6,35 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class ReplyAction.
- * 
- * @method ReplyAction setAbout(Property\About $about)
- * @method ReplyAction setInLanguage(Property\InLanguage $inLanguage)
- * @method ReplyAction setRecipient(Property\Recipient $recipient)
  */
-class ReplyAction extends CommunicateAction {
+class ReplyAction {
+
+	/**
+	 */
+	private $id;
 
 	/**
 	 * @var Property\ResultComment
 	 */
 	private $resultComment;
+
+	/**
+	 * ReplyAction constructor.
+	 * 
+	 * @param string $id
+	 */
+	public function __construct($id = null) {
+		$this->id = $id;
+	}
+
+	/**
+	 * Get id.
+	 * 
+	 * @return string
+	 */
+	public function getId() {
+		return $this->id;
+	}
 
 	/**
 	 * Get result comment.

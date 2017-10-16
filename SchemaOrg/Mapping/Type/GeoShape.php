@@ -6,6 +6,18 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class GeoShape.
+ * 
+ * @method GeoShape setAdditionalType(Property\AdditionalType $additionalType)
+ * @method GeoShape setAlternateName(Property\AlternateName $alternateName)
+ * @method GeoShape setDescription(Property\Description $description)
+ * @method GeoShape setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
+ * @method GeoShape setIdentifier(Property\Identifier $identifier)
+ * @method GeoShape setImage(Property\Image $image)
+ * @method GeoShape setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
+ * @method GeoShape setName(Property\Name $name)
+ * @method GeoShape setPotentialAction(Property\PotentialAction $potentialAction)
+ * @method GeoShape setSameAs(Property\SameAs $sameAs)
+ * @method GeoShape setUrl(Property\Url $url)
  */
 class GeoShape extends StructuredValue {
 

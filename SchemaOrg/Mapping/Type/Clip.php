@@ -7,7 +7,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Clip.
  * 
- * @method Clip setAbout(Property\About $about)
  * @method Clip setAccessMode(Property\AccessMode $accessMode)
  * @method Clip setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method Clip setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)
@@ -46,6 +45,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method Clip setEducationalUse(Property\EducationalUse $educationalUse)
  * @method Clip setEncoding(Property\Encoding $encoding)
  * @method Clip setExampleOfWork(Property\ExampleOfWork $exampleOfWork)
+ * @method Clip setExpires(Property\Expires $expires)
  * @method Clip setFileFormat(Property\FileFormat $fileFormat)
  * @method Clip setFunder(Property\Funder $funder)
  * @method Clip setGenre(Property\Genre $genre)

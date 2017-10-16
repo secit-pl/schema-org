@@ -2,14 +2,14 @@
 
 namespace SecIT\SchemaOrg\Mapping\Property;
 
-use SecIT\SchemaOrg\Mapping\DataType;
+use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * Responsibilities class.
+ * PerformTime class.
  * 
- * @method Responsibilities setValue($value)
+ * @method PerformTime setValue($value)
  */
-class Responsibilities extends AbstractProperty {
+class PerformTime extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
@@ -17,7 +17,7 @@ class Responsibilities extends AbstractProperty {
 	 * @return string
 	 */
 	public function getSchemaUrl() {
-		return 'https://schema.org/responsibilities';
+		return 'https://schema.org/performTime';
 	}
 
 	/**
@@ -27,6 +27,6 @@ class Responsibilities extends AbstractProperty {
 	 * @return bool
 	 */
 	public function isValueValid($value) {
-		return $value instanceof DataType\TextType;
+		return $value instanceof Type\Duration;
 	}
 }

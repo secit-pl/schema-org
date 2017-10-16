@@ -7,7 +7,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Menu.
  * 
- * @method Menu setAbout(Property\About $about)
  * @method Menu setAccessMode(Property\AccessMode $accessMode)
  * @method Menu setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method Menu setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)
@@ -46,6 +45,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method Menu setEducationalUse(Property\EducationalUse $educationalUse)
  * @method Menu setEncoding(Property\Encoding $encoding)
  * @method Menu setExampleOfWork(Property\ExampleOfWork $exampleOfWork)
+ * @method Menu setExpires(Property\Expires $expires)
  * @method Menu setFileFormat(Property\FileFormat $fileFormat)
  * @method Menu setFunder(Property\Funder $funder)
  * @method Menu setGenre(Property\Genre $genre)

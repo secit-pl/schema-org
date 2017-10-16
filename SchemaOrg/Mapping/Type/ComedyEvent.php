@@ -7,7 +7,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class ComedyEvent.
  * 
- * @method ComedyEvent setAbout(Property\About $about)
  * @method ComedyEvent setActor(Property\Actor $actor)
  * @method ComedyEvent setAdditionalType(Property\AdditionalType $additionalType)
  * @method ComedyEvent setAggregateRating(Property\AggregateRating $aggregateRating)
@@ -20,7 +19,6 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ComedyEvent setDirector(Property\Director $director)
  * @method ComedyEvent setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
  * @method ComedyEvent setDoorTime(Property\DoorTime $doorTime)
- * @method ComedyEvent setDuration(Property\Duration $duration)
  * @method ComedyEvent setEndDate(Property\EndDate $endDate)
  * @method ComedyEvent setEventStatus(Property\EventStatus $eventStatus)
  * @method ComedyEvent setFunder(Property\Funder $funder)

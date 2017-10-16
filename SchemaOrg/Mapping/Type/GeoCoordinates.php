@@ -6,8 +6,20 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class GeoCoordinates.
+ * 
+ * @method GeoCoordinates setAdditionalType(Property\AdditionalType $additionalType)
+ * @method GeoCoordinates setAlternateName(Property\AlternateName $alternateName)
+ * @method GeoCoordinates setDescription(Property\Description $description)
+ * @method GeoCoordinates setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
+ * @method GeoCoordinates setIdentifier(Property\Identifier $identifier)
+ * @method GeoCoordinates setImage(Property\Image $image)
+ * @method GeoCoordinates setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
+ * @method GeoCoordinates setName(Property\Name $name)
+ * @method GeoCoordinates setPotentialAction(Property\PotentialAction $potentialAction)
+ * @method GeoCoordinates setSameAs(Property\SameAs $sameAs)
+ * @method GeoCoordinates setUrl(Property\Url $url)
  */
-class GeoCoordinates {
+class GeoCoordinates extends StructuredValue {
 
 	/**
 	 * @var Property\Address
@@ -25,10 +37,6 @@ class GeoCoordinates {
 	private $elevation;
 
 	/**
-	 */
-	private $id;
-
-	/**
 	 * @var Property\Latitude
 	 */
 	private $latitude;
@@ -42,15 +50,6 @@ class GeoCoordinates {
 	 * @var Property\PostalCode
 	 */
 	private $postalCode;
-
-	/**
-	 * GeoCoordinates constructor.
-	 * 
-	 * @param string $id
-	 */
-	public function __construct($id = null) {
-		$this->id = $id;
-	}
 
 	/**
 	 * Get address.
@@ -77,15 +76,6 @@ class GeoCoordinates {
 	 */
 	public function getElevation() {
 		return $this->elevation;
-	}
-
-	/**
-	 * Get id.
-	 * 
-	 * @return string
-	 */
-	public function getId() {
-		return $this->id;
 	}
 
 	/**

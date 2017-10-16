@@ -6,6 +6,18 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class ProgramMembership.
+ * 
+ * @method ProgramMembership setAdditionalType(Property\AdditionalType $additionalType)
+ * @method ProgramMembership setAlternateName(Property\AlternateName $alternateName)
+ * @method ProgramMembership setDescription(Property\Description $description)
+ * @method ProgramMembership setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
+ * @method ProgramMembership setIdentifier(Property\Identifier $identifier)
+ * @method ProgramMembership setImage(Property\Image $image)
+ * @method ProgramMembership setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
+ * @method ProgramMembership setName(Property\Name $name)
+ * @method ProgramMembership setPotentialAction(Property\PotentialAction $potentialAction)
+ * @method ProgramMembership setSameAs(Property\SameAs $sameAs)
+ * @method ProgramMembership setUrl(Property\Url $url)
  */
 class ProgramMembership extends Intangible {
 

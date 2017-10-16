@@ -6,6 +6,18 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class EntryPoint.
+ * 
+ * @method EntryPoint setAdditionalType(Property\AdditionalType $additionalType)
+ * @method EntryPoint setAlternateName(Property\AlternateName $alternateName)
+ * @method EntryPoint setDescription(Property\Description $description)
+ * @method EntryPoint setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
+ * @method EntryPoint setIdentifier(Property\Identifier $identifier)
+ * @method EntryPoint setImage(Property\Image $image)
+ * @method EntryPoint setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
+ * @method EntryPoint setName(Property\Name $name)
+ * @method EntryPoint setPotentialAction(Property\PotentialAction $potentialAction)
+ * @method EntryPoint setSameAs(Property\SameAs $sameAs)
+ * @method EntryPoint setUrl(Property\Url $url)
  */
 class EntryPoint extends Intangible {
 

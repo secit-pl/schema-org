@@ -6,6 +6,18 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class EngineSpecification.
+ * 
+ * @method EngineSpecification setAdditionalType(Property\AdditionalType $additionalType)
+ * @method EngineSpecification setAlternateName(Property\AlternateName $alternateName)
+ * @method EngineSpecification setDescription(Property\Description $description)
+ * @method EngineSpecification setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
+ * @method EngineSpecification setIdentifier(Property\Identifier $identifier)
+ * @method EngineSpecification setImage(Property\Image $image)
+ * @method EngineSpecification setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
+ * @method EngineSpecification setName(Property\Name $name)
+ * @method EngineSpecification setPotentialAction(Property\PotentialAction $potentialAction)
+ * @method EngineSpecification setSameAs(Property\SameAs $sameAs)
+ * @method EngineSpecification setUrl(Property\Url $url)
  */
 class EngineSpecification extends StructuredValue {
 

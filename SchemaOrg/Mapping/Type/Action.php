@@ -6,8 +6,20 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class Action.
+ * 
+ * @method Action setAdditionalType(Property\AdditionalType $additionalType)
+ * @method Action setAlternateName(Property\AlternateName $alternateName)
+ * @method Action setDescription(Property\Description $description)
+ * @method Action setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
+ * @method Action setIdentifier(Property\Identifier $identifier)
+ * @method Action setImage(Property\Image $image)
+ * @method Action setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
+ * @method Action setName(Property\Name $name)
+ * @method Action setPotentialAction(Property\PotentialAction $potentialAction)
+ * @method Action setSameAs(Property\SameAs $sameAs)
+ * @method Action setUrl(Property\Url $url)
  */
-class Action {
+class Action extends Thing {
 
 	/**
 	 * @var Property\ActionStatus
@@ -28,10 +40,6 @@ class Action {
 	 * @var Property\Error
 	 */
 	private $error;
-
-	/**
-	 */
-	private $id;
 
 	/**
 	 * @var Property\Instrument
@@ -69,15 +77,6 @@ class Action {
 	private $target;
 
 	/**
-	 * Action constructor.
-	 * 
-	 * @param string $id
-	 */
-	public function __construct($id = null) {
-		$this->id = $id;
-	}
-
-	/**
 	 * Get action status.
 	 * 
 	 * @return Property\ActionStatus
@@ -111,15 +110,6 @@ class Action {
 	 */
 	public function getError() {
 		return $this->error;
-	}
-
-	/**
-	 * Get id.
-	 * 
-	 * @return string
-	 */
-	public function getId() {
-		return $this->id;
 	}
 
 	/**

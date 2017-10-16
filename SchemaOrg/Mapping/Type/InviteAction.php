@@ -6,26 +6,16 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class InviteAction.
+ * 
+ * @method InviteAction setInLanguage(Property\InLanguage $inLanguage)
+ * @method InviteAction setRecipient(Property\Recipient $recipient)
  */
-class InviteAction {
+class InviteAction extends CommunicateAction {
 
 	/**
 	 * @var Property\Event
 	 */
 	private $event;
-
-	/**
-	 */
-	private $id;
-
-	/**
-	 * InviteAction constructor.
-	 * 
-	 * @param string $id
-	 */
-	public function __construct($id = null) {
-		$this->id = $id;
-	}
 
 	/**
 	 * Get event.
@@ -34,15 +24,6 @@ class InviteAction {
 	 */
 	public function getEvent() {
 		return $this->event;
-	}
-
-	/**
-	 * Get id.
-	 * 
-	 * @return string
-	 */
-	public function getId() {
-		return $this->id;
 	}
 
 	/**

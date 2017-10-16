@@ -7,7 +7,9 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class LoanOrCredit.
  * 
+ * @method LoanOrCredit setAdditionalType(Property\AdditionalType $additionalType)
  * @method LoanOrCredit setAggregateRating(Property\AggregateRating $aggregateRating)
+ * @method LoanOrCredit setAlternateName(Property\AlternateName $alternateName)
  * @method LoanOrCredit setAnnualPercentageRate(Property\AnnualPercentageRate $annualPercentageRate)
  * @method LoanOrCredit setAreaServed(Property\AreaServed $areaServed)
  * @method LoanOrCredit setAudience(Property\Audience $audience)
@@ -16,19 +18,28 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method LoanOrCredit setBrand(Property\Brand $brand)
  * @method LoanOrCredit setBroker(Property\Broker $broker)
  * @method LoanOrCredit setCategory(Property\Category $category)
+ * @method LoanOrCredit setDescription(Property\Description $description)
+ * @method LoanOrCredit setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
  * @method LoanOrCredit setFeesAndCommissionsSpecification(Property\FeesAndCommissionsSpecification $feesAndCommissionsSpecification)
  * @method LoanOrCredit setHasOfferCatalog(Property\HasOfferCatalog $hasOfferCatalog)
  * @method LoanOrCredit setHoursAvailable(Property\HoursAvailable $hoursAvailable)
+ * @method LoanOrCredit setIdentifier(Property\Identifier $identifier)
+ * @method LoanOrCredit setImage(Property\Image $image)
  * @method LoanOrCredit setInterestRate(Property\InterestRate $interestRate)
  * @method LoanOrCredit setIsRelatedTo(Property\IsRelatedTo $isRelatedTo)
  * @method LoanOrCredit setIsSimilarTo(Property\IsSimilarTo $isSimilarTo)
  * @method LoanOrCredit setLogo(Property\Logo $logo)
+ * @method LoanOrCredit setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
+ * @method LoanOrCredit setName(Property\Name $name)
  * @method LoanOrCredit setOffers(Property\Offers $offers)
+ * @method LoanOrCredit setPotentialAction(Property\PotentialAction $potentialAction)
  * @method LoanOrCredit setProvider(Property\Provider $provider)
  * @method LoanOrCredit setProviderMobility(Property\ProviderMobility $providerMobility)
  * @method LoanOrCredit setReview(Property\Review $review)
+ * @method LoanOrCredit setSameAs(Property\SameAs $sameAs)
  * @method LoanOrCredit setServiceOutput(Property\ServiceOutput $serviceOutput)
  * @method LoanOrCredit setServiceType(Property\ServiceType $serviceType)
+ * @method LoanOrCredit setUrl(Property\Url $url)
  */
 class LoanOrCredit extends FinancialProduct {
 

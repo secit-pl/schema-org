@@ -7,7 +7,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class MusicAlbum.
  * 
- * @method MusicAlbum setAbout(Property\About $about)
  * @method MusicAlbum setAccessMode(Property\AccessMode $accessMode)
  * @method MusicAlbum setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method MusicAlbum setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)
@@ -46,6 +45,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MusicAlbum setEducationalUse(Property\EducationalUse $educationalUse)
  * @method MusicAlbum setEncoding(Property\Encoding $encoding)
  * @method MusicAlbum setExampleOfWork(Property\ExampleOfWork $exampleOfWork)
+ * @method MusicAlbum setExpires(Property\Expires $expires)
  * @method MusicAlbum setFileFormat(Property\FileFormat $fileFormat)
  * @method MusicAlbum setFunder(Property\Funder $funder)
  * @method MusicAlbum setGenre(Property\Genre $genre)

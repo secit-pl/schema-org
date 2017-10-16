@@ -7,7 +7,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class MusicEvent.
  * 
- * @method MusicEvent setAbout(Property\About $about)
  * @method MusicEvent setActor(Property\Actor $actor)
  * @method MusicEvent setAdditionalType(Property\AdditionalType $additionalType)
  * @method MusicEvent setAggregateRating(Property\AggregateRating $aggregateRating)
@@ -20,7 +19,6 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MusicEvent setDirector(Property\Director $director)
  * @method MusicEvent setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
  * @method MusicEvent setDoorTime(Property\DoorTime $doorTime)
- * @method MusicEvent setDuration(Property\Duration $duration)
  * @method MusicEvent setEndDate(Property\EndDate $endDate)
  * @method MusicEvent setEventStatus(Property\EventStatus $eventStatus)
  * @method MusicEvent setFunder(Property\Funder $funder)

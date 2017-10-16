@@ -6,97 +6,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class Movie.
- * 
- * @method Movie setAbout(Property\About $about)
- * @method Movie setAccessMode(Property\AccessMode $accessMode)
- * @method Movie setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
- * @method Movie setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)
- * @method Movie setAccessibilityControl(Property\AccessibilityControl $accessibilityControl)
- * @method Movie setAccessibilityFeature(Property\AccessibilityFeature $accessibilityFeature)
- * @method Movie setAccessibilityHazard(Property\AccessibilityHazard $accessibilityHazard)
- * @method Movie setAccessibilitySummary(Property\AccessibilitySummary $accessibilitySummary)
- * @method Movie setAccountablePerson(Property\AccountablePerson $accountablePerson)
- * @method Movie setAdditionalType(Property\AdditionalType $additionalType)
- * @method Movie setAggregateRating(Property\AggregateRating $aggregateRating)
- * @method Movie setAlternateName(Property\AlternateName $alternateName)
- * @method Movie setAlternativeHeadline(Property\AlternativeHeadline $alternativeHeadline)
- * @method Movie setAssociatedMedia(Property\AssociatedMedia $associatedMedia)
- * @method Movie setAudience(Property\Audience $audience)
- * @method Movie setAudio(Property\Audio $audio)
- * @method Movie setAuthor(Property\Author $author)
- * @method Movie setAward(Property\Award $award)
- * @method Movie setCharacter(Property\Character $character)
- * @method Movie setCitation(Property\Citation $citation)
- * @method Movie setComment(Property\Comment $comment)
- * @method Movie setCommentCount(Property\CommentCount $commentCount)
- * @method Movie setContentLocation(Property\ContentLocation $contentLocation)
- * @method Movie setContentRating(Property\ContentRating $contentRating)
- * @method Movie setContributor(Property\Contributor $contributor)
- * @method Movie setCopyrightHolder(Property\CopyrightHolder $copyrightHolder)
- * @method Movie setCopyrightYear(Property\CopyrightYear $copyrightYear)
- * @method Movie setCreator(Property\Creator $creator)
- * @method Movie setDateCreated(Property\DateCreated $dateCreated)
- * @method Movie setDateModified(Property\DateModified $dateModified)
- * @method Movie setDatePublished(Property\DatePublished $datePublished)
- * @method Movie setDescription(Property\Description $description)
- * @method Movie setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method Movie setDiscussionUrl(Property\DiscussionUrl $discussionUrl)
- * @method Movie setEditor(Property\Editor $editor)
- * @method Movie setEducationalAlignment(Property\EducationalAlignment $educationalAlignment)
- * @method Movie setEducationalUse(Property\EducationalUse $educationalUse)
- * @method Movie setEncoding(Property\Encoding $encoding)
- * @method Movie setExampleOfWork(Property\ExampleOfWork $exampleOfWork)
- * @method Movie setFileFormat(Property\FileFormat $fileFormat)
- * @method Movie setFunder(Property\Funder $funder)
- * @method Movie setGenre(Property\Genre $genre)
- * @method Movie setHasPart(Property\HasPart $hasPart)
- * @method Movie setHeadline(Property\Headline $headline)
- * @method Movie setIdentifier(Property\Identifier $identifier)
- * @method Movie setImage(Property\Image $image)
- * @method Movie setInLanguage(Property\InLanguage $inLanguage)
- * @method Movie setInteractionStatistic(Property\InteractionStatistic $interactionStatistic)
- * @method Movie setInteractivityType(Property\InteractivityType $interactivityType)
- * @method Movie setIsAccessibleForFree(Property\IsAccessibleForFree $isAccessibleForFree)
- * @method Movie setIsBasedOn(Property\IsBasedOn $isBasedOn)
- * @method Movie setIsFamilyFriendly(Property\IsFamilyFriendly $isFamilyFriendly)
- * @method Movie setIsPartOf(Property\IsPartOf $isPartOf)
- * @method Movie setKeywords(Property\Keywords $keywords)
- * @method Movie setLearningResourceType(Property\LearningResourceType $learningResourceType)
- * @method Movie setLicense(Property\License $license)
- * @method Movie setLocationCreated(Property\LocationCreated $locationCreated)
- * @method Movie setMainEntity(Property\MainEntity $mainEntity)
- * @method Movie setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method Movie setMaterial(Property\Material $material)
- * @method Movie setMentions(Property\Mentions $mentions)
- * @method Movie setName(Property\Name $name)
- * @method Movie setOffers(Property\Offers $offers)
- * @method Movie setPosition(Property\Position $position)
- * @method Movie setPotentialAction(Property\PotentialAction $potentialAction)
- * @method Movie setProducer(Property\Producer $producer)
- * @method Movie setProvider(Property\Provider $provider)
- * @method Movie setPublication(Property\Publication $publication)
- * @method Movie setPublisher(Property\Publisher $publisher)
- * @method Movie setPublishingPrinciples(Property\PublishingPrinciples $publishingPrinciples)
- * @method Movie setRecordedAt(Property\RecordedAt $recordedAt)
- * @method Movie setReleasedEvent(Property\ReleasedEvent $releasedEvent)
- * @method Movie setReview(Property\Review $review)
- * @method Movie setSameAs(Property\SameAs $sameAs)
- * @method Movie setSchemaVersion(Property\SchemaVersion $schemaVersion)
- * @method Movie setSourceOrganization(Property\SourceOrganization $sourceOrganization)
- * @method Movie setSpatialCoverage(Property\SpatialCoverage $spatialCoverage)
- * @method Movie setSponsor(Property\Sponsor $sponsor)
- * @method Movie setTemporalCoverage(Property\TemporalCoverage $temporalCoverage)
- * @method Movie setText(Property\Text $text)
- * @method Movie setThumbnailUrl(Property\ThumbnailUrl $thumbnailUrl)
- * @method Movie setTimeRequired(Property\TimeRequired $timeRequired)
- * @method Movie setTranslator(Property\Translator $translator)
- * @method Movie setTypicalAgeRange(Property\TypicalAgeRange $typicalAgeRange)
- * @method Movie setUrl(Property\Url $url)
- * @method Movie setVersion(Property\Version $version)
- * @method Movie setVideo(Property\Video $video)
- * @method Movie setWorkExample(Property\WorkExample $workExample)
  */
-class Movie extends CreativeWork {
+class Movie {
 
 	/**
 	 * @var Property\Actor
@@ -114,9 +25,8 @@ class Movie extends CreativeWork {
 	private $director;
 
 	/**
-	 * @var Property\Duration
 	 */
-	private $duration;
+	private $id;
 
 	/**
 	 * @var Property\MusicBy
@@ -137,6 +47,15 @@ class Movie extends CreativeWork {
 	 * @var Property\Trailer
 	 */
 	private $trailer;
+
+	/**
+	 * Movie constructor.
+	 * 
+	 * @param string $id
+	 */
+	public function __construct($id = null) {
+		$this->id = $id;
+	}
 
 	/**
 	 * Get actor.
@@ -166,12 +85,12 @@ class Movie extends CreativeWork {
 	}
 
 	/**
-	 * Get duration.
+	 * Get id.
 	 * 
-	 * @return Property\Duration
+	 * @return string
 	 */
-	public function getDuration() {
-		return $this->duration;
+	public function getId() {
+		return $this->id;
 	}
 
 	/**
@@ -251,18 +170,6 @@ class Movie extends CreativeWork {
 	 */
 	public function setDirector(Property\Director $director) {
 		$this->director = $director;
-
-		return $this;
-	}
-
-	/**
-	 * Set duration.
-	 * 
-	 * @param Property\Duration $duration
-	 * @return Movie
-	 */
-	public function setDuration(Property\Duration $duration) {
-		$this->duration = $duration;
 
 		return $this;
 	}

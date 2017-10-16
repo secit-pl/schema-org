@@ -22,11 +22,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 class Event extends Thing {
 
 	/**
-	 * @var Property\About
-	 */
-	private $about;
-
-	/**
 	 * @var Property\Actor
 	 */
 	private $actor;
@@ -65,11 +60,6 @@ class Event extends Thing {
 	 * @var Property\DoorTime
 	 */
 	private $doorTime;
-
-	/**
-	 * @var Property\Duration
-	 */
-	private $duration;
 
 	/**
 	 * @var Property\EndDate
@@ -182,15 +172,6 @@ class Event extends Thing {
 	private $workPerformed;
 
 	/**
-	 * Get about.
-	 * 
-	 * @return Property\About
-	 */
-	public function getAbout() {
-		return $this->about;
-	}
-
-	/**
 	 * Get actor.
 	 * 
 	 * @return Property\Actor
@@ -260,15 +241,6 @@ class Event extends Thing {
 	 */
 	public function getDoorTime() {
 		return $this->doorTime;
-	}
-
-	/**
-	 * Get duration.
-	 * 
-	 * @return Property\Duration
-	 */
-	public function getDuration() {
-		return $this->duration;
 	}
 
 	/**
@@ -479,18 +451,6 @@ class Event extends Thing {
 	}
 
 	/**
-	 * Set about.
-	 * 
-	 * @param Property\About $about
-	 * @return Event
-	 */
-	public function setAbout(Property\About $about) {
-		$this->about = $about;
-
-		return $this;
-	}
-
-	/**
 	 * Set actor.
 	 * 
 	 * @param Property\Actor $actor
@@ -582,18 +542,6 @@ class Event extends Thing {
 	 */
 	public function setDoorTime(Property\DoorTime $doorTime) {
 		$this->doorTime = $doorTime;
-
-		return $this;
-	}
-
-	/**
-	 * Set duration.
-	 * 
-	 * @param Property\Duration $duration
-	 * @return Event
-	 */
-	public function setDuration(Property\Duration $duration) {
-		$this->duration = $duration;
 
 		return $this;
 	}

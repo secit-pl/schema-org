@@ -5,29 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 /**
  * Class LimitedAvailability.
  */
-class LimitedAvailability {
-
-	/**
-	 */
-	private $id;
-
-	/**
-	 * LimitedAvailability constructor.
-	 * 
-	 * @param string $id
-	 */
-	public function __construct($id = null) {
-		$this->id = $id;
-	}
-
-	/**
-	 * Get id.
-	 * 
-	 * @return string
-	 */
-	public function getId() {
-		return $this->id;
-	}
+class LimitedAvailability extends ItemAvailability {
 
 	/**
 	 * Get schema URL.

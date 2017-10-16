@@ -6,6 +6,18 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class ContactPoint.
+ * 
+ * @method ContactPoint setAdditionalType(Property\AdditionalType $additionalType)
+ * @method ContactPoint setAlternateName(Property\AlternateName $alternateName)
+ * @method ContactPoint setDescription(Property\Description $description)
+ * @method ContactPoint setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
+ * @method ContactPoint setIdentifier(Property\Identifier $identifier)
+ * @method ContactPoint setImage(Property\Image $image)
+ * @method ContactPoint setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
+ * @method ContactPoint setName(Property\Name $name)
+ * @method ContactPoint setPotentialAction(Property\PotentialAction $potentialAction)
+ * @method ContactPoint setSameAs(Property\SameAs $sameAs)
+ * @method ContactPoint setUrl(Property\Url $url)
  */
 class ContactPoint extends StructuredValue {
 

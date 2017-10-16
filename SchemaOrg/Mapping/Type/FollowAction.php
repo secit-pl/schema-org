@@ -7,12 +7,25 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class FollowAction.
  */
-class FollowAction extends InteractAction {
+class FollowAction {
 
 	/**
 	 * @var Property\Followee
 	 */
 	private $followee;
+
+	/**
+	 */
+	private $id;
+
+	/**
+	 * FollowAction constructor.
+	 * 
+	 * @param string $id
+	 */
+	public function __construct($id = null) {
+		$this->id = $id;
+	}
 
 	/**
 	 * Get followee.
@@ -21,6 +34,15 @@ class FollowAction extends InteractAction {
 	 */
 	public function getFollowee() {
 		return $this->followee;
+	}
+
+	/**
+	 * Get id.
+	 * 
+	 * @return string
+	 */
+	public function getId() {
+		return $this->id;
 	}
 
 	/**

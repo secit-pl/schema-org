@@ -6,6 +6,18 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class TypeAndQuantityNode.
+ * 
+ * @method TypeAndQuantityNode setAdditionalType(Property\AdditionalType $additionalType)
+ * @method TypeAndQuantityNode setAlternateName(Property\AlternateName $alternateName)
+ * @method TypeAndQuantityNode setDescription(Property\Description $description)
+ * @method TypeAndQuantityNode setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
+ * @method TypeAndQuantityNode setIdentifier(Property\Identifier $identifier)
+ * @method TypeAndQuantityNode setImage(Property\Image $image)
+ * @method TypeAndQuantityNode setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
+ * @method TypeAndQuantityNode setName(Property\Name $name)
+ * @method TypeAndQuantityNode setPotentialAction(Property\PotentialAction $potentialAction)
+ * @method TypeAndQuantityNode setSameAs(Property\SameAs $sameAs)
+ * @method TypeAndQuantityNode setUrl(Property\Url $url)
  */
 class TypeAndQuantityNode extends StructuredValue {
 

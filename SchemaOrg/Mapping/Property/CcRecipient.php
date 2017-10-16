@@ -5,11 +5,11 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * Duration class.
+ * CcRecipient class.
  * 
- * @method Duration setValue($value)
+ * @method CcRecipient setValue($value)
  */
-class Duration extends AbstractProperty {
+class CcRecipient extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
@@ -17,7 +17,7 @@ class Duration extends AbstractProperty {
 	 * @return string
 	 */
 	public function getSchemaUrl() {
-		return 'https://schema.org/duration';
+		return 'https://schema.org/ccRecipient';
 	}
 
 	/**
@@ -27,6 +27,6 @@ class Duration extends AbstractProperty {
 	 * @return bool
 	 */
 	public function isValueValid($value) {
-		return $value instanceof Type\Duration;
+		return $value instanceof Type\ContactPoint || $value instanceof Type\Organization || $value instanceof Type\Person;
 	}
 }

@@ -7,7 +7,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class CheckInAction.
  * 
- * @method CheckInAction setAbout(Property\About $about)
  * @method CheckInAction setInLanguage(Property\InLanguage $inLanguage)
  * @method CheckInAction setRecipient(Property\Recipient $recipient)
  */

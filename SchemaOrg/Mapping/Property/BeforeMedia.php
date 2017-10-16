@@ -2,14 +2,14 @@
 
 namespace SecIT\SchemaOrg\Mapping\Property;
 
-use SecIT\SchemaOrg\Mapping\DataType;
+use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * Currency class.
+ * BeforeMedia class.
  * 
- * @method Currency setValue($value)
+ * @method BeforeMedia setValue($value)
  */
-class Currency extends AbstractProperty {
+class BeforeMedia extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
@@ -17,7 +17,7 @@ class Currency extends AbstractProperty {
 	 * @return string
 	 */
 	public function getSchemaUrl() {
-		return 'https://schema.org/currency';
+		return 'https://schema.org/beforeMedia';
 	}
 
 	/**
@@ -27,6 +27,6 @@ class Currency extends AbstractProperty {
 	 * @return bool
 	 */
 	public function isValueValid($value) {
-		return $value instanceof DataType\TextType;
+		return $value instanceof Type\MediaObject;
 	}
 }

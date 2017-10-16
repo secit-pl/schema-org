@@ -8,16 +8,27 @@ use SecIT\SchemaOrg\Mapping\Property;
  * Class TransferAction.
  * 
  * @method TransferAction setActionStatus(Property\ActionStatus $actionStatus)
+ * @method TransferAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method TransferAction setAgent(Property\Agent $agent)
+ * @method TransferAction setAlternateName(Property\AlternateName $alternateName)
+ * @method TransferAction setDescription(Property\Description $description)
+ * @method TransferAction setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
  * @method TransferAction setEndTime(Property\EndTime $endTime)
  * @method TransferAction setError(Property\Error $error)
+ * @method TransferAction setIdentifier(Property\Identifier $identifier)
+ * @method TransferAction setImage(Property\Image $image)
  * @method TransferAction setInstrument(Property\Instrument $instrument)
  * @method TransferAction setLocation(Property\Location $location)
+ * @method TransferAction setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
+ * @method TransferAction setName(Property\Name $name)
  * @method TransferAction setObject(Property\Object $object)
  * @method TransferAction setParticipant(Property\Participant $participant)
+ * @method TransferAction setPotentialAction(Property\PotentialAction $potentialAction)
  * @method TransferAction setResult(Property\Result $result)
+ * @method TransferAction setSameAs(Property\SameAs $sameAs)
  * @method TransferAction setStartTime(Property\StartTime $startTime)
  * @method TransferAction setTarget(Property\Target $target)
+ * @method TransferAction setUrl(Property\Url $url)
  */
 class TransferAction extends Action {
 

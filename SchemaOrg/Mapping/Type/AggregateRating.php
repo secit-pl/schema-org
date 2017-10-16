@@ -7,9 +7,20 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class AggregateRating.
  * 
+ * @method AggregateRating setAdditionalType(Property\AdditionalType $additionalType)
+ * @method AggregateRating setAlternateName(Property\AlternateName $alternateName)
  * @method AggregateRating setAuthor(Property\Author $author)
  * @method AggregateRating setBestRating(Property\BestRating $bestRating)
+ * @method AggregateRating setDescription(Property\Description $description)
+ * @method AggregateRating setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
+ * @method AggregateRating setIdentifier(Property\Identifier $identifier)
+ * @method AggregateRating setImage(Property\Image $image)
+ * @method AggregateRating setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
+ * @method AggregateRating setName(Property\Name $name)
+ * @method AggregateRating setPotentialAction(Property\PotentialAction $potentialAction)
  * @method AggregateRating setRatingValue(Property\RatingValue $ratingValue)
+ * @method AggregateRating setSameAs(Property\SameAs $sameAs)
+ * @method AggregateRating setUrl(Property\Url $url)
  * @method AggregateRating setWorstRating(Property\WorstRating $worstRating)
  */
 class AggregateRating extends Rating {

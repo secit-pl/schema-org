@@ -10,11 +10,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 class CommunicateAction extends InteractAction {
 
 	/**
-	 * @var Property\About
-	 */
-	private $about;
-
-	/**
 	 * @var Property\InLanguage
 	 */
 	private $inLanguage;
@@ -23,15 +18,6 @@ class CommunicateAction extends InteractAction {
 	 * @var Property\Recipient
 	 */
 	private $recipient;
-
-	/**
-	 * Get about.
-	 * 
-	 * @return Property\About
-	 */
-	public function getAbout() {
-		return $this->about;
-	}
 
 	/**
 	 * Get in language.
@@ -58,18 +44,6 @@ class CommunicateAction extends InteractAction {
 	 */
 	public function getSchemaUrl() {
 		return 'https://schema.org/CommunicateAction';
-	}
-
-	/**
-	 * Set about.
-	 * 
-	 * @param Property\About $about
-	 * @return CommunicateAction
-	 */
-	public function setAbout(Property\About $about) {
-		$this->about = $about;
-
-		return $this;
 	}
 
 	/**

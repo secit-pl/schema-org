@@ -2,15 +2,32 @@
 
 namespace SecIT\SchemaOrg\Mapping\Type;
 
-use SecIT\SchemaOrg\Mapping\Property;
-
 /**
  * Class OnDemandEvent.
- * 
- * @method OnDemandEvent setIsAccessibleForFree(Property\IsAccessibleForFree $isAccessibleForFree)
- * @method OnDemandEvent setPublishedOn(Property\PublishedOn $publishedOn)
  */
-class OnDemandEvent extends PublicationEvent {
+class OnDemandEvent {
+
+	/**
+	 */
+	private $id;
+
+	/**
+	 * OnDemandEvent constructor.
+	 * 
+	 * @param string $id
+	 */
+	public function __construct($id = null) {
+		$this->id = $id;
+	}
+
+	/**
+	 * Get id.
+	 * 
+	 * @return string
+	 */
+	public function getId() {
+		return $this->id;
+	}
 
 	/**
 	 * Get schema URL.

@@ -7,7 +7,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class ExhibitionEvent.
  * 
- * @method ExhibitionEvent setAbout(Property\About $about)
  * @method ExhibitionEvent setActor(Property\Actor $actor)
  * @method ExhibitionEvent setAdditionalType(Property\AdditionalType $additionalType)
  * @method ExhibitionEvent setAggregateRating(Property\AggregateRating $aggregateRating)
@@ -20,7 +19,6 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ExhibitionEvent setDirector(Property\Director $director)
  * @method ExhibitionEvent setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
  * @method ExhibitionEvent setDoorTime(Property\DoorTime $doorTime)
- * @method ExhibitionEvent setDuration(Property\Duration $duration)
  * @method ExhibitionEvent setEndDate(Property\EndDate $endDate)
  * @method ExhibitionEvent setEventStatus(Property\EventStatus $eventStatus)
  * @method ExhibitionEvent setFunder(Property\Funder $funder)

@@ -7,7 +7,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class DanceEvent.
  * 
- * @method DanceEvent setAbout(Property\About $about)
  * @method DanceEvent setActor(Property\Actor $actor)
  * @method DanceEvent setAdditionalType(Property\AdditionalType $additionalType)
  * @method DanceEvent setAggregateRating(Property\AggregateRating $aggregateRating)
@@ -20,7 +19,6 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method DanceEvent setDirector(Property\Director $director)
  * @method DanceEvent setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
  * @method DanceEvent setDoorTime(Property\DoorTime $doorTime)
- * @method DanceEvent setDuration(Property\Duration $duration)
  * @method DanceEvent setEndDate(Property\EndDate $endDate)
  * @method DanceEvent setEventStatus(Property\EventStatus $eventStatus)
  * @method DanceEvent setFunder(Property\Funder $funder)

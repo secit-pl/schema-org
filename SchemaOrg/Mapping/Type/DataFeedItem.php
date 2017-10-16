@@ -6,6 +6,18 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class DataFeedItem.
+ * 
+ * @method DataFeedItem setAdditionalType(Property\AdditionalType $additionalType)
+ * @method DataFeedItem setAlternateName(Property\AlternateName $alternateName)
+ * @method DataFeedItem setDescription(Property\Description $description)
+ * @method DataFeedItem setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
+ * @method DataFeedItem setIdentifier(Property\Identifier $identifier)
+ * @method DataFeedItem setImage(Property\Image $image)
+ * @method DataFeedItem setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
+ * @method DataFeedItem setName(Property\Name $name)
+ * @method DataFeedItem setPotentialAction(Property\PotentialAction $potentialAction)
+ * @method DataFeedItem setSameAs(Property\SameAs $sameAs)
+ * @method DataFeedItem setUrl(Property\Url $url)
  */
 class DataFeedItem extends Intangible {
 

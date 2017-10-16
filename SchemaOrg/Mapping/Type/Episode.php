@@ -6,8 +6,97 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class Episode.
+ * 
+ * @method Episode setAccessMode(Property\AccessMode $accessMode)
+ * @method Episode setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
+ * @method Episode setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)
+ * @method Episode setAccessibilityControl(Property\AccessibilityControl $accessibilityControl)
+ * @method Episode setAccessibilityFeature(Property\AccessibilityFeature $accessibilityFeature)
+ * @method Episode setAccessibilityHazard(Property\AccessibilityHazard $accessibilityHazard)
+ * @method Episode setAccessibilitySummary(Property\AccessibilitySummary $accessibilitySummary)
+ * @method Episode setAccountablePerson(Property\AccountablePerson $accountablePerson)
+ * @method Episode setAdditionalType(Property\AdditionalType $additionalType)
+ * @method Episode setAggregateRating(Property\AggregateRating $aggregateRating)
+ * @method Episode setAlternateName(Property\AlternateName $alternateName)
+ * @method Episode setAlternativeHeadline(Property\AlternativeHeadline $alternativeHeadline)
+ * @method Episode setAssociatedMedia(Property\AssociatedMedia $associatedMedia)
+ * @method Episode setAudience(Property\Audience $audience)
+ * @method Episode setAudio(Property\Audio $audio)
+ * @method Episode setAuthor(Property\Author $author)
+ * @method Episode setAward(Property\Award $award)
+ * @method Episode setCharacter(Property\Character $character)
+ * @method Episode setCitation(Property\Citation $citation)
+ * @method Episode setComment(Property\Comment $comment)
+ * @method Episode setCommentCount(Property\CommentCount $commentCount)
+ * @method Episode setContentLocation(Property\ContentLocation $contentLocation)
+ * @method Episode setContentRating(Property\ContentRating $contentRating)
+ * @method Episode setContributor(Property\Contributor $contributor)
+ * @method Episode setCopyrightHolder(Property\CopyrightHolder $copyrightHolder)
+ * @method Episode setCopyrightYear(Property\CopyrightYear $copyrightYear)
+ * @method Episode setCreator(Property\Creator $creator)
+ * @method Episode setDateCreated(Property\DateCreated $dateCreated)
+ * @method Episode setDateModified(Property\DateModified $dateModified)
+ * @method Episode setDatePublished(Property\DatePublished $datePublished)
+ * @method Episode setDescription(Property\Description $description)
+ * @method Episode setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
+ * @method Episode setDiscussionUrl(Property\DiscussionUrl $discussionUrl)
+ * @method Episode setEditor(Property\Editor $editor)
+ * @method Episode setEducationalAlignment(Property\EducationalAlignment $educationalAlignment)
+ * @method Episode setEducationalUse(Property\EducationalUse $educationalUse)
+ * @method Episode setEncoding(Property\Encoding $encoding)
+ * @method Episode setExampleOfWork(Property\ExampleOfWork $exampleOfWork)
+ * @method Episode setExpires(Property\Expires $expires)
+ * @method Episode setFileFormat(Property\FileFormat $fileFormat)
+ * @method Episode setFunder(Property\Funder $funder)
+ * @method Episode setGenre(Property\Genre $genre)
+ * @method Episode setHasPart(Property\HasPart $hasPart)
+ * @method Episode setHeadline(Property\Headline $headline)
+ * @method Episode setIdentifier(Property\Identifier $identifier)
+ * @method Episode setImage(Property\Image $image)
+ * @method Episode setInLanguage(Property\InLanguage $inLanguage)
+ * @method Episode setInteractionStatistic(Property\InteractionStatistic $interactionStatistic)
+ * @method Episode setInteractivityType(Property\InteractivityType $interactivityType)
+ * @method Episode setIsAccessibleForFree(Property\IsAccessibleForFree $isAccessibleForFree)
+ * @method Episode setIsBasedOn(Property\IsBasedOn $isBasedOn)
+ * @method Episode setIsFamilyFriendly(Property\IsFamilyFriendly $isFamilyFriendly)
+ * @method Episode setIsPartOf(Property\IsPartOf $isPartOf)
+ * @method Episode setKeywords(Property\Keywords $keywords)
+ * @method Episode setLearningResourceType(Property\LearningResourceType $learningResourceType)
+ * @method Episode setLicense(Property\License $license)
+ * @method Episode setLocationCreated(Property\LocationCreated $locationCreated)
+ * @method Episode setMainEntity(Property\MainEntity $mainEntity)
+ * @method Episode setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
+ * @method Episode setMaterial(Property\Material $material)
+ * @method Episode setMentions(Property\Mentions $mentions)
+ * @method Episode setName(Property\Name $name)
+ * @method Episode setOffers(Property\Offers $offers)
+ * @method Episode setPosition(Property\Position $position)
+ * @method Episode setPotentialAction(Property\PotentialAction $potentialAction)
+ * @method Episode setProducer(Property\Producer $producer)
+ * @method Episode setProvider(Property\Provider $provider)
+ * @method Episode setPublication(Property\Publication $publication)
+ * @method Episode setPublisher(Property\Publisher $publisher)
+ * @method Episode setPublishingPrinciples(Property\PublishingPrinciples $publishingPrinciples)
+ * @method Episode setRecordedAt(Property\RecordedAt $recordedAt)
+ * @method Episode setReleasedEvent(Property\ReleasedEvent $releasedEvent)
+ * @method Episode setReview(Property\Review $review)
+ * @method Episode setSameAs(Property\SameAs $sameAs)
+ * @method Episode setSchemaVersion(Property\SchemaVersion $schemaVersion)
+ * @method Episode setSourceOrganization(Property\SourceOrganization $sourceOrganization)
+ * @method Episode setSpatialCoverage(Property\SpatialCoverage $spatialCoverage)
+ * @method Episode setSponsor(Property\Sponsor $sponsor)
+ * @method Episode setTemporalCoverage(Property\TemporalCoverage $temporalCoverage)
+ * @method Episode setText(Property\Text $text)
+ * @method Episode setThumbnailUrl(Property\ThumbnailUrl $thumbnailUrl)
+ * @method Episode setTimeRequired(Property\TimeRequired $timeRequired)
+ * @method Episode setTranslator(Property\Translator $translator)
+ * @method Episode setTypicalAgeRange(Property\TypicalAgeRange $typicalAgeRange)
+ * @method Episode setUrl(Property\Url $url)
+ * @method Episode setVersion(Property\Version $version)
+ * @method Episode setVideo(Property\Video $video)
+ * @method Episode setWorkExample(Property\WorkExample $workExample)
  */
-class Episode {
+class Episode extends CreativeWork {
 
 	/**
 	 * @var Property\Actor
@@ -23,10 +112,6 @@ class Episode {
 	 * @var Property\EpisodeNumber
 	 */
 	private $episodeNumber;
-
-	/**
-	 */
-	private $id;
 
 	/**
 	 * @var Property\MusicBy
@@ -54,15 +139,6 @@ class Episode {
 	private $trailer;
 
 	/**
-	 * Episode constructor.
-	 * 
-	 * @param string $id
-	 */
-	public function __construct($id = null) {
-		$this->id = $id;
-	}
-
-	/**
 	 * Get actor.
 	 * 
 	 * @return Property\Actor
@@ -87,15 +163,6 @@ class Episode {
 	 */
 	public function getEpisodeNumber() {
 		return $this->episodeNumber;
-	}
-
-	/**
-	 * Get id.
-	 * 
-	 * @return string
-	 */
-	public function getId() {
-		return $this->id;
 	}
 
 	/**

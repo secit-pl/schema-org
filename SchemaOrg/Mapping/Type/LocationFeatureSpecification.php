@@ -7,11 +7,22 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class LocationFeatureSpecification.
  * 
+ * @method LocationFeatureSpecification setAdditionalType(Property\AdditionalType $additionalType)
+ * @method LocationFeatureSpecification setAlternateName(Property\AlternateName $alternateName)
+ * @method LocationFeatureSpecification setDescription(Property\Description $description)
+ * @method LocationFeatureSpecification setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
+ * @method LocationFeatureSpecification setIdentifier(Property\Identifier $identifier)
+ * @method LocationFeatureSpecification setImage(Property\Image $image)
+ * @method LocationFeatureSpecification setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
  * @method LocationFeatureSpecification setMaxValue(Property\MaxValue $maxValue)
  * @method LocationFeatureSpecification setMinValue(Property\MinValue $minValue)
+ * @method LocationFeatureSpecification setName(Property\Name $name)
+ * @method LocationFeatureSpecification setPotentialAction(Property\PotentialAction $potentialAction)
  * @method LocationFeatureSpecification setPropertyID(Property\PropertyID $propertyID)
+ * @method LocationFeatureSpecification setSameAs(Property\SameAs $sameAs)
  * @method LocationFeatureSpecification setUnitCode(Property\UnitCode $unitCode)
  * @method LocationFeatureSpecification setUnitText(Property\UnitText $unitText)
+ * @method LocationFeatureSpecification setUrl(Property\Url $url)
  * @method LocationFeatureSpecification setValue(Property\Value $value)
  * @method LocationFeatureSpecification setValueReference(Property\ValueReference $valueReference)
  */

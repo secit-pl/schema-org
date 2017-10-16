@@ -7,7 +7,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class MusicRelease.
  * 
- * @method MusicRelease setAbout(Property\About $about)
  * @method MusicRelease setAccessMode(Property\AccessMode $accessMode)
  * @method MusicRelease setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method MusicRelease setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)
@@ -46,6 +45,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MusicRelease setEducationalUse(Property\EducationalUse $educationalUse)
  * @method MusicRelease setEncoding(Property\Encoding $encoding)
  * @method MusicRelease setExampleOfWork(Property\ExampleOfWork $exampleOfWork)
+ * @method MusicRelease setExpires(Property\Expires $expires)
  * @method MusicRelease setFileFormat(Property\FileFormat $fileFormat)
  * @method MusicRelease setFunder(Property\Funder $funder)
  * @method MusicRelease setGenre(Property\Genre $genre)
@@ -111,11 +111,6 @@ class MusicRelease extends MusicPlaylist {
 	private $creditedTo;
 
 	/**
-	 * @var Property\Duration
-	 */
-	private $duration;
-
-	/**
 	 * @var Property\MusicReleaseFormat
 	 */
 	private $musicReleaseFormat;
@@ -146,15 +141,6 @@ class MusicRelease extends MusicPlaylist {
 	 */
 	public function getCreditedTo() {
 		return $this->creditedTo;
-	}
-
-	/**
-	 * Get duration.
-	 * 
-	 * @return Property\Duration
-	 */
-	public function getDuration() {
-		return $this->duration;
 	}
 
 	/**
@@ -213,18 +199,6 @@ class MusicRelease extends MusicPlaylist {
 	 */
 	public function setCreditedTo(Property\CreditedTo $creditedTo) {
 		$this->creditedTo = $creditedTo;
-
-		return $this;
-	}
-
-	/**
-	 * Set duration.
-	 * 
-	 * @param Property\Duration $duration
-	 * @return MusicRelease
-	 */
-	public function setDuration(Property\Duration $duration) {
-		$this->duration = $duration;
 
 		return $this;
 	}

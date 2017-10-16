@@ -7,7 +7,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class VisualArtsEvent.
  * 
- * @method VisualArtsEvent setAbout(Property\About $about)
  * @method VisualArtsEvent setActor(Property\Actor $actor)
  * @method VisualArtsEvent setAdditionalType(Property\AdditionalType $additionalType)
  * @method VisualArtsEvent setAggregateRating(Property\AggregateRating $aggregateRating)
@@ -20,7 +19,6 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method VisualArtsEvent setDirector(Property\Director $director)
  * @method VisualArtsEvent setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
  * @method VisualArtsEvent setDoorTime(Property\DoorTime $doorTime)
- * @method VisualArtsEvent setDuration(Property\Duration $duration)
  * @method VisualArtsEvent setEndDate(Property\EndDate $endDate)
  * @method VisualArtsEvent setEventStatus(Property\EventStatus $eventStatus)
  * @method VisualArtsEvent setFunder(Property\Funder $funder)

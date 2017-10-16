@@ -3,6 +3,7 @@
 namespace SecIT\SchemaOrg\Mapping\Property;
 
 use SecIT\SchemaOrg\Mapping\DataType;
+use SecIT\SchemaOrg\Mapping\Type;
 
 /**
  * PublishingPrinciples class.
@@ -27,6 +28,6 @@ class PublishingPrinciples extends AbstractProperty {
 	 * @return bool
 	 */
 	public function isValueValid($value) {
-		return $value instanceof DataType\URLType;
+		return $value instanceof Type\CreativeWork || $value instanceof DataType\URLType;
 	}
 }

@@ -5,11 +5,11 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * About class.
+ * BccRecipient class.
  * 
- * @method About setValue($value)
+ * @method BccRecipient setValue($value)
  */
-class About extends AbstractProperty {
+class BccRecipient extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
@@ -17,7 +17,7 @@ class About extends AbstractProperty {
 	 * @return string
 	 */
 	public function getSchemaUrl() {
-		return 'https://schema.org/about';
+		return 'https://schema.org/bccRecipient';
 	}
 
 	/**
@@ -27,6 +27,6 @@ class About extends AbstractProperty {
 	 * @return bool
 	 */
 	public function isValueValid($value) {
-		return $value instanceof Type\Thing;
+		return $value instanceof Type\ContactPoint || $value instanceof Type\Organization || $value instanceof Type\Person;
 	}
 }

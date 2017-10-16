@@ -7,7 +7,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Message.
  * 
- * @method Message setAbout(Property\About $about)
  * @method Message setAccessMode(Property\AccessMode $accessMode)
  * @method Message setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method Message setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)
@@ -46,6 +45,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method Message setEducationalUse(Property\EducationalUse $educationalUse)
  * @method Message setEncoding(Property\Encoding $encoding)
  * @method Message setExampleOfWork(Property\ExampleOfWork $exampleOfWork)
+ * @method Message setExpires(Property\Expires $expires)
  * @method Message setFileFormat(Property\FileFormat $fileFormat)
  * @method Message setFunder(Property\Funder $funder)
  * @method Message setGenre(Property\Genre $genre)
@@ -99,6 +99,16 @@ use SecIT\SchemaOrg\Mapping\Property;
 class Message extends CreativeWork {
 
 	/**
+	 * @var Property\BccRecipient
+	 */
+	private $bccRecipient;
+
+	/**
+	 * @var Property\CcRecipient
+	 */
+	private $ccRecipient;
+
+	/**
 	 * @var Property\DateRead
 	 */
 	private $dateRead;
@@ -127,6 +137,29 @@ class Message extends CreativeWork {
 	 * @var Property\Sender
 	 */
 	private $sender;
+
+	/**
+	 * @var Property\ToRecipient
+	 */
+	private $toRecipient;
+
+	/**
+	 * Get bcc recipient.
+	 * 
+	 * @return Property\BccRecipient
+	 */
+	public function getBccRecipient() {
+		return $this->bccRecipient;
+	}
+
+	/**
+	 * Get cc recipient.
+	 * 
+	 * @return Property\CcRecipient
+	 */
+	public function getCcRecipient() {
+		return $this->ccRecipient;
+	}
 
 	/**
 	 * Get date read.
@@ -189,6 +222,39 @@ class Message extends CreativeWork {
 	 */
 	public function getSender() {
 		return $this->sender;
+	}
+
+	/**
+	 * Get to recipient.
+	 * 
+	 * @return Property\ToRecipient
+	 */
+	public function getToRecipient() {
+		return $this->toRecipient;
+	}
+
+	/**
+	 * Set bcc recipient.
+	 * 
+	 * @param Property\BccRecipient $bccRecipient
+	 * @return Message
+	 */
+	public function setBccRecipient(Property\BccRecipient $bccRecipient) {
+		$this->bccRecipient = $bccRecipient;
+
+		return $this;
+	}
+
+	/**
+	 * Set cc recipient.
+	 * 
+	 * @param Property\CcRecipient $ccRecipient
+	 * @return Message
+	 */
+	public function setCcRecipient(Property\CcRecipient $ccRecipient) {
+		$this->ccRecipient = $ccRecipient;
+
+		return $this;
 	}
 
 	/**
@@ -259,6 +325,18 @@ class Message extends CreativeWork {
 	 */
 	public function setSender(Property\Sender $sender) {
 		$this->sender = $sender;
+
+		return $this;
+	}
+
+	/**
+	 * Set to recipient.
+	 * 
+	 * @param Property\ToRecipient $toRecipient
+	 * @return Message
+	 */
+	public function setToRecipient(Property\ToRecipient $toRecipient) {
+		$this->toRecipient = $toRecipient;
 
 		return $this;
 	}

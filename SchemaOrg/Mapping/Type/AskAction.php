@@ -7,7 +7,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class AskAction.
  * 
- * @method AskAction setAbout(Property\About $about)
  * @method AskAction setInLanguage(Property\InLanguage $inLanguage)
  * @method AskAction setRecipient(Property\Recipient $recipient)
  */

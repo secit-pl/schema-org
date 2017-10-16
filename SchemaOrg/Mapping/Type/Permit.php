@@ -6,12 +6,20 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class Permit.
+ * 
+ * @method Permit setAdditionalType(Property\AdditionalType $additionalType)
+ * @method Permit setAlternateName(Property\AlternateName $alternateName)
+ * @method Permit setDescription(Property\Description $description)
+ * @method Permit setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
+ * @method Permit setIdentifier(Property\Identifier $identifier)
+ * @method Permit setImage(Property\Image $image)
+ * @method Permit setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
+ * @method Permit setName(Property\Name $name)
+ * @method Permit setPotentialAction(Property\PotentialAction $potentialAction)
+ * @method Permit setSameAs(Property\SameAs $sameAs)
+ * @method Permit setUrl(Property\Url $url)
  */
-class Permit {
-
-	/**
-	 */
-	private $id;
+class Permit extends Intangible {
 
 	/**
 	 * @var Property\IssuedBy
@@ -47,24 +55,6 @@ class Permit {
 	 * @var Property\ValidUntil
 	 */
 	private $validUntil;
-
-	/**
-	 * Permit constructor.
-	 * 
-	 * @param string $id
-	 */
-	public function __construct($id = null) {
-		$this->id = $id;
-	}
-
-	/**
-	 * Get id.
-	 * 
-	 * @return string
-	 */
-	public function getId() {
-		return $this->id;
-	}
 
 	/**
 	 * Get issued by.

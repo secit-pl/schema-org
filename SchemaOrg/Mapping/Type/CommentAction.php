@@ -7,7 +7,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class CommentAction.
  * 
- * @method CommentAction setAbout(Property\About $about)
  * @method CommentAction setInLanguage(Property\InLanguage $inLanguage)
  * @method CommentAction setRecipient(Property\Recipient $recipient)
  */

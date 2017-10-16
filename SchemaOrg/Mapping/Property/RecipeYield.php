@@ -3,6 +3,7 @@
 namespace SecIT\SchemaOrg\Mapping\Property;
 
 use SecIT\SchemaOrg\Mapping\DataType;
+use SecIT\SchemaOrg\Mapping\Type;
 
 /**
  * RecipeYield class.
@@ -27,6 +28,6 @@ class RecipeYield extends AbstractProperty {
 	 * @return bool
 	 */
 	public function isValueValid($value) {
-		return $value instanceof DataType\TextType;
+		return $value instanceof Type\QuantitativeValue || $value instanceof DataType\TextType;
 	}
 }

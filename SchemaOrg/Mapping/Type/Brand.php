@@ -6,6 +6,18 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class Brand.
+ * 
+ * @method Brand setAdditionalType(Property\AdditionalType $additionalType)
+ * @method Brand setAlternateName(Property\AlternateName $alternateName)
+ * @method Brand setDescription(Property\Description $description)
+ * @method Brand setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
+ * @method Brand setIdentifier(Property\Identifier $identifier)
+ * @method Brand setImage(Property\Image $image)
+ * @method Brand setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
+ * @method Brand setName(Property\Name $name)
+ * @method Brand setPotentialAction(Property\PotentialAction $potentialAction)
+ * @method Brand setSameAs(Property\SameAs $sameAs)
+ * @method Brand setUrl(Property\Url $url)
  */
 class Brand extends Intangible {
 

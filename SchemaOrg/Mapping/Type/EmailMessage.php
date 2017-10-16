@@ -7,7 +7,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class EmailMessage.
  * 
- * @method EmailMessage setAbout(Property\About $about)
  * @method EmailMessage setAccessMode(Property\AccessMode $accessMode)
  * @method EmailMessage setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method EmailMessage setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)
@@ -25,6 +24,8 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method EmailMessage setAudio(Property\Audio $audio)
  * @method EmailMessage setAuthor(Property\Author $author)
  * @method EmailMessage setAward(Property\Award $award)
+ * @method EmailMessage setBccRecipient(Property\BccRecipient $bccRecipient)
+ * @method EmailMessage setCcRecipient(Property\CcRecipient $ccRecipient)
  * @method EmailMessage setCharacter(Property\Character $character)
  * @method EmailMessage setCitation(Property\Citation $citation)
  * @method EmailMessage setComment(Property\Comment $comment)
@@ -49,6 +50,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method EmailMessage setEducationalUse(Property\EducationalUse $educationalUse)
  * @method EmailMessage setEncoding(Property\Encoding $encoding)
  * @method EmailMessage setExampleOfWork(Property\ExampleOfWork $exampleOfWork)
+ * @method EmailMessage setExpires(Property\Expires $expires)
  * @method EmailMessage setFileFormat(Property\FileFormat $fileFormat)
  * @method EmailMessage setFunder(Property\Funder $funder)
  * @method EmailMessage setGenre(Property\Genre $genre)
@@ -95,6 +97,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method EmailMessage setText(Property\Text $text)
  * @method EmailMessage setThumbnailUrl(Property\ThumbnailUrl $thumbnailUrl)
  * @method EmailMessage setTimeRequired(Property\TimeRequired $timeRequired)
+ * @method EmailMessage setToRecipient(Property\ToRecipient $toRecipient)
  * @method EmailMessage setTranslator(Property\Translator $translator)
  * @method EmailMessage setTypicalAgeRange(Property\TypicalAgeRange $typicalAgeRange)
  * @method EmailMessage setUrl(Property\Url $url)

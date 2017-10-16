@@ -2,8 +2,6 @@
 
 namespace SecIT\SchemaOrg\Mapping\Property;
 
-use SecIT\SchemaOrg\Mapping\Type;
-
 /**
  * Error class.
  * 
@@ -27,6 +25,6 @@ class Error extends AbstractProperty {
 	 * @return bool
 	 */
 	public function isValueValid($value) {
-		return $value instanceof Type\Thing;
+		return true;
 	}
 }

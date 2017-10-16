@@ -7,7 +7,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class ItemPage.
  * 
- * @method ItemPage setAbout(Property\About $about)
  * @method ItemPage setAccessMode(Property\AccessMode $accessMode)
  * @method ItemPage setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method ItemPage setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)
@@ -47,6 +46,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ItemPage setEducationalUse(Property\EducationalUse $educationalUse)
  * @method ItemPage setEncoding(Property\Encoding $encoding)
  * @method ItemPage setExampleOfWork(Property\ExampleOfWork $exampleOfWork)
+ * @method ItemPage setExpires(Property\Expires $expires)
  * @method ItemPage setFileFormat(Property\FileFormat $fileFormat)
  * @method ItemPage setFunder(Property\Funder $funder)
  * @method ItemPage setGenre(Property\Genre $genre)

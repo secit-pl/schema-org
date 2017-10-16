@@ -2,32 +2,20 @@
 
 namespace SecIT\SchemaOrg\Mapping\Type;
 
+use SecIT\SchemaOrg\Mapping\Property;
+
 /**
  * Class Campground.
+ * 
+ * @method Campground setAmenityFeature(Property\AmenityFeature $amenityFeature)
+ * @method Campground setAudience(Property\Audience $audience)
+ * @method Campground setAvailableLanguage(Property\AvailableLanguage $availableLanguage)
+ * @method Campground setCheckinTime(Property\CheckinTime $checkinTime)
+ * @method Campground setCheckoutTime(Property\CheckoutTime $checkoutTime)
+ * @method Campground setPetsAllowed(Property\PetsAllowed $petsAllowed)
+ * @method Campground setStarRating(Property\StarRating $starRating)
  */
-class Campground {
-
-	/**
-	 */
-	private $id;
-
-	/**
-	 * Campground constructor.
-	 * 
-	 * @param string $id
-	 */
-	public function __construct($id = null) {
-		$this->id = $id;
-	}
-
-	/**
-	 * Get id.
-	 * 
-	 * @return string
-	 */
-	public function getId() {
-		return $this->id;
-	}
+class Campground extends LodgingBusiness {
 
 	/**
 	 * Get schema URL.

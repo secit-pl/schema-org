@@ -7,7 +7,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class ProfilePage.
  * 
- * @method ProfilePage setAbout(Property\About $about)
  * @method ProfilePage setAccessMode(Property\AccessMode $accessMode)
  * @method ProfilePage setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method ProfilePage setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)
@@ -47,6 +46,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ProfilePage setEducationalUse(Property\EducationalUse $educationalUse)
  * @method ProfilePage setEncoding(Property\Encoding $encoding)
  * @method ProfilePage setExampleOfWork(Property\ExampleOfWork $exampleOfWork)
+ * @method ProfilePage setExpires(Property\Expires $expires)
  * @method ProfilePage setFileFormat(Property\FileFormat $fileFormat)
  * @method ProfilePage setFunder(Property\Funder $funder)
  * @method ProfilePage setGenre(Property\Genre $genre)

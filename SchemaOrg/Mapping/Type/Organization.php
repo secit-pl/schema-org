@@ -6,8 +6,20 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class Organization.
+ * 
+ * @method Organization setAdditionalType(Property\AdditionalType $additionalType)
+ * @method Organization setAlternateName(Property\AlternateName $alternateName)
+ * @method Organization setDescription(Property\Description $description)
+ * @method Organization setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
+ * @method Organization setIdentifier(Property\Identifier $identifier)
+ * @method Organization setImage(Property\Image $image)
+ * @method Organization setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
+ * @method Organization setName(Property\Name $name)
+ * @method Organization setPotentialAction(Property\PotentialAction $potentialAction)
+ * @method Organization setSameAs(Property\SameAs $sameAs)
+ * @method Organization setUrl(Property\Url $url)
  */
-class Organization {
+class Organization extends Thing {
 
 	/**
 	 * @var Property\Address
@@ -115,10 +127,6 @@ class Organization {
 	private $hasPOS;
 
 	/**
-	 */
-	private $id;
-
-	/**
 	 * @var Property\IsicV4
 	 */
 	private $isicV4;
@@ -179,6 +187,11 @@ class Organization {
 	private $parentOrganization;
 
 	/**
+	 * @var Property\PublishingPrinciples
+	 */
+	private $publishingPrinciples;
+
+	/**
 	 * @var Property\Review
 	 */
 	private $review;
@@ -212,15 +225,6 @@ class Organization {
 	 * @var Property\VatID
 	 */
 	private $vatID;
-
-	/**
-	 * Organization constructor.
-	 * 
-	 * @param string $id
-	 */
-	public function __construct($id = null) {
-		$this->id = $id;
-	}
 
 	/**
 	 * Get address.
@@ -412,15 +416,6 @@ class Organization {
 	}
 
 	/**
-	 * Get id.
-	 * 
-	 * @return string
-	 */
-	public function getId() {
-		return $this->id;
-	}
-
-	/**
 	 * Get isicv4.
 	 * 
 	 * @return Property\IsicV4
@@ -526,6 +521,15 @@ class Organization {
 	 */
 	public function getParentOrganization() {
 		return $this->parentOrganization;
+	}
+
+	/**
+	 * Get publishing principles.
+	 * 
+	 * @return Property\PublishingPrinciples
+	 */
+	public function getPublishingPrinciples() {
+		return $this->publishingPrinciples;
 	}
 
 	/**
@@ -992,6 +996,18 @@ class Organization {
 	 */
 	public function setParentOrganization(Property\ParentOrganization $parentOrganization) {
 		$this->parentOrganization = $parentOrganization;
+
+		return $this;
+	}
+
+	/**
+	 * Set publishing principles.
+	 * 
+	 * @param Property\PublishingPrinciples $publishingPrinciples
+	 * @return Organization
+	 */
+	public function setPublishingPrinciples(Property\PublishingPrinciples $publishingPrinciples) {
+		$this->publishingPrinciples = $publishingPrinciples;
 
 		return $this;
 	}

@@ -7,7 +7,7 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Order.
  */
-class Order extends Intangible {
+class Order {
 
 	/**
 	 * @var Property\AcceptedOffer
@@ -48,6 +48,10 @@ class Order extends Intangible {
 	 * @var Property\DiscountCurrency
 	 */
 	private $discountCurrency;
+
+	/**
+	 */
+	private $id;
 
 	/**
 	 * @var Property\IsGift
@@ -108,6 +112,15 @@ class Order extends Intangible {
 	 * @var Property\Seller
 	 */
 	private $seller;
+
+	/**
+	 * Order constructor.
+	 * 
+	 * @param string $id
+	 */
+	public function __construct($id = null) {
+		$this->id = $id;
+	}
 
 	/**
 	 * Get accepted offer.
@@ -179,6 +192,15 @@ class Order extends Intangible {
 	 */
 	public function getDiscountCurrency() {
 		return $this->discountCurrency;
+	}
+
+	/**
+	 * Get id.
+	 * 
+	 * @return string
+	 */
+	public function getId() {
+		return $this->id;
 	}
 
 	/**

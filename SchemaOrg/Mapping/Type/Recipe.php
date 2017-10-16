@@ -7,7 +7,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Recipe.
  * 
- * @method Recipe setAbout(Property\About $about)
  * @method Recipe setAccessMode(Property\AccessMode $accessMode)
  * @method Recipe setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method Recipe setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)
@@ -45,7 +44,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method Recipe setEducationalAlignment(Property\EducationalAlignment $educationalAlignment)
  * @method Recipe setEducationalUse(Property\EducationalUse $educationalUse)
  * @method Recipe setEncoding(Property\Encoding $encoding)
+ * @method Recipe setEstimatedCost(Property\EstimatedCost $estimatedCost)
  * @method Recipe setExampleOfWork(Property\ExampleOfWork $exampleOfWork)
+ * @method Recipe setExpires(Property\Expires $expires)
  * @method Recipe setFileFormat(Property\FileFormat $fileFormat)
  * @method Recipe setFunder(Property\Funder $funder)
  * @method Recipe setGenre(Property\Genre $genre)
@@ -70,8 +71,10 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method Recipe setMentions(Property\Mentions $mentions)
  * @method Recipe setName(Property\Name $name)
  * @method Recipe setOffers(Property\Offers $offers)
+ * @method Recipe setPerformTime(Property\PerformTime $performTime)
  * @method Recipe setPosition(Property\Position $position)
  * @method Recipe setPotentialAction(Property\PotentialAction $potentialAction)
+ * @method Recipe setPrepTime(Property\PrepTime $prepTime)
  * @method Recipe setProducer(Property\Producer $producer)
  * @method Recipe setProvider(Property\Provider $provider)
  * @method Recipe setPublication(Property\Publication $publication)
@@ -85,18 +88,23 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method Recipe setSourceOrganization(Property\SourceOrganization $sourceOrganization)
  * @method Recipe setSpatialCoverage(Property\SpatialCoverage $spatialCoverage)
  * @method Recipe setSponsor(Property\Sponsor $sponsor)
+ * @method Recipe setStep(Property\Step $step)
+ * @method Recipe setSupply(Property\Supply $supply)
  * @method Recipe setTemporalCoverage(Property\TemporalCoverage $temporalCoverage)
  * @method Recipe setText(Property\Text $text)
  * @method Recipe setThumbnailUrl(Property\ThumbnailUrl $thumbnailUrl)
  * @method Recipe setTimeRequired(Property\TimeRequired $timeRequired)
+ * @method Recipe setTool(Property\Tool $tool)
+ * @method Recipe setTotalTime(Property\TotalTime $totalTime)
  * @method Recipe setTranslator(Property\Translator $translator)
  * @method Recipe setTypicalAgeRange(Property\TypicalAgeRange $typicalAgeRange)
  * @method Recipe setUrl(Property\Url $url)
  * @method Recipe setVersion(Property\Version $version)
  * @method Recipe setVideo(Property\Video $video)
  * @method Recipe setWorkExample(Property\WorkExample $workExample)
+ * @method Recipe setYield(Property\Yield $yield)
  */
-class Recipe extends CreativeWork {
+class Recipe extends HowTo {
 
 	/**
 	 * @var Property\CookingMethod
@@ -112,11 +120,6 @@ class Recipe extends CreativeWork {
 	 * @var Property\Nutrition
 	 */
 	private $nutrition;
-
-	/**
-	 * @var Property\PrepTime
-	 */
-	private $prepTime;
 
 	/**
 	 * @var Property\RecipeCategory
@@ -149,11 +152,6 @@ class Recipe extends CreativeWork {
 	private $suitableForDiet;
 
 	/**
-	 * @var Property\TotalTime
-	 */
-	private $totalTime;
-
-	/**
 	 * Get cooking method.
 	 * 
 	 * @return Property\CookingMethod
@@ -178,15 +176,6 @@ class Recipe extends CreativeWork {
 	 */
 	public function getNutrition() {
 		return $this->nutrition;
-	}
-
-	/**
-	 * Get prep time.
-	 * 
-	 * @return Property\PrepTime
-	 */
-	public function getPrepTime() {
-		return $this->prepTime;
 	}
 
 	/**
@@ -253,15 +242,6 @@ class Recipe extends CreativeWork {
 	}
 
 	/**
-	 * Get total time.
-	 * 
-	 * @return Property\TotalTime
-	 */
-	public function getTotalTime() {
-		return $this->totalTime;
-	}
-
-	/**
 	 * Set cooking method.
 	 * 
 	 * @param Property\CookingMethod $cookingMethod
@@ -293,18 +273,6 @@ class Recipe extends CreativeWork {
 	 */
 	public function setNutrition(Property\Nutrition $nutrition) {
 		$this->nutrition = $nutrition;
-
-		return $this;
-	}
-
-	/**
-	 * Set prep time.
-	 * 
-	 * @param Property\PrepTime $prepTime
-	 * @return Recipe
-	 */
-	public function setPrepTime(Property\PrepTime $prepTime) {
-		$this->prepTime = $prepTime;
 
 		return $this;
 	}
@@ -377,18 +345,6 @@ class Recipe extends CreativeWork {
 	 */
 	public function setSuitableForDiet(Property\SuitableForDiet $suitableForDiet) {
 		$this->suitableForDiet = $suitableForDiet;
-
-		return $this;
-	}
-
-	/**
-	 * Set total time.
-	 * 
-	 * @param Property\TotalTime $totalTime
-	 * @return Recipe
-	 */
-	public function setTotalTime(Property\TotalTime $totalTime) {
-		$this->totalTime = $totalTime;
 
 		return $this;
 	}

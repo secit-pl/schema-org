@@ -2,53 +2,32 @@
 
 namespace SecIT\SchemaOrg\Mapping\Type;
 
-use SecIT\SchemaOrg\Mapping\Property;
-
 /**
  * Class DanceGroup.
- * 
- * @method DanceGroup setAddress(Property\Address $address)
- * @method DanceGroup setAggregateRating(Property\AggregateRating $aggregateRating)
- * @method DanceGroup setAlumni(Property\Alumni $alumni)
- * @method DanceGroup setAreaServed(Property\AreaServed $areaServed)
- * @method DanceGroup setAward(Property\Award $award)
- * @method DanceGroup setBrand(Property\Brand $brand)
- * @method DanceGroup setContactPoint(Property\ContactPoint $contactPoint)
- * @method DanceGroup setDepartment(Property\Department $department)
- * @method DanceGroup setDissolutionDate(Property\DissolutionDate $dissolutionDate)
- * @method DanceGroup setDuns(Property\Duns $duns)
- * @method DanceGroup setEmail(Property\Email $email)
- * @method DanceGroup setEmployee(Property\Employee $employee)
- * @method DanceGroup setEvent(Property\Event $event)
- * @method DanceGroup setFaxNumber(Property\FaxNumber $faxNumber)
- * @method DanceGroup setFounder(Property\Founder $founder)
- * @method DanceGroup setFoundingDate(Property\FoundingDate $foundingDate)
- * @method DanceGroup setFoundingLocation(Property\FoundingLocation $foundingLocation)
- * @method DanceGroup setFunder(Property\Funder $funder)
- * @method DanceGroup setGlobalLocationNumber(Property\GlobalLocationNumber $globalLocationNumber)
- * @method DanceGroup setHasOfferCatalog(Property\HasOfferCatalog $hasOfferCatalog)
- * @method DanceGroup setHasPOS(Property\HasPOS $hasPOS)
- * @method DanceGroup setIsicV4(Property\IsicV4 $isicV4)
- * @method DanceGroup setLegalName(Property\LegalName $legalName)
- * @method DanceGroup setLeiCode(Property\LeiCode $leiCode)
- * @method DanceGroup setLocation(Property\Location $location)
- * @method DanceGroup setLogo(Property\Logo $logo)
- * @method DanceGroup setMakesOffer(Property\MakesOffer $makesOffer)
- * @method DanceGroup setMember(Property\Member $member)
- * @method DanceGroup setMemberOf(Property\MemberOf $memberOf)
- * @method DanceGroup setNaics(Property\Naics $naics)
- * @method DanceGroup setNumberOfEmployees(Property\NumberOfEmployees $numberOfEmployees)
- * @method DanceGroup setOwns(Property\Owns $owns)
- * @method DanceGroup setParentOrganization(Property\ParentOrganization $parentOrganization)
- * @method DanceGroup setReview(Property\Review $review)
- * @method DanceGroup setSeeks(Property\Seeks $seeks)
- * @method DanceGroup setSponsor(Property\Sponsor $sponsor)
- * @method DanceGroup setSubOrganization(Property\SubOrganization $subOrganization)
- * @method DanceGroup setTaxID(Property\TaxID $taxID)
- * @method DanceGroup setTelephone(Property\Telephone $telephone)
- * @method DanceGroup setVatID(Property\VatID $vatID)
  */
-class DanceGroup extends PerformingGroup {
+class DanceGroup {
+
+	/**
+	 */
+	private $id;
+
+	/**
+	 * DanceGroup constructor.
+	 * 
+	 * @param string $id
+	 */
+	public function __construct($id = null) {
+		$this->id = $id;
+	}
+
+	/**
+	 * Get id.
+	 * 
+	 * @return string
+	 */
+	public function getId() {
+		return $this->id;
+	}
 
 	/**
 	 * Get schema URL.

@@ -7,7 +7,7 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class WarrantyPromise.
  */
-class WarrantyPromise extends StructuredValue {
+class WarrantyPromise {
 
 	/**
 	 * @var Property\DurationOfWarranty
@@ -15,9 +15,22 @@ class WarrantyPromise extends StructuredValue {
 	private $durationOfWarranty;
 
 	/**
+	 */
+	private $id;
+
+	/**
 	 * @var Property\WarrantyScope
 	 */
 	private $warrantyScope;
+
+	/**
+	 * WarrantyPromise constructor.
+	 * 
+	 * @param string $id
+	 */
+	public function __construct($id = null) {
+		$this->id = $id;
+	}
 
 	/**
 	 * Get duration of warranty.
@@ -26,6 +39,15 @@ class WarrantyPromise extends StructuredValue {
 	 */
 	public function getDurationOfWarranty() {
 		return $this->durationOfWarranty;
+	}
+
+	/**
+	 * Get id.
+	 * 
+	 * @return string
+	 */
+	public function getId() {
+		return $this->id;
 	}
 
 	/**

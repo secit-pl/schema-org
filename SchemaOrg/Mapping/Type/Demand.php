@@ -6,6 +6,18 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class Demand.
+ * 
+ * @method Demand setAdditionalType(Property\AdditionalType $additionalType)
+ * @method Demand setAlternateName(Property\AlternateName $alternateName)
+ * @method Demand setDescription(Property\Description $description)
+ * @method Demand setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
+ * @method Demand setIdentifier(Property\Identifier $identifier)
+ * @method Demand setImage(Property\Image $image)
+ * @method Demand setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
+ * @method Demand setName(Property\Name $name)
+ * @method Demand setPotentialAction(Property\PotentialAction $potentialAction)
+ * @method Demand setSameAs(Property\SameAs $sameAs)
+ * @method Demand setUrl(Property\Url $url)
  */
 class Demand extends Intangible {
 

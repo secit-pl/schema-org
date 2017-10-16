@@ -5,29 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 /**
  * Class DiabeticDiet.
  */
-class DiabeticDiet {
-
-	/**
-	 */
-	private $id;
-
-	/**
-	 * DiabeticDiet constructor.
-	 * 
-	 * @param string $id
-	 */
-	public function __construct($id = null) {
-		$this->id = $id;
-	}
-
-	/**
-	 * Get id.
-	 * 
-	 * @return string
-	 */
-	public function getId() {
-		return $this->id;
-	}
+class DiabeticDiet extends RestrictedDiet {
 
 	/**
 	 * Get schema URL.

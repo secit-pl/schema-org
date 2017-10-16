@@ -7,7 +7,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class WPFooter.
  * 
- * @method WPFooter setAbout(Property\About $about)
  * @method WPFooter setAccessMode(Property\AccessMode $accessMode)
  * @method WPFooter setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method WPFooter setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)
@@ -46,6 +45,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method WPFooter setEducationalUse(Property\EducationalUse $educationalUse)
  * @method WPFooter setEncoding(Property\Encoding $encoding)
  * @method WPFooter setExampleOfWork(Property\ExampleOfWork $exampleOfWork)
+ * @method WPFooter setExpires(Property\Expires $expires)
  * @method WPFooter setFileFormat(Property\FileFormat $fileFormat)
  * @method WPFooter setFunder(Property\Funder $funder)
  * @method WPFooter setGenre(Property\Genre $genre)

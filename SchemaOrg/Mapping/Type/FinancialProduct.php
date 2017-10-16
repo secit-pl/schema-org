@@ -7,7 +7,9 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class FinancialProduct.
  * 
+ * @method FinancialProduct setAdditionalType(Property\AdditionalType $additionalType)
  * @method FinancialProduct setAggregateRating(Property\AggregateRating $aggregateRating)
+ * @method FinancialProduct setAlternateName(Property\AlternateName $alternateName)
  * @method FinancialProduct setAreaServed(Property\AreaServed $areaServed)
  * @method FinancialProduct setAudience(Property\Audience $audience)
  * @method FinancialProduct setAvailableChannel(Property\AvailableChannel $availableChannel)
@@ -15,17 +17,26 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method FinancialProduct setBrand(Property\Brand $brand)
  * @method FinancialProduct setBroker(Property\Broker $broker)
  * @method FinancialProduct setCategory(Property\Category $category)
+ * @method FinancialProduct setDescription(Property\Description $description)
+ * @method FinancialProduct setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
  * @method FinancialProduct setHasOfferCatalog(Property\HasOfferCatalog $hasOfferCatalog)
  * @method FinancialProduct setHoursAvailable(Property\HoursAvailable $hoursAvailable)
+ * @method FinancialProduct setIdentifier(Property\Identifier $identifier)
+ * @method FinancialProduct setImage(Property\Image $image)
  * @method FinancialProduct setIsRelatedTo(Property\IsRelatedTo $isRelatedTo)
  * @method FinancialProduct setIsSimilarTo(Property\IsSimilarTo $isSimilarTo)
  * @method FinancialProduct setLogo(Property\Logo $logo)
+ * @method FinancialProduct setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
+ * @method FinancialProduct setName(Property\Name $name)
  * @method FinancialProduct setOffers(Property\Offers $offers)
+ * @method FinancialProduct setPotentialAction(Property\PotentialAction $potentialAction)
  * @method FinancialProduct setProvider(Property\Provider $provider)
  * @method FinancialProduct setProviderMobility(Property\ProviderMobility $providerMobility)
  * @method FinancialProduct setReview(Property\Review $review)
+ * @method FinancialProduct setSameAs(Property\SameAs $sameAs)
  * @method FinancialProduct setServiceOutput(Property\ServiceOutput $serviceOutput)
  * @method FinancialProduct setServiceType(Property\ServiceType $serviceType)
+ * @method FinancialProduct setUrl(Property\Url $url)
  */
 class FinancialProduct extends Service {
 

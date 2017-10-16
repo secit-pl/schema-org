@@ -6,6 +6,18 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class BroadcastChannel.
+ * 
+ * @method BroadcastChannel setAdditionalType(Property\AdditionalType $additionalType)
+ * @method BroadcastChannel setAlternateName(Property\AlternateName $alternateName)
+ * @method BroadcastChannel setDescription(Property\Description $description)
+ * @method BroadcastChannel setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
+ * @method BroadcastChannel setIdentifier(Property\Identifier $identifier)
+ * @method BroadcastChannel setImage(Property\Image $image)
+ * @method BroadcastChannel setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
+ * @method BroadcastChannel setName(Property\Name $name)
+ * @method BroadcastChannel setPotentialAction(Property\PotentialAction $potentialAction)
+ * @method BroadcastChannel setSameAs(Property\SameAs $sameAs)
+ * @method BroadcastChannel setUrl(Property\Url $url)
  */
 class BroadcastChannel extends Intangible {
 

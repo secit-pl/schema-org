@@ -2,21 +2,32 @@
 
 namespace SecIT\SchemaOrg\Mapping\Type;
 
-use SecIT\SchemaOrg\Mapping\Property;
-
 /**
  * Class LeftHandDriving.
- * 
- * @method LeftHandDriving setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
- * @method LeftHandDriving setEqual(Property\Equal $equal)
- * @method LeftHandDriving setGreater(Property\Greater $greater)
- * @method LeftHandDriving setGreaterOrEqual(Property\GreaterOrEqual $greaterOrEqual)
- * @method LeftHandDriving setLesser(Property\Lesser $lesser)
- * @method LeftHandDriving setLesserOrEqual(Property\LesserOrEqual $lesserOrEqual)
- * @method LeftHandDriving setNonEqual(Property\NonEqual $nonEqual)
- * @method LeftHandDriving setValueReference(Property\ValueReference $valueReference)
  */
-class LeftHandDriving extends SteeringPositionValue {
+class LeftHandDriving {
+
+	/**
+	 */
+	private $id;
+
+	/**
+	 * LeftHandDriving constructor.
+	 * 
+	 * @param string $id
+	 */
+	public function __construct($id = null) {
+		$this->id = $id;
+	}
+
+	/**
+	 * Get id.
+	 * 
+	 * @return string
+	 */
+	public function getId() {
+		return $this->id;
+	}
 
 	/**
 	 * Get schema URL.

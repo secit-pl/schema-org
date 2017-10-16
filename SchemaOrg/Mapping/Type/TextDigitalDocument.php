@@ -2,32 +2,14 @@
 
 namespace SecIT\SchemaOrg\Mapping\Type;
 
+use SecIT\SchemaOrg\Mapping\Property;
+
 /**
  * Class TextDigitalDocument.
+ * 
+ * @method TextDigitalDocument setHasDigitalDocumentPermission(Property\HasDigitalDocumentPermission $hasDigitalDocumentPermission)
  */
-class TextDigitalDocument {
-
-	/**
-	 */
-	private $id;
-
-	/**
-	 * TextDigitalDocument constructor.
-	 * 
-	 * @param string $id
-	 */
-	public function __construct($id = null) {
-		$this->id = $id;
-	}
-
-	/**
-	 * Get id.
-	 * 
-	 * @return string
-	 */
-	public function getId() {
-		return $this->id;
-	}
+class TextDigitalDocument extends DigitalDocument {
 
 	/**
 	 * Get schema URL.

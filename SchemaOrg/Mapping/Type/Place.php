@@ -82,6 +82,11 @@ class Place extends Thing {
 	private $hasMap;
 
 	/**
+	 * @var Property\IsAccessibleForFree
+	 */
+	private $isAccessibleForFree;
+
+	/**
 	 * @var Property\IsicV4
 	 */
 	private $isicV4;
@@ -105,6 +110,11 @@ class Place extends Thing {
 	 * @var Property\Photo
 	 */
 	private $photo;
+
+	/**
+	 * @var Property\PublicAccess
+	 */
+	private $publicAccess;
 
 	/**
 	 * @var Property\Review
@@ -235,6 +245,15 @@ class Place extends Thing {
 	}
 
 	/**
+	 * Get is accessible for free.
+	 * 
+	 * @return Property\IsAccessibleForFree
+	 */
+	public function getIsAccessibleForFree() {
+		return $this->isAccessibleForFree;
+	}
+
+	/**
 	 * Get isicv4.
 	 * 
 	 * @return Property\IsicV4
@@ -277,6 +296,15 @@ class Place extends Thing {
 	 */
 	public function getPhoto() {
 		return $this->photo;
+	}
+
+	/**
+	 * Get public access.
+	 * 
+	 * @return Property\PublicAccess
+	 */
+	public function getPublicAccess() {
+		return $this->publicAccess;
 	}
 
 	/**
@@ -469,6 +497,18 @@ class Place extends Thing {
 	}
 
 	/**
+	 * Set is accessible for free.
+	 * 
+	 * @param Property\IsAccessibleForFree $isAccessibleForFree
+	 * @return Place
+	 */
+	public function setIsAccessibleForFree(Property\IsAccessibleForFree $isAccessibleForFree) {
+		$this->isAccessibleForFree = $isAccessibleForFree;
+
+		return $this;
+	}
+
+	/**
 	 * Set isicv4.
 	 * 
 	 * @param Property\IsicV4 $isicV4
@@ -524,6 +564,18 @@ class Place extends Thing {
 	 */
 	public function setPhoto(Property\Photo $photo) {
 		$this->photo = $photo;
+
+		return $this;
+	}
+
+	/**
+	 * Set public access.
+	 * 
+	 * @param Property\PublicAccess $publicAccess
+	 * @return Place
+	 */
+	public function setPublicAccess(Property\PublicAccess $publicAccess) {
+		$this->publicAccess = $publicAccess;
 
 		return $this;
 	}

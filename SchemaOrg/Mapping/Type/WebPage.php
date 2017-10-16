@@ -7,7 +7,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class WebPage.
  * 
- * @method WebPage setAbout(Property\About $about)
  * @method WebPage setAccessMode(Property\AccessMode $accessMode)
  * @method WebPage setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method WebPage setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)
@@ -46,6 +45,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method WebPage setEducationalUse(Property\EducationalUse $educationalUse)
  * @method WebPage setEncoding(Property\Encoding $encoding)
  * @method WebPage setExampleOfWork(Property\ExampleOfWork $exampleOfWork)
+ * @method WebPage setExpires(Property\Expires $expires)
  * @method WebPage setFileFormat(Property\FileFormat $fileFormat)
  * @method WebPage setFunder(Property\Funder $funder)
  * @method WebPage setGenre(Property\Genre $genre)

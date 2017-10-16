@@ -7,7 +7,9 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class BroadcastService.
  * 
+ * @method BroadcastService setAdditionalType(Property\AdditionalType $additionalType)
  * @method BroadcastService setAggregateRating(Property\AggregateRating $aggregateRating)
+ * @method BroadcastService setAlternateName(Property\AlternateName $alternateName)
  * @method BroadcastService setAreaServed(Property\AreaServed $areaServed)
  * @method BroadcastService setAudience(Property\Audience $audience)
  * @method BroadcastService setAvailableChannel(Property\AvailableChannel $availableChannel)
@@ -15,17 +17,26 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method BroadcastService setBrand(Property\Brand $brand)
  * @method BroadcastService setBroker(Property\Broker $broker)
  * @method BroadcastService setCategory(Property\Category $category)
+ * @method BroadcastService setDescription(Property\Description $description)
+ * @method BroadcastService setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
  * @method BroadcastService setHasOfferCatalog(Property\HasOfferCatalog $hasOfferCatalog)
  * @method BroadcastService setHoursAvailable(Property\HoursAvailable $hoursAvailable)
+ * @method BroadcastService setIdentifier(Property\Identifier $identifier)
+ * @method BroadcastService setImage(Property\Image $image)
  * @method BroadcastService setIsRelatedTo(Property\IsRelatedTo $isRelatedTo)
  * @method BroadcastService setIsSimilarTo(Property\IsSimilarTo $isSimilarTo)
  * @method BroadcastService setLogo(Property\Logo $logo)
+ * @method BroadcastService setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
+ * @method BroadcastService setName(Property\Name $name)
  * @method BroadcastService setOffers(Property\Offers $offers)
+ * @method BroadcastService setPotentialAction(Property\PotentialAction $potentialAction)
  * @method BroadcastService setProvider(Property\Provider $provider)
  * @method BroadcastService setProviderMobility(Property\ProviderMobility $providerMobility)
  * @method BroadcastService setReview(Property\Review $review)
+ * @method BroadcastService setSameAs(Property\SameAs $sameAs)
  * @method BroadcastService setServiceOutput(Property\ServiceOutput $serviceOutput)
  * @method BroadcastService setServiceType(Property\ServiceType $serviceType)
+ * @method BroadcastService setUrl(Property\Url $url)
  */
 class BroadcastService extends Service {
 

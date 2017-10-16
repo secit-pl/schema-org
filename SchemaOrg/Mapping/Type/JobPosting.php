@@ -6,6 +6,18 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class JobPosting.
+ * 
+ * @method JobPosting setAdditionalType(Property\AdditionalType $additionalType)
+ * @method JobPosting setAlternateName(Property\AlternateName $alternateName)
+ * @method JobPosting setDescription(Property\Description $description)
+ * @method JobPosting setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
+ * @method JobPosting setIdentifier(Property\Identifier $identifier)
+ * @method JobPosting setImage(Property\Image $image)
+ * @method JobPosting setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
+ * @method JobPosting setName(Property\Name $name)
+ * @method JobPosting setPotentialAction(Property\PotentialAction $potentialAction)
+ * @method JobPosting setSameAs(Property\SameAs $sameAs)
+ * @method JobPosting setUrl(Property\Url $url)
  */
 class JobPosting extends Intangible {
 
@@ -20,19 +32,9 @@ class JobPosting extends Intangible {
 	private $datePosted;
 
 	/**
-	 * @var Property\EducationRequirements
-	 */
-	private $educationRequirements;
-
-	/**
 	 * @var Property\EmploymentType
 	 */
 	private $employmentType;
-
-	/**
-	 * @var Property\ExperienceRequirements
-	 */
-	private $experienceRequirements;
 
 	/**
 	 * @var Property\HiringOrganization
@@ -60,29 +62,9 @@ class JobPosting extends Intangible {
 	private $jobLocation;
 
 	/**
-	 * @var Property\OccupationalCategory
-	 */
-	private $occupationalCategory;
-
-	/**
-	 * @var Property\Qualifications
-	 */
-	private $qualifications;
-
-	/**
-	 * @var Property\Responsibilities
-	 */
-	private $responsibilities;
-
-	/**
 	 * @var Property\SalaryCurrency
 	 */
 	private $salaryCurrency;
-
-	/**
-	 * @var Property\Skills
-	 */
-	private $skills;
 
 	/**
 	 * @var Property\SpecialCommitments
@@ -123,30 +105,12 @@ class JobPosting extends Intangible {
 	}
 
 	/**
-	 * Get education requirements.
-	 * 
-	 * @return Property\EducationRequirements
-	 */
-	public function getEducationRequirements() {
-		return $this->educationRequirements;
-	}
-
-	/**
 	 * Get employment type.
 	 * 
 	 * @return Property\EmploymentType
 	 */
 	public function getEmploymentType() {
 		return $this->employmentType;
-	}
-
-	/**
-	 * Get experience requirements.
-	 * 
-	 * @return Property\ExperienceRequirements
-	 */
-	public function getExperienceRequirements() {
-		return $this->experienceRequirements;
 	}
 
 	/**
@@ -195,33 +159,6 @@ class JobPosting extends Intangible {
 	}
 
 	/**
-	 * Get occupational category.
-	 * 
-	 * @return Property\OccupationalCategory
-	 */
-	public function getOccupationalCategory() {
-		return $this->occupationalCategory;
-	}
-
-	/**
-	 * Get qualifications.
-	 * 
-	 * @return Property\Qualifications
-	 */
-	public function getQualifications() {
-		return $this->qualifications;
-	}
-
-	/**
-	 * Get responsibilities.
-	 * 
-	 * @return Property\Responsibilities
-	 */
-	public function getResponsibilities() {
-		return $this->responsibilities;
-	}
-
-	/**
 	 * Get salary currency.
 	 * 
 	 * @return Property\SalaryCurrency
@@ -237,15 +174,6 @@ class JobPosting extends Intangible {
 	 */
 	public function getSchemaUrl() {
 		return 'https://schema.org/JobPosting';
-	}
-
-	/**
-	 * Get skills.
-	 * 
-	 * @return Property\Skills
-	 */
-	public function getSkills() {
-		return $this->skills;
 	}
 
 	/**
@@ -309,18 +237,6 @@ class JobPosting extends Intangible {
 	}
 
 	/**
-	 * Set education requirements.
-	 * 
-	 * @param Property\EducationRequirements $educationRequirements
-	 * @return JobPosting
-	 */
-	public function setEducationRequirements(Property\EducationRequirements $educationRequirements) {
-		$this->educationRequirements = $educationRequirements;
-
-		return $this;
-	}
-
-	/**
 	 * Set employment type.
 	 * 
 	 * @param Property\EmploymentType $employmentType
@@ -328,18 +244,6 @@ class JobPosting extends Intangible {
 	 */
 	public function setEmploymentType(Property\EmploymentType $employmentType) {
 		$this->employmentType = $employmentType;
-
-		return $this;
-	}
-
-	/**
-	 * Set experience requirements.
-	 * 
-	 * @param Property\ExperienceRequirements $experienceRequirements
-	 * @return JobPosting
-	 */
-	public function setExperienceRequirements(Property\ExperienceRequirements $experienceRequirements) {
-		$this->experienceRequirements = $experienceRequirements;
 
 		return $this;
 	}
@@ -405,42 +309,6 @@ class JobPosting extends Intangible {
 	}
 
 	/**
-	 * Set occupational category.
-	 * 
-	 * @param Property\OccupationalCategory $occupationalCategory
-	 * @return JobPosting
-	 */
-	public function setOccupationalCategory(Property\OccupationalCategory $occupationalCategory) {
-		$this->occupationalCategory = $occupationalCategory;
-
-		return $this;
-	}
-
-	/**
-	 * Set qualifications.
-	 * 
-	 * @param Property\Qualifications $qualifications
-	 * @return JobPosting
-	 */
-	public function setQualifications(Property\Qualifications $qualifications) {
-		$this->qualifications = $qualifications;
-
-		return $this;
-	}
-
-	/**
-	 * Set responsibilities.
-	 * 
-	 * @param Property\Responsibilities $responsibilities
-	 * @return JobPosting
-	 */
-	public function setResponsibilities(Property\Responsibilities $responsibilities) {
-		$this->responsibilities = $responsibilities;
-
-		return $this;
-	}
-
-	/**
 	 * Set salary currency.
 	 * 
 	 * @param Property\SalaryCurrency $salaryCurrency
@@ -448,18 +316,6 @@ class JobPosting extends Intangible {
 	 */
 	public function setSalaryCurrency(Property\SalaryCurrency $salaryCurrency) {
 		$this->salaryCurrency = $salaryCurrency;
-
-		return $this;
-	}
-
-	/**
-	 * Set skills.
-	 * 
-	 * @param Property\Skills $skills
-	 * @return JobPosting
-	 */
-	public function setSkills(Property\Skills $skills) {
-		$this->skills = $skills;
 
 		return $this;
 	}

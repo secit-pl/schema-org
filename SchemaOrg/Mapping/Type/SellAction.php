@@ -6,27 +6,26 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class SellAction.
- * 
- * @method SellAction setActionStatus(Property\ActionStatus $actionStatus)
- * @method SellAction setAgent(Property\Agent $agent)
- * @method SellAction setEndTime(Property\EndTime $endTime)
- * @method SellAction setError(Property\Error $error)
- * @method SellAction setInstrument(Property\Instrument $instrument)
- * @method SellAction setLocation(Property\Location $location)
- * @method SellAction setObject(Property\Object $object)
- * @method SellAction setParticipant(Property\Participant $participant)
- * @method SellAction setPrice(Property\Price $price)
- * @method SellAction setPriceSpecification(Property\PriceSpecification $priceSpecification)
- * @method SellAction setResult(Property\Result $result)
- * @method SellAction setStartTime(Property\StartTime $startTime)
- * @method SellAction setTarget(Property\Target $target)
  */
-class SellAction extends TradeAction {
+class SellAction {
 
 	/**
 	 * @var Property\Buyer
 	 */
 	private $buyer;
+
+	/**
+	 */
+	private $id;
+
+	/**
+	 * SellAction constructor.
+	 * 
+	 * @param string $id
+	 */
+	public function __construct($id = null) {
+		$this->id = $id;
+	}
 
 	/**
 	 * Get buyer.
@@ -35,6 +34,15 @@ class SellAction extends TradeAction {
 	 */
 	public function getBuyer() {
 		return $this->buyer;
+	}
+
+	/**
+	 * Get id.
+	 * 
+	 * @return string
+	 */
+	public function getId() {
+		return $this->id;
 	}
 
 	/**

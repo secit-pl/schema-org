@@ -3,13 +3,14 @@
 namespace SecIT\SchemaOrg\Mapping\Property;
 
 use SecIT\SchemaOrg\Mapping\DataType;
+use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * OccupationalCategory class.
+ * Step class.
  * 
- * @method OccupationalCategory setValue($value)
+ * @method Step setValue($value)
  */
-class OccupationalCategory extends AbstractProperty {
+class Step extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
@@ -17,7 +18,7 @@ class OccupationalCategory extends AbstractProperty {
 	 * @return string
 	 */
 	public function getSchemaUrl() {
-		return 'https://schema.org/occupationalCategory';
+		return 'https://schema.org/step';
 	}
 
 	/**
@@ -27,6 +28,6 @@ class OccupationalCategory extends AbstractProperty {
 	 * @return bool
 	 */
 	public function isValueValid($value) {
-		return $value instanceof DataType\TextType;
+		return $value instanceof Type\CreativeWork || $value instanceof Type\HowToSection || $value instanceof Type\HowToStep || $value instanceof DataType\TextType;
 	}
 }

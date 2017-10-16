@@ -7,7 +7,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class SearchResultsPage.
  * 
- * @method SearchResultsPage setAbout(Property\About $about)
  * @method SearchResultsPage setAccessMode(Property\AccessMode $accessMode)
  * @method SearchResultsPage setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method SearchResultsPage setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)
@@ -47,6 +46,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SearchResultsPage setEducationalUse(Property\EducationalUse $educationalUse)
  * @method SearchResultsPage setEncoding(Property\Encoding $encoding)
  * @method SearchResultsPage setExampleOfWork(Property\ExampleOfWork $exampleOfWork)
+ * @method SearchResultsPage setExpires(Property\Expires $expires)
  * @method SearchResultsPage setFileFormat(Property\FileFormat $fileFormat)
  * @method SearchResultsPage setFunder(Property\Funder $funder)
  * @method SearchResultsPage setGenre(Property\Genre $genre)

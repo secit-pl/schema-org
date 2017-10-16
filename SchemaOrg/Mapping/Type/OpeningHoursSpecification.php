@@ -6,6 +6,18 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class OpeningHoursSpecification.
+ * 
+ * @method OpeningHoursSpecification setAdditionalType(Property\AdditionalType $additionalType)
+ * @method OpeningHoursSpecification setAlternateName(Property\AlternateName $alternateName)
+ * @method OpeningHoursSpecification setDescription(Property\Description $description)
+ * @method OpeningHoursSpecification setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
+ * @method OpeningHoursSpecification setIdentifier(Property\Identifier $identifier)
+ * @method OpeningHoursSpecification setImage(Property\Image $image)
+ * @method OpeningHoursSpecification setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
+ * @method OpeningHoursSpecification setName(Property\Name $name)
+ * @method OpeningHoursSpecification setPotentialAction(Property\PotentialAction $potentialAction)
+ * @method OpeningHoursSpecification setSameAs(Property\SameAs $sameAs)
+ * @method OpeningHoursSpecification setUrl(Property\Url $url)
  */
 class OpeningHoursSpecification extends StructuredValue {
 

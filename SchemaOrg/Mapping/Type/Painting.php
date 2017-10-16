@@ -7,7 +7,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Painting.
  * 
- * @method Painting setAbout(Property\About $about)
  * @method Painting setAccessMode(Property\AccessMode $accessMode)
  * @method Painting setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method Painting setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)
@@ -46,6 +45,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method Painting setEducationalUse(Property\EducationalUse $educationalUse)
  * @method Painting setEncoding(Property\Encoding $encoding)
  * @method Painting setExampleOfWork(Property\ExampleOfWork $exampleOfWork)
+ * @method Painting setExpires(Property\Expires $expires)
  * @method Painting setFileFormat(Property\FileFormat $fileFormat)
  * @method Painting setFunder(Property\Funder $funder)
  * @method Painting setGenre(Property\Genre $genre)

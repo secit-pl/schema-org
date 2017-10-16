@@ -6,26 +6,17 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class FlightReservation.
- * 
- * @method FlightReservation setBookingTime(Property\BookingTime $bookingTime)
- * @method FlightReservation setBroker(Property\Broker $broker)
- * @method FlightReservation setModifiedTime(Property\ModifiedTime $modifiedTime)
- * @method FlightReservation setPriceCurrency(Property\PriceCurrency $priceCurrency)
- * @method FlightReservation setProgramMembershipUsed(Property\ProgramMembershipUsed $programMembershipUsed)
- * @method FlightReservation setProvider(Property\Provider $provider)
- * @method FlightReservation setReservationFor(Property\ReservationFor $reservationFor)
- * @method FlightReservation setReservationId(Property\ReservationId $reservationId)
- * @method FlightReservation setReservationStatus(Property\ReservationStatus $reservationStatus)
- * @method FlightReservation setReservedTicket(Property\ReservedTicket $reservedTicket)
- * @method FlightReservation setTotalPrice(Property\TotalPrice $totalPrice)
- * @method FlightReservation setUnderName(Property\UnderName $underName)
  */
-class FlightReservation extends Reservation {
+class FlightReservation {
 
 	/**
 	 * @var Property\BoardingGroup
 	 */
 	private $boardingGroup;
+
+	/**
+	 */
+	private $id;
 
 	/**
 	 * @var Property\PassengerPriorityStatus
@@ -43,12 +34,30 @@ class FlightReservation extends Reservation {
 	private $securityScreening;
 
 	/**
+	 * FlightReservation constructor.
+	 * 
+	 * @param string $id
+	 */
+	public function __construct($id = null) {
+		$this->id = $id;
+	}
+
+	/**
 	 * Get boarding group.
 	 * 
 	 * @return Property\BoardingGroup
 	 */
 	public function getBoardingGroup() {
 		return $this->boardingGroup;
+	}
+
+	/**
+	 * Get id.
+	 * 
+	 * @return string
+	 */
+	public function getId() {
+		return $this->id;
 	}
 
 	/**

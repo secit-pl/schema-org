@@ -5,29 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 /**
  * Class CommentPermission.
  */
-class CommentPermission {
-
-	/**
-	 */
-	private $id;
-
-	/**
-	 * CommentPermission constructor.
-	 * 
-	 * @param string $id
-	 */
-	public function __construct($id = null) {
-		$this->id = $id;
-	}
-
-	/**
-	 * Get id.
-	 * 
-	 * @return string
-	 */
-	public function getId() {
-		return $this->id;
-	}
+class CommentPermission extends DigitalDocumentPermissionType {
 
 	/**
 	 * Get schema URL.

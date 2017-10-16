@@ -2,32 +2,24 @@
 
 namespace SecIT\SchemaOrg\Mapping\Type;
 
+use SecIT\SchemaOrg\Mapping\Property;
+
 /**
  * Class CoOp.
+ * 
+ * @method CoOp setAdditionalType(Property\AdditionalType $additionalType)
+ * @method CoOp setAlternateName(Property\AlternateName $alternateName)
+ * @method CoOp setDescription(Property\Description $description)
+ * @method CoOp setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
+ * @method CoOp setIdentifier(Property\Identifier $identifier)
+ * @method CoOp setImage(Property\Image $image)
+ * @method CoOp setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
+ * @method CoOp setName(Property\Name $name)
+ * @method CoOp setPotentialAction(Property\PotentialAction $potentialAction)
+ * @method CoOp setSameAs(Property\SameAs $sameAs)
+ * @method CoOp setUrl(Property\Url $url)
  */
-class CoOp {
-
-	/**
-	 */
-	private $id;
-
-	/**
-	 * CoOp constructor.
-	 * 
-	 * @param string $id
-	 */
-	public function __construct($id = null) {
-		$this->id = $id;
-	}
-
-	/**
-	 * Get id.
-	 * 
-	 * @return string
-	 */
-	public function getId() {
-		return $this->id;
-	}
+class CoOp extends GamePlayMode {
 
 	/**
 	 * Get schema URL.

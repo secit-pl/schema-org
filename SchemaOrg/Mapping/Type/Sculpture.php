@@ -7,7 +7,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Sculpture.
  * 
- * @method Sculpture setAbout(Property\About $about)
  * @method Sculpture setAccessMode(Property\AccessMode $accessMode)
  * @method Sculpture setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method Sculpture setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)
@@ -46,6 +45,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method Sculpture setEducationalUse(Property\EducationalUse $educationalUse)
  * @method Sculpture setEncoding(Property\Encoding $encoding)
  * @method Sculpture setExampleOfWork(Property\ExampleOfWork $exampleOfWork)
+ * @method Sculpture setExpires(Property\Expires $expires)
  * @method Sculpture setFileFormat(Property\FileFormat $fileFormat)
  * @method Sculpture setFunder(Property\Funder $funder)
  * @method Sculpture setGenre(Property\Genre $genre)

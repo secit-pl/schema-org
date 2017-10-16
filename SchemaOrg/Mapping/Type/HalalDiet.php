@@ -5,29 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 /**
  * Class HalalDiet.
  */
-class HalalDiet {
-
-	/**
-	 */
-	private $id;
-
-	/**
-	 * HalalDiet constructor.
-	 * 
-	 * @param string $id
-	 */
-	public function __construct($id = null) {
-		$this->id = $id;
-	}
-
-	/**
-	 * Get id.
-	 * 
-	 * @return string
-	 */
-	public function getId() {
-		return $this->id;
-	}
+class HalalDiet extends RestrictedDiet {
 
 	/**
 	 * Get schema URL.

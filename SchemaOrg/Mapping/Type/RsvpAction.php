@@ -6,8 +6,12 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class RsvpAction.
+ * 
+ * @method RsvpAction setEvent(Property\Event $event)
+ * @method RsvpAction setInLanguage(Property\InLanguage $inLanguage)
+ * @method RsvpAction setRecipient(Property\Recipient $recipient)
  */
-class RsvpAction {
+class RsvpAction extends InformAction {
 
 	/**
 	 * @var Property\AdditionalNumberOfGuests
@@ -20,22 +24,9 @@ class RsvpAction {
 	private $comment;
 
 	/**
-	 */
-	private $id;
-
-	/**
 	 * @var Property\RsvpResponse
 	 */
 	private $rsvpResponse;
-
-	/**
-	 * RsvpAction constructor.
-	 * 
-	 * @param string $id
-	 */
-	public function __construct($id = null) {
-		$this->id = $id;
-	}
 
 	/**
 	 * Get additional number of guests.
@@ -53,15 +44,6 @@ class RsvpAction {
 	 */
 	public function getComment() {
 		return $this->comment;
-	}
-
-	/**
-	 * Get id.
-	 * 
-	 * @return string
-	 */
-	public function getId() {
-		return $this->id;
 	}
 
 	/**

@@ -27,6 +27,6 @@ class Recipient extends AbstractProperty {
 	 * @return bool
 	 */
 	public function isValueValid($value) {
-		return $value instanceof Type\Audience || $value instanceof Type\Organization || $value instanceof Type\Person;
+		return $value instanceof Type\Audience || $value instanceof Type\ContactPoint || $value instanceof Type\Organization || $value instanceof Type\Person;
 	}
 }

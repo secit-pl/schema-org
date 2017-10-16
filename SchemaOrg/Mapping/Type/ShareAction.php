@@ -7,7 +7,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class ShareAction.
  * 
- * @method ShareAction setAbout(Property\About $about)
  * @method ShareAction setInLanguage(Property\InLanguage $inLanguage)
  * @method ShareAction setRecipient(Property\Recipient $recipient)
  */

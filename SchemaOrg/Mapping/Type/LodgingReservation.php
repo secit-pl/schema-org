@@ -6,8 +6,32 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class LodgingReservation.
+ * 
+ * @method LodgingReservation setAdditionalType(Property\AdditionalType $additionalType)
+ * @method LodgingReservation setAlternateName(Property\AlternateName $alternateName)
+ * @method LodgingReservation setBookingTime(Property\BookingTime $bookingTime)
+ * @method LodgingReservation setBroker(Property\Broker $broker)
+ * @method LodgingReservation setDescription(Property\Description $description)
+ * @method LodgingReservation setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
+ * @method LodgingReservation setIdentifier(Property\Identifier $identifier)
+ * @method LodgingReservation setImage(Property\Image $image)
+ * @method LodgingReservation setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
+ * @method LodgingReservation setModifiedTime(Property\ModifiedTime $modifiedTime)
+ * @method LodgingReservation setName(Property\Name $name)
+ * @method LodgingReservation setPotentialAction(Property\PotentialAction $potentialAction)
+ * @method LodgingReservation setPriceCurrency(Property\PriceCurrency $priceCurrency)
+ * @method LodgingReservation setProgramMembershipUsed(Property\ProgramMembershipUsed $programMembershipUsed)
+ * @method LodgingReservation setProvider(Property\Provider $provider)
+ * @method LodgingReservation setReservationFor(Property\ReservationFor $reservationFor)
+ * @method LodgingReservation setReservationId(Property\ReservationId $reservationId)
+ * @method LodgingReservation setReservationStatus(Property\ReservationStatus $reservationStatus)
+ * @method LodgingReservation setReservedTicket(Property\ReservedTicket $reservedTicket)
+ * @method LodgingReservation setSameAs(Property\SameAs $sameAs)
+ * @method LodgingReservation setTotalPrice(Property\TotalPrice $totalPrice)
+ * @method LodgingReservation setUnderName(Property\UnderName $underName)
+ * @method LodgingReservation setUrl(Property\Url $url)
  */
-class LodgingReservation {
+class LodgingReservation extends Reservation {
 
 	/**
 	 * @var Property\CheckinTime
@@ -18,10 +42,6 @@ class LodgingReservation {
 	 * @var Property\CheckoutTime
 	 */
 	private $checkoutTime;
-
-	/**
-	 */
-	private $id;
 
 	/**
 	 * @var Property\LodgingUnitDescription
@@ -44,15 +64,6 @@ class LodgingReservation {
 	private $numChildren;
 
 	/**
-	 * LodgingReservation constructor.
-	 * 
-	 * @param string $id
-	 */
-	public function __construct($id = null) {
-		$this->id = $id;
-	}
-
-	/**
 	 * Get checkin time.
 	 * 
 	 * @return Property\CheckinTime
@@ -68,15 +79,6 @@ class LodgingReservation {
 	 */
 	public function getCheckoutTime() {
 		return $this->checkoutTime;
-	}
-
-	/**
-	 * Get id.
-	 * 
-	 * @return string
-	 */
-	public function getId() {
-		return $this->id;
 	}
 
 	/**

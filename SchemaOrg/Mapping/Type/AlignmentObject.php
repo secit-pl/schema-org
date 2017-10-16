@@ -6,6 +6,18 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class AlignmentObject.
+ * 
+ * @method AlignmentObject setAdditionalType(Property\AdditionalType $additionalType)
+ * @method AlignmentObject setAlternateName(Property\AlternateName $alternateName)
+ * @method AlignmentObject setDescription(Property\Description $description)
+ * @method AlignmentObject setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
+ * @method AlignmentObject setIdentifier(Property\Identifier $identifier)
+ * @method AlignmentObject setImage(Property\Image $image)
+ * @method AlignmentObject setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
+ * @method AlignmentObject setName(Property\Name $name)
+ * @method AlignmentObject setPotentialAction(Property\PotentialAction $potentialAction)
+ * @method AlignmentObject setSameAs(Property\SameAs $sameAs)
+ * @method AlignmentObject setUrl(Property\Url $url)
  */
 class AlignmentObject extends Intangible {
 

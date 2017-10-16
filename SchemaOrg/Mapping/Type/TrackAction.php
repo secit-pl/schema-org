@@ -7,25 +7,12 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class TrackAction.
  */
-class TrackAction {
+class TrackAction extends FindAction {
 
 	/**
 	 * @var Property\DeliveryMethod
 	 */
 	private $deliveryMethod;
-
-	/**
-	 */
-	private $id;
-
-	/**
-	 * TrackAction constructor.
-	 * 
-	 * @param string $id
-	 */
-	public function __construct($id = null) {
-		$this->id = $id;
-	}
 
 	/**
 	 * Get delivery method.
@@ -34,15 +21,6 @@ class TrackAction {
 	 */
 	public function getDeliveryMethod() {
 		return $this->deliveryMethod;
-	}
-
-	/**
-	 * Get id.
-	 * 
-	 * @return string
-	 */
-	public function getId() {
-		return $this->id;
 	}
 
 	/**

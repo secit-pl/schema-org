@@ -7,7 +7,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class VisualArtwork.
  * 
- * @method VisualArtwork setAbout(Property\About $about)
  * @method VisualArtwork setAccessMode(Property\AccessMode $accessMode)
  * @method VisualArtwork setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method VisualArtwork setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)
@@ -46,6 +45,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method VisualArtwork setEducationalUse(Property\EducationalUse $educationalUse)
  * @method VisualArtwork setEncoding(Property\Encoding $encoding)
  * @method VisualArtwork setExampleOfWork(Property\ExampleOfWork $exampleOfWork)
+ * @method VisualArtwork setExpires(Property\Expires $expires)
  * @method VisualArtwork setFileFormat(Property\FileFormat $fileFormat)
  * @method VisualArtwork setFunder(Property\Funder $funder)
  * @method VisualArtwork setGenre(Property\Genre $genre)

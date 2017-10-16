@@ -7,7 +7,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Book.
  * 
- * @method Book setAbout(Property\About $about)
  * @method Book setAccessMode(Property\AccessMode $accessMode)
  * @method Book setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method Book setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)
@@ -46,6 +45,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method Book setEducationalUse(Property\EducationalUse $educationalUse)
  * @method Book setEncoding(Property\Encoding $encoding)
  * @method Book setExampleOfWork(Property\ExampleOfWork $exampleOfWork)
+ * @method Book setExpires(Property\Expires $expires)
  * @method Book setFileFormat(Property\FileFormat $fileFormat)
  * @method Book setFunder(Property\Funder $funder)
  * @method Book setGenre(Property\Genre $genre)

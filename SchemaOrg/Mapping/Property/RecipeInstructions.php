@@ -28,6 +28,6 @@ class RecipeInstructions extends AbstractProperty {
 	 * @return bool
 	 */
 	public function isValueValid($value) {
-		return $value instanceof Type\ItemList || $value instanceof DataType\TextType;
+		return $value instanceof Type\CreativeWork || $value instanceof Type\ItemList || $value instanceof DataType\TextType;
 	}
 }

@@ -7,15 +7,26 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class PostalAddress.
  * 
+ * @method PostalAddress setAdditionalType(Property\AdditionalType $additionalType)
+ * @method PostalAddress setAlternateName(Property\AlternateName $alternateName)
  * @method PostalAddress setAreaServed(Property\AreaServed $areaServed)
  * @method PostalAddress setAvailableLanguage(Property\AvailableLanguage $availableLanguage)
  * @method PostalAddress setContactOption(Property\ContactOption $contactOption)
  * @method PostalAddress setContactType(Property\ContactType $contactType)
+ * @method PostalAddress setDescription(Property\Description $description)
+ * @method PostalAddress setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
  * @method PostalAddress setEmail(Property\Email $email)
  * @method PostalAddress setFaxNumber(Property\FaxNumber $faxNumber)
  * @method PostalAddress setHoursAvailable(Property\HoursAvailable $hoursAvailable)
+ * @method PostalAddress setIdentifier(Property\Identifier $identifier)
+ * @method PostalAddress setImage(Property\Image $image)
+ * @method PostalAddress setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
+ * @method PostalAddress setName(Property\Name $name)
+ * @method PostalAddress setPotentialAction(Property\PotentialAction $potentialAction)
  * @method PostalAddress setProductSupported(Property\ProductSupported $productSupported)
+ * @method PostalAddress setSameAs(Property\SameAs $sameAs)
  * @method PostalAddress setTelephone(Property\Telephone $telephone)
+ * @method PostalAddress setUrl(Property\Url $url)
  */
 class PostalAddress extends ContactPoint {
 

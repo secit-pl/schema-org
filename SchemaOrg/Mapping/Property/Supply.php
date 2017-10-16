@@ -3,13 +3,14 @@
 namespace SecIT\SchemaOrg\Mapping\Property;
 
 use SecIT\SchemaOrg\Mapping\DataType;
+use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * ExperienceRequirements class.
+ * Supply class.
  * 
- * @method ExperienceRequirements setValue($value)
+ * @method Supply setValue($value)
  */
-class ExperienceRequirements extends AbstractProperty {
+class Supply extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
@@ -17,7 +18,7 @@ class ExperienceRequirements extends AbstractProperty {
 	 * @return string
 	 */
 	public function getSchemaUrl() {
-		return 'https://schema.org/experienceRequirements';
+		return 'https://schema.org/supply';
 	}
 
 	/**
@@ -27,6 +28,6 @@ class ExperienceRequirements extends AbstractProperty {
 	 * @return bool
 	 */
 	public function isValueValid($value) {
-		return $value instanceof DataType\TextType;
+		return $value instanceof Type\HowToSupply || $value instanceof DataType\TextType;
 	}
 }

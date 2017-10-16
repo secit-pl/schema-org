@@ -7,14 +7,25 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class ParentAudience.
  * 
+ * @method ParentAudience setAdditionalType(Property\AdditionalType $additionalType)
+ * @method ParentAudience setAlternateName(Property\AlternateName $alternateName)
  * @method ParentAudience setAudienceType(Property\AudienceType $audienceType)
+ * @method ParentAudience setDescription(Property\Description $description)
+ * @method ParentAudience setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
  * @method ParentAudience setGeographicArea(Property\GeographicArea $geographicArea)
+ * @method ParentAudience setIdentifier(Property\Identifier $identifier)
+ * @method ParentAudience setImage(Property\Image $image)
+ * @method ParentAudience setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
+ * @method ParentAudience setName(Property\Name $name)
+ * @method ParentAudience setPotentialAction(Property\PotentialAction $potentialAction)
  * @method ParentAudience setRequiredGender(Property\RequiredGender $requiredGender)
  * @method ParentAudience setRequiredMaxAge(Property\RequiredMaxAge $requiredMaxAge)
  * @method ParentAudience setRequiredMinAge(Property\RequiredMinAge $requiredMinAge)
+ * @method ParentAudience setSameAs(Property\SameAs $sameAs)
  * @method ParentAudience setSuggestedGender(Property\SuggestedGender $suggestedGender)
  * @method ParentAudience setSuggestedMaxAge(Property\SuggestedMaxAge $suggestedMaxAge)
  * @method ParentAudience setSuggestedMinAge(Property\SuggestedMinAge $suggestedMinAge)
+ * @method ParentAudience setUrl(Property\Url $url)
  */
 class ParentAudience extends PeopleAudience {
 

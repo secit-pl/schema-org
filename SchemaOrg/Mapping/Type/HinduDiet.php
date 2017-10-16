@@ -5,29 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 /**
  * Class HinduDiet.
  */
-class HinduDiet {
-
-	/**
-	 */
-	private $id;
-
-	/**
-	 * HinduDiet constructor.
-	 * 
-	 * @param string $id
-	 */
-	public function __construct($id = null) {
-		$this->id = $id;
-	}
-
-	/**
-	 * Get id.
-	 * 
-	 * @return string
-	 */
-	public function getId() {
-		return $this->id;
-	}
+class HinduDiet extends RestrictedDiet {
 
 	/**
 	 * Get schema URL.

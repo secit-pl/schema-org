@@ -7,7 +7,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class WebApplication.
  * 
- * @method WebApplication setAbout(Property\About $about)
  * @method WebApplication setAccessMode(Property\AccessMode $accessMode)
  * @method WebApplication setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method WebApplication setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)
@@ -53,6 +52,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method WebApplication setEducationalUse(Property\EducationalUse $educationalUse)
  * @method WebApplication setEncoding(Property\Encoding $encoding)
  * @method WebApplication setExampleOfWork(Property\ExampleOfWork $exampleOfWork)
+ * @method WebApplication setExpires(Property\Expires $expires)
  * @method WebApplication setFeatureList(Property\FeatureList $featureList)
  * @method WebApplication setFileFormat(Property\FileFormat $fileFormat)
  * @method WebApplication setFileSize(Property\FileSize $fileSize)

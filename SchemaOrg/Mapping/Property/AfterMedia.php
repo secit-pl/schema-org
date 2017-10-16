@@ -2,14 +2,14 @@
 
 namespace SecIT\SchemaOrg\Mapping\Property;
 
-use SecIT\SchemaOrg\Mapping\DataType;
+use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * Skills class.
+ * AfterMedia class.
  * 
- * @method Skills setValue($value)
+ * @method AfterMedia setValue($value)
  */
-class Skills extends AbstractProperty {
+class AfterMedia extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
@@ -17,7 +17,7 @@ class Skills extends AbstractProperty {
 	 * @return string
 	 */
 	public function getSchemaUrl() {
-		return 'https://schema.org/skills';
+		return 'https://schema.org/afterMedia';
 	}
 
 	/**
@@ -27,6 +27,6 @@ class Skills extends AbstractProperty {
 	 * @return bool
 	 */
 	public function isValueValid($value) {
-		return $value instanceof DataType\TextType;
+		return $value instanceof Type\MediaObject;
 	}
 }

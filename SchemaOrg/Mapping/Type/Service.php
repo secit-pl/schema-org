@@ -6,6 +6,18 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class Service.
+ * 
+ * @method Service setAdditionalType(Property\AdditionalType $additionalType)
+ * @method Service setAlternateName(Property\AlternateName $alternateName)
+ * @method Service setDescription(Property\Description $description)
+ * @method Service setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
+ * @method Service setIdentifier(Property\Identifier $identifier)
+ * @method Service setImage(Property\Image $image)
+ * @method Service setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
+ * @method Service setName(Property\Name $name)
+ * @method Service setPotentialAction(Property\PotentialAction $potentialAction)
+ * @method Service setSameAs(Property\SameAs $sameAs)
+ * @method Service setUrl(Property\Url $url)
  */
 class Service extends Intangible {
 

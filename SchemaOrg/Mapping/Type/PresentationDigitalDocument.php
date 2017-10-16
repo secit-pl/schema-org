@@ -2,32 +2,14 @@
 
 namespace SecIT\SchemaOrg\Mapping\Type;
 
+use SecIT\SchemaOrg\Mapping\Property;
+
 /**
  * Class PresentationDigitalDocument.
+ * 
+ * @method PresentationDigitalDocument setHasDigitalDocumentPermission(Property\HasDigitalDocumentPermission $hasDigitalDocumentPermission)
  */
-class PresentationDigitalDocument {
-
-	/**
-	 */
-	private $id;
-
-	/**
-	 * PresentationDigitalDocument constructor.
-	 * 
-	 * @param string $id
-	 */
-	public function __construct($id = null) {
-		$this->id = $id;
-	}
-
-	/**
-	 * Get id.
-	 * 
-	 * @return string
-	 */
-	public function getId() {
-		return $this->id;
-	}
+class PresentationDigitalDocument extends DigitalDocument {
 
 	/**
 	 * Get schema URL.

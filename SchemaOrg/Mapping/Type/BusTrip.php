@@ -7,7 +7,7 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class BusTrip.
  */
-class BusTrip extends Intangible {
+class BusTrip {
 
 	/**
 	 * @var Property\ArrivalBusStop
@@ -40,9 +40,22 @@ class BusTrip extends Intangible {
 	private $departureTime;
 
 	/**
+	 */
+	private $id;
+
+	/**
 	 * @var Property\Provider
 	 */
 	private $provider;
+
+	/**
+	 * BusTrip constructor.
+	 * 
+	 * @param string $id
+	 */
+	public function __construct($id = null) {
+		$this->id = $id;
+	}
 
 	/**
 	 * Get arrival bus stop.
@@ -96,6 +109,15 @@ class BusTrip extends Intangible {
 	 */
 	public function getDepartureTime() {
 		return $this->departureTime;
+	}
+
+	/**
+	 * Get id.
+	 * 
+	 * @return string
+	 */
+	public function getId() {
+		return $this->id;
 	}
 
 	/**

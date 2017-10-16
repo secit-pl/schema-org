@@ -27,6 +27,6 @@ class FileFormat extends AbstractProperty {
 	 * @return bool
 	 */
 	public function isValueValid($value) {
-		return $value instanceof DataType\TextType || $value instanceof DataType\URLType;
+		return $value instanceof DataType\TextType;
 	}
 }

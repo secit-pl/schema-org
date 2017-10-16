@@ -7,7 +7,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class DataFeed.
  * 
- * @method DataFeed setAbout(Property\About $about)
  * @method DataFeed setAccessMode(Property\AccessMode $accessMode)
  * @method DataFeed setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method DataFeed setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)
@@ -47,6 +46,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method DataFeed setEducationalUse(Property\EducationalUse $educationalUse)
  * @method DataFeed setEncoding(Property\Encoding $encoding)
  * @method DataFeed setExampleOfWork(Property\ExampleOfWork $exampleOfWork)
+ * @method DataFeed setExpires(Property\Expires $expires)
  * @method DataFeed setFileFormat(Property\FileFormat $fileFormat)
  * @method DataFeed setFunder(Property\Funder $funder)
  * @method DataFeed setGenre(Property\Genre $genre)
@@ -62,6 +62,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method DataFeed setIsBasedOn(Property\IsBasedOn $isBasedOn)
  * @method DataFeed setIsFamilyFriendly(Property\IsFamilyFriendly $isFamilyFriendly)
  * @method DataFeed setIsPartOf(Property\IsPartOf $isPartOf)
+ * @method DataFeed setIssn(Property\Issn $issn)
  * @method DataFeed setKeywords(Property\Keywords $keywords)
  * @method DataFeed setLearningResourceType(Property\LearningResourceType $learningResourceType)
  * @method DataFeed setLicense(Property\License $license)

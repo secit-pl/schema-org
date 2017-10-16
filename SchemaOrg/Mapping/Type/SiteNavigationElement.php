@@ -7,7 +7,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class SiteNavigationElement.
  * 
- * @method SiteNavigationElement setAbout(Property\About $about)
  * @method SiteNavigationElement setAccessMode(Property\AccessMode $accessMode)
  * @method SiteNavigationElement setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method SiteNavigationElement setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)
@@ -46,6 +45,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SiteNavigationElement setEducationalUse(Property\EducationalUse $educationalUse)
  * @method SiteNavigationElement setEncoding(Property\Encoding $encoding)
  * @method SiteNavigationElement setExampleOfWork(Property\ExampleOfWork $exampleOfWork)
+ * @method SiteNavigationElement setExpires(Property\Expires $expires)
  * @method SiteNavigationElement setFileFormat(Property\FileFormat $fileFormat)
  * @method SiteNavigationElement setFunder(Property\Funder $funder)
  * @method SiteNavigationElement setGenre(Property\Genre $genre)

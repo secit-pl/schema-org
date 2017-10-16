@@ -6,17 +6,26 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class PerformanceRole.
- * 
- * @method PerformanceRole setEndDate(Property\EndDate $endDate)
- * @method PerformanceRole setRoleName(Property\RoleName $roleName)
- * @method PerformanceRole setStartDate(Property\StartDate $startDate)
  */
-class PerformanceRole extends Role {
+class PerformanceRole {
 
 	/**
 	 * @var Property\CharacterName
 	 */
 	private $characterName;
+
+	/**
+	 */
+	private $id;
+
+	/**
+	 * PerformanceRole constructor.
+	 * 
+	 * @param string $id
+	 */
+	public function __construct($id = null) {
+		$this->id = $id;
+	}
 
 	/**
 	 * Get character name.
@@ -25,6 +34,15 @@ class PerformanceRole extends Role {
 	 */
 	public function getCharacterName() {
 		return $this->characterName;
+	}
+
+	/**
+	 * Get id.
+	 * 
+	 * @return string
+	 */
+	public function getId() {
+		return $this->id;
 	}
 
 	/**

@@ -6,27 +6,26 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class PerformAction.
- * 
- * @method PerformAction setActionStatus(Property\ActionStatus $actionStatus)
- * @method PerformAction setAgent(Property\Agent $agent)
- * @method PerformAction setAudience(Property\Audience $audience)
- * @method PerformAction setEndTime(Property\EndTime $endTime)
- * @method PerformAction setError(Property\Error $error)
- * @method PerformAction setEvent(Property\Event $event)
- * @method PerformAction setInstrument(Property\Instrument $instrument)
- * @method PerformAction setLocation(Property\Location $location)
- * @method PerformAction setObject(Property\Object $object)
- * @method PerformAction setParticipant(Property\Participant $participant)
- * @method PerformAction setResult(Property\Result $result)
- * @method PerformAction setStartTime(Property\StartTime $startTime)
- * @method PerformAction setTarget(Property\Target $target)
  */
-class PerformAction extends PlayAction {
+class PerformAction {
 
 	/**
 	 * @var Property\EntertainmentBusiness
 	 */
 	private $entertainmentBusiness;
+
+	/**
+	 */
+	private $id;
+
+	/**
+	 * PerformAction constructor.
+	 * 
+	 * @param string $id
+	 */
+	public function __construct($id = null) {
+		$this->id = $id;
+	}
 
 	/**
 	 * Get entertainment business.
@@ -35,6 +34,15 @@ class PerformAction extends PlayAction {
 	 */
 	public function getEntertainmentBusiness() {
 		return $this->entertainmentBusiness;
+	}
+
+	/**
+	 * Get id.
+	 * 
+	 * @return string
+	 */
+	public function getId() {
+		return $this->id;
 	}
 
 	/**

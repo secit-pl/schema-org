@@ -2,32 +2,24 @@
 
 namespace SecIT\SchemaOrg\Mapping\Type;
 
+use SecIT\SchemaOrg\Mapping\Property;
+
 /**
  * Class MusicAlbumProductionType.
+ * 
+ * @method MusicAlbumProductionType setAdditionalType(Property\AdditionalType $additionalType)
+ * @method MusicAlbumProductionType setAlternateName(Property\AlternateName $alternateName)
+ * @method MusicAlbumProductionType setDescription(Property\Description $description)
+ * @method MusicAlbumProductionType setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
+ * @method MusicAlbumProductionType setIdentifier(Property\Identifier $identifier)
+ * @method MusicAlbumProductionType setImage(Property\Image $image)
+ * @method MusicAlbumProductionType setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
+ * @method MusicAlbumProductionType setName(Property\Name $name)
+ * @method MusicAlbumProductionType setPotentialAction(Property\PotentialAction $potentialAction)
+ * @method MusicAlbumProductionType setSameAs(Property\SameAs $sameAs)
+ * @method MusicAlbumProductionType setUrl(Property\Url $url)
  */
-class MusicAlbumProductionType {
-
-	/**
-	 */
-	private $id;
-
-	/**
-	 * MusicAlbumProductionType constructor.
-	 * 
-	 * @param string $id
-	 */
-	public function __construct($id = null) {
-		$this->id = $id;
-	}
-
-	/**
-	 * Get id.
-	 * 
-	 * @return string
-	 */
-	public function getId() {
-		return $this->id;
-	}
+class MusicAlbumProductionType extends Enumeration {
 
 	/**
 	 * Get schema URL.

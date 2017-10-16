@@ -7,12 +7,23 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class DeliveryChargeSpecification.
  * 
+ * @method DeliveryChargeSpecification setAdditionalType(Property\AdditionalType $additionalType)
+ * @method DeliveryChargeSpecification setAlternateName(Property\AlternateName $alternateName)
+ * @method DeliveryChargeSpecification setDescription(Property\Description $description)
+ * @method DeliveryChargeSpecification setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
  * @method DeliveryChargeSpecification setEligibleQuantity(Property\EligibleQuantity $eligibleQuantity)
  * @method DeliveryChargeSpecification setEligibleTransactionVolume(Property\EligibleTransactionVolume $eligibleTransactionVolume)
+ * @method DeliveryChargeSpecification setIdentifier(Property\Identifier $identifier)
+ * @method DeliveryChargeSpecification setImage(Property\Image $image)
+ * @method DeliveryChargeSpecification setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
  * @method DeliveryChargeSpecification setMaxPrice(Property\MaxPrice $maxPrice)
  * @method DeliveryChargeSpecification setMinPrice(Property\MinPrice $minPrice)
+ * @method DeliveryChargeSpecification setName(Property\Name $name)
+ * @method DeliveryChargeSpecification setPotentialAction(Property\PotentialAction $potentialAction)
  * @method DeliveryChargeSpecification setPrice(Property\Price $price)
  * @method DeliveryChargeSpecification setPriceCurrency(Property\PriceCurrency $priceCurrency)
+ * @method DeliveryChargeSpecification setSameAs(Property\SameAs $sameAs)
+ * @method DeliveryChargeSpecification setUrl(Property\Url $url)
  * @method DeliveryChargeSpecification setValidFrom(Property\ValidFrom $validFrom)
  * @method DeliveryChargeSpecification setValidThrough(Property\ValidThrough $validThrough)
  * @method DeliveryChargeSpecification setValueAddedTaxIncluded(Property\ValueAddedTaxIncluded $valueAddedTaxIncluded)

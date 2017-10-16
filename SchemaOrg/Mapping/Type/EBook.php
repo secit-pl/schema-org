@@ -3,16 +3,16 @@
 namespace SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * Class Pharmacy.
+ * Class EBook.
  */
-class Pharmacy {
+class EBook {
 
 	/**
 	 */
 	private $id;
 
 	/**
-	 * Pharmacy constructor.
+	 * EBook constructor.
 	 * 
 	 * @param string $id
 	 */
@@ -35,6 +35,6 @@ class Pharmacy {
 	 * @return string
 	 */
 	public function getSchemaUrl() {
-		return 'https://schema.org/Pharmacy';
+		return 'https://schema.org/EBook';
 	}
 }

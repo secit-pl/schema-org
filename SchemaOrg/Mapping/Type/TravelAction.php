@@ -8,18 +8,29 @@ use SecIT\SchemaOrg\Mapping\Property;
  * Class TravelAction.
  * 
  * @method TravelAction setActionStatus(Property\ActionStatus $actionStatus)
+ * @method TravelAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method TravelAction setAgent(Property\Agent $agent)
+ * @method TravelAction setAlternateName(Property\AlternateName $alternateName)
+ * @method TravelAction setDescription(Property\Description $description)
+ * @method TravelAction setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
  * @method TravelAction setEndTime(Property\EndTime $endTime)
  * @method TravelAction setError(Property\Error $error)
  * @method TravelAction setFromLocation(Property\FromLocation $fromLocation)
+ * @method TravelAction setIdentifier(Property\Identifier $identifier)
+ * @method TravelAction setImage(Property\Image $image)
  * @method TravelAction setInstrument(Property\Instrument $instrument)
  * @method TravelAction setLocation(Property\Location $location)
+ * @method TravelAction setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
+ * @method TravelAction setName(Property\Name $name)
  * @method TravelAction setObject(Property\Object $object)
  * @method TravelAction setParticipant(Property\Participant $participant)
+ * @method TravelAction setPotentialAction(Property\PotentialAction $potentialAction)
  * @method TravelAction setResult(Property\Result $result)
+ * @method TravelAction setSameAs(Property\SameAs $sameAs)
  * @method TravelAction setStartTime(Property\StartTime $startTime)
  * @method TravelAction setTarget(Property\Target $target)
  * @method TravelAction setToLocation(Property\ToLocation $toLocation)
+ * @method TravelAction setUrl(Property\Url $url)
  */
 class TravelAction extends MoveAction {
 

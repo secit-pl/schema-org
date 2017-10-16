@@ -2,32 +2,115 @@
 
 namespace SecIT\SchemaOrg\Mapping\Type;
 
+use SecIT\SchemaOrg\Mapping\Property;
+
 /**
  * Class DataDownload.
+ * 
+ * @method DataDownload setAccessMode(Property\AccessMode $accessMode)
+ * @method DataDownload setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
+ * @method DataDownload setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)
+ * @method DataDownload setAccessibilityControl(Property\AccessibilityControl $accessibilityControl)
+ * @method DataDownload setAccessibilityFeature(Property\AccessibilityFeature $accessibilityFeature)
+ * @method DataDownload setAccessibilityHazard(Property\AccessibilityHazard $accessibilityHazard)
+ * @method DataDownload setAccessibilitySummary(Property\AccessibilitySummary $accessibilitySummary)
+ * @method DataDownload setAccountablePerson(Property\AccountablePerson $accountablePerson)
+ * @method DataDownload setAdditionalType(Property\AdditionalType $additionalType)
+ * @method DataDownload setAggregateRating(Property\AggregateRating $aggregateRating)
+ * @method DataDownload setAlternateName(Property\AlternateName $alternateName)
+ * @method DataDownload setAlternativeHeadline(Property\AlternativeHeadline $alternativeHeadline)
+ * @method DataDownload setAssociatedArticle(Property\AssociatedArticle $associatedArticle)
+ * @method DataDownload setAssociatedMedia(Property\AssociatedMedia $associatedMedia)
+ * @method DataDownload setAudience(Property\Audience $audience)
+ * @method DataDownload setAudio(Property\Audio $audio)
+ * @method DataDownload setAuthor(Property\Author $author)
+ * @method DataDownload setAward(Property\Award $award)
+ * @method DataDownload setBitrate(Property\Bitrate $bitrate)
+ * @method DataDownload setCharacter(Property\Character $character)
+ * @method DataDownload setCitation(Property\Citation $citation)
+ * @method DataDownload setComment(Property\Comment $comment)
+ * @method DataDownload setCommentCount(Property\CommentCount $commentCount)
+ * @method DataDownload setContentLocation(Property\ContentLocation $contentLocation)
+ * @method DataDownload setContentRating(Property\ContentRating $contentRating)
+ * @method DataDownload setContentSize(Property\ContentSize $contentSize)
+ * @method DataDownload setContentUrl(Property\ContentUrl $contentUrl)
+ * @method DataDownload setContributor(Property\Contributor $contributor)
+ * @method DataDownload setCopyrightHolder(Property\CopyrightHolder $copyrightHolder)
+ * @method DataDownload setCopyrightYear(Property\CopyrightYear $copyrightYear)
+ * @method DataDownload setCreator(Property\Creator $creator)
+ * @method DataDownload setDateCreated(Property\DateCreated $dateCreated)
+ * @method DataDownload setDateModified(Property\DateModified $dateModified)
+ * @method DataDownload setDatePublished(Property\DatePublished $datePublished)
+ * @method DataDownload setDescription(Property\Description $description)
+ * @method DataDownload setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
+ * @method DataDownload setDiscussionUrl(Property\DiscussionUrl $discussionUrl)
+ * @method DataDownload setEditor(Property\Editor $editor)
+ * @method DataDownload setEducationalAlignment(Property\EducationalAlignment $educationalAlignment)
+ * @method DataDownload setEducationalUse(Property\EducationalUse $educationalUse)
+ * @method DataDownload setEmbedUrl(Property\EmbedUrl $embedUrl)
+ * @method DataDownload setEncodesCreativeWork(Property\EncodesCreativeWork $encodesCreativeWork)
+ * @method DataDownload setEncoding(Property\Encoding $encoding)
+ * @method DataDownload setEncodingFormat(Property\EncodingFormat $encodingFormat)
+ * @method DataDownload setExampleOfWork(Property\ExampleOfWork $exampleOfWork)
+ * @method DataDownload setExpires(Property\Expires $expires)
+ * @method DataDownload setFileFormat(Property\FileFormat $fileFormat)
+ * @method DataDownload setFunder(Property\Funder $funder)
+ * @method DataDownload setGenre(Property\Genre $genre)
+ * @method DataDownload setHasPart(Property\HasPart $hasPart)
+ * @method DataDownload setHeadline(Property\Headline $headline)
+ * @method DataDownload setHeight(Property\Height $height)
+ * @method DataDownload setIdentifier(Property\Identifier $identifier)
+ * @method DataDownload setImage(Property\Image $image)
+ * @method DataDownload setInLanguage(Property\InLanguage $inLanguage)
+ * @method DataDownload setInteractionStatistic(Property\InteractionStatistic $interactionStatistic)
+ * @method DataDownload setInteractivityType(Property\InteractivityType $interactivityType)
+ * @method DataDownload setIsAccessibleForFree(Property\IsAccessibleForFree $isAccessibleForFree)
+ * @method DataDownload setIsBasedOn(Property\IsBasedOn $isBasedOn)
+ * @method DataDownload setIsFamilyFriendly(Property\IsFamilyFriendly $isFamilyFriendly)
+ * @method DataDownload setIsPartOf(Property\IsPartOf $isPartOf)
+ * @method DataDownload setKeywords(Property\Keywords $keywords)
+ * @method DataDownload setLearningResourceType(Property\LearningResourceType $learningResourceType)
+ * @method DataDownload setLicense(Property\License $license)
+ * @method DataDownload setLocationCreated(Property\LocationCreated $locationCreated)
+ * @method DataDownload setMainEntity(Property\MainEntity $mainEntity)
+ * @method DataDownload setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
+ * @method DataDownload setMaterial(Property\Material $material)
+ * @method DataDownload setMentions(Property\Mentions $mentions)
+ * @method DataDownload setName(Property\Name $name)
+ * @method DataDownload setOffers(Property\Offers $offers)
+ * @method DataDownload setPlayerType(Property\PlayerType $playerType)
+ * @method DataDownload setPosition(Property\Position $position)
+ * @method DataDownload setPotentialAction(Property\PotentialAction $potentialAction)
+ * @method DataDownload setProducer(Property\Producer $producer)
+ * @method DataDownload setProductionCompany(Property\ProductionCompany $productionCompany)
+ * @method DataDownload setProvider(Property\Provider $provider)
+ * @method DataDownload setPublication(Property\Publication $publication)
+ * @method DataDownload setPublisher(Property\Publisher $publisher)
+ * @method DataDownload setPublishingPrinciples(Property\PublishingPrinciples $publishingPrinciples)
+ * @method DataDownload setRecordedAt(Property\RecordedAt $recordedAt)
+ * @method DataDownload setRegionsAllowed(Property\RegionsAllowed $regionsAllowed)
+ * @method DataDownload setReleasedEvent(Property\ReleasedEvent $releasedEvent)
+ * @method DataDownload setRequiresSubscription(Property\RequiresSubscription $requiresSubscription)
+ * @method DataDownload setReview(Property\Review $review)
+ * @method DataDownload setSameAs(Property\SameAs $sameAs)
+ * @method DataDownload setSchemaVersion(Property\SchemaVersion $schemaVersion)
+ * @method DataDownload setSourceOrganization(Property\SourceOrganization $sourceOrganization)
+ * @method DataDownload setSpatialCoverage(Property\SpatialCoverage $spatialCoverage)
+ * @method DataDownload setSponsor(Property\Sponsor $sponsor)
+ * @method DataDownload setTemporalCoverage(Property\TemporalCoverage $temporalCoverage)
+ * @method DataDownload setText(Property\Text $text)
+ * @method DataDownload setThumbnailUrl(Property\ThumbnailUrl $thumbnailUrl)
+ * @method DataDownload setTimeRequired(Property\TimeRequired $timeRequired)
+ * @method DataDownload setTranslator(Property\Translator $translator)
+ * @method DataDownload setTypicalAgeRange(Property\TypicalAgeRange $typicalAgeRange)
+ * @method DataDownload setUploadDate(Property\UploadDate $uploadDate)
+ * @method DataDownload setUrl(Property\Url $url)
+ * @method DataDownload setVersion(Property\Version $version)
+ * @method DataDownload setVideo(Property\Video $video)
+ * @method DataDownload setWidth(Property\Width $width)
+ * @method DataDownload setWorkExample(Property\WorkExample $workExample)
  */
-class DataDownload {
-
-	/**
-	 */
-	private $id;
-
-	/**
-	 * DataDownload constructor.
-	 * 
-	 * @param string $id
-	 */
-	public function __construct($id = null) {
-		$this->id = $id;
-	}
-
-	/**
-	 * Get id.
-	 * 
-	 * @return string
-	 */
-	public function getId() {
-		return $this->id;
-	}
+class DataDownload extends MediaObject {
 
 	/**
 	 * Get schema URL.

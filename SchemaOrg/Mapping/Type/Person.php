@@ -6,20 +6,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class Person.
- * 
- * @method Person setAdditionalType(Property\AdditionalType $additionalType)
- * @method Person setAlternateName(Property\AlternateName $alternateName)
- * @method Person setDescription(Property\Description $description)
- * @method Person setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method Person setIdentifier(Property\Identifier $identifier)
- * @method Person setImage(Property\Image $image)
- * @method Person setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method Person setName(Property\Name $name)
- * @method Person setPotentialAction(Property\PotentialAction $potentialAction)
- * @method Person setSameAs(Property\SameAs $sameAs)
- * @method Person setUrl(Property\Url $url)
  */
-class Person extends Thing {
+class Person {
 
 	/**
 	 * @var Property\AdditionalName
@@ -162,6 +150,10 @@ class Person extends Thing {
 	private $honorificSuffix;
 
 	/**
+	 */
+	private $id;
+
+	/**
 	 * @var Property\IsicV4
 	 */
 	private $isicV4;
@@ -217,6 +209,11 @@ class Person extends Thing {
 	private $performerIn;
 
 	/**
+	 * @var Property\PublishingPrinciples
+	 */
+	private $publishingPrinciples;
+
+	/**
 	 * @var Property\RelatedTo
 	 */
 	private $relatedTo;
@@ -270,6 +267,15 @@ class Person extends Thing {
 	 * @var Property\WorksFor
 	 */
 	private $worksFor;
+
+	/**
+	 * Person constructor.
+	 * 
+	 * @param string $id
+	 */
+	public function __construct($id = null) {
+		$this->id = $id;
+	}
 
 	/**
 	 * Get additional name.
@@ -524,6 +530,15 @@ class Person extends Thing {
 	}
 
 	/**
+	 * Get id.
+	 * 
+	 * @return string
+	 */
+	public function getId() {
+		return $this->id;
+	}
+
+	/**
 	 * Get isicv4.
 	 * 
 	 * @return Property\IsicV4
@@ -620,6 +635,15 @@ class Person extends Thing {
 	 */
 	public function getPerformerIn() {
 		return $this->performerIn;
+	}
+
+	/**
+	 * Get publishing principles.
+	 * 
+	 * @return Property\PublishingPrinciples
+	 */
+	public function getPublishingPrinciples() {
+		return $this->publishingPrinciples;
 	}
 
 	/**
@@ -1194,6 +1218,18 @@ class Person extends Thing {
 	 */
 	public function setPerformerIn(Property\PerformerIn $performerIn) {
 		$this->performerIn = $performerIn;
+
+		return $this;
+	}
+
+	/**
+	 * Set publishing principles.
+	 * 
+	 * @param Property\PublishingPrinciples $publishingPrinciples
+	 * @return Person
+	 */
+	public function setPublishingPrinciples(Property\PublishingPrinciples $publishingPrinciples) {
+		$this->publishingPrinciples = $publishingPrinciples;
 
 		return $this;
 	}

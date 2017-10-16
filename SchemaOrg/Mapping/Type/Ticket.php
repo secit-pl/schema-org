@@ -6,6 +6,18 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class Ticket.
+ * 
+ * @method Ticket setAdditionalType(Property\AdditionalType $additionalType)
+ * @method Ticket setAlternateName(Property\AlternateName $alternateName)
+ * @method Ticket setDescription(Property\Description $description)
+ * @method Ticket setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
+ * @method Ticket setIdentifier(Property\Identifier $identifier)
+ * @method Ticket setImage(Property\Image $image)
+ * @method Ticket setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
+ * @method Ticket setName(Property\Name $name)
+ * @method Ticket setPotentialAction(Property\PotentialAction $potentialAction)
+ * @method Ticket setSameAs(Property\SameAs $sameAs)
+ * @method Ticket setUrl(Property\Url $url)
  */
 class Ticket extends Intangible {
 

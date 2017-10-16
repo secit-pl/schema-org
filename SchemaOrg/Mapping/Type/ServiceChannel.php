@@ -6,17 +6,25 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class ServiceChannel.
+ * 
+ * @method ServiceChannel setAdditionalType(Property\AdditionalType $additionalType)
+ * @method ServiceChannel setAlternateName(Property\AlternateName $alternateName)
+ * @method ServiceChannel setDescription(Property\Description $description)
+ * @method ServiceChannel setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
+ * @method ServiceChannel setIdentifier(Property\Identifier $identifier)
+ * @method ServiceChannel setImage(Property\Image $image)
+ * @method ServiceChannel setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
+ * @method ServiceChannel setName(Property\Name $name)
+ * @method ServiceChannel setPotentialAction(Property\PotentialAction $potentialAction)
+ * @method ServiceChannel setSameAs(Property\SameAs $sameAs)
+ * @method ServiceChannel setUrl(Property\Url $url)
  */
-class ServiceChannel {
+class ServiceChannel extends Intangible {
 
 	/**
 	 * @var Property\AvailableLanguage
 	 */
 	private $availableLanguage;
-
-	/**
-	 */
-	private $id;
 
 	/**
 	 * @var Property\ProcessingTime
@@ -54,30 +62,12 @@ class ServiceChannel {
 	private $serviceUrl;
 
 	/**
-	 * ServiceChannel constructor.
-	 * 
-	 * @param string $id
-	 */
-	public function __construct($id = null) {
-		$this->id = $id;
-	}
-
-	/**
 	 * Get available language.
 	 * 
 	 * @return Property\AvailableLanguage
 	 */
 	public function getAvailableLanguage() {
 		return $this->availableLanguage;
-	}
-
-	/**
-	 * Get id.
-	 * 
-	 * @return string
-	 */
-	public function getId() {
-		return $this->id;
 	}
 
 	/**

@@ -2,24 +2,32 @@
 
 namespace SecIT\SchemaOrg\Mapping\Type;
 
-use SecIT\SchemaOrg\Mapping\Property;
-
 /**
  * Class BookmarkAction.
- * 
- * @method BookmarkAction setActionStatus(Property\ActionStatus $actionStatus)
- * @method BookmarkAction setAgent(Property\Agent $agent)
- * @method BookmarkAction setEndTime(Property\EndTime $endTime)
- * @method BookmarkAction setError(Property\Error $error)
- * @method BookmarkAction setInstrument(Property\Instrument $instrument)
- * @method BookmarkAction setLocation(Property\Location $location)
- * @method BookmarkAction setObject(Property\Object $object)
- * @method BookmarkAction setParticipant(Property\Participant $participant)
- * @method BookmarkAction setResult(Property\Result $result)
- * @method BookmarkAction setStartTime(Property\StartTime $startTime)
- * @method BookmarkAction setTarget(Property\Target $target)
  */
-class BookmarkAction extends OrganizeAction {
+class BookmarkAction {
+
+	/**
+	 */
+	private $id;
+
+	/**
+	 * BookmarkAction constructor.
+	 * 
+	 * @param string $id
+	 */
+	public function __construct($id = null) {
+		$this->id = $id;
+	}
+
+	/**
+	 * Get id.
+	 * 
+	 * @return string
+	 */
+	public function getId() {
+		return $this->id;
+	}
 
 	/**
 	 * Get schema URL.

@@ -3,13 +3,14 @@
 namespace SecIT\SchemaOrg\Mapping\Property;
 
 use SecIT\SchemaOrg\Mapping\DataType;
+use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * EducationRequirements class.
+ * EstimatedCost class.
  * 
- * @method EducationRequirements setValue($value)
+ * @method EstimatedCost setValue($value)
  */
-class EducationRequirements extends AbstractProperty {
+class EstimatedCost extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
@@ -17,7 +18,7 @@ class EducationRequirements extends AbstractProperty {
 	 * @return string
 	 */
 	public function getSchemaUrl() {
-		return 'https://schema.org/educationRequirements';
+		return 'https://schema.org/estimatedCost';
 	}
 
 	/**
@@ -27,6 +28,6 @@ class EducationRequirements extends AbstractProperty {
 	 * @return bool
 	 */
 	public function isValueValid($value) {
-		return $value instanceof DataType\TextType;
+		return $value instanceof Type\MonetaryAmount || $value instanceof DataType\TextType;
 	}
 }

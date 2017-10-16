@@ -6,21 +6,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class RentalCarReservation.
- * 
- * @method RentalCarReservation setBookingTime(Property\BookingTime $bookingTime)
- * @method RentalCarReservation setBroker(Property\Broker $broker)
- * @method RentalCarReservation setModifiedTime(Property\ModifiedTime $modifiedTime)
- * @method RentalCarReservation setPriceCurrency(Property\PriceCurrency $priceCurrency)
- * @method RentalCarReservation setProgramMembershipUsed(Property\ProgramMembershipUsed $programMembershipUsed)
- * @method RentalCarReservation setProvider(Property\Provider $provider)
- * @method RentalCarReservation setReservationFor(Property\ReservationFor $reservationFor)
- * @method RentalCarReservation setReservationId(Property\ReservationId $reservationId)
- * @method RentalCarReservation setReservationStatus(Property\ReservationStatus $reservationStatus)
- * @method RentalCarReservation setReservedTicket(Property\ReservedTicket $reservedTicket)
- * @method RentalCarReservation setTotalPrice(Property\TotalPrice $totalPrice)
- * @method RentalCarReservation setUnderName(Property\UnderName $underName)
  */
-class RentalCarReservation extends Reservation {
+class RentalCarReservation {
 
 	/**
 	 * @var Property\DropoffLocation
@@ -33,6 +20,10 @@ class RentalCarReservation extends Reservation {
 	private $dropoffTime;
 
 	/**
+	 */
+	private $id;
+
+	/**
 	 * @var Property\PickupLocation
 	 */
 	private $pickupLocation;
@@ -41,6 +32,15 @@ class RentalCarReservation extends Reservation {
 	 * @var Property\PickupTime
 	 */
 	private $pickupTime;
+
+	/**
+	 * RentalCarReservation constructor.
+	 * 
+	 * @param string $id
+	 */
+	public function __construct($id = null) {
+		$this->id = $id;
+	}
 
 	/**
 	 * Get dropoff location.
@@ -58,6 +58,15 @@ class RentalCarReservation extends Reservation {
 	 */
 	public function getDropoffTime() {
 		return $this->dropoffTime;
+	}
+
+	/**
+	 * Get id.
+	 * 
+	 * @return string
+	 */
+	public function getId() {
+		return $this->id;
 	}
 
 	/**

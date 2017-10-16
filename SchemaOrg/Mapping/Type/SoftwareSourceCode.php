@@ -7,7 +7,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class SoftwareSourceCode.
  * 
- * @method SoftwareSourceCode setAbout(Property\About $about)
  * @method SoftwareSourceCode setAccessMode(Property\AccessMode $accessMode)
  * @method SoftwareSourceCode setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method SoftwareSourceCode setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)
@@ -46,6 +45,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SoftwareSourceCode setEducationalUse(Property\EducationalUse $educationalUse)
  * @method SoftwareSourceCode setEncoding(Property\Encoding $encoding)
  * @method SoftwareSourceCode setExampleOfWork(Property\ExampleOfWork $exampleOfWork)
+ * @method SoftwareSourceCode setExpires(Property\Expires $expires)
  * @method SoftwareSourceCode setFileFormat(Property\FileFormat $fileFormat)
  * @method SoftwareSourceCode setFunder(Property\Funder $funder)
  * @method SoftwareSourceCode setGenre(Property\Genre $genre)

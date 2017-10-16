@@ -5,7 +5,29 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 /**
  * Class DiscoverAction.
  */
-class DiscoverAction extends FindAction {
+class DiscoverAction {
+
+	/**
+	 */
+	private $id;
+
+	/**
+	 * DiscoverAction constructor.
+	 * 
+	 * @param string $id
+	 */
+	public function __construct($id = null) {
+		$this->id = $id;
+	}
+
+	/**
+	 * Get id.
+	 * 
+	 * @return string
+	 */
+	public function getId() {
+		return $this->id;
+	}
 
 	/**
 	 * Get schema URL.

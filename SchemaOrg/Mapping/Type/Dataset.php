@@ -7,7 +7,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Dataset.
  * 
- * @method Dataset setAbout(Property\About $about)
  * @method Dataset setAccessMode(Property\AccessMode $accessMode)
  * @method Dataset setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method Dataset setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)
@@ -46,6 +45,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method Dataset setEducationalUse(Property\EducationalUse $educationalUse)
  * @method Dataset setEncoding(Property\Encoding $encoding)
  * @method Dataset setExampleOfWork(Property\ExampleOfWork $exampleOfWork)
+ * @method Dataset setExpires(Property\Expires $expires)
  * @method Dataset setFileFormat(Property\FileFormat $fileFormat)
  * @method Dataset setFunder(Property\Funder $funder)
  * @method Dataset setGenre(Property\Genre $genre)
@@ -109,6 +109,11 @@ class Dataset extends CreativeWork {
 	private $includedInDataCatalog;
 
 	/**
+	 * @var Property\Issn
+	 */
+	private $issn;
+
+	/**
 	 * Get distribution.
 	 * 
 	 * @return Property\Distribution
@@ -124,6 +129,15 @@ class Dataset extends CreativeWork {
 	 */
 	public function getIncludedInDataCatalog() {
 		return $this->includedInDataCatalog;
+	}
+
+	/**
+	 * Get issn.
+	 * 
+	 * @return Property\Issn
+	 */
+	public function getIssn() {
+		return $this->issn;
 	}
 
 	/**
@@ -155,6 +169,18 @@ class Dataset extends CreativeWork {
 	 */
 	public function setIncludedInDataCatalog(Property\IncludedInDataCatalog $includedInDataCatalog) {
 		$this->includedInDataCatalog = $includedInDataCatalog;
+
+		return $this;
+	}
+
+	/**
+	 * Set issn.
+	 * 
+	 * @param Property\Issn $issn
+	 * @return Dataset
+	 */
+	public function setIssn(Property\Issn $issn) {
+		$this->issn = $issn;
 
 		return $this;
 	}

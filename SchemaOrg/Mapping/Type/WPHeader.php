@@ -7,7 +7,6 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class WPHeader.
  * 
- * @method WPHeader setAbout(Property\About $about)
  * @method WPHeader setAccessMode(Property\AccessMode $accessMode)
  * @method WPHeader setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method WPHeader setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)
@@ -46,6 +45,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method WPHeader setEducationalUse(Property\EducationalUse $educationalUse)
  * @method WPHeader setEncoding(Property\Encoding $encoding)
  * @method WPHeader setExampleOfWork(Property\ExampleOfWork $exampleOfWork)
+ * @method WPHeader setExpires(Property\Expires $expires)
  * @method WPHeader setFileFormat(Property\FileFormat $fileFormat)
  * @method WPHeader setFunder(Property\Funder $funder)
  * @method WPHeader setGenre(Property\Genre $genre)

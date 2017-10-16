@@ -6,6 +6,18 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class Flight.
+ * 
+ * @method Flight setAdditionalType(Property\AdditionalType $additionalType)
+ * @method Flight setAlternateName(Property\AlternateName $alternateName)
+ * @method Flight setDescription(Property\Description $description)
+ * @method Flight setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
+ * @method Flight setIdentifier(Property\Identifier $identifier)
+ * @method Flight setImage(Property\Image $image)
+ * @method Flight setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
+ * @method Flight setName(Property\Name $name)
+ * @method Flight setPotentialAction(Property\PotentialAction $potentialAction)
+ * @method Flight setSameAs(Property\SameAs $sameAs)
+ * @method Flight setUrl(Property\Url $url)
  */
 class Flight extends Intangible {
 
