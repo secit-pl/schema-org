@@ -271,6 +271,11 @@ final class Generator
             }
         }
 
+        // if no conditions than always return true
+        if (!$instanceCheckConditions) {
+            $instanceCheckConditions[] = 'true';
+        }
+
         $class
             ->setMethod(PhpMethod::create('isValueValid')
                 ->setDescription('Check is value valid.')
@@ -356,6 +361,10 @@ final class Generator
         }
 
         foreach ($data['specific_properties'] as $property) {
+            if (!isset($schema['properties'][$property])) {
+                continue;
+            }
+
             if ($property == 'itemListElement') {
                 $setterBody = 'if (!is_array($itemListElements)) {'."\n";
                 $setterBody .= '    throw new \\Exception(\'The value is expected to be an array\');'."\n";
@@ -479,6 +488,10 @@ final class Generator
         $properties = [];
         if (!$isRoot) {
             foreach ($typeSchema['specific_properties'] as $property) {
+                if (!isset($schema['properties'][$property])) {
+                    continue;
+                }
+
                 $properties[$property] = $property;
             }
         }
@@ -579,7 +592,12 @@ final class Generator
         $specificPropertiesCount = count($specificProperties);
         foreach (array_values($specificProperties) as $index => $specificProperty) {
             echo '['.($index + 1).'/'.$specificPropertiesCount.'] Getting property: '.$specificProperty."\n";
-            $schema['properties'][$specificProperty] = $this->getProperty($client, '/'.$specificProperty);
+            try {
+                $schema['properties'][$specificProperty] = $this->getProperty($client, '/'.$specificProperty);
+            } catch (\InvalidArgumentException $exception) {
+                echo '   Failed: '.$exception->getMessage()."\n";
+                echo "   Skipping...\n";
+            }
         }
 
         $enumerationMembers = [];
