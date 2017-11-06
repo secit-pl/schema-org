@@ -6,12 +6,20 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class MenuItem.
+ * 
+ * @method MenuItem setAdditionalType(Property\AdditionalType $additionalType)
+ * @method MenuItem setAlternateName(Property\AlternateName $alternateName)
+ * @method MenuItem setDescription(Property\Description $description)
+ * @method MenuItem setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
+ * @method MenuItem setIdentifier(Property\Identifier $identifier)
+ * @method MenuItem setImage(Property\Image $image)
+ * @method MenuItem setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
+ * @method MenuItem setName(Property\Name $name)
+ * @method MenuItem setPotentialAction(Property\PotentialAction $potentialAction)
+ * @method MenuItem setSameAs(Property\SameAs $sameAs)
+ * @method MenuItem setUrl(Property\Url $url)
  */
-class MenuItem {
-
-	/**
-	 */
-	private $id;
+class MenuItem extends Thing {
 
 	/**
 	 * @var Property\Nutrition
@@ -27,24 +35,6 @@ class MenuItem {
 	 * @var Property\SuitableForDiet
 	 */
 	private $suitableForDiet;
-
-	/**
-	 * MenuItem constructor.
-	 * 
-	 * @param string $id
-	 */
-	public function __construct($id = null) {
-		$this->id = $id;
-	}
-
-	/**
-	 * Get id.
-	 * 
-	 * @return string
-	 */
-	public function getId() {
-		return $this->id;
-	}
 
 	/**
 	 * Get nutrition.

@@ -6,8 +6,20 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class BusTrip.
+ * 
+ * @method BusTrip setAdditionalType(Property\AdditionalType $additionalType)
+ * @method BusTrip setAlternateName(Property\AlternateName $alternateName)
+ * @method BusTrip setDescription(Property\Description $description)
+ * @method BusTrip setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
+ * @method BusTrip setIdentifier(Property\Identifier $identifier)
+ * @method BusTrip setImage(Property\Image $image)
+ * @method BusTrip setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
+ * @method BusTrip setName(Property\Name $name)
+ * @method BusTrip setPotentialAction(Property\PotentialAction $potentialAction)
+ * @method BusTrip setSameAs(Property\SameAs $sameAs)
+ * @method BusTrip setUrl(Property\Url $url)
  */
-class BusTrip {
+class BusTrip extends Intangible {
 
 	/**
 	 * @var Property\ArrivalBusStop
@@ -40,22 +52,9 @@ class BusTrip {
 	private $departureTime;
 
 	/**
-	 */
-	private $id;
-
-	/**
 	 * @var Property\Provider
 	 */
 	private $provider;
-
-	/**
-	 * BusTrip constructor.
-	 * 
-	 * @param string $id
-	 */
-	public function __construct($id = null) {
-		$this->id = $id;
-	}
 
 	/**
 	 * Get arrival bus stop.
@@ -109,15 +108,6 @@ class BusTrip {
 	 */
 	public function getDepartureTime() {
 		return $this->departureTime;
-	}
-
-	/**
-	 * Get id.
-	 * 
-	 * @return string
-	 */
-	public function getId() {
-		return $this->id;
 	}
 
 	/**

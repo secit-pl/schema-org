@@ -6,12 +6,20 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class BedDetails.
+ * 
+ * @method BedDetails setAdditionalType(Property\AdditionalType $additionalType)
+ * @method BedDetails setAlternateName(Property\AlternateName $alternateName)
+ * @method BedDetails setDescription(Property\Description $description)
+ * @method BedDetails setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
+ * @method BedDetails setIdentifier(Property\Identifier $identifier)
+ * @method BedDetails setImage(Property\Image $image)
+ * @method BedDetails setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
+ * @method BedDetails setName(Property\Name $name)
+ * @method BedDetails setPotentialAction(Property\PotentialAction $potentialAction)
+ * @method BedDetails setSameAs(Property\SameAs $sameAs)
+ * @method BedDetails setUrl(Property\Url $url)
  */
-class BedDetails {
-
-	/**
-	 */
-	private $id;
+class BedDetails extends Thing {
 
 	/**
 	 * @var Property\NumberOfBeds
@@ -22,24 +30,6 @@ class BedDetails {
 	 * @var Property\TypeOfBed
 	 */
 	private $typeOfBed;
-
-	/**
-	 * BedDetails constructor.
-	 * 
-	 * @param string $id
-	 */
-	public function __construct($id = null) {
-		$this->id = $id;
-	}
-
-	/**
-	 * Get id.
-	 * 
-	 * @return string
-	 */
-	public function getId() {
-		return $this->id;
-	}
 
 	/**
 	 * Get number of beds.

@@ -6,8 +6,32 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class RentalCarReservation.
+ * 
+ * @method RentalCarReservation setAdditionalType(Property\AdditionalType $additionalType)
+ * @method RentalCarReservation setAlternateName(Property\AlternateName $alternateName)
+ * @method RentalCarReservation setBookingTime(Property\BookingTime $bookingTime)
+ * @method RentalCarReservation setBroker(Property\Broker $broker)
+ * @method RentalCarReservation setDescription(Property\Description $description)
+ * @method RentalCarReservation setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
+ * @method RentalCarReservation setIdentifier(Property\Identifier $identifier)
+ * @method RentalCarReservation setImage(Property\Image $image)
+ * @method RentalCarReservation setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
+ * @method RentalCarReservation setModifiedTime(Property\ModifiedTime $modifiedTime)
+ * @method RentalCarReservation setName(Property\Name $name)
+ * @method RentalCarReservation setPotentialAction(Property\PotentialAction $potentialAction)
+ * @method RentalCarReservation setPriceCurrency(Property\PriceCurrency $priceCurrency)
+ * @method RentalCarReservation setProgramMembershipUsed(Property\ProgramMembershipUsed $programMembershipUsed)
+ * @method RentalCarReservation setProvider(Property\Provider $provider)
+ * @method RentalCarReservation setReservationFor(Property\ReservationFor $reservationFor)
+ * @method RentalCarReservation setReservationId(Property\ReservationId $reservationId)
+ * @method RentalCarReservation setReservationStatus(Property\ReservationStatus $reservationStatus)
+ * @method RentalCarReservation setReservedTicket(Property\ReservedTicket $reservedTicket)
+ * @method RentalCarReservation setSameAs(Property\SameAs $sameAs)
+ * @method RentalCarReservation setTotalPrice(Property\TotalPrice $totalPrice)
+ * @method RentalCarReservation setUnderName(Property\UnderName $underName)
+ * @method RentalCarReservation setUrl(Property\Url $url)
  */
-class RentalCarReservation {
+class RentalCarReservation extends Reservation {
 
 	/**
 	 * @var Property\DropoffLocation
@@ -20,10 +44,6 @@ class RentalCarReservation {
 	private $dropoffTime;
 
 	/**
-	 */
-	private $id;
-
-	/**
 	 * @var Property\PickupLocation
 	 */
 	private $pickupLocation;
@@ -32,15 +52,6 @@ class RentalCarReservation {
 	 * @var Property\PickupTime
 	 */
 	private $pickupTime;
-
-	/**
-	 * RentalCarReservation constructor.
-	 * 
-	 * @param string $id
-	 */
-	public function __construct($id = null) {
-		$this->id = $id;
-	}
 
 	/**
 	 * Get dropoff location.
@@ -58,15 +69,6 @@ class RentalCarReservation {
 	 */
 	public function getDropoffTime() {
 		return $this->dropoffTime;
-	}
-
-	/**
-	 * Get id.
-	 * 
-	 * @return string
-	 */
-	public function getId() {
-		return $this->id;
 	}
 
 	/**

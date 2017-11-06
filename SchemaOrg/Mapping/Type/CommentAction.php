@@ -7,8 +7,30 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class CommentAction.
  * 
+ * @method CommentAction setActionStatus(Property\ActionStatus $actionStatus)
+ * @method CommentAction setAdditionalType(Property\AdditionalType $additionalType)
+ * @method CommentAction setAgent(Property\Agent $agent)
+ * @method CommentAction setAlternateName(Property\AlternateName $alternateName)
+ * @method CommentAction setDescription(Property\Description $description)
+ * @method CommentAction setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
+ * @method CommentAction setEndTime(Property\EndTime $endTime)
+ * @method CommentAction setError(Property\Error $error)
+ * @method CommentAction setIdentifier(Property\Identifier $identifier)
+ * @method CommentAction setImage(Property\Image $image)
  * @method CommentAction setInLanguage(Property\InLanguage $inLanguage)
+ * @method CommentAction setInstrument(Property\Instrument $instrument)
+ * @method CommentAction setLocation(Property\Location $location)
+ * @method CommentAction setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
+ * @method CommentAction setName(Property\Name $name)
+ * @method CommentAction setObject(Property\Object $object)
+ * @method CommentAction setParticipant(Property\Participant $participant)
+ * @method CommentAction setPotentialAction(Property\PotentialAction $potentialAction)
  * @method CommentAction setRecipient(Property\Recipient $recipient)
+ * @method CommentAction setResult(Property\Result $result)
+ * @method CommentAction setSameAs(Property\SameAs $sameAs)
+ * @method CommentAction setStartTime(Property\StartTime $startTime)
+ * @method CommentAction setTarget(Property\Target $target)
+ * @method CommentAction setUrl(Property\Url $url)
  */
 class CommentAction extends CommunicateAction {
 

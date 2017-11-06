@@ -6,8 +6,65 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class LodgingBusiness.
+ * 
+ * @method LodgingBusiness setAdditionalType(Property\AdditionalType $additionalType)
+ * @method LodgingBusiness setAddress(Property\Address $address)
+ * @method LodgingBusiness setAggregateRating(Property\AggregateRating $aggregateRating)
+ * @method LodgingBusiness setAlternateName(Property\AlternateName $alternateName)
+ * @method LodgingBusiness setAlumni(Property\Alumni $alumni)
+ * @method LodgingBusiness setAreaServed(Property\AreaServed $areaServed)
+ * @method LodgingBusiness setAward(Property\Award $award)
+ * @method LodgingBusiness setBrand(Property\Brand $brand)
+ * @method LodgingBusiness setContactPoint(Property\ContactPoint $contactPoint)
+ * @method LodgingBusiness setCurrenciesAccepted(Property\CurrenciesAccepted $currenciesAccepted)
+ * @method LodgingBusiness setDepartment(Property\Department $department)
+ * @method LodgingBusiness setDescription(Property\Description $description)
+ * @method LodgingBusiness setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
+ * @method LodgingBusiness setDissolutionDate(Property\DissolutionDate $dissolutionDate)
+ * @method LodgingBusiness setDuns(Property\Duns $duns)
+ * @method LodgingBusiness setEmail(Property\Email $email)
+ * @method LodgingBusiness setEmployee(Property\Employee $employee)
+ * @method LodgingBusiness setEvent(Property\Event $event)
+ * @method LodgingBusiness setFaxNumber(Property\FaxNumber $faxNumber)
+ * @method LodgingBusiness setFounder(Property\Founder $founder)
+ * @method LodgingBusiness setFoundingDate(Property\FoundingDate $foundingDate)
+ * @method LodgingBusiness setFoundingLocation(Property\FoundingLocation $foundingLocation)
+ * @method LodgingBusiness setFunder(Property\Funder $funder)
+ * @method LodgingBusiness setGlobalLocationNumber(Property\GlobalLocationNumber $globalLocationNumber)
+ * @method LodgingBusiness setHasOfferCatalog(Property\HasOfferCatalog $hasOfferCatalog)
+ * @method LodgingBusiness setHasPOS(Property\HasPOS $hasPOS)
+ * @method LodgingBusiness setIdentifier(Property\Identifier $identifier)
+ * @method LodgingBusiness setImage(Property\Image $image)
+ * @method LodgingBusiness setIsicV4(Property\IsicV4 $isicV4)
+ * @method LodgingBusiness setLegalName(Property\LegalName $legalName)
+ * @method LodgingBusiness setLeiCode(Property\LeiCode $leiCode)
+ * @method LodgingBusiness setLocation(Property\Location $location)
+ * @method LodgingBusiness setLogo(Property\Logo $logo)
+ * @method LodgingBusiness setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
+ * @method LodgingBusiness setMakesOffer(Property\MakesOffer $makesOffer)
+ * @method LodgingBusiness setMember(Property\Member $member)
+ * @method LodgingBusiness setMemberOf(Property\MemberOf $memberOf)
+ * @method LodgingBusiness setNaics(Property\Naics $naics)
+ * @method LodgingBusiness setName(Property\Name $name)
+ * @method LodgingBusiness setNumberOfEmployees(Property\NumberOfEmployees $numberOfEmployees)
+ * @method LodgingBusiness setOpeningHours(Property\OpeningHours $openingHours)
+ * @method LodgingBusiness setOwns(Property\Owns $owns)
+ * @method LodgingBusiness setParentOrganization(Property\ParentOrganization $parentOrganization)
+ * @method LodgingBusiness setPaymentAccepted(Property\PaymentAccepted $paymentAccepted)
+ * @method LodgingBusiness setPotentialAction(Property\PotentialAction $potentialAction)
+ * @method LodgingBusiness setPriceRange(Property\PriceRange $priceRange)
+ * @method LodgingBusiness setPublishingPrinciples(Property\PublishingPrinciples $publishingPrinciples)
+ * @method LodgingBusiness setReview(Property\Review $review)
+ * @method LodgingBusiness setSameAs(Property\SameAs $sameAs)
+ * @method LodgingBusiness setSeeks(Property\Seeks $seeks)
+ * @method LodgingBusiness setSponsor(Property\Sponsor $sponsor)
+ * @method LodgingBusiness setSubOrganization(Property\SubOrganization $subOrganization)
+ * @method LodgingBusiness setTaxID(Property\TaxID $taxID)
+ * @method LodgingBusiness setTelephone(Property\Telephone $telephone)
+ * @method LodgingBusiness setUrl(Property\Url $url)
+ * @method LodgingBusiness setVatID(Property\VatID $vatID)
  */
-class LodgingBusiness {
+class LodgingBusiness extends LocalBusiness {
 
 	/**
 	 * @var Property\AmenityFeature
@@ -35,10 +92,6 @@ class LodgingBusiness {
 	private $checkoutTime;
 
 	/**
-	 */
-	private $id;
-
-	/**
 	 * @var Property\PetsAllowed
 	 */
 	private $petsAllowed;
@@ -47,15 +100,6 @@ class LodgingBusiness {
 	 * @var Property\StarRating
 	 */
 	private $starRating;
-
-	/**
-	 * LodgingBusiness constructor.
-	 * 
-	 * @param string $id
-	 */
-	public function __construct($id = null) {
-		$this->id = $id;
-	}
 
 	/**
 	 * Get amenity feature.
@@ -100,15 +144,6 @@ class LodgingBusiness {
 	 */
 	public function getCheckoutTime() {
 		return $this->checkoutTime;
-	}
-
-	/**
-	 * Get id.
-	 * 
-	 * @return string
-	 */
-	public function getId() {
-		return $this->id;
 	}
 
 	/**

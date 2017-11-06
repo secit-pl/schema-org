@@ -6,8 +6,29 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class PaymentChargeSpecification.
+ * 
+ * @method PaymentChargeSpecification setAdditionalType(Property\AdditionalType $additionalType)
+ * @method PaymentChargeSpecification setAlternateName(Property\AlternateName $alternateName)
+ * @method PaymentChargeSpecification setDescription(Property\Description $description)
+ * @method PaymentChargeSpecification setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
+ * @method PaymentChargeSpecification setEligibleQuantity(Property\EligibleQuantity $eligibleQuantity)
+ * @method PaymentChargeSpecification setEligibleTransactionVolume(Property\EligibleTransactionVolume $eligibleTransactionVolume)
+ * @method PaymentChargeSpecification setIdentifier(Property\Identifier $identifier)
+ * @method PaymentChargeSpecification setImage(Property\Image $image)
+ * @method PaymentChargeSpecification setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
+ * @method PaymentChargeSpecification setMaxPrice(Property\MaxPrice $maxPrice)
+ * @method PaymentChargeSpecification setMinPrice(Property\MinPrice $minPrice)
+ * @method PaymentChargeSpecification setName(Property\Name $name)
+ * @method PaymentChargeSpecification setPotentialAction(Property\PotentialAction $potentialAction)
+ * @method PaymentChargeSpecification setPrice(Property\Price $price)
+ * @method PaymentChargeSpecification setPriceCurrency(Property\PriceCurrency $priceCurrency)
+ * @method PaymentChargeSpecification setSameAs(Property\SameAs $sameAs)
+ * @method PaymentChargeSpecification setUrl(Property\Url $url)
+ * @method PaymentChargeSpecification setValidFrom(Property\ValidFrom $validFrom)
+ * @method PaymentChargeSpecification setValidThrough(Property\ValidThrough $validThrough)
+ * @method PaymentChargeSpecification setValueAddedTaxIncluded(Property\ValueAddedTaxIncluded $valueAddedTaxIncluded)
  */
-class PaymentChargeSpecification {
+class PaymentChargeSpecification extends PriceSpecification {
 
 	/**
 	 * @var Property\AppliesToDeliveryMethod
@@ -18,19 +39,6 @@ class PaymentChargeSpecification {
 	 * @var Property\AppliesToPaymentMethod
 	 */
 	private $appliesToPaymentMethod;
-
-	/**
-	 */
-	private $id;
-
-	/**
-	 * PaymentChargeSpecification constructor.
-	 * 
-	 * @param string $id
-	 */
-	public function __construct($id = null) {
-		$this->id = $id;
-	}
 
 	/**
 	 * Get applies to delivery method.
@@ -48,15 +56,6 @@ class PaymentChargeSpecification {
 	 */
 	public function getAppliesToPaymentMethod() {
 		return $this->appliesToPaymentMethod;
-	}
-
-	/**
-	 * Get id.
-	 * 
-	 * @return string
-	 */
-	public function getId() {
-		return $this->id;
 	}
 
 	/**

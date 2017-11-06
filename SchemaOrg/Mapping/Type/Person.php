@@ -6,8 +6,20 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class Person.
+ * 
+ * @method Person setAdditionalType(Property\AdditionalType $additionalType)
+ * @method Person setAlternateName(Property\AlternateName $alternateName)
+ * @method Person setDescription(Property\Description $description)
+ * @method Person setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
+ * @method Person setIdentifier(Property\Identifier $identifier)
+ * @method Person setImage(Property\Image $image)
+ * @method Person setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
+ * @method Person setName(Property\Name $name)
+ * @method Person setPotentialAction(Property\PotentialAction $potentialAction)
+ * @method Person setSameAs(Property\SameAs $sameAs)
+ * @method Person setUrl(Property\Url $url)
  */
-class Person {
+class Person extends Thing {
 
 	/**
 	 * @var Property\AdditionalName
@@ -150,10 +162,6 @@ class Person {
 	private $honorificSuffix;
 
 	/**
-	 */
-	private $id;
-
-	/**
 	 * @var Property\IsicV4
 	 */
 	private $isicV4;
@@ -267,15 +275,6 @@ class Person {
 	 * @var Property\WorksFor
 	 */
 	private $worksFor;
-
-	/**
-	 * Person constructor.
-	 * 
-	 * @param string $id
-	 */
-	public function __construct($id = null) {
-		$this->id = $id;
-	}
 
 	/**
 	 * Get additional name.
@@ -527,15 +526,6 @@ class Person {
 	 */
 	public function getHonorificSuffix() {
 		return $this->honorificSuffix;
-	}
-
-	/**
-	 * Get id.
-	 * 
-	 * @return string
-	 */
-	public function getId() {
-		return $this->id;
 	}
 
 	/**

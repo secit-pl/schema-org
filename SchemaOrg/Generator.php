@@ -673,6 +673,21 @@ final class Generator
             $ancestors[] = ltrim(preg_replace('/http[s]*:\/\/schema.org\//', '', $subclasses->first()->attr('href')), '/');
         }
 
+        // if no breadcrumbs try to determine subclasses from the properties table
+        if (!$ancestors) {
+            $subclasses = $crawler->filter('.supertype .supertype-name a');
+            foreach ($subclasses as $subclass) {
+                $supertypeHref = $subclass->getAttribute('href');
+                if ($supertypeHref == $href) {
+                    continue;
+                }
+
+                $ancestors[] = ltrim(preg_replace('/http[s]*:\/\/schema.org\//', '', $supertypeHref), '/');
+
+                break;
+            }
+        }
+
         $specificProperties = [];
         $supertypeNames = $crawler->filter('.definition-table .supertype .supertype-name a');
         if ($supertypeNames->count() > 0 && $supertypeNames->first()->text() == $id) {

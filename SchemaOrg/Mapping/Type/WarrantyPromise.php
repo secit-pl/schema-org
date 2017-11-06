@@ -6,8 +6,20 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class WarrantyPromise.
+ * 
+ * @method WarrantyPromise setAdditionalType(Property\AdditionalType $additionalType)
+ * @method WarrantyPromise setAlternateName(Property\AlternateName $alternateName)
+ * @method WarrantyPromise setDescription(Property\Description $description)
+ * @method WarrantyPromise setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
+ * @method WarrantyPromise setIdentifier(Property\Identifier $identifier)
+ * @method WarrantyPromise setImage(Property\Image $image)
+ * @method WarrantyPromise setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
+ * @method WarrantyPromise setName(Property\Name $name)
+ * @method WarrantyPromise setPotentialAction(Property\PotentialAction $potentialAction)
+ * @method WarrantyPromise setSameAs(Property\SameAs $sameAs)
+ * @method WarrantyPromise setUrl(Property\Url $url)
  */
-class WarrantyPromise {
+class WarrantyPromise extends Thing {
 
 	/**
 	 * @var Property\DurationOfWarranty
@@ -15,22 +27,9 @@ class WarrantyPromise {
 	private $durationOfWarranty;
 
 	/**
-	 */
-	private $id;
-
-	/**
 	 * @var Property\WarrantyScope
 	 */
 	private $warrantyScope;
-
-	/**
-	 * WarrantyPromise constructor.
-	 * 
-	 * @param string $id
-	 */
-	public function __construct($id = null) {
-		$this->id = $id;
-	}
 
 	/**
 	 * Get duration of warranty.
@@ -39,15 +38,6 @@ class WarrantyPromise {
 	 */
 	public function getDurationOfWarranty() {
 		return $this->durationOfWarranty;
-	}
-
-	/**
-	 * Get id.
-	 * 
-	 * @return string
-	 */
-	public function getId() {
-		return $this->id;
 	}
 
 	/**

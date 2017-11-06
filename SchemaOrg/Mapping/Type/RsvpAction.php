@@ -7,9 +7,31 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class RsvpAction.
  * 
+ * @method RsvpAction setActionStatus(Property\ActionStatus $actionStatus)
+ * @method RsvpAction setAdditionalType(Property\AdditionalType $additionalType)
+ * @method RsvpAction setAgent(Property\Agent $agent)
+ * @method RsvpAction setAlternateName(Property\AlternateName $alternateName)
+ * @method RsvpAction setDescription(Property\Description $description)
+ * @method RsvpAction setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
+ * @method RsvpAction setEndTime(Property\EndTime $endTime)
+ * @method RsvpAction setError(Property\Error $error)
  * @method RsvpAction setEvent(Property\Event $event)
+ * @method RsvpAction setIdentifier(Property\Identifier $identifier)
+ * @method RsvpAction setImage(Property\Image $image)
  * @method RsvpAction setInLanguage(Property\InLanguage $inLanguage)
+ * @method RsvpAction setInstrument(Property\Instrument $instrument)
+ * @method RsvpAction setLocation(Property\Location $location)
+ * @method RsvpAction setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
+ * @method RsvpAction setName(Property\Name $name)
+ * @method RsvpAction setObject(Property\Object $object)
+ * @method RsvpAction setParticipant(Property\Participant $participant)
+ * @method RsvpAction setPotentialAction(Property\PotentialAction $potentialAction)
  * @method RsvpAction setRecipient(Property\Recipient $recipient)
+ * @method RsvpAction setResult(Property\Result $result)
+ * @method RsvpAction setSameAs(Property\SameAs $sameAs)
+ * @method RsvpAction setStartTime(Property\StartTime $startTime)
+ * @method RsvpAction setTarget(Property\Target $target)
+ * @method RsvpAction setUrl(Property\Url $url)
  */
 class RsvpAction extends InformAction {
 

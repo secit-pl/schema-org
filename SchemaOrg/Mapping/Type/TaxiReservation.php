@@ -6,12 +6,32 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class TaxiReservation.
+ * 
+ * @method TaxiReservation setAdditionalType(Property\AdditionalType $additionalType)
+ * @method TaxiReservation setAlternateName(Property\AlternateName $alternateName)
+ * @method TaxiReservation setBookingTime(Property\BookingTime $bookingTime)
+ * @method TaxiReservation setBroker(Property\Broker $broker)
+ * @method TaxiReservation setDescription(Property\Description $description)
+ * @method TaxiReservation setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
+ * @method TaxiReservation setIdentifier(Property\Identifier $identifier)
+ * @method TaxiReservation setImage(Property\Image $image)
+ * @method TaxiReservation setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
+ * @method TaxiReservation setModifiedTime(Property\ModifiedTime $modifiedTime)
+ * @method TaxiReservation setName(Property\Name $name)
+ * @method TaxiReservation setPotentialAction(Property\PotentialAction $potentialAction)
+ * @method TaxiReservation setPriceCurrency(Property\PriceCurrency $priceCurrency)
+ * @method TaxiReservation setProgramMembershipUsed(Property\ProgramMembershipUsed $programMembershipUsed)
+ * @method TaxiReservation setProvider(Property\Provider $provider)
+ * @method TaxiReservation setReservationFor(Property\ReservationFor $reservationFor)
+ * @method TaxiReservation setReservationId(Property\ReservationId $reservationId)
+ * @method TaxiReservation setReservationStatus(Property\ReservationStatus $reservationStatus)
+ * @method TaxiReservation setReservedTicket(Property\ReservedTicket $reservedTicket)
+ * @method TaxiReservation setSameAs(Property\SameAs $sameAs)
+ * @method TaxiReservation setTotalPrice(Property\TotalPrice $totalPrice)
+ * @method TaxiReservation setUnderName(Property\UnderName $underName)
+ * @method TaxiReservation setUrl(Property\Url $url)
  */
-class TaxiReservation {
-
-	/**
-	 */
-	private $id;
+class TaxiReservation extends Reservation {
 
 	/**
 	 * @var Property\PartySize
@@ -27,24 +47,6 @@ class TaxiReservation {
 	 * @var Property\PickupTime
 	 */
 	private $pickupTime;
-
-	/**
-	 * TaxiReservation constructor.
-	 * 
-	 * @param string $id
-	 */
-	public function __construct($id = null) {
-		$this->id = $id;
-	}
-
-	/**
-	 * Get id.
-	 * 
-	 * @return string
-	 */
-	public function getId() {
-		return $this->id;
-	}
 
 	/**
 	 * Get party size.

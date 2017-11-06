@@ -6,26 +6,38 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class PerformAction.
+ * 
+ * @method PerformAction setActionStatus(Property\ActionStatus $actionStatus)
+ * @method PerformAction setAdditionalType(Property\AdditionalType $additionalType)
+ * @method PerformAction setAgent(Property\Agent $agent)
+ * @method PerformAction setAlternateName(Property\AlternateName $alternateName)
+ * @method PerformAction setAudience(Property\Audience $audience)
+ * @method PerformAction setDescription(Property\Description $description)
+ * @method PerformAction setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
+ * @method PerformAction setEndTime(Property\EndTime $endTime)
+ * @method PerformAction setError(Property\Error $error)
+ * @method PerformAction setEvent(Property\Event $event)
+ * @method PerformAction setIdentifier(Property\Identifier $identifier)
+ * @method PerformAction setImage(Property\Image $image)
+ * @method PerformAction setInstrument(Property\Instrument $instrument)
+ * @method PerformAction setLocation(Property\Location $location)
+ * @method PerformAction setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
+ * @method PerformAction setName(Property\Name $name)
+ * @method PerformAction setObject(Property\Object $object)
+ * @method PerformAction setParticipant(Property\Participant $participant)
+ * @method PerformAction setPotentialAction(Property\PotentialAction $potentialAction)
+ * @method PerformAction setResult(Property\Result $result)
+ * @method PerformAction setSameAs(Property\SameAs $sameAs)
+ * @method PerformAction setStartTime(Property\StartTime $startTime)
+ * @method PerformAction setTarget(Property\Target $target)
+ * @method PerformAction setUrl(Property\Url $url)
  */
-class PerformAction {
+class PerformAction extends PlayAction {
 
 	/**
 	 * @var Property\EntertainmentBusiness
 	 */
 	private $entertainmentBusiness;
-
-	/**
-	 */
-	private $id;
-
-	/**
-	 * PerformAction constructor.
-	 * 
-	 * @param string $id
-	 */
-	public function __construct($id = null) {
-		$this->id = $id;
-	}
 
 	/**
 	 * Get entertainment business.
@@ -34,15 +46,6 @@ class PerformAction {
 	 */
 	public function getEntertainmentBusiness() {
 		return $this->entertainmentBusiness;
-	}
-
-	/**
-	 * Get id.
-	 * 
-	 * @return string
-	 */
-	public function getId() {
-		return $this->id;
 	}
 
 	/**

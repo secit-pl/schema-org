@@ -6,26 +6,28 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class PerformanceRole.
+ * 
+ * @method PerformanceRole setAdditionalType(Property\AdditionalType $additionalType)
+ * @method PerformanceRole setAlternateName(Property\AlternateName $alternateName)
+ * @method PerformanceRole setDescription(Property\Description $description)
+ * @method PerformanceRole setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
+ * @method PerformanceRole setEndDate(Property\EndDate $endDate)
+ * @method PerformanceRole setIdentifier(Property\Identifier $identifier)
+ * @method PerformanceRole setImage(Property\Image $image)
+ * @method PerformanceRole setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
+ * @method PerformanceRole setName(Property\Name $name)
+ * @method PerformanceRole setPotentialAction(Property\PotentialAction $potentialAction)
+ * @method PerformanceRole setRoleName(Property\RoleName $roleName)
+ * @method PerformanceRole setSameAs(Property\SameAs $sameAs)
+ * @method PerformanceRole setStartDate(Property\StartDate $startDate)
+ * @method PerformanceRole setUrl(Property\Url $url)
  */
-class PerformanceRole {
+class PerformanceRole extends Role {
 
 	/**
 	 * @var Property\CharacterName
 	 */
 	private $characterName;
-
-	/**
-	 */
-	private $id;
-
-	/**
-	 * PerformanceRole constructor.
-	 * 
-	 * @param string $id
-	 */
-	public function __construct($id = null) {
-		$this->id = $id;
-	}
 
 	/**
 	 * Get character name.
@@ -34,15 +36,6 @@ class PerformanceRole {
 	 */
 	public function getCharacterName() {
 		return $this->characterName;
-	}
-
-	/**
-	 * Get id.
-	 * 
-	 * @return string
-	 */
-	public function getId() {
-		return $this->id;
 	}
 
 	/**
