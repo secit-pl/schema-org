@@ -1,0 +1,110 @@
+<?php
+
+namespace SecIT\SchemaOrg\Mapping\Type;
+
+use SecIT\SchemaOrg\Mapping\Property;
+
+/**
+ * Class TextDigitalDocumentType.
+ * 
+ * @method TextDigitalDocumentType setAccessMode(Property\AccessModeProperty $accessMode)
+ * @method TextDigitalDocumentType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
+ * @method TextDigitalDocumentType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
+ * @method TextDigitalDocumentType setAccessibilityControl(Property\AccessibilityControlProperty $accessibilityControl)
+ * @method TextDigitalDocumentType setAccessibilityFeature(Property\AccessibilityFeatureProperty $accessibilityFeature)
+ * @method TextDigitalDocumentType setAccessibilityHazard(Property\AccessibilityHazardProperty $accessibilityHazard)
+ * @method TextDigitalDocumentType setAccessibilitySummary(Property\AccessibilitySummaryProperty $accessibilitySummary)
+ * @method TextDigitalDocumentType setAccountablePerson(Property\AccountablePersonProperty $accountablePerson)
+ * @method TextDigitalDocumentType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
+ * @method TextDigitalDocumentType setAggregateRating(Property\AggregateRatingProperty $aggregateRating)
+ * @method TextDigitalDocumentType setAlternateName(Property\AlternateNameProperty $alternateName)
+ * @method TextDigitalDocumentType setAlternativeHeadline(Property\AlternativeHeadlineProperty $alternativeHeadline)
+ * @method TextDigitalDocumentType setAssociatedMedia(Property\AssociatedMediaProperty $associatedMedia)
+ * @method TextDigitalDocumentType setAudience(Property\AudienceProperty $audience)
+ * @method TextDigitalDocumentType setAudio(Property\AudioProperty $audio)
+ * @method TextDigitalDocumentType setAuthor(Property\AuthorProperty $author)
+ * @method TextDigitalDocumentType setAward(Property\AwardProperty $award)
+ * @method TextDigitalDocumentType setCharacter(Property\CharacterProperty $character)
+ * @method TextDigitalDocumentType setCitation(Property\CitationProperty $citation)
+ * @method TextDigitalDocumentType setComment(Property\CommentProperty $comment)
+ * @method TextDigitalDocumentType setCommentCount(Property\CommentCountProperty $commentCount)
+ * @method TextDigitalDocumentType setContentLocation(Property\ContentLocationProperty $contentLocation)
+ * @method TextDigitalDocumentType setContentRating(Property\ContentRatingProperty $contentRating)
+ * @method TextDigitalDocumentType setContributor(Property\ContributorProperty $contributor)
+ * @method TextDigitalDocumentType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
+ * @method TextDigitalDocumentType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method TextDigitalDocumentType setCreator(Property\CreatorProperty $creator)
+ * @method TextDigitalDocumentType setDateCreated(Property\DateCreatedProperty $dateCreated)
+ * @method TextDigitalDocumentType setDateModified(Property\DateModifiedProperty $dateModified)
+ * @method TextDigitalDocumentType setDatePublished(Property\DatePublishedProperty $datePublished)
+ * @method TextDigitalDocumentType setDescription(Property\DescriptionProperty $description)
+ * @method TextDigitalDocumentType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
+ * @method TextDigitalDocumentType setDiscussionUrl(Property\DiscussionUrlProperty $discussionUrl)
+ * @method TextDigitalDocumentType setEditor(Property\EditorProperty $editor)
+ * @method TextDigitalDocumentType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
+ * @method TextDigitalDocumentType setEducationalUse(Property\EducationalUseProperty $educationalUse)
+ * @method TextDigitalDocumentType setEncoding(Property\EncodingProperty $encoding)
+ * @method TextDigitalDocumentType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
+ * @method TextDigitalDocumentType setExpires(Property\ExpiresProperty $expires)
+ * @method TextDigitalDocumentType setFileFormat(Property\FileFormatProperty $fileFormat)
+ * @method TextDigitalDocumentType setFunder(Property\FunderProperty $funder)
+ * @method TextDigitalDocumentType setGenre(Property\GenreProperty $genre)
+ * @method TextDigitalDocumentType setHasDigitalDocumentPermission(Property\HasDigitalDocumentPermissionProperty $hasDigitalDocumentPermission)
+ * @method TextDigitalDocumentType setHasPart(Property\HasPartProperty $hasPart)
+ * @method TextDigitalDocumentType setHeadline(Property\HeadlineProperty $headline)
+ * @method TextDigitalDocumentType setIdentifier(Property\IdentifierProperty $identifier)
+ * @method TextDigitalDocumentType setImage(Property\ImageProperty $image)
+ * @method TextDigitalDocumentType setInLanguage(Property\InLanguageProperty $inLanguage)
+ * @method TextDigitalDocumentType setInteractionStatistic(Property\InteractionStatisticProperty $interactionStatistic)
+ * @method TextDigitalDocumentType setInteractivityType(Property\InteractivityTypeProperty $interactivityType)
+ * @method TextDigitalDocumentType setIsAccessibleForFree(Property\IsAccessibleForFreeProperty $isAccessibleForFree)
+ * @method TextDigitalDocumentType setIsBasedOn(Property\IsBasedOnProperty $isBasedOn)
+ * @method TextDigitalDocumentType setIsFamilyFriendly(Property\IsFamilyFriendlyProperty $isFamilyFriendly)
+ * @method TextDigitalDocumentType setIsPartOf(Property\IsPartOfProperty $isPartOf)
+ * @method TextDigitalDocumentType setKeywords(Property\KeywordsProperty $keywords)
+ * @method TextDigitalDocumentType setLearningResourceType(Property\LearningResourceTypeProperty $learningResourceType)
+ * @method TextDigitalDocumentType setLicense(Property\LicenseProperty $license)
+ * @method TextDigitalDocumentType setLocationCreated(Property\LocationCreatedProperty $locationCreated)
+ * @method TextDigitalDocumentType setMainEntity(Property\MainEntityProperty $mainEntity)
+ * @method TextDigitalDocumentType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
+ * @method TextDigitalDocumentType setMaterial(Property\MaterialProperty $material)
+ * @method TextDigitalDocumentType setMentions(Property\MentionsProperty $mentions)
+ * @method TextDigitalDocumentType setName(Property\NameProperty $name)
+ * @method TextDigitalDocumentType setOffers(Property\OffersProperty $offers)
+ * @method TextDigitalDocumentType setPosition(Property\PositionProperty $position)
+ * @method TextDigitalDocumentType setPotentialAction(Property\PotentialActionProperty $potentialAction)
+ * @method TextDigitalDocumentType setProducer(Property\ProducerProperty $producer)
+ * @method TextDigitalDocumentType setProvider(Property\ProviderProperty $provider)
+ * @method TextDigitalDocumentType setPublication(Property\PublicationProperty $publication)
+ * @method TextDigitalDocumentType setPublisher(Property\PublisherProperty $publisher)
+ * @method TextDigitalDocumentType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
+ * @method TextDigitalDocumentType setRecordedAt(Property\RecordedAtProperty $recordedAt)
+ * @method TextDigitalDocumentType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
+ * @method TextDigitalDocumentType setReview(Property\ReviewProperty $review)
+ * @method TextDigitalDocumentType setSameAs(Property\SameAsProperty $sameAs)
+ * @method TextDigitalDocumentType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
+ * @method TextDigitalDocumentType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method TextDigitalDocumentType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
+ * @method TextDigitalDocumentType setSponsor(Property\SponsorProperty $sponsor)
+ * @method TextDigitalDocumentType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
+ * @method TextDigitalDocumentType setText(Property\TextProperty $text)
+ * @method TextDigitalDocumentType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
+ * @method TextDigitalDocumentType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method TextDigitalDocumentType setTranslator(Property\TranslatorProperty $translator)
+ * @method TextDigitalDocumentType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
+ * @method TextDigitalDocumentType setUrl(Property\UrlProperty $url)
+ * @method TextDigitalDocumentType setVersion(Property\VersionProperty $version)
+ * @method TextDigitalDocumentType setVideo(Property\VideoProperty $video)
+ * @method TextDigitalDocumentType setWorkExample(Property\WorkExampleProperty $workExample)
+ */
+class TextDigitalDocumentType extends DigitalDocumentType {
+
+	/**
+	 * Get schema URL.
+	 * 
+	 * @return string
+	 */
+	public function getSchemaUrl() {
+		return 'https://schema.org/TextDigitalDocument';
+	}
+}

@@ -1,0 +1,55 @@
+<?php
+
+namespace SecIT\SchemaOrg\Mapping\Type;
+
+use SecIT\SchemaOrg\Mapping\Property;
+
+/**
+ * Class VolcanoType.
+ * 
+ * @method VolcanoType setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
+ * @method VolcanoType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
+ * @method VolcanoType setAddress(Property\AddressProperty $address)
+ * @method VolcanoType setAggregateRating(Property\AggregateRatingProperty $aggregateRating)
+ * @method VolcanoType setAlternateName(Property\AlternateNameProperty $alternateName)
+ * @method VolcanoType setAmenityFeature(Property\AmenityFeatureProperty $amenityFeature)
+ * @method VolcanoType setBranchCode(Property\BranchCodeProperty $branchCode)
+ * @method VolcanoType setContainedInPlace(Property\ContainedInPlaceProperty $containedInPlace)
+ * @method VolcanoType setContainsPlace(Property\ContainsPlaceProperty $containsPlace)
+ * @method VolcanoType setDescription(Property\DescriptionProperty $description)
+ * @method VolcanoType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
+ * @method VolcanoType setEvent(Property\EventProperty $event)
+ * @method VolcanoType setFaxNumber(Property\FaxNumberProperty $faxNumber)
+ * @method VolcanoType setGeo(Property\GeoProperty $geo)
+ * @method VolcanoType setGlobalLocationNumber(Property\GlobalLocationNumberProperty $globalLocationNumber)
+ * @method VolcanoType setHasMap(Property\HasMapProperty $hasMap)
+ * @method VolcanoType setIdentifier(Property\IdentifierProperty $identifier)
+ * @method VolcanoType setImage(Property\ImageProperty $image)
+ * @method VolcanoType setIsAccessibleForFree(Property\IsAccessibleForFreeProperty $isAccessibleForFree)
+ * @method VolcanoType setIsicV4(Property\IsicV4Property $isicV4)
+ * @method VolcanoType setLogo(Property\LogoProperty $logo)
+ * @method VolcanoType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
+ * @method VolcanoType setMaximumAttendeeCapacity(Property\MaximumAttendeeCapacityProperty $maximumAttendeeCapacity)
+ * @method VolcanoType setName(Property\NameProperty $name)
+ * @method VolcanoType setOpeningHoursSpecification(Property\OpeningHoursSpecificationProperty $openingHoursSpecification)
+ * @method VolcanoType setPhoto(Property\PhotoProperty $photo)
+ * @method VolcanoType setPotentialAction(Property\PotentialActionProperty $potentialAction)
+ * @method VolcanoType setPublicAccess(Property\PublicAccessProperty $publicAccess)
+ * @method VolcanoType setReview(Property\ReviewProperty $review)
+ * @method VolcanoType setSameAs(Property\SameAsProperty $sameAs)
+ * @method VolcanoType setSmokingAllowed(Property\SmokingAllowedProperty $smokingAllowed)
+ * @method VolcanoType setSpecialOpeningHoursSpecification(Property\SpecialOpeningHoursSpecificationProperty $specialOpeningHoursSpecification)
+ * @method VolcanoType setTelephone(Property\TelephoneProperty $telephone)
+ * @method VolcanoType setUrl(Property\UrlProperty $url)
+ */
+class VolcanoType extends LandformType {
+
+	/**
+	 * Get schema URL.
+	 * 
+	 * @return string
+	 */
+	public function getSchemaUrl() {
+		return 'https://schema.org/Volcano';
+	}
+}

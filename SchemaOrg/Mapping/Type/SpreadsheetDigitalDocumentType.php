@@ -1,0 +1,110 @@
+<?php
+
+namespace SecIT\SchemaOrg\Mapping\Type;
+
+use SecIT\SchemaOrg\Mapping\Property;
+
+/**
+ * Class SpreadsheetDigitalDocumentType.
+ * 
+ * @method SpreadsheetDigitalDocumentType setAccessMode(Property\AccessModeProperty $accessMode)
+ * @method SpreadsheetDigitalDocumentType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
+ * @method SpreadsheetDigitalDocumentType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
+ * @method SpreadsheetDigitalDocumentType setAccessibilityControl(Property\AccessibilityControlProperty $accessibilityControl)
+ * @method SpreadsheetDigitalDocumentType setAccessibilityFeature(Property\AccessibilityFeatureProperty $accessibilityFeature)
+ * @method SpreadsheetDigitalDocumentType setAccessibilityHazard(Property\AccessibilityHazardProperty $accessibilityHazard)
+ * @method SpreadsheetDigitalDocumentType setAccessibilitySummary(Property\AccessibilitySummaryProperty $accessibilitySummary)
+ * @method SpreadsheetDigitalDocumentType setAccountablePerson(Property\AccountablePersonProperty $accountablePerson)
+ * @method SpreadsheetDigitalDocumentType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
+ * @method SpreadsheetDigitalDocumentType setAggregateRating(Property\AggregateRatingProperty $aggregateRating)
+ * @method SpreadsheetDigitalDocumentType setAlternateName(Property\AlternateNameProperty $alternateName)
+ * @method SpreadsheetDigitalDocumentType setAlternativeHeadline(Property\AlternativeHeadlineProperty $alternativeHeadline)
+ * @method SpreadsheetDigitalDocumentType setAssociatedMedia(Property\AssociatedMediaProperty $associatedMedia)
+ * @method SpreadsheetDigitalDocumentType setAudience(Property\AudienceProperty $audience)
+ * @method SpreadsheetDigitalDocumentType setAudio(Property\AudioProperty $audio)
+ * @method SpreadsheetDigitalDocumentType setAuthor(Property\AuthorProperty $author)
+ * @method SpreadsheetDigitalDocumentType setAward(Property\AwardProperty $award)
+ * @method SpreadsheetDigitalDocumentType setCharacter(Property\CharacterProperty $character)
+ * @method SpreadsheetDigitalDocumentType setCitation(Property\CitationProperty $citation)
+ * @method SpreadsheetDigitalDocumentType setComment(Property\CommentProperty $comment)
+ * @method SpreadsheetDigitalDocumentType setCommentCount(Property\CommentCountProperty $commentCount)
+ * @method SpreadsheetDigitalDocumentType setContentLocation(Property\ContentLocationProperty $contentLocation)
+ * @method SpreadsheetDigitalDocumentType setContentRating(Property\ContentRatingProperty $contentRating)
+ * @method SpreadsheetDigitalDocumentType setContributor(Property\ContributorProperty $contributor)
+ * @method SpreadsheetDigitalDocumentType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
+ * @method SpreadsheetDigitalDocumentType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method SpreadsheetDigitalDocumentType setCreator(Property\CreatorProperty $creator)
+ * @method SpreadsheetDigitalDocumentType setDateCreated(Property\DateCreatedProperty $dateCreated)
+ * @method SpreadsheetDigitalDocumentType setDateModified(Property\DateModifiedProperty $dateModified)
+ * @method SpreadsheetDigitalDocumentType setDatePublished(Property\DatePublishedProperty $datePublished)
+ * @method SpreadsheetDigitalDocumentType setDescription(Property\DescriptionProperty $description)
+ * @method SpreadsheetDigitalDocumentType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
+ * @method SpreadsheetDigitalDocumentType setDiscussionUrl(Property\DiscussionUrlProperty $discussionUrl)
+ * @method SpreadsheetDigitalDocumentType setEditor(Property\EditorProperty $editor)
+ * @method SpreadsheetDigitalDocumentType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
+ * @method SpreadsheetDigitalDocumentType setEducationalUse(Property\EducationalUseProperty $educationalUse)
+ * @method SpreadsheetDigitalDocumentType setEncoding(Property\EncodingProperty $encoding)
+ * @method SpreadsheetDigitalDocumentType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
+ * @method SpreadsheetDigitalDocumentType setExpires(Property\ExpiresProperty $expires)
+ * @method SpreadsheetDigitalDocumentType setFileFormat(Property\FileFormatProperty $fileFormat)
+ * @method SpreadsheetDigitalDocumentType setFunder(Property\FunderProperty $funder)
+ * @method SpreadsheetDigitalDocumentType setGenre(Property\GenreProperty $genre)
+ * @method SpreadsheetDigitalDocumentType setHasDigitalDocumentPermission(Property\HasDigitalDocumentPermissionProperty $hasDigitalDocumentPermission)
+ * @method SpreadsheetDigitalDocumentType setHasPart(Property\HasPartProperty $hasPart)
+ * @method SpreadsheetDigitalDocumentType setHeadline(Property\HeadlineProperty $headline)
+ * @method SpreadsheetDigitalDocumentType setIdentifier(Property\IdentifierProperty $identifier)
+ * @method SpreadsheetDigitalDocumentType setImage(Property\ImageProperty $image)
+ * @method SpreadsheetDigitalDocumentType setInLanguage(Property\InLanguageProperty $inLanguage)
+ * @method SpreadsheetDigitalDocumentType setInteractionStatistic(Property\InteractionStatisticProperty $interactionStatistic)
+ * @method SpreadsheetDigitalDocumentType setInteractivityType(Property\InteractivityTypeProperty $interactivityType)
+ * @method SpreadsheetDigitalDocumentType setIsAccessibleForFree(Property\IsAccessibleForFreeProperty $isAccessibleForFree)
+ * @method SpreadsheetDigitalDocumentType setIsBasedOn(Property\IsBasedOnProperty $isBasedOn)
+ * @method SpreadsheetDigitalDocumentType setIsFamilyFriendly(Property\IsFamilyFriendlyProperty $isFamilyFriendly)
+ * @method SpreadsheetDigitalDocumentType setIsPartOf(Property\IsPartOfProperty $isPartOf)
+ * @method SpreadsheetDigitalDocumentType setKeywords(Property\KeywordsProperty $keywords)
+ * @method SpreadsheetDigitalDocumentType setLearningResourceType(Property\LearningResourceTypeProperty $learningResourceType)
+ * @method SpreadsheetDigitalDocumentType setLicense(Property\LicenseProperty $license)
+ * @method SpreadsheetDigitalDocumentType setLocationCreated(Property\LocationCreatedProperty $locationCreated)
+ * @method SpreadsheetDigitalDocumentType setMainEntity(Property\MainEntityProperty $mainEntity)
+ * @method SpreadsheetDigitalDocumentType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
+ * @method SpreadsheetDigitalDocumentType setMaterial(Property\MaterialProperty $material)
+ * @method SpreadsheetDigitalDocumentType setMentions(Property\MentionsProperty $mentions)
+ * @method SpreadsheetDigitalDocumentType setName(Property\NameProperty $name)
+ * @method SpreadsheetDigitalDocumentType setOffers(Property\OffersProperty $offers)
+ * @method SpreadsheetDigitalDocumentType setPosition(Property\PositionProperty $position)
+ * @method SpreadsheetDigitalDocumentType setPotentialAction(Property\PotentialActionProperty $potentialAction)
+ * @method SpreadsheetDigitalDocumentType setProducer(Property\ProducerProperty $producer)
+ * @method SpreadsheetDigitalDocumentType setProvider(Property\ProviderProperty $provider)
+ * @method SpreadsheetDigitalDocumentType setPublication(Property\PublicationProperty $publication)
+ * @method SpreadsheetDigitalDocumentType setPublisher(Property\PublisherProperty $publisher)
+ * @method SpreadsheetDigitalDocumentType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
+ * @method SpreadsheetDigitalDocumentType setRecordedAt(Property\RecordedAtProperty $recordedAt)
+ * @method SpreadsheetDigitalDocumentType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
+ * @method SpreadsheetDigitalDocumentType setReview(Property\ReviewProperty $review)
+ * @method SpreadsheetDigitalDocumentType setSameAs(Property\SameAsProperty $sameAs)
+ * @method SpreadsheetDigitalDocumentType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
+ * @method SpreadsheetDigitalDocumentType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method SpreadsheetDigitalDocumentType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
+ * @method SpreadsheetDigitalDocumentType setSponsor(Property\SponsorProperty $sponsor)
+ * @method SpreadsheetDigitalDocumentType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
+ * @method SpreadsheetDigitalDocumentType setText(Property\TextProperty $text)
+ * @method SpreadsheetDigitalDocumentType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
+ * @method SpreadsheetDigitalDocumentType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method SpreadsheetDigitalDocumentType setTranslator(Property\TranslatorProperty $translator)
+ * @method SpreadsheetDigitalDocumentType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
+ * @method SpreadsheetDigitalDocumentType setUrl(Property\UrlProperty $url)
+ * @method SpreadsheetDigitalDocumentType setVersion(Property\VersionProperty $version)
+ * @method SpreadsheetDigitalDocumentType setVideo(Property\VideoProperty $video)
+ * @method SpreadsheetDigitalDocumentType setWorkExample(Property\WorkExampleProperty $workExample)
+ */
+class SpreadsheetDigitalDocumentType extends DigitalDocumentType {
+
+	/**
+	 * Get schema URL.
+	 * 
+	 * @return string
+	 */
+	public function getSchemaUrl() {
+		return 'https://schema.org/SpreadsheetDigitalDocument';
+	}
+}

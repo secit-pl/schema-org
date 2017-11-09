@@ -1,0 +1,112 @@
+<?php
+
+namespace SecIT\SchemaOrg\Mapping\Type;
+
+use SecIT\SchemaOrg\Mapping\Property;
+
+/**
+ * Class BookSeriesType.
+ * 
+ * @method BookSeriesType setAccessMode(Property\AccessModeProperty $accessMode)
+ * @method BookSeriesType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
+ * @method BookSeriesType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
+ * @method BookSeriesType setAccessibilityControl(Property\AccessibilityControlProperty $accessibilityControl)
+ * @method BookSeriesType setAccessibilityFeature(Property\AccessibilityFeatureProperty $accessibilityFeature)
+ * @method BookSeriesType setAccessibilityHazard(Property\AccessibilityHazardProperty $accessibilityHazard)
+ * @method BookSeriesType setAccessibilitySummary(Property\AccessibilitySummaryProperty $accessibilitySummary)
+ * @method BookSeriesType setAccountablePerson(Property\AccountablePersonProperty $accountablePerson)
+ * @method BookSeriesType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
+ * @method BookSeriesType setAggregateRating(Property\AggregateRatingProperty $aggregateRating)
+ * @method BookSeriesType setAlternateName(Property\AlternateNameProperty $alternateName)
+ * @method BookSeriesType setAlternativeHeadline(Property\AlternativeHeadlineProperty $alternativeHeadline)
+ * @method BookSeriesType setAssociatedMedia(Property\AssociatedMediaProperty $associatedMedia)
+ * @method BookSeriesType setAudience(Property\AudienceProperty $audience)
+ * @method BookSeriesType setAudio(Property\AudioProperty $audio)
+ * @method BookSeriesType setAuthor(Property\AuthorProperty $author)
+ * @method BookSeriesType setAward(Property\AwardProperty $award)
+ * @method BookSeriesType setCharacter(Property\CharacterProperty $character)
+ * @method BookSeriesType setCitation(Property\CitationProperty $citation)
+ * @method BookSeriesType setComment(Property\CommentProperty $comment)
+ * @method BookSeriesType setCommentCount(Property\CommentCountProperty $commentCount)
+ * @method BookSeriesType setContentLocation(Property\ContentLocationProperty $contentLocation)
+ * @method BookSeriesType setContentRating(Property\ContentRatingProperty $contentRating)
+ * @method BookSeriesType setContributor(Property\ContributorProperty $contributor)
+ * @method BookSeriesType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
+ * @method BookSeriesType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method BookSeriesType setCreator(Property\CreatorProperty $creator)
+ * @method BookSeriesType setDateCreated(Property\DateCreatedProperty $dateCreated)
+ * @method BookSeriesType setDateModified(Property\DateModifiedProperty $dateModified)
+ * @method BookSeriesType setDatePublished(Property\DatePublishedProperty $datePublished)
+ * @method BookSeriesType setDescription(Property\DescriptionProperty $description)
+ * @method BookSeriesType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
+ * @method BookSeriesType setDiscussionUrl(Property\DiscussionUrlProperty $discussionUrl)
+ * @method BookSeriesType setEditor(Property\EditorProperty $editor)
+ * @method BookSeriesType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
+ * @method BookSeriesType setEducationalUse(Property\EducationalUseProperty $educationalUse)
+ * @method BookSeriesType setEncoding(Property\EncodingProperty $encoding)
+ * @method BookSeriesType setEndDate(Property\EndDateProperty $endDate)
+ * @method BookSeriesType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
+ * @method BookSeriesType setExpires(Property\ExpiresProperty $expires)
+ * @method BookSeriesType setFileFormat(Property\FileFormatProperty $fileFormat)
+ * @method BookSeriesType setFunder(Property\FunderProperty $funder)
+ * @method BookSeriesType setGenre(Property\GenreProperty $genre)
+ * @method BookSeriesType setHasPart(Property\HasPartProperty $hasPart)
+ * @method BookSeriesType setHeadline(Property\HeadlineProperty $headline)
+ * @method BookSeriesType setIdentifier(Property\IdentifierProperty $identifier)
+ * @method BookSeriesType setImage(Property\ImageProperty $image)
+ * @method BookSeriesType setInLanguage(Property\InLanguageProperty $inLanguage)
+ * @method BookSeriesType setInteractionStatistic(Property\InteractionStatisticProperty $interactionStatistic)
+ * @method BookSeriesType setInteractivityType(Property\InteractivityTypeProperty $interactivityType)
+ * @method BookSeriesType setIsAccessibleForFree(Property\IsAccessibleForFreeProperty $isAccessibleForFree)
+ * @method BookSeriesType setIsBasedOn(Property\IsBasedOnProperty $isBasedOn)
+ * @method BookSeriesType setIsFamilyFriendly(Property\IsFamilyFriendlyProperty $isFamilyFriendly)
+ * @method BookSeriesType setIsPartOf(Property\IsPartOfProperty $isPartOf)
+ * @method BookSeriesType setIssn(Property\IssnProperty $issn)
+ * @method BookSeriesType setKeywords(Property\KeywordsProperty $keywords)
+ * @method BookSeriesType setLearningResourceType(Property\LearningResourceTypeProperty $learningResourceType)
+ * @method BookSeriesType setLicense(Property\LicenseProperty $license)
+ * @method BookSeriesType setLocationCreated(Property\LocationCreatedProperty $locationCreated)
+ * @method BookSeriesType setMainEntity(Property\MainEntityProperty $mainEntity)
+ * @method BookSeriesType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
+ * @method BookSeriesType setMaterial(Property\MaterialProperty $material)
+ * @method BookSeriesType setMentions(Property\MentionsProperty $mentions)
+ * @method BookSeriesType setName(Property\NameProperty $name)
+ * @method BookSeriesType setOffers(Property\OffersProperty $offers)
+ * @method BookSeriesType setPosition(Property\PositionProperty $position)
+ * @method BookSeriesType setPotentialAction(Property\PotentialActionProperty $potentialAction)
+ * @method BookSeriesType setProducer(Property\ProducerProperty $producer)
+ * @method BookSeriesType setProvider(Property\ProviderProperty $provider)
+ * @method BookSeriesType setPublication(Property\PublicationProperty $publication)
+ * @method BookSeriesType setPublisher(Property\PublisherProperty $publisher)
+ * @method BookSeriesType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
+ * @method BookSeriesType setRecordedAt(Property\RecordedAtProperty $recordedAt)
+ * @method BookSeriesType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
+ * @method BookSeriesType setReview(Property\ReviewProperty $review)
+ * @method BookSeriesType setSameAs(Property\SameAsProperty $sameAs)
+ * @method BookSeriesType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
+ * @method BookSeriesType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method BookSeriesType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
+ * @method BookSeriesType setSponsor(Property\SponsorProperty $sponsor)
+ * @method BookSeriesType setStartDate(Property\StartDateProperty $startDate)
+ * @method BookSeriesType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
+ * @method BookSeriesType setText(Property\TextProperty $text)
+ * @method BookSeriesType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
+ * @method BookSeriesType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method BookSeriesType setTranslator(Property\TranslatorProperty $translator)
+ * @method BookSeriesType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
+ * @method BookSeriesType setUrl(Property\UrlProperty $url)
+ * @method BookSeriesType setVersion(Property\VersionProperty $version)
+ * @method BookSeriesType setVideo(Property\VideoProperty $video)
+ * @method BookSeriesType setWorkExample(Property\WorkExampleProperty $workExample)
+ */
+class BookSeriesType extends CreativeWorkSeriesType {
+
+	/**
+	 * Get schema URL.
+	 * 
+	 * @return string
+	 */
+	public function getSchemaUrl() {
+		return 'https://schema.org/BookSeries';
+	}
+}

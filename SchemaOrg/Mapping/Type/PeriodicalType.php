@@ -1,0 +1,112 @@
+<?php
+
+namespace SecIT\SchemaOrg\Mapping\Type;
+
+use SecIT\SchemaOrg\Mapping\Property;
+
+/**
+ * Class PeriodicalType.
+ * 
+ * @method PeriodicalType setAccessMode(Property\AccessModeProperty $accessMode)
+ * @method PeriodicalType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
+ * @method PeriodicalType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
+ * @method PeriodicalType setAccessibilityControl(Property\AccessibilityControlProperty $accessibilityControl)
+ * @method PeriodicalType setAccessibilityFeature(Property\AccessibilityFeatureProperty $accessibilityFeature)
+ * @method PeriodicalType setAccessibilityHazard(Property\AccessibilityHazardProperty $accessibilityHazard)
+ * @method PeriodicalType setAccessibilitySummary(Property\AccessibilitySummaryProperty $accessibilitySummary)
+ * @method PeriodicalType setAccountablePerson(Property\AccountablePersonProperty $accountablePerson)
+ * @method PeriodicalType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
+ * @method PeriodicalType setAggregateRating(Property\AggregateRatingProperty $aggregateRating)
+ * @method PeriodicalType setAlternateName(Property\AlternateNameProperty $alternateName)
+ * @method PeriodicalType setAlternativeHeadline(Property\AlternativeHeadlineProperty $alternativeHeadline)
+ * @method PeriodicalType setAssociatedMedia(Property\AssociatedMediaProperty $associatedMedia)
+ * @method PeriodicalType setAudience(Property\AudienceProperty $audience)
+ * @method PeriodicalType setAudio(Property\AudioProperty $audio)
+ * @method PeriodicalType setAuthor(Property\AuthorProperty $author)
+ * @method PeriodicalType setAward(Property\AwardProperty $award)
+ * @method PeriodicalType setCharacter(Property\CharacterProperty $character)
+ * @method PeriodicalType setCitation(Property\CitationProperty $citation)
+ * @method PeriodicalType setComment(Property\CommentProperty $comment)
+ * @method PeriodicalType setCommentCount(Property\CommentCountProperty $commentCount)
+ * @method PeriodicalType setContentLocation(Property\ContentLocationProperty $contentLocation)
+ * @method PeriodicalType setContentRating(Property\ContentRatingProperty $contentRating)
+ * @method PeriodicalType setContributor(Property\ContributorProperty $contributor)
+ * @method PeriodicalType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
+ * @method PeriodicalType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method PeriodicalType setCreator(Property\CreatorProperty $creator)
+ * @method PeriodicalType setDateCreated(Property\DateCreatedProperty $dateCreated)
+ * @method PeriodicalType setDateModified(Property\DateModifiedProperty $dateModified)
+ * @method PeriodicalType setDatePublished(Property\DatePublishedProperty $datePublished)
+ * @method PeriodicalType setDescription(Property\DescriptionProperty $description)
+ * @method PeriodicalType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
+ * @method PeriodicalType setDiscussionUrl(Property\DiscussionUrlProperty $discussionUrl)
+ * @method PeriodicalType setEditor(Property\EditorProperty $editor)
+ * @method PeriodicalType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
+ * @method PeriodicalType setEducationalUse(Property\EducationalUseProperty $educationalUse)
+ * @method PeriodicalType setEncoding(Property\EncodingProperty $encoding)
+ * @method PeriodicalType setEndDate(Property\EndDateProperty $endDate)
+ * @method PeriodicalType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
+ * @method PeriodicalType setExpires(Property\ExpiresProperty $expires)
+ * @method PeriodicalType setFileFormat(Property\FileFormatProperty $fileFormat)
+ * @method PeriodicalType setFunder(Property\FunderProperty $funder)
+ * @method PeriodicalType setGenre(Property\GenreProperty $genre)
+ * @method PeriodicalType setHasPart(Property\HasPartProperty $hasPart)
+ * @method PeriodicalType setHeadline(Property\HeadlineProperty $headline)
+ * @method PeriodicalType setIdentifier(Property\IdentifierProperty $identifier)
+ * @method PeriodicalType setImage(Property\ImageProperty $image)
+ * @method PeriodicalType setInLanguage(Property\InLanguageProperty $inLanguage)
+ * @method PeriodicalType setInteractionStatistic(Property\InteractionStatisticProperty $interactionStatistic)
+ * @method PeriodicalType setInteractivityType(Property\InteractivityTypeProperty $interactivityType)
+ * @method PeriodicalType setIsAccessibleForFree(Property\IsAccessibleForFreeProperty $isAccessibleForFree)
+ * @method PeriodicalType setIsBasedOn(Property\IsBasedOnProperty $isBasedOn)
+ * @method PeriodicalType setIsFamilyFriendly(Property\IsFamilyFriendlyProperty $isFamilyFriendly)
+ * @method PeriodicalType setIsPartOf(Property\IsPartOfProperty $isPartOf)
+ * @method PeriodicalType setIssn(Property\IssnProperty $issn)
+ * @method PeriodicalType setKeywords(Property\KeywordsProperty $keywords)
+ * @method PeriodicalType setLearningResourceType(Property\LearningResourceTypeProperty $learningResourceType)
+ * @method PeriodicalType setLicense(Property\LicenseProperty $license)
+ * @method PeriodicalType setLocationCreated(Property\LocationCreatedProperty $locationCreated)
+ * @method PeriodicalType setMainEntity(Property\MainEntityProperty $mainEntity)
+ * @method PeriodicalType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
+ * @method PeriodicalType setMaterial(Property\MaterialProperty $material)
+ * @method PeriodicalType setMentions(Property\MentionsProperty $mentions)
+ * @method PeriodicalType setName(Property\NameProperty $name)
+ * @method PeriodicalType setOffers(Property\OffersProperty $offers)
+ * @method PeriodicalType setPosition(Property\PositionProperty $position)
+ * @method PeriodicalType setPotentialAction(Property\PotentialActionProperty $potentialAction)
+ * @method PeriodicalType setProducer(Property\ProducerProperty $producer)
+ * @method PeriodicalType setProvider(Property\ProviderProperty $provider)
+ * @method PeriodicalType setPublication(Property\PublicationProperty $publication)
+ * @method PeriodicalType setPublisher(Property\PublisherProperty $publisher)
+ * @method PeriodicalType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
+ * @method PeriodicalType setRecordedAt(Property\RecordedAtProperty $recordedAt)
+ * @method PeriodicalType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
+ * @method PeriodicalType setReview(Property\ReviewProperty $review)
+ * @method PeriodicalType setSameAs(Property\SameAsProperty $sameAs)
+ * @method PeriodicalType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
+ * @method PeriodicalType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method PeriodicalType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
+ * @method PeriodicalType setSponsor(Property\SponsorProperty $sponsor)
+ * @method PeriodicalType setStartDate(Property\StartDateProperty $startDate)
+ * @method PeriodicalType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
+ * @method PeriodicalType setText(Property\TextProperty $text)
+ * @method PeriodicalType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
+ * @method PeriodicalType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method PeriodicalType setTranslator(Property\TranslatorProperty $translator)
+ * @method PeriodicalType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
+ * @method PeriodicalType setUrl(Property\UrlProperty $url)
+ * @method PeriodicalType setVersion(Property\VersionProperty $version)
+ * @method PeriodicalType setVideo(Property\VideoProperty $video)
+ * @method PeriodicalType setWorkExample(Property\WorkExampleProperty $workExample)
+ */
+class PeriodicalType extends CreativeWorkSeriesType {
+
+	/**
+	 * Get schema URL.
+	 * 
+	 * @return string
+	 */
+	public function getSchemaUrl() {
+		return 'https://schema.org/Periodical';
+	}
+}

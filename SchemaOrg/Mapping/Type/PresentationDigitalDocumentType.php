@@ -1,0 +1,110 @@
+<?php
+
+namespace SecIT\SchemaOrg\Mapping\Type;
+
+use SecIT\SchemaOrg\Mapping\Property;
+
+/**
+ * Class PresentationDigitalDocumentType.
+ * 
+ * @method PresentationDigitalDocumentType setAccessMode(Property\AccessModeProperty $accessMode)
+ * @method PresentationDigitalDocumentType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
+ * @method PresentationDigitalDocumentType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
+ * @method PresentationDigitalDocumentType setAccessibilityControl(Property\AccessibilityControlProperty $accessibilityControl)
+ * @method PresentationDigitalDocumentType setAccessibilityFeature(Property\AccessibilityFeatureProperty $accessibilityFeature)
+ * @method PresentationDigitalDocumentType setAccessibilityHazard(Property\AccessibilityHazardProperty $accessibilityHazard)
+ * @method PresentationDigitalDocumentType setAccessibilitySummary(Property\AccessibilitySummaryProperty $accessibilitySummary)
+ * @method PresentationDigitalDocumentType setAccountablePerson(Property\AccountablePersonProperty $accountablePerson)
+ * @method PresentationDigitalDocumentType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
+ * @method PresentationDigitalDocumentType setAggregateRating(Property\AggregateRatingProperty $aggregateRating)
+ * @method PresentationDigitalDocumentType setAlternateName(Property\AlternateNameProperty $alternateName)
+ * @method PresentationDigitalDocumentType setAlternativeHeadline(Property\AlternativeHeadlineProperty $alternativeHeadline)
+ * @method PresentationDigitalDocumentType setAssociatedMedia(Property\AssociatedMediaProperty $associatedMedia)
+ * @method PresentationDigitalDocumentType setAudience(Property\AudienceProperty $audience)
+ * @method PresentationDigitalDocumentType setAudio(Property\AudioProperty $audio)
+ * @method PresentationDigitalDocumentType setAuthor(Property\AuthorProperty $author)
+ * @method PresentationDigitalDocumentType setAward(Property\AwardProperty $award)
+ * @method PresentationDigitalDocumentType setCharacter(Property\CharacterProperty $character)
+ * @method PresentationDigitalDocumentType setCitation(Property\CitationProperty $citation)
+ * @method PresentationDigitalDocumentType setComment(Property\CommentProperty $comment)
+ * @method PresentationDigitalDocumentType setCommentCount(Property\CommentCountProperty $commentCount)
+ * @method PresentationDigitalDocumentType setContentLocation(Property\ContentLocationProperty $contentLocation)
+ * @method PresentationDigitalDocumentType setContentRating(Property\ContentRatingProperty $contentRating)
+ * @method PresentationDigitalDocumentType setContributor(Property\ContributorProperty $contributor)
+ * @method PresentationDigitalDocumentType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
+ * @method PresentationDigitalDocumentType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method PresentationDigitalDocumentType setCreator(Property\CreatorProperty $creator)
+ * @method PresentationDigitalDocumentType setDateCreated(Property\DateCreatedProperty $dateCreated)
+ * @method PresentationDigitalDocumentType setDateModified(Property\DateModifiedProperty $dateModified)
+ * @method PresentationDigitalDocumentType setDatePublished(Property\DatePublishedProperty $datePublished)
+ * @method PresentationDigitalDocumentType setDescription(Property\DescriptionProperty $description)
+ * @method PresentationDigitalDocumentType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
+ * @method PresentationDigitalDocumentType setDiscussionUrl(Property\DiscussionUrlProperty $discussionUrl)
+ * @method PresentationDigitalDocumentType setEditor(Property\EditorProperty $editor)
+ * @method PresentationDigitalDocumentType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
+ * @method PresentationDigitalDocumentType setEducationalUse(Property\EducationalUseProperty $educationalUse)
+ * @method PresentationDigitalDocumentType setEncoding(Property\EncodingProperty $encoding)
+ * @method PresentationDigitalDocumentType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
+ * @method PresentationDigitalDocumentType setExpires(Property\ExpiresProperty $expires)
+ * @method PresentationDigitalDocumentType setFileFormat(Property\FileFormatProperty $fileFormat)
+ * @method PresentationDigitalDocumentType setFunder(Property\FunderProperty $funder)
+ * @method PresentationDigitalDocumentType setGenre(Property\GenreProperty $genre)
+ * @method PresentationDigitalDocumentType setHasDigitalDocumentPermission(Property\HasDigitalDocumentPermissionProperty $hasDigitalDocumentPermission)
+ * @method PresentationDigitalDocumentType setHasPart(Property\HasPartProperty $hasPart)
+ * @method PresentationDigitalDocumentType setHeadline(Property\HeadlineProperty $headline)
+ * @method PresentationDigitalDocumentType setIdentifier(Property\IdentifierProperty $identifier)
+ * @method PresentationDigitalDocumentType setImage(Property\ImageProperty $image)
+ * @method PresentationDigitalDocumentType setInLanguage(Property\InLanguageProperty $inLanguage)
+ * @method PresentationDigitalDocumentType setInteractionStatistic(Property\InteractionStatisticProperty $interactionStatistic)
+ * @method PresentationDigitalDocumentType setInteractivityType(Property\InteractivityTypeProperty $interactivityType)
+ * @method PresentationDigitalDocumentType setIsAccessibleForFree(Property\IsAccessibleForFreeProperty $isAccessibleForFree)
+ * @method PresentationDigitalDocumentType setIsBasedOn(Property\IsBasedOnProperty $isBasedOn)
+ * @method PresentationDigitalDocumentType setIsFamilyFriendly(Property\IsFamilyFriendlyProperty $isFamilyFriendly)
+ * @method PresentationDigitalDocumentType setIsPartOf(Property\IsPartOfProperty $isPartOf)
+ * @method PresentationDigitalDocumentType setKeywords(Property\KeywordsProperty $keywords)
+ * @method PresentationDigitalDocumentType setLearningResourceType(Property\LearningResourceTypeProperty $learningResourceType)
+ * @method PresentationDigitalDocumentType setLicense(Property\LicenseProperty $license)
+ * @method PresentationDigitalDocumentType setLocationCreated(Property\LocationCreatedProperty $locationCreated)
+ * @method PresentationDigitalDocumentType setMainEntity(Property\MainEntityProperty $mainEntity)
+ * @method PresentationDigitalDocumentType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
+ * @method PresentationDigitalDocumentType setMaterial(Property\MaterialProperty $material)
+ * @method PresentationDigitalDocumentType setMentions(Property\MentionsProperty $mentions)
+ * @method PresentationDigitalDocumentType setName(Property\NameProperty $name)
+ * @method PresentationDigitalDocumentType setOffers(Property\OffersProperty $offers)
+ * @method PresentationDigitalDocumentType setPosition(Property\PositionProperty $position)
+ * @method PresentationDigitalDocumentType setPotentialAction(Property\PotentialActionProperty $potentialAction)
+ * @method PresentationDigitalDocumentType setProducer(Property\ProducerProperty $producer)
+ * @method PresentationDigitalDocumentType setProvider(Property\ProviderProperty $provider)
+ * @method PresentationDigitalDocumentType setPublication(Property\PublicationProperty $publication)
+ * @method PresentationDigitalDocumentType setPublisher(Property\PublisherProperty $publisher)
+ * @method PresentationDigitalDocumentType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
+ * @method PresentationDigitalDocumentType setRecordedAt(Property\RecordedAtProperty $recordedAt)
+ * @method PresentationDigitalDocumentType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
+ * @method PresentationDigitalDocumentType setReview(Property\ReviewProperty $review)
+ * @method PresentationDigitalDocumentType setSameAs(Property\SameAsProperty $sameAs)
+ * @method PresentationDigitalDocumentType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
+ * @method PresentationDigitalDocumentType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method PresentationDigitalDocumentType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
+ * @method PresentationDigitalDocumentType setSponsor(Property\SponsorProperty $sponsor)
+ * @method PresentationDigitalDocumentType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
+ * @method PresentationDigitalDocumentType setText(Property\TextProperty $text)
+ * @method PresentationDigitalDocumentType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
+ * @method PresentationDigitalDocumentType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method PresentationDigitalDocumentType setTranslator(Property\TranslatorProperty $translator)
+ * @method PresentationDigitalDocumentType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
+ * @method PresentationDigitalDocumentType setUrl(Property\UrlProperty $url)
+ * @method PresentationDigitalDocumentType setVersion(Property\VersionProperty $version)
+ * @method PresentationDigitalDocumentType setVideo(Property\VideoProperty $video)
+ * @method PresentationDigitalDocumentType setWorkExample(Property\WorkExampleProperty $workExample)
+ */
+class PresentationDigitalDocumentType extends DigitalDocumentType {
+
+	/**
+	 * Get schema URL.
+	 * 
+	 * @return string
+	 */
+	public function getSchemaUrl() {
+		return 'https://schema.org/PresentationDigitalDocument';
+	}
+}
