@@ -21,7 +21,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MenuItem setSameAs(Property\SameAs $sameAs)
  * @method MenuItem setUrl(Property\Url $url)
  */
-class MenuItem extends Thing {
+class MenuItem extends Intangible {
 
 	/**
 	 * @var Property\Nutrition

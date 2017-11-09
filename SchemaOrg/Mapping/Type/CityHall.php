@@ -45,7 +45,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method CityHall setTelephone(Property\Telephone $telephone)
  * @method CityHall setUrl(Property\Url $url)
  */
-class CityHall extends CivicStructure {
+class CityHall extends GovernmentBuilding {
 
 	/**
 	 * Get schema URL.

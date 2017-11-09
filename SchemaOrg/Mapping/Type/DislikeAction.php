@@ -32,7 +32,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method DislikeAction setTarget(Property\Target $target)
  * @method DislikeAction setUrl(Property\Url $url)
  */
-class DislikeAction extends Action {
+class DislikeAction extends ReactAction {
 
 	/**
 	 * Get schema URL.

@@ -32,7 +32,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ResumeAction setTarget(Property\Target $target)
  * @method ResumeAction setUrl(Property\Url $url)
  */
-class ResumeAction extends Action {
+class ResumeAction extends ControlAction {
 
 	/**
 	 * Get schema URL.

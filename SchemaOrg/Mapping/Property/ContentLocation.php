@@ -2,6 +2,8 @@
 
 namespace SecIT\SchemaOrg\Mapping\Property;
 
+use SecIT\SchemaOrg\Mapping\Type;
+
 /**
  * ContentLocation class.
  * 
@@ -27,6 +29,6 @@ class ContentLocation extends AbstractProperty {
 	 * @return bool
 	 */
 	public function isValueValid($value) {
-		return true;
+		return $value instanceof Type\Place;
 	}
 }

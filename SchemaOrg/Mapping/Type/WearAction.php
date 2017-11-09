@@ -33,7 +33,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method WearAction setTarget(Property\Target $target)
  * @method WearAction setUrl(Property\Url $url)
  */
-class WearAction extends ConsumeAction {
+class WearAction extends UseAction {
 
 	/**
 	 * Get schema URL.

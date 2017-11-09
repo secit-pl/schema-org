@@ -21,7 +21,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method Brand setSameAs(Property\SameAs $sameAs)
  * @method Brand setUrl(Property\Url $url)
  */
-class Brand extends Intangible {
+class Brand extends Thing {
 
 	/**
 	 * @var Property\AggregateRating

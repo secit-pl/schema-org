@@ -45,7 +45,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method BuddhistTemple setTelephone(Property\Telephone $telephone)
  * @method BuddhistTemple setUrl(Property\Url $url)
  */
-class BuddhistTemple extends CivicStructure {
+class BuddhistTemple extends PlaceOfWorship {
 
 	/**
 	 * Get schema URL.

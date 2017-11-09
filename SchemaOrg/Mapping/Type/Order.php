@@ -21,7 +21,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method Order setSameAs(Property\SameAs $sameAs)
  * @method Order setUrl(Property\Url $url)
  */
-class Order extends Thing {
+class Order extends Intangible {
 
 	/**
 	 * @var Property\AcceptedOffer

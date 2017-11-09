@@ -917,7 +917,7 @@ final class Generator
             $properties = $crawler->filter('.definition-table tbody.supertype')->first()->filter('.prop-nam a');
             foreach ($properties as $property) {
                 if (strpos($property->getAttribute('class'), 'ext') === false) {
-                    $specificProperties[] = ltrim($property->getAttribute('href'), '/');
+                    $specificProperties[] = ltrim(preg_replace('/http[s]*:\/\/(.*?)schema.org\//', '', $property->getAttribute('href')), '/');
                 }
             }
         }

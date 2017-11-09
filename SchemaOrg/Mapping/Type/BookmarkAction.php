@@ -32,7 +32,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method BookmarkAction setTarget(Property\Target $target)
  * @method BookmarkAction setUrl(Property\Url $url)
  */
-class BookmarkAction extends Action {
+class BookmarkAction extends OrganizeAction {
 
 	/**
 	 * Get schema URL.

@@ -66,7 +66,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method OutletStore setUrl(Property\Url $url)
  * @method OutletStore setVatID(Property\VatID $vatID)
  */
-class OutletStore extends Store {
+class OutletStore extends LocalBusiness {
 
 	/**
 	 * Get schema URL.

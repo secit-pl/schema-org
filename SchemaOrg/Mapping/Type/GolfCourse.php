@@ -66,7 +66,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method GolfCourse setUrl(Property\Url $url)
  * @method GolfCourse setVatID(Property\VatID $vatID)
  */
-class GolfCourse extends SportsActivityLocation {
+class GolfCourse extends LocalBusiness {
 
 	/**
 	 * Get schema URL.

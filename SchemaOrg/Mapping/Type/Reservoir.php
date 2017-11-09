@@ -44,7 +44,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method Reservoir setTelephone(Property\Telephone $telephone)
  * @method Reservoir setUrl(Property\Url $url)
  */
-class Reservoir extends BodyOfWater {
+class Reservoir extends Place {
 
 	/**
 	 * Get schema URL.

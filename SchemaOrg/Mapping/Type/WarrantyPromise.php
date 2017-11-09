@@ -21,7 +21,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method WarrantyPromise setSameAs(Property\SameAs $sameAs)
  * @method WarrantyPromise setUrl(Property\Url $url)
  */
-class WarrantyPromise extends Thing {
+class WarrantyPromise extends StructuredValue {
 
 	/**
 	 * @var Property\DurationOfWarranty

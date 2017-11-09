@@ -32,7 +32,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method DiscoverAction setTarget(Property\Target $target)
  * @method DiscoverAction setUrl(Property\Url $url)
  */
-class DiscoverAction extends Action {
+class DiscoverAction extends FindAction {
 
 	/**
 	 * Get schema URL.

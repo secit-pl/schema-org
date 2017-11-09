@@ -32,7 +32,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method FollowAction setTarget(Property\Target $target)
  * @method FollowAction setUrl(Property\Url $url)
  */
-class FollowAction extends Action {
+class FollowAction extends InteractAction {
 
 	/**
 	 * @var Property\Followee

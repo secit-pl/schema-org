@@ -32,7 +32,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method FilmAction setTarget(Property\Target $target)
  * @method FilmAction setUrl(Property\Url $url)
  */
-class FilmAction extends Action {
+class FilmAction extends CreateAction {
 
 	/**
 	 * Get schema URL.

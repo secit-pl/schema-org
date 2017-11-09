@@ -21,7 +21,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method BedDetails setSameAs(Property\SameAs $sameAs)
  * @method BedDetails setUrl(Property\Url $url)
  */
-class BedDetails extends Thing {
+class BedDetails extends Intangible {
 
 	/**
 	 * @var Property\NumberOfBeds

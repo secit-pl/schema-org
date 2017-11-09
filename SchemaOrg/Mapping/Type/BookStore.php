@@ -66,7 +66,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method BookStore setUrl(Property\Url $url)
  * @method BookStore setVatID(Property\VatID $vatID)
  */
-class BookStore extends Store {
+class BookStore extends LocalBusiness {
 
 	/**
 	 * Get schema URL.

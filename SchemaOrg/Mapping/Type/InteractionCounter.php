@@ -8,12 +8,20 @@ use SecIT\SchemaOrg\Mapping\Property;
  * Class InteractionCounter.
  * 
  * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\InteractionCounterType instead.
+ * 
+ * @method InteractionCounter setAdditionalType(Property\AdditionalType $additionalType)
+ * @method InteractionCounter setAlternateName(Property\AlternateName $alternateName)
+ * @method InteractionCounter setDescription(Property\Description $description)
+ * @method InteractionCounter setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
+ * @method InteractionCounter setIdentifier(Property\Identifier $identifier)
+ * @method InteractionCounter setImage(Property\Image $image)
+ * @method InteractionCounter setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
+ * @method InteractionCounter setName(Property\Name $name)
+ * @method InteractionCounter setPotentialAction(Property\PotentialAction $potentialAction)
+ * @method InteractionCounter setSameAs(Property\SameAs $sameAs)
+ * @method InteractionCounter setUrl(Property\Url $url)
  */
-class InteractionCounter implements TypeInterface {
-
-	/**
-	 */
-	private $id;
+class InteractionCounter extends StructuredValue {
 
 	/**
 	 * @var Property\InteractionService
@@ -29,24 +37,6 @@ class InteractionCounter implements TypeInterface {
 	 * @var Property\UserInteractionCount
 	 */
 	private $userInteractionCount;
-
-	/**
-	 * InteractionCounter constructor.
-	 * 
-	 * @param string $id
-	 */
-	public function __construct($id = null) {
-		$this->id = $id;
-	}
-
-	/**
-	 * Get id.
-	 * 
-	 * @return string
-	 */
-	public function getId() {
-		return $this->id;
-	}
 
 	/**
 	 * Get interaction service.

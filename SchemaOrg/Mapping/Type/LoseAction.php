@@ -32,7 +32,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method LoseAction setTarget(Property\Target $target)
  * @method LoseAction setUrl(Property\Url $url)
  */
-class LoseAction extends Action {
+class LoseAction extends AchieveAction {
 
 	/**
 	 * @var Property\Winner

@@ -66,7 +66,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method Electrician setUrl(Property\Url $url)
  * @method Electrician setVatID(Property\VatID $vatID)
  */
-class Electrician extends LocalBusiness {
+class Electrician extends HomeAndConstructionBusiness {
 
 	/**
 	 * Get schema URL.

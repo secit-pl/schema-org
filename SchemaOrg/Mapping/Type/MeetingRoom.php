@@ -48,7 +48,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MeetingRoom setTelephone(Property\Telephone $telephone)
  * @method MeetingRoom setUrl(Property\Url $url)
  */
-class MeetingRoom extends Accommodation {
+class MeetingRoom extends Room {
 
 	/**
 	 * Get schema URL.

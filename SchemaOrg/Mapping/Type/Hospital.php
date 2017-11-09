@@ -66,7 +66,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method Hospital setUrl(Property\Url $url)
  * @method Hospital setVatID(Property\VatID $vatID)
  */
-class Hospital extends LocalBusiness {
+class Hospital extends EmergencyService {
 
 	/**
 	 * Get schema URL.

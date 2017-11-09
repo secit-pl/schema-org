@@ -32,7 +32,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MarryAction setTarget(Property\Target $target)
  * @method MarryAction setUrl(Property\Url $url)
  */
-class MarryAction extends Action {
+class MarryAction extends InteractAction {
 
 	/**
 	 * Get schema URL.
