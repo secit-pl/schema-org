@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class TheaterEvent.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\TheaterEventType instead.
+ * 
  * @method TheaterEvent setActor(Property\Actor $actor)
  * @method TheaterEvent setAdditionalType(Property\AdditionalType $additionalType)
  * @method TheaterEvent setAggregateRating(Property\AggregateRating $aggregateRating)

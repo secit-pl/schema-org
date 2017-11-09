@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class BusinessEvent.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\BusinessEventType instead.
+ * 
  * @method BusinessEvent setActor(Property\Actor $actor)
  * @method BusinessEvent setAdditionalType(Property\AdditionalType $additionalType)
  * @method BusinessEvent setAggregateRating(Property\AggregateRating $aggregateRating)

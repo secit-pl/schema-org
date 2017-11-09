@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class CreativeWorkSeason.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\CreativeWorkSeasonType instead.
+ * 
  * @method CreativeWorkSeason setAccessMode(Property\AccessMode $accessMode)
  * @method CreativeWorkSeason setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method CreativeWorkSeason setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Course.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\CourseType instead.
+ * 
  * @method Course setAccessMode(Property\AccessMode $accessMode)
  * @method Course setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method Course setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

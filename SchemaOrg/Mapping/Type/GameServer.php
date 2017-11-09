@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class GameServer.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\GameServerType instead.
+ * 
  * @method GameServer setAdditionalType(Property\AdditionalType $additionalType)
  * @method GameServer setAlternateName(Property\AlternateName $alternateName)
  * @method GameServer setDescription(Property\Description $description)

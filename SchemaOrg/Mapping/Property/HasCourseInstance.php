@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * HasCourseInstance class.
  * 
  * @method HasCourseInstance setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\HasCourseInstanceProperty instead.
  */
 class HasCourseInstance extends AbstractProperty {
 

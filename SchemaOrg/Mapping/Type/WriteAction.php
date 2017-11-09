@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class WriteAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\WriteActionType instead.
+ * 
  * @method WriteAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method WriteAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method WriteAction setAgent(Property\Agent $agent)

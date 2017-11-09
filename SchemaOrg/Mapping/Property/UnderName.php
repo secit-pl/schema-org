@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * UnderName class.
  * 
  * @method UnderName setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\UnderNameProperty instead.
  */
 class UnderName extends AbstractProperty {
 

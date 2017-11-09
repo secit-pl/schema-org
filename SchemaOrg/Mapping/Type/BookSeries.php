@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class BookSeries.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\BookSeriesType instead.
+ * 
  * @method BookSeries setAccessMode(Property\AccessMode $accessMode)
  * @method BookSeries setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method BookSeries setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

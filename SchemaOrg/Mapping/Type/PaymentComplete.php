@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class PaymentComplete.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\PaymentCompleteType instead.
+ * 
  * @method PaymentComplete setAdditionalType(Property\AdditionalType $additionalType)
  * @method PaymentComplete setAlternateName(Property\AlternateName $alternateName)
  * @method PaymentComplete setDescription(Property\Description $description)

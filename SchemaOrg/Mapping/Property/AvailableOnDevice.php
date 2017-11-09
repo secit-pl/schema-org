@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * AvailableOnDevice class.
  * 
  * @method AvailableOnDevice setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\AvailableOnDeviceProperty instead.
  */
 class AvailableOnDevice extends AbstractProperty {
 

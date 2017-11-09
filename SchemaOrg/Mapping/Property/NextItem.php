@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * NextItem class.
  * 
  * @method NextItem setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\NextItemProperty instead.
  */
 class NextItem extends AbstractProperty {
 

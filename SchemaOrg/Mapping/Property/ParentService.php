@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * ParentService class.
  * 
  * @method ParentService setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\ParentServiceProperty instead.
  */
 class ParentService extends AbstractProperty {
 

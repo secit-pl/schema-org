@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class City.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\CityType instead.
+ * 
  * @method City setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method City setAdditionalType(Property\AdditionalType $additionalType)
  * @method City setAddress(Property\Address $address)

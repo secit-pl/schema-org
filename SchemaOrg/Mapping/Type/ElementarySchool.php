@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class ElementarySchool.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ElementarySchoolType instead.
+ * 
  * @method ElementarySchool setAdditionalType(Property\AdditionalType $additionalType)
  * @method ElementarySchool setAddress(Property\Address $address)
  * @method ElementarySchool setAggregateRating(Property\AggregateRating $aggregateRating)

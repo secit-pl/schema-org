@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class DeactivateAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\DeactivateActionType instead.
+ * 
  * @method DeactivateAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method DeactivateAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method DeactivateAction setAgent(Property\Agent $agent)

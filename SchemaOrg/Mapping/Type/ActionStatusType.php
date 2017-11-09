@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class ActionStatusType.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ActionStatusType instead.
+ * 
  * @method ActionStatusType setAdditionalType(Property\AdditionalType $additionalType)
  * @method ActionStatusType setAlternateName(Property\AlternateName $alternateName)
  * @method ActionStatusType setDescription(Property\Description $description)

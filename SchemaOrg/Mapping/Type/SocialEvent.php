@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class SocialEvent.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\SocialEventType instead.
+ * 
  * @method SocialEvent setActor(Property\Actor $actor)
  * @method SocialEvent setAdditionalType(Property\AdditionalType $additionalType)
  * @method SocialEvent setAggregateRating(Property\AggregateRating $aggregateRating)

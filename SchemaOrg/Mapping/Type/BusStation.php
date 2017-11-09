@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class BusStation.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\BusStationType instead.
+ * 
  * @method BusStation setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method BusStation setAdditionalType(Property\AdditionalType $additionalType)
  * @method BusStation setAddress(Property\Address $address)

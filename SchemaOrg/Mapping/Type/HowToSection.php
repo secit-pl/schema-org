@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class HowToSection.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\HowToSectionType instead.
+ * 
  * @method HowToSection setAdditionalType(Property\AdditionalType $additionalType)
  * @method HowToSection setAlternateName(Property\AlternateName $alternateName)
  * @method HowToSection setDescription(Property\Description $description)

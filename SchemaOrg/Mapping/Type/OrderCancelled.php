@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class OrderCancelled.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\OrderCancelledType instead.
+ * 
  * @method OrderCancelled setAdditionalType(Property\AdditionalType $additionalType)
  * @method OrderCancelled setAlternateName(Property\AlternateName $alternateName)
  * @method OrderCancelled setDescription(Property\Description $description)

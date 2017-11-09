@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * NumberOfPlayers class.
  * 
  * @method NumberOfPlayers setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\NumberOfPlayersProperty instead.
  */
 class NumberOfPlayers extends AbstractProperty {
 

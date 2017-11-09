@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * FuelEfficiency class.
  * 
  * @method FuelEfficiency setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\FuelEfficiencyProperty instead.
  */
 class FuelEfficiency extends AbstractProperty {
 

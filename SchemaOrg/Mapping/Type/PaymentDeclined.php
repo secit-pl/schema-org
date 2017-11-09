@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class PaymentDeclined.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\PaymentDeclinedType instead.
+ * 
  * @method PaymentDeclined setAdditionalType(Property\AdditionalType $additionalType)
  * @method PaymentDeclined setAlternateName(Property\AlternateName $alternateName)
  * @method PaymentDeclined setDescription(Property\Description $description)

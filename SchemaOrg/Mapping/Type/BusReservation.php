@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class BusReservation.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\BusReservationType instead.
+ * 
  * @method BusReservation setAdditionalType(Property\AdditionalType $additionalType)
  * @method BusReservation setAlternateName(Property\AlternateName $alternateName)
  * @method BusReservation setBookingTime(Property\BookingTime $bookingTime)

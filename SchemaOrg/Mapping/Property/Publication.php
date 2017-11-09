@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * Publication class.
  * 
  * @method Publication setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\PublicationProperty instead.
  */
 class Publication extends AbstractProperty {
 

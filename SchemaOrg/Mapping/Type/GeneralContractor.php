@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class GeneralContractor.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\GeneralContractorType instead.
+ * 
  * @method GeneralContractor setAdditionalType(Property\AdditionalType $additionalType)
  * @method GeneralContractor setAddress(Property\Address $address)
  * @method GeneralContractor setAggregateRating(Property\AggregateRating $aggregateRating)

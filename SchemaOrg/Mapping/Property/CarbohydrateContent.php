@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * CarbohydrateContent class.
  * 
  * @method CarbohydrateContent setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\CarbohydrateContentProperty instead.
  */
 class CarbohydrateContent extends AbstractProperty {
 

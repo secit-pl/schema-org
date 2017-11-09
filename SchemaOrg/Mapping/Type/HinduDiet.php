@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class HinduDiet.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\HinduDietType instead.
+ * 
  * @method HinduDiet setAdditionalType(Property\AdditionalType $additionalType)
  * @method HinduDiet setAlternateName(Property\AlternateName $alternateName)
  * @method HinduDiet setDescription(Property\Description $description)

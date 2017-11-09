@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class BroadcastEvent.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\BroadcastEventType instead.
+ * 
  * @method BroadcastEvent setActor(Property\Actor $actor)
  * @method BroadcastEvent setAdditionalType(Property\AdditionalType $additionalType)
  * @method BroadcastEvent setAggregateRating(Property\AggregateRating $aggregateRating)

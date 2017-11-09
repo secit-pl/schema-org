@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class HobbyShop.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\HobbyShopType instead.
+ * 
  * @method HobbyShop setAdditionalType(Property\AdditionalType $additionalType)
  * @method HobbyShop setAddress(Property\Address $address)
  * @method HobbyShop setAggregateRating(Property\AggregateRating $aggregateRating)

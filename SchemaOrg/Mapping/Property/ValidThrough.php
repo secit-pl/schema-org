@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * ValidThrough class.
  * 
  * @method ValidThrough setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\ValidThroughProperty instead.
  */
 class ValidThrough extends AbstractProperty {
 

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Distance.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\DistanceType instead.
+ * 
  * @method Distance setAdditionalType(Property\AdditionalType $additionalType)
  * @method Distance setAlternateName(Property\AlternateName $alternateName)
  * @method Distance setDescription(Property\Description $description)

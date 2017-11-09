@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Intangible.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\IntangibleType instead.
+ * 
  * @method Intangible setAdditionalType(Property\AdditionalType $additionalType)
  * @method Intangible setAlternateName(Property\AlternateName $alternateName)
  * @method Intangible setDescription(Property\Description $description)

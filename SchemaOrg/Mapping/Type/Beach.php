@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Beach.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\BeachType instead.
+ * 
  * @method Beach setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method Beach setAdditionalType(Property\AdditionalType $additionalType)
  * @method Beach setAddress(Property\Address $address)

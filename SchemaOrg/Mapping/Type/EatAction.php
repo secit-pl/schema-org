@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class EatAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\EatActionType instead.
+ * 
  * @method EatAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method EatAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method EatAction setAgent(Property\Agent $agent)

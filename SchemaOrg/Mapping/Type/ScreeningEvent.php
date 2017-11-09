@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class ScreeningEvent.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ScreeningEventType instead.
+ * 
  * @method ScreeningEvent setActor(Property\Actor $actor)
  * @method ScreeningEvent setAdditionalType(Property\AdditionalType $additionalType)
  * @method ScreeningEvent setAggregateRating(Property\AggregateRating $aggregateRating)

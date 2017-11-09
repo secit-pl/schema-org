@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * AmountOfThisGood class.
  * 
  * @method AmountOfThisGood setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\AmountOfThisGoodProperty instead.
  */
 class AmountOfThisGood extends AbstractProperty {
 

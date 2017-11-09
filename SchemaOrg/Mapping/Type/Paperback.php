@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Paperback.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\PaperbackType instead.
+ * 
  * @method Paperback setAdditionalType(Property\AdditionalType $additionalType)
  * @method Paperback setAlternateName(Property\AlternateName $alternateName)
  * @method Paperback setDescription(Property\Description $description)

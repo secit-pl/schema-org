@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class ExerciseGym.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ExerciseGymType instead.
+ * 
  * @method ExerciseGym setAdditionalType(Property\AdditionalType $additionalType)
  * @method ExerciseGym setAddress(Property\Address $address)
  * @method ExerciseGym setAggregateRating(Property\AggregateRating $aggregateRating)

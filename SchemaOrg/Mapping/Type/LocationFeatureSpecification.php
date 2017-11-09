@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class LocationFeatureSpecification.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\LocationFeatureSpecificationType instead.
+ * 
  * @method LocationFeatureSpecification setAdditionalType(Property\AdditionalType $additionalType)
  * @method LocationFeatureSpecification setAlternateName(Property\AlternateName $alternateName)
  * @method LocationFeatureSpecification setDescription(Property\Description $description)

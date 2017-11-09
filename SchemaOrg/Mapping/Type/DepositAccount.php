@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class DepositAccount.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\DepositAccountType instead.
+ * 
  * @method DepositAccount setAdditionalType(Property\AdditionalType $additionalType)
  * @method DepositAccount setAggregateRating(Property\AggregateRating $aggregateRating)
  * @method DepositAccount setAlternateName(Property\AlternateName $alternateName)

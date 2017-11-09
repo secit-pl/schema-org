@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class UnitPriceSpecification.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\UnitPriceSpecificationType instead.
+ * 
  * @method UnitPriceSpecification setAdditionalType(Property\AdditionalType $additionalType)
  * @method UnitPriceSpecification setAlternateName(Property\AlternateName $alternateName)
  * @method UnitPriceSpecification setDescription(Property\Description $description)

@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * ContactType class.
  * 
  * @method ContactType setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\ContactTypeProperty instead.
  */
 class ContactType extends AbstractProperty {
 

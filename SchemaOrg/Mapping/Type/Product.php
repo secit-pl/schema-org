@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Product.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ProductType instead.
+ * 
  * @method Product setAdditionalType(Property\AdditionalType $additionalType)
  * @method Product setAlternateName(Property\AlternateName $alternateName)
  * @method Product setDescription(Property\Description $description)

@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * EncodingType class.
  * 
  * @method EncodingType setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\EncodingTypeProperty instead.
  */
 class EncodingType extends AbstractProperty {
 

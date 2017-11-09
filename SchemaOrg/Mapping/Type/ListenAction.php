@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class ListenAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ListenActionType instead.
+ * 
  * @method ListenAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method ListenAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method ListenAction setAgent(Property\Agent $agent)

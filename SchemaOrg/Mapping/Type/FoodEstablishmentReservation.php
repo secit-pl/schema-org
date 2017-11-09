@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class FoodEstablishmentReservation.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\FoodEstablishmentReservationType instead.
+ * 
  * @method FoodEstablishmentReservation setAdditionalType(Property\AdditionalType $additionalType)
  * @method FoodEstablishmentReservation setAlternateName(Property\AlternateName $alternateName)
  * @method FoodEstablishmentReservation setBookingTime(Property\BookingTime $bookingTime)

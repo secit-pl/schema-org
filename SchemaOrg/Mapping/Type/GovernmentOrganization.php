@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class GovernmentOrganization.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\GovernmentOrganizationType instead.
+ * 
  * @method GovernmentOrganization setAdditionalType(Property\AdditionalType $additionalType)
  * @method GovernmentOrganization setAddress(Property\Address $address)
  * @method GovernmentOrganization setAggregateRating(Property\AggregateRating $aggregateRating)

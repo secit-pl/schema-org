@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class CheckAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\CheckActionType instead.
+ * 
  * @method CheckAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method CheckAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method CheckAction setAgent(Property\Agent $agent)

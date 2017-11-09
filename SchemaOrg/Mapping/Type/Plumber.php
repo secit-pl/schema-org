@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Plumber.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\PlumberType instead.
+ * 
  * @method Plumber setAdditionalType(Property\AdditionalType $additionalType)
  * @method Plumber setAddress(Property\Address $address)
  * @method Plumber setAggregateRating(Property\AggregateRating $aggregateRating)

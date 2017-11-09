@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class ExhibitionEvent.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ExhibitionEventType instead.
+ * 
  * @method ExhibitionEvent setActor(Property\Actor $actor)
  * @method ExhibitionEvent setAdditionalType(Property\AdditionalType $additionalType)
  * @method ExhibitionEvent setAggregateRating(Property\AggregateRating $aggregateRating)

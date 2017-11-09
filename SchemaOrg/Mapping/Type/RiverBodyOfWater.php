@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class RiverBodyOfWater.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\RiverBodyOfWaterType instead.
+ * 
  * @method RiverBodyOfWater setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method RiverBodyOfWater setAdditionalType(Property\AdditionalType $additionalType)
  * @method RiverBodyOfWater setAddress(Property\Address $address)

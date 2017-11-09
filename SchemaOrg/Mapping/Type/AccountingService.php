@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class AccountingService.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\AccountingServiceType instead.
+ * 
  * @method AccountingService setAdditionalType(Property\AdditionalType $additionalType)
  * @method AccountingService setAddress(Property\Address $address)
  * @method AccountingService setAggregateRating(Property\AggregateRating $aggregateRating)

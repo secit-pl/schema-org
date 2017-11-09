@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Room.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\RoomType instead.
+ * 
  * @method Room setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method Room setAdditionalType(Property\AdditionalType $additionalType)
  * @method Room setAddress(Property\Address $address)

@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * CommentCount class.
  * 
  * @method CommentCount setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\CommentCountProperty instead.
  */
 class CommentCount extends AbstractProperty {
 

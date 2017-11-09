@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class MovingCompany.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\MovingCompanyType instead.
+ * 
  * @method MovingCompany setAdditionalType(Property\AdditionalType $additionalType)
  * @method MovingCompany setAddress(Property\Address $address)
  * @method MovingCompany setAggregateRating(Property\AggregateRating $aggregateRating)

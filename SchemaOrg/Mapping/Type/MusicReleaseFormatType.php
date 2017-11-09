@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class MusicReleaseFormatType.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\MusicReleaseFormatType instead.
+ * 
  * @method MusicReleaseFormatType setAdditionalType(Property\AdditionalType $additionalType)
  * @method MusicReleaseFormatType setAlternateName(Property\AlternateName $alternateName)
  * @method MusicReleaseFormatType setDescription(Property\Description $description)

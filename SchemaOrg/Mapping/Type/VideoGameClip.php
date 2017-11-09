@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class VideoGameClip.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\VideoGameClipType instead.
+ * 
  * @method VideoGameClip setAccessMode(Property\AccessMode $accessMode)
  * @method VideoGameClip setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method VideoGameClip setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

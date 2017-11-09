@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class FinancialProduct.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\FinancialProductType instead.
+ * 
  * @method FinancialProduct setAdditionalType(Property\AdditionalType $additionalType)
  * @method FinancialProduct setAggregateRating(Property\AggregateRating $aggregateRating)
  * @method FinancialProduct setAlternateName(Property\AlternateName $alternateName)

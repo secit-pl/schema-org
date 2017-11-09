@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class DislikeAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\DislikeActionType instead.
+ * 
  * @method DislikeAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method DislikeAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method DislikeAction setAgent(Property\Agent $agent)

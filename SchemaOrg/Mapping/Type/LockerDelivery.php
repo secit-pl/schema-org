@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class LockerDelivery.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\LockerDeliveryType instead.
+ * 
  * @method LockerDelivery setAdditionalType(Property\AdditionalType $additionalType)
  * @method LockerDelivery setAlternateName(Property\AlternateName $alternateName)
  * @method LockerDelivery setDescription(Property\Description $description)

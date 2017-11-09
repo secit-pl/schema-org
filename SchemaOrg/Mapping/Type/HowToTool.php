@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class HowToTool.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\HowToToolType instead.
+ * 
  * @method HowToTool setAdditionalType(Property\AdditionalType $additionalType)
  * @method HowToTool setAlternateName(Property\AlternateName $alternateName)
  * @method HowToTool setDescription(Property\Description $description)

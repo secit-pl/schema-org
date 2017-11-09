@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class OrderProblem.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\OrderProblemType instead.
+ * 
  * @method OrderProblem setAdditionalType(Property\AdditionalType $additionalType)
  * @method OrderProblem setAlternateName(Property\AlternateName $alternateName)
  * @method OrderProblem setDescription(Property\Description $description)

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class SaleEvent.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\SaleEventType instead.
+ * 
  * @method SaleEvent setActor(Property\Actor $actor)
  * @method SaleEvent setAdditionalType(Property\AdditionalType $additionalType)
  * @method SaleEvent setAggregateRating(Property\AggregateRating $aggregateRating)

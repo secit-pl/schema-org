@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * LegalName class.
  * 
  * @method LegalName setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\LegalNameProperty instead.
  */
 class LegalName extends AbstractProperty {
 

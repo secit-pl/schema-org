@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class VideoGameSeries.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\VideoGameSeriesType instead.
+ * 
  * @method VideoGameSeries setAccessMode(Property\AccessMode $accessMode)
  * @method VideoGameSeries setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method VideoGameSeries setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

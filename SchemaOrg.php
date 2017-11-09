@@ -16,12 +16,12 @@ class SchemaOrg
     /**
      * Convert schema.rg type to the json-ld string.
      *
-     * @param Type\Thing $thing
-     * @param bool       $addScriptTag Wrap returned json-ld with the <script type="application/ld+json"></script> tag
+     * @param Type\TypeInterface $thing
+     * @param bool               $addScriptTag Wrap returned json-ld with the <script type="application/ld+json"></script> tag
      *
      * @return string
      */
-    public function toJsonLd(Type\Thing $thing, $addScriptTag = true)
+    public function toJsonLd(Type\TypeInterface $thing, $addScriptTag = true)
     {
         $return = json_encode($this->toJsonLdDataArray($thing));
         if ($addScriptTag) {
@@ -34,11 +34,11 @@ class SchemaOrg
     /**
      * Convert schema.org type to the json-ld data array.
      *
-     * @param Type\Thing $thing
+     * @param Type\TypeInterface $thing
      *
      * @return array
      */
-    public function toJsonLdDataArray(Type\Thing $thing)
+    public function toJsonLdDataArray(Type\TypeInterface $thing)
     {
         $jsonLd = ['@context' => 'http://schema.org'];
 
@@ -48,14 +48,19 @@ class SchemaOrg
     /**
      * Convert type to json-ld data array.
      *
-     * @param Type\Thing $type
+     * @param Type\TypeInterface $type
      *
      * @return array
      */
-    protected function typeToJsonLd(Type\Thing $type)
+    protected function typeToJsonLd(Type\TypeInterface $type)
     {
+        $typeName = (new \ReflectionClass($type))->getShortName();
+        if (strlen($typeName) > 4 && substr($typeName, -4) === 'Type') {
+            $typeName = substr($typeName, 0, -4);
+        }
+
         $jsonLd = [
-            '@type' => (new \ReflectionClass($type))->getShortName(),
+            '@type' => $typeName,
         ];
 
         if ($type->getId()) {
@@ -93,11 +98,11 @@ class SchemaOrg
     /**
      * Convert data type to json-ld to the value.
      *
-     * @param DataType\DataType $dataType
+     * @param DataType\DataTypeInterface $dataType
      *
      * @return string
      */
-    protected function dataTypeToJsonLd(DataType\DataType $dataType)
+    protected function dataTypeToJsonLd(DataType\DataTypeInterface $dataType)
     {
         return $dataType->getValue();
     }
@@ -105,11 +110,11 @@ class SchemaOrg
     /**
      * Convert property to json-ld data array or string.
      *
-     * @param Property\AbstractProperty $property
+     * @param Property\PropertyInterface $property
      *
      * @return array|string
      */
-    protected function propertyToJsonLd(Property\AbstractProperty $property)
+    protected function propertyToJsonLd(Property\PropertyInterface $property)
     {
         return $this->valueToJsonLd($property->getValue());
     }
@@ -132,13 +137,13 @@ class SchemaOrg
             }
 
             return $return;
-        } elseif ($value instanceof Type\Enumeration) {
+        } elseif ($value instanceof Type\EnumerationType || $value instanceof Type\Enumeration) {
             return $value->getSchemaUrl();
-        } elseif ($value instanceof Type\Thing) {
+        } elseif ($value instanceof Type\TypeInterface) {
             return $this->typeToJsonLd($value);
-        } elseif ($value instanceof Property\AbstractProperty) {
+        } elseif ($value instanceof Property\PropertyInterface) {
             return $this->propertyToJsonLd($value);
-        } elseif ($value instanceof DataType\DataType) {
+        } elseif ($value instanceof DataType\DataTypeInterface) {
             return $this->dataTypeToJsonLd($value);
         }
 

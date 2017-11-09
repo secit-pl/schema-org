@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class EntryPoint.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\EntryPointType instead.
+ * 
  * @method EntryPoint setAdditionalType(Property\AdditionalType $additionalType)
  * @method EntryPoint setAlternateName(Property\AlternateName $alternateName)
  * @method EntryPoint setDescription(Property\Description $description)

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class LoseAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\LoseActionType instead.
+ * 
  * @method LoseAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method LoseAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method LoseAction setAgent(Property\Agent $agent)

@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * ArrivalGate class.
  * 
  * @method ArrivalGate setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\ArrivalGateProperty instead.
  */
 class ArrivalGate extends AbstractProperty {
 

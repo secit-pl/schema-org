@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class NGO.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\NGOType instead.
+ * 
  * @method NGO setAdditionalType(Property\AdditionalType $additionalType)
  * @method NGO setAddress(Property\Address $address)
  * @method NGO setAggregateRating(Property\AggregateRating $aggregateRating)

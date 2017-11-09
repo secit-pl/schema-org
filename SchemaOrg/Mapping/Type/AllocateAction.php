@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class AllocateAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\AllocateActionType instead.
+ * 
  * @method AllocateAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method AllocateAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method AllocateAction setAgent(Property\Agent $agent)

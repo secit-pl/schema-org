@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * Position class.
  * 
  * @method Position setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\PositionProperty instead.
  */
 class Position extends AbstractProperty {
 

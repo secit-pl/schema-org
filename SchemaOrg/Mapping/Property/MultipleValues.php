@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * MultipleValues class.
  * 
  * @method MultipleValues setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\MultipleValuesProperty instead.
  */
 class MultipleValues extends AbstractProperty {
 

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class ShoeStore.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ShoeStoreType instead.
+ * 
  * @method ShoeStore setAdditionalType(Property\AdditionalType $additionalType)
  * @method ShoeStore setAddress(Property\Address $address)
  * @method ShoeStore setAggregateRating(Property\AggregateRating $aggregateRating)

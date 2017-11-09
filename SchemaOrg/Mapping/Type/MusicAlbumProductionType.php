@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class MusicAlbumProductionType.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\MusicAlbumProductionType instead.
+ * 
  * @method MusicAlbumProductionType setAdditionalType(Property\AdditionalType $additionalType)
  * @method MusicAlbumProductionType setAlternateName(Property\AlternateName $alternateName)
  * @method MusicAlbumProductionType setDescription(Property\Description $description)

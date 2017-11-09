@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * UserInteractionCount class.
  * 
  * @method UserInteractionCount setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\UserInteractionCountProperty instead.
  */
 class UserInteractionCount extends AbstractProperty {
 

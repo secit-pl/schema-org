@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * AlternateName class.
  * 
  * @method AlternateName setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\AlternateNameProperty instead.
  */
 class AlternateName extends AbstractProperty {
 

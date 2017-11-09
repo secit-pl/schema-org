@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * JobTitle class.
  * 
  * @method JobTitle setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\JobTitleProperty instead.
  */
 class JobTitle extends AbstractProperty {
 

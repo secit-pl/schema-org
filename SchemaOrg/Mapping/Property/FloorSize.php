@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * FloorSize class.
  * 
  * @method FloorSize setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\FloorSizeProperty instead.
  */
 class FloorSize extends AbstractProperty {
 

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class HowToSupply.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\HowToSupplyType instead.
+ * 
  * @method HowToSupply setAdditionalType(Property\AdditionalType $additionalType)
  * @method HowToSupply setAlternateName(Property\AlternateName $alternateName)
  * @method HowToSupply setDescription(Property\Description $description)

@@ -4,8 +4,10 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 
 /**
  * Class OutOfStock.
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\OutOfStockType instead.
  */
-class OutOfStock {
+class OutOfStock implements TypeInterface {
 
 	/**
 	 */

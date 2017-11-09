@@ -9,6 +9,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * VehicleTransmission class.
  * 
  * @method VehicleTransmission setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\VehicleTransmissionProperty instead.
  */
 class VehicleTransmission extends AbstractProperty {
 

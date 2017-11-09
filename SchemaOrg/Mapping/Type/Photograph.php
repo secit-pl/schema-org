@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Photograph.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\PhotographType instead.
+ * 
  * @method Photograph setAccessMode(Property\AccessMode $accessMode)
  * @method Photograph setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method Photograph setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

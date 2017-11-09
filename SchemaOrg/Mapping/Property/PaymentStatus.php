@@ -9,6 +9,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * PaymentStatus class.
  * 
  * @method PaymentStatus setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\PaymentStatusProperty instead.
  */
 class PaymentStatus extends AbstractProperty {
 

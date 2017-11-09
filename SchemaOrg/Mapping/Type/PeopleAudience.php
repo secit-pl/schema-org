@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class PeopleAudience.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\PeopleAudienceType instead.
+ * 
  * @method PeopleAudience setAdditionalType(Property\AdditionalType $additionalType)
  * @method PeopleAudience setAlternateName(Property\AlternateName $alternateName)
  * @method PeopleAudience setAudienceType(Property\AudienceType $audienceType)

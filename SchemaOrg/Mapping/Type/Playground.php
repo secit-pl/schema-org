@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Playground.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\PlaygroundType instead.
+ * 
  * @method Playground setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method Playground setAdditionalType(Property\AdditionalType $additionalType)
  * @method Playground setAddress(Property\Address $address)

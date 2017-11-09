@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class FailedActionStatus.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\FailedActionStatusType instead.
+ * 
  * @method FailedActionStatus setAdditionalType(Property\AdditionalType $additionalType)
  * @method FailedActionStatus setAlternateName(Property\AlternateName $alternateName)
  * @method FailedActionStatus setDescription(Property\Description $description)

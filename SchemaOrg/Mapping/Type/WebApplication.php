@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class WebApplication.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\WebApplicationType instead.
+ * 
  * @method WebApplication setAccessMode(Property\AccessMode $accessMode)
  * @method WebApplication setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method WebApplication setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

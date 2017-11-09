@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class PaymentAutomaticallyApplied.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\PaymentAutomaticallyAppliedType instead.
+ * 
  * @method PaymentAutomaticallyApplied setAdditionalType(Property\AdditionalType $additionalType)
  * @method PaymentAutomaticallyApplied setAlternateName(Property\AlternateName $alternateName)
  * @method PaymentAutomaticallyApplied setDescription(Property\Description $description)

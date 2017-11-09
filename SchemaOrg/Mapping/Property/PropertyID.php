@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * PropertyID class.
  * 
  * @method PropertyID setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\PropertyIDProperty instead.
  */
 class PropertyID extends AbstractProperty {
 

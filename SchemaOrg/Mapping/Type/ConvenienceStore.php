@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class ConvenienceStore.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ConvenienceStoreType instead.
+ * 
  * @method ConvenienceStore setAdditionalType(Property\AdditionalType $additionalType)
  * @method ConvenienceStore setAddress(Property\Address $address)
  * @method ConvenienceStore setAggregateRating(Property\AggregateRating $aggregateRating)

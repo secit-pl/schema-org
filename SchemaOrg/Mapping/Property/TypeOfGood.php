@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * TypeOfGood class.
  * 
  * @method TypeOfGood setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\TypeOfGoodProperty instead.
  */
 class TypeOfGood extends AbstractProperty {
 

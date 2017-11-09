@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Bakery.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\BakeryType instead.
+ * 
  * @method Bakery setAcceptsReservations(Property\AcceptsReservations $acceptsReservations)
  * @method Bakery setAdditionalType(Property\AdditionalType $additionalType)
  * @method Bakery setAddress(Property\Address $address)

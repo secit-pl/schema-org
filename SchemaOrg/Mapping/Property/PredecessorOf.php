@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * PredecessorOf class.
  * 
  * @method PredecessorOf setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\PredecessorOfProperty instead.
  */
 class PredecessorOf extends AbstractProperty {
 

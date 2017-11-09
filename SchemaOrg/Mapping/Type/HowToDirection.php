@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class HowToDirection.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\HowToDirectionType instead.
+ * 
  * @method HowToDirection setAdditionalType(Property\AdditionalType $additionalType)
  * @method HowToDirection setAlternateName(Property\AlternateName $alternateName)
  * @method HowToDirection setDescription(Property\Description $description)

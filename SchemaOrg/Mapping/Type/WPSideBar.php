@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class WPSideBar.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\WPSideBarType instead.
+ * 
  * @method WPSideBar setAccessMode(Property\AccessMode $accessMode)
  * @method WPSideBar setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method WPSideBar setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

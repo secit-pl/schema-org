@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class DigitalAudioTapeFormat.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\DigitalAudioTapeFormatType instead.
+ * 
  * @method DigitalAudioTapeFormat setAdditionalType(Property\AdditionalType $additionalType)
  * @method DigitalAudioTapeFormat setAlternateName(Property\AlternateName $alternateName)
  * @method DigitalAudioTapeFormat setDescription(Property\Description $description)

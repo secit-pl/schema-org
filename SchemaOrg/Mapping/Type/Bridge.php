@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Bridge.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\BridgeType instead.
+ * 
  * @method Bridge setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method Bridge setAdditionalType(Property\AdditionalType $additionalType)
  * @method Bridge setAddress(Property\Address $address)

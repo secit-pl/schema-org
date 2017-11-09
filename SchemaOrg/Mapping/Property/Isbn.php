@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * Isbn class.
  * 
  * @method Isbn setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\IsbnProperty instead.
  */
 class Isbn extends AbstractProperty {
 

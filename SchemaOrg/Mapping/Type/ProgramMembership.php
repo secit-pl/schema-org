@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class ProgramMembership.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ProgramMembershipType instead.
+ * 
  * @method ProgramMembership setAdditionalType(Property\AdditionalType $additionalType)
  * @method ProgramMembership setAlternateName(Property\AlternateName $alternateName)
  * @method ProgramMembership setDescription(Property\Description $description)

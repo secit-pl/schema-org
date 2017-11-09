@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class AcceptAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\AcceptActionType instead.
+ * 
  * @method AcceptAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method AcceptAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method AcceptAction setAgent(Property\Agent $agent)

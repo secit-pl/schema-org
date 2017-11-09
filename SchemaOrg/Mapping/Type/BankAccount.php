@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class BankAccount.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\BankAccountType instead.
+ * 
  * @method BankAccount setAdditionalType(Property\AdditionalType $additionalType)
  * @method BankAccount setAggregateRating(Property\AggregateRating $aggregateRating)
  * @method BankAccount setAlternateName(Property\AlternateName $alternateName)

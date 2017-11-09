@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Review.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ReviewType instead.
+ * 
  * @method Review setAccessMode(Property\AccessMode $accessMode)
  * @method Review setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method Review setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

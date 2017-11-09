@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class WPFooter.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\WPFooterType instead.
+ * 
  * @method WPFooter setAccessMode(Property\AccessMode $accessMode)
  * @method WPFooter setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method WPFooter setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

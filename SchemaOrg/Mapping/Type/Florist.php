@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Florist.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\FloristType instead.
+ * 
  * @method Florist setAdditionalType(Property\AdditionalType $additionalType)
  * @method Florist setAddress(Property\Address $address)
  * @method Florist setAggregateRating(Property\AggregateRating $aggregateRating)

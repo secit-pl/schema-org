@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class BorrowAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\BorrowActionType instead.
+ * 
  * @method BorrowAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method BorrowAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method BorrowAction setAgent(Property\Agent $agent)

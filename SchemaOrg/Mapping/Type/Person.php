@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Person.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\PersonType instead.
+ * 
  * @method Person setAdditionalType(Property\AdditionalType $additionalType)
  * @method Person setAlternateName(Property\AlternateName $alternateName)
  * @method Person setDescription(Property\Description $description)

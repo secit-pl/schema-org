@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * TypicalAgeRange class.
  * 
  * @method TypicalAgeRange setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\TypicalAgeRangeProperty instead.
  */
 class TypicalAgeRange extends AbstractProperty {
 

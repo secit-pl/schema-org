@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class PerformanceRole.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\PerformanceRoleType instead.
+ * 
  * @method PerformanceRole setAdditionalType(Property\AdditionalType $additionalType)
  * @method PerformanceRole setAlternateName(Property\AlternateName $alternateName)
  * @method PerformanceRole setDescription(Property\Description $description)

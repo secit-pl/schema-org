@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class HinduTemple.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\HinduTempleType instead.
+ * 
  * @method HinduTemple setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method HinduTemple setAdditionalType(Property\AdditionalType $additionalType)
  * @method HinduTemple setAddress(Property\Address $address)

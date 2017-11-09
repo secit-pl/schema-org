@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class ListItem.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ListItemType instead.
+ * 
  * @method ListItem setAdditionalType(Property\AdditionalType $additionalType)
  * @method ListItem setAlternateName(Property\AlternateName $alternateName)
  * @method ListItem setDescription(Property\Description $description)

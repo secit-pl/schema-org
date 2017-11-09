@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * HasDigitalDocumentPermission class.
  * 
  * @method HasDigitalDocumentPermission setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\HasDigitalDocumentPermissionProperty instead.
  */
 class HasDigitalDocumentPermission extends AbstractProperty {
 

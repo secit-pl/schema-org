@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class PerformAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\PerformActionType instead.
+ * 
  * @method PerformAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method PerformAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method PerformAction setAgent(Property\Agent $agent)

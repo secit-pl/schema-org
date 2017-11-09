@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class EventCancelled.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\EventCancelledType instead.
+ * 
  * @method EventCancelled setAdditionalType(Property\AdditionalType $additionalType)
  * @method EventCancelled setAlternateName(Property\AlternateName $alternateName)
  * @method EventCancelled setDescription(Property\Description $description)

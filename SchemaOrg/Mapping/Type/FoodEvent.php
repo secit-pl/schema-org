@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class FoodEvent.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\FoodEventType instead.
+ * 
  * @method FoodEvent setActor(Property\Actor $actor)
  * @method FoodEvent setAdditionalType(Property\AdditionalType $additionalType)
  * @method FoodEvent setAggregateRating(Property\AggregateRating $aggregateRating)

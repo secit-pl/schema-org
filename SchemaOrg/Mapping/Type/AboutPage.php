@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class AboutPage.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\AboutPageType instead.
+ * 
  * @method AboutPage setAccessMode(Property\AccessMode $accessMode)
  * @method AboutPage setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method AboutPage setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

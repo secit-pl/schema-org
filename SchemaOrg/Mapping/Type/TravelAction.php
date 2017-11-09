@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class TravelAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\TravelActionType instead.
+ * 
  * @method TravelAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method TravelAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method TravelAction setAgent(Property\Agent $agent)

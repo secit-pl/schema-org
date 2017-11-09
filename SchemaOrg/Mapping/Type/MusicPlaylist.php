@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class MusicPlaylist.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\MusicPlaylistType instead.
+ * 
  * @method MusicPlaylist setAccessMode(Property\AccessMode $accessMode)
  * @method MusicPlaylist setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method MusicPlaylist setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

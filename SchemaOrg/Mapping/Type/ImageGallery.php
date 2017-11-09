@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class ImageGallery.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ImageGalleryType instead.
+ * 
  * @method ImageGallery setAccessMode(Property\AccessMode $accessMode)
  * @method ImageGallery setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method ImageGallery setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

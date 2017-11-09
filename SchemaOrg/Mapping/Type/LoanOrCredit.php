@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class LoanOrCredit.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\LoanOrCreditType instead.
+ * 
  * @method LoanOrCredit setAdditionalType(Property\AdditionalType $additionalType)
  * @method LoanOrCredit setAggregateRating(Property\AggregateRating $aggregateRating)
  * @method LoanOrCredit setAlternateName(Property\AlternateName $alternateName)

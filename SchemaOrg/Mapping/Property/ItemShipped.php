@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * ItemShipped class.
  * 
  * @method ItemShipped setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\ItemShippedProperty instead.
  */
 class ItemShipped extends AbstractProperty {
 

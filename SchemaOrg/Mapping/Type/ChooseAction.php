@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class ChooseAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ChooseActionType instead.
+ * 
  * @method ChooseAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method ChooseAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method ChooseAction setAgent(Property\Agent $agent)

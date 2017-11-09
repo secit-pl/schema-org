@@ -9,6 +9,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * NumberOfRooms class.
  * 
  * @method NumberOfRooms setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\NumberOfRoomsProperty instead.
  */
 class NumberOfRooms extends AbstractProperty {
 

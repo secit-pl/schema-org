@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class MixtapeAlbum.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\MixtapeAlbumType instead.
+ * 
  * @method MixtapeAlbum setAdditionalType(Property\AdditionalType $additionalType)
  * @method MixtapeAlbum setAlternateName(Property\AlternateName $alternateName)
  * @method MixtapeAlbum setDescription(Property\Description $description)

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class SoftwareApplication.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\SoftwareApplicationType instead.
+ * 
  * @method SoftwareApplication setAccessMode(Property\AccessMode $accessMode)
  * @method SoftwareApplication setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method SoftwareApplication setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

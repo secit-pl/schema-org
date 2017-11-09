@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * FoodEstablishment class.
  * 
  * @method FoodEstablishment setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\FoodEstablishmentProperty instead.
  */
 class FoodEstablishment extends AbstractProperty {
 

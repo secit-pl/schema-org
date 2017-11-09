@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * AfterMedia class.
  * 
  * @method AfterMedia setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\AfterMediaProperty instead.
  */
 class AfterMedia extends AbstractProperty {
 

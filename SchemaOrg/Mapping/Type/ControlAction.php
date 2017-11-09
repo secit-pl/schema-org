@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class ControlAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ControlActionType instead.
+ * 
  * @method ControlAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method ControlAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method ControlAction setAgent(Property\Agent $agent)

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Brewery.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\BreweryType instead.
+ * 
  * @method Brewery setAcceptsReservations(Property\AcceptsReservations $acceptsReservations)
  * @method Brewery setAdditionalType(Property\AdditionalType $additionalType)
  * @method Brewery setAddress(Property\Address $address)

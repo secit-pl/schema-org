@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class DriveWheelConfigurationValue.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\DriveWheelConfigurationValueType instead.
+ * 
  * @method DriveWheelConfigurationValue setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method DriveWheelConfigurationValue setAdditionalType(Property\AdditionalType $additionalType)
  * @method DriveWheelConfigurationValue setAlternateName(Property\AlternateName $alternateName)

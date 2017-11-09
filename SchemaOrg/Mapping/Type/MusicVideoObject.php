@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class MusicVideoObject.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\MusicVideoObjectType instead.
+ * 
  * @method MusicVideoObject setAccessMode(Property\AccessMode $accessMode)
  * @method MusicVideoObject setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method MusicVideoObject setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

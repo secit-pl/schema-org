@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class VinylFormat.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\VinylFormatType instead.
+ * 
  * @method VinylFormat setAdditionalType(Property\AdditionalType $additionalType)
  * @method VinylFormat setAlternateName(Property\AlternateName $alternateName)
  * @method VinylFormat setDescription(Property\Description $description)

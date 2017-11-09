@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class DanceGroup.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\DanceGroupType instead.
+ * 
  * @method DanceGroup setAdditionalType(Property\AdditionalType $additionalType)
  * @method DanceGroup setAddress(Property\Address $address)
  * @method DanceGroup setAggregateRating(Property\AggregateRating $aggregateRating)

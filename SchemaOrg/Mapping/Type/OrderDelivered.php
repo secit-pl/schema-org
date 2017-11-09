@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class OrderDelivered.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\OrderDeliveredType instead.
+ * 
  * @method OrderDelivered setAdditionalType(Property\AdditionalType $additionalType)
  * @method OrderDelivered setAlternateName(Property\AlternateName $alternateName)
  * @method OrderDelivered setDescription(Property\Description $description)

@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * IsRelatedTo class.
  * 
  * @method IsRelatedTo setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\IsRelatedToProperty instead.
  */
 class IsRelatedTo extends AbstractProperty {
 

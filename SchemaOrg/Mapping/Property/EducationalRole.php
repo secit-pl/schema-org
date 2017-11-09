@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * EducationalRole class.
  * 
  * @method EducationalRole setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\EducationalRoleProperty instead.
  */
 class EducationalRole extends AbstractProperty {
 

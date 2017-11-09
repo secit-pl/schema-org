@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * IncludesObject class.
  * 
  * @method IncludesObject setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\IncludesObjectProperty instead.
  */
 class IncludesObject extends AbstractProperty {
 

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class SeaBodyOfWater.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\SeaBodyOfWaterType instead.
+ * 
  * @method SeaBodyOfWater setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method SeaBodyOfWater setAdditionalType(Property\AdditionalType $additionalType)
  * @method SeaBodyOfWater setAddress(Property\Address $address)

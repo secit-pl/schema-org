@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class RadioSeries.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\RadioSeriesType instead.
+ * 
  * @method RadioSeries setAccessMode(Property\AccessMode $accessMode)
  * @method RadioSeries setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method RadioSeries setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

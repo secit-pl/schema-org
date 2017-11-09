@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class DiabeticDiet.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\DiabeticDietType instead.
+ * 
  * @method DiabeticDiet setAdditionalType(Property\AdditionalType $additionalType)
  * @method DiabeticDiet setAlternateName(Property\AlternateName $alternateName)
  * @method DiabeticDiet setDescription(Property\Description $description)

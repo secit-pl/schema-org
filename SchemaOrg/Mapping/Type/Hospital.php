@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Hospital.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\HospitalType instead.
+ * 
  * @method Hospital setAdditionalType(Property\AdditionalType $additionalType)
  * @method Hospital setAddress(Property\Address $address)
  * @method Hospital setAggregateRating(Property\AggregateRating $aggregateRating)

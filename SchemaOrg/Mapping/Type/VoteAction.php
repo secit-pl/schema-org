@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class VoteAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\VoteActionType instead.
+ * 
  * @method VoteAction setActionOption(Property\ActionOption $actionOption)
  * @method VoteAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method VoteAction setAdditionalType(Property\AdditionalType $additionalType)

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class DrinkAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\DrinkActionType instead.
+ * 
  * @method DrinkAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method DrinkAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method DrinkAction setAgent(Property\Agent $agent)

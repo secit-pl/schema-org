@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * Transcript class.
  * 
  * @method Transcript setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\TranscriptProperty instead.
  */
 class Transcript extends AbstractProperty {
 

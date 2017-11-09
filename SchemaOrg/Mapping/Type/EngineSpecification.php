@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class EngineSpecification.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\EngineSpecificationType instead.
+ * 
  * @method EngineSpecification setAdditionalType(Property\AdditionalType $additionalType)
  * @method EngineSpecification setAlternateName(Property\AlternateName $alternateName)
  * @method EngineSpecification setDescription(Property\Description $description)

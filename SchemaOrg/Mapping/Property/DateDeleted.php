@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * DateDeleted class.
  * 
  * @method DateDeleted setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\DateDeletedProperty instead.
  */
 class DateDeleted extends AbstractProperty {
 

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class BuyAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\BuyActionType instead.
+ * 
  * @method BuyAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method BuyAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method BuyAction setAgent(Property\Agent $agent)

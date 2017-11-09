@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class SubwayStation.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\SubwayStationType instead.
+ * 
  * @method SubwayStation setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method SubwayStation setAdditionalType(Property\AdditionalType $additionalType)
  * @method SubwayStation setAddress(Property\Address $address)

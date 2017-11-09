@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class MoveAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\MoveActionType instead.
+ * 
  * @method MoveAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method MoveAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method MoveAction setAgent(Property\Agent $agent)

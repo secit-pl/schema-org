@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class GamePlayMode.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\GamePlayModeType instead.
+ * 
  * @method GamePlayMode setAdditionalType(Property\AdditionalType $additionalType)
  * @method GamePlayMode setAlternateName(Property\AlternateName $alternateName)
  * @method GamePlayMode setDescription(Property\Description $description)

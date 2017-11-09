@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class DataDownload.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\DataDownloadType instead.
+ * 
  * @method DataDownload setAccessMode(Property\AccessMode $accessMode)
  * @method DataDownload setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method DataDownload setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

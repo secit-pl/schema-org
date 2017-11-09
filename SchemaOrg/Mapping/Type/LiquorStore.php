@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class LiquorStore.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\LiquorStoreType instead.
+ * 
  * @method LiquorStore setAdditionalType(Property\AdditionalType $additionalType)
  * @method LiquorStore setAddress(Property\Address $address)
  * @method LiquorStore setAggregateRating(Property\AggregateRating $aggregateRating)

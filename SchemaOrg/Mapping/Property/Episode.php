@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * Episode class.
  * 
  * @method Episode setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\EpisodeProperty instead.
  */
 class Episode extends AbstractProperty {
 

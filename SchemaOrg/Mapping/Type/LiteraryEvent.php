@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class LiteraryEvent.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\LiteraryEventType instead.
+ * 
  * @method LiteraryEvent setActor(Property\Actor $actor)
  * @method LiteraryEvent setAdditionalType(Property\AdditionalType $additionalType)
  * @method LiteraryEvent setAggregateRating(Property\AggregateRating $aggregateRating)

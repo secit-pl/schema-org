@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * JobLocation class.
  * 
  * @method JobLocation setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\JobLocationProperty instead.
  */
 class JobLocation extends AbstractProperty {
 

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Organization.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\OrganizationType instead.
+ * 
  * @method Organization setAdditionalType(Property\AdditionalType $additionalType)
  * @method Organization setAlternateName(Property\AlternateName $alternateName)
  * @method Organization setDescription(Property\Description $description)

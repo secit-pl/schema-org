@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class CassetteFormat.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\CassetteFormatType instead.
+ * 
  * @method CassetteFormat setAdditionalType(Property\AdditionalType $additionalType)
  * @method CassetteFormat setAlternateName(Property\AlternateName $alternateName)
  * @method CassetteFormat setDescription(Property\Description $description)

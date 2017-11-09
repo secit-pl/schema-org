@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class MovieClip.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\MovieClipType instead.
+ * 
  * @method MovieClip setAccessMode(Property\AccessMode $accessMode)
  * @method MovieClip setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method MovieClip setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

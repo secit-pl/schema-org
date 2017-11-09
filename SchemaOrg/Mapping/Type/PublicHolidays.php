@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class PublicHolidays.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\PublicHolidaysType instead.
+ * 
  * @method PublicHolidays setAdditionalType(Property\AdditionalType $additionalType)
  * @method PublicHolidays setAlternateName(Property\AlternateName $alternateName)
  * @method PublicHolidays setDescription(Property\Description $description)

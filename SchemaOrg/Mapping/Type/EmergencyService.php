@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class EmergencyService.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\EmergencyServiceType instead.
+ * 
  * @method EmergencyService setAdditionalType(Property\AdditionalType $additionalType)
  * @method EmergencyService setAddress(Property\Address $address)
  * @method EmergencyService setAggregateRating(Property\AggregateRating $aggregateRating)

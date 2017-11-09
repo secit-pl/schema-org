@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * ExerciseCourse class.
  * 
  * @method ExerciseCourse setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\ExerciseCourseProperty instead.
  */
 class ExerciseCourse extends AbstractProperty {
 

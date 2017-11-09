@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class CollectionPage.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\CollectionPageType instead.
+ * 
  * @method CollectionPage setAccessMode(Property\AccessMode $accessMode)
  * @method CollectionPage setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method CollectionPage setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

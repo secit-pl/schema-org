@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class MusicGroup.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\MusicGroupType instead.
+ * 
  * @method MusicGroup setAdditionalType(Property\AdditionalType $additionalType)
  * @method MusicGroup setAddress(Property\Address $address)
  * @method MusicGroup setAggregateRating(Property\AggregateRating $aggregateRating)

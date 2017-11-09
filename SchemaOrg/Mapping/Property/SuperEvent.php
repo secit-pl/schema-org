@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * SuperEvent class.
  * 
  * @method SuperEvent setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\SuperEventProperty instead.
  */
 class SuperEvent extends AbstractProperty {
 

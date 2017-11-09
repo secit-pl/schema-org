@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class WebPageElement.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\WebPageElementType instead.
+ * 
  * @method WebPageElement setAccessMode(Property\AccessMode $accessMode)
  * @method WebPageElement setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method WebPageElement setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

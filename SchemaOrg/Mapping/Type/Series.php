@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Series.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\SeriesType instead.
+ * 
  * @method Series setAccessMode(Property\AccessMode $accessMode)
  * @method Series setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method Series setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

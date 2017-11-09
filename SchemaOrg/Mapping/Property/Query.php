@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * Query class.
  * 
  * @method Query setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\QueryProperty instead.
  */
 class Query extends AbstractProperty {
 

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Tuesday.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\TuesdayType instead.
+ * 
  * @method Tuesday setAdditionalType(Property\AdditionalType $additionalType)
  * @method Tuesday setAlternateName(Property\AlternateName $alternateName)
  * @method Tuesday setDescription(Property\Description $description)

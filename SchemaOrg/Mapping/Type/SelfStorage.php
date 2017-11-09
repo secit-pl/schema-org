@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class SelfStorage.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\SelfStorageType instead.
+ * 
  * @method SelfStorage setAdditionalType(Property\AdditionalType $additionalType)
  * @method SelfStorage setAddress(Property\Address $address)
  * @method SelfStorage setAggregateRating(Property\AggregateRating $aggregateRating)

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class CreditCard.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\CreditCardType instead.
+ * 
  * @method CreditCard setAdditionalType(Property\AdditionalType $additionalType)
  * @method CreditCard setAlternateName(Property\AlternateName $alternateName)
  * @method CreditCard setDescription(Property\Description $description)

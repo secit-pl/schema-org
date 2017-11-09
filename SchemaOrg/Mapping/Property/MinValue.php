@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * MinValue class.
  * 
  * @method MinValue setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\MinValueProperty instead.
  */
 class MinValue extends AbstractProperty {
 

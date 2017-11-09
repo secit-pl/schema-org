@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class WholesaleStore.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\WholesaleStoreType instead.
+ * 
  * @method WholesaleStore setAdditionalType(Property\AdditionalType $additionalType)
  * @method WholesaleStore setAddress(Property\Address $address)
  * @method WholesaleStore setAggregateRating(Property\AggregateRating $aggregateRating)

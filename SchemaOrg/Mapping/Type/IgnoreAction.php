@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class IgnoreAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\IgnoreActionType instead.
+ * 
  * @method IgnoreAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method IgnoreAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method IgnoreAction setAgent(Property\Agent $agent)

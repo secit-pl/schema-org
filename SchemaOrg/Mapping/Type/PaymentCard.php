@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class PaymentCard.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\PaymentCardType instead.
+ * 
  * @method PaymentCard setAdditionalType(Property\AdditionalType $additionalType)
  * @method PaymentCard setAlternateName(Property\AlternateName $alternateName)
  * @method PaymentCard setDescription(Property\Description $description)

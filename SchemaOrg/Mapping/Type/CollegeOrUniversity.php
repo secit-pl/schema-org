@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class CollegeOrUniversity.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\CollegeOrUniversityType instead.
+ * 
  * @method CollegeOrUniversity setAdditionalType(Property\AdditionalType $additionalType)
  * @method CollegeOrUniversity setAddress(Property\Address $address)
  * @method CollegeOrUniversity setAggregateRating(Property\AggregateRating $aggregateRating)

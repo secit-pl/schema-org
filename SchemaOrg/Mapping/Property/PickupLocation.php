@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * PickupLocation class.
  * 
  * @method PickupLocation setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\PickupLocationProperty instead.
  */
 class PickupLocation extends AbstractProperty {
 

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class AggregateRating.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\AggregateRatingType instead.
+ * 
  * @method AggregateRating setAdditionalType(Property\AdditionalType $additionalType)
  * @method AggregateRating setAlternateName(Property\AlternateName $alternateName)
  * @method AggregateRating setAuthor(Property\Author $author)

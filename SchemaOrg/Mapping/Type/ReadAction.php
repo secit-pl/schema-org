@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class ReadAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ReadActionType instead.
+ * 
  * @method ReadAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method ReadAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method ReadAction setAgent(Property\Agent $agent)

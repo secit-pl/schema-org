@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * Weight class.
  * 
  * @method Weight setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\WeightProperty instead.
  */
 class Weight extends AbstractProperty {
 

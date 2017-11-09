@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class OrderPickupAvailable.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\OrderPickupAvailableType instead.
+ * 
  * @method OrderPickupAvailable setAdditionalType(Property\AdditionalType $additionalType)
  * @method OrderPickupAvailable setAlternateName(Property\AlternateName $alternateName)
  * @method OrderPickupAvailable setDescription(Property\Description $description)

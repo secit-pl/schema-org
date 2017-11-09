@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class ContactPoint.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ContactPointType instead.
+ * 
  * @method ContactPoint setAdditionalType(Property\AdditionalType $additionalType)
  * @method ContactPoint setAlternateName(Property\AlternateName $alternateName)
  * @method ContactPoint setDescription(Property\Description $description)

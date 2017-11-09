@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class PostOffice.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\PostOfficeType instead.
+ * 
  * @method PostOffice setAdditionalType(Property\AdditionalType $additionalType)
  * @method PostOffice setAddress(Property\Address $address)
  * @method PostOffice setAggregateRating(Property\AggregateRating $aggregateRating)

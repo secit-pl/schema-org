@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class ShareAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ShareActionType instead.
+ * 
  * @method ShareAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method ShareAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method ShareAction setAgent(Property\Agent $agent)

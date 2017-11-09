@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class ElectronicsStore.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ElectronicsStoreType instead.
+ * 
  * @method ElectronicsStore setAdditionalType(Property\AdditionalType $additionalType)
  * @method ElectronicsStore setAddress(Property\Address $address)
  * @method ElectronicsStore setAggregateRating(Property\AggregateRating $aggregateRating)

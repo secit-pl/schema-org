@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class EducationalAudience.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\EducationalAudienceType instead.
+ * 
  * @method EducationalAudience setAdditionalType(Property\AdditionalType $additionalType)
  * @method EducationalAudience setAlternateName(Property\AlternateName $alternateName)
  * @method EducationalAudience setAudienceType(Property\AudienceType $audienceType)

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class DataFeedItem.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\DataFeedItemType instead.
+ * 
  * @method DataFeedItem setAdditionalType(Property\AdditionalType $additionalType)
  * @method DataFeedItem setAlternateName(Property\AlternateName $alternateName)
  * @method DataFeedItem setDescription(Property\Description $description)

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class DataCatalog.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\DataCatalogType instead.
+ * 
  * @method DataCatalog setAccessMode(Property\AccessMode $accessMode)
  * @method DataCatalog setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method DataCatalog setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

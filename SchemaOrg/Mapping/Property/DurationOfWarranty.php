@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * DurationOfWarranty class.
  * 
  * @method DurationOfWarranty setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\DurationOfWarrantyProperty instead.
  */
 class DurationOfWarranty extends AbstractProperty {
 

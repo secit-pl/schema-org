@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * ServiceOperator class.
  * 
  * @method ServiceOperator setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\ServiceOperatorProperty instead.
  */
 class ServiceOperator extends AbstractProperty {
 

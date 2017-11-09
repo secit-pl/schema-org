@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * SuccessorOf class.
  * 
  * @method SuccessorOf setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\SuccessorOfProperty instead.
  */
 class SuccessorOf extends AbstractProperty {
 

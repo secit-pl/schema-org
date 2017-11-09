@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class MapCategoryType.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\MapCategoryType instead.
+ * 
  * @method MapCategoryType setAdditionalType(Property\AdditionalType $additionalType)
  * @method MapCategoryType setAlternateName(Property\AlternateName $alternateName)
  * @method MapCategoryType setDescription(Property\Description $description)

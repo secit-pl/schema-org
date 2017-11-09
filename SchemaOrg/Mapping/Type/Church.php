@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Church.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ChurchType instead.
+ * 
  * @method Church setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method Church setAdditionalType(Property\AdditionalType $additionalType)
  * @method Church setAddress(Property\Address $address)

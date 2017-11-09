@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * FirstPerformance class.
  * 
  * @method FirstPerformance setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\FirstPerformanceProperty instead.
  */
 class FirstPerformance extends AbstractProperty {
 

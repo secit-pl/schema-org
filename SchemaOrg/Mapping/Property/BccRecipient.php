@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * BccRecipient class.
  * 
  * @method BccRecipient setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\BccRecipientProperty instead.
  */
 class BccRecipient extends AbstractProperty {
 

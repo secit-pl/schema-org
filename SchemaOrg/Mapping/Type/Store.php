@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Store.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\StoreType instead.
+ * 
  * @method Store setAdditionalType(Property\AdditionalType $additionalType)
  * @method Store setAddress(Property\Address $address)
  * @method Store setAggregateRating(Property\AggregateRating $aggregateRating)

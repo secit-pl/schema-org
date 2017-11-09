@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * TargetCollection class.
  * 
  * @method TargetCollection setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\TargetCollectionProperty instead.
  */
 class TargetCollection extends AbstractProperty {
 

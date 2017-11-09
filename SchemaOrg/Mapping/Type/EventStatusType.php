@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class EventStatusType.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\EventStatusType instead.
+ * 
  * @method EventStatusType setAdditionalType(Property\AdditionalType $additionalType)
  * @method EventStatusType setAlternateName(Property\AlternateName $alternateName)
  * @method EventStatusType setDescription(Property\Description $description)

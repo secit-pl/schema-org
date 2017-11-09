@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class UpdateAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\UpdateActionType instead.
+ * 
  * @method UpdateAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method UpdateAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method UpdateAction setAgent(Property\Agent $agent)

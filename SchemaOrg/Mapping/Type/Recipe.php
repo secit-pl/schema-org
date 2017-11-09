@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Recipe.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\RecipeType instead.
+ * 
  * @method Recipe setAccessMode(Property\AccessMode $accessMode)
  * @method Recipe setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method Recipe setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

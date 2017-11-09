@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class BarOrPub.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\BarOrPubType instead.
+ * 
  * @method BarOrPub setAcceptsReservations(Property\AcceptsReservations $acceptsReservations)
  * @method BarOrPub setAdditionalType(Property\AdditionalType $additionalType)
  * @method BarOrPub setAddress(Property\Address $address)

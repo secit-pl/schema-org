@@ -6,8 +6,10 @@ use SecIT\SchemaOrg\Mapping\Property;
 
 /**
  * Class Thing.
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ThingType instead.
  */
-class Thing {
+class Thing implements TypeInterface {
 
 	/**
 	 * @var Property\AdditionalType

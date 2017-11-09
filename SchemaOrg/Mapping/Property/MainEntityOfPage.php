@@ -9,6 +9,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * MainEntityOfPage class.
  * 
  * @method MainEntityOfPage setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\MainEntityOfPageProperty instead.
  */
 class MainEntityOfPage extends AbstractProperty {
 

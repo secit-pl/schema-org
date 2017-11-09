@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class PerformingGroup.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\PerformingGroupType instead.
+ * 
  * @method PerformingGroup setAdditionalType(Property\AdditionalType $additionalType)
  * @method PerformingGroup setAddress(Property\Address $address)
  * @method PerformingGroup setAggregateRating(Property\AggregateRating $aggregateRating)

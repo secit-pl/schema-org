@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class BreadcrumbList.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\BreadcrumbListType instead.
+ * 
  * @method BreadcrumbList setAdditionalType(Property\AdditionalType $additionalType)
  * @method BreadcrumbList setAlternateName(Property\AlternateName $alternateName)
  * @method BreadcrumbList setDescription(Property\Description $description)

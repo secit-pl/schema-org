@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class FoodService.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\FoodServiceType instead.
+ * 
  * @method FoodService setAdditionalType(Property\AdditionalType $additionalType)
  * @method FoodService setAggregateRating(Property\AggregateRating $aggregateRating)
  * @method FoodService setAlternateName(Property\AlternateName $alternateName)

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class ToyStore.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ToyStoreType instead.
+ * 
  * @method ToyStore setAdditionalType(Property\AdditionalType $additionalType)
  * @method ToyStore setAddress(Property\Address $address)
  * @method ToyStore setAggregateRating(Property\AggregateRating $aggregateRating)

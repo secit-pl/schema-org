@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class State.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\StateType instead.
+ * 
  * @method State setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method State setAdditionalType(Property\AdditionalType $additionalType)
  * @method State setAddress(Property\Address $address)

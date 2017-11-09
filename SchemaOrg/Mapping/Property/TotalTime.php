@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * TotalTime class.
  * 
  * @method TotalTime setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\TotalTimeProperty instead.
  */
 class TotalTime extends AbstractProperty {
 

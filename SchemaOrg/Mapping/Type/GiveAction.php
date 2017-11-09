@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class GiveAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\GiveActionType instead.
+ * 
  * @method GiveAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method GiveAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method GiveAction setAgent(Property\Agent $agent)

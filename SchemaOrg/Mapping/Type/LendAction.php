@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class LendAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\LendActionType instead.
+ * 
  * @method LendAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method LendAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method LendAction setAgent(Property\Agent $agent)

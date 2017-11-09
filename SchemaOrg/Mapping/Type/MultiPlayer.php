@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class MultiPlayer.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\MultiPlayerType instead.
+ * 
  * @method MultiPlayer setAdditionalType(Property\AdditionalType $additionalType)
  * @method MultiPlayer setAlternateName(Property\AlternateName $alternateName)
  * @method MultiPlayer setDescription(Property\Description $description)

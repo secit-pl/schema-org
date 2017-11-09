@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class BusinessEntityType.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\BusinessEntityType instead.
+ * 
  * @method BusinessEntityType setAdditionalType(Property\AdditionalType $additionalType)
  * @method BusinessEntityType setAlternateName(Property\AlternateName $alternateName)
  * @method BusinessEntityType setDescription(Property\Description $description)

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class EndorseAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\EndorseActionType instead.
+ * 
  * @method EndorseAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method EndorseAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method EndorseAction setAgent(Property\Agent $agent)

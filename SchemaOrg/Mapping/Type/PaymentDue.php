@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class PaymentDue.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\PaymentDueType instead.
+ * 
  * @method PaymentDue setAdditionalType(Property\AdditionalType $additionalType)
  * @method PaymentDue setAlternateName(Property\AlternateName $alternateName)
  * @method PaymentDue setDescription(Property\Description $description)

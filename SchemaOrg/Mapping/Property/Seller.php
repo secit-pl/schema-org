@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * Seller class.
  * 
  * @method Seller setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\SellerProperty instead.
  */
 class Seller extends AbstractProperty {
 

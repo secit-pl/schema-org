@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class ReserveAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ReserveActionType instead.
+ * 
  * @method ReserveAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method ReserveAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method ReserveAction setAgent(Property\Agent $agent)

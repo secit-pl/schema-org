@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class CompletedActionStatus.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\CompletedActionStatusType instead.
+ * 
  * @method CompletedActionStatus setAdditionalType(Property\AdditionalType $additionalType)
  * @method CompletedActionStatus setAlternateName(Property\AlternateName $alternateName)
  * @method CompletedActionStatus setDescription(Property\Description $description)

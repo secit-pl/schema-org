@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * VideoFrameSize class.
  * 
  * @method VideoFrameSize setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\VideoFrameSizeProperty instead.
  */
 class VideoFrameSize extends AbstractProperty {
 

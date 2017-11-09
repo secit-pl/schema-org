@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Accommodation.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\AccommodationType instead.
+ * 
  * @method Accommodation setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method Accommodation setAdditionalType(Property\AdditionalType $additionalType)
  * @method Accommodation setAddress(Property\Address $address)

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class SteeringPositionValue.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\SteeringPositionValueType instead.
+ * 
  * @method SteeringPositionValue setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method SteeringPositionValue setAdditionalType(Property\AdditionalType $additionalType)
  * @method SteeringPositionValue setAlternateName(Property\AlternateName $alternateName)

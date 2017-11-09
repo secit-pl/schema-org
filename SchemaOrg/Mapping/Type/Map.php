@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Map.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\MapType instead.
+ * 
  * @method Map setAccessMode(Property\AccessMode $accessMode)
  * @method Map setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method Map setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class PaymentStatusType.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\PaymentStatusType instead.
+ * 
  * @method PaymentStatusType setAdditionalType(Property\AdditionalType $additionalType)
  * @method PaymentStatusType setAlternateName(Property\AlternateName $alternateName)
  * @method PaymentStatusType setDescription(Property\Description $description)

@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * CheckinTime class.
  * 
  * @method CheckinTime setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\CheckinTimeProperty instead.
  */
 class CheckinTime extends AbstractProperty {
 

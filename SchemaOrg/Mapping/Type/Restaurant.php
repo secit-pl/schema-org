@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Restaurant.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\RestaurantType instead.
+ * 
  * @method Restaurant setAcceptsReservations(Property\AcceptsReservations $acceptsReservations)
  * @method Restaurant setAdditionalType(Property\AdditionalType $additionalType)
  * @method Restaurant setAddress(Property\Address $address)

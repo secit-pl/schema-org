@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Enumeration.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\EnumerationType instead.
+ * 
  * @method Enumeration setAdditionalType(Property\AdditionalType $additionalType)
  * @method Enumeration setAlternateName(Property\AlternateName $alternateName)
  * @method Enumeration setDescription(Property\Description $description)

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class SpreadsheetDigitalDocument.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\SpreadsheetDigitalDocumentType instead.
+ * 
  * @method SpreadsheetDigitalDocument setAccessMode(Property\AccessMode $accessMode)
  * @method SpreadsheetDigitalDocument setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method SpreadsheetDigitalDocument setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * Children class.
  * 
  * @method Children setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\ChildrenProperty instead.
  */
 class Children extends AbstractProperty {
 

@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * MusicBy class.
  * 
  * @method MusicBy setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\MusicByProperty instead.
  */
 class MusicBy extends AbstractProperty {
 

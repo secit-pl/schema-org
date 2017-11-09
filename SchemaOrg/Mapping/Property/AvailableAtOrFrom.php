@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * AvailableAtOrFrom class.
  * 
  * @method AvailableAtOrFrom setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\AvailableAtOrFromProperty instead.
  */
 class AvailableAtOrFrom extends AbstractProperty {
 

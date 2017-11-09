@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Episode.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\EpisodeType instead.
+ * 
  * @method Episode setAccessMode(Property\AccessMode $accessMode)
  * @method Episode setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method Episode setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

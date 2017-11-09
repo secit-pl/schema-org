@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class CafeOrCoffeeShop.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\CafeOrCoffeeShopType instead.
+ * 
  * @method CafeOrCoffeeShop setAcceptsReservations(Property\AcceptsReservations $acceptsReservations)
  * @method CafeOrCoffeeShop setAdditionalType(Property\AdditionalType $additionalType)
  * @method CafeOrCoffeeShop setAddress(Property\Address $address)

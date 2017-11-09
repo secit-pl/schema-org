@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class MobileApplication.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\MobileApplicationType instead.
+ * 
  * @method MobileApplication setAccessMode(Property\AccessMode $accessMode)
  * @method MobileApplication setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method MobileApplication setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

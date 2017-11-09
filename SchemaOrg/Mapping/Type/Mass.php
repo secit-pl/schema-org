@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Mass.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\MassType instead.
+ * 
  * @method Mass setAdditionalType(Property\AdditionalType $additionalType)
  * @method Mass setAlternateName(Property\AlternateName $alternateName)
  * @method Mass setDescription(Property\Description $description)

@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * Sender class.
  * 
  * @method Sender setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\SenderProperty instead.
  */
 class Sender extends AbstractProperty {
 

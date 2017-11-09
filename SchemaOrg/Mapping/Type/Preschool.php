@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Preschool.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\PreschoolType instead.
+ * 
  * @method Preschool setAdditionalType(Property\AdditionalType $additionalType)
  * @method Preschool setAddress(Property\Address $address)
  * @method Preschool setAggregateRating(Property\AggregateRating $aggregateRating)

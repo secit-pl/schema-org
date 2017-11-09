@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class WebPage.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\WebPageType instead.
+ * 
  * @method WebPage setAccessMode(Property\AccessMode $accessMode)
  * @method WebPage setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method WebPage setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

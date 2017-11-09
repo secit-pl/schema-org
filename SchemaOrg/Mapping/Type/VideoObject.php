@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class VideoObject.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\VideoObjectType instead.
+ * 
  * @method VideoObject setAccessMode(Property\AccessMode $accessMode)
  * @method VideoObject setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method VideoObject setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

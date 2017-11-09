@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class HowToStep.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\HowToStepType instead.
+ * 
  * @method HowToStep setAdditionalType(Property\AdditionalType $additionalType)
  * @method HowToStep setAlternateName(Property\AlternateName $alternateName)
  * @method HowToStep setDescription(Property\Description $description)

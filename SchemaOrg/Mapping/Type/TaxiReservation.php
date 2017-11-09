@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class TaxiReservation.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\TaxiReservationType instead.
+ * 
  * @method TaxiReservation setAdditionalType(Property\AdditionalType $additionalType)
  * @method TaxiReservation setAlternateName(Property\AlternateName $alternateName)
  * @method TaxiReservation setBookingTime(Property\BookingTime $bookingTime)

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class CoOp.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\CoOpType instead.
+ * 
  * @method CoOp setAdditionalType(Property\AdditionalType $additionalType)
  * @method CoOp setAlternateName(Property\AlternateName $alternateName)
  * @method CoOp setDescription(Property\Description $description)

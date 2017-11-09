@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Attorney.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\AttorneyType instead.
+ * 
  * @method Attorney setAdditionalType(Property\AdditionalType $additionalType)
  * @method Attorney setAddress(Property\Address $address)
  * @method Attorney setAggregateRating(Property\AggregateRating $aggregateRating)

@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * UrlTemplate class.
  * 
  * @method UrlTemplate setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\UrlTemplateProperty instead.
  */
 class UrlTemplate extends AbstractProperty {
 

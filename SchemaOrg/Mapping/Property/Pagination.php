@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * Pagination class.
  * 
  * @method Pagination setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\PaginationProperty instead.
  */
 class Pagination extends AbstractProperty {
 

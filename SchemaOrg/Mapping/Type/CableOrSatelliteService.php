@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class CableOrSatelliteService.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\CableOrSatelliteServiceType instead.
+ * 
  * @method CableOrSatelliteService setAdditionalType(Property\AdditionalType $additionalType)
  * @method CableOrSatelliteService setAggregateRating(Property\AggregateRating $aggregateRating)
  * @method CableOrSatelliteService setAlternateName(Property\AlternateName $alternateName)

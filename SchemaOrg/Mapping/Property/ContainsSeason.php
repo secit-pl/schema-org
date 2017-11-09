@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * ContainsSeason class.
  * 
  * @method ContainsSeason setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\ContainsSeasonProperty instead.
  */
 class ContainsSeason extends AbstractProperty {
 

@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * PriceType class.
  * 
  * @method PriceType setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\PriceTypeProperty instead.
  */
 class PriceType extends AbstractProperty {
 

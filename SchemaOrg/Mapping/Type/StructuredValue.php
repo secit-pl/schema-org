@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class StructuredValue.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\StructuredValueType instead.
+ * 
  * @method StructuredValue setAdditionalType(Property\AdditionalType $additionalType)
  * @method StructuredValue setAlternateName(Property\AlternateName $alternateName)
  * @method StructuredValue setDescription(Property\Description $description)

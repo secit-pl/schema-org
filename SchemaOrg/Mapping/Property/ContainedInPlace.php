@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * ContainedInPlace class.
  * 
  * @method ContainedInPlace setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\ContainedInPlaceProperty instead.
  */
 class ContainedInPlace extends AbstractProperty {
 

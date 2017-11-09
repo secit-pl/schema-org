@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class GovernmentPermit.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\GovernmentPermitType instead.
+ * 
  * @method GovernmentPermit setAdditionalType(Property\AdditionalType $additionalType)
  * @method GovernmentPermit setAlternateName(Property\AlternateName $alternateName)
  * @method GovernmentPermit setDescription(Property\Description $description)

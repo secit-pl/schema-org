@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * Greater class.
  * 
  * @method Greater setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\GreaterProperty instead.
  */
 class Greater extends AbstractProperty {
 

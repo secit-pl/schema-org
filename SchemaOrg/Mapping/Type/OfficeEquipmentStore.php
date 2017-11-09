@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class OfficeEquipmentStore.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\OfficeEquipmentStoreType instead.
+ * 
  * @method OfficeEquipmentStore setAdditionalType(Property\AdditionalType $additionalType)
  * @method OfficeEquipmentStore setAddress(Property\Address $address)
  * @method OfficeEquipmentStore setAggregateRating(Property\AggregateRating $aggregateRating)

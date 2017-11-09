@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class WarrantyScope.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\WarrantyScopeType instead.
+ * 
  * @method WarrantyScope setAdditionalType(Property\AdditionalType $additionalType)
  * @method WarrantyScope setAlternateName(Property\AlternateName $alternateName)
  * @method WarrantyScope setDescription(Property\Description $description)

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class RoofingContractor.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\RoofingContractorType instead.
+ * 
  * @method RoofingContractor setAdditionalType(Property\AdditionalType $additionalType)
  * @method RoofingContractor setAddress(Property\Address $address)
  * @method RoofingContractor setAggregateRating(Property\AggregateRating $aggregateRating)

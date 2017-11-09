@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class GlutenFreeDiet.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\GlutenFreeDietType instead.
+ * 
  * @method GlutenFreeDiet setAdditionalType(Property\AdditionalType $additionalType)
  * @method GlutenFreeDiet setAlternateName(Property\AlternateName $alternateName)
  * @method GlutenFreeDiet setDescription(Property\Description $description)

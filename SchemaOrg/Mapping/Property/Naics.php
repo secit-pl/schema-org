@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * Naics class.
  * 
  * @method Naics setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\NaicsProperty instead.
  */
 class Naics extends AbstractProperty {
 

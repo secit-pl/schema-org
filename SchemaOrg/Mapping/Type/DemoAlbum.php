@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class DemoAlbum.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\DemoAlbumType instead.
+ * 
  * @method DemoAlbum setAdditionalType(Property\AdditionalType $additionalType)
  * @method DemoAlbum setAlternateName(Property\AlternateName $alternateName)
  * @method DemoAlbum setDescription(Property\Description $description)

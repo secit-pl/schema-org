@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class BedAndBreakfast.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\BedAndBreakfastType instead.
+ * 
  * @method BedAndBreakfast setAdditionalType(Property\AdditionalType $additionalType)
  * @method BedAndBreakfast setAddress(Property\Address $address)
  * @method BedAndBreakfast setAggregateRating(Property\AggregateRating $aggregateRating)

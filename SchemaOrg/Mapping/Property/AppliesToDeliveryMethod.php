@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * AppliesToDeliveryMethod class.
  * 
  * @method AppliesToDeliveryMethod setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\AppliesToDeliveryMethodProperty instead.
  */
 class AppliesToDeliveryMethod extends AbstractProperty {
 

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class JoinAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\JoinActionType instead.
+ * 
  * @method JoinAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method JoinAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method JoinAction setAgent(Property\Agent $agent)

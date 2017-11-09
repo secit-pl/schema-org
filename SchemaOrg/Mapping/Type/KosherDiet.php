@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class KosherDiet.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\KosherDietType instead.
+ * 
  * @method KosherDiet setAdditionalType(Property\AdditionalType $additionalType)
  * @method KosherDiet setAlternateName(Property\AlternateName $alternateName)
  * @method KosherDiet setDescription(Property\Description $description)

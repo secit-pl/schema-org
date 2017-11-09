@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * EducationalAlignment class.
  * 
  * @method EducationalAlignment setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\EducationalAlignmentProperty instead.
  */
 class EducationalAlignment extends AbstractProperty {
 

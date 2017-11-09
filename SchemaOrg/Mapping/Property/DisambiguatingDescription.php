@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * DisambiguatingDescription class.
  * 
  * @method DisambiguatingDescription setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\DisambiguatingDescriptionProperty instead.
  */
 class DisambiguatingDescription extends AbstractProperty {
 

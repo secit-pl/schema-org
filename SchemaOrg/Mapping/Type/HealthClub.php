@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class HealthClub.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\HealthClubType instead.
+ * 
  * @method HealthClub setAdditionalType(Property\AdditionalType $additionalType)
  * @method HealthClub setAddress(Property\Address $address)
  * @method HealthClub setAggregateRating(Property\AggregateRating $aggregateRating)

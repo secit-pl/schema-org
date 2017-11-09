@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class FrontWheelDriveConfiguration.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\FrontWheelDriveConfigurationType instead.
+ * 
  * @method FrontWheelDriveConfiguration setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method FrontWheelDriveConfiguration setAdditionalType(Property\AdditionalType $additionalType)
  * @method FrontWheelDriveConfiguration setAlternateName(Property\AlternateName $alternateName)

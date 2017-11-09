@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * CookTime class.
  * 
  * @method CookTime setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\CookTimeProperty instead.
  */
 class CookTime extends AbstractProperty {
 

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class TravelAgency.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\TravelAgencyType instead.
+ * 
  * @method TravelAgency setAdditionalType(Property\AdditionalType $additionalType)
  * @method TravelAgency setAddress(Property\Address $address)
  * @method TravelAgency setAggregateRating(Property\AggregateRating $aggregateRating)

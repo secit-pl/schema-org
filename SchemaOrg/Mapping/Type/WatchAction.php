@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class WatchAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\WatchActionType instead.
+ * 
  * @method WatchAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method WatchAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method WatchAction setAgent(Property\Agent $agent)

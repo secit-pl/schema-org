@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class OutletStore.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\OutletStoreType instead.
+ * 
  * @method OutletStore setAdditionalType(Property\AdditionalType $additionalType)
  * @method OutletStore setAddress(Property\Address $address)
  * @method OutletStore setAggregateRating(Property\AggregateRating $aggregateRating)

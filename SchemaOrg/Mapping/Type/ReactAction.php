@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class ReactAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ReactActionType instead.
+ * 
  * @method ReactAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method ReactAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method ReactAction setAgent(Property\Agent $agent)

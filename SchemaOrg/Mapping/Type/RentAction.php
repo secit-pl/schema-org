@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class RentAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\RentActionType instead.
+ * 
  * @method RentAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method RentAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method RentAction setAgent(Property\Agent $agent)

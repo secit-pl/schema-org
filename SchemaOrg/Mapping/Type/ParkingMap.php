@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class ParkingMap.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ParkingMapType instead.
+ * 
  * @method ParkingMap setAdditionalType(Property\AdditionalType $additionalType)
  * @method ParkingMap setAlternateName(Property\AlternateName $alternateName)
  * @method ParkingMap setDescription(Property\Description $description)

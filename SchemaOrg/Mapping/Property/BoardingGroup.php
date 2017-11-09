@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * BoardingGroup class.
  * 
  * @method BoardingGroup setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\BoardingGroupProperty instead.
  */
 class BoardingGroup extends AbstractProperty {
 

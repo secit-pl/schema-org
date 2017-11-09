@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Action.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ActionType instead.
+ * 
  * @method Action setAdditionalType(Property\AdditionalType $additionalType)
  * @method Action setAlternateName(Property\AlternateName $alternateName)
  * @method Action setDescription(Property\Description $description)

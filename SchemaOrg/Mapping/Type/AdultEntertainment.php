@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class AdultEntertainment.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\AdultEntertainmentType instead.
+ * 
  * @method AdultEntertainment setAdditionalType(Property\AdditionalType $additionalType)
  * @method AdultEntertainment setAddress(Property\Address $address)
  * @method AdultEntertainment setAggregateRating(Property\AggregateRating $aggregateRating)

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class CDFormat.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\CDFormatType instead.
+ * 
  * @method CDFormat setAdditionalType(Property\AdditionalType $additionalType)
  * @method CDFormat setAlternateName(Property\AlternateName $alternateName)
  * @method CDFormat setDescription(Property\Description $description)

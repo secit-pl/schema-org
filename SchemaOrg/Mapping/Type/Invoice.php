@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Invoice.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\InvoiceType instead.
+ * 
  * @method Invoice setAdditionalType(Property\AdditionalType $additionalType)
  * @method Invoice setAlternateName(Property\AlternateName $alternateName)
  * @method Invoice setDescription(Property\Description $description)

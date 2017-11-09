@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Energy.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\EnergyType instead.
+ * 
  * @method Energy setAdditionalType(Property\AdditionalType $additionalType)
  * @method Energy setAlternateName(Property\AlternateName $alternateName)
  * @method Energy setDescription(Property\Description $description)

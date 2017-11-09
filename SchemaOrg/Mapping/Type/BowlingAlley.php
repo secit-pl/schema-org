@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class BowlingAlley.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\BowlingAlleyType instead.
+ * 
  * @method BowlingAlley setAdditionalType(Property\AdditionalType $additionalType)
  * @method BowlingAlley setAddress(Property\Address $address)
  * @method BowlingAlley setAggregateRating(Property\AggregateRating $aggregateRating)

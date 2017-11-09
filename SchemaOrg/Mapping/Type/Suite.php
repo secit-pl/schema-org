@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Suite.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\SuiteType instead.
+ * 
  * @method Suite setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method Suite setAdditionalType(Property\AdditionalType $additionalType)
  * @method Suite setAddress(Property\Address $address)

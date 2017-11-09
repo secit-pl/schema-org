@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * SportsActivityLocation class.
  * 
  * @method SportsActivityLocation setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\SportsActivityLocationProperty instead.
  */
 class SportsActivityLocation extends AbstractProperty {
 

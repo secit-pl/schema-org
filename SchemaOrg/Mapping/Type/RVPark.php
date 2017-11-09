@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class RVPark.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\RVParkType instead.
+ * 
  * @method RVPark setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method RVPark setAdditionalType(Property\AdditionalType $additionalType)
  * @method RVPark setAddress(Property\Address $address)

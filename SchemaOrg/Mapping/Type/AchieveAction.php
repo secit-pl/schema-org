@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class AchieveAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\AchieveActionType instead.
+ * 
  * @method AchieveAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method AchieveAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method AchieveAction setAgent(Property\Agent $agent)

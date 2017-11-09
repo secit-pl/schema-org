@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class HVACBusiness.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\HVACBusinessType instead.
+ * 
  * @method HVACBusiness setAdditionalType(Property\AdditionalType $additionalType)
  * @method HVACBusiness setAddress(Property\Address $address)
  * @method HVACBusiness setAggregateRating(Property\AggregateRating $aggregateRating)

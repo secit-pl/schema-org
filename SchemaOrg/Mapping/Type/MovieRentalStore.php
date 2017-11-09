@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class MovieRentalStore.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\MovieRentalStoreType instead.
+ * 
  * @method MovieRentalStore setAdditionalType(Property\AdditionalType $additionalType)
  * @method MovieRentalStore setAddress(Property\Address $address)
  * @method MovieRentalStore setAggregateRating(Property\AggregateRating $aggregateRating)

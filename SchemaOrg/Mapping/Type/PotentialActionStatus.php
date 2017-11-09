@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class PotentialActionStatus.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\PotentialActionStatusType instead.
+ * 
  * @method PotentialActionStatus setAdditionalType(Property\AdditionalType $additionalType)
  * @method PotentialActionStatus setAlternateName(Property\AlternateName $alternateName)
  * @method PotentialActionStatus setDescription(Property\Description $description)

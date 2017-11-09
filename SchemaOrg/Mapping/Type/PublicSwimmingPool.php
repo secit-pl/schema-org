@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class PublicSwimmingPool.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\PublicSwimmingPoolType instead.
+ * 
  * @method PublicSwimmingPool setAdditionalType(Property\AdditionalType $additionalType)
  * @method PublicSwimmingPool setAddress(Property\Address $address)
  * @method PublicSwimmingPool setAggregateRating(Property\AggregateRating $aggregateRating)

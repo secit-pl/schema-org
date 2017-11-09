@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * CarrierRequirements class.
  * 
  * @method CarrierRequirements setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\CarrierRequirementsProperty instead.
  */
 class CarrierRequirements extends AbstractProperty {
 

@@ -4,8 +4,10 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 
 /**
  * Class ReservationPending.
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ReservationPendingType instead.
  */
-class ReservationPending {
+class ReservationPending implements TypeInterface {
 
 	/**
 	 */

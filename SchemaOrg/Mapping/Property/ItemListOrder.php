@@ -9,6 +9,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * ItemListOrder class.
  * 
  * @method ItemListOrder setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\ItemListOrderProperty instead.
  */
 class ItemListOrder extends AbstractProperty {
 

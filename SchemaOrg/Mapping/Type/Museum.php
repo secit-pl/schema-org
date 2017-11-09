@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Museum.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\MuseumType instead.
+ * 
  * @method Museum setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method Museum setAdditionalType(Property\AdditionalType $additionalType)
  * @method Museum setAddress(Property\Address $address)

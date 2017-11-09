@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class WritePermission.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\WritePermissionType instead.
+ * 
  * @method WritePermission setAdditionalType(Property\AdditionalType $additionalType)
  * @method WritePermission setAlternateName(Property\AlternateName $alternateName)
  * @method WritePermission setDescription(Property\Description $description)

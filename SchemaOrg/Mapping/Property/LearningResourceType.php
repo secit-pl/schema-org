@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * LearningResourceType class.
  * 
  * @method LearningResourceType setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\LearningResourceTypeProperty instead.
  */
 class LearningResourceType extends AbstractProperty {
 

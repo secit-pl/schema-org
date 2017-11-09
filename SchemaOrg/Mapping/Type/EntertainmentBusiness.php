@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class EntertainmentBusiness.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\EntertainmentBusinessType instead.
+ * 
  * @method EntertainmentBusiness setAdditionalType(Property\AdditionalType $additionalType)
  * @method EntertainmentBusiness setAddress(Property\Address $address)
  * @method EntertainmentBusiness setAggregateRating(Property\AggregateRating $aggregateRating)

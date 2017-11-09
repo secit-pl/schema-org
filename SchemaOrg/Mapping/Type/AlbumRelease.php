@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class AlbumRelease.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\AlbumReleaseType instead.
+ * 
  * @method AlbumRelease setAdditionalType(Property\AdditionalType $additionalType)
  * @method AlbumRelease setAlternateName(Property\AlternateName $alternateName)
  * @method AlbumRelease setDescription(Property\Description $description)

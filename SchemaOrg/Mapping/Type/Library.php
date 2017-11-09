@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Library.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\LibraryType instead.
+ * 
  * @method Library setAdditionalType(Property\AdditionalType $additionalType)
  * @method Library setAddress(Property\Address $address)
  * @method Library setAggregateRating(Property\AggregateRating $aggregateRating)

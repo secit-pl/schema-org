@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class NutritionInformation.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\NutritionInformationType instead.
+ * 
  * @method NutritionInformation setAdditionalType(Property\AdditionalType $additionalType)
  * @method NutritionInformation setAlternateName(Property\AlternateName $alternateName)
  * @method NutritionInformation setDescription(Property\Description $description)

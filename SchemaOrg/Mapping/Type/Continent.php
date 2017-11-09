@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Continent.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ContinentType instead.
+ * 
  * @method Continent setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method Continent setAdditionalType(Property\AdditionalType $additionalType)
  * @method Continent setAddress(Property\Address $address)

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class House.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\HouseType instead.
+ * 
  * @method House setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method House setAdditionalType(Property\AdditionalType $additionalType)
  * @method House setAddress(Property\Address $address)

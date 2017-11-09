@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * CoverageEndTime class.
  * 
  * @method CoverageEndTime setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\CoverageEndTimeProperty instead.
  */
 class CoverageEndTime extends AbstractProperty {
 

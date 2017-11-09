@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class ZoneBoardingPolicy.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ZoneBoardingPolicyType instead.
+ * 
  * @method ZoneBoardingPolicy setAdditionalType(Property\AdditionalType $additionalType)
  * @method ZoneBoardingPolicy setAlternateName(Property\AlternateName $alternateName)
  * @method ZoneBoardingPolicy setDescription(Property\Description $description)

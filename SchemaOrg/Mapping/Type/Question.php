@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Question.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\QuestionType instead.
+ * 
  * @method Question setAccessMode(Property\AccessMode $accessMode)
  * @method Question setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method Question setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

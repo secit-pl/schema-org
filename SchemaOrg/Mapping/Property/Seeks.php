@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * Seeks class.
  * 
  * @method Seeks setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\SeeksProperty instead.
  */
 class Seeks extends AbstractProperty {
 

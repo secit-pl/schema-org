@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class SinglePlayer.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\SinglePlayerType instead.
+ * 
  * @method SinglePlayer setAdditionalType(Property\AdditionalType $additionalType)
  * @method SinglePlayer setAlternateName(Property\AlternateName $alternateName)
  * @method SinglePlayer setDescription(Property\Description $description)

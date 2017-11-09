@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Hostel.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\HostelType instead.
+ * 
  * @method Hostel setAdditionalType(Property\AdditionalType $additionalType)
  * @method Hostel setAddress(Property\Address $address)
  * @method Hostel setAggregateRating(Property\AggregateRating $aggregateRating)

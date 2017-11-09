@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class SubscribeAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\SubscribeActionType instead.
+ * 
  * @method SubscribeAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method SubscribeAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method SubscribeAction setAgent(Property\Agent $agent)

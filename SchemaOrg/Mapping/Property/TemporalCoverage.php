@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * TemporalCoverage class.
  * 
  * @method TemporalCoverage setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\TemporalCoverageProperty instead.
  */
 class TemporalCoverage extends AbstractProperty {
 

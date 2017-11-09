@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * ItemCondition class.
  * 
  * @method ItemCondition setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\ItemConditionProperty instead.
  */
 class ItemCondition extends AbstractProperty {
 

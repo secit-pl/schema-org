@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class DepartmentStore.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\DepartmentStoreType instead.
+ * 
  * @method DepartmentStore setAdditionalType(Property\AdditionalType $additionalType)
  * @method DepartmentStore setAddress(Property\Address $address)
  * @method DepartmentStore setAggregateRating(Property\AggregateRating $aggregateRating)

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class TipAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\TipActionType instead.
+ * 
  * @method TipAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method TipAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method TipAction setAgent(Property\Agent $agent)

@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * SuggestedAnswer class.
  * 
  * @method SuggestedAnswer setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\SuggestedAnswerProperty instead.
  */
 class SuggestedAnswer extends AbstractProperty {
 

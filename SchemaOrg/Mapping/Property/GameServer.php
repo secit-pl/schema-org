@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * GameServer class.
  * 
  * @method GameServer setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\GameServerProperty instead.
  */
 class GameServer extends AbstractProperty {
 

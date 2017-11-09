@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * CholesterolContent class.
  * 
  * @method CholesterolContent setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\CholesterolContentProperty instead.
  */
 class CholesterolContent extends AbstractProperty {
 

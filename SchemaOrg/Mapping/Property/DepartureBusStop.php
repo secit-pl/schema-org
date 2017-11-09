@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * DepartureBusStop class.
  * 
  * @method DepartureBusStop setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\DepartureBusStopProperty instead.
  */
 class DepartureBusStop extends AbstractProperty {
 

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class RemixAlbum.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\RemixAlbumType instead.
+ * 
  * @method RemixAlbum setAdditionalType(Property\AdditionalType $additionalType)
  * @method RemixAlbum setAlternateName(Property\AlternateName $alternateName)
  * @method RemixAlbum setDescription(Property\Description $description)

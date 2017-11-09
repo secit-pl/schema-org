@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class MenuItem.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\MenuItemType instead.
+ * 
  * @method MenuItem setAdditionalType(Property\AdditionalType $additionalType)
  * @method MenuItem setAlternateName(Property\AlternateName $alternateName)
  * @method MenuItem setDescription(Property\Description $description)

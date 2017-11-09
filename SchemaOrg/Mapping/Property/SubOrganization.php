@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * SubOrganization class.
  * 
  * @method SubOrganization setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\SubOrganizationProperty instead.
  */
 class SubOrganization extends AbstractProperty {
 

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Synagogue.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\SynagogueType instead.
+ * 
  * @method Synagogue setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method Synagogue setAdditionalType(Property\AdditionalType $additionalType)
  * @method Synagogue setAddress(Property\Address $address)

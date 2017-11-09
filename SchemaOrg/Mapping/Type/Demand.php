@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Demand.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\DemandType instead.
+ * 
  * @method Demand setAdditionalType(Property\AdditionalType $additionalType)
  * @method Demand setAlternateName(Property\AlternateName $alternateName)
  * @method Demand setDescription(Property\Description $description)

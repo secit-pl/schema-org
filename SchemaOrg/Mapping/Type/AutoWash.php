@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class AutoWash.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\AutoWashType instead.
+ * 
  * @method AutoWash setAdditionalType(Property\AdditionalType $additionalType)
  * @method AutoWash setAddress(Property\Address $address)
  * @method AutoWash setAggregateRating(Property\AggregateRating $aggregateRating)

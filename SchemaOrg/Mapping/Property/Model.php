@@ -9,6 +9,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * Model class.
  * 
  * @method Model setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\ModelProperty instead.
  */
 class Model extends AbstractProperty {
 

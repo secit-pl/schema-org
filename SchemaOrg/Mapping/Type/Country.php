@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Country.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\CountryType instead.
+ * 
  * @method Country setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method Country setAdditionalType(Property\AdditionalType $additionalType)
  * @method Country setAddress(Property\Address $address)

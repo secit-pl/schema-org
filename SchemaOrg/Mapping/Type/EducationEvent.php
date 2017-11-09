@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class EducationEvent.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\EducationEventType instead.
+ * 
  * @method EducationEvent setActor(Property\Actor $actor)
  * @method EducationEvent setAdditionalType(Property\AdditionalType $additionalType)
  * @method EducationEvent setAggregateRating(Property\AggregateRating $aggregateRating)

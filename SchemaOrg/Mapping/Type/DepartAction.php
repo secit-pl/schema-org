@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class DepartAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\DepartActionType instead.
+ * 
  * @method DepartAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method DepartAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method DepartAction setAgent(Property\Agent $agent)

@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * OrderStatus class.
  * 
  * @method OrderStatus setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\OrderStatusProperty instead.
  */
 class OrderStatus extends AbstractProperty {
 

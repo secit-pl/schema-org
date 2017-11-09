@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class ScholarlyArticle.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ScholarlyArticleType instead.
+ * 
  * @method ScholarlyArticle setAccessMode(Property\AccessMode $accessMode)
  * @method ScholarlyArticle setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method ScholarlyArticle setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

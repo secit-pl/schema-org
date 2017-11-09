@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class JewelryStore.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\JewelryStoreType instead.
+ * 
  * @method JewelryStore setAdditionalType(Property\AdditionalType $additionalType)
  * @method JewelryStore setAddress(Property\Address $address)
  * @method JewelryStore setAggregateRating(Property\AggregateRating $aggregateRating)

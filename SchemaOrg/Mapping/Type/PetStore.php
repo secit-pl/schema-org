@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class PetStore.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\PetStoreType instead.
+ * 
  * @method PetStore setAdditionalType(Property\AdditionalType $additionalType)
  * @method PetStore setAddress(Property\Address $address)
  * @method PetStore setAggregateRating(Property\AggregateRating $aggregateRating)

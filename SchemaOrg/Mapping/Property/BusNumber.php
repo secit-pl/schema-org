@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * BusNumber class.
  * 
  * @method BusNumber setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\BusNumberProperty instead.
  */
 class BusNumber extends AbstractProperty {
 

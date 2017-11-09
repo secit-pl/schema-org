@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * IsicV4 class.
  * 
  * @method IsicV4 setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\IsicV4Property instead.
  */
 class IsicV4 extends AbstractProperty {
 

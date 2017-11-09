@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class AudioObject.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\AudioObjectType instead.
+ * 
  * @method AudioObject setAccessMode(Property\AccessMode $accessMode)
  * @method AudioObject setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method AudioObject setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

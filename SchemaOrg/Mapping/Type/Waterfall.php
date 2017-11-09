@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Waterfall.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\WaterfallType instead.
+ * 
  * @method Waterfall setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method Waterfall setAdditionalType(Property\AdditionalType $additionalType)
  * @method Waterfall setAddress(Property\Address $address)

@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * FromLocation class.
  * 
  * @method FromLocation setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\FromLocationProperty instead.
  */
 class FromLocation extends AbstractProperty {
 

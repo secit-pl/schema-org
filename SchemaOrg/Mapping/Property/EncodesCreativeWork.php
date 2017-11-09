@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * EncodesCreativeWork class.
  * 
  * @method EncodesCreativeWork setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\EncodesCreativeWorkProperty instead.
  */
 class EncodesCreativeWork extends AbstractProperty {
 

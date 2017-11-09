@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * WorkPresented class.
  * 
  * @method WorkPresented setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\WorkPresentedProperty instead.
  */
 class WorkPresented extends AbstractProperty {
 

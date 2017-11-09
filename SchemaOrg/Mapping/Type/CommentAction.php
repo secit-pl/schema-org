@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class CommentAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\CommentActionType instead.
+ * 
  * @method CommentAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method CommentAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method CommentAction setAgent(Property\Agent $agent)

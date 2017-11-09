@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class BusTrip.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\BusTripType instead.
+ * 
  * @method BusTrip setAdditionalType(Property\AdditionalType $additionalType)
  * @method BusTrip setAlternateName(Property\AlternateName $alternateName)
  * @method BusTrip setDescription(Property\Description $description)

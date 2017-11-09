@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class CourseInstance.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\CourseInstanceType instead.
+ * 
  * @method CourseInstance setActor(Property\Actor $actor)
  * @method CourseInstance setAdditionalType(Property\AdditionalType $additionalType)
  * @method CourseInstance setAggregateRating(Property\AggregateRating $aggregateRating)

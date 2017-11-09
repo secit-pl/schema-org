@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class HotelRoom.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\HotelRoomType instead.
+ * 
  * @method HotelRoom setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method HotelRoom setAdditionalType(Property\AdditionalType $additionalType)
  * @method HotelRoom setAddress(Property\Address $address)

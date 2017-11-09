@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * WorksFor class.
  * 
  * @method WorksFor setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\WorksForProperty instead.
  */
 class WorksFor extends AbstractProperty {
 

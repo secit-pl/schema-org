@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * Occupancy class.
  * 
  * @method Occupancy setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\OccupancyProperty instead.
  */
 class Occupancy extends AbstractProperty {
 

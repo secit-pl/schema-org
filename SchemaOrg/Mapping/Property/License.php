@@ -9,6 +9,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * License class.
  * 
  * @method License setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\LicenseProperty instead.
  */
 class License extends AbstractProperty {
 

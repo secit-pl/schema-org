@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class ParentAudience.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ParentAudienceType instead.
+ * 
  * @method ParentAudience setAdditionalType(Property\AdditionalType $additionalType)
  * @method ParentAudience setAlternateName(Property\AlternateName $alternateName)
  * @method ParentAudience setAudienceType(Property\AudienceType $audienceType)

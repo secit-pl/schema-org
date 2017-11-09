@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * PreviousItem class.
  * 
  * @method PreviousItem setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\PreviousItemProperty instead.
  */
 class PreviousItem extends AbstractProperty {
 

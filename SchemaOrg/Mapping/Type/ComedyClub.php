@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class ComedyClub.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ComedyClubType instead.
+ * 
  * @method ComedyClub setAdditionalType(Property\AdditionalType $additionalType)
  * @method ComedyClub setAddress(Property\Address $address)
  * @method ComedyClub setAggregateRating(Property\AggregateRating $aggregateRating)

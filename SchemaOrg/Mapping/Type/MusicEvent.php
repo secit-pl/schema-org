@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class MusicEvent.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\MusicEventType instead.
+ * 
  * @method MusicEvent setActor(Property\Actor $actor)
  * @method MusicEvent setAdditionalType(Property\AdditionalType $additionalType)
  * @method MusicEvent setAggregateRating(Property\AggregateRating $aggregateRating)

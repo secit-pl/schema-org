@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class RadioClip.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\RadioClipType instead.
+ * 
  * @method RadioClip setAccessMode(Property\AccessMode $accessMode)
  * @method RadioClip setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method RadioClip setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

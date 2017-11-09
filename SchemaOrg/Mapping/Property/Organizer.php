@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * Organizer class.
  * 
  * @method Organizer setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\OrganizerProperty instead.
  */
 class Organizer extends AbstractProperty {
 

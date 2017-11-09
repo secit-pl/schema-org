@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class FindAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\FindActionType instead.
+ * 
  * @method FindAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method FindAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method FindAction setAgent(Property\Agent $agent)

@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * RelatedLink class.
  * 
  * @method RelatedLink setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\RelatedLinkProperty instead.
  */
 class RelatedLink extends AbstractProperty {
 

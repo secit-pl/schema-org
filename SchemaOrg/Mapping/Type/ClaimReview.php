@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class ClaimReview.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ClaimReviewType instead.
+ * 
  * @method ClaimReview setAccessMode(Property\AccessMode $accessMode)
  * @method ClaimReview setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method ClaimReview setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

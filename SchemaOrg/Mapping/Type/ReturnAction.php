@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class ReturnAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ReturnActionType instead.
+ * 
  * @method ReturnAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method ReturnAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method ReturnAction setAgent(Property\Agent $agent)

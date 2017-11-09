@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class HomeAndConstructionBusiness.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\HomeAndConstructionBusinessType instead.
+ * 
  * @method HomeAndConstructionBusiness setAdditionalType(Property\AdditionalType $additionalType)
  * @method HomeAndConstructionBusiness setAddress(Property\Address $address)
  * @method HomeAndConstructionBusiness setAggregateRating(Property\AggregateRating $aggregateRating)

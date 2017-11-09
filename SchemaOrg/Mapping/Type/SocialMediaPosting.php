@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class SocialMediaPosting.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\SocialMediaPostingType instead.
+ * 
  * @method SocialMediaPosting setAccessMode(Property\AccessMode $accessMode)
  * @method SocialMediaPosting setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method SocialMediaPosting setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Mosque.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\MosqueType instead.
+ * 
  * @method Mosque setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method Mosque setAdditionalType(Property\AdditionalType $additionalType)
  * @method Mosque setAddress(Property\Address $address)

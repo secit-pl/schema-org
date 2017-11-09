@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * Provider class.
  * 
  * @method Provider setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\ProviderProperty instead.
  */
 class Provider extends AbstractProperty {
 

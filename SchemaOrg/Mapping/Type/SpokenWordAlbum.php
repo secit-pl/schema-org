@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class SpokenWordAlbum.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\SpokenWordAlbumType instead.
+ * 
  * @method SpokenWordAlbum setAdditionalType(Property\AdditionalType $additionalType)
  * @method SpokenWordAlbum setAlternateName(Property\AlternateName $alternateName)
  * @method SpokenWordAlbum setDescription(Property\Description $description)

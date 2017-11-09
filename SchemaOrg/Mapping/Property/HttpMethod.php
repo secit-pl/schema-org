@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * HttpMethod class.
  * 
  * @method HttpMethod setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\HttpMethodProperty instead.
  */
 class HttpMethod extends AbstractProperty {
 

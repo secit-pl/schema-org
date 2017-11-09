@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class PriceSpecification.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\PriceSpecificationType instead.
+ * 
  * @method PriceSpecification setAdditionalType(Property\AdditionalType $additionalType)
  * @method PriceSpecification setAlternateName(Property\AlternateName $alternateName)
  * @method PriceSpecification setDescription(Property\Description $description)

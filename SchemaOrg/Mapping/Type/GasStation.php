@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class GasStation.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\GasStationType instead.
+ * 
  * @method GasStation setAdditionalType(Property\AdditionalType $additionalType)
  * @method GasStation setAddress(Property\Address $address)
  * @method GasStation setAggregateRating(Property\AggregateRating $aggregateRating)

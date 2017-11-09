@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class InternetCafe.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\InternetCafeType instead.
+ * 
  * @method InternetCafe setAdditionalType(Property\AdditionalType $additionalType)
  * @method InternetCafe setAddress(Property\Address $address)
  * @method InternetCafe setAggregateRating(Property\AggregateRating $aggregateRating)

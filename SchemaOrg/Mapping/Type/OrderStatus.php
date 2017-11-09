@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class OrderStatus.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\OrderStatusType instead.
+ * 
  * @method OrderStatus setAdditionalType(Property\AdditionalType $additionalType)
  * @method OrderStatus setAlternateName(Property\AlternateName $alternateName)
  * @method OrderStatus setDescription(Property\Description $description)

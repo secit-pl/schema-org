@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class ContactPage.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ContactPageType instead.
+ * 
  * @method ContactPage setAccessMode(Property\AccessMode $accessMode)
  * @method ContactPage setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method ContactPage setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

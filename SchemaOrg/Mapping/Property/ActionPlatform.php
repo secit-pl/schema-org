@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * ActionPlatform class.
  * 
  * @method ActionPlatform setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\ActionPlatformProperty instead.
  */
 class ActionPlatform extends AbstractProperty {
 

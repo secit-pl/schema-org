@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class DeliveryEvent.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\DeliveryEventType instead.
+ * 
  * @method DeliveryEvent setActor(Property\Actor $actor)
  * @method DeliveryEvent setAdditionalType(Property\AdditionalType $additionalType)
  * @method DeliveryEvent setAggregateRating(Property\AggregateRating $aggregateRating)

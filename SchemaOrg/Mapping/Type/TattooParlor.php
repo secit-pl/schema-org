@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class TattooParlor.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\TattooParlorType instead.
+ * 
  * @method TattooParlor setAdditionalType(Property\AdditionalType $additionalType)
  * @method TattooParlor setAddress(Property\Address $address)
  * @method TattooParlor setAggregateRating(Property\AggregateRating $aggregateRating)

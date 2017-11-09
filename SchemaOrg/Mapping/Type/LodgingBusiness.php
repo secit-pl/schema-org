@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class LodgingBusiness.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\LodgingBusinessType instead.
+ * 
  * @method LodgingBusiness setAdditionalType(Property\AdditionalType $additionalType)
  * @method LodgingBusiness setAddress(Property\Address $address)
  * @method LodgingBusiness setAggregateRating(Property\AggregateRating $aggregateRating)

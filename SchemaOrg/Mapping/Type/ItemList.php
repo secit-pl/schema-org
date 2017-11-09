@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class ItemList.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ItemListType instead.
+ * 
  * @method ItemList setAdditionalType(Property\AdditionalType $additionalType)
  * @method ItemList setAlternateName(Property\AlternateName $alternateName)
  * @method ItemList setDescription(Property\Description $description)

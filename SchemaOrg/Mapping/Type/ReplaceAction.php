@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class ReplaceAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ReplaceActionType instead.
+ * 
  * @method ReplaceAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method ReplaceAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method ReplaceAction setAgent(Property\Agent $agent)

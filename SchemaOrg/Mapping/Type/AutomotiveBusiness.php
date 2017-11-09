@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class AutomotiveBusiness.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\AutomotiveBusinessType instead.
+ * 
  * @method AutomotiveBusiness setAdditionalType(Property\AdditionalType $additionalType)
  * @method AutomotiveBusiness setAddress(Property\Address $address)
  * @method AutomotiveBusiness setAggregateRating(Property\AggregateRating $aggregateRating)

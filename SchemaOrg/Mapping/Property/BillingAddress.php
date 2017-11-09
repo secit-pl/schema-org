@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * BillingAddress class.
  * 
  * @method BillingAddress setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\BillingAddressProperty instead.
  */
 class BillingAddress extends AbstractProperty {
 

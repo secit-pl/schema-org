@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * ServicePhone class.
  * 
  * @method ServicePhone setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\ServicePhoneProperty instead.
  */
 class ServicePhone extends AbstractProperty {
 

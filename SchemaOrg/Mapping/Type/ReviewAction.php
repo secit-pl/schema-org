@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class ReviewAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ReviewActionType instead.
+ * 
  * @method ReviewAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method ReviewAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method ReviewAction setAgent(Property\Agent $agent)

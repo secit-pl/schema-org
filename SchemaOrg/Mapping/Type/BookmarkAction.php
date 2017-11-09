@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class BookmarkAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\BookmarkActionType instead.
+ * 
  * @method BookmarkAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method BookmarkAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method BookmarkAction setAgent(Property\Agent $agent)

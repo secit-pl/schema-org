@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * IsrcCode class.
  * 
  * @method IsrcCode setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\IsrcCodeProperty instead.
  */
 class IsrcCode extends AbstractProperty {
 

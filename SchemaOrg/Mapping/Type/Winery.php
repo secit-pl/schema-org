@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Winery.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\WineryType instead.
+ * 
  * @method Winery setAcceptsReservations(Property\AcceptsReservations $acceptsReservations)
  * @method Winery setAdditionalType(Property\AdditionalType $additionalType)
  * @method Winery setAddress(Property\Address $address)

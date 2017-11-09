@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * Headline class.
  * 
  * @method Headline setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\HeadlineProperty instead.
  */
 class Headline extends AbstractProperty {
 

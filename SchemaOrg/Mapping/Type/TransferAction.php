@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class TransferAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\TransferActionType instead.
+ * 
  * @method TransferAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method TransferAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method TransferAction setAgent(Property\Agent $agent)

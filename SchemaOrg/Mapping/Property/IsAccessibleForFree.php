@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * IsAccessibleForFree class.
  * 
  * @method IsAccessibleForFree setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\IsAccessibleForFreeProperty instead.
  */
 class IsAccessibleForFree extends AbstractProperty {
 

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class AuthorizeAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\AuthorizeActionType instead.
+ * 
  * @method AuthorizeAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method AuthorizeAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method AuthorizeAction setAgent(Property\Agent $agent)

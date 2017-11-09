@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class FoodEstablishment.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\FoodEstablishmentType instead.
+ * 
  * @method FoodEstablishment setAdditionalType(Property\AdditionalType $additionalType)
  * @method FoodEstablishment setAddress(Property\Address $address)
  * @method FoodEstablishment setAggregateRating(Property\AggregateRating $aggregateRating)

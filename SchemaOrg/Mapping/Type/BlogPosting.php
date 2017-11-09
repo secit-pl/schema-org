@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class BlogPosting.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\BlogPostingType instead.
+ * 
  * @method BlogPosting setAccessMode(Property\AccessMode $accessMode)
  * @method BlogPosting setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method BlogPosting setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

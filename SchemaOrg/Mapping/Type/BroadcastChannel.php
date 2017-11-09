@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class BroadcastChannel.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\BroadcastChannelType instead.
+ * 
  * @method BroadcastChannel setAdditionalType(Property\AdditionalType $additionalType)
  * @method BroadcastChannel setAlternateName(Property\AlternateName $alternateName)
  * @method BroadcastChannel setDescription(Property\Description $description)

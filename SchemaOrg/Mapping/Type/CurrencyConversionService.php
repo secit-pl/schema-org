@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class CurrencyConversionService.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\CurrencyConversionServiceType instead.
+ * 
  * @method CurrencyConversionService setAdditionalType(Property\AdditionalType $additionalType)
  * @method CurrencyConversionService setAggregateRating(Property\AggregateRating $aggregateRating)
  * @method CurrencyConversionService setAlternateName(Property\AlternateName $alternateName)

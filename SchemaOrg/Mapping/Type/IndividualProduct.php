@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class IndividualProduct.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\IndividualProductType instead.
+ * 
  * @method IndividualProduct setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method IndividualProduct setAdditionalType(Property\AdditionalType $additionalType)
  * @method IndividualProduct setAggregateRating(Property\AggregateRating $aggregateRating)

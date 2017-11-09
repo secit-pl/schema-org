@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class CheckoutPage.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\CheckoutPageType instead.
+ * 
  * @method CheckoutPage setAccessMode(Property\AccessMode $accessMode)
  * @method CheckoutPage setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method CheckoutPage setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

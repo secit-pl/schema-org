@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class WinAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\WinActionType instead.
+ * 
  * @method WinAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method WinAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method WinAction setAgent(Property\Agent $agent)

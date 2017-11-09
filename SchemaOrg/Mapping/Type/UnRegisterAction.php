@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class UnRegisterAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\UnRegisterActionType instead.
+ * 
  * @method UnRegisterAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method UnRegisterAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method UnRegisterAction setAgent(Property\Agent $agent)

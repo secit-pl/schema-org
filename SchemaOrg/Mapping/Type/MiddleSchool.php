@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class MiddleSchool.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\MiddleSchoolType instead.
+ * 
  * @method MiddleSchool setAdditionalType(Property\AdditionalType $additionalType)
  * @method MiddleSchool setAddress(Property\Address $address)
  * @method MiddleSchool setAggregateRating(Property\AggregateRating $aggregateRating)

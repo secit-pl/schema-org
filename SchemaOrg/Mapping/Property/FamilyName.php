@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * FamilyName class.
  * 
  * @method FamilyName setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\FamilyNameProperty instead.
  */
 class FamilyName extends AbstractProperty {
 

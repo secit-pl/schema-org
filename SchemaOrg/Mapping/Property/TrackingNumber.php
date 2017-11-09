@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * TrackingNumber class.
  * 
  * @method TrackingNumber setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\TrackingNumberProperty instead.
  */
 class TrackingNumber extends AbstractProperty {
 

@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * Attendee class.
  * 
  * @method Attendee setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\AttendeeProperty instead.
  */
 class Attendee extends AbstractProperty {
 

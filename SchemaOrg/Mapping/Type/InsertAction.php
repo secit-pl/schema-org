@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class InsertAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\InsertActionType instead.
+ * 
  * @method InsertAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method InsertAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method InsertAction setAgent(Property\Agent $agent)

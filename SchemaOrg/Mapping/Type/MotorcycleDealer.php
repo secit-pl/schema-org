@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class MotorcycleDealer.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\MotorcycleDealerType instead.
+ * 
  * @method MotorcycleDealer setAdditionalType(Property\AdditionalType $additionalType)
  * @method MotorcycleDealer setAddress(Property\Address $address)
  * @method MotorcycleDealer setAggregateRating(Property\AggregateRating $aggregateRating)

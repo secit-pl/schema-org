@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class OfflineTemporarily.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\OfflineTemporarilyType instead.
+ * 
  * @method OfflineTemporarily setAdditionalType(Property\AdditionalType $additionalType)
  * @method OfflineTemporarily setAlternateName(Property\AlternateName $alternateName)
  * @method OfflineTemporarily setDescription(Property\Description $description)

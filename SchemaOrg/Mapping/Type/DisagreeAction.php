@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class DisagreeAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\DisagreeActionType instead.
+ * 
  * @method DisagreeAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method DisagreeAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method DisagreeAction setAgent(Property\Agent $agent)

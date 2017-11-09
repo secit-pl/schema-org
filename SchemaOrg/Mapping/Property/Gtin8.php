@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * Gtin8 class.
  * 
  * @method Gtin8 setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\Gtin8Property instead.
  */
 class Gtin8 extends AbstractProperty {
 

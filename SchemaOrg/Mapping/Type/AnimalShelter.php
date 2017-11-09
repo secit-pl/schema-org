@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class AnimalShelter.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\AnimalShelterType instead.
+ * 
  * @method AnimalShelter setAdditionalType(Property\AdditionalType $additionalType)
  * @method AnimalShelter setAddress(Property\Address $address)
  * @method AnimalShelter setAggregateRating(Property\AggregateRating $aggregateRating)

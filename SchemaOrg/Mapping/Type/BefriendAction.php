@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class BefriendAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\BefriendActionType instead.
+ * 
  * @method BefriendAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method BefriendAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method BefriendAction setAgent(Property\Agent $agent)

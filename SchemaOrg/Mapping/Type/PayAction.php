@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class PayAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\PayActionType instead.
+ * 
  * @method PayAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method PayAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method PayAction setAgent(Property\Agent $agent)

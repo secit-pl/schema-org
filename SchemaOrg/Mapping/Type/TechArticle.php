@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class TechArticle.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\TechArticleType instead.
+ * 
  * @method TechArticle setAccessMode(Property\AccessMode $accessMode)
  * @method TechArticle setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method TechArticle setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

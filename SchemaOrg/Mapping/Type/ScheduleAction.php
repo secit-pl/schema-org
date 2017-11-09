@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class ScheduleAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ScheduleActionType instead.
+ * 
  * @method ScheduleAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method ScheduleAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method ScheduleAction setAgent(Property\Agent $agent)

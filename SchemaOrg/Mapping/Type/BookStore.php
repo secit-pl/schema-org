@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class BookStore.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\BookStoreType instead.
+ * 
  * @method BookStore setAdditionalType(Property\AdditionalType $additionalType)
  * @method BookStore setAddress(Property\Address $address)
  * @method BookStore setAggregateRating(Property\AggregateRating $aggregateRating)

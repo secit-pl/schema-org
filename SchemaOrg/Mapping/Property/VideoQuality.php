@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * VideoQuality class.
  * 
  * @method VideoQuality setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\VideoQualityProperty instead.
  */
 class VideoQuality extends AbstractProperty {
 

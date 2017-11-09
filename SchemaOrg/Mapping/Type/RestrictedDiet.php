@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class RestrictedDiet.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\RestrictedDietType instead.
+ * 
  * @method RestrictedDiet setAdditionalType(Property\AdditionalType $additionalType)
  * @method RestrictedDiet setAlternateName(Property\AlternateName $alternateName)
  * @method RestrictedDiet setDescription(Property\Description $description)

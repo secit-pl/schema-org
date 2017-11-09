@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class OrderProcessing.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\OrderProcessingType instead.
+ * 
  * @method OrderProcessing setAdditionalType(Property\AdditionalType $additionalType)
  * @method OrderProcessing setAlternateName(Property\AlternateName $alternateName)
  * @method OrderProcessing setDescription(Property\Description $description)

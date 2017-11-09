@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * PetsAllowed class.
  * 
  * @method PetsAllowed setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\PetsAllowedProperty instead.
  */
 class PetsAllowed extends AbstractProperty {
 

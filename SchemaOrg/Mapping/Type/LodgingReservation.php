@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class LodgingReservation.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\LodgingReservationType instead.
+ * 
  * @method LodgingReservation setAdditionalType(Property\AdditionalType $additionalType)
  * @method LodgingReservation setAlternateName(Property\AlternateName $alternateName)
  * @method LodgingReservation setBookingTime(Property\BookingTime $bookingTime)

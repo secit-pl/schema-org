@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Festival.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\FestivalType instead.
+ * 
  * @method Festival setActor(Property\Actor $actor)
  * @method Festival setAdditionalType(Property\AdditionalType $additionalType)
  * @method Festival setAggregateRating(Property\AggregateRating $aggregateRating)

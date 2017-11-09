@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class MusicStore.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\MusicStoreType instead.
+ * 
  * @method MusicStore setAdditionalType(Property\AdditionalType $additionalType)
  * @method MusicStore setAddress(Property\Address $address)
  * @method MusicStore setAggregateRating(Property\AggregateRating $aggregateRating)

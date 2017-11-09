@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class BankOrCreditUnion.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\BankOrCreditUnionType instead.
+ * 
  * @method BankOrCreditUnion setAdditionalType(Property\AdditionalType $additionalType)
  * @method BankOrCreditUnion setAddress(Property\Address $address)
  * @method BankOrCreditUnion setAggregateRating(Property\AggregateRating $aggregateRating)

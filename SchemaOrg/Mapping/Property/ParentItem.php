@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * ParentItem class.
  * 
  * @method ParentItem setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\ParentItemProperty instead.
  */
 class ParentItem extends AbstractProperty {
 

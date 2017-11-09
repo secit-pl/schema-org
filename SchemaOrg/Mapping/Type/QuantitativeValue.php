@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class QuantitativeValue.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\QuantitativeValueType instead.
+ * 
  * @method QuantitativeValue setAdditionalType(Property\AdditionalType $additionalType)
  * @method QuantitativeValue setAlternateName(Property\AlternateName $alternateName)
  * @method QuantitativeValue setDescription(Property\Description $description)

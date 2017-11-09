@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Locksmith.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\LocksmithType instead.
+ * 
  * @method Locksmith setAdditionalType(Property\AdditionalType $additionalType)
  * @method Locksmith setAddress(Property\Address $address)
  * @method Locksmith setAggregateRating(Property\AggregateRating $aggregateRating)

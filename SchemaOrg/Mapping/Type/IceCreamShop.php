@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class IceCreamShop.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\IceCreamShopType instead.
+ * 
  * @method IceCreamShop setAcceptsReservations(Property\AcceptsReservations $acceptsReservations)
  * @method IceCreamShop setAdditionalType(Property\AdditionalType $additionalType)
  * @method IceCreamShop setAddress(Property\Address $address)

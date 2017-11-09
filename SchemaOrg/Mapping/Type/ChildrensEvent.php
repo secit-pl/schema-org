@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class ChildrensEvent.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ChildrensEventType instead.
+ * 
  * @method ChildrensEvent setActor(Property\Actor $actor)
  * @method ChildrensEvent setAdditionalType(Property\AdditionalType $additionalType)
  * @method ChildrensEvent setAggregateRating(Property\AggregateRating $aggregateRating)

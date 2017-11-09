@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class RadioSeason.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\RadioSeasonType instead.
+ * 
  * @method RadioSeason setAccessMode(Property\AccessMode $accessMode)
  * @method RadioSeason setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method RadioSeason setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

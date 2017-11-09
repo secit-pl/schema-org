@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class AutoDealer.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\AutoDealerType instead.
+ * 
  * @method AutoDealer setAdditionalType(Property\AdditionalType $additionalType)
  * @method AutoDealer setAddress(Property\Address $address)
  * @method AutoDealer setAggregateRating(Property\AggregateRating $aggregateRating)

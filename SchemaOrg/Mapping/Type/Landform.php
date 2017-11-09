@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Landform.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\LandformType instead.
+ * 
  * @method Landform setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method Landform setAdditionalType(Property\AdditionalType $additionalType)
  * @method Landform setAddress(Property\Address $address)

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class FilmAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\FilmActionType instead.
+ * 
  * @method FilmAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method FilmAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method FilmAction setAgent(Property\Agent $agent)

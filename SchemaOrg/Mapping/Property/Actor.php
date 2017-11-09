@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * Actor class.
  * 
  * @method Actor setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\ActorProperty instead.
  */
 class Actor extends AbstractProperty {
 

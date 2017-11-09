@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * ExecutableLibraryName class.
  * 
  * @method ExecutableLibraryName setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\ExecutableLibraryNameProperty instead.
  */
 class ExecutableLibraryName extends AbstractProperty {
 

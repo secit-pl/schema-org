@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class VisualArtsEvent.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\VisualArtsEventType instead.
+ * 
  * @method VisualArtsEvent setActor(Property\Actor $actor)
  * @method VisualArtsEvent setAdditionalType(Property\AdditionalType $additionalType)
  * @method VisualArtsEvent setAggregateRating(Property\AggregateRating $aggregateRating)

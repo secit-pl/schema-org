@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class ImageObject.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ImageObjectType instead.
+ * 
  * @method ImageObject setAccessMode(Property\AccessMode $accessMode)
  * @method ImageObject setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method ImageObject setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Airport.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\AirportType instead.
+ * 
  * @method Airport setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method Airport setAdditionalType(Property\AdditionalType $additionalType)
  * @method Airport setAddress(Property\Address $address)

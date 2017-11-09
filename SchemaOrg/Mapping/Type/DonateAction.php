@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class DonateAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\DonateActionType instead.
+ * 
  * @method DonateAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method DonateAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method DonateAction setAgent(Property\Agent $agent)

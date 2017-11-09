@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class RightHandDriving.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\RightHandDrivingType instead.
+ * 
  * @method RightHandDriving setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method RightHandDriving setAdditionalType(Property\AdditionalType $additionalType)
  * @method RightHandDriving setAlternateName(Property\AlternateName $alternateName)

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class UseAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\UseActionType instead.
+ * 
  * @method UseAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method UseAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method UseAction setAgent(Property\Agent $agent)

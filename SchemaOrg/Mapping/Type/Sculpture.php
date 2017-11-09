@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Sculpture.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\SculptureType instead.
+ * 
  * @method Sculpture setAccessMode(Property\AccessMode $accessMode)
  * @method Sculpture setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method Sculpture setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

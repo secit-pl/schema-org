@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * SignificantLink class.
  * 
  * @method SignificantLink setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\SignificantLinkProperty instead.
  */
 class SignificantLink extends AbstractProperty {
 

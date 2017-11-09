@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * GameTip class.
  * 
  * @method GameTip setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\GameTipProperty instead.
  */
 class GameTip extends AbstractProperty {
 

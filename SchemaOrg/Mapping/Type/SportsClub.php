@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class SportsClub.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\SportsClubType instead.
+ * 
  * @method SportsClub setAdditionalType(Property\AdditionalType $additionalType)
  * @method SportsClub setAddress(Property\Address $address)
  * @method SportsClub setAggregateRating(Property\AggregateRating $aggregateRating)

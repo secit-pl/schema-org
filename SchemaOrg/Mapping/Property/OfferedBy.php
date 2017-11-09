@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * OfferedBy class.
  * 
  * @method OfferedBy setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\OfferedByProperty instead.
  */
 class OfferedBy extends AbstractProperty {
 

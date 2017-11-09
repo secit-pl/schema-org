@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class WPAdBlock.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\WPAdBlockType instead.
+ * 
  * @method WPAdBlock setAccessMode(Property\AccessMode $accessMode)
  * @method WPAdBlock setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method WPAdBlock setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

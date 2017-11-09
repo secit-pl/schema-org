@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * ProgramMembershipUsed class.
  * 
  * @method ProgramMembershipUsed setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\ProgramMembershipUsedProperty instead.
  */
 class ProgramMembershipUsed extends AbstractProperty {
 

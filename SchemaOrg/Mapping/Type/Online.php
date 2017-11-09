@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Online.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\OnlineType instead.
+ * 
  * @method Online setAdditionalType(Property\AdditionalType $additionalType)
  * @method Online setAlternateName(Property\AlternateName $alternateName)
  * @method Online setDescription(Property\Description $description)

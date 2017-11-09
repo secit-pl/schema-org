@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Ticket.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\TicketType instead.
+ * 
  * @method Ticket setAdditionalType(Property\AdditionalType $additionalType)
  * @method Ticket setAlternateName(Property\AlternateName $alternateName)
  * @method Ticket setDescription(Property\Description $description)

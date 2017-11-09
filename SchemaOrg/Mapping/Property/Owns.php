@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * Owns class.
  * 
  * @method Owns setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\OwnsProperty instead.
  */
 class Owns extends AbstractProperty {
 

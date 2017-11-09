@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class GeoShape.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\GeoShapeType instead.
+ * 
  * @method GeoShape setAdditionalType(Property\AdditionalType $additionalType)
  * @method GeoShape setAlternateName(Property\AlternateName $alternateName)
  * @method GeoShape setDescription(Property\Description $description)

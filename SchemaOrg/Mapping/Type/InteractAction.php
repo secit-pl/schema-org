@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class InteractAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\InteractActionType instead.
+ * 
  * @method InteractAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method InteractAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method InteractAction setAgent(Property\Agent $agent)

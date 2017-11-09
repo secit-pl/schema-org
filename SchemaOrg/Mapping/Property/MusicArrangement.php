@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * MusicArrangement class.
  * 
  * @method MusicArrangement setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\MusicArrangementProperty instead.
  */
 class MusicArrangement extends AbstractProperty {
 

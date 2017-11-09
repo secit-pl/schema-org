@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class CreativeWorkSeries.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\CreativeWorkSeriesType instead.
+ * 
  * @method CreativeWorkSeries setAccessMode(Property\AccessMode $accessMode)
  * @method CreativeWorkSeries setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method CreativeWorkSeries setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

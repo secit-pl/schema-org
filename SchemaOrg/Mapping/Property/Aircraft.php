@@ -9,6 +9,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * Aircraft class.
  * 
  * @method Aircraft setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\AircraftProperty instead.
  */
 class Aircraft extends AbstractProperty {
 

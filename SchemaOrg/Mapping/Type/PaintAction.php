@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class PaintAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\PaintActionType instead.
+ * 
  * @method PaintAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method PaintAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method PaintAction setAgent(Property\Agent $agent)

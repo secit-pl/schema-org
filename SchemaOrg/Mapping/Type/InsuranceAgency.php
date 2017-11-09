@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class InsuranceAgency.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\InsuranceAgencyType instead.
+ * 
  * @method InsuranceAgency setAdditionalType(Property\AdditionalType $additionalType)
  * @method InsuranceAgency setAddress(Property\Address $address)
  * @method InsuranceAgency setAggregateRating(Property\AggregateRating $aggregateRating)

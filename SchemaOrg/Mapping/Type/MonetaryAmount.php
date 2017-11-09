@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class MonetaryAmount.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\MonetaryAmountType instead.
+ * 
  * @method MonetaryAmount setAdditionalType(Property\AdditionalType $additionalType)
  * @method MonetaryAmount setAlternateName(Property\AlternateName $alternateName)
  * @method MonetaryAmount setDescription(Property\Description $description)

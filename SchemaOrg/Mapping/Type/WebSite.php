@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class WebSite.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\WebSiteType instead.
+ * 
  * @method WebSite setAccessMode(Property\AccessMode $accessMode)
  * @method WebSite setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method WebSite setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

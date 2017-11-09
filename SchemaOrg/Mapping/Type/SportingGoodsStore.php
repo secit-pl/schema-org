@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class SportingGoodsStore.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\SportingGoodsStoreType instead.
+ * 
  * @method SportingGoodsStore setAdditionalType(Property\AdditionalType $additionalType)
  * @method SportingGoodsStore setAddress(Property\Address $address)
  * @method SportingGoodsStore setAggregateRating(Property\AggregateRating $aggregateRating)

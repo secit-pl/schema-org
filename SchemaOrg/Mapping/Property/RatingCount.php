@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * RatingCount class.
  * 
  * @method RatingCount setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\RatingCountProperty instead.
  */
 class RatingCount extends AbstractProperty {
 

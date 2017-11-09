@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * ValidFrom class.
  * 
  * @method ValidFrom setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\ValidFromProperty instead.
  */
 class ValidFrom extends AbstractProperty {
 

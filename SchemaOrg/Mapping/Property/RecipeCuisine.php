@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * RecipeCuisine class.
  * 
  * @method RecipeCuisine setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\RecipeCuisineProperty instead.
  */
 class RecipeCuisine extends AbstractProperty {
 

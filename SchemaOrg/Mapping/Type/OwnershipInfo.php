@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class OwnershipInfo.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\OwnershipInfoType instead.
+ * 
  * @method OwnershipInfo setAdditionalType(Property\AdditionalType $additionalType)
  * @method OwnershipInfo setAlternateName(Property\AlternateName $alternateName)
  * @method OwnershipInfo setDescription(Property\Description $description)

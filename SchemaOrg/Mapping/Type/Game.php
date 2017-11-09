@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Game.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\GameType instead.
+ * 
  * @method Game setAccessMode(Property\AccessMode $accessMode)
  * @method Game setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method Game setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

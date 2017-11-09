@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Dataset.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\DatasetType instead.
+ * 
  * @method Dataset setAccessMode(Property\AccessMode $accessMode)
  * @method Dataset setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method Dataset setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class MusicRelease.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\MusicReleaseType instead.
+ * 
  * @method MusicRelease setAccessMode(Property\AccessMode $accessMode)
  * @method MusicRelease setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method MusicRelease setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

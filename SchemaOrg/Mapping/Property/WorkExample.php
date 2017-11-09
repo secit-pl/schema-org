@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * WorkExample class.
  * 
  * @method WorkExample setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\WorkExampleProperty instead.
  */
 class WorkExample extends AbstractProperty {
 

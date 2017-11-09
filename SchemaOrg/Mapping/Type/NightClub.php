@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class NightClub.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\NightClubType instead.
+ * 
  * @method NightClub setAdditionalType(Property\AdditionalType $additionalType)
  * @method NightClub setAddress(Property\Address $address)
  * @method NightClub setAggregateRating(Property\AggregateRating $aggregateRating)

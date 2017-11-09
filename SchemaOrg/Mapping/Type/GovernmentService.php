@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class GovernmentService.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\GovernmentServiceType instead.
+ * 
  * @method GovernmentService setAdditionalType(Property\AdditionalType $additionalType)
  * @method GovernmentService setAggregateRating(Property\AggregateRating $aggregateRating)
  * @method GovernmentService setAlternateName(Property\AlternateName $alternateName)

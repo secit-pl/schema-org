@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * OrderDate class.
  * 
  * @method OrderDate setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\OrderDateProperty instead.
  */
 class OrderDate extends AbstractProperty {
 

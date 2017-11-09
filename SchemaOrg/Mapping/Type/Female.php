@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Female.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\FemaleType instead.
+ * 
  * @method Female setAdditionalType(Property\AdditionalType $additionalType)
  * @method Female setAlternateName(Property\AlternateName $alternateName)
  * @method Female setDescription(Property\Description $description)

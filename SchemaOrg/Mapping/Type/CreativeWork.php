@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class CreativeWork.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\CreativeWorkType instead.
+ * 
  * @method CreativeWork setAdditionalType(Property\AdditionalType $additionalType)
  * @method CreativeWork setAlternateName(Property\AlternateName $alternateName)
  * @method CreativeWork setDescription(Property\Description $description)

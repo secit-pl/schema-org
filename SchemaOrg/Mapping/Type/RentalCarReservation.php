@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class RentalCarReservation.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\RentalCarReservationType instead.
+ * 
  * @method RentalCarReservation setAdditionalType(Property\AdditionalType $additionalType)
  * @method RentalCarReservation setAlternateName(Property\AlternateName $alternateName)
  * @method RentalCarReservation setBookingTime(Property\BookingTime $bookingTime)

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class MobilePhoneStore.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\MobilePhoneStoreType instead.
+ * 
  * @method MobilePhoneStore setAdditionalType(Property\AdditionalType $additionalType)
  * @method MobilePhoneStore setAddress(Property\Address $address)
  * @method MobilePhoneStore setAggregateRating(Property\AggregateRating $aggregateRating)

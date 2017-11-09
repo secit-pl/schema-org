@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Electrician.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ElectricianType instead.
+ * 
  * @method Electrician setAdditionalType(Property\AdditionalType $additionalType)
  * @method Electrician setAddress(Property\Address $address)
  * @method Electrician setAggregateRating(Property\AggregateRating $aggregateRating)

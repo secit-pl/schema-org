@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class ConfirmAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ConfirmActionType instead.
+ * 
  * @method ConfirmAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method ConfirmAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method ConfirmAction setAgent(Property\Agent $agent)

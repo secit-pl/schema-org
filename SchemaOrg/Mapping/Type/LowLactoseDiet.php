@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class LowLactoseDiet.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\LowLactoseDietType instead.
+ * 
  * @method LowLactoseDiet setAdditionalType(Property\AdditionalType $additionalType)
  * @method LowLactoseDiet setAlternateName(Property\AlternateName $alternateName)
  * @method LowLactoseDiet setDescription(Property\Description $description)

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class RadioStation.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\RadioStationType instead.
+ * 
  * @method RadioStation setAdditionalType(Property\AdditionalType $additionalType)
  * @method RadioStation setAddress(Property\Address $address)
  * @method RadioStation setAggregateRating(Property\AggregateRating $aggregateRating)

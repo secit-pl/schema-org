@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * SoftwareVersion class.
  * 
  * @method SoftwareVersion setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\SoftwareVersionProperty instead.
  */
 class SoftwareVersion extends AbstractProperty {
 

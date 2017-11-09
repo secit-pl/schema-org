@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * ChildMinAge class.
  * 
  * @method ChildMinAge setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\ChildMinAgeProperty instead.
  */
 class ChildMinAge extends AbstractProperty {
 

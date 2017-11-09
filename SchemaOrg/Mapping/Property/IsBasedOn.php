@@ -9,6 +9,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * IsBasedOn class.
  * 
  * @method IsBasedOn setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\IsBasedOnProperty instead.
  */
 class IsBasedOn extends AbstractProperty {
 

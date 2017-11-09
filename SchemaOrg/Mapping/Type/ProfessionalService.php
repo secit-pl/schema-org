@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class ProfessionalService.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ProfessionalServiceType instead.
+ * 
  * @method ProfessionalService setAdditionalType(Property\AdditionalType $additionalType)
  * @method ProfessionalService setAddress(Property\Address $address)
  * @method ProfessionalService setAggregateRating(Property\AggregateRating $aggregateRating)

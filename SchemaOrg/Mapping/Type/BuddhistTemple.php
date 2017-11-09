@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class BuddhistTemple.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\BuddhistTempleType instead.
+ * 
  * @method BuddhistTemple setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method BuddhistTemple setAdditionalType(Property\AdditionalType $additionalType)
  * @method BuddhistTemple setAddress(Property\Address $address)

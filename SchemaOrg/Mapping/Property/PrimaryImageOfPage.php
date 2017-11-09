@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * PrimaryImageOfPage class.
  * 
  * @method PrimaryImageOfPage setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\PrimaryImageOfPageProperty instead.
  */
 class PrimaryImageOfPage extends AbstractProperty {
 

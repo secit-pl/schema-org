@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class OrderAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\OrderActionType instead.
+ * 
  * @method OrderAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method OrderAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method OrderAction setAgent(Property\Agent $agent)

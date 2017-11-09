@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class CancelAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\CancelActionType instead.
+ * 
  * @method CancelAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method CancelAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method CancelAction setAgent(Property\Agent $agent)

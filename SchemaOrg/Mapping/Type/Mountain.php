@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Mountain.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\MountainType instead.
+ * 
  * @method Mountain setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method Mountain setAdditionalType(Property\AdditionalType $additionalType)
  * @method Mountain setAddress(Property\Address $address)

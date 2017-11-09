@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * AcquiredFrom class.
  * 
  * @method AcquiredFrom setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\AcquiredFromProperty instead.
  */
 class AcquiredFrom extends AbstractProperty {
 

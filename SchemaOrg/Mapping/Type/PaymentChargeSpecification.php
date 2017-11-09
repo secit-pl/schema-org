@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class PaymentChargeSpecification.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\PaymentChargeSpecificationType instead.
+ * 
  * @method PaymentChargeSpecification setAdditionalType(Property\AdditionalType $additionalType)
  * @method PaymentChargeSpecification setAlternateName(Property\AlternateName $alternateName)
  * @method PaymentChargeSpecification setDescription(Property\Description $description)

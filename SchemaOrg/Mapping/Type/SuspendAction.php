@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class SuspendAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\SuspendActionType instead.
+ * 
  * @method SuspendAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method SuspendAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method SuspendAction setAgent(Property\Agent $agent)

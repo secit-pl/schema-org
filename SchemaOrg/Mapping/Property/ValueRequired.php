@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * ValueRequired class.
  * 
  * @method ValueRequired setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\ValueRequiredProperty instead.
  */
 class ValueRequired extends AbstractProperty {
 

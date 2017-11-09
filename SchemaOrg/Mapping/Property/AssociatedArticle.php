@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * AssociatedArticle class.
  * 
  * @method AssociatedArticle setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\AssociatedArticleProperty instead.
  */
 class AssociatedArticle extends AbstractProperty {
 

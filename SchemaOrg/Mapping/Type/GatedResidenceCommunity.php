@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class GatedResidenceCommunity.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\GatedResidenceCommunityType instead.
+ * 
  * @method GatedResidenceCommunity setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method GatedResidenceCommunity setAdditionalType(Property\AdditionalType $additionalType)
  * @method GatedResidenceCommunity setAddress(Property\Address $address)

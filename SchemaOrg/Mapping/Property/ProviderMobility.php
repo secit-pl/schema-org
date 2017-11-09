@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * ProviderMobility class.
  * 
  * @method ProviderMobility setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\ProviderMobilityProperty instead.
  */
 class ProviderMobility extends AbstractProperty {
 

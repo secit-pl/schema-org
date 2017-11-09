@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class LiveBlogPosting.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\LiveBlogPostingType instead.
+ * 
  * @method LiveBlogPosting setAccessMode(Property\AccessMode $accessMode)
  * @method LiveBlogPosting setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method LiveBlogPosting setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class SoftwareSourceCode.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\SoftwareSourceCodeType instead.
+ * 
  * @method SoftwareSourceCode setAccessMode(Property\AccessMode $accessMode)
  * @method SoftwareSourceCode setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method SoftwareSourceCode setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

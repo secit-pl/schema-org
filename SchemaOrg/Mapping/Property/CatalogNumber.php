@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * CatalogNumber class.
  * 
  * @method CatalogNumber setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\CatalogNumberProperty instead.
  */
 class CatalogNumber extends AbstractProperty {
 

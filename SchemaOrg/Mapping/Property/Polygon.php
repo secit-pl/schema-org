@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * Polygon class.
  * 
  * @method Polygon setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\PolygonProperty instead.
  */
 class Polygon extends AbstractProperty {
 

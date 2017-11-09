@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * FoundingDate class.
  * 
  * @method FoundingDate setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\FoundingDateProperty instead.
  */
 class FoundingDate extends AbstractProperty {
 

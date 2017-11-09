@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class DVDFormat.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\DVDFormatType instead.
+ * 
  * @method DVDFormat setAdditionalType(Property\AdditionalType $additionalType)
  * @method DVDFormat setAlternateName(Property\AlternateName $alternateName)
  * @method DVDFormat setDescription(Property\Description $description)

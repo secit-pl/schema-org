@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class TheaterGroup.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\TheaterGroupType instead.
+ * 
  * @method TheaterGroup setAdditionalType(Property\AdditionalType $additionalType)
  * @method TheaterGroup setAddress(Property\Address $address)
  * @method TheaterGroup setAggregateRating(Property\AggregateRating $aggregateRating)

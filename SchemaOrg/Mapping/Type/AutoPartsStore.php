@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class AutoPartsStore.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\AutoPartsStoreType instead.
+ * 
  * @method AutoPartsStore setAdditionalType(Property\AdditionalType $additionalType)
  * @method AutoPartsStore setAddress(Property\Address $address)
  * @method AutoPartsStore setAggregateRating(Property\AggregateRating $aggregateRating)

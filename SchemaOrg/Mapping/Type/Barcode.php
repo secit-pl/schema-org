@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Barcode.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\BarcodeType instead.
+ * 
  * @method Barcode setAccessMode(Property\AccessMode $accessMode)
  * @method Barcode setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method Barcode setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * ReferenceQuantity class.
  * 
  * @method ReferenceQuantity setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\ReferenceQuantityProperty instead.
  */
 class ReferenceQuantity extends AbstractProperty {
 

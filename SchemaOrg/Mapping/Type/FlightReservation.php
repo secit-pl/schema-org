@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class FlightReservation.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\FlightReservationType instead.
+ * 
  * @method FlightReservation setAdditionalType(Property\AdditionalType $additionalType)
  * @method FlightReservation setAlternateName(Property\AlternateName $alternateName)
  * @method FlightReservation setBookingTime(Property\BookingTime $bookingTime)

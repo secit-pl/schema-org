@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class CreateAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\CreateActionType instead.
+ * 
  * @method CreateAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method CreateAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method CreateAction setAgent(Property\Agent $agent)

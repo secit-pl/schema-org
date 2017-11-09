@@ -2,6 +2,17 @@
 
 A class mapping for the schema.org data types, types and properties.
 
+#### BC break warning
+From release 3.3.2 all properties should be suffixed by the word Property and all types should be suffixed
+by the word Type.
+All properties without Property suffix and and all types without Type suffix are now marked as deprecated. 
+This change is required to support PHP 7.x which have a few new restricted words which cannot be used
+as a class names.
+
+Please change your code and add the suffix to use the new naming schema. 
+
+**All deprecated (non suffixed) classes will be removed in release 3.4.**
+
 ## Installation
 
 From the command line run
@@ -15,36 +26,40 @@ $ composer require secit-pl/schema-org
 First create the data structure:
 
 ```php
-$breadcrumbs = new Type\BreadcrumbList();
+use SecIT\SchemaOrg\Mapping\DataType;
+use SecIT\SchemaOrg\Mapping\Property;
+use SecIT\SchemaOrg\Mapping\Type;
 
-$element1 = new Type\ListItem();
-$element1->setPosition(new Property\Position(new DataType\IntegerType(1)));
+$breadcrumbs = new Type\BreadcrumbListType();
+
+$element1 = new Type\ListItemType();
+$element1->setPosition(new Property\PositionProperty(new DataType\IntegerType(1)));
 $element1->setItem(
     new Property\Item(
-        (new Type\Thing('http://google.pl/#test'))->setName(
-            new Property\Name(
+        (new Type\ThingType('http://google.pl/#test'))->setName(
+            new Property\NameProperty(
                 new DataType\TextType('Test')
             )
         )
     )
 );
-$breadcrumbs->addItemListElement(new Property\ItemListElement($element1));
+$breadcrumbs->addItemListElement(new Property\ItemListElementProperty($element1));
 
-$element2 = new Type\ListItem();
-$element2->setPosition(new Property\Position(new DataType\IntegerType(2)));
+$element2 = new Type\ListItemType();
+$element2->setPosition(new Property\PositionProperty(new DataType\IntegerType(2)));
 $element2->setItem(
-    new Property\Item(
-        (new Type\Thing('http://google.pl/#qweqwe'))->setName(
-            new Property\Name(
+    new Property\ItemProperty(
+        (new Type\ThingType('http://google.pl/#qweqwe'))->setName(
+            new Property\NameProperty(
                 new DataType\TextType('Test 122')
             )
         )
     )
 );
-$breadcrumbs->addItemListElement(new Property\ItemListElement($element2));
+$breadcrumbs->addItemListElement(new Property\ItemListElementProperty($element2));
 
 $breadcrumbs->setNumberOfItems(
-    new Property\NumberOfItems(
+    new Property\NumberOfItemsProperty(
         new DataType\IntegerType(
             count($breadcrumbs->getItemListElements())
         )
@@ -71,36 +86,40 @@ https://search.google.com/structured-data/testing-tool
 
 ### Breadcrumbs
 ```php
-$breadcrumbs = new Type\BreadcrumbList();
+use SecIT\SchemaOrg\Mapping\DataType;
+use SecIT\SchemaOrg\Mapping\Property;
+use SecIT\SchemaOrg\Mapping\Type;
 
-$element1 = new Type\ListItem();
-$element1->setPosition(new Property\Position(new DataType\IntegerType(1)));
+$breadcrumbs = new Type\BreadcrumbListType();
+
+$element1 = new Type\ListItemType();
+$element1->setPosition(new Property\PositionProperty(new DataType\IntegerType(1)));
 $element1->setItem(
-    new Property\Item(
-        (new Type\Thing('http://google.pl/#test'))->setName(
-            new Property\Name(
+    new Property\ItemProperty(
+        (new Type\ThingType('http://google.pl/#test'))->setName(
+            new Property\NameProperty(
                 new DataType\TextType('Test')
             )
         )
     )
 );
-$breadcrumbs->addItemListElement(new Property\ItemListElement($element1));
+$breadcrumbs->addItemListElement(new Property\ItemListElementProperty($element1));
 
-$element2 = new Type\ListItem();
-$element2->setPosition(new Property\Position(new DataType\IntegerType(2)));
+$element2 = new Type\ListItemType();
+$element2->setPosition(new Property\PositionProperty(new DataType\IntegerType(2)));
 $element2->setItem(
-    new Property\Item(
-        (new Type\Thing('http://google.pl/#qweqwe'))->setName(
-            new Property\Name(
+    new Property\ItemProperty(
+        (new Type\ThingType('http://google.pl/#qweqwe'))->setName(
+            new Property\NameProperty(
                 new DataType\TextType('Test 122')
             )
         )
     )
 );
-$breadcrumbs->addItemListElement(new Property\ItemListElement($element2));
+$breadcrumbs->addItemListElement(new Property\ItemListElementProperty($element2));
 
 $breadcrumbs->setNumberOfItems(
-    new Property\NumberOfItems(
+    new Property\NumberOfItemsProperty(
         new DataType\IntegerType(
             count($breadcrumbs->getItemListElements())
         )
@@ -116,148 +135,152 @@ The output:
 ### Product
 
 ```php
-$product = new Type\Product();
+use SecIT\SchemaOrg\Mapping\DataType;
+use SecIT\SchemaOrg\Mapping\Property;
+use SecIT\SchemaOrg\Mapping\Type;
+
+$product = new Type\ProductType();
 $product
     ->setName(
-        new Property\Name(
+        new Property\NameProperty(
             new DataType\TextType('Kenmore White 17" Microwave')
         )
     )
     ->setDescription(
-        new Property\Description(
+        new Property\DescriptionProperty(
             new DataType\TextType('0.7 cubic feet countertop microwave. Has six preset cooking categories and convenience features like Add-A-Minute and Child Lock.')
         )
     )
     ->setImage(
-        new Property\Image(
+        new Property\ImageProperty(
             new DataType\URLType('kenmore-microwave-17in.jpg')
         )
     )
     ->setAggregateRating(
-        new Property\AggregateRating(
-            (new Type\AggregateRating())
+        new Property\AggregateRatingProperty(
+            (new Type\AggregateRatingType())
                 ->setRatingValue(
-                    new Property\RatingValue(
+                    new Property\RatingValueProperty(
                         new DataType\NumberType(3.5)
                     )
                 )
                 ->setReviewCount(
-                    new Property\ReviewCount(
+                    new Property\ReviewCountProperty(
                         new DataType\IntegerType(11)
                     )
                 )
         )
     )
     ->setOffers(
-        new Property\Offers(
-            (new Type\Offer())
+        new Property\OffersProperty(
+            (new Type\OfferType())
                 ->setPriceCurrency(
-                    new Property\PriceCurrency(
+                    new Property\PriceCurrencyProperty(
                         new DataType\TextType('USD')
                     )
                 )
                 ->setPrice(
-                    new Property\Price(
+                    new Property\PriceProperty(
                         new DataType\NumberType(55.00)
                     )
                 )
-                ->setAvailability(new Property\Availability(
-                    new Type\InStock()
+                ->setAvailability(new Property\AvailabilityProperty(
+                    new Type\InStockType()
                 ))
         )
     )
     ->setReview(
-        new Property\Review([
-            (new Type\Review())
+        new Property\ReviewProperty([
+            (new Type\ReviewType())
                 ->setReviewRating(
-                    new Property\ReviewRating(
-                        (new Type\Rating())
+                    new Property\ReviewRatingProperty(
+                        (new Type\RatingType())
                             ->setBestRating(
-                                new Property\BestRating(
+                                new Property\BestRatingProperty(
                                     new DataType\NumberType(5)
                                 )
                             )
                             ->setRatingValue(
-                                new Property\RatingValue(
+                                new Property\RatingValueProperty(
                                     new DataType\NumberType(1)
                                 )
                             )
                             ->setWorstRating(
-                                new Property\WorstRating(
+                                new Property\WorstRatingProperty(
                                     new DataType\NumberType(1)
                                 )
                             )
                     )
                 )
                 ->setAuthor(
-                    new Property\Author(
-                        (new Type\Person())
+                    new Property\AuthorProperty(
+                        (new Type\PersonType())
                             ->setName(
-                                new Property\Name(
+                                new Property\NameProperty(
                                     new DataType\TextType('Ellie')
                                 )
                             )
                     )
                 )
                 ->setDatePublished(
-                    new Property\DatePublished(
+                    new Property\DatePublishedProperty(
                         new DataType\DateType('2011-04-01')
                     )
                 )
                 ->setDescription(
-                    new Property\Description(
+                    new Property\DescriptionProperty(
                         new DataType\TextType('The lamp burned out and now I have to replace it.')
                     )
                 )
                 ->setName(
-                    new Property\Name(
+                    new Property\NameProperty(
                         new DataType\TextType('Not a happy camper')
                     )
                 )
             ,
-            (new Type\Review())
+            (new Type\ReviewType())
                 ->setReviewRating(
-                    new Property\ReviewRating(
-                        (new Type\Rating())
+                    new Property\ReviewRatingProperty(
+                        (new Type\RatingType())
                             ->setBestRating(
-                                new Property\BestRating(
+                                new Property\BestRatingProperty(
                                     new DataType\NumberType(5)
                                 )
                             )
                             ->setRatingValue(
-                                new Property\RatingValue(
+                                new Property\RatingValueProperty(
                                     new DataType\NumberType(4)
                                 )
                             )
                             ->setWorstRating(
-                                new Property\WorstRating(
+                                new Property\WorstRatingProperty(
                                     new DataType\NumberType(1)
                                 )
                             )
                     )
                 )
                 ->setAuthor(
-                    new Property\Author(
-                        (new Type\Person())
+                    new Property\AuthorProperty(
+                        (new Type\PersonType())
                             ->setName(
-                                new Property\Name(
+                                new Property\NameProperty(
                                     new DataType\TextType('Lucas')
                                 )
                             )
                     )
                 )
                 ->setDatePublished(
-                    new Property\DatePublished(
+                    new Property\DatePublishedProperty(
                         new DataType\DateType('2011-03-25')
                     )
                 )
                 ->setDescription(
-                    new Property\Description(
+                    new Property\DescriptionProperty(
                         new DataType\TextType('Great microwave for the price. It is small and fits in my apartment.')
                     )
                 )
                 ->setName(
-                    new Property\Name(
+                    new Property\NameProperty(
                         new DataType\TextType('Value purchase')
                     )
                 )

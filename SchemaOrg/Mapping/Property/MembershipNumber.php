@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * MembershipNumber class.
  * 
  * @method MembershipNumber setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\MembershipNumberProperty instead.
  */
 class MembershipNumber extends AbstractProperty {
 

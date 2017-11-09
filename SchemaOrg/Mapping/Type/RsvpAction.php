@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class RsvpAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\RsvpActionType instead.
+ * 
  * @method RsvpAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method RsvpAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method RsvpAction setAgent(Property\Agent $agent)

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Seat.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\SeatType instead.
+ * 
  * @method Seat setAdditionalType(Property\AdditionalType $additionalType)
  * @method Seat setAlternateName(Property\AlternateName $alternateName)
  * @method Seat setDescription(Property\Description $description)

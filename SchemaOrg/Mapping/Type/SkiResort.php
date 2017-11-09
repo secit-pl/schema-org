@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class SkiResort.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\SkiResortType instead.
+ * 
  * @method SkiResort setAdditionalType(Property\AdditionalType $additionalType)
  * @method SkiResort setAddress(Property\Address $address)
  * @method SkiResort setAggregateRating(Property\AggregateRating $aggregateRating)

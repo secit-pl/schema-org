@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class SearchAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\SearchActionType instead.
+ * 
  * @method SearchAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method SearchAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method SearchAction setAgent(Property\Agent $agent)

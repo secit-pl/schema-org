@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Notary.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\NotaryType instead.
+ * 
  * @method Notary setAdditionalType(Property\AdditionalType $additionalType)
  * @method Notary setAddress(Property\Address $address)
  * @method Notary setAggregateRating(Property\AggregateRating $aggregateRating)

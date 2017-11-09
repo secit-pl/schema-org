@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * ReferencesOrder class.
  * 
  * @method ReferencesOrder setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\ReferencesOrderProperty instead.
  */
 class ReferencesOrder extends AbstractProperty {
 

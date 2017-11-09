@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * YearlyRevenue class.
  * 
  * @method YearlyRevenue setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\YearlyRevenueProperty instead.
  */
 class YearlyRevenue extends AbstractProperty {
 

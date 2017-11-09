@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class TouristAttraction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\TouristAttractionType instead.
+ * 
  * @method TouristAttraction setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method TouristAttraction setAdditionalType(Property\AdditionalType $additionalType)
  * @method TouristAttraction setAddress(Property\Address $address)

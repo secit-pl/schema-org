@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class LakeBodyOfWater.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\LakeBodyOfWaterType instead.
+ * 
  * @method LakeBodyOfWater setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method LakeBodyOfWater setAdditionalType(Property\AdditionalType $additionalType)
  * @method LakeBodyOfWater setAddress(Property\Address $address)

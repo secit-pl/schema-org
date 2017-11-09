@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * PaymentDueDate class.
  * 
  * @method PaymentDueDate setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\PaymentDueDateProperty instead.
  */
 class PaymentDueDate extends AbstractProperty {
 

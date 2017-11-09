@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * AccessibilitySummary class.
  * 
  * @method AccessibilitySummary setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\AccessibilitySummaryProperty instead.
  */
 class AccessibilitySummary extends AbstractProperty {
 

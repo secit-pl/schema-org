@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Periodical.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\PeriodicalType instead.
+ * 
  * @method Periodical setAccessMode(Property\AccessMode $accessMode)
  * @method Periodical setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method Periodical setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

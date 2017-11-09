@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Vehicle.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\VehicleType instead.
+ * 
  * @method Vehicle setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method Vehicle setAdditionalType(Property\AdditionalType $additionalType)
  * @method Vehicle setAggregateRating(Property\AggregateRating $aggregateRating)

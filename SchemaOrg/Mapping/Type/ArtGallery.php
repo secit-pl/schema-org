@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class ArtGallery.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ArtGalleryType instead.
+ * 
  * @method ArtGallery setAdditionalType(Property\AdditionalType $additionalType)
  * @method ArtGallery setAddress(Property\Address $address)
  * @method ArtGallery setAggregateRating(Property\AggregateRating $aggregateRating)

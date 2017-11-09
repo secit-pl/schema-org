@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class MarryAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\MarryActionType instead.
+ * 
  * @method MarryAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method MarryAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method MarryAction setAgent(Property\Agent $agent)

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class TradeAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\TradeActionType instead.
+ * 
  * @method TradeAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method TradeAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method TradeAction setAgent(Property\Agent $agent)

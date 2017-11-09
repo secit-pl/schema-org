@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class TaxiService.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\TaxiServiceType instead.
+ * 
  * @method TaxiService setAdditionalType(Property\AdditionalType $additionalType)
  * @method TaxiService setAggregateRating(Property\AggregateRating $aggregateRating)
  * @method TaxiService setAlternateName(Property\AlternateName $alternateName)

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class VisualArtwork.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\VisualArtworkType instead.
+ * 
  * @method VisualArtwork setAccessMode(Property\AccessMode $accessMode)
  * @method VisualArtwork setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method VisualArtwork setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

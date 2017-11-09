@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class TypeAndQuantityNode.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\TypeAndQuantityNodeType instead.
+ * 
  * @method TypeAndQuantityNode setAdditionalType(Property\AdditionalType $additionalType)
  * @method TypeAndQuantityNode setAlternateName(Property\AlternateName $alternateName)
  * @method TypeAndQuantityNode setDescription(Property\Description $description)

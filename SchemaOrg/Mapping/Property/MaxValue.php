@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * MaxValue class.
  * 
  * @method MaxValue setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\MaxValueProperty instead.
  */
 class MaxValue extends AbstractProperty {
 

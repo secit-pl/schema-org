@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class LegislativeBuilding.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\LegislativeBuildingType instead.
+ * 
  * @method LegislativeBuilding setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method LegislativeBuilding setAdditionalType(Property\AdditionalType $additionalType)
  * @method LegislativeBuilding setAddress(Property\Address $address)

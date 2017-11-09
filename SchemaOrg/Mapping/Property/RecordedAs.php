@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * RecordedAs class.
  * 
  * @method RecordedAs setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\RecordedAsProperty instead.
  */
 class RecordedAs extends AbstractProperty {
 

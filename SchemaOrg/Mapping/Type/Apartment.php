@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Apartment.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ApartmentType instead.
+ * 
  * @method Apartment setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method Apartment setAdditionalType(Property\AdditionalType $additionalType)
  * @method Apartment setAddress(Property\Address $address)

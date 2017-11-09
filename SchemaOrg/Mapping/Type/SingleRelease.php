@@ -4,8 +4,10 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 
 /**
  * Class SingleRelease.
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\SingleReleaseType instead.
  */
-class SingleRelease {
+class SingleRelease implements TypeInterface {
 
 	/**
 	 */

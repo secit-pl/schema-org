@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Cemetery.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\CemeteryType instead.
+ * 
  * @method Cemetery setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method Cemetery setAdditionalType(Property\AdditionalType $additionalType)
  * @method Cemetery setAddress(Property\Address $address)

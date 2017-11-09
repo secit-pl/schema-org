@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class AssignAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\AssignActionType instead.
+ * 
  * @method AssignAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method AssignAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method AssignAction setAgent(Property\Agent $agent)

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class OrderReturned.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\OrderReturnedType instead.
+ * 
  * @method OrderReturned setAdditionalType(Property\AdditionalType $additionalType)
  * @method OrderReturned setAlternateName(Property\AlternateName $alternateName)
  * @method OrderReturned setDescription(Property\Description $description)

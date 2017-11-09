@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class HardwareStore.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\HardwareStoreType instead.
+ * 
  * @method HardwareStore setAdditionalType(Property\AdditionalType $additionalType)
  * @method HardwareStore setAddress(Property\Address $address)
  * @method HardwareStore setAggregateRating(Property\AggregateRating $aggregateRating)

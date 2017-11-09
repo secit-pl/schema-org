@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * AdvanceBookingRequirement class.
  * 
  * @method AdvanceBookingRequirement setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\AdvanceBookingRequirementProperty instead.
  */
 class AdvanceBookingRequirement extends AbstractProperty {
 

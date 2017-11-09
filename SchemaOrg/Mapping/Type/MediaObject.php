@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class MediaObject.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\MediaObjectType instead.
+ * 
  * @method MediaObject setAccessMode(Property\AccessMode $accessMode)
  * @method MediaObject setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method MediaObject setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

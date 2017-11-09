@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class GameServerStatus.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\GameServerStatusType instead.
+ * 
  * @method GameServerStatus setAdditionalType(Property\AdditionalType $additionalType)
  * @method GameServerStatus setAlternateName(Property\AlternateName $alternateName)
  * @method GameServerStatus setDescription(Property\Description $description)

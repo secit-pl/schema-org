@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class MusicAlbum.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\MusicAlbumType instead.
+ * 
  * @method MusicAlbum setAccessMode(Property\AccessMode $accessMode)
  * @method MusicAlbum setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method MusicAlbum setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

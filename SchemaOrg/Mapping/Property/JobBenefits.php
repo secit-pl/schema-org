@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * JobBenefits class.
  * 
  * @method JobBenefits setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\JobBenefitsProperty instead.
  */
 class JobBenefits extends AbstractProperty {
 

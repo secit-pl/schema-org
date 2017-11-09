@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class EmailMessage.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\EmailMessageType instead.
+ * 
  * @method EmailMessage setAccessMode(Property\AccessMode $accessMode)
  * @method EmailMessage setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method EmailMessage setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

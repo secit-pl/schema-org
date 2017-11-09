@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class APIReference.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\APIReferenceType instead.
+ * 
  * @method APIReference setAccessMode(Property\AccessMode $accessMode)
  * @method APIReference setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method APIReference setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class TVClip.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\TVClipType instead.
+ * 
  * @method TVClip setAccessMode(Property\AccessMode $accessMode)
  * @method TVClip setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method TVClip setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class AgreeAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\AgreeActionType instead.
+ * 
  * @method AgreeAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method AgreeAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method AgreeAction setAgent(Property\Agent $agent)

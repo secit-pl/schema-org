@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class ReplyAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ReplyActionType instead.
+ * 
  * @method ReplyAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method ReplyAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method ReplyAction setAgent(Property\Agent $agent)

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class DigitalDocumentPermission.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\DigitalDocumentPermissionType instead.
+ * 
  * @method DigitalDocumentPermission setAdditionalType(Property\AdditionalType $additionalType)
  * @method DigitalDocumentPermission setAlternateName(Property\AlternateName $alternateName)
  * @method DigitalDocumentPermission setDescription(Property\Description $description)

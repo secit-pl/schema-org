@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class ViewAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ViewActionType instead.
+ * 
  * @method ViewAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method ViewAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method ViewAction setAgent(Property\Agent $agent)

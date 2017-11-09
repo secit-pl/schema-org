@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class FurnitureStore.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\FurnitureStoreType instead.
+ * 
  * @method FurnitureStore setAdditionalType(Property\AdditionalType $additionalType)
  * @method FurnitureStore setAddress(Property\Address $address)
  * @method FurnitureStore setAggregateRating(Property\AggregateRating $aggregateRating)

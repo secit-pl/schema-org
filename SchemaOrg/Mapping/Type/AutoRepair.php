@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class AutoRepair.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\AutoRepairType instead.
+ * 
  * @method AutoRepair setAdditionalType(Property\AdditionalType $additionalType)
  * @method AutoRepair setAddress(Property\Address $address)
  * @method AutoRepair setAggregateRating(Property\AggregateRating $aggregateRating)

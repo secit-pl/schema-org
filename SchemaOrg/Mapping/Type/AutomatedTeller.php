@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class AutomatedTeller.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\AutomatedTellerType instead.
+ * 
  * @method AutomatedTeller setAdditionalType(Property\AdditionalType $additionalType)
  * @method AutomatedTeller setAddress(Property\Address $address)
  * @method AutomatedTeller setAggregateRating(Property\AggregateRating $aggregateRating)

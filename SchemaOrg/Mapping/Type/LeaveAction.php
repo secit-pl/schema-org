@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class LeaveAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\LeaveActionType instead.
+ * 
  * @method LeaveAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method LeaveAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method LeaveAction setAgent(Property\Agent $agent)

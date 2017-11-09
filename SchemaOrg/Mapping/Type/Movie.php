@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Movie.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\MovieType instead.
+ * 
  * @method Movie setAccessMode(Property\AccessMode $accessMode)
  * @method Movie setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method Movie setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

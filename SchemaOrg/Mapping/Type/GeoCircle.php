@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class GeoCircle.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\GeoCircleType instead.
+ * 
  * @method GeoCircle setAdditionalType(Property\AdditionalType $additionalType)
  * @method GeoCircle setAddress(Property\Address $address)
  * @method GeoCircle setAddressCountry(Property\AddressCountry $addressCountry)

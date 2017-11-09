@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class PublicationIssue.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\PublicationIssueType instead.
+ * 
  * @method PublicationIssue setAccessMode(Property\AccessMode $accessMode)
  * @method PublicationIssue setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method PublicationIssue setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

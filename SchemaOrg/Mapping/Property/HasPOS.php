@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * HasPOS class.
  * 
  * @method HasPOS setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\HasPOSProperty instead.
  */
 class HasPOS extends AbstractProperty {
 

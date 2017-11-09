@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Hardcover.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\HardcoverType instead.
+ * 
  * @method Hardcover setAdditionalType(Property\AdditionalType $additionalType)
  * @method Hardcover setAlternateName(Property\AlternateName $alternateName)
  * @method Hardcover setDescription(Property\Description $description)

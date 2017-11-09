@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * ChildMaxAge class.
  * 
  * @method ChildMaxAge setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\ChildMaxAgeProperty instead.
  */
 class ChildMaxAge extends AbstractProperty {
 

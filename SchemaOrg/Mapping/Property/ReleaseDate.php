@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * ReleaseDate class.
  * 
  * @method ReleaseDate setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\ReleaseDateProperty instead.
  */
 class ReleaseDate extends AbstractProperty {
 

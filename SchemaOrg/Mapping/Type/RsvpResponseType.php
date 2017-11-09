@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class RsvpResponseType.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\RsvpResponseType instead.
+ * 
  * @method RsvpResponseType setAdditionalType(Property\AdditionalType $additionalType)
  * @method RsvpResponseType setAlternateName(Property\AlternateName $alternateName)
  * @method RsvpResponseType setDescription(Property\Description $description)

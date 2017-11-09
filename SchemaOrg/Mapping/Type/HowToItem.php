@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class HowToItem.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\HowToItemType instead.
+ * 
  * @method HowToItem setAdditionalType(Property\AdditionalType $additionalType)
  * @method HowToItem setAlternateName(Property\AlternateName $alternateName)
  * @method HowToItem setDescription(Property\Description $description)

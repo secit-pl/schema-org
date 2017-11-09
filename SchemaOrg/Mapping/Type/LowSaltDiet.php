@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class LowSaltDiet.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\LowSaltDietType instead.
+ * 
  * @method LowSaltDiet setAdditionalType(Property\AdditionalType $additionalType)
  * @method LowSaltDiet setAlternateName(Property\AlternateName $alternateName)
  * @method LowSaltDiet setDescription(Property\Description $description)

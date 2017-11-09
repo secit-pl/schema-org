@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class HealthAndBeautyBusiness.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\HealthAndBeautyBusinessType instead.
+ * 
  * @method HealthAndBeautyBusiness setAdditionalType(Property\AdditionalType $additionalType)
  * @method HealthAndBeautyBusiness setAddress(Property\Address $address)
  * @method HealthAndBeautyBusiness setAggregateRating(Property\AggregateRating $aggregateRating)

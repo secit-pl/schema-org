@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class ServiceChannel.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ServiceChannelType instead.
+ * 
  * @method ServiceChannel setAdditionalType(Property\AdditionalType $additionalType)
  * @method ServiceChannel setAlternateName(Property\AlternateName $alternateName)
  * @method ServiceChannel setDescription(Property\Description $description)

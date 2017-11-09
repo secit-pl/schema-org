@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class ProductModel.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ProductModelType instead.
+ * 
  * @method ProductModel setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method ProductModel setAdditionalType(Property\AdditionalType $additionalType)
  * @method ProductModel setAggregateRating(Property\AggregateRating $aggregateRating)

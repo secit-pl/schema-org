@@ -9,6 +9,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * Logo class.
  * 
  * @method Logo setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\LogoProperty instead.
  */
 class Logo extends AbstractProperty {
 

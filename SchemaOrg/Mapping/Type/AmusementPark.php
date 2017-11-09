@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class AmusementPark.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\AmusementParkType instead.
+ * 
  * @method AmusementPark setAdditionalType(Property\AdditionalType $additionalType)
  * @method AmusementPark setAddress(Property\Address $address)
  * @method AmusementPark setAggregateRating(Property\AggregateRating $aggregateRating)

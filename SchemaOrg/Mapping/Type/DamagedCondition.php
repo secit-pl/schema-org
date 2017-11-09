@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class DamagedCondition.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\DamagedConditionType instead.
+ * 
  * @method DamagedCondition setAdditionalType(Property\AdditionalType $additionalType)
  * @method DamagedCondition setAlternateName(Property\AlternateName $alternateName)
  * @method DamagedCondition setDescription(Property\Description $description)

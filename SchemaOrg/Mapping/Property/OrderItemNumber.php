@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * OrderItemNumber class.
  * 
  * @method OrderItemNumber setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\OrderItemNumberProperty instead.
  */
 class OrderItemNumber extends AbstractProperty {
 

@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * WorstRating class.
  * 
  * @method WorstRating setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\WorstRatingProperty instead.
  */
 class WorstRating extends AbstractProperty {
 

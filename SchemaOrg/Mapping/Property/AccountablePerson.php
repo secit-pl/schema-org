@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * AccountablePerson class.
  * 
  * @method AccountablePerson setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\AccountablePersonProperty instead.
  */
 class AccountablePerson extends AbstractProperty {
 

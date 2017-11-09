@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * MemoryRequirements class.
  * 
  * @method MemoryRequirements setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\MemoryRequirementsProperty instead.
  */
 class MemoryRequirements extends AbstractProperty {
 

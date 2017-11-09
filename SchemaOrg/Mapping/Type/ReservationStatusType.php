@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class ReservationStatusType.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ReservationStatusType instead.
+ * 
  * @method ReservationStatusType setAdditionalType(Property\AdditionalType $additionalType)
  * @method ReservationStatusType setAlternateName(Property\AlternateName $alternateName)
  * @method ReservationStatusType setDescription(Property\Description $description)

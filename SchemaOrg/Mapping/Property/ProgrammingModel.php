@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * ProgrammingModel class.
  * 
  * @method ProgrammingModel setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\ProgrammingModelProperty instead.
  */
 class ProgrammingModel extends AbstractProperty {
 

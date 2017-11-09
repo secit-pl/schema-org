@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class OrganizeAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\OrganizeActionType instead.
+ * 
  * @method OrganizeAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method OrganizeAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method OrganizeAction setAgent(Property\Agent $agent)

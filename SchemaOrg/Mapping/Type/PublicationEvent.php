@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class PublicationEvent.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\PublicationEventType instead.
+ * 
  * @method PublicationEvent setActor(Property\Actor $actor)
  * @method PublicationEvent setAdditionalType(Property\AdditionalType $additionalType)
  * @method PublicationEvent setAggregateRating(Property\AggregateRating $aggregateRating)

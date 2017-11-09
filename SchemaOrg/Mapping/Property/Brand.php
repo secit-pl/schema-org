@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * Brand class.
  * 
  * @method Brand setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\BrandProperty instead.
  */
 class Brand extends AbstractProperty {
 

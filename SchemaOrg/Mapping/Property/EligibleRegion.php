@@ -9,6 +9,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * EligibleRegion class.
  * 
  * @method EligibleRegion setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\EligibleRegionProperty instead.
  */
 class EligibleRegion extends AbstractProperty {
 

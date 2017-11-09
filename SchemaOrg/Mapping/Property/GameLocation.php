@@ -9,6 +9,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * GameLocation class.
  * 
  * @method GameLocation setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\GameLocationProperty instead.
  */
 class GameLocation extends AbstractProperty {
 

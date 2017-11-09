@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * Object class.
  * 
  * @method Object setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\ObjectProperty instead.
  */
 class Object extends AbstractProperty {
 

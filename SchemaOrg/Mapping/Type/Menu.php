@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Menu.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\MenuType instead.
+ * 
  * @method Menu setAccessMode(Property\AccessMode $accessMode)
  * @method Menu setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method Menu setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class QuoteAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\QuoteActionType instead.
+ * 
  * @method QuoteAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method QuoteAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method QuoteAction setAgent(Property\Agent $agent)

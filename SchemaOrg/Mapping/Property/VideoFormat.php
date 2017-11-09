@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * VideoFormat class.
  * 
  * @method VideoFormat setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\VideoFormatProperty instead.
  */
 class VideoFormat extends AbstractProperty {
 

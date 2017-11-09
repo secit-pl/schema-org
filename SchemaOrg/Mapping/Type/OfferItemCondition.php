@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class OfferItemCondition.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\OfferItemConditionType instead.
+ * 
  * @method OfferItemCondition setAdditionalType(Property\AdditionalType $additionalType)
  * @method OfferItemCondition setAlternateName(Property\AlternateName $alternateName)
  * @method OfferItemCondition setDescription(Property\Description $description)

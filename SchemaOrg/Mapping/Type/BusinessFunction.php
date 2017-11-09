@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class BusinessFunction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\BusinessFunctionType instead.
+ * 
  * @method BusinessFunction setAdditionalType(Property\AdditionalType $additionalType)
  * @method BusinessFunction setAlternateName(Property\AlternateName $alternateName)
  * @method BusinessFunction setDescription(Property\Description $description)

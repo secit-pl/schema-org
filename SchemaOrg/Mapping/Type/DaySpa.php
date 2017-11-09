@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class DaySpa.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\DaySpaType instead.
+ * 
  * @method DaySpa setAdditionalType(Property\AdditionalType $additionalType)
  * @method DaySpa setAddress(Property\Address $address)
  * @method DaySpa setAggregateRating(Property\AggregateRating $aggregateRating)

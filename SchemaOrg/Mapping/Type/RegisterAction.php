@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class RegisterAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\RegisterActionType instead.
+ * 
  * @method RegisterAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method RegisterAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method RegisterAction setAgent(Property\Agent $agent)

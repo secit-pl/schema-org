@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Duration.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\DurationType instead.
+ * 
  * @method Duration setAdditionalType(Property\AdditionalType $additionalType)
  * @method Duration setAlternateName(Property\AlternateName $alternateName)
  * @method Duration setDescription(Property\Description $description)

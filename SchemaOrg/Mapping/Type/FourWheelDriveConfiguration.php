@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class FourWheelDriveConfiguration.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\FourWheelDriveConfigurationType instead.
+ * 
  * @method FourWheelDriveConfiguration setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method FourWheelDriveConfiguration setAdditionalType(Property\AdditionalType $additionalType)
  * @method FourWheelDriveConfiguration setAlternateName(Property\AlternateName $alternateName)

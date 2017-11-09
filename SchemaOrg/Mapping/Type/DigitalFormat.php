@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class DigitalFormat.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\DigitalFormatType instead.
+ * 
  * @method DigitalFormat setAdditionalType(Property\AdditionalType $additionalType)
  * @method DigitalFormat setAlternateName(Property\AlternateName $alternateName)
  * @method DigitalFormat setDescription(Property\Description $description)

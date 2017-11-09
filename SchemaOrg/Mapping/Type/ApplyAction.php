@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class ApplyAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ApplyActionType instead.
+ * 
  * @method ApplyAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method ApplyAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method ApplyAction setAgent(Property\Agent $agent)

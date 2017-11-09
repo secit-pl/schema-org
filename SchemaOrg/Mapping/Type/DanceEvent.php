@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class DanceEvent.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\DanceEventType instead.
+ * 
  * @method DanceEvent setActor(Property\Actor $actor)
  * @method DanceEvent setAdditionalType(Property\AdditionalType $additionalType)
  * @method DanceEvent setAggregateRating(Property\AggregateRating $aggregateRating)

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class SingleFamilyResidence.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\SingleFamilyResidenceType instead.
+ * 
  * @method SingleFamilyResidence setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method SingleFamilyResidence setAdditionalType(Property\AdditionalType $additionalType)
  * @method SingleFamilyResidence setAddress(Property\Address $address)

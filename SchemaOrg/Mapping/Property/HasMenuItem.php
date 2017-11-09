@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * HasMenuItem class.
  * 
  * @method HasMenuItem setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\HasMenuItemProperty instead.
  */
 class HasMenuItem extends AbstractProperty {
 

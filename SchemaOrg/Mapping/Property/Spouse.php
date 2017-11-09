@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * Spouse class.
  * 
  * @method Spouse setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\SpouseProperty instead.
  */
 class Spouse extends AbstractProperty {
 

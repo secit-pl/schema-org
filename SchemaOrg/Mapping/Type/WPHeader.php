@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class WPHeader.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\WPHeaderType instead.
+ * 
  * @method WPHeader setAccessMode(Property\AccessMode $accessMode)
  * @method WPHeader setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method WPHeader setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

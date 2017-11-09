@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class BroadcastService.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\BroadcastServiceType instead.
+ * 
  * @method BroadcastService setAdditionalType(Property\AdditionalType $additionalType)
  * @method BroadcastService setAggregateRating(Property\AggregateRating $aggregateRating)
  * @method BroadcastService setAlternateName(Property\AlternateName $alternateName)

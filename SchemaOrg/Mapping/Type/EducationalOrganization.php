@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class EducationalOrganization.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\EducationalOrganizationType instead.
+ * 
  * @method EducationalOrganization setAdditionalType(Property\AdditionalType $additionalType)
  * @method EducationalOrganization setAddress(Property\Address $address)
  * @method EducationalOrganization setAggregateRating(Property\AggregateRating $aggregateRating)

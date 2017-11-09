@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class ConsumeAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ConsumeActionType instead.
+ * 
  * @method ConsumeAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method ConsumeAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method ConsumeAction setAgent(Property\Agent $agent)

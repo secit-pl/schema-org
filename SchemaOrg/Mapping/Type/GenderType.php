@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class GenderType.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\GenderType instead.
+ * 
  * @method GenderType setAdditionalType(Property\AdditionalType $additionalType)
  * @method GenderType setAlternateName(Property\AlternateName $alternateName)
  * @method GenderType setDescription(Property\Description $description)

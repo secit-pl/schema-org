@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class SportsEvent.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\SportsEventType instead.
+ * 
  * @method SportsEvent setActor(Property\Actor $actor)
  * @method SportsEvent setAdditionalType(Property\AdditionalType $additionalType)
  * @method SportsEvent setAggregateRating(Property\AggregateRating $aggregateRating)

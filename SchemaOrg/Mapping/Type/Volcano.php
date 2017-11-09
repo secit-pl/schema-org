@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Volcano.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\VolcanoType instead.
+ * 
  * @method Volcano setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method Volcano setAdditionalType(Property\AdditionalType $additionalType)
  * @method Volcano setAddress(Property\Address $address)

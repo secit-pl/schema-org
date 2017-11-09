@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * Circle class.
  * 
  * @method Circle setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\CircleProperty instead.
  */
 class Circle extends AbstractProperty {
 

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class DryCleaningOrLaundry.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\DryCleaningOrLaundryType instead.
+ * 
  * @method DryCleaningOrLaundry setAdditionalType(Property\AdditionalType $additionalType)
  * @method DryCleaningOrLaundry setAddress(Property\Address $address)
  * @method DryCleaningOrLaundry setAggregateRating(Property\AggregateRating $aggregateRating)

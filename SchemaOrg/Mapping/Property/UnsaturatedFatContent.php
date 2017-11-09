@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * UnsaturatedFatContent class.
  * 
  * @method UnsaturatedFatContent setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\UnsaturatedFatContentProperty instead.
  */
 class UnsaturatedFatContent extends AbstractProperty {
 

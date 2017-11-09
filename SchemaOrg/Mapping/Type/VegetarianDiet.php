@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class VegetarianDiet.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\VegetarianDietType instead.
+ * 
  * @method VegetarianDiet setAdditionalType(Property\AdditionalType $additionalType)
  * @method VegetarianDiet setAlternateName(Property\AlternateName $alternateName)
  * @method VegetarianDiet setDescription(Property\Description $description)

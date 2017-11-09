@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * ReviewedBy class.
  * 
  * @method ReviewedBy setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\ReviewedByProperty instead.
  */
 class ReviewedBy extends AbstractProperty {
 

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class EmploymentAgency.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\EmploymentAgencyType instead.
+ * 
  * @method EmploymentAgency setAdditionalType(Property\AdditionalType $additionalType)
  * @method EmploymentAgency setAddress(Property\Address $address)
  * @method EmploymentAgency setAggregateRating(Property\AggregateRating $aggregateRating)

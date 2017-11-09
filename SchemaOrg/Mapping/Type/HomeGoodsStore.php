@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class HomeGoodsStore.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\HomeGoodsStoreType instead.
+ * 
  * @method HomeGoodsStore setAdditionalType(Property\AdditionalType $additionalType)
  * @method HomeGoodsStore setAddress(Property\Address $address)
  * @method HomeGoodsStore setAggregateRating(Property\AggregateRating $aggregateRating)

@@ -9,6 +9,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * Amount class.
  * 
  * @method Amount setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\AmountProperty instead.
  */
 class Amount extends AbstractProperty {
 

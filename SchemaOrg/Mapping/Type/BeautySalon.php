@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class BeautySalon.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\BeautySalonType instead.
+ * 
  * @method BeautySalon setAdditionalType(Property\AdditionalType $additionalType)
  * @method BeautySalon setAddress(Property\Address $address)
  * @method BeautySalon setAggregateRating(Property\AggregateRating $aggregateRating)

@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\DataType;
 /**
  * Class DataType.
  */
-class DataType {
+class DataType implements DataTypeInterface {
 
 	/**
 	 * @var string

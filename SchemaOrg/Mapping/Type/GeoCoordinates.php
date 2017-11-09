@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class GeoCoordinates.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\GeoCoordinatesType instead.
+ * 
  * @method GeoCoordinates setAdditionalType(Property\AdditionalType $additionalType)
  * @method GeoCoordinates setAlternateName(Property\AlternateName $alternateName)
  * @method GeoCoordinates setDescription(Property\Description $description)

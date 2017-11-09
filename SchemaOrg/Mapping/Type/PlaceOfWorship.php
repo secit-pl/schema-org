@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class PlaceOfWorship.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\PlaceOfWorshipType instead.
+ * 
  * @method PlaceOfWorship setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method PlaceOfWorship setAdditionalType(Property\AdditionalType $additionalType)
  * @method PlaceOfWorship setAddress(Property\Address $address)

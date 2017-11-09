@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class QAPage.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\QAPageType instead.
+ * 
  * @method QAPage setAccessMode(Property\AccessMode $accessMode)
  * @method QAPage setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method QAPage setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

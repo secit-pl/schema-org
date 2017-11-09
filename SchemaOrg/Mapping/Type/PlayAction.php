@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class PlayAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\PlayActionType instead.
+ * 
  * @method PlayAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method PlayAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method PlayAction setAgent(Property\Agent $agent)

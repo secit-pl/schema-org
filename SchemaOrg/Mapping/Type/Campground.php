@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Campground.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\CampgroundType instead.
+ * 
  * @method Campground setAdditionalType(Property\AdditionalType $additionalType)
  * @method Campground setAddress(Property\Address $address)
  * @method Campground setAggregateRating(Property\AggregateRating $aggregateRating)

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class EventReservation.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\EventReservationType instead.
+ * 
  * @method EventReservation setAdditionalType(Property\AdditionalType $additionalType)
  * @method EventReservation setAlternateName(Property\AlternateName $alternateName)
  * @method EventReservation setBookingTime(Property\BookingTime $bookingTime)

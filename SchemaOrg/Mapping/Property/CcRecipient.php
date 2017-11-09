@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * CcRecipient class.
  * 
  * @method CcRecipient setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\CcRecipientProperty instead.
  */
 class CcRecipient extends AbstractProperty {
 

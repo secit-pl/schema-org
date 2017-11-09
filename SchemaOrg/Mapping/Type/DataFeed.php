@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class DataFeed.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\DataFeedType instead.
+ * 
  * @method DataFeed setAccessMode(Property\AccessMode $accessMode)
  * @method DataFeed setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method DataFeed setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

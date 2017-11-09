@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * Dataset class.
  * 
  * @method Dataset setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\DatasetProperty instead.
  */
 class Dataset extends AbstractProperty {
 

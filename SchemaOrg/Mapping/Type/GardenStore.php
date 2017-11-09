@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class GardenStore.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\GardenStoreType instead.
+ * 
  * @method GardenStore setAdditionalType(Property\AdditionalType $additionalType)
  * @method GardenStore setAddress(Property\Address $address)
  * @method GardenStore setAggregateRating(Property\AggregateRating $aggregateRating)

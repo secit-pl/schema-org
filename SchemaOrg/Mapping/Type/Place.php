@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Place.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\PlaceType instead.
+ * 
  * @method Place setAdditionalType(Property\AdditionalType $additionalType)
  * @method Place setAlternateName(Property\AlternateName $alternateName)
  * @method Place setDescription(Property\Description $description)

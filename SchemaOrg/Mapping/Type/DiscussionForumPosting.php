@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class DiscussionForumPosting.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\DiscussionForumPostingType instead.
+ * 
  * @method DiscussionForumPosting setAccessMode(Property\AccessMode $accessMode)
  * @method DiscussionForumPosting setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method DiscussionForumPosting setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

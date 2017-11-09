@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class SearchResultsPage.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\SearchResultsPageType instead.
+ * 
  * @method SearchResultsPage setAccessMode(Property\AccessMode $accessMode)
  * @method SearchResultsPage setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method SearchResultsPage setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

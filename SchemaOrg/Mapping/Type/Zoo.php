@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Zoo.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ZooType instead.
+ * 
  * @method Zoo setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method Zoo setAdditionalType(Property\AdditionalType $additionalType)
  * @method Zoo setAddress(Property\Address $address)

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class JobPosting.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\JobPostingType instead.
+ * 
  * @method JobPosting setAdditionalType(Property\AdditionalType $additionalType)
  * @method JobPosting setAlternateName(Property\AlternateName $alternateName)
  * @method JobPosting setDescription(Property\Description $description)

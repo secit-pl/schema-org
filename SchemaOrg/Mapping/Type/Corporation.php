@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Corporation.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\CorporationType instead.
+ * 
  * @method Corporation setAdditionalType(Property\AdditionalType $additionalType)
  * @method Corporation setAddress(Property\Address $address)
  * @method Corporation setAggregateRating(Property\AggregateRating $aggregateRating)

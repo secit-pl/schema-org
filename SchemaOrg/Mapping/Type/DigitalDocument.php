@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class DigitalDocument.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\DigitalDocumentType instead.
+ * 
  * @method DigitalDocument setAccessMode(Property\AccessMode $accessMode)
  * @method DigitalDocument setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method DigitalDocument setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class WantAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\WantActionType instead.
+ * 
  * @method WantAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method WantAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method WantAction setAgent(Property\Agent $agent)

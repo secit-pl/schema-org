@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Answer.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\AnswerType instead.
+ * 
  * @method Answer setAccessMode(Property\AccessMode $accessMode)
  * @method Answer setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method Answer setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

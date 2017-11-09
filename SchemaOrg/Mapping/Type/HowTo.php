@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class HowTo.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\HowToType instead.
+ * 
  * @method HowTo setAccessMode(Property\AccessMode $accessMode)
  * @method HowTo setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method HowTo setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

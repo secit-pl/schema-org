@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class ParcelService.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ParcelServiceType instead.
+ * 
  * @method ParcelService setAdditionalType(Property\AdditionalType $additionalType)
  * @method ParcelService setAlternateName(Property\AlternateName $alternateName)
  * @method ParcelService setDescription(Property\Description $description)

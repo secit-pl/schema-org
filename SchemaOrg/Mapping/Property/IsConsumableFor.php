@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * IsConsumableFor class.
  * 
  * @method IsConsumableFor setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\IsConsumableForProperty instead.
  */
 class IsConsumableFor extends AbstractProperty {
 

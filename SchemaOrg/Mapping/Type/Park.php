@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Park.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ParkType instead.
+ * 
  * @method Park setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method Park setAdditionalType(Property\AdditionalType $additionalType)
  * @method Park setAddress(Property\Address $address)

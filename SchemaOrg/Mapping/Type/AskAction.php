@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class AskAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\AskActionType instead.
+ * 
  * @method AskAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method AskAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method AskAction setAgent(Property\Agent $agent)

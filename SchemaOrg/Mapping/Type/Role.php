@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Role.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\RoleType instead.
+ * 
  * @method Role setAdditionalType(Property\AdditionalType $additionalType)
  * @method Role setAlternateName(Property\AlternateName $alternateName)
  * @method Role setDescription(Property\Description $description)

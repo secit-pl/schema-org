@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Residence.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ResidenceType instead.
+ * 
  * @method Residence setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method Residence setAdditionalType(Property\AdditionalType $additionalType)
  * @method Residence setAddress(Property\Address $address)

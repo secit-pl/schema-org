@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class MedicalOrganization.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\MedicalOrganizationType instead.
+ * 
  * @method MedicalOrganization setAdditionalType(Property\AdditionalType $additionalType)
  * @method MedicalOrganization setAddress(Property\Address $address)
  * @method MedicalOrganization setAggregateRating(Property\AggregateRating $aggregateRating)

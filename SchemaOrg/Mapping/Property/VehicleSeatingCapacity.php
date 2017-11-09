@@ -9,6 +9,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * VehicleSeatingCapacity class.
  * 
  * @method VehicleSeatingCapacity setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\VehicleSeatingCapacityProperty instead.
  */
 class VehicleSeatingCapacity extends AbstractProperty {
 

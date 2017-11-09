@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * PublishedOn class.
  * 
  * @method PublishedOn setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\PublishedOnProperty instead.
  */
 class PublishedOn extends AbstractProperty {
 

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class BookFormatType.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\BookFormatType instead.
+ * 
  * @method BookFormatType setAdditionalType(Property\AdditionalType $additionalType)
  * @method BookFormatType setAlternateName(Property\AlternateName $alternateName)
  * @method BookFormatType setDescription(Property\Description $description)

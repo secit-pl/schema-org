@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * ItemReviewed class.
  * 
  * @method ItemReviewed setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\ItemReviewedProperty instead.
  */
 class ItemReviewed extends AbstractProperty {
 

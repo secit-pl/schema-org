@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * DeliveryAddress class.
  * 
  * @method DeliveryAddress setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\DeliveryAddressProperty instead.
  */
 class DeliveryAddress extends AbstractProperty {
 

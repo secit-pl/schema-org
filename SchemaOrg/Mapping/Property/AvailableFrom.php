@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * AvailableFrom class.
  * 
  * @method AvailableFrom setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\AvailableFromProperty instead.
  */
 class AvailableFrom extends AbstractProperty {
 

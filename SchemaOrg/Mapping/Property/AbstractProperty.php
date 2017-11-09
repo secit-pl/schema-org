@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 /**
  * Abstract class AbstractProperty.
  */
-abstract class AbstractProperty {
+abstract class AbstractProperty implements PropertyInterface {
 
 	/**
 	 * @var string

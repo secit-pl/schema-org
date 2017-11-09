@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class PhotographAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\PhotographActionType instead.
+ * 
  * @method PhotographAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method PhotographAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method PhotographAction setAgent(Property\Agent $agent)

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class FinancialService.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\FinancialServiceType instead.
+ * 
  * @method FinancialService setAdditionalType(Property\AdditionalType $additionalType)
  * @method FinancialService setAddress(Property\Address $address)
  * @method FinancialService setAggregateRating(Property\AggregateRating $aggregateRating)

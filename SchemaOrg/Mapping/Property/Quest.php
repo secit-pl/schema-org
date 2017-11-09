@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * Quest class.
  * 
  * @method Quest setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\QuestProperty instead.
  */
 class Quest extends AbstractProperty {
 

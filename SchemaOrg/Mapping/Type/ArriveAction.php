@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class ArriveAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ArriveActionType instead.
+ * 
  * @method ArriveAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method ArriveAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method ArriveAction setAgent(Property\Agent $agent)

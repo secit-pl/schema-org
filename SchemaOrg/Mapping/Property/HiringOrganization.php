@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * HiringOrganization class.
  * 
  * @method HiringOrganization setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\HiringOrganizationProperty instead.
  */
 class HiringOrganization extends AbstractProperty {
 

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Offer.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\OfferType instead.
+ * 
  * @method Offer setAdditionalType(Property\AdditionalType $additionalType)
  * @method Offer setAlternateName(Property\AlternateName $alternateName)
  * @method Offer setDescription(Property\Description $description)

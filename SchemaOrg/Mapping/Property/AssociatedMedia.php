@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * AssociatedMedia class.
  * 
  * @method AssociatedMedia setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\AssociatedMediaProperty instead.
  */
 class AssociatedMedia extends AbstractProperty {
 

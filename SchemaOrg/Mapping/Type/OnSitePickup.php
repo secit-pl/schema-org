@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class OnSitePickup.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\OnSitePickupType instead.
+ * 
  * @method OnSitePickup setAdditionalType(Property\AdditionalType $additionalType)
  * @method OnSitePickup setAlternateName(Property\AlternateName $alternateName)
  * @method OnSitePickup setDescription(Property\Description $description)

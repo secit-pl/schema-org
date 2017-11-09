@@ -9,6 +9,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * RequiredQuantity class.
  * 
  * @method RequiredQuantity setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\RequiredQuantityProperty instead.
  */
 class RequiredQuantity extends AbstractProperty {
 

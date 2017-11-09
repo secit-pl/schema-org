@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class WarrantyPromise.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\WarrantyPromiseType instead.
+ * 
  * @method WarrantyPromise setAdditionalType(Property\AdditionalType $additionalType)
  * @method WarrantyPromise setAlternateName(Property\AlternateName $alternateName)
  * @method WarrantyPromise setDescription(Property\Description $description)

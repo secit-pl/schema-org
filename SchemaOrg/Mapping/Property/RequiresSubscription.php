@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * RequiresSubscription class.
  * 
  * @method RequiresSubscription setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\RequiresSubscriptionProperty instead.
  */
 class RequiresSubscription extends AbstractProperty {
 

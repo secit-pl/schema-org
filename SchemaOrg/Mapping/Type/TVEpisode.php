@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class TVEpisode.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\TVEpisodeType instead.
+ * 
  * @method TVEpisode setAccessMode(Property\AccessMode $accessMode)
  * @method TVEpisode setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method TVEpisode setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

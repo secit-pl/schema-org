@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Male.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\MaleType instead.
+ * 
  * @method Male setAdditionalType(Property\AdditionalType $additionalType)
  * @method Male setAlternateName(Property\AlternateName $alternateName)
  * @method Male setDescription(Property\Description $description)

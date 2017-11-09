@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class InvestmentOrDeposit.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\InvestmentOrDepositType instead.
+ * 
  * @method InvestmentOrDeposit setAdditionalType(Property\AdditionalType $additionalType)
  * @method InvestmentOrDeposit setAggregateRating(Property\AggregateRating $aggregateRating)
  * @method InvestmentOrDeposit setAlternateName(Property\AlternateName $alternateName)

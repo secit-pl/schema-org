@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class PerformingArtsTheater.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\PerformingArtsTheaterType instead.
+ * 
  * @method PerformingArtsTheater setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method PerformingArtsTheater setAdditionalType(Property\AdditionalType $additionalType)
  * @method PerformingArtsTheater setAddress(Property\Address $address)

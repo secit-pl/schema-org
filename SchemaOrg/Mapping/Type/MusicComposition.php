@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class MusicComposition.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\MusicCompositionType instead.
+ * 
  * @method MusicComposition setAccessMode(Property\AccessMode $accessMode)
  * @method MusicComposition setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method MusicComposition setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

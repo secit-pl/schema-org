@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * NumberOfBeds class.
  * 
  * @method NumberOfBeds setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\NumberOfBedsProperty instead.
  */
 class NumberOfBeds extends AbstractProperty {
 

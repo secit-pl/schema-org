@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * Author class.
  * 
  * @method Author setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\AuthorProperty instead.
  */
 class Author extends AbstractProperty {
 

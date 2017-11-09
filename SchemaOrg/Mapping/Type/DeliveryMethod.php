@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class DeliveryMethod.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\DeliveryMethodType instead.
+ * 
  * @method DeliveryMethod setAdditionalType(Property\AdditionalType $additionalType)
  * @method DeliveryMethod setAlternateName(Property\AlternateName $alternateName)
  * @method DeliveryMethod setDescription(Property\Description $description)

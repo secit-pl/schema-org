@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class InformAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\InformActionType instead.
+ * 
  * @method InformAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method InformAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method InformAction setAgent(Property\Agent $agent)

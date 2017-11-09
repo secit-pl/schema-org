@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class InstallAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\InstallActionType instead.
+ * 
  * @method InstallAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method InstallAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method InstallAction setAgent(Property\Agent $agent)

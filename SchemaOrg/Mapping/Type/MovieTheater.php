@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class MovieTheater.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\MovieTheaterType instead.
+ * 
  * @method MovieTheater setAdditionalType(Property\AdditionalType $additionalType)
  * @method MovieTheater setAddress(Property\Address $address)
  * @method MovieTheater setAggregateRating(Property\AggregateRating $aggregateRating)

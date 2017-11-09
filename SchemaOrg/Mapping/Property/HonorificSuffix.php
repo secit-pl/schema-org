@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * HonorificSuffix class.
  * 
  * @method HonorificSuffix setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\HonorificSuffixProperty instead.
  */
 class HonorificSuffix extends AbstractProperty {
 

@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * Replacee class.
  * 
  * @method Replacee setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\ReplaceeProperty instead.
  */
 class Replacee extends AbstractProperty {
 

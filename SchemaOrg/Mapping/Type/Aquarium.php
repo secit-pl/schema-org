@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Aquarium.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\AquariumType instead.
+ * 
  * @method Aquarium setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method Aquarium setAdditionalType(Property\AdditionalType $additionalType)
  * @method Aquarium setAddress(Property\Address $address)

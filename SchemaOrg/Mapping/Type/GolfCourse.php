@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class GolfCourse.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\GolfCourseType instead.
+ * 
  * @method GolfCourse setAdditionalType(Property\AdditionalType $additionalType)
  * @method GolfCourse setAddress(Property\Address $address)
  * @method GolfCourse setAggregateRating(Property\AggregateRating $aggregateRating)

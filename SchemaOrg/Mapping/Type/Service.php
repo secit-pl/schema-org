@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Service.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ServiceType instead.
+ * 
  * @method Service setAdditionalType(Property\AdditionalType $additionalType)
  * @method Service setAlternateName(Property\AlternateName $alternateName)
  * @method Service setDescription(Property\Description $description)

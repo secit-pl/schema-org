@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class AggregateOffer.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\AggregateOfferType instead.
+ * 
  * @method AggregateOffer setAcceptedPaymentMethod(Property\AcceptedPaymentMethod $acceptedPaymentMethod)
  * @method AggregateOffer setAddOn(Property\AddOn $addOn)
  * @method AggregateOffer setAdditionalType(Property\AdditionalType $additionalType)

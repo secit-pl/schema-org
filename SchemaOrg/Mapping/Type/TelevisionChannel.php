@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class TelevisionChannel.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\TelevisionChannelType instead.
+ * 
  * @method TelevisionChannel setAdditionalType(Property\AdditionalType $additionalType)
  * @method TelevisionChannel setAlternateName(Property\AlternateName $alternateName)
  * @method TelevisionChannel setBroadcastChannelId(Property\BroadcastChannelId $broadcastChannelId)

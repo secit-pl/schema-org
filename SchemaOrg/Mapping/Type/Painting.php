@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Painting.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\PaintingType instead.
+ * 
  * @method Painting setAccessMode(Property\AccessMode $accessMode)
  * @method Painting setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method Painting setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

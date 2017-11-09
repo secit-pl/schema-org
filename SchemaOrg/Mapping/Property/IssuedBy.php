@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * IssuedBy class.
  * 
  * @method IssuedBy setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\IssuedByProperty instead.
  */
 class IssuedBy extends AbstractProperty {
 

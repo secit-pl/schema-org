@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class TrainTrip.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\TrainTripType instead.
+ * 
  * @method TrainTrip setAdditionalType(Property\AdditionalType $additionalType)
  * @method TrainTrip setAlternateName(Property\AlternateName $alternateName)
  * @method TrainTrip setDescription(Property\Description $description)

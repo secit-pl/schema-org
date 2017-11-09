@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class LegalService.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\LegalServiceType instead.
+ * 
  * @method LegalService setAdditionalType(Property\AdditionalType $additionalType)
  * @method LegalService setAddress(Property\Address $address)
  * @method LegalService setAggregateRating(Property\AggregateRating $aggregateRating)

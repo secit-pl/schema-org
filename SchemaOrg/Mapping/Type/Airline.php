@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Airline.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\AirlineType instead.
+ * 
  * @method Airline setAdditionalType(Property\AdditionalType $additionalType)
  * @method Airline setAddress(Property\Address $address)
  * @method Airline setAggregateRating(Property\AggregateRating $aggregateRating)

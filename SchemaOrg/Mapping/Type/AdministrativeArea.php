@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class AdministrativeArea.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\AdministrativeAreaType instead.
+ * 
  * @method AdministrativeArea setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method AdministrativeArea setAdditionalType(Property\AdditionalType $additionalType)
  * @method AdministrativeArea setAddress(Property\Address $address)

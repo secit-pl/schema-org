@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class PropertyValue.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\PropertyValueType instead.
+ * 
  * @method PropertyValue setAdditionalType(Property\AdditionalType $additionalType)
  * @method PropertyValue setAlternateName(Property\AlternateName $alternateName)
  * @method PropertyValue setDescription(Property\Description $description)

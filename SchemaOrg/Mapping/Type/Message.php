@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Message.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\MessageType instead.
+ * 
  * @method Message setAccessMode(Property\AccessMode $accessMode)
  * @method Message setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method Message setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

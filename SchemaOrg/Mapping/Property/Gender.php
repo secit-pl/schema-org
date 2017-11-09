@@ -9,6 +9,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * Gender class.
  * 
  * @method Gender setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\GenderProperty instead.
  */
 class Gender extends AbstractProperty {
 

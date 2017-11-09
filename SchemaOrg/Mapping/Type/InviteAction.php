@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class InviteAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\InviteActionType instead.
+ * 
  * @method InviteAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method InviteAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method InviteAction setAgent(Property\Agent $agent)

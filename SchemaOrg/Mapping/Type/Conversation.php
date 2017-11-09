@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Conversation.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ConversationType instead.
+ * 
  * @method Conversation setAccessMode(Property\AccessMode $accessMode)
  * @method Conversation setAccessModeSufficient(Property\AccessModeSufficient $accessModeSufficient)
  * @method Conversation setAccessibilityAPI(Property\AccessibilityAPI $accessibilityAPI)

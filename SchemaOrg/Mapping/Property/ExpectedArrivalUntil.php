@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * ExpectedArrivalUntil class.
  * 
  * @method ExpectedArrivalUntil setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\ExpectedArrivalUntilProperty instead.
  */
 class ExpectedArrivalUntil extends AbstractProperty {
 

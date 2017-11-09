@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class Reservoir.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ReservoirType instead.
+ * 
  * @method Reservoir setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method Reservoir setAdditionalType(Property\AdditionalType $additionalType)
  * @method Reservoir setAddress(Property\Address $address)

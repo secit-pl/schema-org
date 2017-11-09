@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class AssessAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\AssessActionType instead.
+ * 
  * @method AssessAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method AssessAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method AssessAction setAgent(Property\Agent $agent)

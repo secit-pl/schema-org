@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * InBroadcastLineup class.
  * 
  * @method InBroadcastLineup setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\InBroadcastLineupProperty instead.
  */
 class InBroadcastLineup extends AbstractProperty {
 

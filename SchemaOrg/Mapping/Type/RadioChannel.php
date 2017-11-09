@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class RadioChannel.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\RadioChannelType instead.
+ * 
  * @method RadioChannel setAdditionalType(Property\AdditionalType $additionalType)
  * @method RadioChannel setAlternateName(Property\AlternateName $alternateName)
  * @method RadioChannel setBroadcastChannelId(Property\BroadcastChannelId $broadcastChannelId)

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class WearAction.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\WearActionType instead.
+ * 
  * @method WearAction setActionStatus(Property\ActionStatus $actionStatus)
  * @method WearAction setAdditionalType(Property\AdditionalType $additionalType)
  * @method WearAction setAgent(Property\Agent $agent)

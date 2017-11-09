@@ -9,6 +9,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  * PublishingPrinciples class.
  * 
  * @method PublishingPrinciples setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\PublishingPrinciplesProperty instead.
  */
 class PublishingPrinciples extends AbstractProperty {
 

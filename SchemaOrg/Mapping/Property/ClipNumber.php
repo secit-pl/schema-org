@@ -8,6 +8,8 @@ use SecIT\SchemaOrg\Mapping\DataType;
  * ClipNumber class.
  * 
  * @method ClipNumber setValue($value)
+ * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Property\ClipNumberProperty instead.
  */
 class ClipNumber extends AbstractProperty {
 

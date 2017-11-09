@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class EventVenue.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\EventVenueType instead.
+ * 
  * @method EventVenue setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method EventVenue setAdditionalType(Property\AdditionalType $additionalType)
  * @method EventVenue setAddress(Property\Address $address)

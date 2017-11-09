@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class GovernmentBuilding.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\GovernmentBuildingType instead.
+ * 
  * @method GovernmentBuilding setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method GovernmentBuilding setAdditionalType(Property\AdditionalType $additionalType)
  * @method GovernmentBuilding setAddress(Property\Address $address)

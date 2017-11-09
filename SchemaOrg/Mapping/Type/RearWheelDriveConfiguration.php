@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class RearWheelDriveConfiguration.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\RearWheelDriveConfigurationType instead.
+ * 
  * @method RearWheelDriveConfiguration setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method RearWheelDriveConfiguration setAdditionalType(Property\AdditionalType $additionalType)
  * @method RearWheelDriveConfiguration setAlternateName(Property\AlternateName $alternateName)

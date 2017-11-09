@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class HowToTip.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\HowToTipType instead.
+ * 
  * @method HowToTip setAdditionalType(Property\AdditionalType $additionalType)
  * @method HowToTip setAlternateName(Property\AlternateName $alternateName)
  * @method HowToTip setDescription(Property\Description $description)

@@ -7,6 +7,8 @@ use SecIT\SchemaOrg\Mapping\Property;
 /**
  * Class VenueMap.
  * 
+ * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\VenueMapType instead.
+ * 
  * @method VenueMap setAdditionalType(Property\AdditionalType $additionalType)
  * @method VenueMap setAlternateName(Property\AlternateName $alternateName)
  * @method VenueMap setDescription(Property\Description $description)
