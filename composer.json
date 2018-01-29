@@ -4,7 +4,7 @@
     "description": "Schema.org classes.",
     "keywords": ["schema.org"],
     "homepage": "http://secit.pl",
-    "license": "GPLv3",
+    "license": "MIT",
     "authors": [
         {
             "name": "Tomasz Gemza",
