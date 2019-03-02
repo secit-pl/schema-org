@@ -21,6 +21,12 @@ use SecIT\SchemaOrg\Mapping\Property;
  */
 class MonetaryAmountType extends StructuredValueType {
 
+
+    /**
+     * @var Property\CurrencyProperty
+     */
+    private $currency;
+
 	/**
 	 * @var Property\MaxValueProperty
 	 */
@@ -45,6 +51,24 @@ class MonetaryAmountType extends StructuredValueType {
 	 * @var Property\ValueProperty
 	 */
 	private $value;
+
+    /**
+     * @return Property\CurrencyProperty
+     */
+    public function getCurrency()
+    {
+        return $this->currency;
+    }
+
+    /**
+     * @param Property\CurrencyProperty $currency
+     * @return $this
+     */
+    public function setCurrency(Property\CurrencyProperty $currency)
+    {
+        $this->currency = $currency;
+        return $this;
+    }
 
 	/**
 	 * Get max value.
