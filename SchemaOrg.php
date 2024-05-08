@@ -14,7 +14,7 @@ use SecIT\SchemaOrg\Mapping\Type;
 class SchemaOrg
 {
     /**
-     * Convert schema.rg type to the json-ld string.
+     * Convert schema.org type to the json-ld string.
      *
      * @param Type\TypeInterface $thing
      * @param bool               $addScriptTag Wrap returned json-ld with the <script type="application/ld+json"></script> tag
