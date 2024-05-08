@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ConfirmActionType.
+ * The act of notifying someone that a future event/action is going to happen as expected. Related actions: CancelAction: The antonym of ConfirmAction.
  * 
+ * @method ConfirmActionType setAbout(Property\AboutProperty $about)
  * @method ConfirmActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method ConfirmActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method ConfirmActionType setAgent(Property\AgentProperty $agent)
@@ -30,6 +31,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ConfirmActionType setResult(Property\ResultProperty $result)
  * @method ConfirmActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method ConfirmActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method ConfirmActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method ConfirmActionType setTarget(Property\TargetProperty $target)
  * @method ConfirmActionType setUrl(Property\UrlProperty $url)
  */
@@ -37,7 +39,7 @@ class ConfirmActionType extends InformActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

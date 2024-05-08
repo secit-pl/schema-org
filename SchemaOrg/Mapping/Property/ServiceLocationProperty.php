@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * ServiceLocationProperty class.
+ * The location (e.g. civic structure, local business, etc.) where a person can go to access the service.
  * 
  * @method ServiceLocationProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class ServiceLocationProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class ServiceLocationProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

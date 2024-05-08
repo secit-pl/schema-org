@@ -5,27 +5,27 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class MapCategoryType.
+ * An enumeration of several kinds of Map.
  * 
- * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\MapCategoryType instead.
- * 
- * @method MapCategoryType setAdditionalType(Property\AdditionalType $additionalType)
- * @method MapCategoryType setAlternateName(Property\AlternateName $alternateName)
- * @method MapCategoryType setDescription(Property\Description $description)
- * @method MapCategoryType setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method MapCategoryType setIdentifier(Property\Identifier $identifier)
- * @method MapCategoryType setImage(Property\Image $image)
- * @method MapCategoryType setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method MapCategoryType setName(Property\Name $name)
- * @method MapCategoryType setPotentialAction(Property\PotentialAction $potentialAction)
- * @method MapCategoryType setSameAs(Property\SameAs $sameAs)
- * @method MapCategoryType setUrl(Property\Url $url)
+ * @method MapCategoryType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
+ * @method MapCategoryType setAlternateName(Property\AlternateNameProperty $alternateName)
+ * @method MapCategoryType setDescription(Property\DescriptionProperty $description)
+ * @method MapCategoryType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
+ * @method MapCategoryType setIdentifier(Property\IdentifierProperty $identifier)
+ * @method MapCategoryType setImage(Property\ImageProperty $image)
+ * @method MapCategoryType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
+ * @method MapCategoryType setName(Property\NameProperty $name)
+ * @method MapCategoryType setPotentialAction(Property\PotentialActionProperty $potentialAction)
+ * @method MapCategoryType setSameAs(Property\SameAsProperty $sameAs)
+ * @method MapCategoryType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method MapCategoryType setSupersededBy(Property\SupersededByProperty $supersededBy)
+ * @method MapCategoryType setUrl(Property\UrlProperty $url)
  */
-class MapCategoryType extends Enumeration {
+class MapCategoryType extends EnumerationType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

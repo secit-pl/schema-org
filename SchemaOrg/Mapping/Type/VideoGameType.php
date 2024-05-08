@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class VideoGameType.
+ * A video game is an electronic game that involves human interaction with a user interface to generate visual feedback on a video device.
  * 
+ * @method VideoGameType setAbout(Property\AboutProperty $about)
  * @method VideoGameType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method VideoGameType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method VideoGameType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -19,13 +20,16 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method VideoGameType setAggregateRating(Property\AggregateRatingProperty $aggregateRating)
  * @method VideoGameType setAlternateName(Property\AlternateNameProperty $alternateName)
  * @method VideoGameType setAlternativeHeadline(Property\AlternativeHeadlineProperty $alternativeHeadline)
+ * @method VideoGameType setApplicationCategory(Property\ApplicationCategoryProperty $applicationCategory)
+ * @method VideoGameType setApplicationSubCategory(Property\ApplicationSubCategoryProperty $applicationSubCategory)
+ * @method VideoGameType setApplicationSuite(Property\ApplicationSuiteProperty $applicationSuite)
  * @method VideoGameType setAssociatedMedia(Property\AssociatedMediaProperty $associatedMedia)
  * @method VideoGameType setAudience(Property\AudienceProperty $audience)
  * @method VideoGameType setAudio(Property\AudioProperty $audio)
  * @method VideoGameType setAuthor(Property\AuthorProperty $author)
+ * @method VideoGameType setAvailableOnDevice(Property\AvailableOnDeviceProperty $availableOnDevice)
  * @method VideoGameType setAward(Property\AwardProperty $award)
  * @method VideoGameType setCharacter(Property\CharacterProperty $character)
- * @method VideoGameType setCharacterAttribute(Property\CharacterAttributeProperty $characterAttribute)
  * @method VideoGameType setCitation(Property\CitationProperty $citation)
  * @method VideoGameType setComment(Property\CommentProperty $comment)
  * @method VideoGameType setCommentCount(Property\CommentCountProperty $commentCount)
@@ -34,6 +38,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method VideoGameType setContributor(Property\ContributorProperty $contributor)
  * @method VideoGameType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method VideoGameType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method VideoGameType setCountriesNotSupported(Property\CountriesNotSupportedProperty $countriesNotSupported)
+ * @method VideoGameType setCountriesSupported(Property\CountriesSupportedProperty $countriesSupported)
+ * @method VideoGameType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method VideoGameType setCreator(Property\CreatorProperty $creator)
  * @method VideoGameType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method VideoGameType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -41,22 +48,24 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method VideoGameType setDescription(Property\DescriptionProperty $description)
  * @method VideoGameType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
  * @method VideoGameType setDiscussionUrl(Property\DiscussionUrlProperty $discussionUrl)
+ * @method VideoGameType setDownloadUrl(Property\DownloadUrlProperty $downloadUrl)
  * @method VideoGameType setEditor(Property\EditorProperty $editor)
  * @method VideoGameType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method VideoGameType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method VideoGameType setEncoding(Property\EncodingProperty $encoding)
+ * @method VideoGameType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method VideoGameType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method VideoGameType setExpires(Property\ExpiresProperty $expires)
- * @method VideoGameType setFileFormat(Property\FileFormatProperty $fileFormat)
+ * @method VideoGameType setFeatureList(Property\FeatureListProperty $featureList)
+ * @method VideoGameType setFileSize(Property\FileSizeProperty $fileSize)
  * @method VideoGameType setFunder(Property\FunderProperty $funder)
- * @method VideoGameType setGameItem(Property\GameItemProperty $gameItem)
- * @method VideoGameType setGameLocation(Property\GameLocationProperty $gameLocation)
  * @method VideoGameType setGenre(Property\GenreProperty $genre)
  * @method VideoGameType setHasPart(Property\HasPartProperty $hasPart)
  * @method VideoGameType setHeadline(Property\HeadlineProperty $headline)
  * @method VideoGameType setIdentifier(Property\IdentifierProperty $identifier)
  * @method VideoGameType setImage(Property\ImageProperty $image)
  * @method VideoGameType setInLanguage(Property\InLanguageProperty $inLanguage)
+ * @method VideoGameType setInstallUrl(Property\InstallUrlProperty $installUrl)
  * @method VideoGameType setInteractionStatistic(Property\InteractionStatisticProperty $interactionStatistic)
  * @method VideoGameType setInteractivityType(Property\InteractivityTypeProperty $interactivityType)
  * @method VideoGameType setIsAccessibleForFree(Property\IsAccessibleForFreeProperty $isAccessibleForFree)
@@ -70,38 +79,54 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method VideoGameType setMainEntity(Property\MainEntityProperty $mainEntity)
  * @method VideoGameType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
  * @method VideoGameType setMaterial(Property\MaterialProperty $material)
+ * @method VideoGameType setMemoryRequirements(Property\MemoryRequirementsProperty $memoryRequirements)
  * @method VideoGameType setMentions(Property\MentionsProperty $mentions)
  * @method VideoGameType setName(Property\NameProperty $name)
- * @method VideoGameType setNumberOfPlayers(Property\NumberOfPlayersProperty $numberOfPlayers)
  * @method VideoGameType setOffers(Property\OffersProperty $offers)
+ * @method VideoGameType setOperatingSystem(Property\OperatingSystemProperty $operatingSystem)
+ * @method VideoGameType setPermissions(Property\PermissionsProperty $permissions)
  * @method VideoGameType setPosition(Property\PositionProperty $position)
  * @method VideoGameType setPotentialAction(Property\PotentialActionProperty $potentialAction)
+ * @method VideoGameType setProcessorRequirements(Property\ProcessorRequirementsProperty $processorRequirements)
  * @method VideoGameType setProducer(Property\ProducerProperty $producer)
- * @method VideoGameType setProvider(Property\ProviderProperty $provider)
  * @method VideoGameType setPublication(Property\PublicationProperty $publication)
  * @method VideoGameType setPublisher(Property\PublisherProperty $publisher)
+ * @method VideoGameType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method VideoGameType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
- * @method VideoGameType setQuest(Property\QuestProperty $quest)
  * @method VideoGameType setRecordedAt(Property\RecordedAtProperty $recordedAt)
+ * @method VideoGameType setReleaseNotes(Property\ReleaseNotesProperty $releaseNotes)
  * @method VideoGameType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
  * @method VideoGameType setReview(Property\ReviewProperty $review)
  * @method VideoGameType setSameAs(Property\SameAsProperty $sameAs)
  * @method VideoGameType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
+ * @method VideoGameType setScreenshot(Property\ScreenshotProperty $screenshot)
+ * @method VideoGameType setSoftwareAddOn(Property\SoftwareAddOnProperty $softwareAddOn)
+ * @method VideoGameType setSoftwareHelp(Property\SoftwareHelpProperty $softwareHelp)
+ * @method VideoGameType setSoftwareRequirements(Property\SoftwareRequirementsProperty $softwareRequirements)
+ * @method VideoGameType setSoftwareVersion(Property\SoftwareVersionProperty $softwareVersion)
  * @method VideoGameType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method VideoGameType setSpatial(Property\SpatialProperty $spatial)
  * @method VideoGameType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method VideoGameType setSponsor(Property\SponsorProperty $sponsor)
+ * @method VideoGameType setStorageRequirements(Property\StorageRequirementsProperty $storageRequirements)
+ * @method VideoGameType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method VideoGameType setSupportingData(Property\SupportingDataProperty $supportingData)
+ * @method VideoGameType setTemporal(Property\TemporalProperty $temporal)
  * @method VideoGameType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method VideoGameType setText(Property\TextProperty $text)
+ * @method VideoGameType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method VideoGameType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method VideoGameType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method VideoGameType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method VideoGameType setTranslator(Property\TranslatorProperty $translator)
  * @method VideoGameType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method VideoGameType setUrl(Property\UrlProperty $url)
  * @method VideoGameType setVersion(Property\VersionProperty $version)
  * @method VideoGameType setVideo(Property\VideoProperty $video)
  * @method VideoGameType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method VideoGameType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
-class VideoGameType extends GameType {
+class VideoGameType extends SoftwareApplicationType {
 
 	/**
 	 * @var Property\ActorProperty
@@ -117,6 +142,11 @@ class VideoGameType extends GameType {
 	 * @var Property\DirectorProperty
 	 */
 	private $director;
+
+	/**
+	 * @var Property\GameEditionProperty
+	 */
+	private $gameEdition;
 
 	/**
 	 * @var Property\GamePlatformProperty
@@ -150,7 +180,7 @@ class VideoGameType extends GameType {
 
 	/**
 	 * Get actor.
-	 * 
+	 *
 	 * @return Property\ActorProperty
 	 */
 	public function getActor() {
@@ -159,7 +189,7 @@ class VideoGameType extends GameType {
 
 	/**
 	 * Get cheat code.
-	 * 
+	 *
 	 * @return Property\CheatCodeProperty
 	 */
 	public function getCheatCode() {
@@ -168,7 +198,7 @@ class VideoGameType extends GameType {
 
 	/**
 	 * Get director.
-	 * 
+	 *
 	 * @return Property\DirectorProperty
 	 */
 	public function getDirector() {
@@ -176,8 +206,17 @@ class VideoGameType extends GameType {
 	}
 
 	/**
+	 * Get game edition.
+	 *
+	 * @return Property\GameEditionProperty
+	 */
+	public function getGameEdition() {
+		return $this->gameEdition;
+	}
+
+	/**
 	 * Get game platform.
-	 * 
+	 *
 	 * @return Property\GamePlatformProperty
 	 */
 	public function getGamePlatform() {
@@ -186,7 +225,7 @@ class VideoGameType extends GameType {
 
 	/**
 	 * Get game server.
-	 * 
+	 *
 	 * @return Property\GameServerProperty
 	 */
 	public function getGameServer() {
@@ -195,7 +234,7 @@ class VideoGameType extends GameType {
 
 	/**
 	 * Get game tip.
-	 * 
+	 *
 	 * @return Property\GameTipProperty
 	 */
 	public function getGameTip() {
@@ -204,7 +243,7 @@ class VideoGameType extends GameType {
 
 	/**
 	 * Get music by.
-	 * 
+	 *
 	 * @return Property\MusicByProperty
 	 */
 	public function getMusicBy() {
@@ -213,7 +252,7 @@ class VideoGameType extends GameType {
 
 	/**
 	 * Get play mode.
-	 * 
+	 *
 	 * @return Property\PlayModeProperty
 	 */
 	public function getPlayMode() {
@@ -222,7 +261,7 @@ class VideoGameType extends GameType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -231,7 +270,7 @@ class VideoGameType extends GameType {
 
 	/**
 	 * Get trailer.
-	 * 
+	 *
 	 * @return Property\TrailerProperty
 	 */
 	public function getTrailer() {
@@ -240,7 +279,7 @@ class VideoGameType extends GameType {
 
 	/**
 	 * Set actor.
-	 * 
+	 *
 	 * @param Property\ActorProperty $actor
 	 * @return VideoGameType
 	 */
@@ -252,7 +291,7 @@ class VideoGameType extends GameType {
 
 	/**
 	 * Set cheat code.
-	 * 
+	 *
 	 * @param Property\CheatCodeProperty $cheatCode
 	 * @return VideoGameType
 	 */
@@ -264,7 +303,7 @@ class VideoGameType extends GameType {
 
 	/**
 	 * Set director.
-	 * 
+	 *
 	 * @param Property\DirectorProperty $director
 	 * @return VideoGameType
 	 */
@@ -275,8 +314,20 @@ class VideoGameType extends GameType {
 	}
 
 	/**
+	 * Set game edition.
+	 *
+	 * @param Property\GameEditionProperty $gameEdition
+	 * @return VideoGameType
+	 */
+	public function setGameEdition(Property\GameEditionProperty $gameEdition) {
+		$this->gameEdition = $gameEdition;
+
+		return $this;
+	}
+
+	/**
 	 * Set game platform.
-	 * 
+	 *
 	 * @param Property\GamePlatformProperty $gamePlatform
 	 * @return VideoGameType
 	 */
@@ -288,7 +339,7 @@ class VideoGameType extends GameType {
 
 	/**
 	 * Set game server.
-	 * 
+	 *
 	 * @param Property\GameServerProperty $gameServer
 	 * @return VideoGameType
 	 */
@@ -300,7 +351,7 @@ class VideoGameType extends GameType {
 
 	/**
 	 * Set game tip.
-	 * 
+	 *
 	 * @param Property\GameTipProperty $gameTip
 	 * @return VideoGameType
 	 */
@@ -312,7 +363,7 @@ class VideoGameType extends GameType {
 
 	/**
 	 * Set music by.
-	 * 
+	 *
 	 * @param Property\MusicByProperty $musicBy
 	 * @return VideoGameType
 	 */
@@ -324,7 +375,7 @@ class VideoGameType extends GameType {
 
 	/**
 	 * Set play mode.
-	 * 
+	 *
 	 * @param Property\PlayModeProperty $playMode
 	 * @return VideoGameType
 	 */
@@ -336,7 +387,7 @@ class VideoGameType extends GameType {
 
 	/**
 	 * Set trailer.
-	 * 
+	 *
 	 * @param Property\TrailerProperty $trailer
 	 * @return VideoGameType
 	 */

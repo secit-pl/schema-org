@@ -6,7 +6,7 @@ use SecIT\SchemaOrg\Mapping\DataType;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * LocationProperty class.
+ * The location of, for example, where an event is happening, where an organization is located, or where an action takes place.
  * 
  * @method LocationProperty setValue($value)
  */
@@ -14,7 +14,7 @@ class LocationProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -23,7 +23,7 @@ class LocationProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

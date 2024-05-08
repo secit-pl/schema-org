@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * LearningResourceTypeProperty class.
+ * The predominant type or kind characterizing the learning resource. For example, 'presentation', 'handout'.
  * 
  * @method LearningResourceTypeProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class LearningResourceTypeProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class LearningResourceTypeProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

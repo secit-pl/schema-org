@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class OrderPickupAvailableType.
+ * OrderStatus representing availability of an order for pickup.
  * 
  * @method OrderPickupAvailableType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method OrderPickupAvailableType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method OrderPickupAvailableType setName(Property\NameProperty $name)
  * @method OrderPickupAvailableType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method OrderPickupAvailableType setSameAs(Property\SameAsProperty $sameAs)
+ * @method OrderPickupAvailableType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method OrderPickupAvailableType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method OrderPickupAvailableType setUrl(Property\UrlProperty $url)
  */
 class OrderPickupAvailableType extends OrderStatusType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

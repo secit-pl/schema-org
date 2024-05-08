@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class GeoShapeType.
+ * The geographic shape of a place. A GeoShape can be described using several properties whose values are based on latitude/longitude pairs. Either whitespace or commas can be used to separate latitude and longitude; whitespace should be used when writing a list of several such points.
  * 
  * @method GeoShapeType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method GeoShapeType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,6 +17,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method GeoShapeType setName(Property\NameProperty $name)
  * @method GeoShapeType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method GeoShapeType setSameAs(Property\SameAsProperty $sameAs)
+ * @method GeoShapeType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method GeoShapeType setUrl(Property\UrlProperty $url)
  */
 class GeoShapeType extends StructuredValueType {
@@ -63,7 +64,7 @@ class GeoShapeType extends StructuredValueType {
 
 	/**
 	 * Get address.
-	 * 
+	 *
 	 * @return Property\AddressProperty
 	 */
 	public function getAddress() {
@@ -72,7 +73,7 @@ class GeoShapeType extends StructuredValueType {
 
 	/**
 	 * Get address country.
-	 * 
+	 *
 	 * @return Property\AddressCountryProperty
 	 */
 	public function getAddressCountry() {
@@ -81,7 +82,7 @@ class GeoShapeType extends StructuredValueType {
 
 	/**
 	 * Get box.
-	 * 
+	 *
 	 * @return Property\BoxProperty
 	 */
 	public function getBox() {
@@ -90,7 +91,7 @@ class GeoShapeType extends StructuredValueType {
 
 	/**
 	 * Get circle.
-	 * 
+	 *
 	 * @return Property\CircleProperty
 	 */
 	public function getCircle() {
@@ -99,7 +100,7 @@ class GeoShapeType extends StructuredValueType {
 
 	/**
 	 * Get elevation.
-	 * 
+	 *
 	 * @return Property\ElevationProperty
 	 */
 	public function getElevation() {
@@ -108,7 +109,7 @@ class GeoShapeType extends StructuredValueType {
 
 	/**
 	 * Get line.
-	 * 
+	 *
 	 * @return Property\LineProperty
 	 */
 	public function getLine() {
@@ -117,7 +118,7 @@ class GeoShapeType extends StructuredValueType {
 
 	/**
 	 * Get polygon.
-	 * 
+	 *
 	 * @return Property\PolygonProperty
 	 */
 	public function getPolygon() {
@@ -126,7 +127,7 @@ class GeoShapeType extends StructuredValueType {
 
 	/**
 	 * Get postal code.
-	 * 
+	 *
 	 * @return Property\PostalCodeProperty
 	 */
 	public function getPostalCode() {
@@ -135,7 +136,7 @@ class GeoShapeType extends StructuredValueType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -144,7 +145,7 @@ class GeoShapeType extends StructuredValueType {
 
 	/**
 	 * Set address.
-	 * 
+	 *
 	 * @param Property\AddressProperty $address
 	 * @return GeoShapeType
 	 */
@@ -156,7 +157,7 @@ class GeoShapeType extends StructuredValueType {
 
 	/**
 	 * Set address country.
-	 * 
+	 *
 	 * @param Property\AddressCountryProperty $addressCountry
 	 * @return GeoShapeType
 	 */
@@ -168,7 +169,7 @@ class GeoShapeType extends StructuredValueType {
 
 	/**
 	 * Set box.
-	 * 
+	 *
 	 * @param Property\BoxProperty $box
 	 * @return GeoShapeType
 	 */
@@ -180,7 +181,7 @@ class GeoShapeType extends StructuredValueType {
 
 	/**
 	 * Set circle.
-	 * 
+	 *
 	 * @param Property\CircleProperty $circle
 	 * @return GeoShapeType
 	 */
@@ -192,7 +193,7 @@ class GeoShapeType extends StructuredValueType {
 
 	/**
 	 * Set elevation.
-	 * 
+	 *
 	 * @param Property\ElevationProperty $elevation
 	 * @return GeoShapeType
 	 */
@@ -204,7 +205,7 @@ class GeoShapeType extends StructuredValueType {
 
 	/**
 	 * Set line.
-	 * 
+	 *
 	 * @param Property\LineProperty $line
 	 * @return GeoShapeType
 	 */
@@ -216,7 +217,7 @@ class GeoShapeType extends StructuredValueType {
 
 	/**
 	 * Set polygon.
-	 * 
+	 *
 	 * @param Property\PolygonProperty $polygon
 	 * @return GeoShapeType
 	 */
@@ -228,7 +229,7 @@ class GeoShapeType extends StructuredValueType {
 
 	/**
 	 * Set postal code.
-	 * 
+	 *
 	 * @param Property\PostalCodeProperty $postalCode
 	 * @return GeoShapeType
 	 */

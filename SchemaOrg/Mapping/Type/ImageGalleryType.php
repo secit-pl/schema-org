@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ImageGalleryType.
+ * Web page type: Image gallery page.
  * 
+ * @method ImageGalleryType setAbout(Property\AboutProperty $about)
  * @method ImageGalleryType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method ImageGalleryType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method ImageGalleryType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -34,6 +35,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ImageGalleryType setContributor(Property\ContributorProperty $contributor)
  * @method ImageGalleryType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method ImageGalleryType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method ImageGalleryType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method ImageGalleryType setCreator(Property\CreatorProperty $creator)
  * @method ImageGalleryType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method ImageGalleryType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -45,9 +47,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ImageGalleryType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method ImageGalleryType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method ImageGalleryType setEncoding(Property\EncodingProperty $encoding)
+ * @method ImageGalleryType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method ImageGalleryType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method ImageGalleryType setExpires(Property\ExpiresProperty $expires)
- * @method ImageGalleryType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method ImageGalleryType setFunder(Property\FunderProperty $funder)
  * @method ImageGalleryType setGenre(Property\GenreProperty $genre)
  * @method ImageGalleryType setHasPart(Property\HasPartProperty $hasPart)
@@ -77,9 +79,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ImageGalleryType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method ImageGalleryType setPrimaryImageOfPage(Property\PrimaryImageOfPageProperty $primaryImageOfPage)
  * @method ImageGalleryType setProducer(Property\ProducerProperty $producer)
- * @method ImageGalleryType setProvider(Property\ProviderProperty $provider)
  * @method ImageGalleryType setPublication(Property\PublicationProperty $publication)
  * @method ImageGalleryType setPublisher(Property\PublisherProperty $publisher)
+ * @method ImageGalleryType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method ImageGalleryType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method ImageGalleryType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method ImageGalleryType setRelatedLink(Property\RelatedLinkProperty $relatedLink)
@@ -90,25 +92,32 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ImageGalleryType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method ImageGalleryType setSignificantLink(Property\SignificantLinkProperty $significantLink)
  * @method ImageGalleryType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method ImageGalleryType setSpatial(Property\SpatialProperty $spatial)
  * @method ImageGalleryType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
+ * @method ImageGalleryType setSpeakable(Property\SpeakableProperty $speakable)
  * @method ImageGalleryType setSpecialty(Property\SpecialtyProperty $specialty)
  * @method ImageGalleryType setSponsor(Property\SponsorProperty $sponsor)
+ * @method ImageGalleryType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method ImageGalleryType setTemporal(Property\TemporalProperty $temporal)
  * @method ImageGalleryType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method ImageGalleryType setText(Property\TextProperty $text)
+ * @method ImageGalleryType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method ImageGalleryType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method ImageGalleryType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method ImageGalleryType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method ImageGalleryType setTranslator(Property\TranslatorProperty $translator)
  * @method ImageGalleryType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method ImageGalleryType setUrl(Property\UrlProperty $url)
  * @method ImageGalleryType setVersion(Property\VersionProperty $version)
  * @method ImageGalleryType setVideo(Property\VideoProperty $video)
  * @method ImageGalleryType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method ImageGalleryType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
-class ImageGalleryType extends CollectionPageType {
+class ImageGalleryType extends MediaGalleryType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

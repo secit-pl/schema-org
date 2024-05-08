@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class OnlineType.
+ * Game server status: Online. Server is available.
  * 
  * @method OnlineType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method OnlineType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method OnlineType setName(Property\NameProperty $name)
  * @method OnlineType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method OnlineType setSameAs(Property\SameAsProperty $sameAs)
+ * @method OnlineType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method OnlineType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method OnlineType setUrl(Property\UrlProperty $url)
  */
 class OnlineType extends GameServerStatusType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

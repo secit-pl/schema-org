@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class RentActionType.
+ * The act of giving money in return for temporary use, but not ownership, of an object such as a vehicle or property. For example, an agent rents a property from a landlord in exchange for a periodic payment.
  * 
  * @method RentActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method RentActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -25,10 +25,12 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method RentActionType setParticipant(Property\ParticipantProperty $participant)
  * @method RentActionType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method RentActionType setPrice(Property\PriceProperty $price)
+ * @method RentActionType setPriceCurrency(Property\PriceCurrencyProperty $priceCurrency)
  * @method RentActionType setPriceSpecification(Property\PriceSpecificationProperty $priceSpecification)
  * @method RentActionType setResult(Property\ResultProperty $result)
  * @method RentActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method RentActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method RentActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method RentActionType setTarget(Property\TargetProperty $target)
  * @method RentActionType setUrl(Property\UrlProperty $url)
  */
@@ -46,7 +48,7 @@ class RentActionType extends TradeActionType {
 
 	/**
 	 * Get landlord.
-	 * 
+	 *
 	 * @return Property\LandlordProperty
 	 */
 	public function getLandlord() {
@@ -55,7 +57,7 @@ class RentActionType extends TradeActionType {
 
 	/**
 	 * Get real estate agent.
-	 * 
+	 *
 	 * @return Property\RealEstateAgentProperty
 	 */
 	public function getRealEstateAgent() {
@@ -64,7 +66,7 @@ class RentActionType extends TradeActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -73,7 +75,7 @@ class RentActionType extends TradeActionType {
 
 	/**
 	 * Set landlord.
-	 * 
+	 *
 	 * @param Property\LandlordProperty $landlord
 	 * @return RentActionType
 	 */
@@ -85,7 +87,7 @@ class RentActionType extends TradeActionType {
 
 	/**
 	 * Set real estate agent.
-	 * 
+	 *
 	 * @param Property\RealEstateAgentProperty $realEstateAgent
 	 * @return RentActionType
 	 */

@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * BillingPeriodProperty class.
+ * The time interval used to compute the invoice.
  * 
  * @method BillingPeriodProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class BillingPeriodProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class BillingPeriodProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

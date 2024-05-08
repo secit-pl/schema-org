@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * PermittedUsageProperty class.
+ * Indications regarding the permitted usage of the accommodation.
  * 
  * @method PermittedUsageProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class PermittedUsageProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class PermittedUsageProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

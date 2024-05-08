@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * TargetPlatformProperty class.
+ * Type of app development: phone, Metro style, desktop, XBox, etc.
  * 
  * @method TargetPlatformProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class TargetPlatformProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class TargetPlatformProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

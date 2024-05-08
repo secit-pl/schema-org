@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class InvoiceType.
+ * A statement of the money due for goods or services; a bill.
  * 
  * @method InvoiceType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method InvoiceType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,6 +17,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method InvoiceType setName(Property\NameProperty $name)
  * @method InvoiceType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method InvoiceType setSameAs(Property\SameAsProperty $sameAs)
+ * @method InvoiceType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method InvoiceType setUrl(Property\UrlProperty $url)
  */
 class InvoiceType extends IntangibleType {
@@ -77,11 +78,6 @@ class InvoiceType extends IntangibleType {
 	private $paymentStatus;
 
 	/**
-	 * @var Property\ProviderProperty
-	 */
-	private $provider;
-
-	/**
 	 * @var Property\ReferencesOrderProperty
 	 */
 	private $referencesOrder;
@@ -98,7 +94,7 @@ class InvoiceType extends IntangibleType {
 
 	/**
 	 * Get account id.
-	 * 
+	 *
 	 * @return Property\AccountIdProperty
 	 */
 	public function getAccountId() {
@@ -107,7 +103,7 @@ class InvoiceType extends IntangibleType {
 
 	/**
 	 * Get billing period.
-	 * 
+	 *
 	 * @return Property\BillingPeriodProperty
 	 */
 	public function getBillingPeriod() {
@@ -116,7 +112,7 @@ class InvoiceType extends IntangibleType {
 
 	/**
 	 * Get broker.
-	 * 
+	 *
 	 * @return Property\BrokerProperty
 	 */
 	public function getBroker() {
@@ -125,7 +121,7 @@ class InvoiceType extends IntangibleType {
 
 	/**
 	 * Get category.
-	 * 
+	 *
 	 * @return Property\CategoryProperty
 	 */
 	public function getCategory() {
@@ -134,7 +130,7 @@ class InvoiceType extends IntangibleType {
 
 	/**
 	 * Get confirmation number.
-	 * 
+	 *
 	 * @return Property\ConfirmationNumberProperty
 	 */
 	public function getConfirmationNumber() {
@@ -143,7 +139,7 @@ class InvoiceType extends IntangibleType {
 
 	/**
 	 * Get customer.
-	 * 
+	 *
 	 * @return Property\CustomerProperty
 	 */
 	public function getCustomer() {
@@ -152,7 +148,7 @@ class InvoiceType extends IntangibleType {
 
 	/**
 	 * Get minimum payment due.
-	 * 
+	 *
 	 * @return Property\MinimumPaymentDueProperty
 	 */
 	public function getMinimumPaymentDue() {
@@ -161,7 +157,7 @@ class InvoiceType extends IntangibleType {
 
 	/**
 	 * Get payment due date.
-	 * 
+	 *
 	 * @return Property\PaymentDueDateProperty
 	 */
 	public function getPaymentDueDate() {
@@ -170,7 +166,7 @@ class InvoiceType extends IntangibleType {
 
 	/**
 	 * Get payment method.
-	 * 
+	 *
 	 * @return Property\PaymentMethodProperty
 	 */
 	public function getPaymentMethod() {
@@ -179,7 +175,7 @@ class InvoiceType extends IntangibleType {
 
 	/**
 	 * Get payment method id.
-	 * 
+	 *
 	 * @return Property\PaymentMethodIdProperty
 	 */
 	public function getPaymentMethodId() {
@@ -188,7 +184,7 @@ class InvoiceType extends IntangibleType {
 
 	/**
 	 * Get payment status.
-	 * 
+	 *
 	 * @return Property\PaymentStatusProperty
 	 */
 	public function getPaymentStatus() {
@@ -196,17 +192,8 @@ class InvoiceType extends IntangibleType {
 	}
 
 	/**
-	 * Get provider.
-	 * 
-	 * @return Property\ProviderProperty
-	 */
-	public function getProvider() {
-		return $this->provider;
-	}
-
-	/**
 	 * Get references order.
-	 * 
+	 *
 	 * @return Property\ReferencesOrderProperty
 	 */
 	public function getReferencesOrder() {
@@ -215,7 +202,7 @@ class InvoiceType extends IntangibleType {
 
 	/**
 	 * Get scheduled payment date.
-	 * 
+	 *
 	 * @return Property\ScheduledPaymentDateProperty
 	 */
 	public function getScheduledPaymentDate() {
@@ -224,7 +211,7 @@ class InvoiceType extends IntangibleType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -233,7 +220,7 @@ class InvoiceType extends IntangibleType {
 
 	/**
 	 * Get total payment due.
-	 * 
+	 *
 	 * @return Property\TotalPaymentDueProperty
 	 */
 	public function getTotalPaymentDue() {
@@ -242,7 +229,7 @@ class InvoiceType extends IntangibleType {
 
 	/**
 	 * Set account id.
-	 * 
+	 *
 	 * @param Property\AccountIdProperty $accountId
 	 * @return InvoiceType
 	 */
@@ -254,7 +241,7 @@ class InvoiceType extends IntangibleType {
 
 	/**
 	 * Set billing period.
-	 * 
+	 *
 	 * @param Property\BillingPeriodProperty $billingPeriod
 	 * @return InvoiceType
 	 */
@@ -266,7 +253,7 @@ class InvoiceType extends IntangibleType {
 
 	/**
 	 * Set broker.
-	 * 
+	 *
 	 * @param Property\BrokerProperty $broker
 	 * @return InvoiceType
 	 */
@@ -278,7 +265,7 @@ class InvoiceType extends IntangibleType {
 
 	/**
 	 * Set category.
-	 * 
+	 *
 	 * @param Property\CategoryProperty $category
 	 * @return InvoiceType
 	 */
@@ -290,7 +277,7 @@ class InvoiceType extends IntangibleType {
 
 	/**
 	 * Set confirmation number.
-	 * 
+	 *
 	 * @param Property\ConfirmationNumberProperty $confirmationNumber
 	 * @return InvoiceType
 	 */
@@ -302,7 +289,7 @@ class InvoiceType extends IntangibleType {
 
 	/**
 	 * Set customer.
-	 * 
+	 *
 	 * @param Property\CustomerProperty $customer
 	 * @return InvoiceType
 	 */
@@ -314,7 +301,7 @@ class InvoiceType extends IntangibleType {
 
 	/**
 	 * Set minimum payment due.
-	 * 
+	 *
 	 * @param Property\MinimumPaymentDueProperty $minimumPaymentDue
 	 * @return InvoiceType
 	 */
@@ -326,7 +313,7 @@ class InvoiceType extends IntangibleType {
 
 	/**
 	 * Set payment due date.
-	 * 
+	 *
 	 * @param Property\PaymentDueDateProperty $paymentDueDate
 	 * @return InvoiceType
 	 */
@@ -338,7 +325,7 @@ class InvoiceType extends IntangibleType {
 
 	/**
 	 * Set payment method.
-	 * 
+	 *
 	 * @param Property\PaymentMethodProperty $paymentMethod
 	 * @return InvoiceType
 	 */
@@ -350,7 +337,7 @@ class InvoiceType extends IntangibleType {
 
 	/**
 	 * Set payment method id.
-	 * 
+	 *
 	 * @param Property\PaymentMethodIdProperty $paymentMethodId
 	 * @return InvoiceType
 	 */
@@ -362,7 +349,7 @@ class InvoiceType extends IntangibleType {
 
 	/**
 	 * Set payment status.
-	 * 
+	 *
 	 * @param Property\PaymentStatusProperty $paymentStatus
 	 * @return InvoiceType
 	 */
@@ -373,20 +360,8 @@ class InvoiceType extends IntangibleType {
 	}
 
 	/**
-	 * Set provider.
-	 * 
-	 * @param Property\ProviderProperty $provider
-	 * @return InvoiceType
-	 */
-	public function setProvider(Property\ProviderProperty $provider) {
-		$this->provider = $provider;
-
-		return $this;
-	}
-
-	/**
 	 * Set references order.
-	 * 
+	 *
 	 * @param Property\ReferencesOrderProperty $referencesOrder
 	 * @return InvoiceType
 	 */
@@ -398,7 +373,7 @@ class InvoiceType extends IntangibleType {
 
 	/**
 	 * Set scheduled payment date.
-	 * 
+	 *
 	 * @param Property\ScheduledPaymentDateProperty $scheduledPaymentDate
 	 * @return InvoiceType
 	 */
@@ -410,7 +385,7 @@ class InvoiceType extends IntangibleType {
 
 	/**
 	 * Set total payment due.
-	 * 
+	 *
 	 * @param Property\TotalPaymentDueProperty $totalPaymentDue
 	 * @return InvoiceType
 	 */

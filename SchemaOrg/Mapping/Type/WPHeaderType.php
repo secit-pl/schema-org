@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class WPHeaderType.
+ * The header section of the page.
  * 
+ * @method WPHeaderType setAbout(Property\AboutProperty $about)
  * @method WPHeaderType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method WPHeaderType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method WPHeaderType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -33,7 +34,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method WPHeaderType setContributor(Property\ContributorProperty $contributor)
  * @method WPHeaderType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method WPHeaderType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method WPHeaderType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method WPHeaderType setCreator(Property\CreatorProperty $creator)
+ * @method WPHeaderType setCssSelector(Property\CssSelectorProperty $cssSelector)
  * @method WPHeaderType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method WPHeaderType setDateModified(Property\DateModifiedProperty $dateModified)
  * @method WPHeaderType setDatePublished(Property\DatePublishedProperty $datePublished)
@@ -44,9 +47,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method WPHeaderType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method WPHeaderType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method WPHeaderType setEncoding(Property\EncodingProperty $encoding)
+ * @method WPHeaderType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method WPHeaderType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method WPHeaderType setExpires(Property\ExpiresProperty $expires)
- * @method WPHeaderType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method WPHeaderType setFunder(Property\FunderProperty $funder)
  * @method WPHeaderType setGenre(Property\GenreProperty $genre)
  * @method WPHeaderType setHasPart(Property\HasPartProperty $hasPart)
@@ -73,9 +76,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method WPHeaderType setPosition(Property\PositionProperty $position)
  * @method WPHeaderType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method WPHeaderType setProducer(Property\ProducerProperty $producer)
- * @method WPHeaderType setProvider(Property\ProviderProperty $provider)
  * @method WPHeaderType setPublication(Property\PublicationProperty $publication)
  * @method WPHeaderType setPublisher(Property\PublisherProperty $publisher)
+ * @method WPHeaderType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method WPHeaderType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method WPHeaderType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method WPHeaderType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -83,24 +86,31 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method WPHeaderType setSameAs(Property\SameAsProperty $sameAs)
  * @method WPHeaderType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method WPHeaderType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method WPHeaderType setSpatial(Property\SpatialProperty $spatial)
  * @method WPHeaderType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method WPHeaderType setSponsor(Property\SponsorProperty $sponsor)
+ * @method WPHeaderType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method WPHeaderType setTemporal(Property\TemporalProperty $temporal)
  * @method WPHeaderType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method WPHeaderType setText(Property\TextProperty $text)
+ * @method WPHeaderType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method WPHeaderType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method WPHeaderType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method WPHeaderType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method WPHeaderType setTranslator(Property\TranslatorProperty $translator)
  * @method WPHeaderType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method WPHeaderType setUrl(Property\UrlProperty $url)
  * @method WPHeaderType setVersion(Property\VersionProperty $version)
  * @method WPHeaderType setVideo(Property\VideoProperty $video)
  * @method WPHeaderType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method WPHeaderType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
+ * @method WPHeaderType setXpath(Property\XpathProperty $xpath)
  */
 class WPHeaderType extends WebPageElementType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

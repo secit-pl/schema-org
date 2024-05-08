@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class LiteraryEventType.
+ * Event type: Literary event.
  * 
+ * @method LiteraryEventType setAbout(Property\AboutProperty $about)
  * @method LiteraryEventType setActor(Property\ActorProperty $actor)
  * @method LiteraryEventType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method LiteraryEventType setAggregateRating(Property\AggregateRatingProperty $aggregateRating)
@@ -19,6 +20,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method LiteraryEventType setDirector(Property\DirectorProperty $director)
  * @method LiteraryEventType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
  * @method LiteraryEventType setDoorTime(Property\DoorTimeProperty $doorTime)
+ * @method LiteraryEventType setDuration(Property\DurationProperty $duration)
  * @method LiteraryEventType setEndDate(Property\EndDateProperty $endDate)
  * @method LiteraryEventType setEventStatus(Property\EventStatusProperty $eventStatus)
  * @method LiteraryEventType setFunder(Property\FunderProperty $funder)
@@ -26,6 +28,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method LiteraryEventType setImage(Property\ImageProperty $image)
  * @method LiteraryEventType setInLanguage(Property\InLanguageProperty $inLanguage)
  * @method LiteraryEventType setIsAccessibleForFree(Property\IsAccessibleForFreeProperty $isAccessibleForFree)
+ * @method LiteraryEventType setKeywords(Property\KeywordsProperty $keywords)
  * @method LiteraryEventType setLocation(Property\LocationProperty $location)
  * @method LiteraryEventType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
  * @method LiteraryEventType setMaximumAttendeeCapacity(Property\MaximumAttendeeCapacityProperty $maximumAttendeeCapacity)
@@ -42,6 +45,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method LiteraryEventType setSponsor(Property\SponsorProperty $sponsor)
  * @method LiteraryEventType setStartDate(Property\StartDateProperty $startDate)
  * @method LiteraryEventType setSubEvent(Property\SubEventProperty $subEvent)
+ * @method LiteraryEventType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method LiteraryEventType setSuperEvent(Property\SuperEventProperty $superEvent)
  * @method LiteraryEventType setTranslator(Property\TranslatorProperty $translator)
  * @method LiteraryEventType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
@@ -53,7 +57,7 @@ class LiteraryEventType extends EventType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

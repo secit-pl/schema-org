@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class RightHandDrivingType.
+ * The steering position is on the right side of the vehicle (viewed from the main direction of driving).
  * 
  * @method RightHandDrivingType setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method RightHandDrivingType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -24,6 +24,8 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method RightHandDrivingType setNonEqual(Property\NonEqualProperty $nonEqual)
  * @method RightHandDrivingType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method RightHandDrivingType setSameAs(Property\SameAsProperty $sameAs)
+ * @method RightHandDrivingType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method RightHandDrivingType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method RightHandDrivingType setUrl(Property\UrlProperty $url)
  * @method RightHandDrivingType setValueReference(Property\ValueReferenceProperty $valueReference)
  */
@@ -31,7 +33,7 @@ class RightHandDrivingType extends SteeringPositionValueType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

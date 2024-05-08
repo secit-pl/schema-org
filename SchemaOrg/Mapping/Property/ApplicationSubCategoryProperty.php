@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * ApplicationSubCategoryProperty class.
+ * Subcategory of the application, e.g. 'Arcade Game'.
  * 
  * @method ApplicationSubCategoryProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class ApplicationSubCategoryProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class ApplicationSubCategoryProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

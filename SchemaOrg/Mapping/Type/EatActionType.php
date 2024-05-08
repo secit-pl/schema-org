@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class EatActionType.
+ * The act of swallowing solid objects.
  * 
+ * @method EatActionType setActionAccessibilityRequirement(Property\ActionAccessibilityRequirementProperty $actionAccessibilityRequirement)
  * @method EatActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method EatActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method EatActionType setAgent(Property\AgentProperty $agent)
@@ -28,6 +29,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method EatActionType setResult(Property\ResultProperty $result)
  * @method EatActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method EatActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method EatActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method EatActionType setTarget(Property\TargetProperty $target)
  * @method EatActionType setUrl(Property\UrlProperty $url)
  */
@@ -35,7 +37,7 @@ class EatActionType extends ConsumeActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

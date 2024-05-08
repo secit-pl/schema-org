@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * PriceComponentProperty class.
+ * This property links to all UnitPriceSpecification nodes that apply in parallel for the CompoundPriceSpecification node.
  * 
  * @method PriceComponentProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class PriceComponentProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class PriceComponentProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

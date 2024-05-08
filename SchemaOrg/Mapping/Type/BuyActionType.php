@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class BuyActionType.
+ * The act of giving money to a seller in exchange for goods or services rendered. An agent buys an object, product, or service from a seller for a price. Reciprocal of SellAction.
  * 
  * @method BuyActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method BuyActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -25,10 +25,12 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method BuyActionType setParticipant(Property\ParticipantProperty $participant)
  * @method BuyActionType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method BuyActionType setPrice(Property\PriceProperty $price)
+ * @method BuyActionType setPriceCurrency(Property\PriceCurrencyProperty $priceCurrency)
  * @method BuyActionType setPriceSpecification(Property\PriceSpecificationProperty $priceSpecification)
  * @method BuyActionType setResult(Property\ResultProperty $result)
  * @method BuyActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method BuyActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method BuyActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method BuyActionType setTarget(Property\TargetProperty $target)
  * @method BuyActionType setUrl(Property\UrlProperty $url)
  */
@@ -41,7 +43,7 @@ class BuyActionType extends TradeActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -50,7 +52,7 @@ class BuyActionType extends TradeActionType {
 
 	/**
 	 * Get seller.
-	 * 
+	 *
 	 * @return Property\SellerProperty
 	 */
 	public function getSeller() {
@@ -59,7 +61,7 @@ class BuyActionType extends TradeActionType {
 
 	/**
 	 * Set seller.
-	 * 
+	 *
 	 * @param Property\SellerProperty $seller
 	 * @return BuyActionType
 	 */

@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class CurrencyConversionServiceType.
+ * A service to convert funds from one currency to another currency.
  * 
  * @method CurrencyConversionServiceType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method CurrencyConversionServiceType setAggregateRating(Property\AggregateRatingProperty $aggregateRating)
@@ -21,6 +21,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method CurrencyConversionServiceType setDescription(Property\DescriptionProperty $description)
  * @method CurrencyConversionServiceType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
  * @method CurrencyConversionServiceType setFeesAndCommissionsSpecification(Property\FeesAndCommissionsSpecificationProperty $feesAndCommissionsSpecification)
+ * @method CurrencyConversionServiceType setHasCertification(Property\HasCertificationProperty $hasCertification)
  * @method CurrencyConversionServiceType setHasOfferCatalog(Property\HasOfferCatalogProperty $hasOfferCatalog)
  * @method CurrencyConversionServiceType setHoursAvailable(Property\HoursAvailableProperty $hoursAvailable)
  * @method CurrencyConversionServiceType setIdentifier(Property\IdentifierProperty $identifier)
@@ -33,19 +34,20 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method CurrencyConversionServiceType setName(Property\NameProperty $name)
  * @method CurrencyConversionServiceType setOffers(Property\OffersProperty $offers)
  * @method CurrencyConversionServiceType setPotentialAction(Property\PotentialActionProperty $potentialAction)
- * @method CurrencyConversionServiceType setProvider(Property\ProviderProperty $provider)
  * @method CurrencyConversionServiceType setProviderMobility(Property\ProviderMobilityProperty $providerMobility)
  * @method CurrencyConversionServiceType setReview(Property\ReviewProperty $review)
  * @method CurrencyConversionServiceType setSameAs(Property\SameAsProperty $sameAs)
  * @method CurrencyConversionServiceType setServiceOutput(Property\ServiceOutputProperty $serviceOutput)
  * @method CurrencyConversionServiceType setServiceType(Property\ServiceTypeProperty $serviceType)
+ * @method CurrencyConversionServiceType setSlogan(Property\SloganProperty $slogan)
+ * @method CurrencyConversionServiceType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method CurrencyConversionServiceType setUrl(Property\UrlProperty $url)
  */
 class CurrencyConversionServiceType extends FinancialProductType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

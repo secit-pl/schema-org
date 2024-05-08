@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class DanceGroupType.
+ * A dance group—for example, the Alvin Ailey Dance Theater or Riverdance.
  * 
  * @method DanceGroupType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method DanceGroupType setAddress(Property\AddressProperty $address)
@@ -30,11 +30,14 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method DanceGroupType setFoundingLocation(Property\FoundingLocationProperty $foundingLocation)
  * @method DanceGroupType setFunder(Property\FunderProperty $funder)
  * @method DanceGroupType setGlobalLocationNumber(Property\GlobalLocationNumberProperty $globalLocationNumber)
+ * @method DanceGroupType setHasCertification(Property\HasCertificationProperty $hasCertification)
  * @method DanceGroupType setHasOfferCatalog(Property\HasOfferCatalogProperty $hasOfferCatalog)
  * @method DanceGroupType setHasPOS(Property\HasPOSProperty $hasPOS)
  * @method DanceGroupType setIdentifier(Property\IdentifierProperty $identifier)
  * @method DanceGroupType setImage(Property\ImageProperty $image)
+ * @method DanceGroupType setInteractionStatistic(Property\InteractionStatisticProperty $interactionStatistic)
  * @method DanceGroupType setIsicV4(Property\IsicV4Property $isicV4)
+ * @method DanceGroupType setKeywords(Property\KeywordsProperty $keywords)
  * @method DanceGroupType setLegalName(Property\LegalNameProperty $legalName)
  * @method DanceGroupType setLeiCode(Property\LeiCodeProperty $leiCode)
  * @method DanceGroupType setLocation(Property\LocationProperty $location)
@@ -53,18 +56,20 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method DanceGroupType setReview(Property\ReviewProperty $review)
  * @method DanceGroupType setSameAs(Property\SameAsProperty $sameAs)
  * @method DanceGroupType setSeeks(Property\SeeksProperty $seeks)
+ * @method DanceGroupType setSlogan(Property\SloganProperty $slogan)
  * @method DanceGroupType setSponsor(Property\SponsorProperty $sponsor)
  * @method DanceGroupType setSubOrganization(Property\SubOrganizationProperty $subOrganization)
+ * @method DanceGroupType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method DanceGroupType setTaxID(Property\TaxIDProperty $taxID)
  * @method DanceGroupType setTelephone(Property\TelephoneProperty $telephone)
  * @method DanceGroupType setUrl(Property\UrlProperty $url)
  * @method DanceGroupType setVatID(Property\VatIDProperty $vatID)
  */
-class DanceGroupType extends OrganizationType {
+class DanceGroupType extends PerformingGroupType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

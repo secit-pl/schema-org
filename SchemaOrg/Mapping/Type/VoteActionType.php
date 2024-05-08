@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class VoteActionType.
+ * The act of expressing a preference from a fixed/finite/structured set of choices/options.
  * 
  * @method VoteActionType setActionOption(Property\ActionOptionProperty $actionOption)
  * @method VoteActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
@@ -28,6 +28,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method VoteActionType setResult(Property\ResultProperty $result)
  * @method VoteActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method VoteActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method VoteActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method VoteActionType setTarget(Property\TargetProperty $target)
  * @method VoteActionType setUrl(Property\UrlProperty $url)
  */
@@ -40,7 +41,7 @@ class VoteActionType extends ChooseActionType {
 
 	/**
 	 * Get candidate.
-	 * 
+	 *
 	 * @return Property\CandidateProperty
 	 */
 	public function getCandidate() {
@@ -49,7 +50,7 @@ class VoteActionType extends ChooseActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -58,7 +59,7 @@ class VoteActionType extends ChooseActionType {
 
 	/**
 	 * Set candidate.
-	 * 
+	 *
 	 * @param Property\CandidateProperty $candidate
 	 * @return VoteActionType
 	 */

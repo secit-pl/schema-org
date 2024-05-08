@@ -6,7 +6,7 @@ use SecIT\SchemaOrg\Mapping\DataType;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * NumberOfDoorsProperty class.
+ * The number of doors. Typical unit code(s): C62.
  * 
  * @method NumberOfDoorsProperty setValue($value)
  */
@@ -14,7 +14,7 @@ class NumberOfDoorsProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -23,7 +23,7 @@ class NumberOfDoorsProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

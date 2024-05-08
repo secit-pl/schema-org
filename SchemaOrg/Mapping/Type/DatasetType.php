@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class DatasetType.
+ * A body of structured information describing some topic(s) of interest.
  * 
+ * @method DatasetType setAbout(Property\AboutProperty $about)
  * @method DatasetType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method DatasetType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method DatasetType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -33,6 +34,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method DatasetType setContributor(Property\ContributorProperty $contributor)
  * @method DatasetType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method DatasetType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method DatasetType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method DatasetType setCreator(Property\CreatorProperty $creator)
  * @method DatasetType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method DatasetType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -44,9 +46,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method DatasetType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method DatasetType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method DatasetType setEncoding(Property\EncodingProperty $encoding)
+ * @method DatasetType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method DatasetType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method DatasetType setExpires(Property\ExpiresProperty $expires)
- * @method DatasetType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method DatasetType setFunder(Property\FunderProperty $funder)
  * @method DatasetType setGenre(Property\GenreProperty $genre)
  * @method DatasetType setHasPart(Property\HasPartProperty $hasPart)
@@ -73,9 +75,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method DatasetType setPosition(Property\PositionProperty $position)
  * @method DatasetType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method DatasetType setProducer(Property\ProducerProperty $producer)
- * @method DatasetType setProvider(Property\ProviderProperty $provider)
  * @method DatasetType setPublication(Property\PublicationProperty $publication)
  * @method DatasetType setPublisher(Property\PublisherProperty $publisher)
+ * @method DatasetType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method DatasetType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method DatasetType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method DatasetType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -83,18 +85,24 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method DatasetType setSameAs(Property\SameAsProperty $sameAs)
  * @method DatasetType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method DatasetType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method DatasetType setSpatial(Property\SpatialProperty $spatial)
  * @method DatasetType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method DatasetType setSponsor(Property\SponsorProperty $sponsor)
+ * @method DatasetType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method DatasetType setTemporal(Property\TemporalProperty $temporal)
  * @method DatasetType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method DatasetType setText(Property\TextProperty $text)
+ * @method DatasetType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method DatasetType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method DatasetType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method DatasetType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method DatasetType setTranslator(Property\TranslatorProperty $translator)
  * @method DatasetType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method DatasetType setUrl(Property\UrlProperty $url)
  * @method DatasetType setVersion(Property\VersionProperty $version)
  * @method DatasetType setVideo(Property\VideoProperty $video)
  * @method DatasetType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method DatasetType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class DatasetType extends CreativeWorkType {
 
@@ -115,7 +123,7 @@ class DatasetType extends CreativeWorkType {
 
 	/**
 	 * Get distribution.
-	 * 
+	 *
 	 * @return Property\DistributionProperty
 	 */
 	public function getDistribution() {
@@ -124,7 +132,7 @@ class DatasetType extends CreativeWorkType {
 
 	/**
 	 * Get included in data catalog.
-	 * 
+	 *
 	 * @return Property\IncludedInDataCatalogProperty
 	 */
 	public function getIncludedInDataCatalog() {
@@ -133,7 +141,7 @@ class DatasetType extends CreativeWorkType {
 
 	/**
 	 * Get issn.
-	 * 
+	 *
 	 * @return Property\IssnProperty
 	 */
 	public function getIssn() {
@@ -142,7 +150,7 @@ class DatasetType extends CreativeWorkType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -151,7 +159,7 @@ class DatasetType extends CreativeWorkType {
 
 	/**
 	 * Set distribution.
-	 * 
+	 *
 	 * @param Property\DistributionProperty $distribution
 	 * @return DatasetType
 	 */
@@ -163,7 +171,7 @@ class DatasetType extends CreativeWorkType {
 
 	/**
 	 * Set included in data catalog.
-	 * 
+	 *
 	 * @param Property\IncludedInDataCatalogProperty $includedInDataCatalog
 	 * @return DatasetType
 	 */
@@ -175,7 +183,7 @@ class DatasetType extends CreativeWorkType {
 
 	/**
 	 * Set issn.
-	 * 
+	 *
 	 * @param Property\IssnProperty $issn
 	 * @return DatasetType
 	 */

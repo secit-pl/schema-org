@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class SpecialtyType.
+ * Any branch of a field in which people typically develop specific expertise, usually after significant study, time, and effort.
  * 
  * @method SpecialtyType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method SpecialtyType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SpecialtyType setName(Property\NameProperty $name)
  * @method SpecialtyType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method SpecialtyType setSameAs(Property\SameAsProperty $sameAs)
+ * @method SpecialtyType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method SpecialtyType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method SpecialtyType setUrl(Property\UrlProperty $url)
  */
 class SpecialtyType extends EnumerationType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

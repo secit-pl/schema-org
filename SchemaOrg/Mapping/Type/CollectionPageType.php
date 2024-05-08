@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class CollectionPageType.
+ * Web page type: Collection page.
  * 
+ * @method CollectionPageType setAbout(Property\AboutProperty $about)
  * @method CollectionPageType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method CollectionPageType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method CollectionPageType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -34,6 +35,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method CollectionPageType setContributor(Property\ContributorProperty $contributor)
  * @method CollectionPageType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method CollectionPageType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method CollectionPageType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method CollectionPageType setCreator(Property\CreatorProperty $creator)
  * @method CollectionPageType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method CollectionPageType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -45,9 +47,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method CollectionPageType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method CollectionPageType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method CollectionPageType setEncoding(Property\EncodingProperty $encoding)
+ * @method CollectionPageType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method CollectionPageType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method CollectionPageType setExpires(Property\ExpiresProperty $expires)
- * @method CollectionPageType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method CollectionPageType setFunder(Property\FunderProperty $funder)
  * @method CollectionPageType setGenre(Property\GenreProperty $genre)
  * @method CollectionPageType setHasPart(Property\HasPartProperty $hasPart)
@@ -77,9 +79,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method CollectionPageType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method CollectionPageType setPrimaryImageOfPage(Property\PrimaryImageOfPageProperty $primaryImageOfPage)
  * @method CollectionPageType setProducer(Property\ProducerProperty $producer)
- * @method CollectionPageType setProvider(Property\ProviderProperty $provider)
  * @method CollectionPageType setPublication(Property\PublicationProperty $publication)
  * @method CollectionPageType setPublisher(Property\PublisherProperty $publisher)
+ * @method CollectionPageType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method CollectionPageType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method CollectionPageType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method CollectionPageType setRelatedLink(Property\RelatedLinkProperty $relatedLink)
@@ -90,25 +92,32 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method CollectionPageType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method CollectionPageType setSignificantLink(Property\SignificantLinkProperty $significantLink)
  * @method CollectionPageType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method CollectionPageType setSpatial(Property\SpatialProperty $spatial)
  * @method CollectionPageType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
+ * @method CollectionPageType setSpeakable(Property\SpeakableProperty $speakable)
  * @method CollectionPageType setSpecialty(Property\SpecialtyProperty $specialty)
  * @method CollectionPageType setSponsor(Property\SponsorProperty $sponsor)
+ * @method CollectionPageType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method CollectionPageType setTemporal(Property\TemporalProperty $temporal)
  * @method CollectionPageType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method CollectionPageType setText(Property\TextProperty $text)
+ * @method CollectionPageType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method CollectionPageType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method CollectionPageType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method CollectionPageType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method CollectionPageType setTranslator(Property\TranslatorProperty $translator)
  * @method CollectionPageType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method CollectionPageType setUrl(Property\UrlProperty $url)
  * @method CollectionPageType setVersion(Property\VersionProperty $version)
  * @method CollectionPageType setVideo(Property\VideoProperty $video)
  * @method CollectionPageType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method CollectionPageType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class CollectionPageType extends WebPageType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

@@ -6,7 +6,7 @@ use SecIT\SchemaOrg\Mapping\DataType;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * RecipeYieldProperty class.
+ * The quantity produced by the recipe (for example, number of people served, number of servings, etc).
  * 
  * @method RecipeYieldProperty setValue($value)
  */
@@ -14,7 +14,7 @@ class RecipeYieldProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -23,7 +23,7 @@ class RecipeYieldProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

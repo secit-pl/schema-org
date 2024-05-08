@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class SoundtrackAlbumType.
+ * SoundtrackAlbum.
  * 
  * @method SoundtrackAlbumType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method SoundtrackAlbumType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SoundtrackAlbumType setName(Property\NameProperty $name)
  * @method SoundtrackAlbumType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method SoundtrackAlbumType setSameAs(Property\SameAsProperty $sameAs)
+ * @method SoundtrackAlbumType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method SoundtrackAlbumType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method SoundtrackAlbumType setUrl(Property\UrlProperty $url)
  */
 class SoundtrackAlbumType extends MusicAlbumProductionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

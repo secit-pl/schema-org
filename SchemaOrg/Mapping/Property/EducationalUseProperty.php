@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * EducationalUseProperty class.
+ * The purpose of a work in the context of education; for example, 'assignment', 'group work'.
  * 
  * @method EducationalUseProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class EducationalUseProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class EducationalUseProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

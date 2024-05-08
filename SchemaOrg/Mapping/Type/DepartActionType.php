@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class DepartActionType.
+ * The act of departing from a place. An agent departs from a fromLocation for a destination, optionally with participants.
  * 
  * @method DepartActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method DepartActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -28,6 +28,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method DepartActionType setResult(Property\ResultProperty $result)
  * @method DepartActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method DepartActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method DepartActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method DepartActionType setTarget(Property\TargetProperty $target)
  * @method DepartActionType setToLocation(Property\ToLocationProperty $toLocation)
  * @method DepartActionType setUrl(Property\UrlProperty $url)
@@ -36,7 +37,7 @@ class DepartActionType extends MoveActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

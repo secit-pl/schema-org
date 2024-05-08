@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class TicketType.
+ * Used to describe a ticket to an event, a flight, a bus ride, etc.
  * 
  * @method TicketType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method TicketType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,6 +17,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method TicketType setName(Property\NameProperty $name)
  * @method TicketType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method TicketType setSameAs(Property\SameAsProperty $sameAs)
+ * @method TicketType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method TicketType setUrl(Property\UrlProperty $url)
  */
 class TicketType extends IntangibleType {
@@ -63,7 +64,7 @@ class TicketType extends IntangibleType {
 
 	/**
 	 * Get date issued.
-	 * 
+	 *
 	 * @return Property\DateIssuedProperty
 	 */
 	public function getDateIssued() {
@@ -72,7 +73,7 @@ class TicketType extends IntangibleType {
 
 	/**
 	 * Get issued by.
-	 * 
+	 *
 	 * @return Property\IssuedByProperty
 	 */
 	public function getIssuedBy() {
@@ -81,7 +82,7 @@ class TicketType extends IntangibleType {
 
 	/**
 	 * Get price currency.
-	 * 
+	 *
 	 * @return Property\PriceCurrencyProperty
 	 */
 	public function getPriceCurrency() {
@@ -90,7 +91,7 @@ class TicketType extends IntangibleType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -99,7 +100,7 @@ class TicketType extends IntangibleType {
 
 	/**
 	 * Get ticketed seat.
-	 * 
+	 *
 	 * @return Property\TicketedSeatProperty
 	 */
 	public function getTicketedSeat() {
@@ -108,7 +109,7 @@ class TicketType extends IntangibleType {
 
 	/**
 	 * Get ticket number.
-	 * 
+	 *
 	 * @return Property\TicketNumberProperty
 	 */
 	public function getTicketNumber() {
@@ -117,7 +118,7 @@ class TicketType extends IntangibleType {
 
 	/**
 	 * Get ticket token.
-	 * 
+	 *
 	 * @return Property\TicketTokenProperty
 	 */
 	public function getTicketToken() {
@@ -126,7 +127,7 @@ class TicketType extends IntangibleType {
 
 	/**
 	 * Get total price.
-	 * 
+	 *
 	 * @return Property\TotalPriceProperty
 	 */
 	public function getTotalPrice() {
@@ -135,7 +136,7 @@ class TicketType extends IntangibleType {
 
 	/**
 	 * Get under name.
-	 * 
+	 *
 	 * @return Property\UnderNameProperty
 	 */
 	public function getUnderName() {
@@ -144,7 +145,7 @@ class TicketType extends IntangibleType {
 
 	/**
 	 * Set date issued.
-	 * 
+	 *
 	 * @param Property\DateIssuedProperty $dateIssued
 	 * @return TicketType
 	 */
@@ -156,7 +157,7 @@ class TicketType extends IntangibleType {
 
 	/**
 	 * Set issued by.
-	 * 
+	 *
 	 * @param Property\IssuedByProperty $issuedBy
 	 * @return TicketType
 	 */
@@ -168,7 +169,7 @@ class TicketType extends IntangibleType {
 
 	/**
 	 * Set price currency.
-	 * 
+	 *
 	 * @param Property\PriceCurrencyProperty $priceCurrency
 	 * @return TicketType
 	 */
@@ -180,7 +181,7 @@ class TicketType extends IntangibleType {
 
 	/**
 	 * Set ticketed seat.
-	 * 
+	 *
 	 * @param Property\TicketedSeatProperty $ticketedSeat
 	 * @return TicketType
 	 */
@@ -192,7 +193,7 @@ class TicketType extends IntangibleType {
 
 	/**
 	 * Set ticket number.
-	 * 
+	 *
 	 * @param Property\TicketNumberProperty $ticketNumber
 	 * @return TicketType
 	 */
@@ -204,7 +205,7 @@ class TicketType extends IntangibleType {
 
 	/**
 	 * Set ticket token.
-	 * 
+	 *
 	 * @param Property\TicketTokenProperty $ticketToken
 	 * @return TicketType
 	 */
@@ -216,7 +217,7 @@ class TicketType extends IntangibleType {
 
 	/**
 	 * Set total price.
-	 * 
+	 *
 	 * @param Property\TotalPriceProperty $totalPrice
 	 * @return TicketType
 	 */
@@ -228,7 +229,7 @@ class TicketType extends IntangibleType {
 
 	/**
 	 * Set under name.
-	 * 
+	 *
 	 * @param Property\UnderNameProperty $underName
 	 * @return TicketType
 	 */

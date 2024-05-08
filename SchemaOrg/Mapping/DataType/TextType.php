@@ -3,7 +3,7 @@
 namespace SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * Class TextType.
+ * Data type: Text.
  * 
  * @method TextType setValue($value)
  */
@@ -11,7 +11,7 @@ class TextType extends DataType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

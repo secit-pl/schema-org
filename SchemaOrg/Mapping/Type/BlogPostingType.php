@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class BlogPostingType.
+ * A blog post.
  * 
+ * @method BlogPostingType setAbout(Property\AboutProperty $about)
  * @method BlogPostingType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method BlogPostingType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method BlogPostingType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -35,6 +36,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method BlogPostingType setContributor(Property\ContributorProperty $contributor)
  * @method BlogPostingType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method BlogPostingType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method BlogPostingType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method BlogPostingType setCreator(Property\CreatorProperty $creator)
  * @method BlogPostingType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method BlogPostingType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -46,9 +48,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method BlogPostingType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method BlogPostingType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method BlogPostingType setEncoding(Property\EncodingProperty $encoding)
+ * @method BlogPostingType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method BlogPostingType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method BlogPostingType setExpires(Property\ExpiresProperty $expires)
- * @method BlogPostingType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method BlogPostingType setFunder(Property\FunderProperty $funder)
  * @method BlogPostingType setGenre(Property\GenreProperty $genre)
  * @method BlogPostingType setHasPart(Property\HasPartProperty $hasPart)
@@ -78,9 +80,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method BlogPostingType setPosition(Property\PositionProperty $position)
  * @method BlogPostingType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method BlogPostingType setProducer(Property\ProducerProperty $producer)
- * @method BlogPostingType setProvider(Property\ProviderProperty $provider)
  * @method BlogPostingType setPublication(Property\PublicationProperty $publication)
  * @method BlogPostingType setPublisher(Property\PublisherProperty $publisher)
+ * @method BlogPostingType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method BlogPostingType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method BlogPostingType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method BlogPostingType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -89,12 +91,18 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method BlogPostingType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method BlogPostingType setSharedContent(Property\SharedContentProperty $sharedContent)
  * @method BlogPostingType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method BlogPostingType setSpatial(Property\SpatialProperty $spatial)
  * @method BlogPostingType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
+ * @method BlogPostingType setSpeakable(Property\SpeakableProperty $speakable)
  * @method BlogPostingType setSponsor(Property\SponsorProperty $sponsor)
+ * @method BlogPostingType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method BlogPostingType setTemporal(Property\TemporalProperty $temporal)
  * @method BlogPostingType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method BlogPostingType setText(Property\TextProperty $text)
+ * @method BlogPostingType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method BlogPostingType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method BlogPostingType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method BlogPostingType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method BlogPostingType setTranslator(Property\TranslatorProperty $translator)
  * @method BlogPostingType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method BlogPostingType setUrl(Property\UrlProperty $url)
@@ -102,12 +110,13 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method BlogPostingType setVideo(Property\VideoProperty $video)
  * @method BlogPostingType setWordCount(Property\WordCountProperty $wordCount)
  * @method BlogPostingType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method BlogPostingType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class BlogPostingType extends SocialMediaPostingType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class SeatingMapType.
+ * A seating map.
  * 
  * @method SeatingMapType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method SeatingMapType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SeatingMapType setName(Property\NameProperty $name)
  * @method SeatingMapType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method SeatingMapType setSameAs(Property\SameAsProperty $sameAs)
+ * @method SeatingMapType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method SeatingMapType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method SeatingMapType setUrl(Property\UrlProperty $url)
  */
 class SeatingMapType extends MapCategoryType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

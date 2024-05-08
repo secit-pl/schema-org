@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ReturnActionType.
+ * The act of returning to the origin that which was previously received (concrete objects) or taken (ownership).
  * 
  * @method ReturnActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method ReturnActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -28,6 +28,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ReturnActionType setResult(Property\ResultProperty $result)
  * @method ReturnActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method ReturnActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method ReturnActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method ReturnActionType setTarget(Property\TargetProperty $target)
  * @method ReturnActionType setToLocation(Property\ToLocationProperty $toLocation)
  * @method ReturnActionType setUrl(Property\UrlProperty $url)
@@ -41,7 +42,7 @@ class ReturnActionType extends TransferActionType {
 
 	/**
 	 * Get recipient.
-	 * 
+	 *
 	 * @return Property\RecipientProperty
 	 */
 	public function getRecipient() {
@@ -50,7 +51,7 @@ class ReturnActionType extends TransferActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -59,7 +60,7 @@ class ReturnActionType extends TransferActionType {
 
 	/**
 	 * Set recipient.
-	 * 
+	 *
 	 * @param Property\RecipientProperty $recipient
 	 * @return ReturnActionType
 	 */

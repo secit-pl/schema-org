@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class WinActionType.
+ * The act of achieving victory in a competitive activity.
  * 
  * @method WinActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method WinActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method WinActionType setResult(Property\ResultProperty $result)
  * @method WinActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method WinActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method WinActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method WinActionType setTarget(Property\TargetProperty $target)
  * @method WinActionType setUrl(Property\UrlProperty $url)
  */
@@ -39,7 +40,7 @@ class WinActionType extends AchieveActionType {
 
 	/**
 	 * Get loser.
-	 * 
+	 *
 	 * @return Property\LoserProperty
 	 */
 	public function getLoser() {
@@ -48,7 +49,7 @@ class WinActionType extends AchieveActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -57,7 +58,7 @@ class WinActionType extends AchieveActionType {
 
 	/**
 	 * Set loser.
-	 * 
+	 *
 	 * @param Property\LoserProperty $loser
 	 * @return WinActionType
 	 */

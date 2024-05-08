@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class EmailMessageType.
+ * An email message.
  * 
+ * @method EmailMessageType setAbout(Property\AboutProperty $about)
  * @method EmailMessageType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method EmailMessageType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method EmailMessageType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -35,6 +36,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method EmailMessageType setContributor(Property\ContributorProperty $contributor)
  * @method EmailMessageType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method EmailMessageType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method EmailMessageType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method EmailMessageType setCreator(Property\CreatorProperty $creator)
  * @method EmailMessageType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method EmailMessageType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -49,9 +51,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method EmailMessageType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method EmailMessageType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method EmailMessageType setEncoding(Property\EncodingProperty $encoding)
+ * @method EmailMessageType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method EmailMessageType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method EmailMessageType setExpires(Property\ExpiresProperty $expires)
- * @method EmailMessageType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method EmailMessageType setFunder(Property\FunderProperty $funder)
  * @method EmailMessageType setGenre(Property\GenreProperty $genre)
  * @method EmailMessageType setHasPart(Property\HasPartProperty $hasPart)
@@ -79,9 +81,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method EmailMessageType setPosition(Property\PositionProperty $position)
  * @method EmailMessageType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method EmailMessageType setProducer(Property\ProducerProperty $producer)
- * @method EmailMessageType setProvider(Property\ProviderProperty $provider)
  * @method EmailMessageType setPublication(Property\PublicationProperty $publication)
  * @method EmailMessageType setPublisher(Property\PublisherProperty $publisher)
+ * @method EmailMessageType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method EmailMessageType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method EmailMessageType setRecipient(Property\RecipientProperty $recipient)
  * @method EmailMessageType setRecordedAt(Property\RecordedAtProperty $recordedAt)
@@ -91,25 +93,31 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method EmailMessageType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method EmailMessageType setSender(Property\SenderProperty $sender)
  * @method EmailMessageType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method EmailMessageType setSpatial(Property\SpatialProperty $spatial)
  * @method EmailMessageType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method EmailMessageType setSponsor(Property\SponsorProperty $sponsor)
+ * @method EmailMessageType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method EmailMessageType setTemporal(Property\TemporalProperty $temporal)
  * @method EmailMessageType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method EmailMessageType setText(Property\TextProperty $text)
+ * @method EmailMessageType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method EmailMessageType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method EmailMessageType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
  * @method EmailMessageType setToRecipient(Property\ToRecipientProperty $toRecipient)
+ * @method EmailMessageType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method EmailMessageType setTranslator(Property\TranslatorProperty $translator)
  * @method EmailMessageType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method EmailMessageType setUrl(Property\UrlProperty $url)
  * @method EmailMessageType setVersion(Property\VersionProperty $version)
  * @method EmailMessageType setVideo(Property\VideoProperty $video)
  * @method EmailMessageType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method EmailMessageType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class EmailMessageType extends MessageType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

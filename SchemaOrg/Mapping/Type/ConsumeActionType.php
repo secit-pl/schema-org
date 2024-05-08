@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ConsumeActionType.
+ * The act of ingesting information/resources/food.
  * 
  * @method ConsumeActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method ConsumeActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,10 +27,16 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ConsumeActionType setResult(Property\ResultProperty $result)
  * @method ConsumeActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method ConsumeActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method ConsumeActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method ConsumeActionType setTarget(Property\TargetProperty $target)
  * @method ConsumeActionType setUrl(Property\UrlProperty $url)
  */
 class ConsumeActionType extends ActionType {
+
+	/**
+	 * @var Property\ActionAccessibilityRequirementProperty
+	 */
+	private $actionAccessibilityRequirement;
 
 	/**
 	 * @var Property\ExpectsAcceptanceOfProperty
@@ -38,8 +44,17 @@ class ConsumeActionType extends ActionType {
 	private $expectsAcceptanceOf;
 
 	/**
+	 * Get action accessibility requirement.
+	 *
+	 * @return Property\ActionAccessibilityRequirementProperty
+	 */
+	public function getActionAccessibilityRequirement() {
+		return $this->actionAccessibilityRequirement;
+	}
+
+	/**
 	 * Get expects acceptance of.
-	 * 
+	 *
 	 * @return Property\ExpectsAcceptanceOfProperty
 	 */
 	public function getExpectsAcceptanceOf() {
@@ -48,7 +63,7 @@ class ConsumeActionType extends ActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -56,8 +71,20 @@ class ConsumeActionType extends ActionType {
 	}
 
 	/**
+	 * Set action accessibility requirement.
+	 *
+	 * @param Property\ActionAccessibilityRequirementProperty $actionAccessibilityRequirement
+	 * @return ConsumeActionType
+	 */
+	public function setActionAccessibilityRequirement(Property\ActionAccessibilityRequirementProperty $actionAccessibilityRequirement) {
+		$this->actionAccessibilityRequirement = $actionAccessibilityRequirement;
+
+		return $this;
+	}
+
+	/**
 	 * Set expects acceptance of.
-	 * 
+	 *
 	 * @param Property\ExpectsAcceptanceOfProperty $expectsAcceptanceOf
 	 * @return ConsumeActionType
 	 */

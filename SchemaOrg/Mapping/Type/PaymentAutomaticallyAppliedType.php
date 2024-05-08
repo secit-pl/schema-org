@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class PaymentAutomaticallyAppliedType.
+ * An automatic payment system is in place and will be used.
  * 
  * @method PaymentAutomaticallyAppliedType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method PaymentAutomaticallyAppliedType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method PaymentAutomaticallyAppliedType setName(Property\NameProperty $name)
  * @method PaymentAutomaticallyAppliedType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method PaymentAutomaticallyAppliedType setSameAs(Property\SameAsProperty $sameAs)
+ * @method PaymentAutomaticallyAppliedType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method PaymentAutomaticallyAppliedType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method PaymentAutomaticallyAppliedType setUrl(Property\UrlProperty $url)
  */
 class PaymentAutomaticallyAppliedType extends PaymentStatusType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

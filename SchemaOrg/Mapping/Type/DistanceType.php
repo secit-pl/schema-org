@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class DistanceType.
+ * Properties that take Distances as values are of the form ' '. E.g., '7 ft'.
  * 
  * @method DistanceType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method DistanceType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,14 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method DistanceType setName(Property\NameProperty $name)
  * @method DistanceType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method DistanceType setSameAs(Property\SameAsProperty $sameAs)
+ * @method DistanceType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method DistanceType setUrl(Property\UrlProperty $url)
  */
 class DistanceType extends QuantityType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

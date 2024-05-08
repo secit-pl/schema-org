@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class HowToType.
+ * Instructions that explain how to achieve a result by performing a sequence of steps.
  * 
+ * @method HowToType setAbout(Property\AboutProperty $about)
  * @method HowToType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method HowToType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method HowToType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -33,6 +34,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method HowToType setContributor(Property\ContributorProperty $contributor)
  * @method HowToType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method HowToType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method HowToType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method HowToType setCreator(Property\CreatorProperty $creator)
  * @method HowToType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method HowToType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -44,9 +46,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method HowToType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method HowToType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method HowToType setEncoding(Property\EncodingProperty $encoding)
+ * @method HowToType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method HowToType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method HowToType setExpires(Property\ExpiresProperty $expires)
- * @method HowToType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method HowToType setFunder(Property\FunderProperty $funder)
  * @method HowToType setGenre(Property\GenreProperty $genre)
  * @method HowToType setHasPart(Property\HasPartProperty $hasPart)
@@ -73,9 +75,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method HowToType setPosition(Property\PositionProperty $position)
  * @method HowToType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method HowToType setProducer(Property\ProducerProperty $producer)
- * @method HowToType setProvider(Property\ProviderProperty $provider)
  * @method HowToType setPublication(Property\PublicationProperty $publication)
  * @method HowToType setPublisher(Property\PublisherProperty $publisher)
+ * @method HowToType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method HowToType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method HowToType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method HowToType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -83,18 +85,24 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method HowToType setSameAs(Property\SameAsProperty $sameAs)
  * @method HowToType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method HowToType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method HowToType setSpatial(Property\SpatialProperty $spatial)
  * @method HowToType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method HowToType setSponsor(Property\SponsorProperty $sponsor)
+ * @method HowToType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method HowToType setTemporal(Property\TemporalProperty $temporal)
  * @method HowToType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method HowToType setText(Property\TextProperty $text)
+ * @method HowToType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method HowToType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method HowToType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method HowToType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method HowToType setTranslator(Property\TranslatorProperty $translator)
  * @method HowToType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method HowToType setUrl(Property\UrlProperty $url)
  * @method HowToType setVersion(Property\VersionProperty $version)
  * @method HowToType setVideo(Property\VideoProperty $video)
  * @method HowToType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method HowToType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class HowToType extends CreativeWorkType {
 
@@ -140,7 +148,7 @@ class HowToType extends CreativeWorkType {
 
 	/**
 	 * Get estimated cost.
-	 * 
+	 *
 	 * @return Property\EstimatedCostProperty
 	 */
 	public function getEstimatedCost() {
@@ -149,7 +157,7 @@ class HowToType extends CreativeWorkType {
 
 	/**
 	 * Get perform time.
-	 * 
+	 *
 	 * @return Property\PerformTimeProperty
 	 */
 	public function getPerformTime() {
@@ -158,7 +166,7 @@ class HowToType extends CreativeWorkType {
 
 	/**
 	 * Get prep time.
-	 * 
+	 *
 	 * @return Property\PrepTimeProperty
 	 */
 	public function getPrepTime() {
@@ -167,7 +175,7 @@ class HowToType extends CreativeWorkType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -176,7 +184,7 @@ class HowToType extends CreativeWorkType {
 
 	/**
 	 * Get step.
-	 * 
+	 *
 	 * @return Property\StepProperty
 	 */
 	public function getStep() {
@@ -185,7 +193,7 @@ class HowToType extends CreativeWorkType {
 
 	/**
 	 * Get supply.
-	 * 
+	 *
 	 * @return Property\SupplyProperty
 	 */
 	public function getSupply() {
@@ -194,7 +202,7 @@ class HowToType extends CreativeWorkType {
 
 	/**
 	 * Get tool.
-	 * 
+	 *
 	 * @return Property\ToolProperty
 	 */
 	public function getTool() {
@@ -203,7 +211,7 @@ class HowToType extends CreativeWorkType {
 
 	/**
 	 * Get total time.
-	 * 
+	 *
 	 * @return Property\TotalTimeProperty
 	 */
 	public function getTotalTime() {
@@ -212,7 +220,7 @@ class HowToType extends CreativeWorkType {
 
 	/**
 	 * Get yield.
-	 * 
+	 *
 	 * @return Property\YieldProperty
 	 */
 	public function getYield() {
@@ -221,7 +229,7 @@ class HowToType extends CreativeWorkType {
 
 	/**
 	 * Set estimated cost.
-	 * 
+	 *
 	 * @param Property\EstimatedCostProperty $estimatedCost
 	 * @return HowToType
 	 */
@@ -233,7 +241,7 @@ class HowToType extends CreativeWorkType {
 
 	/**
 	 * Set perform time.
-	 * 
+	 *
 	 * @param Property\PerformTimeProperty $performTime
 	 * @return HowToType
 	 */
@@ -245,7 +253,7 @@ class HowToType extends CreativeWorkType {
 
 	/**
 	 * Set prep time.
-	 * 
+	 *
 	 * @param Property\PrepTimeProperty $prepTime
 	 * @return HowToType
 	 */
@@ -257,7 +265,7 @@ class HowToType extends CreativeWorkType {
 
 	/**
 	 * Set step.
-	 * 
+	 *
 	 * @param Property\StepProperty $step
 	 * @return HowToType
 	 */
@@ -269,7 +277,7 @@ class HowToType extends CreativeWorkType {
 
 	/**
 	 * Set supply.
-	 * 
+	 *
 	 * @param Property\SupplyProperty $supply
 	 * @return HowToType
 	 */
@@ -281,7 +289,7 @@ class HowToType extends CreativeWorkType {
 
 	/**
 	 * Set tool.
-	 * 
+	 *
 	 * @param Property\ToolProperty $tool
 	 * @return HowToType
 	 */
@@ -293,7 +301,7 @@ class HowToType extends CreativeWorkType {
 
 	/**
 	 * Set total time.
-	 * 
+	 *
 	 * @param Property\TotalTimeProperty $totalTime
 	 * @return HowToType
 	 */
@@ -305,7 +313,7 @@ class HowToType extends CreativeWorkType {
 
 	/**
 	 * Set yield.
-	 * 
+	 *
 	 * @param Property\YieldProperty $yield
 	 * @return HowToType
 	 */

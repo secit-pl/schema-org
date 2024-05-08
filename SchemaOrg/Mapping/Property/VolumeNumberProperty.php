@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * VolumeNumberProperty class.
+ * Identifies the volume of publication or multi-part work; for example, "iii" or "2".
  * 
  * @method VolumeNumberProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class VolumeNumberProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class VolumeNumberProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

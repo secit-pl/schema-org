@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ImageObjectType.
+ * An image file.
  * 
+ * @method ImageObjectType setAbout(Property\AboutProperty $about)
  * @method ImageObjectType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method ImageObjectType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method ImageObjectType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -37,6 +38,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ImageObjectType setContributor(Property\ContributorProperty $contributor)
  * @method ImageObjectType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method ImageObjectType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method ImageObjectType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method ImageObjectType setCreator(Property\CreatorProperty $creator)
  * @method ImageObjectType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method ImageObjectType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -44,6 +46,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ImageObjectType setDescription(Property\DescriptionProperty $description)
  * @method ImageObjectType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
  * @method ImageObjectType setDiscussionUrl(Property\DiscussionUrlProperty $discussionUrl)
+ * @method ImageObjectType setDuration(Property\DurationProperty $duration)
  * @method ImageObjectType setEditor(Property\EditorProperty $editor)
  * @method ImageObjectType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method ImageObjectType setEducationalUse(Property\EducationalUseProperty $educationalUse)
@@ -51,9 +54,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ImageObjectType setEncodesCreativeWork(Property\EncodesCreativeWorkProperty $encodesCreativeWork)
  * @method ImageObjectType setEncoding(Property\EncodingProperty $encoding)
  * @method ImageObjectType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
+ * @method ImageObjectType setEndTime(Property\EndTimeProperty $endTime)
  * @method ImageObjectType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method ImageObjectType setExpires(Property\ExpiresProperty $expires)
- * @method ImageObjectType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method ImageObjectType setFunder(Property\FunderProperty $funder)
  * @method ImageObjectType setGenre(Property\GenreProperty $genre)
  * @method ImageObjectType setHasPart(Property\HasPartProperty $hasPart)
@@ -83,9 +86,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ImageObjectType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method ImageObjectType setProducer(Property\ProducerProperty $producer)
  * @method ImageObjectType setProductionCompany(Property\ProductionCompanyProperty $productionCompany)
- * @method ImageObjectType setProvider(Property\ProviderProperty $provider)
  * @method ImageObjectType setPublication(Property\PublicationProperty $publication)
  * @method ImageObjectType setPublisher(Property\PublisherProperty $publisher)
+ * @method ImageObjectType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method ImageObjectType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method ImageObjectType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method ImageObjectType setRegionsAllowed(Property\RegionsAllowedProperty $regionsAllowed)
@@ -95,12 +98,18 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ImageObjectType setSameAs(Property\SameAsProperty $sameAs)
  * @method ImageObjectType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method ImageObjectType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method ImageObjectType setSpatial(Property\SpatialProperty $spatial)
  * @method ImageObjectType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method ImageObjectType setSponsor(Property\SponsorProperty $sponsor)
+ * @method ImageObjectType setStartTime(Property\StartTimeProperty $startTime)
+ * @method ImageObjectType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method ImageObjectType setTemporal(Property\TemporalProperty $temporal)
  * @method ImageObjectType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method ImageObjectType setText(Property\TextProperty $text)
+ * @method ImageObjectType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method ImageObjectType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method ImageObjectType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method ImageObjectType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method ImageObjectType setTranslator(Property\TranslatorProperty $translator)
  * @method ImageObjectType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method ImageObjectType setUploadDate(Property\UploadDateProperty $uploadDate)
@@ -109,6 +118,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ImageObjectType setVideo(Property\VideoProperty $video)
  * @method ImageObjectType setWidth(Property\WidthProperty $width)
  * @method ImageObjectType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method ImageObjectType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class ImageObjectType extends MediaObjectType {
 
@@ -128,13 +138,8 @@ class ImageObjectType extends MediaObjectType {
 	private $representativeOfPage;
 
 	/**
-	 * @var Property\ThumbnailProperty
-	 */
-	private $thumbnail;
-
-	/**
 	 * Get caption.
-	 * 
+	 *
 	 * @return Property\CaptionProperty
 	 */
 	public function getCaption() {
@@ -143,7 +148,7 @@ class ImageObjectType extends MediaObjectType {
 
 	/**
 	 * Get exif data.
-	 * 
+	 *
 	 * @return Property\ExifDataProperty
 	 */
 	public function getExifData() {
@@ -152,7 +157,7 @@ class ImageObjectType extends MediaObjectType {
 
 	/**
 	 * Get representative of page.
-	 * 
+	 *
 	 * @return Property\RepresentativeOfPageProperty
 	 */
 	public function getRepresentativeOfPage() {
@@ -161,7 +166,7 @@ class ImageObjectType extends MediaObjectType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -169,17 +174,8 @@ class ImageObjectType extends MediaObjectType {
 	}
 
 	/**
-	 * Get thumbnail.
-	 * 
-	 * @return Property\ThumbnailProperty
-	 */
-	public function getThumbnail() {
-		return $this->thumbnail;
-	}
-
-	/**
 	 * Set caption.
-	 * 
+	 *
 	 * @param Property\CaptionProperty $caption
 	 * @return ImageObjectType
 	 */
@@ -191,7 +187,7 @@ class ImageObjectType extends MediaObjectType {
 
 	/**
 	 * Set exif data.
-	 * 
+	 *
 	 * @param Property\ExifDataProperty $exifData
 	 * @return ImageObjectType
 	 */
@@ -203,24 +199,12 @@ class ImageObjectType extends MediaObjectType {
 
 	/**
 	 * Set representative of page.
-	 * 
+	 *
 	 * @param Property\RepresentativeOfPageProperty $representativeOfPage
 	 * @return ImageObjectType
 	 */
 	public function setRepresentativeOfPage(Property\RepresentativeOfPageProperty $representativeOfPage) {
 		$this->representativeOfPage = $representativeOfPage;
-
-		return $this;
-	}
-
-	/**
-	 * Set thumbnail.
-	 * 
-	 * @param Property\ThumbnailProperty $thumbnail
-	 * @return ImageObjectType
-	 */
-	public function setThumbnail(Property\ThumbnailProperty $thumbnail) {
-		$this->thumbnail = $thumbnail;
 
 		return $this;
 	}

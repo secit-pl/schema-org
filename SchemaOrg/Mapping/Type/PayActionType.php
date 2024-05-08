@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class PayActionType.
+ * An agent pays a price to a participant.
  * 
  * @method PayActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method PayActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -25,10 +25,12 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method PayActionType setParticipant(Property\ParticipantProperty $participant)
  * @method PayActionType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method PayActionType setPrice(Property\PriceProperty $price)
+ * @method PayActionType setPriceCurrency(Property\PriceCurrencyProperty $priceCurrency)
  * @method PayActionType setPriceSpecification(Property\PriceSpecificationProperty $priceSpecification)
  * @method PayActionType setResult(Property\ResultProperty $result)
  * @method PayActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method PayActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method PayActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method PayActionType setTarget(Property\TargetProperty $target)
  * @method PayActionType setUrl(Property\UrlProperty $url)
  */
@@ -41,7 +43,7 @@ class PayActionType extends TradeActionType {
 
 	/**
 	 * Get recipient.
-	 * 
+	 *
 	 * @return Property\RecipientProperty
 	 */
 	public function getRecipient() {
@@ -50,7 +52,7 @@ class PayActionType extends TradeActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -59,7 +61,7 @@ class PayActionType extends TradeActionType {
 
 	/**
 	 * Set recipient.
-	 * 
+	 *
 	 * @param Property\RecipientProperty $recipient
 	 * @return PayActionType
 	 */

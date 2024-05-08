@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class APIReferenceType.
+ * Reference documentation for application programming interfaces (APIs).
  * 
+ * @method APIReferenceType setAbout(Property\AboutProperty $about)
  * @method APIReferenceType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method APIReferenceType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method APIReferenceType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -35,6 +36,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method APIReferenceType setContributor(Property\ContributorProperty $contributor)
  * @method APIReferenceType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method APIReferenceType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method APIReferenceType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method APIReferenceType setCreator(Property\CreatorProperty $creator)
  * @method APIReferenceType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method APIReferenceType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -47,9 +49,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method APIReferenceType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method APIReferenceType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method APIReferenceType setEncoding(Property\EncodingProperty $encoding)
+ * @method APIReferenceType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method APIReferenceType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method APIReferenceType setExpires(Property\ExpiresProperty $expires)
- * @method APIReferenceType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method APIReferenceType setFunder(Property\FunderProperty $funder)
  * @method APIReferenceType setGenre(Property\GenreProperty $genre)
  * @method APIReferenceType setHasPart(Property\HasPartProperty $hasPart)
@@ -80,9 +82,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method APIReferenceType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method APIReferenceType setProducer(Property\ProducerProperty $producer)
  * @method APIReferenceType setProficiencyLevel(Property\ProficiencyLevelProperty $proficiencyLevel)
- * @method APIReferenceType setProvider(Property\ProviderProperty $provider)
  * @method APIReferenceType setPublication(Property\PublicationProperty $publication)
  * @method APIReferenceType setPublisher(Property\PublisherProperty $publisher)
+ * @method APIReferenceType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method APIReferenceType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method APIReferenceType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method APIReferenceType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -90,12 +92,18 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method APIReferenceType setSameAs(Property\SameAsProperty $sameAs)
  * @method APIReferenceType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method APIReferenceType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method APIReferenceType setSpatial(Property\SpatialProperty $spatial)
  * @method APIReferenceType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
+ * @method APIReferenceType setSpeakable(Property\SpeakableProperty $speakable)
  * @method APIReferenceType setSponsor(Property\SponsorProperty $sponsor)
+ * @method APIReferenceType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method APIReferenceType setTemporal(Property\TemporalProperty $temporal)
  * @method APIReferenceType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method APIReferenceType setText(Property\TextProperty $text)
+ * @method APIReferenceType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method APIReferenceType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method APIReferenceType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method APIReferenceType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method APIReferenceType setTranslator(Property\TranslatorProperty $translator)
  * @method APIReferenceType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method APIReferenceType setUrl(Property\UrlProperty $url)
@@ -103,6 +111,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method APIReferenceType setVideo(Property\VideoProperty $video)
  * @method APIReferenceType setWordCount(Property\WordCountProperty $wordCount)
  * @method APIReferenceType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method APIReferenceType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class APIReferenceType extends TechArticleType {
 
@@ -128,7 +137,7 @@ class APIReferenceType extends TechArticleType {
 
 	/**
 	 * Get assembly version.
-	 * 
+	 *
 	 * @return Property\AssemblyVersionProperty
 	 */
 	public function getAssemblyVersion() {
@@ -137,7 +146,7 @@ class APIReferenceType extends TechArticleType {
 
 	/**
 	 * Get executable library name.
-	 * 
+	 *
 	 * @return Property\ExecutableLibraryNameProperty
 	 */
 	public function getExecutableLibraryName() {
@@ -146,7 +155,7 @@ class APIReferenceType extends TechArticleType {
 
 	/**
 	 * Get programming model.
-	 * 
+	 *
 	 * @return Property\ProgrammingModelProperty
 	 */
 	public function getProgrammingModel() {
@@ -155,7 +164,7 @@ class APIReferenceType extends TechArticleType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -164,7 +173,7 @@ class APIReferenceType extends TechArticleType {
 
 	/**
 	 * Get target platform.
-	 * 
+	 *
 	 * @return Property\TargetPlatformProperty
 	 */
 	public function getTargetPlatform() {
@@ -173,7 +182,7 @@ class APIReferenceType extends TechArticleType {
 
 	/**
 	 * Set assembly version.
-	 * 
+	 *
 	 * @param Property\AssemblyVersionProperty $assemblyVersion
 	 * @return APIReferenceType
 	 */
@@ -185,7 +194,7 @@ class APIReferenceType extends TechArticleType {
 
 	/**
 	 * Set executable library name.
-	 * 
+	 *
 	 * @param Property\ExecutableLibraryNameProperty $executableLibraryName
 	 * @return APIReferenceType
 	 */
@@ -197,7 +206,7 @@ class APIReferenceType extends TechArticleType {
 
 	/**
 	 * Set programming model.
-	 * 
+	 *
 	 * @param Property\ProgrammingModelProperty $programmingModel
 	 * @return APIReferenceType
 	 */
@@ -209,7 +218,7 @@ class APIReferenceType extends TechArticleType {
 
 	/**
 	 * Set target platform.
-	 * 
+	 *
 	 * @param Property\TargetPlatformProperty $targetPlatform
 	 * @return APIReferenceType
 	 */

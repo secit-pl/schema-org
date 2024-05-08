@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class BroadcastEventType.
+ * An over the air or online broadcast event.
  * 
+ * @method BroadcastEventType setAbout(Property\AboutProperty $about)
  * @method BroadcastEventType setActor(Property\ActorProperty $actor)
  * @method BroadcastEventType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method BroadcastEventType setAggregateRating(Property\AggregateRatingProperty $aggregateRating)
@@ -19,6 +20,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method BroadcastEventType setDirector(Property\DirectorProperty $director)
  * @method BroadcastEventType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
  * @method BroadcastEventType setDoorTime(Property\DoorTimeProperty $doorTime)
+ * @method BroadcastEventType setDuration(Property\DurationProperty $duration)
  * @method BroadcastEventType setEndDate(Property\EndDateProperty $endDate)
  * @method BroadcastEventType setEventStatus(Property\EventStatusProperty $eventStatus)
  * @method BroadcastEventType setFunder(Property\FunderProperty $funder)
@@ -26,6 +28,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method BroadcastEventType setImage(Property\ImageProperty $image)
  * @method BroadcastEventType setInLanguage(Property\InLanguageProperty $inLanguage)
  * @method BroadcastEventType setIsAccessibleForFree(Property\IsAccessibleForFreeProperty $isAccessibleForFree)
+ * @method BroadcastEventType setKeywords(Property\KeywordsProperty $keywords)
  * @method BroadcastEventType setLocation(Property\LocationProperty $location)
  * @method BroadcastEventType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
  * @method BroadcastEventType setMaximumAttendeeCapacity(Property\MaximumAttendeeCapacityProperty $maximumAttendeeCapacity)
@@ -35,6 +38,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method BroadcastEventType setPerformer(Property\PerformerProperty $performer)
  * @method BroadcastEventType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method BroadcastEventType setPreviousStartDate(Property\PreviousStartDateProperty $previousStartDate)
+ * @method BroadcastEventType setPublishedBy(Property\PublishedByProperty $publishedBy)
  * @method BroadcastEventType setPublishedOn(Property\PublishedOnProperty $publishedOn)
  * @method BroadcastEventType setRecordedIn(Property\RecordedInProperty $recordedIn)
  * @method BroadcastEventType setRemainingAttendeeCapacity(Property\RemainingAttendeeCapacityProperty $remainingAttendeeCapacity)
@@ -43,6 +47,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method BroadcastEventType setSponsor(Property\SponsorProperty $sponsor)
  * @method BroadcastEventType setStartDate(Property\StartDateProperty $startDate)
  * @method BroadcastEventType setSubEvent(Property\SubEventProperty $subEvent)
+ * @method BroadcastEventType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method BroadcastEventType setSuperEvent(Property\SuperEventProperty $superEvent)
  * @method BroadcastEventType setTranslator(Property\TranslatorProperty $translator)
  * @method BroadcastEventType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
@@ -69,7 +74,7 @@ class BroadcastEventType extends PublicationEventType {
 
 	/**
 	 * Get broadcast of event.
-	 * 
+	 *
 	 * @return Property\BroadcastOfEventProperty
 	 */
 	public function getBroadcastOfEvent() {
@@ -78,7 +83,7 @@ class BroadcastEventType extends PublicationEventType {
 
 	/**
 	 * Get is live broadcast.
-	 * 
+	 *
 	 * @return Property\IsLiveBroadcastProperty
 	 */
 	public function getIsLiveBroadcast() {
@@ -87,7 +92,7 @@ class BroadcastEventType extends PublicationEventType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -96,7 +101,7 @@ class BroadcastEventType extends PublicationEventType {
 
 	/**
 	 * Get video format.
-	 * 
+	 *
 	 * @return Property\VideoFormatProperty
 	 */
 	public function getVideoFormat() {
@@ -105,7 +110,7 @@ class BroadcastEventType extends PublicationEventType {
 
 	/**
 	 * Set broadcast of event.
-	 * 
+	 *
 	 * @param Property\BroadcastOfEventProperty $broadcastOfEvent
 	 * @return BroadcastEventType
 	 */
@@ -117,7 +122,7 @@ class BroadcastEventType extends PublicationEventType {
 
 	/**
 	 * Set is live broadcast.
-	 * 
+	 *
 	 * @param Property\IsLiveBroadcastProperty $isLiveBroadcast
 	 * @return BroadcastEventType
 	 */
@@ -129,7 +134,7 @@ class BroadcastEventType extends PublicationEventType {
 
 	/**
 	 * Set video format.
-	 * 
+	 *
 	 * @param Property\VideoFormatProperty $videoFormat
 	 * @return BroadcastEventType
 	 */

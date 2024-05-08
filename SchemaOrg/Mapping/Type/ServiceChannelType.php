@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ServiceChannelType.
+ * A means for accessing a service, e.g. a government office location, web site, or phone number.
  * 
  * @method ServiceChannelType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method ServiceChannelType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,6 +17,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ServiceChannelType setName(Property\NameProperty $name)
  * @method ServiceChannelType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method ServiceChannelType setSameAs(Property\SameAsProperty $sameAs)
+ * @method ServiceChannelType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method ServiceChannelType setUrl(Property\UrlProperty $url)
  */
 class ServiceChannelType extends IntangibleType {
@@ -63,7 +64,7 @@ class ServiceChannelType extends IntangibleType {
 
 	/**
 	 * Get available language.
-	 * 
+	 *
 	 * @return Property\AvailableLanguageProperty
 	 */
 	public function getAvailableLanguage() {
@@ -72,7 +73,7 @@ class ServiceChannelType extends IntangibleType {
 
 	/**
 	 * Get processing time.
-	 * 
+	 *
 	 * @return Property\ProcessingTimeProperty
 	 */
 	public function getProcessingTime() {
@@ -81,7 +82,7 @@ class ServiceChannelType extends IntangibleType {
 
 	/**
 	 * Get provides service.
-	 * 
+	 *
 	 * @return Property\ProvidesServiceProperty
 	 */
 	public function getProvidesService() {
@@ -90,7 +91,7 @@ class ServiceChannelType extends IntangibleType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -99,7 +100,7 @@ class ServiceChannelType extends IntangibleType {
 
 	/**
 	 * Get service location.
-	 * 
+	 *
 	 * @return Property\ServiceLocationProperty
 	 */
 	public function getServiceLocation() {
@@ -108,7 +109,7 @@ class ServiceChannelType extends IntangibleType {
 
 	/**
 	 * Get service phone.
-	 * 
+	 *
 	 * @return Property\ServicePhoneProperty
 	 */
 	public function getServicePhone() {
@@ -117,7 +118,7 @@ class ServiceChannelType extends IntangibleType {
 
 	/**
 	 * Get service postal address.
-	 * 
+	 *
 	 * @return Property\ServicePostalAddressProperty
 	 */
 	public function getServicePostalAddress() {
@@ -126,7 +127,7 @@ class ServiceChannelType extends IntangibleType {
 
 	/**
 	 * Get service sms number.
-	 * 
+	 *
 	 * @return Property\ServiceSmsNumberProperty
 	 */
 	public function getServiceSmsNumber() {
@@ -135,7 +136,7 @@ class ServiceChannelType extends IntangibleType {
 
 	/**
 	 * Get service url.
-	 * 
+	 *
 	 * @return Property\ServiceUrlProperty
 	 */
 	public function getServiceUrl() {
@@ -144,7 +145,7 @@ class ServiceChannelType extends IntangibleType {
 
 	/**
 	 * Set available language.
-	 * 
+	 *
 	 * @param Property\AvailableLanguageProperty $availableLanguage
 	 * @return ServiceChannelType
 	 */
@@ -156,7 +157,7 @@ class ServiceChannelType extends IntangibleType {
 
 	/**
 	 * Set processing time.
-	 * 
+	 *
 	 * @param Property\ProcessingTimeProperty $processingTime
 	 * @return ServiceChannelType
 	 */
@@ -168,7 +169,7 @@ class ServiceChannelType extends IntangibleType {
 
 	/**
 	 * Set provides service.
-	 * 
+	 *
 	 * @param Property\ProvidesServiceProperty $providesService
 	 * @return ServiceChannelType
 	 */
@@ -180,7 +181,7 @@ class ServiceChannelType extends IntangibleType {
 
 	/**
 	 * Set service location.
-	 * 
+	 *
 	 * @param Property\ServiceLocationProperty $serviceLocation
 	 * @return ServiceChannelType
 	 */
@@ -192,7 +193,7 @@ class ServiceChannelType extends IntangibleType {
 
 	/**
 	 * Set service phone.
-	 * 
+	 *
 	 * @param Property\ServicePhoneProperty $servicePhone
 	 * @return ServiceChannelType
 	 */
@@ -204,7 +205,7 @@ class ServiceChannelType extends IntangibleType {
 
 	/**
 	 * Set service postal address.
-	 * 
+	 *
 	 * @param Property\ServicePostalAddressProperty $servicePostalAddress
 	 * @return ServiceChannelType
 	 */
@@ -216,7 +217,7 @@ class ServiceChannelType extends IntangibleType {
 
 	/**
 	 * Set service sms number.
-	 * 
+	 *
 	 * @param Property\ServiceSmsNumberProperty $serviceSmsNumber
 	 * @return ServiceChannelType
 	 */
@@ -228,7 +229,7 @@ class ServiceChannelType extends IntangibleType {
 
 	/**
 	 * Set service url.
-	 * 
+	 *
 	 * @param Property\ServiceUrlProperty $serviceUrl
 	 * @return ServiceChannelType
 	 */

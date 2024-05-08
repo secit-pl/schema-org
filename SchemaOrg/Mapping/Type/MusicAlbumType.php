@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class MusicAlbumType.
+ * A collection of music tracks.
  * 
+ * @method MusicAlbumType setAbout(Property\AboutProperty $about)
  * @method MusicAlbumType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method MusicAlbumType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method MusicAlbumType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -33,6 +34,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MusicAlbumType setContributor(Property\ContributorProperty $contributor)
  * @method MusicAlbumType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method MusicAlbumType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method MusicAlbumType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method MusicAlbumType setCreator(Property\CreatorProperty $creator)
  * @method MusicAlbumType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method MusicAlbumType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -44,9 +46,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MusicAlbumType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method MusicAlbumType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method MusicAlbumType setEncoding(Property\EncodingProperty $encoding)
+ * @method MusicAlbumType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method MusicAlbumType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method MusicAlbumType setExpires(Property\ExpiresProperty $expires)
- * @method MusicAlbumType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method MusicAlbumType setFunder(Property\FunderProperty $funder)
  * @method MusicAlbumType setGenre(Property\GenreProperty $genre)
  * @method MusicAlbumType setHasPart(Property\HasPartProperty $hasPart)
@@ -74,9 +76,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MusicAlbumType setPosition(Property\PositionProperty $position)
  * @method MusicAlbumType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method MusicAlbumType setProducer(Property\ProducerProperty $producer)
- * @method MusicAlbumType setProvider(Property\ProviderProperty $provider)
  * @method MusicAlbumType setPublication(Property\PublicationProperty $publication)
  * @method MusicAlbumType setPublisher(Property\PublisherProperty $publisher)
+ * @method MusicAlbumType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method MusicAlbumType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method MusicAlbumType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method MusicAlbumType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -84,19 +86,25 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MusicAlbumType setSameAs(Property\SameAsProperty $sameAs)
  * @method MusicAlbumType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method MusicAlbumType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method MusicAlbumType setSpatial(Property\SpatialProperty $spatial)
  * @method MusicAlbumType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method MusicAlbumType setSponsor(Property\SponsorProperty $sponsor)
+ * @method MusicAlbumType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method MusicAlbumType setTemporal(Property\TemporalProperty $temporal)
  * @method MusicAlbumType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method MusicAlbumType setText(Property\TextProperty $text)
+ * @method MusicAlbumType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method MusicAlbumType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method MusicAlbumType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
  * @method MusicAlbumType setTrack(Property\TrackProperty $track)
+ * @method MusicAlbumType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method MusicAlbumType setTranslator(Property\TranslatorProperty $translator)
  * @method MusicAlbumType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method MusicAlbumType setUrl(Property\UrlProperty $url)
  * @method MusicAlbumType setVersion(Property\VersionProperty $version)
  * @method MusicAlbumType setVideo(Property\VideoProperty $video)
  * @method MusicAlbumType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method MusicAlbumType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class MusicAlbumType extends MusicPlaylistType {
 
@@ -122,7 +130,7 @@ class MusicAlbumType extends MusicPlaylistType {
 
 	/**
 	 * Get album production type.
-	 * 
+	 *
 	 * @return Property\AlbumProductionTypeProperty
 	 */
 	public function getAlbumProductionType() {
@@ -131,7 +139,7 @@ class MusicAlbumType extends MusicPlaylistType {
 
 	/**
 	 * Get album release.
-	 * 
+	 *
 	 * @return Property\AlbumReleaseProperty
 	 */
 	public function getAlbumRelease() {
@@ -140,7 +148,7 @@ class MusicAlbumType extends MusicPlaylistType {
 
 	/**
 	 * Get album release type.
-	 * 
+	 *
 	 * @return Property\AlbumReleaseTypeProperty
 	 */
 	public function getAlbumReleaseType() {
@@ -149,7 +157,7 @@ class MusicAlbumType extends MusicPlaylistType {
 
 	/**
 	 * Get by artist.
-	 * 
+	 *
 	 * @return Property\ByArtistProperty
 	 */
 	public function getByArtist() {
@@ -158,7 +166,7 @@ class MusicAlbumType extends MusicPlaylistType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -167,7 +175,7 @@ class MusicAlbumType extends MusicPlaylistType {
 
 	/**
 	 * Set album production type.
-	 * 
+	 *
 	 * @param Property\AlbumProductionTypeProperty $albumProductionType
 	 * @return MusicAlbumType
 	 */
@@ -179,7 +187,7 @@ class MusicAlbumType extends MusicPlaylistType {
 
 	/**
 	 * Set album release.
-	 * 
+	 *
 	 * @param Property\AlbumReleaseProperty $albumRelease
 	 * @return MusicAlbumType
 	 */
@@ -191,7 +199,7 @@ class MusicAlbumType extends MusicPlaylistType {
 
 	/**
 	 * Set album release type.
-	 * 
+	 *
 	 * @param Property\AlbumReleaseTypeProperty $albumReleaseType
 	 * @return MusicAlbumType
 	 */
@@ -203,7 +211,7 @@ class MusicAlbumType extends MusicPlaylistType {
 
 	/**
 	 * Set by artist.
-	 * 
+	 *
 	 * @param Property\ByArtistProperty $byArtist
 	 * @return MusicAlbumType
 	 */

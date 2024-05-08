@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class TouristAttractionType.
+ * A tourist attraction. In principle any Thing can be a TouristAttraction, from a Mountain and LandmarksOrHistoricalBuildings to a LocalBusiness. This Type can be used on its own to describe a general TouristAttraction, or be used as an additionalType to add tourist attraction properties to any other type. (See examples below)
  * 
  * @method TouristAttractionType setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method TouristAttractionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -21,13 +21,27 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method TouristAttractionType setEvent(Property\EventProperty $event)
  * @method TouristAttractionType setFaxNumber(Property\FaxNumberProperty $faxNumber)
  * @method TouristAttractionType setGeo(Property\GeoProperty $geo)
+ * @method TouristAttractionType setGeoContains(Property\GeoContainsProperty $geoContains)
+ * @method TouristAttractionType setGeoCoveredBy(Property\GeoCoveredByProperty $geoCoveredBy)
+ * @method TouristAttractionType setGeoCovers(Property\GeoCoversProperty $geoCovers)
+ * @method TouristAttractionType setGeoCrosses(Property\GeoCrossesProperty $geoCrosses)
+ * @method TouristAttractionType setGeoDisjoint(Property\GeoDisjointProperty $geoDisjoint)
+ * @method TouristAttractionType setGeoEquals(Property\GeoEqualsProperty $geoEquals)
+ * @method TouristAttractionType setGeoIntersects(Property\GeoIntersectsProperty $geoIntersects)
+ * @method TouristAttractionType setGeoOverlaps(Property\GeoOverlapsProperty $geoOverlaps)
+ * @method TouristAttractionType setGeoTouches(Property\GeoTouchesProperty $geoTouches)
+ * @method TouristAttractionType setGeoWithin(Property\GeoWithinProperty $geoWithin)
  * @method TouristAttractionType setGlobalLocationNumber(Property\GlobalLocationNumberProperty $globalLocationNumber)
+ * @method TouristAttractionType setHasCertification(Property\HasCertificationProperty $hasCertification)
  * @method TouristAttractionType setHasMap(Property\HasMapProperty $hasMap)
  * @method TouristAttractionType setIdentifier(Property\IdentifierProperty $identifier)
  * @method TouristAttractionType setImage(Property\ImageProperty $image)
  * @method TouristAttractionType setIsAccessibleForFree(Property\IsAccessibleForFreeProperty $isAccessibleForFree)
  * @method TouristAttractionType setIsicV4(Property\IsicV4Property $isicV4)
+ * @method TouristAttractionType setKeywords(Property\KeywordsProperty $keywords)
+ * @method TouristAttractionType setLatitude(Property\LatitudeProperty $latitude)
  * @method TouristAttractionType setLogo(Property\LogoProperty $logo)
+ * @method TouristAttractionType setLongitude(Property\LongitudeProperty $longitude)
  * @method TouristAttractionType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
  * @method TouristAttractionType setMaximumAttendeeCapacity(Property\MaximumAttendeeCapacityProperty $maximumAttendeeCapacity)
  * @method TouristAttractionType setName(Property\NameProperty $name)
@@ -37,8 +51,10 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method TouristAttractionType setPublicAccess(Property\PublicAccessProperty $publicAccess)
  * @method TouristAttractionType setReview(Property\ReviewProperty $review)
  * @method TouristAttractionType setSameAs(Property\SameAsProperty $sameAs)
+ * @method TouristAttractionType setSlogan(Property\SloganProperty $slogan)
  * @method TouristAttractionType setSmokingAllowed(Property\SmokingAllowedProperty $smokingAllowed)
  * @method TouristAttractionType setSpecialOpeningHoursSpecification(Property\SpecialOpeningHoursSpecificationProperty $specialOpeningHoursSpecification)
+ * @method TouristAttractionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method TouristAttractionType setTelephone(Property\TelephoneProperty $telephone)
  * @method TouristAttractionType setUrl(Property\UrlProperty $url)
  */
@@ -56,7 +72,7 @@ class TouristAttractionType extends PlaceType {
 
 	/**
 	 * Get available language.
-	 * 
+	 *
 	 * @return Property\AvailableLanguageProperty
 	 */
 	public function getAvailableLanguage() {
@@ -65,7 +81,7 @@ class TouristAttractionType extends PlaceType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -74,7 +90,7 @@ class TouristAttractionType extends PlaceType {
 
 	/**
 	 * Get tourist type.
-	 * 
+	 *
 	 * @return Property\TouristTypeProperty
 	 */
 	public function getTouristType() {
@@ -83,7 +99,7 @@ class TouristAttractionType extends PlaceType {
 
 	/**
 	 * Set available language.
-	 * 
+	 *
 	 * @param Property\AvailableLanguageProperty $availableLanguage
 	 * @return TouristAttractionType
 	 */
@@ -95,7 +111,7 @@ class TouristAttractionType extends PlaceType {
 
 	/**
 	 * Set tourist type.
-	 * 
+	 *
 	 * @param Property\TouristTypeProperty $touristType
 	 * @return TouristAttractionType
 	 */

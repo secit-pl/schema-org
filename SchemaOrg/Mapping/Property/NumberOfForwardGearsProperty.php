@@ -6,7 +6,7 @@ use SecIT\SchemaOrg\Mapping\DataType;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * NumberOfForwardGearsProperty class.
+ * The total number of forward gears available for the transmission system of the vehicle. Typical unit code(s): C62.
  * 
  * @method NumberOfForwardGearsProperty setValue($value)
  */
@@ -14,7 +14,7 @@ class NumberOfForwardGearsProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -23,7 +23,7 @@ class NumberOfForwardGearsProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

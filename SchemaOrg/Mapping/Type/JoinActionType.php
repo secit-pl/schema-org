@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class JoinActionType.
+ * An agent joins an event/group with participants/friends at a location. Related actions: RegisterAction: Unlike RegisterAction, JoinAction refers to joining a group/team of people. SubscribeAction: Unlike SubscribeAction, JoinAction does not imply that you'll be receiving updates. FollowAction: Unlike FollowAction, JoinAction does not imply that you'll be polling for updates.
  * 
  * @method JoinActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method JoinActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method JoinActionType setResult(Property\ResultProperty $result)
  * @method JoinActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method JoinActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method JoinActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method JoinActionType setTarget(Property\TargetProperty $target)
  * @method JoinActionType setUrl(Property\UrlProperty $url)
  */
@@ -39,7 +40,7 @@ class JoinActionType extends InteractActionType {
 
 	/**
 	 * Get event.
-	 * 
+	 *
 	 * @return Property\EventProperty
 	 */
 	public function getEvent() {
@@ -48,7 +49,7 @@ class JoinActionType extends InteractActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -57,7 +58,7 @@ class JoinActionType extends InteractActionType {
 
 	/**
 	 * Set event.
-	 * 
+	 *
 	 * @param Property\EventProperty $event
 	 * @return JoinActionType
 	 */

@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * PrimaryImageOfPageProperty class.
+ * Indicates the main image on the page.
  * 
  * @method PrimaryImageOfPageProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class PrimaryImageOfPageProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class PrimaryImageOfPageProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

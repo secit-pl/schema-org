@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class HowToSupplyType.
+ * A supply consumed when performing the instructions for how to achieve a result.
  * 
  * @method HowToSupplyType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method HowToSupplyType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -22,6 +22,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method HowToSupplyType setPreviousItem(Property\PreviousItemProperty $previousItem)
  * @method HowToSupplyType setRequiredQuantity(Property\RequiredQuantityProperty $requiredQuantity)
  * @method HowToSupplyType setSameAs(Property\SameAsProperty $sameAs)
+ * @method HowToSupplyType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method HowToSupplyType setUrl(Property\UrlProperty $url)
  */
 class HowToSupplyType extends HowToItemType {
@@ -33,7 +34,7 @@ class HowToSupplyType extends HowToItemType {
 
 	/**
 	 * Get estimated cost.
-	 * 
+	 *
 	 * @return Property\EstimatedCostProperty
 	 */
 	public function getEstimatedCost() {
@@ -42,7 +43,7 @@ class HowToSupplyType extends HowToItemType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -51,7 +52,7 @@ class HowToSupplyType extends HowToItemType {
 
 	/**
 	 * Set estimated cost.
-	 * 
+	 *
 	 * @param Property\EstimatedCostProperty $estimatedCost
 	 * @return HowToSupplyType
 	 */

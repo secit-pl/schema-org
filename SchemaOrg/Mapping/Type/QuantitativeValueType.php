@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class QuantitativeValueType.
+ * A point value or interval for product characteristics and other purposes.
  * 
  * @method QuantitativeValueType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method QuantitativeValueType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,6 +17,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method QuantitativeValueType setName(Property\NameProperty $name)
  * @method QuantitativeValueType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method QuantitativeValueType setSameAs(Property\SameAsProperty $sameAs)
+ * @method QuantitativeValueType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method QuantitativeValueType setUrl(Property\UrlProperty $url)
  */
 class QuantitativeValueType extends StructuredValueType {
@@ -58,7 +59,7 @@ class QuantitativeValueType extends StructuredValueType {
 
 	/**
 	 * Get additional property.
-	 * 
+	 *
 	 * @return Property\AdditionalProperty
 	 */
 	public function getAdditionalProperty() {
@@ -67,7 +68,7 @@ class QuantitativeValueType extends StructuredValueType {
 
 	/**
 	 * Get max value.
-	 * 
+	 *
 	 * @return Property\MaxValueProperty
 	 */
 	public function getMaxValue() {
@@ -76,7 +77,7 @@ class QuantitativeValueType extends StructuredValueType {
 
 	/**
 	 * Get min value.
-	 * 
+	 *
 	 * @return Property\MinValueProperty
 	 */
 	public function getMinValue() {
@@ -85,7 +86,7 @@ class QuantitativeValueType extends StructuredValueType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -94,7 +95,7 @@ class QuantitativeValueType extends StructuredValueType {
 
 	/**
 	 * Get unit code.
-	 * 
+	 *
 	 * @return Property\UnitCodeProperty
 	 */
 	public function getUnitCode() {
@@ -103,7 +104,7 @@ class QuantitativeValueType extends StructuredValueType {
 
 	/**
 	 * Get unit text.
-	 * 
+	 *
 	 * @return Property\UnitTextProperty
 	 */
 	public function getUnitText() {
@@ -112,7 +113,7 @@ class QuantitativeValueType extends StructuredValueType {
 
 	/**
 	 * Get value.
-	 * 
+	 *
 	 * @return Property\ValueProperty
 	 */
 	public function getValue() {
@@ -121,7 +122,7 @@ class QuantitativeValueType extends StructuredValueType {
 
 	/**
 	 * Get value reference.
-	 * 
+	 *
 	 * @return Property\ValueReferenceProperty
 	 */
 	public function getValueReference() {
@@ -130,7 +131,7 @@ class QuantitativeValueType extends StructuredValueType {
 
 	/**
 	 * Set additional property.
-	 * 
+	 *
 	 * @param Property\AdditionalProperty $additionalProperty
 	 * @return QuantitativeValueType
 	 */
@@ -142,7 +143,7 @@ class QuantitativeValueType extends StructuredValueType {
 
 	/**
 	 * Set max value.
-	 * 
+	 *
 	 * @param Property\MaxValueProperty $maxValue
 	 * @return QuantitativeValueType
 	 */
@@ -154,7 +155,7 @@ class QuantitativeValueType extends StructuredValueType {
 
 	/**
 	 * Set min value.
-	 * 
+	 *
 	 * @param Property\MinValueProperty $minValue
 	 * @return QuantitativeValueType
 	 */
@@ -166,7 +167,7 @@ class QuantitativeValueType extends StructuredValueType {
 
 	/**
 	 * Set unit code.
-	 * 
+	 *
 	 * @param Property\UnitCodeProperty $unitCode
 	 * @return QuantitativeValueType
 	 */
@@ -178,7 +179,7 @@ class QuantitativeValueType extends StructuredValueType {
 
 	/**
 	 * Set unit text.
-	 * 
+	 *
 	 * @param Property\UnitTextProperty $unitText
 	 * @return QuantitativeValueType
 	 */
@@ -190,7 +191,7 @@ class QuantitativeValueType extends StructuredValueType {
 
 	/**
 	 * Set value.
-	 * 
+	 *
 	 * @param Property\ValueProperty $value
 	 * @return QuantitativeValueType
 	 */
@@ -202,7 +203,7 @@ class QuantitativeValueType extends StructuredValueType {
 
 	/**
 	 * Set value reference.
-	 * 
+	 *
 	 * @param Property\ValueReferenceProperty $valueReference
 	 * @return QuantitativeValueType
 	 */

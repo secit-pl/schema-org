@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class TypeAndQuantityNodeType.
+ * A structured value indicating the quantity, unit of measurement, and business function of goods included in a bundle offer.
  * 
  * @method TypeAndQuantityNodeType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method TypeAndQuantityNodeType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,6 +17,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method TypeAndQuantityNodeType setName(Property\NameProperty $name)
  * @method TypeAndQuantityNodeType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method TypeAndQuantityNodeType setSameAs(Property\SameAsProperty $sameAs)
+ * @method TypeAndQuantityNodeType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method TypeAndQuantityNodeType setUrl(Property\UrlProperty $url)
  */
 class TypeAndQuantityNodeType extends StructuredValueType {
@@ -48,7 +49,7 @@ class TypeAndQuantityNodeType extends StructuredValueType {
 
 	/**
 	 * Get amount of this good.
-	 * 
+	 *
 	 * @return Property\AmountOfThisGoodProperty
 	 */
 	public function getAmountOfThisGood() {
@@ -57,7 +58,7 @@ class TypeAndQuantityNodeType extends StructuredValueType {
 
 	/**
 	 * Get business function.
-	 * 
+	 *
 	 * @return Property\BusinessFunctionProperty
 	 */
 	public function getBusinessFunction() {
@@ -66,7 +67,7 @@ class TypeAndQuantityNodeType extends StructuredValueType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -75,7 +76,7 @@ class TypeAndQuantityNodeType extends StructuredValueType {
 
 	/**
 	 * Get type of good.
-	 * 
+	 *
 	 * @return Property\TypeOfGoodProperty
 	 */
 	public function getTypeOfGood() {
@@ -84,7 +85,7 @@ class TypeAndQuantityNodeType extends StructuredValueType {
 
 	/**
 	 * Get unit code.
-	 * 
+	 *
 	 * @return Property\UnitCodeProperty
 	 */
 	public function getUnitCode() {
@@ -93,7 +94,7 @@ class TypeAndQuantityNodeType extends StructuredValueType {
 
 	/**
 	 * Get unit text.
-	 * 
+	 *
 	 * @return Property\UnitTextProperty
 	 */
 	public function getUnitText() {
@@ -102,7 +103,7 @@ class TypeAndQuantityNodeType extends StructuredValueType {
 
 	/**
 	 * Set amount of this good.
-	 * 
+	 *
 	 * @param Property\AmountOfThisGoodProperty $amountOfThisGood
 	 * @return TypeAndQuantityNodeType
 	 */
@@ -114,7 +115,7 @@ class TypeAndQuantityNodeType extends StructuredValueType {
 
 	/**
 	 * Set business function.
-	 * 
+	 *
 	 * @param Property\BusinessFunctionProperty $businessFunction
 	 * @return TypeAndQuantityNodeType
 	 */
@@ -126,7 +127,7 @@ class TypeAndQuantityNodeType extends StructuredValueType {
 
 	/**
 	 * Set type of good.
-	 * 
+	 *
 	 * @param Property\TypeOfGoodProperty $typeOfGood
 	 * @return TypeAndQuantityNodeType
 	 */
@@ -138,7 +139,7 @@ class TypeAndQuantityNodeType extends StructuredValueType {
 
 	/**
 	 * Set unit code.
-	 * 
+	 *
 	 * @param Property\UnitCodeProperty $unitCode
 	 * @return TypeAndQuantityNodeType
 	 */
@@ -150,7 +151,7 @@ class TypeAndQuantityNodeType extends StructuredValueType {
 
 	/**
 	 * Set unit text.
-	 * 
+	 *
 	 * @param Property\UnitTextProperty $unitText
 	 * @return TypeAndQuantityNodeType
 	 */

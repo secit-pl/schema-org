@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * ArtformProperty class.
+ * e.g. Painting, Drawing, Sculpture, Print, Photograph, Assemblage, Collage, etc.
  * 
  * @method ArtformProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class ArtformProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class ArtformProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

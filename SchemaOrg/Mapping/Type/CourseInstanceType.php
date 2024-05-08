@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class CourseInstanceType.
+ * An instance of a Course which is distinct from other instances because it is offered at a different time or location or through different media or modes of study or to a specific section of students.
  * 
+ * @method CourseInstanceType setAbout(Property\AboutProperty $about)
  * @method CourseInstanceType setActor(Property\ActorProperty $actor)
  * @method CourseInstanceType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method CourseInstanceType setAggregateRating(Property\AggregateRatingProperty $aggregateRating)
@@ -19,6 +20,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method CourseInstanceType setDirector(Property\DirectorProperty $director)
  * @method CourseInstanceType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
  * @method CourseInstanceType setDoorTime(Property\DoorTimeProperty $doorTime)
+ * @method CourseInstanceType setDuration(Property\DurationProperty $duration)
  * @method CourseInstanceType setEndDate(Property\EndDateProperty $endDate)
  * @method CourseInstanceType setEventStatus(Property\EventStatusProperty $eventStatus)
  * @method CourseInstanceType setFunder(Property\FunderProperty $funder)
@@ -26,6 +28,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method CourseInstanceType setImage(Property\ImageProperty $image)
  * @method CourseInstanceType setInLanguage(Property\InLanguageProperty $inLanguage)
  * @method CourseInstanceType setIsAccessibleForFree(Property\IsAccessibleForFreeProperty $isAccessibleForFree)
+ * @method CourseInstanceType setKeywords(Property\KeywordsProperty $keywords)
  * @method CourseInstanceType setLocation(Property\LocationProperty $location)
  * @method CourseInstanceType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
  * @method CourseInstanceType setMaximumAttendeeCapacity(Property\MaximumAttendeeCapacityProperty $maximumAttendeeCapacity)
@@ -42,6 +45,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method CourseInstanceType setSponsor(Property\SponsorProperty $sponsor)
  * @method CourseInstanceType setStartDate(Property\StartDateProperty $startDate)
  * @method CourseInstanceType setSubEvent(Property\SubEventProperty $subEvent)
+ * @method CourseInstanceType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method CourseInstanceType setSuperEvent(Property\SuperEventProperty $superEvent)
  * @method CourseInstanceType setTranslator(Property\TranslatorProperty $translator)
  * @method CourseInstanceType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
@@ -63,7 +67,7 @@ class CourseInstanceType extends EventType {
 
 	/**
 	 * Get course mode.
-	 * 
+	 *
 	 * @return Property\CourseModeProperty
 	 */
 	public function getCourseMode() {
@@ -72,7 +76,7 @@ class CourseInstanceType extends EventType {
 
 	/**
 	 * Get instructor.
-	 * 
+	 *
 	 * @return Property\InstructorProperty
 	 */
 	public function getInstructor() {
@@ -81,7 +85,7 @@ class CourseInstanceType extends EventType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -90,7 +94,7 @@ class CourseInstanceType extends EventType {
 
 	/**
 	 * Set course mode.
-	 * 
+	 *
 	 * @param Property\CourseModeProperty $courseMode
 	 * @return CourseInstanceType
 	 */
@@ -102,7 +106,7 @@ class CourseInstanceType extends EventType {
 
 	/**
 	 * Set instructor.
-	 * 
+	 *
 	 * @param Property\InstructorProperty $instructor
 	 * @return CourseInstanceType
 	 */

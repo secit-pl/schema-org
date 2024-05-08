@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * ExpectedArrivalFromProperty class.
+ * The earliest date the package may arrive.
  * 
  * @method ExpectedArrivalFromProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class ExpectedArrivalFromProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,11 +22,11 @@ class ExpectedArrivalFromProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */
 	public function isValueValid($value) {
-		return $value instanceof DataType\DateTimeType;
+		return $value instanceof DataType\DateType || $value instanceof DataType\DateTimeType;
 	}
 }

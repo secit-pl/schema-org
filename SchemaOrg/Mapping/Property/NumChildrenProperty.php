@@ -6,7 +6,7 @@ use SecIT\SchemaOrg\Mapping\DataType;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * NumChildrenProperty class.
+ * The number of children staying in the unit.
  * 
  * @method NumChildrenProperty setValue($value)
  */
@@ -14,7 +14,7 @@ class NumChildrenProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -23,7 +23,7 @@ class NumChildrenProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

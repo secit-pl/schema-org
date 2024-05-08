@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * IncludedCompositionProperty class.
+ * Smaller compositions included in this work (e.g. a movement in a symphony).
  * 
  * @method IncludedCompositionProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class IncludedCompositionProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class IncludedCompositionProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

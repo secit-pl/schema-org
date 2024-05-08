@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class SaleEventType.
+ * Event type: Sales event.
  * 
+ * @method SaleEventType setAbout(Property\AboutProperty $about)
  * @method SaleEventType setActor(Property\ActorProperty $actor)
  * @method SaleEventType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method SaleEventType setAggregateRating(Property\AggregateRatingProperty $aggregateRating)
@@ -19,6 +20,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SaleEventType setDirector(Property\DirectorProperty $director)
  * @method SaleEventType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
  * @method SaleEventType setDoorTime(Property\DoorTimeProperty $doorTime)
+ * @method SaleEventType setDuration(Property\DurationProperty $duration)
  * @method SaleEventType setEndDate(Property\EndDateProperty $endDate)
  * @method SaleEventType setEventStatus(Property\EventStatusProperty $eventStatus)
  * @method SaleEventType setFunder(Property\FunderProperty $funder)
@@ -26,6 +28,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SaleEventType setImage(Property\ImageProperty $image)
  * @method SaleEventType setInLanguage(Property\InLanguageProperty $inLanguage)
  * @method SaleEventType setIsAccessibleForFree(Property\IsAccessibleForFreeProperty $isAccessibleForFree)
+ * @method SaleEventType setKeywords(Property\KeywordsProperty $keywords)
  * @method SaleEventType setLocation(Property\LocationProperty $location)
  * @method SaleEventType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
  * @method SaleEventType setMaximumAttendeeCapacity(Property\MaximumAttendeeCapacityProperty $maximumAttendeeCapacity)
@@ -42,6 +45,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SaleEventType setSponsor(Property\SponsorProperty $sponsor)
  * @method SaleEventType setStartDate(Property\StartDateProperty $startDate)
  * @method SaleEventType setSubEvent(Property\SubEventProperty $subEvent)
+ * @method SaleEventType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method SaleEventType setSuperEvent(Property\SuperEventProperty $superEvent)
  * @method SaleEventType setTranslator(Property\TranslatorProperty $translator)
  * @method SaleEventType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
@@ -53,7 +57,7 @@ class SaleEventType extends EventType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

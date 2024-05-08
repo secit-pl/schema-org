@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * RealEstateAgentProperty class.
+ * A sub property of participant. The real estate agent involved in the action.
  * 
  * @method RealEstateAgentProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class RealEstateAgentProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class RealEstateAgentProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

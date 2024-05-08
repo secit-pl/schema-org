@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * BroadcastAffiliateOfProperty class.
+ * The media network(s) whose content is broadcast on this station.
  * 
  * @method BroadcastAffiliateOfProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class BroadcastAffiliateOfProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class BroadcastAffiliateOfProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

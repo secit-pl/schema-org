@@ -5,27 +5,27 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class RsvpResponseType.
+ * RsvpResponseType is an enumeration type whose instances represent responding to an RSVP request.
  * 
- * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\RsvpResponseType instead.
- * 
- * @method RsvpResponseType setAdditionalType(Property\AdditionalType $additionalType)
- * @method RsvpResponseType setAlternateName(Property\AlternateName $alternateName)
- * @method RsvpResponseType setDescription(Property\Description $description)
- * @method RsvpResponseType setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method RsvpResponseType setIdentifier(Property\Identifier $identifier)
- * @method RsvpResponseType setImage(Property\Image $image)
- * @method RsvpResponseType setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method RsvpResponseType setName(Property\Name $name)
- * @method RsvpResponseType setPotentialAction(Property\PotentialAction $potentialAction)
- * @method RsvpResponseType setSameAs(Property\SameAs $sameAs)
- * @method RsvpResponseType setUrl(Property\Url $url)
+ * @method RsvpResponseType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
+ * @method RsvpResponseType setAlternateName(Property\AlternateNameProperty $alternateName)
+ * @method RsvpResponseType setDescription(Property\DescriptionProperty $description)
+ * @method RsvpResponseType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
+ * @method RsvpResponseType setIdentifier(Property\IdentifierProperty $identifier)
+ * @method RsvpResponseType setImage(Property\ImageProperty $image)
+ * @method RsvpResponseType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
+ * @method RsvpResponseType setName(Property\NameProperty $name)
+ * @method RsvpResponseType setPotentialAction(Property\PotentialActionProperty $potentialAction)
+ * @method RsvpResponseType setSameAs(Property\SameAsProperty $sameAs)
+ * @method RsvpResponseType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method RsvpResponseType setSupersededBy(Property\SupersededByProperty $supersededBy)
+ * @method RsvpResponseType setUrl(Property\UrlProperty $url)
  */
-class RsvpResponseType extends Enumeration {
+class RsvpResponseType extends EnumerationType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

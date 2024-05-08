@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ClipType.
+ * A short TV or radio program or a segment/part of a program.
  * 
+ * @method ClipType setAbout(Property\AboutProperty $about)
  * @method ClipType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method ClipType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method ClipType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -33,6 +34,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ClipType setContributor(Property\ContributorProperty $contributor)
  * @method ClipType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method ClipType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method ClipType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method ClipType setCreator(Property\CreatorProperty $creator)
  * @method ClipType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method ClipType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -44,9 +46,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ClipType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method ClipType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method ClipType setEncoding(Property\EncodingProperty $encoding)
+ * @method ClipType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method ClipType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method ClipType setExpires(Property\ExpiresProperty $expires)
- * @method ClipType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method ClipType setFunder(Property\FunderProperty $funder)
  * @method ClipType setGenre(Property\GenreProperty $genre)
  * @method ClipType setHasPart(Property\HasPartProperty $hasPart)
@@ -73,9 +75,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ClipType setPosition(Property\PositionProperty $position)
  * @method ClipType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method ClipType setProducer(Property\ProducerProperty $producer)
- * @method ClipType setProvider(Property\ProviderProperty $provider)
  * @method ClipType setPublication(Property\PublicationProperty $publication)
  * @method ClipType setPublisher(Property\PublisherProperty $publisher)
+ * @method ClipType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method ClipType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method ClipType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method ClipType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -83,18 +85,24 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ClipType setSameAs(Property\SameAsProperty $sameAs)
  * @method ClipType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method ClipType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method ClipType setSpatial(Property\SpatialProperty $spatial)
  * @method ClipType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method ClipType setSponsor(Property\SponsorProperty $sponsor)
+ * @method ClipType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method ClipType setTemporal(Property\TemporalProperty $temporal)
  * @method ClipType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method ClipType setText(Property\TextProperty $text)
+ * @method ClipType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method ClipType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method ClipType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method ClipType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method ClipType setTranslator(Property\TranslatorProperty $translator)
  * @method ClipType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method ClipType setUrl(Property\UrlProperty $url)
  * @method ClipType setVersion(Property\VersionProperty $version)
  * @method ClipType setVideo(Property\VideoProperty $video)
  * @method ClipType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method ClipType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class ClipType extends CreativeWorkType {
 
@@ -135,7 +143,7 @@ class ClipType extends CreativeWorkType {
 
 	/**
 	 * Get actor.
-	 * 
+	 *
 	 * @return Property\ActorProperty
 	 */
 	public function getActor() {
@@ -144,7 +152,7 @@ class ClipType extends CreativeWorkType {
 
 	/**
 	 * Get clip number.
-	 * 
+	 *
 	 * @return Property\ClipNumberProperty
 	 */
 	public function getClipNumber() {
@@ -153,7 +161,7 @@ class ClipType extends CreativeWorkType {
 
 	/**
 	 * Get director.
-	 * 
+	 *
 	 * @return Property\DirectorProperty
 	 */
 	public function getDirector() {
@@ -162,7 +170,7 @@ class ClipType extends CreativeWorkType {
 
 	/**
 	 * Get music by.
-	 * 
+	 *
 	 * @return Property\MusicByProperty
 	 */
 	public function getMusicBy() {
@@ -171,7 +179,7 @@ class ClipType extends CreativeWorkType {
 
 	/**
 	 * Get part of episode.
-	 * 
+	 *
 	 * @return Property\PartOfEpisodeProperty
 	 */
 	public function getPartOfEpisode() {
@@ -180,7 +188,7 @@ class ClipType extends CreativeWorkType {
 
 	/**
 	 * Get part of season.
-	 * 
+	 *
 	 * @return Property\PartOfSeasonProperty
 	 */
 	public function getPartOfSeason() {
@@ -189,7 +197,7 @@ class ClipType extends CreativeWorkType {
 
 	/**
 	 * Get part of series.
-	 * 
+	 *
 	 * @return Property\PartOfSeriesProperty
 	 */
 	public function getPartOfSeries() {
@@ -198,7 +206,7 @@ class ClipType extends CreativeWorkType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -207,7 +215,7 @@ class ClipType extends CreativeWorkType {
 
 	/**
 	 * Set actor.
-	 * 
+	 *
 	 * @param Property\ActorProperty $actor
 	 * @return ClipType
 	 */
@@ -219,7 +227,7 @@ class ClipType extends CreativeWorkType {
 
 	/**
 	 * Set clip number.
-	 * 
+	 *
 	 * @param Property\ClipNumberProperty $clipNumber
 	 * @return ClipType
 	 */
@@ -231,7 +239,7 @@ class ClipType extends CreativeWorkType {
 
 	/**
 	 * Set director.
-	 * 
+	 *
 	 * @param Property\DirectorProperty $director
 	 * @return ClipType
 	 */
@@ -243,7 +251,7 @@ class ClipType extends CreativeWorkType {
 
 	/**
 	 * Set music by.
-	 * 
+	 *
 	 * @param Property\MusicByProperty $musicBy
 	 * @return ClipType
 	 */
@@ -255,7 +263,7 @@ class ClipType extends CreativeWorkType {
 
 	/**
 	 * Set part of episode.
-	 * 
+	 *
 	 * @param Property\PartOfEpisodeProperty $partOfEpisode
 	 * @return ClipType
 	 */
@@ -267,7 +275,7 @@ class ClipType extends CreativeWorkType {
 
 	/**
 	 * Set part of season.
-	 * 
+	 *
 	 * @param Property\PartOfSeasonProperty $partOfSeason
 	 * @return ClipType
 	 */
@@ -279,7 +287,7 @@ class ClipType extends CreativeWorkType {
 
 	/**
 	 * Set part of series.
-	 * 
+	 *
 	 * @param Property\PartOfSeriesProperty $partOfSeries
 	 * @return ClipType
 	 */

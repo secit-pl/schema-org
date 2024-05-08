@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * CodeRepositoryProperty class.
+ * Link to the repository where the un-compiled, human readable code and related code is located (SVN, GitHub, CodePlex).
  * 
  * @method CodeRepositoryProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class CodeRepositoryProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class CodeRepositoryProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

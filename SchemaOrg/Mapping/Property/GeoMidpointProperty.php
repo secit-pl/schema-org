@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * GeoMidpointProperty class.
+ * Indicates the GeoCoordinates at the centre of a GeoShape, e.g. GeoCircle.
  * 
  * @method GeoMidpointProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class GeoMidpointProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class GeoMidpointProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

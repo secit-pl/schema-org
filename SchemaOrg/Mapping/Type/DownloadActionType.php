@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class DownloadActionType.
+ * The act of downloading an object.
  * 
  * @method DownloadActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method DownloadActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -28,6 +28,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method DownloadActionType setResult(Property\ResultProperty $result)
  * @method DownloadActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method DownloadActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method DownloadActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method DownloadActionType setTarget(Property\TargetProperty $target)
  * @method DownloadActionType setToLocation(Property\ToLocationProperty $toLocation)
  * @method DownloadActionType setUrl(Property\UrlProperty $url)
@@ -36,7 +37,7 @@ class DownloadActionType extends TransferActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

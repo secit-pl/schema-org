@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ChildrensEventType.
+ * Event type: Children's event.
  * 
+ * @method ChildrensEventType setAbout(Property\AboutProperty $about)
  * @method ChildrensEventType setActor(Property\ActorProperty $actor)
  * @method ChildrensEventType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method ChildrensEventType setAggregateRating(Property\AggregateRatingProperty $aggregateRating)
@@ -19,6 +20,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ChildrensEventType setDirector(Property\DirectorProperty $director)
  * @method ChildrensEventType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
  * @method ChildrensEventType setDoorTime(Property\DoorTimeProperty $doorTime)
+ * @method ChildrensEventType setDuration(Property\DurationProperty $duration)
  * @method ChildrensEventType setEndDate(Property\EndDateProperty $endDate)
  * @method ChildrensEventType setEventStatus(Property\EventStatusProperty $eventStatus)
  * @method ChildrensEventType setFunder(Property\FunderProperty $funder)
@@ -26,6 +28,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ChildrensEventType setImage(Property\ImageProperty $image)
  * @method ChildrensEventType setInLanguage(Property\InLanguageProperty $inLanguage)
  * @method ChildrensEventType setIsAccessibleForFree(Property\IsAccessibleForFreeProperty $isAccessibleForFree)
+ * @method ChildrensEventType setKeywords(Property\KeywordsProperty $keywords)
  * @method ChildrensEventType setLocation(Property\LocationProperty $location)
  * @method ChildrensEventType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
  * @method ChildrensEventType setMaximumAttendeeCapacity(Property\MaximumAttendeeCapacityProperty $maximumAttendeeCapacity)
@@ -42,6 +45,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ChildrensEventType setSponsor(Property\SponsorProperty $sponsor)
  * @method ChildrensEventType setStartDate(Property\StartDateProperty $startDate)
  * @method ChildrensEventType setSubEvent(Property\SubEventProperty $subEvent)
+ * @method ChildrensEventType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method ChildrensEventType setSuperEvent(Property\SuperEventProperty $superEvent)
  * @method ChildrensEventType setTranslator(Property\TranslatorProperty $translator)
  * @method ChildrensEventType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
@@ -53,7 +57,7 @@ class ChildrensEventType extends EventType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

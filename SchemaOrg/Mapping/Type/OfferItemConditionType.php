@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class OfferItemConditionType.
+ * A list of possible conditions for the item.
  * 
  * @method OfferItemConditionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method OfferItemConditionType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method OfferItemConditionType setName(Property\NameProperty $name)
  * @method OfferItemConditionType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method OfferItemConditionType setSameAs(Property\SameAsProperty $sameAs)
+ * @method OfferItemConditionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method OfferItemConditionType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method OfferItemConditionType setUrl(Property\UrlProperty $url)
  */
 class OfferItemConditionType extends EnumerationType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

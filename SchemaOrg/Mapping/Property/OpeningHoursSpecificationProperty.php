@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * OpeningHoursSpecificationProperty class.
+ * The opening hours of a certain place.
  * 
  * @method OpeningHoursSpecificationProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class OpeningHoursSpecificationProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class OpeningHoursSpecificationProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

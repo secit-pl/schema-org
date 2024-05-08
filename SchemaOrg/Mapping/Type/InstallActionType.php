@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class InstallActionType.
+ * The act of installing an application.
  * 
+ * @method InstallActionType setActionAccessibilityRequirement(Property\ActionAccessibilityRequirementProperty $actionAccessibilityRequirement)
  * @method InstallActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method InstallActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method InstallActionType setAgent(Property\AgentProperty $agent)
@@ -28,6 +29,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method InstallActionType setResult(Property\ResultProperty $result)
  * @method InstallActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method InstallActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method InstallActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method InstallActionType setTarget(Property\TargetProperty $target)
  * @method InstallActionType setUrl(Property\UrlProperty $url)
  */
@@ -35,7 +37,7 @@ class InstallActionType extends ConsumeActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

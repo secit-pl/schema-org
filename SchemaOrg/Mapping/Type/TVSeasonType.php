@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class TVSeasonType.
+ * Season dedicated to TV broadcast and associated online delivery.
  * 
+ * @method TVSeasonType setAbout(Property\AboutProperty $about)
  * @method TVSeasonType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method TVSeasonType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method TVSeasonType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -34,6 +35,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method TVSeasonType setContributor(Property\ContributorProperty $contributor)
  * @method TVSeasonType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method TVSeasonType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method TVSeasonType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method TVSeasonType setCreator(Property\CreatorProperty $creator)
  * @method TVSeasonType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method TVSeasonType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -46,11 +48,11 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method TVSeasonType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method TVSeasonType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method TVSeasonType setEncoding(Property\EncodingProperty $encoding)
+ * @method TVSeasonType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method TVSeasonType setEndDate(Property\EndDateProperty $endDate)
  * @method TVSeasonType setEpisode(Property\EpisodeProperty $episode)
  * @method TVSeasonType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method TVSeasonType setExpires(Property\ExpiresProperty $expires)
- * @method TVSeasonType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method TVSeasonType setFunder(Property\FunderProperty $funder)
  * @method TVSeasonType setGenre(Property\GenreProperty $genre)
  * @method TVSeasonType setHasPart(Property\HasPartProperty $hasPart)
@@ -80,9 +82,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method TVSeasonType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method TVSeasonType setProducer(Property\ProducerProperty $producer)
  * @method TVSeasonType setProductionCompany(Property\ProductionCompanyProperty $productionCompany)
- * @method TVSeasonType setProvider(Property\ProviderProperty $provider)
  * @method TVSeasonType setPublication(Property\PublicationProperty $publication)
  * @method TVSeasonType setPublisher(Property\PublisherProperty $publisher)
+ * @method TVSeasonType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method TVSeasonType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method TVSeasonType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method TVSeasonType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -91,20 +93,26 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method TVSeasonType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method TVSeasonType setSeasonNumber(Property\SeasonNumberProperty $seasonNumber)
  * @method TVSeasonType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method TVSeasonType setSpatial(Property\SpatialProperty $spatial)
  * @method TVSeasonType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method TVSeasonType setSponsor(Property\SponsorProperty $sponsor)
  * @method TVSeasonType setStartDate(Property\StartDateProperty $startDate)
+ * @method TVSeasonType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method TVSeasonType setTemporal(Property\TemporalProperty $temporal)
  * @method TVSeasonType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method TVSeasonType setText(Property\TextProperty $text)
+ * @method TVSeasonType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method TVSeasonType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method TVSeasonType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
  * @method TVSeasonType setTrailer(Property\TrailerProperty $trailer)
+ * @method TVSeasonType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method TVSeasonType setTranslator(Property\TranslatorProperty $translator)
  * @method TVSeasonType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method TVSeasonType setUrl(Property\UrlProperty $url)
  * @method TVSeasonType setVersion(Property\VersionProperty $version)
  * @method TVSeasonType setVideo(Property\VideoProperty $video)
  * @method TVSeasonType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method TVSeasonType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class TVSeasonType extends CreativeWorkSeasonType {
 
@@ -115,7 +123,7 @@ class TVSeasonType extends CreativeWorkSeasonType {
 
 	/**
 	 * Get country of origin.
-	 * 
+	 *
 	 * @return Property\CountryOfOriginProperty
 	 */
 	public function getCountryOfOrigin() {
@@ -124,7 +132,7 @@ class TVSeasonType extends CreativeWorkSeasonType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -133,7 +141,7 @@ class TVSeasonType extends CreativeWorkSeasonType {
 
 	/**
 	 * Set country of origin.
-	 * 
+	 *
 	 * @param Property\CountryOfOriginProperty $countryOfOrigin
 	 * @return TVSeasonType
 	 */

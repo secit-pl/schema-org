@@ -3,7 +3,7 @@
 namespace SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * Class IntegerType.
+ * Data type: Integer.
  * 
  * @method IntegerType setValue($value)
  */
@@ -11,7 +11,7 @@ class IntegerType extends NumberType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * ValueMinLengthProperty class.
+ * Specifies the minimum allowed range for number of characters in a literal value.
  * 
  * @method ValueMinLengthProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class ValueMinLengthProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class ValueMinLengthProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class EventPostponedType.
+ * The event has been postponed and no new date has been set. The event's previousStartDate should be set.
  * 
  * @method EventPostponedType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method EventPostponedType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method EventPostponedType setName(Property\NameProperty $name)
  * @method EventPostponedType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method EventPostponedType setSameAs(Property\SameAsProperty $sameAs)
+ * @method EventPostponedType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method EventPostponedType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method EventPostponedType setUrl(Property\UrlProperty $url)
  */
 class EventPostponedType extends EventStatusType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

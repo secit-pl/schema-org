@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * PriceSpecificationProperty class.
+ * One or more detailed price specifications, indicating the unit price and delivery or payment charges.
  * 
  * @method PriceSpecificationProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class PriceSpecificationProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class PriceSpecificationProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

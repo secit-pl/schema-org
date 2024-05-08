@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * LodgingUnitDescriptionProperty class.
+ * A full description of the lodging unit.
  * 
  * @method LodgingUnitDescriptionProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class LodgingUnitDescriptionProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class LodgingUnitDescriptionProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

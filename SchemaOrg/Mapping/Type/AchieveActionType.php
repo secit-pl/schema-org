@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class AchieveActionType.
+ * The act of accomplishing something via previous efforts. It is an instantaneous action rather than an ongoing process.
  * 
  * @method AchieveActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method AchieveActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method AchieveActionType setResult(Property\ResultProperty $result)
  * @method AchieveActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method AchieveActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method AchieveActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method AchieveActionType setTarget(Property\TargetProperty $target)
  * @method AchieveActionType setUrl(Property\UrlProperty $url)
  */
@@ -34,7 +35,7 @@ class AchieveActionType extends ActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

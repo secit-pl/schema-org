@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * EventStatusProperty class.
+ * An eventStatus of an event represents its status; particularly useful when an event is cancelled or rescheduled.
  * 
  * @method EventStatusProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class EventStatusProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class EventStatusProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

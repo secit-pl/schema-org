@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class AudioObjectType.
+ * An audio file.
  * 
+ * @method AudioObjectType setAbout(Property\AboutProperty $about)
  * @method AudioObjectType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method AudioObjectType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method AudioObjectType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -37,6 +38,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method AudioObjectType setContributor(Property\ContributorProperty $contributor)
  * @method AudioObjectType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method AudioObjectType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method AudioObjectType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method AudioObjectType setCreator(Property\CreatorProperty $creator)
  * @method AudioObjectType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method AudioObjectType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -44,6 +46,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method AudioObjectType setDescription(Property\DescriptionProperty $description)
  * @method AudioObjectType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
  * @method AudioObjectType setDiscussionUrl(Property\DiscussionUrlProperty $discussionUrl)
+ * @method AudioObjectType setDuration(Property\DurationProperty $duration)
  * @method AudioObjectType setEditor(Property\EditorProperty $editor)
  * @method AudioObjectType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method AudioObjectType setEducationalUse(Property\EducationalUseProperty $educationalUse)
@@ -51,9 +54,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method AudioObjectType setEncodesCreativeWork(Property\EncodesCreativeWorkProperty $encodesCreativeWork)
  * @method AudioObjectType setEncoding(Property\EncodingProperty $encoding)
  * @method AudioObjectType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
+ * @method AudioObjectType setEndTime(Property\EndTimeProperty $endTime)
  * @method AudioObjectType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method AudioObjectType setExpires(Property\ExpiresProperty $expires)
- * @method AudioObjectType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method AudioObjectType setFunder(Property\FunderProperty $funder)
  * @method AudioObjectType setGenre(Property\GenreProperty $genre)
  * @method AudioObjectType setHasPart(Property\HasPartProperty $hasPart)
@@ -83,9 +86,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method AudioObjectType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method AudioObjectType setProducer(Property\ProducerProperty $producer)
  * @method AudioObjectType setProductionCompany(Property\ProductionCompanyProperty $productionCompany)
- * @method AudioObjectType setProvider(Property\ProviderProperty $provider)
  * @method AudioObjectType setPublication(Property\PublicationProperty $publication)
  * @method AudioObjectType setPublisher(Property\PublisherProperty $publisher)
+ * @method AudioObjectType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method AudioObjectType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method AudioObjectType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method AudioObjectType setRegionsAllowed(Property\RegionsAllowedProperty $regionsAllowed)
@@ -95,12 +98,18 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method AudioObjectType setSameAs(Property\SameAsProperty $sameAs)
  * @method AudioObjectType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method AudioObjectType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method AudioObjectType setSpatial(Property\SpatialProperty $spatial)
  * @method AudioObjectType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method AudioObjectType setSponsor(Property\SponsorProperty $sponsor)
+ * @method AudioObjectType setStartTime(Property\StartTimeProperty $startTime)
+ * @method AudioObjectType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method AudioObjectType setTemporal(Property\TemporalProperty $temporal)
  * @method AudioObjectType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method AudioObjectType setText(Property\TextProperty $text)
+ * @method AudioObjectType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method AudioObjectType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method AudioObjectType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method AudioObjectType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method AudioObjectType setTranslator(Property\TranslatorProperty $translator)
  * @method AudioObjectType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method AudioObjectType setUploadDate(Property\UploadDateProperty $uploadDate)
@@ -109,8 +118,14 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method AudioObjectType setVideo(Property\VideoProperty $video)
  * @method AudioObjectType setWidth(Property\WidthProperty $width)
  * @method AudioObjectType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method AudioObjectType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class AudioObjectType extends MediaObjectType {
+
+	/**
+	 * @var Property\CaptionProperty
+	 */
+	private $caption;
 
 	/**
 	 * @var Property\TranscriptProperty
@@ -118,8 +133,17 @@ class AudioObjectType extends MediaObjectType {
 	private $transcript;
 
 	/**
+	 * Get caption.
+	 *
+	 * @return Property\CaptionProperty
+	 */
+	public function getCaption() {
+		return $this->caption;
+	}
+
+	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -128,7 +152,7 @@ class AudioObjectType extends MediaObjectType {
 
 	/**
 	 * Get transcript.
-	 * 
+	 *
 	 * @return Property\TranscriptProperty
 	 */
 	public function getTranscript() {
@@ -136,8 +160,20 @@ class AudioObjectType extends MediaObjectType {
 	}
 
 	/**
+	 * Set caption.
+	 *
+	 * @param Property\CaptionProperty $caption
+	 * @return AudioObjectType
+	 */
+	public function setCaption(Property\CaptionProperty $caption) {
+		$this->caption = $caption;
+
+		return $this;
+	}
+
+	/**
 	 * Set transcript.
-	 * 
+	 *
 	 * @param Property\TranscriptProperty $transcript
 	 * @return AudioObjectType
 	 */

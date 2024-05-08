@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class RentalCarReservationType.
+ * A reservation for a rental car. Note: This type is for information about actual reservations, e.g. in confirmation emails or HTML pages with individual confirmations of reservations.
  * 
  * @method RentalCarReservationType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method RentalCarReservationType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -21,12 +21,12 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method RentalCarReservationType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method RentalCarReservationType setPriceCurrency(Property\PriceCurrencyProperty $priceCurrency)
  * @method RentalCarReservationType setProgramMembershipUsed(Property\ProgramMembershipUsedProperty $programMembershipUsed)
- * @method RentalCarReservationType setProvider(Property\ProviderProperty $provider)
  * @method RentalCarReservationType setReservationFor(Property\ReservationForProperty $reservationFor)
  * @method RentalCarReservationType setReservationId(Property\ReservationIdProperty $reservationId)
  * @method RentalCarReservationType setReservationStatus(Property\ReservationStatusProperty $reservationStatus)
  * @method RentalCarReservationType setReservedTicket(Property\ReservedTicketProperty $reservedTicket)
  * @method RentalCarReservationType setSameAs(Property\SameAsProperty $sameAs)
+ * @method RentalCarReservationType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method RentalCarReservationType setTotalPrice(Property\TotalPriceProperty $totalPrice)
  * @method RentalCarReservationType setUnderName(Property\UnderNameProperty $underName)
  * @method RentalCarReservationType setUrl(Property\UrlProperty $url)
@@ -55,7 +55,7 @@ class RentalCarReservationType extends ReservationType {
 
 	/**
 	 * Get dropoff location.
-	 * 
+	 *
 	 * @return Property\DropoffLocationProperty
 	 */
 	public function getDropoffLocation() {
@@ -64,7 +64,7 @@ class RentalCarReservationType extends ReservationType {
 
 	/**
 	 * Get dropoff time.
-	 * 
+	 *
 	 * @return Property\DropoffTimeProperty
 	 */
 	public function getDropoffTime() {
@@ -73,7 +73,7 @@ class RentalCarReservationType extends ReservationType {
 
 	/**
 	 * Get pickup location.
-	 * 
+	 *
 	 * @return Property\PickupLocationProperty
 	 */
 	public function getPickupLocation() {
@@ -82,7 +82,7 @@ class RentalCarReservationType extends ReservationType {
 
 	/**
 	 * Get pickup time.
-	 * 
+	 *
 	 * @return Property\PickupTimeProperty
 	 */
 	public function getPickupTime() {
@@ -91,7 +91,7 @@ class RentalCarReservationType extends ReservationType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -100,7 +100,7 @@ class RentalCarReservationType extends ReservationType {
 
 	/**
 	 * Set dropoff location.
-	 * 
+	 *
 	 * @param Property\DropoffLocationProperty $dropoffLocation
 	 * @return RentalCarReservationType
 	 */
@@ -112,7 +112,7 @@ class RentalCarReservationType extends ReservationType {
 
 	/**
 	 * Set dropoff time.
-	 * 
+	 *
 	 * @param Property\DropoffTimeProperty $dropoffTime
 	 * @return RentalCarReservationType
 	 */
@@ -124,7 +124,7 @@ class RentalCarReservationType extends ReservationType {
 
 	/**
 	 * Set pickup location.
-	 * 
+	 *
 	 * @param Property\PickupLocationProperty $pickupLocation
 	 * @return RentalCarReservationType
 	 */
@@ -136,7 +136,7 @@ class RentalCarReservationType extends ReservationType {
 
 	/**
 	 * Set pickup time.
-	 * 
+	 *
 	 * @param Property\PickupTimeProperty $pickupTime
 	 * @return RentalCarReservationType
 	 */

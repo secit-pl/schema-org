@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * HostingOrganizationProperty class.
+ * The organization (airline, travelers' club, etc.) the membership is made with.
  * 
  * @method HostingOrganizationProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class HostingOrganizationProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class HostingOrganizationProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

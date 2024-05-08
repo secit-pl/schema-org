@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class TrackActionType.
+ * An agent tracks an object for updates. Related actions: FollowAction: Unlike FollowAction, TrackAction refers to the interest on the location of innanimates objects. SubscribeAction: Unlike SubscribeAction, TrackAction refers to the interest on the location of innanimate objects.
  * 
  * @method TrackActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method TrackActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method TrackActionType setResult(Property\ResultProperty $result)
  * @method TrackActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method TrackActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method TrackActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method TrackActionType setTarget(Property\TargetProperty $target)
  * @method TrackActionType setUrl(Property\UrlProperty $url)
  */
@@ -39,7 +40,7 @@ class TrackActionType extends FindActionType {
 
 	/**
 	 * Get delivery method.
-	 * 
+	 *
 	 * @return Property\DeliveryMethodProperty
 	 */
 	public function getDeliveryMethod() {
@@ -48,7 +49,7 @@ class TrackActionType extends FindActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -57,7 +58,7 @@ class TrackActionType extends FindActionType {
 
 	/**
 	 * Set delivery method.
-	 * 
+	 *
 	 * @param Property\DeliveryMethodProperty $deliveryMethod
 	 * @return TrackActionType
 	 */

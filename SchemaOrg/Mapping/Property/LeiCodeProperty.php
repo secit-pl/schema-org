@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * LeiCodeProperty class.
+ * An organization identifier that uniquely identifies a legal entity as defined in ISO 17442.
  * 
  * @method LeiCodeProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class LeiCodeProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class LeiCodeProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

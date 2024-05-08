@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class CorporationType.
+ * Organization: A business corporation.
  * 
  * @method CorporationType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method CorporationType setAddress(Property\AddressProperty $address)
@@ -30,11 +30,14 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method CorporationType setFoundingLocation(Property\FoundingLocationProperty $foundingLocation)
  * @method CorporationType setFunder(Property\FunderProperty $funder)
  * @method CorporationType setGlobalLocationNumber(Property\GlobalLocationNumberProperty $globalLocationNumber)
+ * @method CorporationType setHasCertification(Property\HasCertificationProperty $hasCertification)
  * @method CorporationType setHasOfferCatalog(Property\HasOfferCatalogProperty $hasOfferCatalog)
  * @method CorporationType setHasPOS(Property\HasPOSProperty $hasPOS)
  * @method CorporationType setIdentifier(Property\IdentifierProperty $identifier)
  * @method CorporationType setImage(Property\ImageProperty $image)
+ * @method CorporationType setInteractionStatistic(Property\InteractionStatisticProperty $interactionStatistic)
  * @method CorporationType setIsicV4(Property\IsicV4Property $isicV4)
+ * @method CorporationType setKeywords(Property\KeywordsProperty $keywords)
  * @method CorporationType setLegalName(Property\LegalNameProperty $legalName)
  * @method CorporationType setLeiCode(Property\LeiCodeProperty $leiCode)
  * @method CorporationType setLocation(Property\LocationProperty $location)
@@ -53,8 +56,10 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method CorporationType setReview(Property\ReviewProperty $review)
  * @method CorporationType setSameAs(Property\SameAsProperty $sameAs)
  * @method CorporationType setSeeks(Property\SeeksProperty $seeks)
+ * @method CorporationType setSlogan(Property\SloganProperty $slogan)
  * @method CorporationType setSponsor(Property\SponsorProperty $sponsor)
  * @method CorporationType setSubOrganization(Property\SubOrganizationProperty $subOrganization)
+ * @method CorporationType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method CorporationType setTaxID(Property\TaxIDProperty $taxID)
  * @method CorporationType setTelephone(Property\TelephoneProperty $telephone)
  * @method CorporationType setUrl(Property\UrlProperty $url)
@@ -69,7 +74,7 @@ class CorporationType extends OrganizationType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -78,7 +83,7 @@ class CorporationType extends OrganizationType {
 
 	/**
 	 * Get ticker symbol.
-	 * 
+	 *
 	 * @return Property\TickerSymbolProperty
 	 */
 	public function getTickerSymbol() {
@@ -87,7 +92,7 @@ class CorporationType extends OrganizationType {
 
 	/**
 	 * Set ticker symbol.
-	 * 
+	 *
 	 * @param Property\TickerSymbolProperty $tickerSymbol
 	 * @return CorporationType
 	 */

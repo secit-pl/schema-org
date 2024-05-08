@@ -5,27 +5,27 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ActionStatusType.
+ * The status of an Action.
  * 
- * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ActionStatusType instead.
- * 
- * @method ActionStatusType setAdditionalType(Property\AdditionalType $additionalType)
- * @method ActionStatusType setAlternateName(Property\AlternateName $alternateName)
- * @method ActionStatusType setDescription(Property\Description $description)
- * @method ActionStatusType setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method ActionStatusType setIdentifier(Property\Identifier $identifier)
- * @method ActionStatusType setImage(Property\Image $image)
- * @method ActionStatusType setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method ActionStatusType setName(Property\Name $name)
- * @method ActionStatusType setPotentialAction(Property\PotentialAction $potentialAction)
- * @method ActionStatusType setSameAs(Property\SameAs $sameAs)
- * @method ActionStatusType setUrl(Property\Url $url)
+ * @method ActionStatusType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
+ * @method ActionStatusType setAlternateName(Property\AlternateNameProperty $alternateName)
+ * @method ActionStatusType setDescription(Property\DescriptionProperty $description)
+ * @method ActionStatusType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
+ * @method ActionStatusType setIdentifier(Property\IdentifierProperty $identifier)
+ * @method ActionStatusType setImage(Property\ImageProperty $image)
+ * @method ActionStatusType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
+ * @method ActionStatusType setName(Property\NameProperty $name)
+ * @method ActionStatusType setPotentialAction(Property\PotentialActionProperty $potentialAction)
+ * @method ActionStatusType setSameAs(Property\SameAsProperty $sameAs)
+ * @method ActionStatusType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method ActionStatusType setSupersededBy(Property\SupersededByProperty $supersededBy)
+ * @method ActionStatusType setUrl(Property\UrlProperty $url)
  */
-class ActionStatusType extends Enumeration {
+class ActionStatusType extends StatusEnumerationType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

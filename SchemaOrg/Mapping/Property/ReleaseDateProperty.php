@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * ReleaseDateProperty class.
+ * The release date of a product or product model. This can be used to distinguish the exact variant of a product.
  * 
  * @method ReleaseDateProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class ReleaseDateProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class ReleaseDateProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

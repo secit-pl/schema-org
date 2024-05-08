@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class OrderInTransitType.
+ * OrderStatus representing that an order is in transit.
  * 
  * @method OrderInTransitType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method OrderInTransitType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method OrderInTransitType setName(Property\NameProperty $name)
  * @method OrderInTransitType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method OrderInTransitType setSameAs(Property\SameAsProperty $sameAs)
+ * @method OrderInTransitType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method OrderInTransitType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method OrderInTransitType setUrl(Property\UrlProperty $url)
  */
 class OrderInTransitType extends OrderStatusType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class TaxiServiceType.
+ * A service for a vehicle for hire with a driver for local travel. Fares are usually calculated based on distance traveled.
  * 
  * @method TaxiServiceType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method TaxiServiceType setAggregateRating(Property\AggregateRatingProperty $aggregateRating)
@@ -19,6 +19,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method TaxiServiceType setCategory(Property\CategoryProperty $category)
  * @method TaxiServiceType setDescription(Property\DescriptionProperty $description)
  * @method TaxiServiceType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
+ * @method TaxiServiceType setHasCertification(Property\HasCertificationProperty $hasCertification)
  * @method TaxiServiceType setHasOfferCatalog(Property\HasOfferCatalogProperty $hasOfferCatalog)
  * @method TaxiServiceType setHoursAvailable(Property\HoursAvailableProperty $hoursAvailable)
  * @method TaxiServiceType setIdentifier(Property\IdentifierProperty $identifier)
@@ -30,19 +31,20 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method TaxiServiceType setName(Property\NameProperty $name)
  * @method TaxiServiceType setOffers(Property\OffersProperty $offers)
  * @method TaxiServiceType setPotentialAction(Property\PotentialActionProperty $potentialAction)
- * @method TaxiServiceType setProvider(Property\ProviderProperty $provider)
  * @method TaxiServiceType setProviderMobility(Property\ProviderMobilityProperty $providerMobility)
  * @method TaxiServiceType setReview(Property\ReviewProperty $review)
  * @method TaxiServiceType setSameAs(Property\SameAsProperty $sameAs)
  * @method TaxiServiceType setServiceOutput(Property\ServiceOutputProperty $serviceOutput)
  * @method TaxiServiceType setServiceType(Property\ServiceTypeProperty $serviceType)
+ * @method TaxiServiceType setSlogan(Property\SloganProperty $slogan)
+ * @method TaxiServiceType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method TaxiServiceType setUrl(Property\UrlProperty $url)
  */
 class TaxiServiceType extends ServiceType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

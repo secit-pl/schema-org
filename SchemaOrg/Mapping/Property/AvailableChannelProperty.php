@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * AvailableChannelProperty class.
+ * A means of accessing the service (e.g. a phone bank, a web site, a location, etc.).
  * 
  * @method AvailableChannelProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class AvailableChannelProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class AvailableChannelProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class LeaveActionType.
+ * An agent leaves an event / group with participants/friends at a location. Related actions: JoinAction: The antonym of LeaveAction. UnRegisterAction: Unlike UnRegisterAction, LeaveAction implies leaving a group/team of people rather than a service.
  * 
  * @method LeaveActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method LeaveActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method LeaveActionType setResult(Property\ResultProperty $result)
  * @method LeaveActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method LeaveActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method LeaveActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method LeaveActionType setTarget(Property\TargetProperty $target)
  * @method LeaveActionType setUrl(Property\UrlProperty $url)
  */
@@ -39,7 +40,7 @@ class LeaveActionType extends InteractActionType {
 
 	/**
 	 * Get event.
-	 * 
+	 *
 	 * @return Property\EventProperty
 	 */
 	public function getEvent() {
@@ -48,7 +49,7 @@ class LeaveActionType extends InteractActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -57,7 +58,7 @@ class LeaveActionType extends InteractActionType {
 
 	/**
 	 * Set event.
-	 * 
+	 *
 	 * @param Property\EventProperty $event
 	 * @return LeaveActionType
 	 */

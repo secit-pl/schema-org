@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ServiceType.
+ * A service provided by an organization, e.g. delivery service, print services, etc.
  * 
  * @method ServiceType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method ServiceType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,6 +17,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ServiceType setName(Property\NameProperty $name)
  * @method ServiceType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method ServiceType setSameAs(Property\SameAsProperty $sameAs)
+ * @method ServiceType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method ServiceType setUrl(Property\UrlProperty $url)
  */
 class ServiceType extends IntangibleType {
@@ -62,6 +63,11 @@ class ServiceType extends IntangibleType {
 	private $category;
 
 	/**
+	 * @var Property\HasCertificationProperty
+	 */
+	private $hasCertification;
+
+	/**
 	 * @var Property\HasOfferCatalogProperty
 	 */
 	private $hasOfferCatalog;
@@ -92,11 +98,6 @@ class ServiceType extends IntangibleType {
 	private $offers;
 
 	/**
-	 * @var Property\ProviderProperty
-	 */
-	private $provider;
-
-	/**
 	 * @var Property\ProviderMobilityProperty
 	 */
 	private $providerMobility;
@@ -117,8 +118,13 @@ class ServiceType extends IntangibleType {
 	private $serviceType;
 
 	/**
+	 * @var Property\SloganProperty
+	 */
+	private $slogan;
+
+	/**
 	 * Get aggregate rating.
-	 * 
+	 *
 	 * @return Property\AggregateRatingProperty
 	 */
 	public function getAggregateRating() {
@@ -127,7 +133,7 @@ class ServiceType extends IntangibleType {
 
 	/**
 	 * Get area served.
-	 * 
+	 *
 	 * @return Property\AreaServedProperty
 	 */
 	public function getAreaServed() {
@@ -136,7 +142,7 @@ class ServiceType extends IntangibleType {
 
 	/**
 	 * Get audience.
-	 * 
+	 *
 	 * @return Property\AudienceProperty
 	 */
 	public function getAudience() {
@@ -145,7 +151,7 @@ class ServiceType extends IntangibleType {
 
 	/**
 	 * Get available channel.
-	 * 
+	 *
 	 * @return Property\AvailableChannelProperty
 	 */
 	public function getAvailableChannel() {
@@ -154,7 +160,7 @@ class ServiceType extends IntangibleType {
 
 	/**
 	 * Get award.
-	 * 
+	 *
 	 * @return Property\AwardProperty
 	 */
 	public function getAward() {
@@ -163,7 +169,7 @@ class ServiceType extends IntangibleType {
 
 	/**
 	 * Get brand.
-	 * 
+	 *
 	 * @return Property\BrandProperty
 	 */
 	public function getBrand() {
@@ -172,7 +178,7 @@ class ServiceType extends IntangibleType {
 
 	/**
 	 * Get broker.
-	 * 
+	 *
 	 * @return Property\BrokerProperty
 	 */
 	public function getBroker() {
@@ -181,7 +187,7 @@ class ServiceType extends IntangibleType {
 
 	/**
 	 * Get category.
-	 * 
+	 *
 	 * @return Property\CategoryProperty
 	 */
 	public function getCategory() {
@@ -189,8 +195,17 @@ class ServiceType extends IntangibleType {
 	}
 
 	/**
+	 * Get has certification.
+	 *
+	 * @return Property\HasCertificationProperty
+	 */
+	public function getHasCertification() {
+		return $this->hasCertification;
+	}
+
+	/**
 	 * Get has offer catalog.
-	 * 
+	 *
 	 * @return Property\HasOfferCatalogProperty
 	 */
 	public function getHasOfferCatalog() {
@@ -199,7 +214,7 @@ class ServiceType extends IntangibleType {
 
 	/**
 	 * Get hours available.
-	 * 
+	 *
 	 * @return Property\HoursAvailableProperty
 	 */
 	public function getHoursAvailable() {
@@ -208,7 +223,7 @@ class ServiceType extends IntangibleType {
 
 	/**
 	 * Get is related to.
-	 * 
+	 *
 	 * @return Property\IsRelatedToProperty
 	 */
 	public function getIsRelatedTo() {
@@ -217,7 +232,7 @@ class ServiceType extends IntangibleType {
 
 	/**
 	 * Get is similar to.
-	 * 
+	 *
 	 * @return Property\IsSimilarToProperty
 	 */
 	public function getIsSimilarTo() {
@@ -226,7 +241,7 @@ class ServiceType extends IntangibleType {
 
 	/**
 	 * Get logo.
-	 * 
+	 *
 	 * @return Property\LogoProperty
 	 */
 	public function getLogo() {
@@ -235,7 +250,7 @@ class ServiceType extends IntangibleType {
 
 	/**
 	 * Get offers.
-	 * 
+	 *
 	 * @return Property\OffersProperty
 	 */
 	public function getOffers() {
@@ -243,17 +258,8 @@ class ServiceType extends IntangibleType {
 	}
 
 	/**
-	 * Get provider.
-	 * 
-	 * @return Property\ProviderProperty
-	 */
-	public function getProvider() {
-		return $this->provider;
-	}
-
-	/**
 	 * Get provider mobility.
-	 * 
+	 *
 	 * @return Property\ProviderMobilityProperty
 	 */
 	public function getProviderMobility() {
@@ -262,7 +268,7 @@ class ServiceType extends IntangibleType {
 
 	/**
 	 * Get review.
-	 * 
+	 *
 	 * @return Property\ReviewProperty
 	 */
 	public function getReview() {
@@ -271,7 +277,7 @@ class ServiceType extends IntangibleType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -280,7 +286,7 @@ class ServiceType extends IntangibleType {
 
 	/**
 	 * Get service output.
-	 * 
+	 *
 	 * @return Property\ServiceOutputProperty
 	 */
 	public function getServiceOutput() {
@@ -289,7 +295,7 @@ class ServiceType extends IntangibleType {
 
 	/**
 	 * Get service type.
-	 * 
+	 *
 	 * @return Property\ServiceTypeProperty
 	 */
 	public function getServiceType() {
@@ -297,8 +303,17 @@ class ServiceType extends IntangibleType {
 	}
 
 	/**
+	 * Get slogan.
+	 *
+	 * @return Property\SloganProperty
+	 */
+	public function getSlogan() {
+		return $this->slogan;
+	}
+
+	/**
 	 * Set aggregate rating.
-	 * 
+	 *
 	 * @param Property\AggregateRatingProperty $aggregateRating
 	 * @return ServiceType
 	 */
@@ -310,7 +325,7 @@ class ServiceType extends IntangibleType {
 
 	/**
 	 * Set area served.
-	 * 
+	 *
 	 * @param Property\AreaServedProperty $areaServed
 	 * @return ServiceType
 	 */
@@ -322,7 +337,7 @@ class ServiceType extends IntangibleType {
 
 	/**
 	 * Set audience.
-	 * 
+	 *
 	 * @param Property\AudienceProperty $audience
 	 * @return ServiceType
 	 */
@@ -334,7 +349,7 @@ class ServiceType extends IntangibleType {
 
 	/**
 	 * Set available channel.
-	 * 
+	 *
 	 * @param Property\AvailableChannelProperty $availableChannel
 	 * @return ServiceType
 	 */
@@ -346,7 +361,7 @@ class ServiceType extends IntangibleType {
 
 	/**
 	 * Set award.
-	 * 
+	 *
 	 * @param Property\AwardProperty $award
 	 * @return ServiceType
 	 */
@@ -358,7 +373,7 @@ class ServiceType extends IntangibleType {
 
 	/**
 	 * Set brand.
-	 * 
+	 *
 	 * @param Property\BrandProperty $brand
 	 * @return ServiceType
 	 */
@@ -370,7 +385,7 @@ class ServiceType extends IntangibleType {
 
 	/**
 	 * Set broker.
-	 * 
+	 *
 	 * @param Property\BrokerProperty $broker
 	 * @return ServiceType
 	 */
@@ -382,7 +397,7 @@ class ServiceType extends IntangibleType {
 
 	/**
 	 * Set category.
-	 * 
+	 *
 	 * @param Property\CategoryProperty $category
 	 * @return ServiceType
 	 */
@@ -393,8 +408,20 @@ class ServiceType extends IntangibleType {
 	}
 
 	/**
+	 * Set has certification.
+	 *
+	 * @param Property\HasCertificationProperty $hasCertification
+	 * @return ServiceType
+	 */
+	public function setHasCertification(Property\HasCertificationProperty $hasCertification) {
+		$this->hasCertification = $hasCertification;
+
+		return $this;
+	}
+
+	/**
 	 * Set has offer catalog.
-	 * 
+	 *
 	 * @param Property\HasOfferCatalogProperty $hasOfferCatalog
 	 * @return ServiceType
 	 */
@@ -406,7 +433,7 @@ class ServiceType extends IntangibleType {
 
 	/**
 	 * Set hours available.
-	 * 
+	 *
 	 * @param Property\HoursAvailableProperty $hoursAvailable
 	 * @return ServiceType
 	 */
@@ -418,7 +445,7 @@ class ServiceType extends IntangibleType {
 
 	/**
 	 * Set is related to.
-	 * 
+	 *
 	 * @param Property\IsRelatedToProperty $isRelatedTo
 	 * @return ServiceType
 	 */
@@ -430,7 +457,7 @@ class ServiceType extends IntangibleType {
 
 	/**
 	 * Set is similar to.
-	 * 
+	 *
 	 * @param Property\IsSimilarToProperty $isSimilarTo
 	 * @return ServiceType
 	 */
@@ -442,7 +469,7 @@ class ServiceType extends IntangibleType {
 
 	/**
 	 * Set logo.
-	 * 
+	 *
 	 * @param Property\LogoProperty $logo
 	 * @return ServiceType
 	 */
@@ -454,7 +481,7 @@ class ServiceType extends IntangibleType {
 
 	/**
 	 * Set offers.
-	 * 
+	 *
 	 * @param Property\OffersProperty $offers
 	 * @return ServiceType
 	 */
@@ -465,20 +492,8 @@ class ServiceType extends IntangibleType {
 	}
 
 	/**
-	 * Set provider.
-	 * 
-	 * @param Property\ProviderProperty $provider
-	 * @return ServiceType
-	 */
-	public function setProvider(Property\ProviderProperty $provider) {
-		$this->provider = $provider;
-
-		return $this;
-	}
-
-	/**
 	 * Set provider mobility.
-	 * 
+	 *
 	 * @param Property\ProviderMobilityProperty $providerMobility
 	 * @return ServiceType
 	 */
@@ -490,7 +505,7 @@ class ServiceType extends IntangibleType {
 
 	/**
 	 * Set review.
-	 * 
+	 *
 	 * @param Property\ReviewProperty $review
 	 * @return ServiceType
 	 */
@@ -502,7 +517,7 @@ class ServiceType extends IntangibleType {
 
 	/**
 	 * Set service output.
-	 * 
+	 *
 	 * @param Property\ServiceOutputProperty $serviceOutput
 	 * @return ServiceType
 	 */
@@ -514,12 +529,24 @@ class ServiceType extends IntangibleType {
 
 	/**
 	 * Set service type.
-	 * 
+	 *
 	 * @param Property\ServiceTypeProperty $serviceType
 	 * @return ServiceType
 	 */
 	public function setServiceType(Property\ServiceTypeProperty $serviceType) {
 		$this->serviceType = $serviceType;
+
+		return $this;
+	}
+
+	/**
+	 * Set slogan.
+	 *
+	 * @param Property\SloganProperty $slogan
+	 * @return ServiceType
+	 */
+	public function setSlogan(Property\SloganProperty $slogan) {
+		$this->slogan = $slogan;
 
 		return $this;
 	}

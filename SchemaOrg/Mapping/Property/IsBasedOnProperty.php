@@ -6,7 +6,7 @@ use SecIT\SchemaOrg\Mapping\DataType;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * IsBasedOnProperty class.
+ * A resource from which this work is derived or from which it is a modification or adaptation.
  * 
  * @method IsBasedOnProperty setValue($value)
  */
@@ -14,7 +14,7 @@ class IsBasedOnProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -23,7 +23,7 @@ class IsBasedOnProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

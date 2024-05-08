@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class RsvpResponseNoType.
+ * The invitee will not attend.
  * 
  * @method RsvpResponseNoType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method RsvpResponseNoType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method RsvpResponseNoType setName(Property\NameProperty $name)
  * @method RsvpResponseNoType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method RsvpResponseNoType setSameAs(Property\SameAsProperty $sameAs)
+ * @method RsvpResponseNoType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method RsvpResponseNoType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method RsvpResponseNoType setUrl(Property\UrlProperty $url)
  */
 class RsvpResponseNoType extends RsvpResponseType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

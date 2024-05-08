@@ -6,7 +6,7 @@ use SecIT\SchemaOrg\Mapping\DataType;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * NumberOfAxlesProperty class.
+ * The number of axles. Typical unit code(s): C62.
  * 
  * @method NumberOfAxlesProperty setValue($value)
  */
@@ -14,7 +14,7 @@ class NumberOfAxlesProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -23,7 +23,7 @@ class NumberOfAxlesProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

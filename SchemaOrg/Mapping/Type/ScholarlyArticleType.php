@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ScholarlyArticleType.
+ * A scholarly article.
  * 
+ * @method ScholarlyArticleType setAbout(Property\AboutProperty $about)
  * @method ScholarlyArticleType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method ScholarlyArticleType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method ScholarlyArticleType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -35,6 +36,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ScholarlyArticleType setContributor(Property\ContributorProperty $contributor)
  * @method ScholarlyArticleType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method ScholarlyArticleType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method ScholarlyArticleType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method ScholarlyArticleType setCreator(Property\CreatorProperty $creator)
  * @method ScholarlyArticleType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method ScholarlyArticleType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -46,9 +48,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ScholarlyArticleType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method ScholarlyArticleType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method ScholarlyArticleType setEncoding(Property\EncodingProperty $encoding)
+ * @method ScholarlyArticleType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method ScholarlyArticleType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method ScholarlyArticleType setExpires(Property\ExpiresProperty $expires)
- * @method ScholarlyArticleType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method ScholarlyArticleType setFunder(Property\FunderProperty $funder)
  * @method ScholarlyArticleType setGenre(Property\GenreProperty $genre)
  * @method ScholarlyArticleType setHasPart(Property\HasPartProperty $hasPart)
@@ -78,9 +80,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ScholarlyArticleType setPosition(Property\PositionProperty $position)
  * @method ScholarlyArticleType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method ScholarlyArticleType setProducer(Property\ProducerProperty $producer)
- * @method ScholarlyArticleType setProvider(Property\ProviderProperty $provider)
  * @method ScholarlyArticleType setPublication(Property\PublicationProperty $publication)
  * @method ScholarlyArticleType setPublisher(Property\PublisherProperty $publisher)
+ * @method ScholarlyArticleType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method ScholarlyArticleType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method ScholarlyArticleType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method ScholarlyArticleType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -88,12 +90,18 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ScholarlyArticleType setSameAs(Property\SameAsProperty $sameAs)
  * @method ScholarlyArticleType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method ScholarlyArticleType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method ScholarlyArticleType setSpatial(Property\SpatialProperty $spatial)
  * @method ScholarlyArticleType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
+ * @method ScholarlyArticleType setSpeakable(Property\SpeakableProperty $speakable)
  * @method ScholarlyArticleType setSponsor(Property\SponsorProperty $sponsor)
+ * @method ScholarlyArticleType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method ScholarlyArticleType setTemporal(Property\TemporalProperty $temporal)
  * @method ScholarlyArticleType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method ScholarlyArticleType setText(Property\TextProperty $text)
+ * @method ScholarlyArticleType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method ScholarlyArticleType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method ScholarlyArticleType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method ScholarlyArticleType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method ScholarlyArticleType setTranslator(Property\TranslatorProperty $translator)
  * @method ScholarlyArticleType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method ScholarlyArticleType setUrl(Property\UrlProperty $url)
@@ -101,12 +109,13 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ScholarlyArticleType setVideo(Property\VideoProperty $video)
  * @method ScholarlyArticleType setWordCount(Property\WordCountProperty $wordCount)
  * @method ScholarlyArticleType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method ScholarlyArticleType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class ScholarlyArticleType extends ArticleType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class MiddleSchoolType.
+ * A middle school (typically for children aged around 11-14, although this varies somewhat).
  * 
  * @method MiddleSchoolType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method MiddleSchoolType setAddress(Property\AddressProperty $address)
@@ -30,11 +30,14 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MiddleSchoolType setFoundingLocation(Property\FoundingLocationProperty $foundingLocation)
  * @method MiddleSchoolType setFunder(Property\FunderProperty $funder)
  * @method MiddleSchoolType setGlobalLocationNumber(Property\GlobalLocationNumberProperty $globalLocationNumber)
+ * @method MiddleSchoolType setHasCertification(Property\HasCertificationProperty $hasCertification)
  * @method MiddleSchoolType setHasOfferCatalog(Property\HasOfferCatalogProperty $hasOfferCatalog)
  * @method MiddleSchoolType setHasPOS(Property\HasPOSProperty $hasPOS)
  * @method MiddleSchoolType setIdentifier(Property\IdentifierProperty $identifier)
  * @method MiddleSchoolType setImage(Property\ImageProperty $image)
+ * @method MiddleSchoolType setInteractionStatistic(Property\InteractionStatisticProperty $interactionStatistic)
  * @method MiddleSchoolType setIsicV4(Property\IsicV4Property $isicV4)
+ * @method MiddleSchoolType setKeywords(Property\KeywordsProperty $keywords)
  * @method MiddleSchoolType setLegalName(Property\LegalNameProperty $legalName)
  * @method MiddleSchoolType setLeiCode(Property\LeiCodeProperty $leiCode)
  * @method MiddleSchoolType setLocation(Property\LocationProperty $location)
@@ -53,8 +56,10 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MiddleSchoolType setReview(Property\ReviewProperty $review)
  * @method MiddleSchoolType setSameAs(Property\SameAsProperty $sameAs)
  * @method MiddleSchoolType setSeeks(Property\SeeksProperty $seeks)
+ * @method MiddleSchoolType setSlogan(Property\SloganProperty $slogan)
  * @method MiddleSchoolType setSponsor(Property\SponsorProperty $sponsor)
  * @method MiddleSchoolType setSubOrganization(Property\SubOrganizationProperty $subOrganization)
+ * @method MiddleSchoolType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method MiddleSchoolType setTaxID(Property\TaxIDProperty $taxID)
  * @method MiddleSchoolType setTelephone(Property\TelephoneProperty $telephone)
  * @method MiddleSchoolType setUrl(Property\UrlProperty $url)
@@ -64,7 +69,7 @@ class MiddleSchoolType extends EducationalOrganizationType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

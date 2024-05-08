@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class PlanActionType.
+ * The act of planning the execution of an event/task/action/reservation/plan to a future date.
  * 
  * @method PlanActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method PlanActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method PlanActionType setResult(Property\ResultProperty $result)
  * @method PlanActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method PlanActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method PlanActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method PlanActionType setTarget(Property\TargetProperty $target)
  * @method PlanActionType setUrl(Property\UrlProperty $url)
  */
@@ -39,7 +40,7 @@ class PlanActionType extends OrganizeActionType {
 
 	/**
 	 * Get scheduled time.
-	 * 
+	 *
 	 * @return Property\ScheduledTimeProperty
 	 */
 	public function getScheduledTime() {
@@ -48,7 +49,7 @@ class PlanActionType extends OrganizeActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -57,7 +58,7 @@ class PlanActionType extends OrganizeActionType {
 
 	/**
 	 * Set scheduled time.
-	 * 
+	 *
 	 * @param Property\ScheduledTimeProperty $scheduledTime
 	 * @return PlanActionType
 	 */

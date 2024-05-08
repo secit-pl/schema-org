@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class MovieType.
+ * A movie.
  * 
+ * @method MovieType setAbout(Property\AboutProperty $about)
  * @method MovieType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method MovieType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method MovieType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -33,6 +34,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MovieType setContributor(Property\ContributorProperty $contributor)
  * @method MovieType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method MovieType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method MovieType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method MovieType setCreator(Property\CreatorProperty $creator)
  * @method MovieType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method MovieType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -44,9 +46,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MovieType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method MovieType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method MovieType setEncoding(Property\EncodingProperty $encoding)
+ * @method MovieType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method MovieType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method MovieType setExpires(Property\ExpiresProperty $expires)
- * @method MovieType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method MovieType setFunder(Property\FunderProperty $funder)
  * @method MovieType setGenre(Property\GenreProperty $genre)
  * @method MovieType setHasPart(Property\HasPartProperty $hasPart)
@@ -73,9 +75,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MovieType setPosition(Property\PositionProperty $position)
  * @method MovieType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method MovieType setProducer(Property\ProducerProperty $producer)
- * @method MovieType setProvider(Property\ProviderProperty $provider)
  * @method MovieType setPublication(Property\PublicationProperty $publication)
  * @method MovieType setPublisher(Property\PublisherProperty $publisher)
+ * @method MovieType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method MovieType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method MovieType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method MovieType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -83,18 +85,24 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MovieType setSameAs(Property\SameAsProperty $sameAs)
  * @method MovieType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method MovieType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method MovieType setSpatial(Property\SpatialProperty $spatial)
  * @method MovieType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method MovieType setSponsor(Property\SponsorProperty $sponsor)
+ * @method MovieType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method MovieType setTemporal(Property\TemporalProperty $temporal)
  * @method MovieType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method MovieType setText(Property\TextProperty $text)
+ * @method MovieType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method MovieType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method MovieType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method MovieType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method MovieType setTranslator(Property\TranslatorProperty $translator)
  * @method MovieType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method MovieType setUrl(Property\UrlProperty $url)
  * @method MovieType setVersion(Property\VersionProperty $version)
  * @method MovieType setVideo(Property\VideoProperty $video)
  * @method MovieType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method MovieType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class MovieType extends CreativeWorkType {
 
@@ -114,6 +122,11 @@ class MovieType extends CreativeWorkType {
 	private $director;
 
 	/**
+	 * @var Property\DurationProperty
+	 */
+	private $duration;
+
+	/**
 	 * @var Property\MusicByProperty
 	 */
 	private $musicBy;
@@ -124,18 +137,13 @@ class MovieType extends CreativeWorkType {
 	private $productionCompany;
 
 	/**
-	 * @var Property\SubtitleLanguageProperty
-	 */
-	private $subtitleLanguage;
-
-	/**
 	 * @var Property\TrailerProperty
 	 */
 	private $trailer;
 
 	/**
 	 * Get actor.
-	 * 
+	 *
 	 * @return Property\ActorProperty
 	 */
 	public function getActor() {
@@ -144,7 +152,7 @@ class MovieType extends CreativeWorkType {
 
 	/**
 	 * Get country of origin.
-	 * 
+	 *
 	 * @return Property\CountryOfOriginProperty
 	 */
 	public function getCountryOfOrigin() {
@@ -153,7 +161,7 @@ class MovieType extends CreativeWorkType {
 
 	/**
 	 * Get director.
-	 * 
+	 *
 	 * @return Property\DirectorProperty
 	 */
 	public function getDirector() {
@@ -161,8 +169,17 @@ class MovieType extends CreativeWorkType {
 	}
 
 	/**
+	 * Get duration.
+	 *
+	 * @return Property\DurationProperty
+	 */
+	public function getDuration() {
+		return $this->duration;
+	}
+
+	/**
 	 * Get music by.
-	 * 
+	 *
 	 * @return Property\MusicByProperty
 	 */
 	public function getMusicBy() {
@@ -171,7 +188,7 @@ class MovieType extends CreativeWorkType {
 
 	/**
 	 * Get production company.
-	 * 
+	 *
 	 * @return Property\ProductionCompanyProperty
 	 */
 	public function getProductionCompany() {
@@ -180,7 +197,7 @@ class MovieType extends CreativeWorkType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -188,17 +205,8 @@ class MovieType extends CreativeWorkType {
 	}
 
 	/**
-	 * Get subtitle language.
-	 * 
-	 * @return Property\SubtitleLanguageProperty
-	 */
-	public function getSubtitleLanguage() {
-		return $this->subtitleLanguage;
-	}
-
-	/**
 	 * Get trailer.
-	 * 
+	 *
 	 * @return Property\TrailerProperty
 	 */
 	public function getTrailer() {
@@ -207,7 +215,7 @@ class MovieType extends CreativeWorkType {
 
 	/**
 	 * Set actor.
-	 * 
+	 *
 	 * @param Property\ActorProperty $actor
 	 * @return MovieType
 	 */
@@ -219,7 +227,7 @@ class MovieType extends CreativeWorkType {
 
 	/**
 	 * Set country of origin.
-	 * 
+	 *
 	 * @param Property\CountryOfOriginProperty $countryOfOrigin
 	 * @return MovieType
 	 */
@@ -231,7 +239,7 @@ class MovieType extends CreativeWorkType {
 
 	/**
 	 * Set director.
-	 * 
+	 *
 	 * @param Property\DirectorProperty $director
 	 * @return MovieType
 	 */
@@ -242,8 +250,20 @@ class MovieType extends CreativeWorkType {
 	}
 
 	/**
+	 * Set duration.
+	 *
+	 * @param Property\DurationProperty $duration
+	 * @return MovieType
+	 */
+	public function setDuration(Property\DurationProperty $duration) {
+		$this->duration = $duration;
+
+		return $this;
+	}
+
+	/**
 	 * Set music by.
-	 * 
+	 *
 	 * @param Property\MusicByProperty $musicBy
 	 * @return MovieType
 	 */
@@ -255,7 +275,7 @@ class MovieType extends CreativeWorkType {
 
 	/**
 	 * Set production company.
-	 * 
+	 *
 	 * @param Property\ProductionCompanyProperty $productionCompany
 	 * @return MovieType
 	 */
@@ -266,20 +286,8 @@ class MovieType extends CreativeWorkType {
 	}
 
 	/**
-	 * Set subtitle language.
-	 * 
-	 * @param Property\SubtitleLanguageProperty $subtitleLanguage
-	 * @return MovieType
-	 */
-	public function setSubtitleLanguage(Property\SubtitleLanguageProperty $subtitleLanguage) {
-		$this->subtitleLanguage = $subtitleLanguage;
-
-		return $this;
-	}
-
-	/**
 	 * Set trailer.
-	 * 
+	 *
 	 * @param Property\TrailerProperty $trailer
 	 * @return MovieType
 	 */

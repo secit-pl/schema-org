@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * BroadcastServiceTierProperty class.
+ * The type of service required to have access to the channel (e.g. Standard or Premium).
  * 
  * @method BroadcastServiceTierProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class BroadcastServiceTierProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class BroadcastServiceTierProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

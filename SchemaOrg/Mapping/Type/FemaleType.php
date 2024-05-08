@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class FemaleType.
+ * The female gender.
  * 
  * @method FemaleType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method FemaleType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method FemaleType setName(Property\NameProperty $name)
  * @method FemaleType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method FemaleType setSameAs(Property\SameAsProperty $sameAs)
+ * @method FemaleType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method FemaleType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method FemaleType setUrl(Property\UrlProperty $url)
  */
 class FemaleType extends GenderType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

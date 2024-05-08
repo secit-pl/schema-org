@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * IsFamilyFriendlyProperty class.
+ * Indicates whether this content is family friendly.
  * 
  * @method IsFamilyFriendlyProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class IsFamilyFriendlyProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class IsFamilyFriendlyProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

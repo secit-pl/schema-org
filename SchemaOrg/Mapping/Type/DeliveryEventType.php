@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class DeliveryEventType.
+ * An event involving the delivery of an item.
  * 
+ * @method DeliveryEventType setAbout(Property\AboutProperty $about)
  * @method DeliveryEventType setActor(Property\ActorProperty $actor)
  * @method DeliveryEventType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method DeliveryEventType setAggregateRating(Property\AggregateRatingProperty $aggregateRating)
@@ -19,6 +20,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method DeliveryEventType setDirector(Property\DirectorProperty $director)
  * @method DeliveryEventType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
  * @method DeliveryEventType setDoorTime(Property\DoorTimeProperty $doorTime)
+ * @method DeliveryEventType setDuration(Property\DurationProperty $duration)
  * @method DeliveryEventType setEndDate(Property\EndDateProperty $endDate)
  * @method DeliveryEventType setEventStatus(Property\EventStatusProperty $eventStatus)
  * @method DeliveryEventType setFunder(Property\FunderProperty $funder)
@@ -26,6 +28,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method DeliveryEventType setImage(Property\ImageProperty $image)
  * @method DeliveryEventType setInLanguage(Property\InLanguageProperty $inLanguage)
  * @method DeliveryEventType setIsAccessibleForFree(Property\IsAccessibleForFreeProperty $isAccessibleForFree)
+ * @method DeliveryEventType setKeywords(Property\KeywordsProperty $keywords)
  * @method DeliveryEventType setLocation(Property\LocationProperty $location)
  * @method DeliveryEventType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
  * @method DeliveryEventType setMaximumAttendeeCapacity(Property\MaximumAttendeeCapacityProperty $maximumAttendeeCapacity)
@@ -42,6 +45,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method DeliveryEventType setSponsor(Property\SponsorProperty $sponsor)
  * @method DeliveryEventType setStartDate(Property\StartDateProperty $startDate)
  * @method DeliveryEventType setSubEvent(Property\SubEventProperty $subEvent)
+ * @method DeliveryEventType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method DeliveryEventType setSuperEvent(Property\SuperEventProperty $superEvent)
  * @method DeliveryEventType setTranslator(Property\TranslatorProperty $translator)
  * @method DeliveryEventType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
@@ -73,7 +77,7 @@ class DeliveryEventType extends EventType {
 
 	/**
 	 * Get access code.
-	 * 
+	 *
 	 * @return Property\AccessCodeProperty
 	 */
 	public function getAccessCode() {
@@ -82,7 +86,7 @@ class DeliveryEventType extends EventType {
 
 	/**
 	 * Get available from.
-	 * 
+	 *
 	 * @return Property\AvailableFromProperty
 	 */
 	public function getAvailableFrom() {
@@ -91,7 +95,7 @@ class DeliveryEventType extends EventType {
 
 	/**
 	 * Get available through.
-	 * 
+	 *
 	 * @return Property\AvailableThroughProperty
 	 */
 	public function getAvailableThrough() {
@@ -100,7 +104,7 @@ class DeliveryEventType extends EventType {
 
 	/**
 	 * Get has delivery method.
-	 * 
+	 *
 	 * @return Property\HasDeliveryMethodProperty
 	 */
 	public function getHasDeliveryMethod() {
@@ -109,7 +113,7 @@ class DeliveryEventType extends EventType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -118,7 +122,7 @@ class DeliveryEventType extends EventType {
 
 	/**
 	 * Set access code.
-	 * 
+	 *
 	 * @param Property\AccessCodeProperty $accessCode
 	 * @return DeliveryEventType
 	 */
@@ -130,7 +134,7 @@ class DeliveryEventType extends EventType {
 
 	/**
 	 * Set available from.
-	 * 
+	 *
 	 * @param Property\AvailableFromProperty $availableFrom
 	 * @return DeliveryEventType
 	 */
@@ -142,7 +146,7 @@ class DeliveryEventType extends EventType {
 
 	/**
 	 * Set available through.
-	 * 
+	 *
 	 * @param Property\AvailableThroughProperty $availableThrough
 	 * @return DeliveryEventType
 	 */
@@ -154,7 +158,7 @@ class DeliveryEventType extends EventType {
 
 	/**
 	 * Set has delivery method.
-	 * 
+	 *
 	 * @param Property\HasDeliveryMethodProperty $hasDeliveryMethod
 	 * @return DeliveryEventType
 	 */

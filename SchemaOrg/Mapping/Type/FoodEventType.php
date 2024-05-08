@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class FoodEventType.
+ * Event type: Food event.
  * 
+ * @method FoodEventType setAbout(Property\AboutProperty $about)
  * @method FoodEventType setActor(Property\ActorProperty $actor)
  * @method FoodEventType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method FoodEventType setAggregateRating(Property\AggregateRatingProperty $aggregateRating)
@@ -19,6 +20,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method FoodEventType setDirector(Property\DirectorProperty $director)
  * @method FoodEventType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
  * @method FoodEventType setDoorTime(Property\DoorTimeProperty $doorTime)
+ * @method FoodEventType setDuration(Property\DurationProperty $duration)
  * @method FoodEventType setEndDate(Property\EndDateProperty $endDate)
  * @method FoodEventType setEventStatus(Property\EventStatusProperty $eventStatus)
  * @method FoodEventType setFunder(Property\FunderProperty $funder)
@@ -26,6 +28,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method FoodEventType setImage(Property\ImageProperty $image)
  * @method FoodEventType setInLanguage(Property\InLanguageProperty $inLanguage)
  * @method FoodEventType setIsAccessibleForFree(Property\IsAccessibleForFreeProperty $isAccessibleForFree)
+ * @method FoodEventType setKeywords(Property\KeywordsProperty $keywords)
  * @method FoodEventType setLocation(Property\LocationProperty $location)
  * @method FoodEventType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
  * @method FoodEventType setMaximumAttendeeCapacity(Property\MaximumAttendeeCapacityProperty $maximumAttendeeCapacity)
@@ -42,6 +45,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method FoodEventType setSponsor(Property\SponsorProperty $sponsor)
  * @method FoodEventType setStartDate(Property\StartDateProperty $startDate)
  * @method FoodEventType setSubEvent(Property\SubEventProperty $subEvent)
+ * @method FoodEventType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method FoodEventType setSuperEvent(Property\SuperEventProperty $superEvent)
  * @method FoodEventType setTranslator(Property\TranslatorProperty $translator)
  * @method FoodEventType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
@@ -53,7 +57,7 @@ class FoodEventType extends EventType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

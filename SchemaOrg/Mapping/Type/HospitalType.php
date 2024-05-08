@@ -5,73 +5,123 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class HospitalType.
+ * A hospital.
  * 
+ * @method HospitalType setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method HospitalType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method HospitalType setAddress(Property\AddressProperty $address)
  * @method HospitalType setAggregateRating(Property\AggregateRatingProperty $aggregateRating)
  * @method HospitalType setAlternateName(Property\AlternateNameProperty $alternateName)
- * @method HospitalType setAlumni(Property\AlumniProperty $alumni)
- * @method HospitalType setAreaServed(Property\AreaServedProperty $areaServed)
- * @method HospitalType setAward(Property\AwardProperty $award)
- * @method HospitalType setBrand(Property\BrandProperty $brand)
- * @method HospitalType setContactPoint(Property\ContactPointProperty $contactPoint)
+ * @method HospitalType setAmenityFeature(Property\AmenityFeatureProperty $amenityFeature)
+ * @method HospitalType setBranchCode(Property\BranchCodeProperty $branchCode)
+ * @method HospitalType setContainedInPlace(Property\ContainedInPlaceProperty $containedInPlace)
+ * @method HospitalType setContainsPlace(Property\ContainsPlaceProperty $containsPlace)
  * @method HospitalType setCurrenciesAccepted(Property\CurrenciesAcceptedProperty $currenciesAccepted)
- * @method HospitalType setDepartment(Property\DepartmentProperty $department)
  * @method HospitalType setDescription(Property\DescriptionProperty $description)
  * @method HospitalType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
- * @method HospitalType setDissolutionDate(Property\DissolutionDateProperty $dissolutionDate)
- * @method HospitalType setDuns(Property\DunsProperty $duns)
- * @method HospitalType setEmail(Property\EmailProperty $email)
- * @method HospitalType setEmployee(Property\EmployeeProperty $employee)
  * @method HospitalType setEvent(Property\EventProperty $event)
  * @method HospitalType setFaxNumber(Property\FaxNumberProperty $faxNumber)
- * @method HospitalType setFounder(Property\FounderProperty $founder)
- * @method HospitalType setFoundingDate(Property\FoundingDateProperty $foundingDate)
- * @method HospitalType setFoundingLocation(Property\FoundingLocationProperty $foundingLocation)
- * @method HospitalType setFunder(Property\FunderProperty $funder)
+ * @method HospitalType setGeo(Property\GeoProperty $geo)
+ * @method HospitalType setGeoContains(Property\GeoContainsProperty $geoContains)
+ * @method HospitalType setGeoCoveredBy(Property\GeoCoveredByProperty $geoCoveredBy)
+ * @method HospitalType setGeoCovers(Property\GeoCoversProperty $geoCovers)
+ * @method HospitalType setGeoCrosses(Property\GeoCrossesProperty $geoCrosses)
+ * @method HospitalType setGeoDisjoint(Property\GeoDisjointProperty $geoDisjoint)
+ * @method HospitalType setGeoEquals(Property\GeoEqualsProperty $geoEquals)
+ * @method HospitalType setGeoIntersects(Property\GeoIntersectsProperty $geoIntersects)
+ * @method HospitalType setGeoOverlaps(Property\GeoOverlapsProperty $geoOverlaps)
+ * @method HospitalType setGeoTouches(Property\GeoTouchesProperty $geoTouches)
+ * @method HospitalType setGeoWithin(Property\GeoWithinProperty $geoWithin)
  * @method HospitalType setGlobalLocationNumber(Property\GlobalLocationNumberProperty $globalLocationNumber)
- * @method HospitalType setHasOfferCatalog(Property\HasOfferCatalogProperty $hasOfferCatalog)
- * @method HospitalType setHasPOS(Property\HasPOSProperty $hasPOS)
+ * @method HospitalType setHasCertification(Property\HasCertificationProperty $hasCertification)
+ * @method HospitalType setHasMap(Property\HasMapProperty $hasMap)
  * @method HospitalType setIdentifier(Property\IdentifierProperty $identifier)
  * @method HospitalType setImage(Property\ImageProperty $image)
+ * @method HospitalType setIsAccessibleForFree(Property\IsAccessibleForFreeProperty $isAccessibleForFree)
  * @method HospitalType setIsicV4(Property\IsicV4Property $isicV4)
- * @method HospitalType setLegalName(Property\LegalNameProperty $legalName)
- * @method HospitalType setLeiCode(Property\LeiCodeProperty $leiCode)
- * @method HospitalType setLocation(Property\LocationProperty $location)
+ * @method HospitalType setKeywords(Property\KeywordsProperty $keywords)
+ * @method HospitalType setLatitude(Property\LatitudeProperty $latitude)
  * @method HospitalType setLogo(Property\LogoProperty $logo)
+ * @method HospitalType setLongitude(Property\LongitudeProperty $longitude)
  * @method HospitalType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
- * @method HospitalType setMakesOffer(Property\MakesOfferProperty $makesOffer)
- * @method HospitalType setMember(Property\MemberProperty $member)
- * @method HospitalType setMemberOf(Property\MemberOfProperty $memberOf)
- * @method HospitalType setNaics(Property\NaicsProperty $naics)
+ * @method HospitalType setMaximumAttendeeCapacity(Property\MaximumAttendeeCapacityProperty $maximumAttendeeCapacity)
  * @method HospitalType setName(Property\NameProperty $name)
- * @method HospitalType setNumberOfEmployees(Property\NumberOfEmployeesProperty $numberOfEmployees)
  * @method HospitalType setOpeningHours(Property\OpeningHoursProperty $openingHours)
- * @method HospitalType setOwns(Property\OwnsProperty $owns)
- * @method HospitalType setParentOrganization(Property\ParentOrganizationProperty $parentOrganization)
+ * @method HospitalType setOpeningHoursSpecification(Property\OpeningHoursSpecificationProperty $openingHoursSpecification)
  * @method HospitalType setPaymentAccepted(Property\PaymentAcceptedProperty $paymentAccepted)
+ * @method HospitalType setPhoto(Property\PhotoProperty $photo)
  * @method HospitalType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method HospitalType setPriceRange(Property\PriceRangeProperty $priceRange)
- * @method HospitalType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
+ * @method HospitalType setPublicAccess(Property\PublicAccessProperty $publicAccess)
  * @method HospitalType setReview(Property\ReviewProperty $review)
  * @method HospitalType setSameAs(Property\SameAsProperty $sameAs)
- * @method HospitalType setSeeks(Property\SeeksProperty $seeks)
- * @method HospitalType setSponsor(Property\SponsorProperty $sponsor)
- * @method HospitalType setSubOrganization(Property\SubOrganizationProperty $subOrganization)
- * @method HospitalType setTaxID(Property\TaxIDProperty $taxID)
+ * @method HospitalType setSlogan(Property\SloganProperty $slogan)
+ * @method HospitalType setSmokingAllowed(Property\SmokingAllowedProperty $smokingAllowed)
+ * @method HospitalType setSpecialOpeningHoursSpecification(Property\SpecialOpeningHoursSpecificationProperty $specialOpeningHoursSpecification)
+ * @method HospitalType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method HospitalType setTelephone(Property\TelephoneProperty $telephone)
  * @method HospitalType setUrl(Property\UrlProperty $url)
- * @method HospitalType setVatID(Property\VatIDProperty $vatID)
  */
 class HospitalType extends EmergencyServiceType {
 
 	/**
+	 * @var Property\AvailableServiceProperty
+	 */
+	private $availableService;
+
+	/**
+	 * @var Property\MedicalSpecialtyProperty
+	 */
+	private $medicalSpecialty;
+
+	/**
+	 * Get available service.
+	 *
+	 * @return Property\AvailableServiceProperty
+	 */
+	public function getAvailableService() {
+		return $this->availableService;
+	}
+
+	/**
+	 * Get medical specialty.
+	 *
+	 * @return Property\MedicalSpecialtyProperty
+	 */
+	public function getMedicalSpecialty() {
+		return $this->medicalSpecialty;
+	}
+
+	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
 		return 'https://schema.org/Hospital';
+	}
+
+	/**
+	 * Set available service.
+	 *
+	 * @param Property\AvailableServiceProperty $availableService
+	 * @return HospitalType
+	 */
+	public function setAvailableService(Property\AvailableServiceProperty $availableService) {
+		$this->availableService = $availableService;
+
+		return $this;
+	}
+
+	/**
+	 * Set medical specialty.
+	 *
+	 * @param Property\MedicalSpecialtyProperty $medicalSpecialty
+	 * @return HospitalType
+	 */
+	public function setMedicalSpecialty(Property\MedicalSpecialtyProperty $medicalSpecialty) {
+		$this->medicalSpecialty = $medicalSpecialty;
+
+		return $this;
 	}
 }

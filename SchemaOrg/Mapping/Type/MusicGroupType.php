@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class MusicGroupType.
+ * A musical group, such as a band, an orchestra, or a choir. Can also be a solo musician.
  * 
  * @method MusicGroupType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method MusicGroupType setAddress(Property\AddressProperty $address)
@@ -30,11 +30,14 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MusicGroupType setFoundingLocation(Property\FoundingLocationProperty $foundingLocation)
  * @method MusicGroupType setFunder(Property\FunderProperty $funder)
  * @method MusicGroupType setGlobalLocationNumber(Property\GlobalLocationNumberProperty $globalLocationNumber)
+ * @method MusicGroupType setHasCertification(Property\HasCertificationProperty $hasCertification)
  * @method MusicGroupType setHasOfferCatalog(Property\HasOfferCatalogProperty $hasOfferCatalog)
  * @method MusicGroupType setHasPOS(Property\HasPOSProperty $hasPOS)
  * @method MusicGroupType setIdentifier(Property\IdentifierProperty $identifier)
  * @method MusicGroupType setImage(Property\ImageProperty $image)
+ * @method MusicGroupType setInteractionStatistic(Property\InteractionStatisticProperty $interactionStatistic)
  * @method MusicGroupType setIsicV4(Property\IsicV4Property $isicV4)
+ * @method MusicGroupType setKeywords(Property\KeywordsProperty $keywords)
  * @method MusicGroupType setLegalName(Property\LegalNameProperty $legalName)
  * @method MusicGroupType setLeiCode(Property\LeiCodeProperty $leiCode)
  * @method MusicGroupType setLocation(Property\LocationProperty $location)
@@ -53,8 +56,10 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MusicGroupType setReview(Property\ReviewProperty $review)
  * @method MusicGroupType setSameAs(Property\SameAsProperty $sameAs)
  * @method MusicGroupType setSeeks(Property\SeeksProperty $seeks)
+ * @method MusicGroupType setSlogan(Property\SloganProperty $slogan)
  * @method MusicGroupType setSponsor(Property\SponsorProperty $sponsor)
  * @method MusicGroupType setSubOrganization(Property\SubOrganizationProperty $subOrganization)
+ * @method MusicGroupType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method MusicGroupType setTaxID(Property\TaxIDProperty $taxID)
  * @method MusicGroupType setTelephone(Property\TelephoneProperty $telephone)
  * @method MusicGroupType setUrl(Property\UrlProperty $url)
@@ -79,7 +84,7 @@ class MusicGroupType extends PerformingGroupType {
 
 	/**
 	 * Get album.
-	 * 
+	 *
 	 * @return Property\AlbumProperty
 	 */
 	public function getAlbum() {
@@ -88,7 +93,7 @@ class MusicGroupType extends PerformingGroupType {
 
 	/**
 	 * Get genre.
-	 * 
+	 *
 	 * @return Property\GenreProperty
 	 */
 	public function getGenre() {
@@ -97,7 +102,7 @@ class MusicGroupType extends PerformingGroupType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -106,7 +111,7 @@ class MusicGroupType extends PerformingGroupType {
 
 	/**
 	 * Get track.
-	 * 
+	 *
 	 * @return Property\TrackProperty
 	 */
 	public function getTrack() {
@@ -115,7 +120,7 @@ class MusicGroupType extends PerformingGroupType {
 
 	/**
 	 * Set album.
-	 * 
+	 *
 	 * @param Property\AlbumProperty $album
 	 * @return MusicGroupType
 	 */
@@ -127,7 +132,7 @@ class MusicGroupType extends PerformingGroupType {
 
 	/**
 	 * Set genre.
-	 * 
+	 *
 	 * @param Property\GenreProperty $genre
 	 * @return MusicGroupType
 	 */
@@ -139,7 +144,7 @@ class MusicGroupType extends PerformingGroupType {
 
 	/**
 	 * Set track.
-	 * 
+	 *
 	 * @param Property\TrackProperty $track
 	 * @return MusicGroupType
 	 */

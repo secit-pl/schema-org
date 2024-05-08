@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * ArtworkSurfaceProperty class.
+ * The supporting materials for the artwork, e.g. Canvas, Paper, Wood, Board, etc.
  * 
  * @method ArtworkSurfaceProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class ArtworkSurfaceProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class ArtworkSurfaceProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

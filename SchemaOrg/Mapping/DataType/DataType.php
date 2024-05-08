@@ -3,7 +3,7 @@
 namespace SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * Class DataType.
+ * The basic data types such as Integers, Strings, etc.
  */
 class DataType implements DataTypeInterface {
 
@@ -14,7 +14,7 @@ class DataType implements DataTypeInterface {
 
 	/**
 	 * DataType constructor.
-	 * 
+	 *
 	 * @param string $value
 	 */
 	public function __construct($value = null) {
@@ -25,7 +25,7 @@ class DataType implements DataTypeInterface {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -41,7 +41,7 @@ class DataType implements DataTypeInterface {
 
 	/**
 	 * Set value.
-	 * 
+	 *
 	 * @param string $value
 	 * @return DataType
 	 */

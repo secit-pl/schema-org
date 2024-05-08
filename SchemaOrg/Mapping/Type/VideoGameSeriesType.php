@@ -5,99 +5,23 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class VideoGameSeriesType.
+ * A video game series.
  * 
- * @method VideoGameSeriesType setAccessMode(Property\AccessModeProperty $accessMode)
- * @method VideoGameSeriesType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
- * @method VideoGameSeriesType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
- * @method VideoGameSeriesType setAccessibilityControl(Property\AccessibilityControlProperty $accessibilityControl)
- * @method VideoGameSeriesType setAccessibilityFeature(Property\AccessibilityFeatureProperty $accessibilityFeature)
- * @method VideoGameSeriesType setAccessibilityHazard(Property\AccessibilityHazardProperty $accessibilityHazard)
- * @method VideoGameSeriesType setAccessibilitySummary(Property\AccessibilitySummaryProperty $accessibilitySummary)
- * @method VideoGameSeriesType setAccountablePerson(Property\AccountablePersonProperty $accountablePerson)
  * @method VideoGameSeriesType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
- * @method VideoGameSeriesType setAggregateRating(Property\AggregateRatingProperty $aggregateRating)
  * @method VideoGameSeriesType setAlternateName(Property\AlternateNameProperty $alternateName)
- * @method VideoGameSeriesType setAlternativeHeadline(Property\AlternativeHeadlineProperty $alternativeHeadline)
- * @method VideoGameSeriesType setAssociatedMedia(Property\AssociatedMediaProperty $associatedMedia)
- * @method VideoGameSeriesType setAudience(Property\AudienceProperty $audience)
- * @method VideoGameSeriesType setAudio(Property\AudioProperty $audio)
- * @method VideoGameSeriesType setAuthor(Property\AuthorProperty $author)
- * @method VideoGameSeriesType setAward(Property\AwardProperty $award)
- * @method VideoGameSeriesType setCharacter(Property\CharacterProperty $character)
- * @method VideoGameSeriesType setCitation(Property\CitationProperty $citation)
- * @method VideoGameSeriesType setComment(Property\CommentProperty $comment)
- * @method VideoGameSeriesType setCommentCount(Property\CommentCountProperty $commentCount)
- * @method VideoGameSeriesType setContentLocation(Property\ContentLocationProperty $contentLocation)
- * @method VideoGameSeriesType setContentRating(Property\ContentRatingProperty $contentRating)
- * @method VideoGameSeriesType setContributor(Property\ContributorProperty $contributor)
- * @method VideoGameSeriesType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
- * @method VideoGameSeriesType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
- * @method VideoGameSeriesType setCreator(Property\CreatorProperty $creator)
- * @method VideoGameSeriesType setDateCreated(Property\DateCreatedProperty $dateCreated)
- * @method VideoGameSeriesType setDateModified(Property\DateModifiedProperty $dateModified)
- * @method VideoGameSeriesType setDatePublished(Property\DatePublishedProperty $datePublished)
  * @method VideoGameSeriesType setDescription(Property\DescriptionProperty $description)
  * @method VideoGameSeriesType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
- * @method VideoGameSeriesType setDiscussionUrl(Property\DiscussionUrlProperty $discussionUrl)
- * @method VideoGameSeriesType setEditor(Property\EditorProperty $editor)
- * @method VideoGameSeriesType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
- * @method VideoGameSeriesType setEducationalUse(Property\EducationalUseProperty $educationalUse)
- * @method VideoGameSeriesType setEncoding(Property\EncodingProperty $encoding)
  * @method VideoGameSeriesType setEndDate(Property\EndDateProperty $endDate)
- * @method VideoGameSeriesType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
- * @method VideoGameSeriesType setExpires(Property\ExpiresProperty $expires)
- * @method VideoGameSeriesType setFileFormat(Property\FileFormatProperty $fileFormat)
- * @method VideoGameSeriesType setFunder(Property\FunderProperty $funder)
- * @method VideoGameSeriesType setGenre(Property\GenreProperty $genre)
- * @method VideoGameSeriesType setHasPart(Property\HasPartProperty $hasPart)
- * @method VideoGameSeriesType setHeadline(Property\HeadlineProperty $headline)
  * @method VideoGameSeriesType setIdentifier(Property\IdentifierProperty $identifier)
  * @method VideoGameSeriesType setImage(Property\ImageProperty $image)
- * @method VideoGameSeriesType setInLanguage(Property\InLanguageProperty $inLanguage)
- * @method VideoGameSeriesType setInteractionStatistic(Property\InteractionStatisticProperty $interactionStatistic)
- * @method VideoGameSeriesType setInteractivityType(Property\InteractivityTypeProperty $interactivityType)
- * @method VideoGameSeriesType setIsAccessibleForFree(Property\IsAccessibleForFreeProperty $isAccessibleForFree)
- * @method VideoGameSeriesType setIsBasedOn(Property\IsBasedOnProperty $isBasedOn)
- * @method VideoGameSeriesType setIsFamilyFriendly(Property\IsFamilyFriendlyProperty $isFamilyFriendly)
- * @method VideoGameSeriesType setIsPartOf(Property\IsPartOfProperty $isPartOf)
  * @method VideoGameSeriesType setIssn(Property\IssnProperty $issn)
- * @method VideoGameSeriesType setKeywords(Property\KeywordsProperty $keywords)
- * @method VideoGameSeriesType setLearningResourceType(Property\LearningResourceTypeProperty $learningResourceType)
- * @method VideoGameSeriesType setLicense(Property\LicenseProperty $license)
- * @method VideoGameSeriesType setLocationCreated(Property\LocationCreatedProperty $locationCreated)
- * @method VideoGameSeriesType setMainEntity(Property\MainEntityProperty $mainEntity)
  * @method VideoGameSeriesType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
- * @method VideoGameSeriesType setMaterial(Property\MaterialProperty $material)
- * @method VideoGameSeriesType setMentions(Property\MentionsProperty $mentions)
  * @method VideoGameSeriesType setName(Property\NameProperty $name)
- * @method VideoGameSeriesType setOffers(Property\OffersProperty $offers)
- * @method VideoGameSeriesType setPosition(Property\PositionProperty $position)
  * @method VideoGameSeriesType setPotentialAction(Property\PotentialActionProperty $potentialAction)
- * @method VideoGameSeriesType setProducer(Property\ProducerProperty $producer)
- * @method VideoGameSeriesType setProvider(Property\ProviderProperty $provider)
- * @method VideoGameSeriesType setPublication(Property\PublicationProperty $publication)
- * @method VideoGameSeriesType setPublisher(Property\PublisherProperty $publisher)
- * @method VideoGameSeriesType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
- * @method VideoGameSeriesType setRecordedAt(Property\RecordedAtProperty $recordedAt)
- * @method VideoGameSeriesType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
- * @method VideoGameSeriesType setReview(Property\ReviewProperty $review)
  * @method VideoGameSeriesType setSameAs(Property\SameAsProperty $sameAs)
- * @method VideoGameSeriesType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
- * @method VideoGameSeriesType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
- * @method VideoGameSeriesType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
- * @method VideoGameSeriesType setSponsor(Property\SponsorProperty $sponsor)
  * @method VideoGameSeriesType setStartDate(Property\StartDateProperty $startDate)
- * @method VideoGameSeriesType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
- * @method VideoGameSeriesType setText(Property\TextProperty $text)
- * @method VideoGameSeriesType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
- * @method VideoGameSeriesType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
- * @method VideoGameSeriesType setTranslator(Property\TranslatorProperty $translator)
- * @method VideoGameSeriesType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
+ * @method VideoGameSeriesType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method VideoGameSeriesType setUrl(Property\UrlProperty $url)
- * @method VideoGameSeriesType setVersion(Property\VersionProperty $version)
- * @method VideoGameSeriesType setVideo(Property\VideoProperty $video)
- * @method VideoGameSeriesType setWorkExample(Property\WorkExampleProperty $workExample)
  */
 class VideoGameSeriesType extends CreativeWorkSeriesType {
 
@@ -188,7 +112,7 @@ class VideoGameSeriesType extends CreativeWorkSeriesType {
 
 	/**
 	 * Get actor.
-	 * 
+	 *
 	 * @return Property\ActorProperty
 	 */
 	public function getActor() {
@@ -197,7 +121,7 @@ class VideoGameSeriesType extends CreativeWorkSeriesType {
 
 	/**
 	 * Get character attribute.
-	 * 
+	 *
 	 * @return Property\CharacterAttributeProperty
 	 */
 	public function getCharacterAttribute() {
@@ -206,7 +130,7 @@ class VideoGameSeriesType extends CreativeWorkSeriesType {
 
 	/**
 	 * Get cheat code.
-	 * 
+	 *
 	 * @return Property\CheatCodeProperty
 	 */
 	public function getCheatCode() {
@@ -215,7 +139,7 @@ class VideoGameSeriesType extends CreativeWorkSeriesType {
 
 	/**
 	 * Get contains season.
-	 * 
+	 *
 	 * @return Property\ContainsSeasonProperty
 	 */
 	public function getContainsSeason() {
@@ -224,7 +148,7 @@ class VideoGameSeriesType extends CreativeWorkSeriesType {
 
 	/**
 	 * Get director.
-	 * 
+	 *
 	 * @return Property\DirectorProperty
 	 */
 	public function getDirector() {
@@ -233,7 +157,7 @@ class VideoGameSeriesType extends CreativeWorkSeriesType {
 
 	/**
 	 * Get episode.
-	 * 
+	 *
 	 * @return Property\EpisodeProperty
 	 */
 	public function getEpisode() {
@@ -242,7 +166,7 @@ class VideoGameSeriesType extends CreativeWorkSeriesType {
 
 	/**
 	 * Get game item.
-	 * 
+	 *
 	 * @return Property\GameItemProperty
 	 */
 	public function getGameItem() {
@@ -251,7 +175,7 @@ class VideoGameSeriesType extends CreativeWorkSeriesType {
 
 	/**
 	 * Get game location.
-	 * 
+	 *
 	 * @return Property\GameLocationProperty
 	 */
 	public function getGameLocation() {
@@ -260,7 +184,7 @@ class VideoGameSeriesType extends CreativeWorkSeriesType {
 
 	/**
 	 * Get game platform.
-	 * 
+	 *
 	 * @return Property\GamePlatformProperty
 	 */
 	public function getGamePlatform() {
@@ -269,7 +193,7 @@ class VideoGameSeriesType extends CreativeWorkSeriesType {
 
 	/**
 	 * Get music by.
-	 * 
+	 *
 	 * @return Property\MusicByProperty
 	 */
 	public function getMusicBy() {
@@ -278,7 +202,7 @@ class VideoGameSeriesType extends CreativeWorkSeriesType {
 
 	/**
 	 * Get number of episodes.
-	 * 
+	 *
 	 * @return Property\NumberOfEpisodesProperty
 	 */
 	public function getNumberOfEpisodes() {
@@ -287,7 +211,7 @@ class VideoGameSeriesType extends CreativeWorkSeriesType {
 
 	/**
 	 * Get number of players.
-	 * 
+	 *
 	 * @return Property\NumberOfPlayersProperty
 	 */
 	public function getNumberOfPlayers() {
@@ -296,7 +220,7 @@ class VideoGameSeriesType extends CreativeWorkSeriesType {
 
 	/**
 	 * Get number of seasons.
-	 * 
+	 *
 	 * @return Property\NumberOfSeasonsProperty
 	 */
 	public function getNumberOfSeasons() {
@@ -305,7 +229,7 @@ class VideoGameSeriesType extends CreativeWorkSeriesType {
 
 	/**
 	 * Get play mode.
-	 * 
+	 *
 	 * @return Property\PlayModeProperty
 	 */
 	public function getPlayMode() {
@@ -314,7 +238,7 @@ class VideoGameSeriesType extends CreativeWorkSeriesType {
 
 	/**
 	 * Get production company.
-	 * 
+	 *
 	 * @return Property\ProductionCompanyProperty
 	 */
 	public function getProductionCompany() {
@@ -323,7 +247,7 @@ class VideoGameSeriesType extends CreativeWorkSeriesType {
 
 	/**
 	 * Get quest.
-	 * 
+	 *
 	 * @return Property\QuestProperty
 	 */
 	public function getQuest() {
@@ -332,7 +256,7 @@ class VideoGameSeriesType extends CreativeWorkSeriesType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -341,7 +265,7 @@ class VideoGameSeriesType extends CreativeWorkSeriesType {
 
 	/**
 	 * Get trailer.
-	 * 
+	 *
 	 * @return Property\TrailerProperty
 	 */
 	public function getTrailer() {
@@ -350,7 +274,7 @@ class VideoGameSeriesType extends CreativeWorkSeriesType {
 
 	/**
 	 * Set actor.
-	 * 
+	 *
 	 * @param Property\ActorProperty $actor
 	 * @return VideoGameSeriesType
 	 */
@@ -362,7 +286,7 @@ class VideoGameSeriesType extends CreativeWorkSeriesType {
 
 	/**
 	 * Set character attribute.
-	 * 
+	 *
 	 * @param Property\CharacterAttributeProperty $characterAttribute
 	 * @return VideoGameSeriesType
 	 */
@@ -374,7 +298,7 @@ class VideoGameSeriesType extends CreativeWorkSeriesType {
 
 	/**
 	 * Set cheat code.
-	 * 
+	 *
 	 * @param Property\CheatCodeProperty $cheatCode
 	 * @return VideoGameSeriesType
 	 */
@@ -386,7 +310,7 @@ class VideoGameSeriesType extends CreativeWorkSeriesType {
 
 	/**
 	 * Set contains season.
-	 * 
+	 *
 	 * @param Property\ContainsSeasonProperty $containsSeason
 	 * @return VideoGameSeriesType
 	 */
@@ -398,7 +322,7 @@ class VideoGameSeriesType extends CreativeWorkSeriesType {
 
 	/**
 	 * Set director.
-	 * 
+	 *
 	 * @param Property\DirectorProperty $director
 	 * @return VideoGameSeriesType
 	 */
@@ -410,7 +334,7 @@ class VideoGameSeriesType extends CreativeWorkSeriesType {
 
 	/**
 	 * Set episode.
-	 * 
+	 *
 	 * @param Property\EpisodeProperty $episode
 	 * @return VideoGameSeriesType
 	 */
@@ -422,7 +346,7 @@ class VideoGameSeriesType extends CreativeWorkSeriesType {
 
 	/**
 	 * Set game item.
-	 * 
+	 *
 	 * @param Property\GameItemProperty $gameItem
 	 * @return VideoGameSeriesType
 	 */
@@ -434,7 +358,7 @@ class VideoGameSeriesType extends CreativeWorkSeriesType {
 
 	/**
 	 * Set game location.
-	 * 
+	 *
 	 * @param Property\GameLocationProperty $gameLocation
 	 * @return VideoGameSeriesType
 	 */
@@ -446,7 +370,7 @@ class VideoGameSeriesType extends CreativeWorkSeriesType {
 
 	/**
 	 * Set game platform.
-	 * 
+	 *
 	 * @param Property\GamePlatformProperty $gamePlatform
 	 * @return VideoGameSeriesType
 	 */
@@ -458,7 +382,7 @@ class VideoGameSeriesType extends CreativeWorkSeriesType {
 
 	/**
 	 * Set music by.
-	 * 
+	 *
 	 * @param Property\MusicByProperty $musicBy
 	 * @return VideoGameSeriesType
 	 */
@@ -470,7 +394,7 @@ class VideoGameSeriesType extends CreativeWorkSeriesType {
 
 	/**
 	 * Set number of episodes.
-	 * 
+	 *
 	 * @param Property\NumberOfEpisodesProperty $numberOfEpisodes
 	 * @return VideoGameSeriesType
 	 */
@@ -482,7 +406,7 @@ class VideoGameSeriesType extends CreativeWorkSeriesType {
 
 	/**
 	 * Set number of players.
-	 * 
+	 *
 	 * @param Property\NumberOfPlayersProperty $numberOfPlayers
 	 * @return VideoGameSeriesType
 	 */
@@ -494,7 +418,7 @@ class VideoGameSeriesType extends CreativeWorkSeriesType {
 
 	/**
 	 * Set number of seasons.
-	 * 
+	 *
 	 * @param Property\NumberOfSeasonsProperty $numberOfSeasons
 	 * @return VideoGameSeriesType
 	 */
@@ -506,7 +430,7 @@ class VideoGameSeriesType extends CreativeWorkSeriesType {
 
 	/**
 	 * Set play mode.
-	 * 
+	 *
 	 * @param Property\PlayModeProperty $playMode
 	 * @return VideoGameSeriesType
 	 */
@@ -518,7 +442,7 @@ class VideoGameSeriesType extends CreativeWorkSeriesType {
 
 	/**
 	 * Set production company.
-	 * 
+	 *
 	 * @param Property\ProductionCompanyProperty $productionCompany
 	 * @return VideoGameSeriesType
 	 */
@@ -530,7 +454,7 @@ class VideoGameSeriesType extends CreativeWorkSeriesType {
 
 	/**
 	 * Set quest.
-	 * 
+	 *
 	 * @param Property\QuestProperty $quest
 	 * @return VideoGameSeriesType
 	 */
@@ -542,7 +466,7 @@ class VideoGameSeriesType extends CreativeWorkSeriesType {
 
 	/**
 	 * Set trailer.
-	 * 
+	 *
 	 * @param Property\TrailerProperty $trailer
 	 * @return VideoGameSeriesType
 	 */

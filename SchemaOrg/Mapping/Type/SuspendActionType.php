@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class SuspendActionType.
+ * The act of momentarily pausing a device or application (e.g. pause music playback or pause a timer).
  * 
  * @method SuspendActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method SuspendActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SuspendActionType setResult(Property\ResultProperty $result)
  * @method SuspendActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method SuspendActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method SuspendActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method SuspendActionType setTarget(Property\TargetProperty $target)
  * @method SuspendActionType setUrl(Property\UrlProperty $url)
  */
@@ -34,7 +35,7 @@ class SuspendActionType extends ControlActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

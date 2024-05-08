@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class SoftwareSourceCodeType.
+ * Computer programming source code. Example: Full (compile ready) solutions, code snippet samples, scripts, templates.
  * 
+ * @method SoftwareSourceCodeType setAbout(Property\AboutProperty $about)
  * @method SoftwareSourceCodeType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method SoftwareSourceCodeType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method SoftwareSourceCodeType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -33,6 +34,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SoftwareSourceCodeType setContributor(Property\ContributorProperty $contributor)
  * @method SoftwareSourceCodeType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method SoftwareSourceCodeType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method SoftwareSourceCodeType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method SoftwareSourceCodeType setCreator(Property\CreatorProperty $creator)
  * @method SoftwareSourceCodeType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method SoftwareSourceCodeType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -44,9 +46,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SoftwareSourceCodeType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method SoftwareSourceCodeType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method SoftwareSourceCodeType setEncoding(Property\EncodingProperty $encoding)
+ * @method SoftwareSourceCodeType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method SoftwareSourceCodeType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method SoftwareSourceCodeType setExpires(Property\ExpiresProperty $expires)
- * @method SoftwareSourceCodeType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method SoftwareSourceCodeType setFunder(Property\FunderProperty $funder)
  * @method SoftwareSourceCodeType setGenre(Property\GenreProperty $genre)
  * @method SoftwareSourceCodeType setHasPart(Property\HasPartProperty $hasPart)
@@ -73,9 +75,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SoftwareSourceCodeType setPosition(Property\PositionProperty $position)
  * @method SoftwareSourceCodeType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method SoftwareSourceCodeType setProducer(Property\ProducerProperty $producer)
- * @method SoftwareSourceCodeType setProvider(Property\ProviderProperty $provider)
  * @method SoftwareSourceCodeType setPublication(Property\PublicationProperty $publication)
  * @method SoftwareSourceCodeType setPublisher(Property\PublisherProperty $publisher)
+ * @method SoftwareSourceCodeType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method SoftwareSourceCodeType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method SoftwareSourceCodeType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method SoftwareSourceCodeType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -83,18 +85,24 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SoftwareSourceCodeType setSameAs(Property\SameAsProperty $sameAs)
  * @method SoftwareSourceCodeType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method SoftwareSourceCodeType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method SoftwareSourceCodeType setSpatial(Property\SpatialProperty $spatial)
  * @method SoftwareSourceCodeType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method SoftwareSourceCodeType setSponsor(Property\SponsorProperty $sponsor)
+ * @method SoftwareSourceCodeType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method SoftwareSourceCodeType setTemporal(Property\TemporalProperty $temporal)
  * @method SoftwareSourceCodeType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method SoftwareSourceCodeType setText(Property\TextProperty $text)
+ * @method SoftwareSourceCodeType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method SoftwareSourceCodeType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method SoftwareSourceCodeType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method SoftwareSourceCodeType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method SoftwareSourceCodeType setTranslator(Property\TranslatorProperty $translator)
  * @method SoftwareSourceCodeType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method SoftwareSourceCodeType setUrl(Property\UrlProperty $url)
  * @method SoftwareSourceCodeType setVersion(Property\VersionProperty $version)
  * @method SoftwareSourceCodeType setVideo(Property\VideoProperty $video)
  * @method SoftwareSourceCodeType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method SoftwareSourceCodeType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class SoftwareSourceCodeType extends CreativeWorkType {
 
@@ -125,7 +133,7 @@ class SoftwareSourceCodeType extends CreativeWorkType {
 
 	/**
 	 * Get code repository.
-	 * 
+	 *
 	 * @return Property\CodeRepositoryProperty
 	 */
 	public function getCodeRepository() {
@@ -134,7 +142,7 @@ class SoftwareSourceCodeType extends CreativeWorkType {
 
 	/**
 	 * Get code sample type.
-	 * 
+	 *
 	 * @return Property\CodeSampleTypeProperty
 	 */
 	public function getCodeSampleType() {
@@ -143,7 +151,7 @@ class SoftwareSourceCodeType extends CreativeWorkType {
 
 	/**
 	 * Get programming language.
-	 * 
+	 *
 	 * @return Property\ProgrammingLanguageProperty
 	 */
 	public function getProgrammingLanguage() {
@@ -152,7 +160,7 @@ class SoftwareSourceCodeType extends CreativeWorkType {
 
 	/**
 	 * Get runtime platform.
-	 * 
+	 *
 	 * @return Property\RuntimePlatformProperty
 	 */
 	public function getRuntimePlatform() {
@@ -161,7 +169,7 @@ class SoftwareSourceCodeType extends CreativeWorkType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -170,7 +178,7 @@ class SoftwareSourceCodeType extends CreativeWorkType {
 
 	/**
 	 * Get target product.
-	 * 
+	 *
 	 * @return Property\TargetProductProperty
 	 */
 	public function getTargetProduct() {
@@ -179,7 +187,7 @@ class SoftwareSourceCodeType extends CreativeWorkType {
 
 	/**
 	 * Set code repository.
-	 * 
+	 *
 	 * @param Property\CodeRepositoryProperty $codeRepository
 	 * @return SoftwareSourceCodeType
 	 */
@@ -191,7 +199,7 @@ class SoftwareSourceCodeType extends CreativeWorkType {
 
 	/**
 	 * Set code sample type.
-	 * 
+	 *
 	 * @param Property\CodeSampleTypeProperty $codeSampleType
 	 * @return SoftwareSourceCodeType
 	 */
@@ -203,7 +211,7 @@ class SoftwareSourceCodeType extends CreativeWorkType {
 
 	/**
 	 * Set programming language.
-	 * 
+	 *
 	 * @param Property\ProgrammingLanguageProperty $programmingLanguage
 	 * @return SoftwareSourceCodeType
 	 */
@@ -215,7 +223,7 @@ class SoftwareSourceCodeType extends CreativeWorkType {
 
 	/**
 	 * Set runtime platform.
-	 * 
+	 *
 	 * @param Property\RuntimePlatformProperty $runtimePlatform
 	 * @return SoftwareSourceCodeType
 	 */
@@ -227,7 +235,7 @@ class SoftwareSourceCodeType extends CreativeWorkType {
 
 	/**
 	 * Set target product.
-	 * 
+	 *
 	 * @param Property\TargetProductProperty $targetProduct
 	 * @return SoftwareSourceCodeType
 	 */

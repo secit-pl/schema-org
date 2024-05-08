@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ZoneBoardingPolicyType.
+ * The airline boards by zones of the plane.
  * 
  * @method ZoneBoardingPolicyType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method ZoneBoardingPolicyType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ZoneBoardingPolicyType setName(Property\NameProperty $name)
  * @method ZoneBoardingPolicyType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method ZoneBoardingPolicyType setSameAs(Property\SameAsProperty $sameAs)
+ * @method ZoneBoardingPolicyType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method ZoneBoardingPolicyType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method ZoneBoardingPolicyType setUrl(Property\UrlProperty $url)
  */
 class ZoneBoardingPolicyType extends BoardingPolicyType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

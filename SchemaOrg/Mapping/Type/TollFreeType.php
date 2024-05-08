@@ -2,36 +2,30 @@
 
 namespace SecIT\SchemaOrg\Mapping\Type;
 
+use SecIT\SchemaOrg\Mapping\Property;
+
 /**
- * Class TollFreeType.
+ * The associated telephone number is toll free.
+ * 
+ * @method TollFreeType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
+ * @method TollFreeType setAlternateName(Property\AlternateNameProperty $alternateName)
+ * @method TollFreeType setDescription(Property\DescriptionProperty $description)
+ * @method TollFreeType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
+ * @method TollFreeType setIdentifier(Property\IdentifierProperty $identifier)
+ * @method TollFreeType setImage(Property\ImageProperty $image)
+ * @method TollFreeType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
+ * @method TollFreeType setName(Property\NameProperty $name)
+ * @method TollFreeType setPotentialAction(Property\PotentialActionProperty $potentialAction)
+ * @method TollFreeType setSameAs(Property\SameAsProperty $sameAs)
+ * @method TollFreeType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method TollFreeType setSupersededBy(Property\SupersededByProperty $supersededBy)
+ * @method TollFreeType setUrl(Property\UrlProperty $url)
  */
-class TollFreeType implements TypeInterface {
-
-	/**
-	 */
-	private $id;
-
-	/**
-	 * TollFreeType constructor.
-	 * 
-	 * @param string $id
-	 */
-	public function __construct($id = null) {
-		$this->id = $id;
-	}
-
-	/**
-	 * Get id.
-	 * 
-	 * @return string
-	 */
-	public function getId() {
-		return $this->id;
-	}
+class TollFreeType extends ContactPointOptionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

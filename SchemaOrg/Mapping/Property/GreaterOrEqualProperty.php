@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * GreaterOrEqualProperty class.
+ * This ordering relation for qualitative values indicates that the subject is greater than or equal to the object.
  * 
  * @method GreaterOrEqualProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class GreaterOrEqualProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class GreaterOrEqualProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class TaxiReservationType.
+ * A reservation for a taxi. Note: This type is for information about actual reservations, e.g. in confirmation emails or HTML pages with individual confirmations of reservations. For offers of tickets, use Offer.
  * 
  * @method TaxiReservationType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method TaxiReservationType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -21,12 +21,12 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method TaxiReservationType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method TaxiReservationType setPriceCurrency(Property\PriceCurrencyProperty $priceCurrency)
  * @method TaxiReservationType setProgramMembershipUsed(Property\ProgramMembershipUsedProperty $programMembershipUsed)
- * @method TaxiReservationType setProvider(Property\ProviderProperty $provider)
  * @method TaxiReservationType setReservationFor(Property\ReservationForProperty $reservationFor)
  * @method TaxiReservationType setReservationId(Property\ReservationIdProperty $reservationId)
  * @method TaxiReservationType setReservationStatus(Property\ReservationStatusProperty $reservationStatus)
  * @method TaxiReservationType setReservedTicket(Property\ReservedTicketProperty $reservedTicket)
  * @method TaxiReservationType setSameAs(Property\SameAsProperty $sameAs)
+ * @method TaxiReservationType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method TaxiReservationType setTotalPrice(Property\TotalPriceProperty $totalPrice)
  * @method TaxiReservationType setUnderName(Property\UnderNameProperty $underName)
  * @method TaxiReservationType setUrl(Property\UrlProperty $url)
@@ -50,7 +50,7 @@ class TaxiReservationType extends ReservationType {
 
 	/**
 	 * Get party size.
-	 * 
+	 *
 	 * @return Property\PartySizeProperty
 	 */
 	public function getPartySize() {
@@ -59,7 +59,7 @@ class TaxiReservationType extends ReservationType {
 
 	/**
 	 * Get pickup location.
-	 * 
+	 *
 	 * @return Property\PickupLocationProperty
 	 */
 	public function getPickupLocation() {
@@ -68,7 +68,7 @@ class TaxiReservationType extends ReservationType {
 
 	/**
 	 * Get pickup time.
-	 * 
+	 *
 	 * @return Property\PickupTimeProperty
 	 */
 	public function getPickupTime() {
@@ -77,7 +77,7 @@ class TaxiReservationType extends ReservationType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -86,7 +86,7 @@ class TaxiReservationType extends ReservationType {
 
 	/**
 	 * Set party size.
-	 * 
+	 *
 	 * @param Property\PartySizeProperty $partySize
 	 * @return TaxiReservationType
 	 */
@@ -98,7 +98,7 @@ class TaxiReservationType extends ReservationType {
 
 	/**
 	 * Set pickup location.
-	 * 
+	 *
 	 * @param Property\PickupLocationProperty $pickupLocation
 	 * @return TaxiReservationType
 	 */
@@ -110,7 +110,7 @@ class TaxiReservationType extends ReservationType {
 
 	/**
 	 * Set pickup time.
-	 * 
+	 *
 	 * @param Property\PickupTimeProperty $pickupTime
 	 * @return TaxiReservationType
 	 */

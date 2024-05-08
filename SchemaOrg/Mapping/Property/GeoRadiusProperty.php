@@ -6,7 +6,7 @@ use SecIT\SchemaOrg\Mapping\DataType;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * GeoRadiusProperty class.
+ * Indicates the approximate radius of a GeoCircle (metres unless indicated otherwise via Distance notation).
  * 
  * @method GeoRadiusProperty setValue($value)
  */
@@ -14,7 +14,7 @@ class GeoRadiusProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -23,7 +23,7 @@ class GeoRadiusProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class GovernmentPermitType.
+ * A permit issued by a government agency.
  * 
  * @method GovernmentPermitType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method GovernmentPermitType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -20,6 +20,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method GovernmentPermitType setPermitAudience(Property\PermitAudienceProperty $permitAudience)
  * @method GovernmentPermitType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method GovernmentPermitType setSameAs(Property\SameAsProperty $sameAs)
+ * @method GovernmentPermitType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method GovernmentPermitType setUrl(Property\UrlProperty $url)
  * @method GovernmentPermitType setValidFor(Property\ValidForProperty $validFor)
  * @method GovernmentPermitType setValidFrom(Property\ValidFromProperty $validFrom)
@@ -30,7 +31,7 @@ class GovernmentPermitType extends PermitType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

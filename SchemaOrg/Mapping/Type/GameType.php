@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class GameType.
+ * The Game type represents things which are games. These are typically rule-governed recreational activities, e.g. role-playing games in which players assume the role of characters in a fictional setting.
  * 
+ * @method GameType setAbout(Property\AboutProperty $about)
  * @method GameType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method GameType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method GameType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -33,6 +34,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method GameType setContributor(Property\ContributorProperty $contributor)
  * @method GameType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method GameType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method GameType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method GameType setCreator(Property\CreatorProperty $creator)
  * @method GameType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method GameType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -44,9 +46,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method GameType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method GameType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method GameType setEncoding(Property\EncodingProperty $encoding)
+ * @method GameType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method GameType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method GameType setExpires(Property\ExpiresProperty $expires)
- * @method GameType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method GameType setFunder(Property\FunderProperty $funder)
  * @method GameType setGenre(Property\GenreProperty $genre)
  * @method GameType setHasPart(Property\HasPartProperty $hasPart)
@@ -73,9 +75,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method GameType setPosition(Property\PositionProperty $position)
  * @method GameType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method GameType setProducer(Property\ProducerProperty $producer)
- * @method GameType setProvider(Property\ProviderProperty $provider)
  * @method GameType setPublication(Property\PublicationProperty $publication)
  * @method GameType setPublisher(Property\PublisherProperty $publisher)
+ * @method GameType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method GameType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method GameType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method GameType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -83,18 +85,24 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method GameType setSameAs(Property\SameAsProperty $sameAs)
  * @method GameType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method GameType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method GameType setSpatial(Property\SpatialProperty $spatial)
  * @method GameType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method GameType setSponsor(Property\SponsorProperty $sponsor)
+ * @method GameType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method GameType setTemporal(Property\TemporalProperty $temporal)
  * @method GameType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method GameType setText(Property\TextProperty $text)
+ * @method GameType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method GameType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method GameType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method GameType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method GameType setTranslator(Property\TranslatorProperty $translator)
  * @method GameType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method GameType setUrl(Property\UrlProperty $url)
  * @method GameType setVersion(Property\VersionProperty $version)
  * @method GameType setVideo(Property\VideoProperty $video)
  * @method GameType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method GameType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class GameType extends CreativeWorkType {
 
@@ -125,7 +133,7 @@ class GameType extends CreativeWorkType {
 
 	/**
 	 * Get character attribute.
-	 * 
+	 *
 	 * @return Property\CharacterAttributeProperty
 	 */
 	public function getCharacterAttribute() {
@@ -134,7 +142,7 @@ class GameType extends CreativeWorkType {
 
 	/**
 	 * Get game item.
-	 * 
+	 *
 	 * @return Property\GameItemProperty
 	 */
 	public function getGameItem() {
@@ -143,7 +151,7 @@ class GameType extends CreativeWorkType {
 
 	/**
 	 * Get game location.
-	 * 
+	 *
 	 * @return Property\GameLocationProperty
 	 */
 	public function getGameLocation() {
@@ -152,7 +160,7 @@ class GameType extends CreativeWorkType {
 
 	/**
 	 * Get number of players.
-	 * 
+	 *
 	 * @return Property\NumberOfPlayersProperty
 	 */
 	public function getNumberOfPlayers() {
@@ -161,7 +169,7 @@ class GameType extends CreativeWorkType {
 
 	/**
 	 * Get quest.
-	 * 
+	 *
 	 * @return Property\QuestProperty
 	 */
 	public function getQuest() {
@@ -170,7 +178,7 @@ class GameType extends CreativeWorkType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -179,7 +187,7 @@ class GameType extends CreativeWorkType {
 
 	/**
 	 * Set character attribute.
-	 * 
+	 *
 	 * @param Property\CharacterAttributeProperty $characterAttribute
 	 * @return GameType
 	 */
@@ -191,7 +199,7 @@ class GameType extends CreativeWorkType {
 
 	/**
 	 * Set game item.
-	 * 
+	 *
 	 * @param Property\GameItemProperty $gameItem
 	 * @return GameType
 	 */
@@ -203,7 +211,7 @@ class GameType extends CreativeWorkType {
 
 	/**
 	 * Set game location.
-	 * 
+	 *
 	 * @param Property\GameLocationProperty $gameLocation
 	 * @return GameType
 	 */
@@ -215,7 +223,7 @@ class GameType extends CreativeWorkType {
 
 	/**
 	 * Set number of players.
-	 * 
+	 *
 	 * @param Property\NumberOfPlayersProperty $numberOfPlayers
 	 * @return GameType
 	 */
@@ -227,7 +235,7 @@ class GameType extends CreativeWorkType {
 
 	/**
 	 * Set quest.
-	 * 
+	 *
 	 * @param Property\QuestProperty $quest
 	 * @return GameType
 	 */

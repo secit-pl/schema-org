@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class FoodEstablishmentReservationType.
+ * A reservation to dine at a food-related business. Note: This type is for information about actual reservations, e.g. in confirmation emails or HTML pages with individual confirmations of reservations.
  * 
  * @method FoodEstablishmentReservationType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method FoodEstablishmentReservationType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -21,12 +21,12 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method FoodEstablishmentReservationType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method FoodEstablishmentReservationType setPriceCurrency(Property\PriceCurrencyProperty $priceCurrency)
  * @method FoodEstablishmentReservationType setProgramMembershipUsed(Property\ProgramMembershipUsedProperty $programMembershipUsed)
- * @method FoodEstablishmentReservationType setProvider(Property\ProviderProperty $provider)
  * @method FoodEstablishmentReservationType setReservationFor(Property\ReservationForProperty $reservationFor)
  * @method FoodEstablishmentReservationType setReservationId(Property\ReservationIdProperty $reservationId)
  * @method FoodEstablishmentReservationType setReservationStatus(Property\ReservationStatusProperty $reservationStatus)
  * @method FoodEstablishmentReservationType setReservedTicket(Property\ReservedTicketProperty $reservedTicket)
  * @method FoodEstablishmentReservationType setSameAs(Property\SameAsProperty $sameAs)
+ * @method FoodEstablishmentReservationType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method FoodEstablishmentReservationType setTotalPrice(Property\TotalPriceProperty $totalPrice)
  * @method FoodEstablishmentReservationType setUnderName(Property\UnderNameProperty $underName)
  * @method FoodEstablishmentReservationType setUrl(Property\UrlProperty $url)
@@ -50,7 +50,7 @@ class FoodEstablishmentReservationType extends ReservationType {
 
 	/**
 	 * Get end time.
-	 * 
+	 *
 	 * @return Property\EndTimeProperty
 	 */
 	public function getEndTime() {
@@ -59,7 +59,7 @@ class FoodEstablishmentReservationType extends ReservationType {
 
 	/**
 	 * Get party size.
-	 * 
+	 *
 	 * @return Property\PartySizeProperty
 	 */
 	public function getPartySize() {
@@ -68,7 +68,7 @@ class FoodEstablishmentReservationType extends ReservationType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -77,7 +77,7 @@ class FoodEstablishmentReservationType extends ReservationType {
 
 	/**
 	 * Get start time.
-	 * 
+	 *
 	 * @return Property\StartTimeProperty
 	 */
 	public function getStartTime() {
@@ -86,7 +86,7 @@ class FoodEstablishmentReservationType extends ReservationType {
 
 	/**
 	 * Set end time.
-	 * 
+	 *
 	 * @param Property\EndTimeProperty $endTime
 	 * @return FoodEstablishmentReservationType
 	 */
@@ -98,7 +98,7 @@ class FoodEstablishmentReservationType extends ReservationType {
 
 	/**
 	 * Set party size.
-	 * 
+	 *
 	 * @param Property\PartySizeProperty $partySize
 	 * @return FoodEstablishmentReservationType
 	 */
@@ -110,7 +110,7 @@ class FoodEstablishmentReservationType extends ReservationType {
 
 	/**
 	 * Set start time.
-	 * 
+	 *
 	 * @param Property\StartTimeProperty $startTime
 	 * @return FoodEstablishmentReservationType
 	 */

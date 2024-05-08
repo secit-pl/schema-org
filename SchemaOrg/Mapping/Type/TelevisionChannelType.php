@@ -5,11 +5,12 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class TelevisionChannelType.
+ * A unique instance of a television BroadcastService on a CableOrSatelliteService lineup.
  * 
  * @method TelevisionChannelType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method TelevisionChannelType setAlternateName(Property\AlternateNameProperty $alternateName)
  * @method TelevisionChannelType setBroadcastChannelId(Property\BroadcastChannelIdProperty $broadcastChannelId)
+ * @method TelevisionChannelType setBroadcastFrequency(Property\BroadcastFrequencyProperty $broadcastFrequency)
  * @method TelevisionChannelType setBroadcastServiceTier(Property\BroadcastServiceTierProperty $broadcastServiceTier)
  * @method TelevisionChannelType setDescription(Property\DescriptionProperty $description)
  * @method TelevisionChannelType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
@@ -22,13 +23,14 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method TelevisionChannelType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method TelevisionChannelType setProvidesBroadcastService(Property\ProvidesBroadcastServiceProperty $providesBroadcastService)
  * @method TelevisionChannelType setSameAs(Property\SameAsProperty $sameAs)
+ * @method TelevisionChannelType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method TelevisionChannelType setUrl(Property\UrlProperty $url)
  */
 class TelevisionChannelType extends BroadcastChannelType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

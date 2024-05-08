@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class MenuItemType.
+ * A food or drink item listed in a menu or menu section.
  * 
  * @method MenuItemType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method MenuItemType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,9 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MenuItemType setName(Property\NameProperty $name)
  * @method MenuItemType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method MenuItemType setSameAs(Property\SameAsProperty $sameAs)
+ * @method MenuItemType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method MenuItemType setUrl(Property\UrlProperty $url)
  */
 class MenuItemType extends IntangibleType {
+
+	/**
+	 * @var Property\MenuAddOnProperty
+	 */
+	private $menuAddOn;
 
 	/**
 	 * @var Property\NutritionProperty
@@ -37,8 +43,17 @@ class MenuItemType extends IntangibleType {
 	private $suitableForDiet;
 
 	/**
+	 * Get menu add on.
+	 *
+	 * @return Property\MenuAddOnProperty
+	 */
+	public function getMenuAddOn() {
+		return $this->menuAddOn;
+	}
+
+	/**
 	 * Get nutrition.
-	 * 
+	 *
 	 * @return Property\NutritionProperty
 	 */
 	public function getNutrition() {
@@ -47,7 +62,7 @@ class MenuItemType extends IntangibleType {
 
 	/**
 	 * Get offers.
-	 * 
+	 *
 	 * @return Property\OffersProperty
 	 */
 	public function getOffers() {
@@ -56,7 +71,7 @@ class MenuItemType extends IntangibleType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -65,7 +80,7 @@ class MenuItemType extends IntangibleType {
 
 	/**
 	 * Get suitable for diet.
-	 * 
+	 *
 	 * @return Property\SuitableForDietProperty
 	 */
 	public function getSuitableForDiet() {
@@ -73,8 +88,20 @@ class MenuItemType extends IntangibleType {
 	}
 
 	/**
+	 * Set menu add on.
+	 *
+	 * @param Property\MenuAddOnProperty $menuAddOn
+	 * @return MenuItemType
+	 */
+	public function setMenuAddOn(Property\MenuAddOnProperty $menuAddOn) {
+		$this->menuAddOn = $menuAddOn;
+
+		return $this;
+	}
+
+	/**
 	 * Set nutrition.
-	 * 
+	 *
 	 * @param Property\NutritionProperty $nutrition
 	 * @return MenuItemType
 	 */
@@ -86,7 +113,7 @@ class MenuItemType extends IntangibleType {
 
 	/**
 	 * Set offers.
-	 * 
+	 *
 	 * @param Property\OffersProperty $offers
 	 * @return MenuItemType
 	 */
@@ -98,7 +125,7 @@ class MenuItemType extends IntangibleType {
 
 	/**
 	 * Set suitable for diet.
-	 * 
+	 *
 	 * @param Property\SuitableForDietProperty $suitableForDiet
 	 * @return MenuItemType
 	 */

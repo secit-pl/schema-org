@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class DeliveryChargeSpecificationType.
+ * The price for the delivery of an offer using a particular delivery method.
  * 
  * @method DeliveryChargeSpecificationType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method DeliveryChargeSpecificationType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -23,6 +23,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method DeliveryChargeSpecificationType setPrice(Property\PriceProperty $price)
  * @method DeliveryChargeSpecificationType setPriceCurrency(Property\PriceCurrencyProperty $priceCurrency)
  * @method DeliveryChargeSpecificationType setSameAs(Property\SameAsProperty $sameAs)
+ * @method DeliveryChargeSpecificationType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method DeliveryChargeSpecificationType setUrl(Property\UrlProperty $url)
  * @method DeliveryChargeSpecificationType setValidFrom(Property\ValidFromProperty $validFrom)
  * @method DeliveryChargeSpecificationType setValidThrough(Property\ValidThroughProperty $validThrough)
@@ -46,13 +47,8 @@ class DeliveryChargeSpecificationType extends PriceSpecificationType {
 	private $eligibleRegion;
 
 	/**
-	 * @var Property\IneligibleRegionProperty
-	 */
-	private $ineligibleRegion;
-
-	/**
 	 * Get applies to delivery method.
-	 * 
+	 *
 	 * @return Property\AppliesToDeliveryMethodProperty
 	 */
 	public function getAppliesToDeliveryMethod() {
@@ -61,7 +57,7 @@ class DeliveryChargeSpecificationType extends PriceSpecificationType {
 
 	/**
 	 * Get area served.
-	 * 
+	 *
 	 * @return Property\AreaServedProperty
 	 */
 	public function getAreaServed() {
@@ -70,7 +66,7 @@ class DeliveryChargeSpecificationType extends PriceSpecificationType {
 
 	/**
 	 * Get eligible region.
-	 * 
+	 *
 	 * @return Property\EligibleRegionProperty
 	 */
 	public function getEligibleRegion() {
@@ -78,17 +74,8 @@ class DeliveryChargeSpecificationType extends PriceSpecificationType {
 	}
 
 	/**
-	 * Get ineligible region.
-	 * 
-	 * @return Property\IneligibleRegionProperty
-	 */
-	public function getIneligibleRegion() {
-		return $this->ineligibleRegion;
-	}
-
-	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -97,7 +84,7 @@ class DeliveryChargeSpecificationType extends PriceSpecificationType {
 
 	/**
 	 * Set applies to delivery method.
-	 * 
+	 *
 	 * @param Property\AppliesToDeliveryMethodProperty $appliesToDeliveryMethod
 	 * @return DeliveryChargeSpecificationType
 	 */
@@ -109,7 +96,7 @@ class DeliveryChargeSpecificationType extends PriceSpecificationType {
 
 	/**
 	 * Set area served.
-	 * 
+	 *
 	 * @param Property\AreaServedProperty $areaServed
 	 * @return DeliveryChargeSpecificationType
 	 */
@@ -121,24 +108,12 @@ class DeliveryChargeSpecificationType extends PriceSpecificationType {
 
 	/**
 	 * Set eligible region.
-	 * 
+	 *
 	 * @param Property\EligibleRegionProperty $eligibleRegion
 	 * @return DeliveryChargeSpecificationType
 	 */
 	public function setEligibleRegion(Property\EligibleRegionProperty $eligibleRegion) {
 		$this->eligibleRegion = $eligibleRegion;
-
-		return $this;
-	}
-
-	/**
-	 * Set ineligible region.
-	 * 
-	 * @param Property\IneligibleRegionProperty $ineligibleRegion
-	 * @return DeliveryChargeSpecificationType
-	 */
-	public function setIneligibleRegion(Property\IneligibleRegionProperty $ineligibleRegion) {
-		$this->ineligibleRegion = $ineligibleRegion;
 
 		return $this;
 	}

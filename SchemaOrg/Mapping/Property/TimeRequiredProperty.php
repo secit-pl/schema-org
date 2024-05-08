@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * TimeRequiredProperty class.
+ * Approximate or typical time it usually takes to work with or through the content of this work for the typical or target audience.
  * 
  * @method TimeRequiredProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class TimeRequiredProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class TimeRequiredProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

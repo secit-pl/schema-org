@@ -3,9 +3,10 @@
 namespace SecIT\SchemaOrg\Mapping\Property;
 
 use SecIT\SchemaOrg\Mapping\DataType;
+use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * SuggestedGenderProperty class.
+ * The suggested gender of the intended person or audience, for example "male", "female", or "unisex".
  * 
  * @method SuggestedGenderProperty setValue($value)
  */
@@ -13,7 +14,7 @@ class SuggestedGenderProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,11 +23,11 @@ class SuggestedGenderProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */
 	public function isValueValid($value) {
-		return $value instanceof DataType\TextType;
+		return $value instanceof Type\GenderType || $value instanceof DataType\TextType;
 	}
 }

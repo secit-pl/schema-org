@@ -5,27 +5,27 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ReservationStatusType.
+ * Enumerated status values for Reservation.
  * 
- * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ReservationStatusType instead.
- * 
- * @method ReservationStatusType setAdditionalType(Property\AdditionalType $additionalType)
- * @method ReservationStatusType setAlternateName(Property\AlternateName $alternateName)
- * @method ReservationStatusType setDescription(Property\Description $description)
- * @method ReservationStatusType setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method ReservationStatusType setIdentifier(Property\Identifier $identifier)
- * @method ReservationStatusType setImage(Property\Image $image)
- * @method ReservationStatusType setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method ReservationStatusType setName(Property\Name $name)
- * @method ReservationStatusType setPotentialAction(Property\PotentialAction $potentialAction)
- * @method ReservationStatusType setSameAs(Property\SameAs $sameAs)
- * @method ReservationStatusType setUrl(Property\Url $url)
+ * @method ReservationStatusType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
+ * @method ReservationStatusType setAlternateName(Property\AlternateNameProperty $alternateName)
+ * @method ReservationStatusType setDescription(Property\DescriptionProperty $description)
+ * @method ReservationStatusType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
+ * @method ReservationStatusType setIdentifier(Property\IdentifierProperty $identifier)
+ * @method ReservationStatusType setImage(Property\ImageProperty $image)
+ * @method ReservationStatusType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
+ * @method ReservationStatusType setName(Property\NameProperty $name)
+ * @method ReservationStatusType setPotentialAction(Property\PotentialActionProperty $potentialAction)
+ * @method ReservationStatusType setSameAs(Property\SameAsProperty $sameAs)
+ * @method ReservationStatusType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method ReservationStatusType setSupersededBy(Property\SupersededByProperty $supersededBy)
+ * @method ReservationStatusType setUrl(Property\UrlProperty $url)
  */
-class ReservationStatusType extends Enumeration {
+class ReservationStatusType extends StatusEnumerationType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

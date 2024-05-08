@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class AgreeActionType.
+ * The act of expressing a consistency of opinion with the object. An agent agrees to/about an object (a proposition, topic or theme) with participants.
  * 
  * @method AgreeActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method AgreeActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method AgreeActionType setResult(Property\ResultProperty $result)
  * @method AgreeActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method AgreeActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method AgreeActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method AgreeActionType setTarget(Property\TargetProperty $target)
  * @method AgreeActionType setUrl(Property\UrlProperty $url)
  */
@@ -34,7 +35,7 @@ class AgreeActionType extends ReactActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

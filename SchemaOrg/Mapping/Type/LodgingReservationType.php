@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class LodgingReservationType.
+ * A reservation for lodging at a hotel, motel, inn, etc. Note: This type is for information about actual reservations, e.g. in confirmation emails or HTML pages with individual confirmations of reservations.
  * 
  * @method LodgingReservationType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method LodgingReservationType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -21,12 +21,12 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method LodgingReservationType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method LodgingReservationType setPriceCurrency(Property\PriceCurrencyProperty $priceCurrency)
  * @method LodgingReservationType setProgramMembershipUsed(Property\ProgramMembershipUsedProperty $programMembershipUsed)
- * @method LodgingReservationType setProvider(Property\ProviderProperty $provider)
  * @method LodgingReservationType setReservationFor(Property\ReservationForProperty $reservationFor)
  * @method LodgingReservationType setReservationId(Property\ReservationIdProperty $reservationId)
  * @method LodgingReservationType setReservationStatus(Property\ReservationStatusProperty $reservationStatus)
  * @method LodgingReservationType setReservedTicket(Property\ReservedTicketProperty $reservedTicket)
  * @method LodgingReservationType setSameAs(Property\SameAsProperty $sameAs)
+ * @method LodgingReservationType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method LodgingReservationType setTotalPrice(Property\TotalPriceProperty $totalPrice)
  * @method LodgingReservationType setUnderName(Property\UnderNameProperty $underName)
  * @method LodgingReservationType setUrl(Property\UrlProperty $url)
@@ -65,7 +65,7 @@ class LodgingReservationType extends ReservationType {
 
 	/**
 	 * Get checkin time.
-	 * 
+	 *
 	 * @return Property\CheckinTimeProperty
 	 */
 	public function getCheckinTime() {
@@ -74,7 +74,7 @@ class LodgingReservationType extends ReservationType {
 
 	/**
 	 * Get checkout time.
-	 * 
+	 *
 	 * @return Property\CheckoutTimeProperty
 	 */
 	public function getCheckoutTime() {
@@ -83,7 +83,7 @@ class LodgingReservationType extends ReservationType {
 
 	/**
 	 * Get lodging unit description.
-	 * 
+	 *
 	 * @return Property\LodgingUnitDescriptionProperty
 	 */
 	public function getLodgingUnitDescription() {
@@ -92,7 +92,7 @@ class LodgingReservationType extends ReservationType {
 
 	/**
 	 * Get lodging unit type.
-	 * 
+	 *
 	 * @return Property\LodgingUnitTypeProperty
 	 */
 	public function getLodgingUnitType() {
@@ -101,7 +101,7 @@ class LodgingReservationType extends ReservationType {
 
 	/**
 	 * Get num adults.
-	 * 
+	 *
 	 * @return Property\NumAdultsProperty
 	 */
 	public function getNumAdults() {
@@ -110,7 +110,7 @@ class LodgingReservationType extends ReservationType {
 
 	/**
 	 * Get num children.
-	 * 
+	 *
 	 * @return Property\NumChildrenProperty
 	 */
 	public function getNumChildren() {
@@ -119,7 +119,7 @@ class LodgingReservationType extends ReservationType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -128,7 +128,7 @@ class LodgingReservationType extends ReservationType {
 
 	/**
 	 * Set checkin time.
-	 * 
+	 *
 	 * @param Property\CheckinTimeProperty $checkinTime
 	 * @return LodgingReservationType
 	 */
@@ -140,7 +140,7 @@ class LodgingReservationType extends ReservationType {
 
 	/**
 	 * Set checkout time.
-	 * 
+	 *
 	 * @param Property\CheckoutTimeProperty $checkoutTime
 	 * @return LodgingReservationType
 	 */
@@ -152,7 +152,7 @@ class LodgingReservationType extends ReservationType {
 
 	/**
 	 * Set lodging unit description.
-	 * 
+	 *
 	 * @param Property\LodgingUnitDescriptionProperty $lodgingUnitDescription
 	 * @return LodgingReservationType
 	 */
@@ -164,7 +164,7 @@ class LodgingReservationType extends ReservationType {
 
 	/**
 	 * Set lodging unit type.
-	 * 
+	 *
 	 * @param Property\LodgingUnitTypeProperty $lodgingUnitType
 	 * @return LodgingReservationType
 	 */
@@ -176,7 +176,7 @@ class LodgingReservationType extends ReservationType {
 
 	/**
 	 * Set num adults.
-	 * 
+	 *
 	 * @param Property\NumAdultsProperty $numAdults
 	 * @return LodgingReservationType
 	 */
@@ -188,7 +188,7 @@ class LodgingReservationType extends ReservationType {
 
 	/**
 	 * Set num children.
-	 * 
+	 *
 	 * @param Property\NumChildrenProperty $numChildren
 	 * @return LodgingReservationType
 	 */

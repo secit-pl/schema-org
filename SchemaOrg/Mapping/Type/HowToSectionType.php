@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class HowToSectionType.
+ * A sub-grouping of steps in the instructions for how to achieve a result (e.g. steps for making a pie crust within a pie recipe).
  * 
  * @method HowToSectionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method HowToSectionType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -13,21 +13,22 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method HowToSectionType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
  * @method HowToSectionType setIdentifier(Property\IdentifierProperty $identifier)
  * @method HowToSectionType setImage(Property\ImageProperty $image)
- * @method HowToSectionType setItemListElements(array|Property\ItemListElementProperty[] $itemListElements)
- * @method HowToSectionType addItemListElement(Property\ItemListElementProperty $itemListElement)
- * @method HowToSectionType setItemListOrder(Property\ItemListOrderProperty $itemListOrder)
+ * @method HowToSectionType setItem(Property\ItemProperty $item)
  * @method HowToSectionType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
  * @method HowToSectionType setName(Property\NameProperty $name)
- * @method HowToSectionType setNumberOfItems(Property\NumberOfItemsProperty $numberOfItems)
+ * @method HowToSectionType setNextItem(Property\NextItemProperty $nextItem)
+ * @method HowToSectionType setPosition(Property\PositionProperty $position)
  * @method HowToSectionType setPotentialAction(Property\PotentialActionProperty $potentialAction)
+ * @method HowToSectionType setPreviousItem(Property\PreviousItemProperty $previousItem)
  * @method HowToSectionType setSameAs(Property\SameAsProperty $sameAs)
+ * @method HowToSectionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method HowToSectionType setUrl(Property\UrlProperty $url)
  */
-class HowToSectionType extends ItemListType {
+class HowToSectionType extends ListItemType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class CompoundPriceSpecificationType.
+ * A compound price specification is one that bundles multiple prices that all apply in combination for different dimensions of consumption. Use the name property of the attached unit price specification for indicating the dimension of a price component (e.g. "electricity" or "final cleaning").
  * 
  * @method CompoundPriceSpecificationType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method CompoundPriceSpecificationType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -23,6 +23,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method CompoundPriceSpecificationType setPrice(Property\PriceProperty $price)
  * @method CompoundPriceSpecificationType setPriceCurrency(Property\PriceCurrencyProperty $priceCurrency)
  * @method CompoundPriceSpecificationType setSameAs(Property\SameAsProperty $sameAs)
+ * @method CompoundPriceSpecificationType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method CompoundPriceSpecificationType setUrl(Property\UrlProperty $url)
  * @method CompoundPriceSpecificationType setValidFrom(Property\ValidFromProperty $validFrom)
  * @method CompoundPriceSpecificationType setValidThrough(Property\ValidThroughProperty $validThrough)
@@ -36,8 +37,13 @@ class CompoundPriceSpecificationType extends PriceSpecificationType {
 	private $priceComponent;
 
 	/**
+	 * @var Property\PriceTypeProperty
+	 */
+	private $priceType;
+
+	/**
 	 * Get price component.
-	 * 
+	 *
 	 * @return Property\PriceComponentProperty
 	 */
 	public function getPriceComponent() {
@@ -45,8 +51,17 @@ class CompoundPriceSpecificationType extends PriceSpecificationType {
 	}
 
 	/**
+	 * Get price type.
+	 *
+	 * @return Property\PriceTypeProperty
+	 */
+	public function getPriceType() {
+		return $this->priceType;
+	}
+
+	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -55,12 +70,24 @@ class CompoundPriceSpecificationType extends PriceSpecificationType {
 
 	/**
 	 * Set price component.
-	 * 
+	 *
 	 * @param Property\PriceComponentProperty $priceComponent
 	 * @return CompoundPriceSpecificationType
 	 */
 	public function setPriceComponent(Property\PriceComponentProperty $priceComponent) {
 		$this->priceComponent = $priceComponent;
+
+		return $this;
+	}
+
+	/**
+	 * Set price type.
+	 *
+	 * @param Property\PriceTypeProperty $priceType
+	 * @return CompoundPriceSpecificationType
+	 */
+	public function setPriceType(Property\PriceTypeProperty $priceType) {
+		$this->priceType = $priceType;
 
 		return $this;
 	}

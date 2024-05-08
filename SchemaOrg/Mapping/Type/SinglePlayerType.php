@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class SinglePlayerType.
+ * Play mode: SinglePlayer. Which is played by a lone player.
  * 
  * @method SinglePlayerType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method SinglePlayerType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SinglePlayerType setName(Property\NameProperty $name)
  * @method SinglePlayerType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method SinglePlayerType setSameAs(Property\SameAsProperty $sameAs)
+ * @method SinglePlayerType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method SinglePlayerType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method SinglePlayerType setUrl(Property\UrlProperty $url)
  */
 class SinglePlayerType extends GamePlayModeType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

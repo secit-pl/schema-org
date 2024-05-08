@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class JobPostingType.
+ * A listing that describes a job opening in a certain organization.
  * 
  * @method JobPostingType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method JobPostingType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,6 +17,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method JobPostingType setName(Property\NameProperty $name)
  * @method JobPostingType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method JobPostingType setSameAs(Property\SameAsProperty $sameAs)
+ * @method JobPostingType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method JobPostingType setUrl(Property\UrlProperty $url)
  */
 class JobPostingType extends IntangibleType {
@@ -35,6 +36,16 @@ class JobPostingType extends IntangibleType {
 	 * @var Property\EmploymentTypeProperty
 	 */
 	private $employmentType;
+
+	/**
+	 * @var Property\EstimatedSalaryProperty
+	 */
+	private $estimatedSalary;
+
+	/**
+	 * @var Property\ExperienceRequirementsProperty
+	 */
+	private $experienceRequirements;
 
 	/**
 	 * @var Property\HiringOrganizationProperty
@@ -62,9 +73,24 @@ class JobPostingType extends IntangibleType {
 	private $jobLocation;
 
 	/**
+	 * @var Property\RelevantOccupationProperty
+	 */
+	private $relevantOccupation;
+
+	/**
+	 * @var Property\ResponsibilitiesProperty
+	 */
+	private $responsibilities;
+
+	/**
 	 * @var Property\SalaryCurrencyProperty
 	 */
 	private $salaryCurrency;
+
+	/**
+	 * @var Property\SkillsProperty
+	 */
+	private $skills;
 
 	/**
 	 * @var Property\SpecialCommitmentsProperty
@@ -88,7 +114,7 @@ class JobPostingType extends IntangibleType {
 
 	/**
 	 * Get base salary.
-	 * 
+	 *
 	 * @return Property\BaseSalaryProperty
 	 */
 	public function getBaseSalary() {
@@ -97,7 +123,7 @@ class JobPostingType extends IntangibleType {
 
 	/**
 	 * Get date posted.
-	 * 
+	 *
 	 * @return Property\DatePostedProperty
 	 */
 	public function getDatePosted() {
@@ -106,7 +132,7 @@ class JobPostingType extends IntangibleType {
 
 	/**
 	 * Get employment type.
-	 * 
+	 *
 	 * @return Property\EmploymentTypeProperty
 	 */
 	public function getEmploymentType() {
@@ -114,8 +140,26 @@ class JobPostingType extends IntangibleType {
 	}
 
 	/**
+	 * Get estimated salary.
+	 *
+	 * @return Property\EstimatedSalaryProperty
+	 */
+	public function getEstimatedSalary() {
+		return $this->estimatedSalary;
+	}
+
+	/**
+	 * Get experience requirements.
+	 *
+	 * @return Property\ExperienceRequirementsProperty
+	 */
+	public function getExperienceRequirements() {
+		return $this->experienceRequirements;
+	}
+
+	/**
 	 * Get hiring organization.
-	 * 
+	 *
 	 * @return Property\HiringOrganizationProperty
 	 */
 	public function getHiringOrganization() {
@@ -124,7 +168,7 @@ class JobPostingType extends IntangibleType {
 
 	/**
 	 * Get incentive compensation.
-	 * 
+	 *
 	 * @return Property\IncentiveCompensationProperty
 	 */
 	public function getIncentiveCompensation() {
@@ -133,7 +177,7 @@ class JobPostingType extends IntangibleType {
 
 	/**
 	 * Get industry.
-	 * 
+	 *
 	 * @return Property\IndustryProperty
 	 */
 	public function getIndustry() {
@@ -142,7 +186,7 @@ class JobPostingType extends IntangibleType {
 
 	/**
 	 * Get job benefits.
-	 * 
+	 *
 	 * @return Property\JobBenefitsProperty
 	 */
 	public function getJobBenefits() {
@@ -151,7 +195,7 @@ class JobPostingType extends IntangibleType {
 
 	/**
 	 * Get job location.
-	 * 
+	 *
 	 * @return Property\JobLocationProperty
 	 */
 	public function getJobLocation() {
@@ -159,8 +203,26 @@ class JobPostingType extends IntangibleType {
 	}
 
 	/**
+	 * Get relevant occupation.
+	 *
+	 * @return Property\RelevantOccupationProperty
+	 */
+	public function getRelevantOccupation() {
+		return $this->relevantOccupation;
+	}
+
+	/**
+	 * Get responsibilities.
+	 *
+	 * @return Property\ResponsibilitiesProperty
+	 */
+	public function getResponsibilities() {
+		return $this->responsibilities;
+	}
+
+	/**
 	 * Get salary currency.
-	 * 
+	 *
 	 * @return Property\SalaryCurrencyProperty
 	 */
 	public function getSalaryCurrency() {
@@ -169,7 +231,7 @@ class JobPostingType extends IntangibleType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -177,8 +239,17 @@ class JobPostingType extends IntangibleType {
 	}
 
 	/**
+	 * Get skills.
+	 *
+	 * @return Property\SkillsProperty
+	 */
+	public function getSkills() {
+		return $this->skills;
+	}
+
+	/**
 	 * Get special commitments.
-	 * 
+	 *
 	 * @return Property\SpecialCommitmentsProperty
 	 */
 	public function getSpecialCommitments() {
@@ -187,7 +258,7 @@ class JobPostingType extends IntangibleType {
 
 	/**
 	 * Get title.
-	 * 
+	 *
 	 * @return Property\TitleProperty
 	 */
 	public function getTitle() {
@@ -196,7 +267,7 @@ class JobPostingType extends IntangibleType {
 
 	/**
 	 * Get valid through.
-	 * 
+	 *
 	 * @return Property\ValidThroughProperty
 	 */
 	public function getValidThrough() {
@@ -205,7 +276,7 @@ class JobPostingType extends IntangibleType {
 
 	/**
 	 * Get work hours.
-	 * 
+	 *
 	 * @return Property\WorkHoursProperty
 	 */
 	public function getWorkHours() {
@@ -214,7 +285,7 @@ class JobPostingType extends IntangibleType {
 
 	/**
 	 * Set base salary.
-	 * 
+	 *
 	 * @param Property\BaseSalaryProperty $baseSalary
 	 * @return JobPostingType
 	 */
@@ -226,7 +297,7 @@ class JobPostingType extends IntangibleType {
 
 	/**
 	 * Set date posted.
-	 * 
+	 *
 	 * @param Property\DatePostedProperty $datePosted
 	 * @return JobPostingType
 	 */
@@ -238,7 +309,7 @@ class JobPostingType extends IntangibleType {
 
 	/**
 	 * Set employment type.
-	 * 
+	 *
 	 * @param Property\EmploymentTypeProperty $employmentType
 	 * @return JobPostingType
 	 */
@@ -249,8 +320,32 @@ class JobPostingType extends IntangibleType {
 	}
 
 	/**
+	 * Set estimated salary.
+	 *
+	 * @param Property\EstimatedSalaryProperty $estimatedSalary
+	 * @return JobPostingType
+	 */
+	public function setEstimatedSalary(Property\EstimatedSalaryProperty $estimatedSalary) {
+		$this->estimatedSalary = $estimatedSalary;
+
+		return $this;
+	}
+
+	/**
+	 * Set experience requirements.
+	 *
+	 * @param Property\ExperienceRequirementsProperty $experienceRequirements
+	 * @return JobPostingType
+	 */
+	public function setExperienceRequirements(Property\ExperienceRequirementsProperty $experienceRequirements) {
+		$this->experienceRequirements = $experienceRequirements;
+
+		return $this;
+	}
+
+	/**
 	 * Set hiring organization.
-	 * 
+	 *
 	 * @param Property\HiringOrganizationProperty $hiringOrganization
 	 * @return JobPostingType
 	 */
@@ -262,7 +357,7 @@ class JobPostingType extends IntangibleType {
 
 	/**
 	 * Set incentive compensation.
-	 * 
+	 *
 	 * @param Property\IncentiveCompensationProperty $incentiveCompensation
 	 * @return JobPostingType
 	 */
@@ -274,7 +369,7 @@ class JobPostingType extends IntangibleType {
 
 	/**
 	 * Set industry.
-	 * 
+	 *
 	 * @param Property\IndustryProperty $industry
 	 * @return JobPostingType
 	 */
@@ -286,7 +381,7 @@ class JobPostingType extends IntangibleType {
 
 	/**
 	 * Set job benefits.
-	 * 
+	 *
 	 * @param Property\JobBenefitsProperty $jobBenefits
 	 * @return JobPostingType
 	 */
@@ -298,7 +393,7 @@ class JobPostingType extends IntangibleType {
 
 	/**
 	 * Set job location.
-	 * 
+	 *
 	 * @param Property\JobLocationProperty $jobLocation
 	 * @return JobPostingType
 	 */
@@ -309,8 +404,32 @@ class JobPostingType extends IntangibleType {
 	}
 
 	/**
+	 * Set relevant occupation.
+	 *
+	 * @param Property\RelevantOccupationProperty $relevantOccupation
+	 * @return JobPostingType
+	 */
+	public function setRelevantOccupation(Property\RelevantOccupationProperty $relevantOccupation) {
+		$this->relevantOccupation = $relevantOccupation;
+
+		return $this;
+	}
+
+	/**
+	 * Set responsibilities.
+	 *
+	 * @param Property\ResponsibilitiesProperty $responsibilities
+	 * @return JobPostingType
+	 */
+	public function setResponsibilities(Property\ResponsibilitiesProperty $responsibilities) {
+		$this->responsibilities = $responsibilities;
+
+		return $this;
+	}
+
+	/**
 	 * Set salary currency.
-	 * 
+	 *
 	 * @param Property\SalaryCurrencyProperty $salaryCurrency
 	 * @return JobPostingType
 	 */
@@ -321,8 +440,20 @@ class JobPostingType extends IntangibleType {
 	}
 
 	/**
+	 * Set skills.
+	 *
+	 * @param Property\SkillsProperty $skills
+	 * @return JobPostingType
+	 */
+	public function setSkills(Property\SkillsProperty $skills) {
+		$this->skills = $skills;
+
+		return $this;
+	}
+
+	/**
 	 * Set special commitments.
-	 * 
+	 *
 	 * @param Property\SpecialCommitmentsProperty $specialCommitments
 	 * @return JobPostingType
 	 */
@@ -334,7 +465,7 @@ class JobPostingType extends IntangibleType {
 
 	/**
 	 * Set title.
-	 * 
+	 *
 	 * @param Property\TitleProperty $title
 	 * @return JobPostingType
 	 */
@@ -346,7 +477,7 @@ class JobPostingType extends IntangibleType {
 
 	/**
 	 * Set valid through.
-	 * 
+	 *
 	 * @param Property\ValidThroughProperty $validThrough
 	 * @return JobPostingType
 	 */
@@ -358,7 +489,7 @@ class JobPostingType extends IntangibleType {
 
 	/**
 	 * Set work hours.
-	 * 
+	 *
 	 * @param Property\WorkHoursProperty $workHours
 	 * @return JobPostingType
 	 */

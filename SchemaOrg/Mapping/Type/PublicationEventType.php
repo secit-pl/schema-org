@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class PublicationEventType.
+ * A PublicationEvent corresponds indifferently to the event of publication for a CreativeWork of any type, e.g. a broadcast event, an on-demand event, a book/journal publication via a variety of delivery media.
  * 
+ * @method PublicationEventType setAbout(Property\AboutProperty $about)
  * @method PublicationEventType setActor(Property\ActorProperty $actor)
  * @method PublicationEventType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method PublicationEventType setAggregateRating(Property\AggregateRatingProperty $aggregateRating)
@@ -19,6 +20,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method PublicationEventType setDirector(Property\DirectorProperty $director)
  * @method PublicationEventType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
  * @method PublicationEventType setDoorTime(Property\DoorTimeProperty $doorTime)
+ * @method PublicationEventType setDuration(Property\DurationProperty $duration)
  * @method PublicationEventType setEndDate(Property\EndDateProperty $endDate)
  * @method PublicationEventType setEventStatus(Property\EventStatusProperty $eventStatus)
  * @method PublicationEventType setFunder(Property\FunderProperty $funder)
@@ -26,6 +28,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method PublicationEventType setImage(Property\ImageProperty $image)
  * @method PublicationEventType setInLanguage(Property\InLanguageProperty $inLanguage)
  * @method PublicationEventType setIsAccessibleForFree(Property\IsAccessibleForFreeProperty $isAccessibleForFree)
+ * @method PublicationEventType setKeywords(Property\KeywordsProperty $keywords)
  * @method PublicationEventType setLocation(Property\LocationProperty $location)
  * @method PublicationEventType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
  * @method PublicationEventType setMaximumAttendeeCapacity(Property\MaximumAttendeeCapacityProperty $maximumAttendeeCapacity)
@@ -42,6 +45,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method PublicationEventType setSponsor(Property\SponsorProperty $sponsor)
  * @method PublicationEventType setStartDate(Property\StartDateProperty $startDate)
  * @method PublicationEventType setSubEvent(Property\SubEventProperty $subEvent)
+ * @method PublicationEventType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method PublicationEventType setSuperEvent(Property\SuperEventProperty $superEvent)
  * @method PublicationEventType setTranslator(Property\TranslatorProperty $translator)
  * @method PublicationEventType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
@@ -52,9 +56,9 @@ use SecIT\SchemaOrg\Mapping\Property;
 class PublicationEventType extends EventType {
 
 	/**
-	 * @var Property\IsAccessibleForFreeProperty
+	 * @var Property\PublishedByProperty
 	 */
-	private $isAccessibleForFree;
+	private $publishedBy;
 
 	/**
 	 * @var Property\PublishedOnProperty
@@ -62,17 +66,17 @@ class PublicationEventType extends EventType {
 	private $publishedOn;
 
 	/**
-	 * Get is accessible for free.
-	 * 
-	 * @return Property\IsAccessibleForFreeProperty
+	 * Get published by.
+	 *
+	 * @return Property\PublishedByProperty
 	 */
-	public function getIsAccessibleForFree() {
-		return $this->isAccessibleForFree;
+	public function getPublishedBy() {
+		return $this->publishedBy;
 	}
 
 	/**
 	 * Get published on.
-	 * 
+	 *
 	 * @return Property\PublishedOnProperty
 	 */
 	public function getPublishedOn() {
@@ -81,7 +85,7 @@ class PublicationEventType extends EventType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -89,20 +93,20 @@ class PublicationEventType extends EventType {
 	}
 
 	/**
-	 * Set is accessible for free.
-	 * 
-	 * @param Property\IsAccessibleForFreeProperty $isAccessibleForFree
+	 * Set published by.
+	 *
+	 * @param Property\PublishedByProperty $publishedBy
 	 * @return PublicationEventType
 	 */
-	public function setIsAccessibleForFree(Property\IsAccessibleForFreeProperty $isAccessibleForFree) {
-		$this->isAccessibleForFree = $isAccessibleForFree;
+	public function setPublishedBy(Property\PublishedByProperty $publishedBy) {
+		$this->publishedBy = $publishedBy;
 
 		return $this;
 	}
 
 	/**
 	 * Set published on.
-	 * 
+	 *
 	 * @param Property\PublishedOnProperty $publishedOn
 	 * @return PublicationEventType
 	 */

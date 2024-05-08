@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * PaymentMethodIdProperty class.
+ * An identifier for the method of payment used (e.g. the last 4 digits of the credit card).
  * 
  * @method PaymentMethodIdProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class PaymentMethodIdProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class PaymentMethodIdProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

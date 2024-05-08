@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class OfferCatalogType.
+ * An OfferCatalog is an ItemList that contains related Offers and/or further OfferCatalogs that are offeredBy the same provider.
  * 
  * @method OfferCatalogType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method OfferCatalogType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -21,13 +21,14 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method OfferCatalogType setNumberOfItems(Property\NumberOfItemsProperty $numberOfItems)
  * @method OfferCatalogType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method OfferCatalogType setSameAs(Property\SameAsProperty $sameAs)
+ * @method OfferCatalogType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method OfferCatalogType setUrl(Property\UrlProperty $url)
  */
 class OfferCatalogType extends ItemListType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

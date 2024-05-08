@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class VegetarianDietType.
+ * A diet exclusive of animal meat.
  * 
  * @method VegetarianDietType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method VegetarianDietType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method VegetarianDietType setName(Property\NameProperty $name)
  * @method VegetarianDietType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method VegetarianDietType setSameAs(Property\SameAsProperty $sameAs)
+ * @method VegetarianDietType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method VegetarianDietType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method VegetarianDietType setUrl(Property\UrlProperty $url)
  */
 class VegetarianDietType extends RestrictedDietType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

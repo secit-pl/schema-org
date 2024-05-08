@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * AppliesToDeliveryMethodProperty class.
+ * The delivery method(s) to which the delivery charge or payment charge specification applies.
  * 
  * @method AppliesToDeliveryMethodProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class AppliesToDeliveryMethodProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class AppliesToDeliveryMethodProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

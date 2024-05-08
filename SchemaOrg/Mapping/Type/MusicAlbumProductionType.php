@@ -5,27 +5,27 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class MusicAlbumProductionType.
+ * Classification of the album by its type of content: soundtrack, live album, studio album, etc.
  * 
- * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\MusicAlbumProductionType instead.
- * 
- * @method MusicAlbumProductionType setAdditionalType(Property\AdditionalType $additionalType)
- * @method MusicAlbumProductionType setAlternateName(Property\AlternateName $alternateName)
- * @method MusicAlbumProductionType setDescription(Property\Description $description)
- * @method MusicAlbumProductionType setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method MusicAlbumProductionType setIdentifier(Property\Identifier $identifier)
- * @method MusicAlbumProductionType setImage(Property\Image $image)
- * @method MusicAlbumProductionType setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method MusicAlbumProductionType setName(Property\Name $name)
- * @method MusicAlbumProductionType setPotentialAction(Property\PotentialAction $potentialAction)
- * @method MusicAlbumProductionType setSameAs(Property\SameAs $sameAs)
- * @method MusicAlbumProductionType setUrl(Property\Url $url)
+ * @method MusicAlbumProductionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
+ * @method MusicAlbumProductionType setAlternateName(Property\AlternateNameProperty $alternateName)
+ * @method MusicAlbumProductionType setDescription(Property\DescriptionProperty $description)
+ * @method MusicAlbumProductionType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
+ * @method MusicAlbumProductionType setIdentifier(Property\IdentifierProperty $identifier)
+ * @method MusicAlbumProductionType setImage(Property\ImageProperty $image)
+ * @method MusicAlbumProductionType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
+ * @method MusicAlbumProductionType setName(Property\NameProperty $name)
+ * @method MusicAlbumProductionType setPotentialAction(Property\PotentialActionProperty $potentialAction)
+ * @method MusicAlbumProductionType setSameAs(Property\SameAsProperty $sameAs)
+ * @method MusicAlbumProductionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method MusicAlbumProductionType setSupersededBy(Property\SupersededByProperty $supersededBy)
+ * @method MusicAlbumProductionType setUrl(Property\UrlProperty $url)
  */
-class MusicAlbumProductionType extends Enumeration {
+class MusicAlbumProductionType extends EnumerationType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

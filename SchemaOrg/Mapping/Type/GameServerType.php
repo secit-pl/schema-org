@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class GameServerType.
+ * Server that provides game interaction in a multiplayer game.
  * 
  * @method GameServerType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method GameServerType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,6 +17,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method GameServerType setName(Property\NameProperty $name)
  * @method GameServerType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method GameServerType setSameAs(Property\SameAsProperty $sameAs)
+ * @method GameServerType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method GameServerType setUrl(Property\UrlProperty $url)
  */
 class GameServerType extends IntangibleType {
@@ -38,7 +39,7 @@ class GameServerType extends IntangibleType {
 
 	/**
 	 * Get game.
-	 * 
+	 *
 	 * @return Property\GameProperty
 	 */
 	public function getGame() {
@@ -47,7 +48,7 @@ class GameServerType extends IntangibleType {
 
 	/**
 	 * Get players online.
-	 * 
+	 *
 	 * @return Property\PlayersOnlineProperty
 	 */
 	public function getPlayersOnline() {
@@ -56,7 +57,7 @@ class GameServerType extends IntangibleType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -65,7 +66,7 @@ class GameServerType extends IntangibleType {
 
 	/**
 	 * Get server status.
-	 * 
+	 *
 	 * @return Property\ServerStatusProperty
 	 */
 	public function getServerStatus() {
@@ -74,7 +75,7 @@ class GameServerType extends IntangibleType {
 
 	/**
 	 * Set game.
-	 * 
+	 *
 	 * @param Property\GameProperty $game
 	 * @return GameServerType
 	 */
@@ -86,7 +87,7 @@ class GameServerType extends IntangibleType {
 
 	/**
 	 * Set players online.
-	 * 
+	 *
 	 * @param Property\PlayersOnlineProperty $playersOnline
 	 * @return GameServerType
 	 */
@@ -98,7 +99,7 @@ class GameServerType extends IntangibleType {
 
 	/**
 	 * Set server status.
-	 * 
+	 *
 	 * @param Property\ServerStatusProperty $serverStatus
 	 * @return GameServerType
 	 */

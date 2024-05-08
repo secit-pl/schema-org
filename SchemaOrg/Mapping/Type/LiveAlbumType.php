@@ -2,36 +2,30 @@
 
 namespace SecIT\SchemaOrg\Mapping\Type;
 
+use SecIT\SchemaOrg\Mapping\Property;
+
 /**
- * Class LiveAlbumType.
+ * LiveAlbum.
+ * 
+ * @method LiveAlbumType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
+ * @method LiveAlbumType setAlternateName(Property\AlternateNameProperty $alternateName)
+ * @method LiveAlbumType setDescription(Property\DescriptionProperty $description)
+ * @method LiveAlbumType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
+ * @method LiveAlbumType setIdentifier(Property\IdentifierProperty $identifier)
+ * @method LiveAlbumType setImage(Property\ImageProperty $image)
+ * @method LiveAlbumType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
+ * @method LiveAlbumType setName(Property\NameProperty $name)
+ * @method LiveAlbumType setPotentialAction(Property\PotentialActionProperty $potentialAction)
+ * @method LiveAlbumType setSameAs(Property\SameAsProperty $sameAs)
+ * @method LiveAlbumType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method LiveAlbumType setSupersededBy(Property\SupersededByProperty $supersededBy)
+ * @method LiveAlbumType setUrl(Property\UrlProperty $url)
  */
-class LiveAlbumType implements TypeInterface {
-
-	/**
-	 */
-	private $id;
-
-	/**
-	 * LiveAlbumType constructor.
-	 * 
-	 * @param string $id
-	 */
-	public function __construct($id = null) {
-		$this->id = $id;
-	}
-
-	/**
-	 * Get id.
-	 * 
-	 * @return string
-	 */
-	public function getId() {
-		return $this->id;
-	}
+class LiveAlbumType extends MusicAlbumProductionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

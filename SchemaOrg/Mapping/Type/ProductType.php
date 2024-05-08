@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ProductType.
+ * Any offered product or service. For example: a pair of shoes; a concert ticket; the rental of a car; a haircut; or an episode of a TV show streamed online.
  * 
  * @method ProductType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method ProductType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,6 +17,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ProductType setName(Property\NameProperty $name)
  * @method ProductType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method ProductType setSameAs(Property\SameAsProperty $sameAs)
+ * @method ProductType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method ProductType setUrl(Property\UrlProperty $url)
  */
 class ProductType extends ThingType {
@@ -57,6 +58,11 @@ class ProductType extends ThingType {
 	private $color;
 
 	/**
+	 * @var Property\CountryOfOriginProperty
+	 */
+	private $countryOfOrigin;
+
+	/**
 	 * @var Property\DepthProperty
 	 */
 	private $depth;
@@ -82,6 +88,11 @@ class ProductType extends ThingType {
 	private $gtin8;
 
 	/**
+	 * @var Property\HasCertificationProperty
+	 */
+	private $hasCertification;
+
+	/**
 	 * @var Property\HeightProperty
 	 */
 	private $height;
@@ -97,6 +108,11 @@ class ProductType extends ThingType {
 	private $isConsumableFor;
 
 	/**
+	 * @var Property\IsFamilyFriendlyProperty
+	 */
+	private $isFamilyFriendly;
+
+	/**
 	 * @var Property\IsRelatedToProperty
 	 */
 	private $isRelatedTo;
@@ -107,9 +123,19 @@ class ProductType extends ThingType {
 	private $isSimilarTo;
 
 	/**
+	 * @var Property\IsVariantOfProperty
+	 */
+	private $isVariantOf;
+
+	/**
 	 * @var Property\ItemConditionProperty
 	 */
 	private $itemCondition;
+
+	/**
+	 * @var Property\KeywordsProperty
+	 */
+	private $keywords;
 
 	/**
 	 * @var Property\LogoProperty
@@ -172,6 +198,11 @@ class ProductType extends ThingType {
 	private $sku;
 
 	/**
+	 * @var Property\SloganProperty
+	 */
+	private $slogan;
+
+	/**
 	 * @var Property\WeightProperty
 	 */
 	private $weight;
@@ -183,7 +214,7 @@ class ProductType extends ThingType {
 
 	/**
 	 * Get additional property.
-	 * 
+	 *
 	 * @return Property\AdditionalProperty
 	 */
 	public function getAdditionalProperty() {
@@ -192,7 +223,7 @@ class ProductType extends ThingType {
 
 	/**
 	 * Get aggregate rating.
-	 * 
+	 *
 	 * @return Property\AggregateRatingProperty
 	 */
 	public function getAggregateRating() {
@@ -201,7 +232,7 @@ class ProductType extends ThingType {
 
 	/**
 	 * Get audience.
-	 * 
+	 *
 	 * @return Property\AudienceProperty
 	 */
 	public function getAudience() {
@@ -210,7 +241,7 @@ class ProductType extends ThingType {
 
 	/**
 	 * Get award.
-	 * 
+	 *
 	 * @return Property\AwardProperty
 	 */
 	public function getAward() {
@@ -219,7 +250,7 @@ class ProductType extends ThingType {
 
 	/**
 	 * Get brand.
-	 * 
+	 *
 	 * @return Property\BrandProperty
 	 */
 	public function getBrand() {
@@ -228,7 +259,7 @@ class ProductType extends ThingType {
 
 	/**
 	 * Get category.
-	 * 
+	 *
 	 * @return Property\CategoryProperty
 	 */
 	public function getCategory() {
@@ -237,7 +268,7 @@ class ProductType extends ThingType {
 
 	/**
 	 * Get color.
-	 * 
+	 *
 	 * @return Property\ColorProperty
 	 */
 	public function getColor() {
@@ -245,8 +276,17 @@ class ProductType extends ThingType {
 	}
 
 	/**
+	 * Get country of origin.
+	 *
+	 * @return Property\CountryOfOriginProperty
+	 */
+	public function getCountryOfOrigin() {
+		return $this->countryOfOrigin;
+	}
+
+	/**
 	 * Get depth.
-	 * 
+	 *
 	 * @return Property\DepthProperty
 	 */
 	public function getDepth() {
@@ -255,7 +295,7 @@ class ProductType extends ThingType {
 
 	/**
 	 * Get gtin12.
-	 * 
+	 *
 	 * @return Property\Gtin12Property
 	 */
 	public function getGtin12() {
@@ -264,7 +304,7 @@ class ProductType extends ThingType {
 
 	/**
 	 * Get gtin13.
-	 * 
+	 *
 	 * @return Property\Gtin13Property
 	 */
 	public function getGtin13() {
@@ -273,7 +313,7 @@ class ProductType extends ThingType {
 
 	/**
 	 * Get gtin14.
-	 * 
+	 *
 	 * @return Property\Gtin14Property
 	 */
 	public function getGtin14() {
@@ -282,7 +322,7 @@ class ProductType extends ThingType {
 
 	/**
 	 * Get gtin8.
-	 * 
+	 *
 	 * @return Property\Gtin8Property
 	 */
 	public function getGtin8() {
@@ -290,8 +330,17 @@ class ProductType extends ThingType {
 	}
 
 	/**
+	 * Get has certification.
+	 *
+	 * @return Property\HasCertificationProperty
+	 */
+	public function getHasCertification() {
+		return $this->hasCertification;
+	}
+
+	/**
 	 * Get height.
-	 * 
+	 *
 	 * @return Property\HeightProperty
 	 */
 	public function getHeight() {
@@ -300,7 +349,7 @@ class ProductType extends ThingType {
 
 	/**
 	 * Get is accessory or spare part for.
-	 * 
+	 *
 	 * @return Property\IsAccessoryOrSparePartForProperty
 	 */
 	public function getIsAccessoryOrSparePartFor() {
@@ -309,7 +358,7 @@ class ProductType extends ThingType {
 
 	/**
 	 * Get is consumable for.
-	 * 
+	 *
 	 * @return Property\IsConsumableForProperty
 	 */
 	public function getIsConsumableFor() {
@@ -317,8 +366,17 @@ class ProductType extends ThingType {
 	}
 
 	/**
+	 * Get is family friendly.
+	 *
+	 * @return Property\IsFamilyFriendlyProperty
+	 */
+	public function getIsFamilyFriendly() {
+		return $this->isFamilyFriendly;
+	}
+
+	/**
 	 * Get is related to.
-	 * 
+	 *
 	 * @return Property\IsRelatedToProperty
 	 */
 	public function getIsRelatedTo() {
@@ -327,7 +385,7 @@ class ProductType extends ThingType {
 
 	/**
 	 * Get is similar to.
-	 * 
+	 *
 	 * @return Property\IsSimilarToProperty
 	 */
 	public function getIsSimilarTo() {
@@ -335,8 +393,17 @@ class ProductType extends ThingType {
 	}
 
 	/**
+	 * Get is variant of.
+	 *
+	 * @return Property\IsVariantOfProperty
+	 */
+	public function getIsVariantOf() {
+		return $this->isVariantOf;
+	}
+
+	/**
 	 * Get item condition.
-	 * 
+	 *
 	 * @return Property\ItemConditionProperty
 	 */
 	public function getItemCondition() {
@@ -344,8 +411,17 @@ class ProductType extends ThingType {
 	}
 
 	/**
+	 * Get keywords.
+	 *
+	 * @return Property\KeywordsProperty
+	 */
+	public function getKeywords() {
+		return $this->keywords;
+	}
+
+	/**
 	 * Get logo.
-	 * 
+	 *
 	 * @return Property\LogoProperty
 	 */
 	public function getLogo() {
@@ -354,7 +430,7 @@ class ProductType extends ThingType {
 
 	/**
 	 * Get manufacturer.
-	 * 
+	 *
 	 * @return Property\ManufacturerProperty
 	 */
 	public function getManufacturer() {
@@ -363,7 +439,7 @@ class ProductType extends ThingType {
 
 	/**
 	 * Get material.
-	 * 
+	 *
 	 * @return Property\MaterialProperty
 	 */
 	public function getMaterial() {
@@ -372,7 +448,7 @@ class ProductType extends ThingType {
 
 	/**
 	 * Get model.
-	 * 
+	 *
 	 * @return Property\ModelProperty
 	 */
 	public function getModel() {
@@ -381,7 +457,7 @@ class ProductType extends ThingType {
 
 	/**
 	 * Get mpn.
-	 * 
+	 *
 	 * @return Property\MpnProperty
 	 */
 	public function getMpn() {
@@ -390,7 +466,7 @@ class ProductType extends ThingType {
 
 	/**
 	 * Get offers.
-	 * 
+	 *
 	 * @return Property\OffersProperty
 	 */
 	public function getOffers() {
@@ -399,7 +475,7 @@ class ProductType extends ThingType {
 
 	/**
 	 * Get productid.
-	 * 
+	 *
 	 * @return Property\ProductIDProperty
 	 */
 	public function getProductID() {
@@ -408,7 +484,7 @@ class ProductType extends ThingType {
 
 	/**
 	 * Get production date.
-	 * 
+	 *
 	 * @return Property\ProductionDateProperty
 	 */
 	public function getProductionDate() {
@@ -417,7 +493,7 @@ class ProductType extends ThingType {
 
 	/**
 	 * Get purchase date.
-	 * 
+	 *
 	 * @return Property\PurchaseDateProperty
 	 */
 	public function getPurchaseDate() {
@@ -426,7 +502,7 @@ class ProductType extends ThingType {
 
 	/**
 	 * Get release date.
-	 * 
+	 *
 	 * @return Property\ReleaseDateProperty
 	 */
 	public function getReleaseDate() {
@@ -435,7 +511,7 @@ class ProductType extends ThingType {
 
 	/**
 	 * Get review.
-	 * 
+	 *
 	 * @return Property\ReviewProperty
 	 */
 	public function getReview() {
@@ -444,7 +520,7 @@ class ProductType extends ThingType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -453,7 +529,7 @@ class ProductType extends ThingType {
 
 	/**
 	 * Get sku.
-	 * 
+	 *
 	 * @return Property\SkuProperty
 	 */
 	public function getSku() {
@@ -461,8 +537,17 @@ class ProductType extends ThingType {
 	}
 
 	/**
+	 * Get slogan.
+	 *
+	 * @return Property\SloganProperty
+	 */
+	public function getSlogan() {
+		return $this->slogan;
+	}
+
+	/**
 	 * Get weight.
-	 * 
+	 *
 	 * @return Property\WeightProperty
 	 */
 	public function getWeight() {
@@ -471,7 +556,7 @@ class ProductType extends ThingType {
 
 	/**
 	 * Get width.
-	 * 
+	 *
 	 * @return Property\WidthProperty
 	 */
 	public function getWidth() {
@@ -480,7 +565,7 @@ class ProductType extends ThingType {
 
 	/**
 	 * Set additional property.
-	 * 
+	 *
 	 * @param Property\AdditionalProperty $additionalProperty
 	 * @return ProductType
 	 */
@@ -492,7 +577,7 @@ class ProductType extends ThingType {
 
 	/**
 	 * Set aggregate rating.
-	 * 
+	 *
 	 * @param Property\AggregateRatingProperty $aggregateRating
 	 * @return ProductType
 	 */
@@ -504,7 +589,7 @@ class ProductType extends ThingType {
 
 	/**
 	 * Set audience.
-	 * 
+	 *
 	 * @param Property\AudienceProperty $audience
 	 * @return ProductType
 	 */
@@ -516,7 +601,7 @@ class ProductType extends ThingType {
 
 	/**
 	 * Set award.
-	 * 
+	 *
 	 * @param Property\AwardProperty $award
 	 * @return ProductType
 	 */
@@ -528,7 +613,7 @@ class ProductType extends ThingType {
 
 	/**
 	 * Set brand.
-	 * 
+	 *
 	 * @param Property\BrandProperty $brand
 	 * @return ProductType
 	 */
@@ -540,7 +625,7 @@ class ProductType extends ThingType {
 
 	/**
 	 * Set category.
-	 * 
+	 *
 	 * @param Property\CategoryProperty $category
 	 * @return ProductType
 	 */
@@ -552,7 +637,7 @@ class ProductType extends ThingType {
 
 	/**
 	 * Set color.
-	 * 
+	 *
 	 * @param Property\ColorProperty $color
 	 * @return ProductType
 	 */
@@ -563,8 +648,20 @@ class ProductType extends ThingType {
 	}
 
 	/**
+	 * Set country of origin.
+	 *
+	 * @param Property\CountryOfOriginProperty $countryOfOrigin
+	 * @return ProductType
+	 */
+	public function setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin) {
+		$this->countryOfOrigin = $countryOfOrigin;
+
+		return $this;
+	}
+
+	/**
 	 * Set depth.
-	 * 
+	 *
 	 * @param Property\DepthProperty $depth
 	 * @return ProductType
 	 */
@@ -576,7 +673,7 @@ class ProductType extends ThingType {
 
 	/**
 	 * Set gtin12.
-	 * 
+	 *
 	 * @param Property\Gtin12Property $gtin12
 	 * @return ProductType
 	 */
@@ -588,7 +685,7 @@ class ProductType extends ThingType {
 
 	/**
 	 * Set gtin13.
-	 * 
+	 *
 	 * @param Property\Gtin13Property $gtin13
 	 * @return ProductType
 	 */
@@ -600,7 +697,7 @@ class ProductType extends ThingType {
 
 	/**
 	 * Set gtin14.
-	 * 
+	 *
 	 * @param Property\Gtin14Property $gtin14
 	 * @return ProductType
 	 */
@@ -612,7 +709,7 @@ class ProductType extends ThingType {
 
 	/**
 	 * Set gtin8.
-	 * 
+	 *
 	 * @param Property\Gtin8Property $gtin8
 	 * @return ProductType
 	 */
@@ -623,8 +720,20 @@ class ProductType extends ThingType {
 	}
 
 	/**
+	 * Set has certification.
+	 *
+	 * @param Property\HasCertificationProperty $hasCertification
+	 * @return ProductType
+	 */
+	public function setHasCertification(Property\HasCertificationProperty $hasCertification) {
+		$this->hasCertification = $hasCertification;
+
+		return $this;
+	}
+
+	/**
 	 * Set height.
-	 * 
+	 *
 	 * @param Property\HeightProperty $height
 	 * @return ProductType
 	 */
@@ -636,7 +745,7 @@ class ProductType extends ThingType {
 
 	/**
 	 * Set is accessory or spare part for.
-	 * 
+	 *
 	 * @param Property\IsAccessoryOrSparePartForProperty $isAccessoryOrSparePartFor
 	 * @return ProductType
 	 */
@@ -648,7 +757,7 @@ class ProductType extends ThingType {
 
 	/**
 	 * Set is consumable for.
-	 * 
+	 *
 	 * @param Property\IsConsumableForProperty $isConsumableFor
 	 * @return ProductType
 	 */
@@ -659,8 +768,20 @@ class ProductType extends ThingType {
 	}
 
 	/**
+	 * Set is family friendly.
+	 *
+	 * @param Property\IsFamilyFriendlyProperty $isFamilyFriendly
+	 * @return ProductType
+	 */
+	public function setIsFamilyFriendly(Property\IsFamilyFriendlyProperty $isFamilyFriendly) {
+		$this->isFamilyFriendly = $isFamilyFriendly;
+
+		return $this;
+	}
+
+	/**
 	 * Set is related to.
-	 * 
+	 *
 	 * @param Property\IsRelatedToProperty $isRelatedTo
 	 * @return ProductType
 	 */
@@ -672,7 +793,7 @@ class ProductType extends ThingType {
 
 	/**
 	 * Set is similar to.
-	 * 
+	 *
 	 * @param Property\IsSimilarToProperty $isSimilarTo
 	 * @return ProductType
 	 */
@@ -683,8 +804,20 @@ class ProductType extends ThingType {
 	}
 
 	/**
+	 * Set is variant of.
+	 *
+	 * @param Property\IsVariantOfProperty $isVariantOf
+	 * @return ProductType
+	 */
+	public function setIsVariantOf(Property\IsVariantOfProperty $isVariantOf) {
+		$this->isVariantOf = $isVariantOf;
+
+		return $this;
+	}
+
+	/**
 	 * Set item condition.
-	 * 
+	 *
 	 * @param Property\ItemConditionProperty $itemCondition
 	 * @return ProductType
 	 */
@@ -695,8 +828,20 @@ class ProductType extends ThingType {
 	}
 
 	/**
+	 * Set keywords.
+	 *
+	 * @param Property\KeywordsProperty $keywords
+	 * @return ProductType
+	 */
+	public function setKeywords(Property\KeywordsProperty $keywords) {
+		$this->keywords = $keywords;
+
+		return $this;
+	}
+
+	/**
 	 * Set logo.
-	 * 
+	 *
 	 * @param Property\LogoProperty $logo
 	 * @return ProductType
 	 */
@@ -708,7 +853,7 @@ class ProductType extends ThingType {
 
 	/**
 	 * Set manufacturer.
-	 * 
+	 *
 	 * @param Property\ManufacturerProperty $manufacturer
 	 * @return ProductType
 	 */
@@ -720,7 +865,7 @@ class ProductType extends ThingType {
 
 	/**
 	 * Set material.
-	 * 
+	 *
 	 * @param Property\MaterialProperty $material
 	 * @return ProductType
 	 */
@@ -732,7 +877,7 @@ class ProductType extends ThingType {
 
 	/**
 	 * Set model.
-	 * 
+	 *
 	 * @param Property\ModelProperty $model
 	 * @return ProductType
 	 */
@@ -744,7 +889,7 @@ class ProductType extends ThingType {
 
 	/**
 	 * Set mpn.
-	 * 
+	 *
 	 * @param Property\MpnProperty $mpn
 	 * @return ProductType
 	 */
@@ -756,7 +901,7 @@ class ProductType extends ThingType {
 
 	/**
 	 * Set offers.
-	 * 
+	 *
 	 * @param Property\OffersProperty $offers
 	 * @return ProductType
 	 */
@@ -768,7 +913,7 @@ class ProductType extends ThingType {
 
 	/**
 	 * Set productid.
-	 * 
+	 *
 	 * @param Property\ProductIDProperty $productID
 	 * @return ProductType
 	 */
@@ -780,7 +925,7 @@ class ProductType extends ThingType {
 
 	/**
 	 * Set production date.
-	 * 
+	 *
 	 * @param Property\ProductionDateProperty $productionDate
 	 * @return ProductType
 	 */
@@ -792,7 +937,7 @@ class ProductType extends ThingType {
 
 	/**
 	 * Set purchase date.
-	 * 
+	 *
 	 * @param Property\PurchaseDateProperty $purchaseDate
 	 * @return ProductType
 	 */
@@ -804,7 +949,7 @@ class ProductType extends ThingType {
 
 	/**
 	 * Set release date.
-	 * 
+	 *
 	 * @param Property\ReleaseDateProperty $releaseDate
 	 * @return ProductType
 	 */
@@ -816,7 +961,7 @@ class ProductType extends ThingType {
 
 	/**
 	 * Set review.
-	 * 
+	 *
 	 * @param Property\ReviewProperty $review
 	 * @return ProductType
 	 */
@@ -828,7 +973,7 @@ class ProductType extends ThingType {
 
 	/**
 	 * Set sku.
-	 * 
+	 *
 	 * @param Property\SkuProperty $sku
 	 * @return ProductType
 	 */
@@ -839,8 +984,20 @@ class ProductType extends ThingType {
 	}
 
 	/**
+	 * Set slogan.
+	 *
+	 * @param Property\SloganProperty $slogan
+	 * @return ProductType
+	 */
+	public function setSlogan(Property\SloganProperty $slogan) {
+		$this->slogan = $slogan;
+
+		return $this;
+	}
+
+	/**
 	 * Set weight.
-	 * 
+	 *
 	 * @param Property\WeightProperty $weight
 	 * @return ProductType
 	 */
@@ -852,7 +1009,7 @@ class ProductType extends ThingType {
 
 	/**
 	 * Set width.
-	 * 
+	 *
 	 * @param Property\WidthProperty $width
 	 * @return ProductType
 	 */

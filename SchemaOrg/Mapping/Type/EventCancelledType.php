@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class EventCancelledType.
+ * The event has been cancelled. If the event has multiple startDate values, all are assumed to be cancelled. Either startDate or previousStartDate may be used to specify the event's cancelled date(s).
  * 
  * @method EventCancelledType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method EventCancelledType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method EventCancelledType setName(Property\NameProperty $name)
  * @method EventCancelledType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method EventCancelledType setSameAs(Property\SameAsProperty $sameAs)
+ * @method EventCancelledType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method EventCancelledType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method EventCancelledType setUrl(Property\UrlProperty $url)
  */
 class EventCancelledType extends EventStatusType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

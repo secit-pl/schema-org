@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class TVClipType.
+ * A short TV program or a segment/part of a TV program.
  * 
+ * @method TVClipType setAbout(Property\AboutProperty $about)
  * @method TVClipType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method TVClipType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method TVClipType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -35,6 +36,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method TVClipType setContributor(Property\ContributorProperty $contributor)
  * @method TVClipType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method TVClipType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method TVClipType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method TVClipType setCreator(Property\CreatorProperty $creator)
  * @method TVClipType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method TVClipType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -47,9 +49,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method TVClipType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method TVClipType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method TVClipType setEncoding(Property\EncodingProperty $encoding)
+ * @method TVClipType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method TVClipType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method TVClipType setExpires(Property\ExpiresProperty $expires)
- * @method TVClipType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method TVClipType setFunder(Property\FunderProperty $funder)
  * @method TVClipType setGenre(Property\GenreProperty $genre)
  * @method TVClipType setHasPart(Property\HasPartProperty $hasPart)
@@ -80,9 +82,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method TVClipType setPosition(Property\PositionProperty $position)
  * @method TVClipType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method TVClipType setProducer(Property\ProducerProperty $producer)
- * @method TVClipType setProvider(Property\ProviderProperty $provider)
  * @method TVClipType setPublication(Property\PublicationProperty $publication)
  * @method TVClipType setPublisher(Property\PublisherProperty $publisher)
+ * @method TVClipType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method TVClipType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method TVClipType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method TVClipType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -90,24 +92,30 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method TVClipType setSameAs(Property\SameAsProperty $sameAs)
  * @method TVClipType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method TVClipType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method TVClipType setSpatial(Property\SpatialProperty $spatial)
  * @method TVClipType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method TVClipType setSponsor(Property\SponsorProperty $sponsor)
+ * @method TVClipType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method TVClipType setTemporal(Property\TemporalProperty $temporal)
  * @method TVClipType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method TVClipType setText(Property\TextProperty $text)
+ * @method TVClipType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method TVClipType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method TVClipType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method TVClipType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method TVClipType setTranslator(Property\TranslatorProperty $translator)
  * @method TVClipType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method TVClipType setUrl(Property\UrlProperty $url)
  * @method TVClipType setVersion(Property\VersionProperty $version)
  * @method TVClipType setVideo(Property\VideoProperty $video)
  * @method TVClipType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method TVClipType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class TVClipType extends ClipType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class WPSideBarType.
+ * A sidebar section of the page.
  * 
+ * @method WPSideBarType setAbout(Property\AboutProperty $about)
  * @method WPSideBarType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method WPSideBarType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method WPSideBarType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -33,7 +34,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method WPSideBarType setContributor(Property\ContributorProperty $contributor)
  * @method WPSideBarType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method WPSideBarType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method WPSideBarType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method WPSideBarType setCreator(Property\CreatorProperty $creator)
+ * @method WPSideBarType setCssSelector(Property\CssSelectorProperty $cssSelector)
  * @method WPSideBarType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method WPSideBarType setDateModified(Property\DateModifiedProperty $dateModified)
  * @method WPSideBarType setDatePublished(Property\DatePublishedProperty $datePublished)
@@ -44,9 +47,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method WPSideBarType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method WPSideBarType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method WPSideBarType setEncoding(Property\EncodingProperty $encoding)
+ * @method WPSideBarType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method WPSideBarType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method WPSideBarType setExpires(Property\ExpiresProperty $expires)
- * @method WPSideBarType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method WPSideBarType setFunder(Property\FunderProperty $funder)
  * @method WPSideBarType setGenre(Property\GenreProperty $genre)
  * @method WPSideBarType setHasPart(Property\HasPartProperty $hasPart)
@@ -73,9 +76,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method WPSideBarType setPosition(Property\PositionProperty $position)
  * @method WPSideBarType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method WPSideBarType setProducer(Property\ProducerProperty $producer)
- * @method WPSideBarType setProvider(Property\ProviderProperty $provider)
  * @method WPSideBarType setPublication(Property\PublicationProperty $publication)
  * @method WPSideBarType setPublisher(Property\PublisherProperty $publisher)
+ * @method WPSideBarType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method WPSideBarType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method WPSideBarType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method WPSideBarType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -83,24 +86,31 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method WPSideBarType setSameAs(Property\SameAsProperty $sameAs)
  * @method WPSideBarType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method WPSideBarType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method WPSideBarType setSpatial(Property\SpatialProperty $spatial)
  * @method WPSideBarType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method WPSideBarType setSponsor(Property\SponsorProperty $sponsor)
+ * @method WPSideBarType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method WPSideBarType setTemporal(Property\TemporalProperty $temporal)
  * @method WPSideBarType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method WPSideBarType setText(Property\TextProperty $text)
+ * @method WPSideBarType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method WPSideBarType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method WPSideBarType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method WPSideBarType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method WPSideBarType setTranslator(Property\TranslatorProperty $translator)
  * @method WPSideBarType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method WPSideBarType setUrl(Property\UrlProperty $url)
  * @method WPSideBarType setVersion(Property\VersionProperty $version)
  * @method WPSideBarType setVideo(Property\VideoProperty $video)
  * @method WPSideBarType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method WPSideBarType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
+ * @method WPSideBarType setXpath(Property\XpathProperty $xpath)
  */
 class WPSideBarType extends WebPageElementType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

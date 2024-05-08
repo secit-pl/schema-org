@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * ProgramMembershipUsedProperty class.
+ * Any membership in a frequent flyer, hotel loyalty program, etc. being applied to the reservation.
  * 
  * @method ProgramMembershipUsedProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class ProgramMembershipUsedProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class ProgramMembershipUsedProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

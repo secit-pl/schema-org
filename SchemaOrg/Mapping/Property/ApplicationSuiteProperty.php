@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * ApplicationSuiteProperty class.
+ * The name of the application suite to which the application belongs (e.g. Excel belongs to Office).
  * 
  * @method ApplicationSuiteProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class ApplicationSuiteProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class ApplicationSuiteProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

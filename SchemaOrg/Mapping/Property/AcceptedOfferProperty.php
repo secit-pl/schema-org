@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * AcceptedOfferProperty class.
+ * The offer(s) -- e.g., product, quantity and price combinations -- included in the order.
  * 
  * @method AcceptedOfferProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class AcceptedOfferProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class AcceptedOfferProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class NewsArticleType.
+ * A NewsArticle is an article whose content reports news, or provides background context and supporting materials for understanding the news. A more detailed overview of schema.org News markup is also available.
  * 
+ * @method NewsArticleType setAbout(Property\AboutProperty $about)
  * @method NewsArticleType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method NewsArticleType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method NewsArticleType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -35,6 +36,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method NewsArticleType setContributor(Property\ContributorProperty $contributor)
  * @method NewsArticleType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method NewsArticleType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method NewsArticleType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method NewsArticleType setCreator(Property\CreatorProperty $creator)
  * @method NewsArticleType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method NewsArticleType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -46,9 +48,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method NewsArticleType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method NewsArticleType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method NewsArticleType setEncoding(Property\EncodingProperty $encoding)
+ * @method NewsArticleType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method NewsArticleType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method NewsArticleType setExpires(Property\ExpiresProperty $expires)
- * @method NewsArticleType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method NewsArticleType setFunder(Property\FunderProperty $funder)
  * @method NewsArticleType setGenre(Property\GenreProperty $genre)
  * @method NewsArticleType setHasPart(Property\HasPartProperty $hasPart)
@@ -78,9 +80,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method NewsArticleType setPosition(Property\PositionProperty $position)
  * @method NewsArticleType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method NewsArticleType setProducer(Property\ProducerProperty $producer)
- * @method NewsArticleType setProvider(Property\ProviderProperty $provider)
  * @method NewsArticleType setPublication(Property\PublicationProperty $publication)
  * @method NewsArticleType setPublisher(Property\PublisherProperty $publisher)
+ * @method NewsArticleType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method NewsArticleType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method NewsArticleType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method NewsArticleType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -88,12 +90,18 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method NewsArticleType setSameAs(Property\SameAsProperty $sameAs)
  * @method NewsArticleType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method NewsArticleType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method NewsArticleType setSpatial(Property\SpatialProperty $spatial)
  * @method NewsArticleType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
+ * @method NewsArticleType setSpeakable(Property\SpeakableProperty $speakable)
  * @method NewsArticleType setSponsor(Property\SponsorProperty $sponsor)
+ * @method NewsArticleType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method NewsArticleType setTemporal(Property\TemporalProperty $temporal)
  * @method NewsArticleType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method NewsArticleType setText(Property\TextProperty $text)
+ * @method NewsArticleType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method NewsArticleType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method NewsArticleType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method NewsArticleType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method NewsArticleType setTranslator(Property\TranslatorProperty $translator)
  * @method NewsArticleType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method NewsArticleType setUrl(Property\UrlProperty $url)
@@ -101,6 +109,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method NewsArticleType setVideo(Property\VideoProperty $video)
  * @method NewsArticleType setWordCount(Property\WordCountProperty $wordCount)
  * @method NewsArticleType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method NewsArticleType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class NewsArticleType extends ArticleType {
 
@@ -131,7 +140,7 @@ class NewsArticleType extends ArticleType {
 
 	/**
 	 * Get dateline.
-	 * 
+	 *
 	 * @return Property\DatelineProperty
 	 */
 	public function getDateline() {
@@ -140,7 +149,7 @@ class NewsArticleType extends ArticleType {
 
 	/**
 	 * Get print column.
-	 * 
+	 *
 	 * @return Property\PrintColumnProperty
 	 */
 	public function getPrintColumn() {
@@ -149,7 +158,7 @@ class NewsArticleType extends ArticleType {
 
 	/**
 	 * Get print edition.
-	 * 
+	 *
 	 * @return Property\PrintEditionProperty
 	 */
 	public function getPrintEdition() {
@@ -158,7 +167,7 @@ class NewsArticleType extends ArticleType {
 
 	/**
 	 * Get print page.
-	 * 
+	 *
 	 * @return Property\PrintPageProperty
 	 */
 	public function getPrintPage() {
@@ -167,7 +176,7 @@ class NewsArticleType extends ArticleType {
 
 	/**
 	 * Get print section.
-	 * 
+	 *
 	 * @return Property\PrintSectionProperty
 	 */
 	public function getPrintSection() {
@@ -176,7 +185,7 @@ class NewsArticleType extends ArticleType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -185,7 +194,7 @@ class NewsArticleType extends ArticleType {
 
 	/**
 	 * Set dateline.
-	 * 
+	 *
 	 * @param Property\DatelineProperty $dateline
 	 * @return NewsArticleType
 	 */
@@ -197,7 +206,7 @@ class NewsArticleType extends ArticleType {
 
 	/**
 	 * Set print column.
-	 * 
+	 *
 	 * @param Property\PrintColumnProperty $printColumn
 	 * @return NewsArticleType
 	 */
@@ -209,7 +218,7 @@ class NewsArticleType extends ArticleType {
 
 	/**
 	 * Set print edition.
-	 * 
+	 *
 	 * @param Property\PrintEditionProperty $printEdition
 	 * @return NewsArticleType
 	 */
@@ -221,7 +230,7 @@ class NewsArticleType extends ArticleType {
 
 	/**
 	 * Set print page.
-	 * 
+	 *
 	 * @param Property\PrintPageProperty $printPage
 	 * @return NewsArticleType
 	 */
@@ -233,7 +242,7 @@ class NewsArticleType extends ArticleType {
 
 	/**
 	 * Set print section.
-	 * 
+	 *
 	 * @param Property\PrintSectionProperty $printSection
 	 * @return NewsArticleType
 	 */

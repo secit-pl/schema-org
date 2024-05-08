@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * EmploymentTypeProperty class.
+ * Type of employment (e.g. full-time, part-time, contract, temporary, seasonal, internship).
  * 
  * @method EmploymentTypeProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class EmploymentTypeProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class EmploymentTypeProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

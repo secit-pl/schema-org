@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class TVEpisodeType.
+ * A TV episode which can be part of a series or season.
  * 
+ * @method TVEpisodeType setAbout(Property\AboutProperty $about)
  * @method TVEpisodeType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method TVEpisodeType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method TVEpisodeType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -34,6 +35,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method TVEpisodeType setContributor(Property\ContributorProperty $contributor)
  * @method TVEpisodeType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method TVEpisodeType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method TVEpisodeType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method TVEpisodeType setCreator(Property\CreatorProperty $creator)
  * @method TVEpisodeType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method TVEpisodeType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -42,14 +44,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method TVEpisodeType setDirector(Property\DirectorProperty $director)
  * @method TVEpisodeType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
  * @method TVEpisodeType setDiscussionUrl(Property\DiscussionUrlProperty $discussionUrl)
+ * @method TVEpisodeType setDuration(Property\DurationProperty $duration)
  * @method TVEpisodeType setEditor(Property\EditorProperty $editor)
  * @method TVEpisodeType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method TVEpisodeType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method TVEpisodeType setEncoding(Property\EncodingProperty $encoding)
+ * @method TVEpisodeType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method TVEpisodeType setEpisodeNumber(Property\EpisodeNumberProperty $episodeNumber)
  * @method TVEpisodeType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method TVEpisodeType setExpires(Property\ExpiresProperty $expires)
- * @method TVEpisodeType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method TVEpisodeType setFunder(Property\FunderProperty $funder)
  * @method TVEpisodeType setGenre(Property\GenreProperty $genre)
  * @method TVEpisodeType setHasPart(Property\HasPartProperty $hasPart)
@@ -80,9 +83,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method TVEpisodeType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method TVEpisodeType setProducer(Property\ProducerProperty $producer)
  * @method TVEpisodeType setProductionCompany(Property\ProductionCompanyProperty $productionCompany)
- * @method TVEpisodeType setProvider(Property\ProviderProperty $provider)
  * @method TVEpisodeType setPublication(Property\PublicationProperty $publication)
  * @method TVEpisodeType setPublisher(Property\PublisherProperty $publisher)
+ * @method TVEpisodeType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method TVEpisodeType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method TVEpisodeType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method TVEpisodeType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -90,19 +93,25 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method TVEpisodeType setSameAs(Property\SameAsProperty $sameAs)
  * @method TVEpisodeType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method TVEpisodeType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method TVEpisodeType setSpatial(Property\SpatialProperty $spatial)
  * @method TVEpisodeType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method TVEpisodeType setSponsor(Property\SponsorProperty $sponsor)
+ * @method TVEpisodeType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method TVEpisodeType setTemporal(Property\TemporalProperty $temporal)
  * @method TVEpisodeType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method TVEpisodeType setText(Property\TextProperty $text)
+ * @method TVEpisodeType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method TVEpisodeType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method TVEpisodeType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
  * @method TVEpisodeType setTrailer(Property\TrailerProperty $trailer)
+ * @method TVEpisodeType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method TVEpisodeType setTranslator(Property\TranslatorProperty $translator)
  * @method TVEpisodeType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method TVEpisodeType setUrl(Property\UrlProperty $url)
  * @method TVEpisodeType setVersion(Property\VersionProperty $version)
  * @method TVEpisodeType setVideo(Property\VideoProperty $video)
  * @method TVEpisodeType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method TVEpisodeType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class TVEpisodeType extends EpisodeType {
 
@@ -112,13 +121,8 @@ class TVEpisodeType extends EpisodeType {
 	private $countryOfOrigin;
 
 	/**
-	 * @var Property\SubtitleLanguageProperty
-	 */
-	private $subtitleLanguage;
-
-	/**
 	 * Get country of origin.
-	 * 
+	 *
 	 * @return Property\CountryOfOriginProperty
 	 */
 	public function getCountryOfOrigin() {
@@ -127,7 +131,7 @@ class TVEpisodeType extends EpisodeType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -135,34 +139,13 @@ class TVEpisodeType extends EpisodeType {
 	}
 
 	/**
-	 * Get subtitle language.
-	 * 
-	 * @return Property\SubtitleLanguageProperty
-	 */
-	public function getSubtitleLanguage() {
-		return $this->subtitleLanguage;
-	}
-
-	/**
 	 * Set country of origin.
-	 * 
+	 *
 	 * @param Property\CountryOfOriginProperty $countryOfOrigin
 	 * @return TVEpisodeType
 	 */
 	public function setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin) {
 		$this->countryOfOrigin = $countryOfOrigin;
-
-		return $this;
-	}
-
-	/**
-	 * Set subtitle language.
-	 * 
-	 * @param Property\SubtitleLanguageProperty $subtitleLanguage
-	 * @return TVEpisodeType
-	 */
-	public function setSubtitleLanguage(Property\SubtitleLanguageProperty $subtitleLanguage) {
-		$this->subtitleLanguage = $subtitleLanguage;
 
 		return $this;
 	}

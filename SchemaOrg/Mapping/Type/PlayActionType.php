@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class PlayActionType.
+ * The act of playing/exercising/training/performing for enjoyment, leisure, recreation, competition or exercise. Related actions: ListenAction: Unlike ListenAction (which is under ConsumeAction), PlayAction refers to performing for an audience or at an event, rather than consuming music. WatchAction: Unlike WatchAction (which is under ConsumeAction), PlayAction refers to showing/displaying for an audience or at an event, rather than consuming visual content.
  * 
  * @method PlayActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method PlayActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method PlayActionType setResult(Property\ResultProperty $result)
  * @method PlayActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method PlayActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method PlayActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method PlayActionType setTarget(Property\TargetProperty $target)
  * @method PlayActionType setUrl(Property\UrlProperty $url)
  */
@@ -44,7 +45,7 @@ class PlayActionType extends ActionType {
 
 	/**
 	 * Get audience.
-	 * 
+	 *
 	 * @return Property\AudienceProperty
 	 */
 	public function getAudience() {
@@ -53,7 +54,7 @@ class PlayActionType extends ActionType {
 
 	/**
 	 * Get event.
-	 * 
+	 *
 	 * @return Property\EventProperty
 	 */
 	public function getEvent() {
@@ -62,7 +63,7 @@ class PlayActionType extends ActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -71,7 +72,7 @@ class PlayActionType extends ActionType {
 
 	/**
 	 * Set audience.
-	 * 
+	 *
 	 * @param Property\AudienceProperty $audience
 	 * @return PlayActionType
 	 */
@@ -83,7 +84,7 @@ class PlayActionType extends ActionType {
 
 	/**
 	 * Set event.
-	 * 
+	 *
 	 * @param Property\EventProperty $event
 	 * @return PlayActionType
 	 */

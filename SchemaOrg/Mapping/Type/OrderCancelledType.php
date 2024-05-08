@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class OrderCancelledType.
+ * OrderStatus representing cancellation of an order.
  * 
  * @method OrderCancelledType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method OrderCancelledType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method OrderCancelledType setName(Property\NameProperty $name)
  * @method OrderCancelledType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method OrderCancelledType setSameAs(Property\SameAsProperty $sameAs)
+ * @method OrderCancelledType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method OrderCancelledType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method OrderCancelledType setUrl(Property\UrlProperty $url)
  */
 class OrderCancelledType extends OrderStatusType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

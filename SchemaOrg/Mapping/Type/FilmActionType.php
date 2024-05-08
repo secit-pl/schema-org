@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class FilmActionType.
+ * The act of capturing sound and moving images on film, video, or digitally.
  * 
  * @method FilmActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method FilmActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method FilmActionType setResult(Property\ResultProperty $result)
  * @method FilmActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method FilmActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method FilmActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method FilmActionType setTarget(Property\TargetProperty $target)
  * @method FilmActionType setUrl(Property\UrlProperty $url)
  */
@@ -34,7 +35,7 @@ class FilmActionType extends CreateActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

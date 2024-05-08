@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class BusinessEventType.
+ * Event type: Business event.
  * 
+ * @method BusinessEventType setAbout(Property\AboutProperty $about)
  * @method BusinessEventType setActor(Property\ActorProperty $actor)
  * @method BusinessEventType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method BusinessEventType setAggregateRating(Property\AggregateRatingProperty $aggregateRating)
@@ -19,6 +20,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method BusinessEventType setDirector(Property\DirectorProperty $director)
  * @method BusinessEventType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
  * @method BusinessEventType setDoorTime(Property\DoorTimeProperty $doorTime)
+ * @method BusinessEventType setDuration(Property\DurationProperty $duration)
  * @method BusinessEventType setEndDate(Property\EndDateProperty $endDate)
  * @method BusinessEventType setEventStatus(Property\EventStatusProperty $eventStatus)
  * @method BusinessEventType setFunder(Property\FunderProperty $funder)
@@ -26,6 +28,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method BusinessEventType setImage(Property\ImageProperty $image)
  * @method BusinessEventType setInLanguage(Property\InLanguageProperty $inLanguage)
  * @method BusinessEventType setIsAccessibleForFree(Property\IsAccessibleForFreeProperty $isAccessibleForFree)
+ * @method BusinessEventType setKeywords(Property\KeywordsProperty $keywords)
  * @method BusinessEventType setLocation(Property\LocationProperty $location)
  * @method BusinessEventType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
  * @method BusinessEventType setMaximumAttendeeCapacity(Property\MaximumAttendeeCapacityProperty $maximumAttendeeCapacity)
@@ -42,6 +45,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method BusinessEventType setSponsor(Property\SponsorProperty $sponsor)
  * @method BusinessEventType setStartDate(Property\StartDateProperty $startDate)
  * @method BusinessEventType setSubEvent(Property\SubEventProperty $subEvent)
+ * @method BusinessEventType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method BusinessEventType setSuperEvent(Property\SuperEventProperty $superEvent)
  * @method BusinessEventType setTranslator(Property\TranslatorProperty $translator)
  * @method BusinessEventType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
@@ -53,7 +57,7 @@ class BusinessEventType extends EventType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

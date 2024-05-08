@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class SportsTeamType.
+ * Organization: Sports team.
  * 
  * @method SportsTeamType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method SportsTeamType setAddress(Property\AddressProperty $address)
@@ -30,11 +30,14 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SportsTeamType setFoundingLocation(Property\FoundingLocationProperty $foundingLocation)
  * @method SportsTeamType setFunder(Property\FunderProperty $funder)
  * @method SportsTeamType setGlobalLocationNumber(Property\GlobalLocationNumberProperty $globalLocationNumber)
+ * @method SportsTeamType setHasCertification(Property\HasCertificationProperty $hasCertification)
  * @method SportsTeamType setHasOfferCatalog(Property\HasOfferCatalogProperty $hasOfferCatalog)
  * @method SportsTeamType setHasPOS(Property\HasPOSProperty $hasPOS)
  * @method SportsTeamType setIdentifier(Property\IdentifierProperty $identifier)
  * @method SportsTeamType setImage(Property\ImageProperty $image)
+ * @method SportsTeamType setInteractionStatistic(Property\InteractionStatisticProperty $interactionStatistic)
  * @method SportsTeamType setIsicV4(Property\IsicV4Property $isicV4)
+ * @method SportsTeamType setKeywords(Property\KeywordsProperty $keywords)
  * @method SportsTeamType setLegalName(Property\LegalNameProperty $legalName)
  * @method SportsTeamType setLeiCode(Property\LeiCodeProperty $leiCode)
  * @method SportsTeamType setLocation(Property\LocationProperty $location)
@@ -53,9 +56,10 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SportsTeamType setReview(Property\ReviewProperty $review)
  * @method SportsTeamType setSameAs(Property\SameAsProperty $sameAs)
  * @method SportsTeamType setSeeks(Property\SeeksProperty $seeks)
+ * @method SportsTeamType setSlogan(Property\SloganProperty $slogan)
  * @method SportsTeamType setSponsor(Property\SponsorProperty $sponsor)
- * @method SportsTeamType setSport(Property\SportProperty $sport)
  * @method SportsTeamType setSubOrganization(Property\SubOrganizationProperty $subOrganization)
+ * @method SportsTeamType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method SportsTeamType setTaxID(Property\TaxIDProperty $taxID)
  * @method SportsTeamType setTelephone(Property\TelephoneProperty $telephone)
  * @method SportsTeamType setUrl(Property\UrlProperty $url)
@@ -75,7 +79,7 @@ class SportsTeamType extends SportsOrganizationType {
 
 	/**
 	 * Get athlete.
-	 * 
+	 *
 	 * @return Property\AthleteProperty
 	 */
 	public function getAthlete() {
@@ -84,7 +88,7 @@ class SportsTeamType extends SportsOrganizationType {
 
 	/**
 	 * Get coach.
-	 * 
+	 *
 	 * @return Property\CoachProperty
 	 */
 	public function getCoach() {
@@ -93,7 +97,7 @@ class SportsTeamType extends SportsOrganizationType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -102,7 +106,7 @@ class SportsTeamType extends SportsOrganizationType {
 
 	/**
 	 * Set athlete.
-	 * 
+	 *
 	 * @param Property\AthleteProperty $athlete
 	 * @return SportsTeamType
 	 */
@@ -114,7 +118,7 @@ class SportsTeamType extends SportsOrganizationType {
 
 	/**
 	 * Set coach.
-	 * 
+	 *
 	 * @param Property\CoachProperty $coach
 	 * @return SportsTeamType
 	 */

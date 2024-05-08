@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class OrderPaymentDueType.
+ * OrderStatus representing that payment is due on an order.
  * 
  * @method OrderPaymentDueType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method OrderPaymentDueType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method OrderPaymentDueType setName(Property\NameProperty $name)
  * @method OrderPaymentDueType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method OrderPaymentDueType setSameAs(Property\SameAsProperty $sameAs)
+ * @method OrderPaymentDueType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method OrderPaymentDueType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method OrderPaymentDueType setUrl(Property\UrlProperty $url)
  */
 class OrderPaymentDueType extends OrderStatusType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

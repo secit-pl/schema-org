@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class SearchActionType.
+ * The act of searching for an object. Related actions: FindAction: SearchAction generally leads to a FindAction, but not necessarily.
  * 
  * @method SearchActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method SearchActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SearchActionType setResult(Property\ResultProperty $result)
  * @method SearchActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method SearchActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method SearchActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method SearchActionType setTarget(Property\TargetProperty $target)
  * @method SearchActionType setUrl(Property\UrlProperty $url)
  */
@@ -39,7 +40,7 @@ class SearchActionType extends ActionType {
 
 	/**
 	 * Get query.
-	 * 
+	 *
 	 * @return Property\QueryProperty
 	 */
 	public function getQuery() {
@@ -48,7 +49,7 @@ class SearchActionType extends ActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -57,7 +58,7 @@ class SearchActionType extends ActionType {
 
 	/**
 	 * Set query.
-	 * 
+	 *
 	 * @param Property\QueryProperty $query
 	 * @return SearchActionType
 	 */

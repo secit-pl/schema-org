@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * WorstRatingProperty class.
+ * The lowest value allowed in this rating system. If worstRating is omitted, 1 is assumed.
  * 
  * @method WorstRatingProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class WorstRatingProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class WorstRatingProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

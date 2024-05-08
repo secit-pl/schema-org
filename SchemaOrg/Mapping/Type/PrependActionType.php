@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class PrependActionType.
+ * The act of inserting at the beginning if an ordered collection.
  * 
  * @method PrependActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method PrependActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method PrependActionType setResult(Property\ResultProperty $result)
  * @method PrependActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method PrependActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method PrependActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method PrependActionType setTarget(Property\TargetProperty $target)
  * @method PrependActionType setTargetCollection(Property\TargetCollectionProperty $targetCollection)
  * @method PrependActionType setToLocation(Property\ToLocationProperty $toLocation)
@@ -36,7 +37,7 @@ class PrependActionType extends InsertActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

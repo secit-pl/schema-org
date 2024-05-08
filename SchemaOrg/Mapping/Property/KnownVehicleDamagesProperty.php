@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * KnownVehicleDamagesProperty class.
+ * A textual description of known damages, both repaired and unrepaired.
  * 
  * @method KnownVehicleDamagesProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class KnownVehicleDamagesProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class KnownVehicleDamagesProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

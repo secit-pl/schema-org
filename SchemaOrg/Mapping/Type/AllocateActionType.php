@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class AllocateActionType.
+ * The act of organizing tasks/objects/events by associating resources to it.
  * 
  * @method AllocateActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method AllocateActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method AllocateActionType setResult(Property\ResultProperty $result)
  * @method AllocateActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method AllocateActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method AllocateActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method AllocateActionType setTarget(Property\TargetProperty $target)
  * @method AllocateActionType setUrl(Property\UrlProperty $url)
  */
@@ -34,7 +35,7 @@ class AllocateActionType extends OrganizeActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

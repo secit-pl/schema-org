@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class RejectActionType.
+ * The act of rejecting to/adopting an object. Related actions: AcceptAction: The antonym of RejectAction.
  * 
  * @method RejectActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method RejectActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method RejectActionType setResult(Property\ResultProperty $result)
  * @method RejectActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method RejectActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method RejectActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method RejectActionType setTarget(Property\TargetProperty $target)
  * @method RejectActionType setUrl(Property\UrlProperty $url)
  */
@@ -34,7 +35,7 @@ class RejectActionType extends AllocateActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

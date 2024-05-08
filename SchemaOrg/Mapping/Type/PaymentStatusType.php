@@ -5,27 +5,27 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class PaymentStatusType.
+ * A specific payment status. For example, PaymentDue, PaymentComplete, etc.
  * 
- * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\PaymentStatusType instead.
- * 
- * @method PaymentStatusType setAdditionalType(Property\AdditionalType $additionalType)
- * @method PaymentStatusType setAlternateName(Property\AlternateName $alternateName)
- * @method PaymentStatusType setDescription(Property\Description $description)
- * @method PaymentStatusType setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method PaymentStatusType setIdentifier(Property\Identifier $identifier)
- * @method PaymentStatusType setImage(Property\Image $image)
- * @method PaymentStatusType setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method PaymentStatusType setName(Property\Name $name)
- * @method PaymentStatusType setPotentialAction(Property\PotentialAction $potentialAction)
- * @method PaymentStatusType setSameAs(Property\SameAs $sameAs)
- * @method PaymentStatusType setUrl(Property\Url $url)
+ * @method PaymentStatusType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
+ * @method PaymentStatusType setAlternateName(Property\AlternateNameProperty $alternateName)
+ * @method PaymentStatusType setDescription(Property\DescriptionProperty $description)
+ * @method PaymentStatusType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
+ * @method PaymentStatusType setIdentifier(Property\IdentifierProperty $identifier)
+ * @method PaymentStatusType setImage(Property\ImageProperty $image)
+ * @method PaymentStatusType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
+ * @method PaymentStatusType setName(Property\NameProperty $name)
+ * @method PaymentStatusType setPotentialAction(Property\PotentialActionProperty $potentialAction)
+ * @method PaymentStatusType setSameAs(Property\SameAsProperty $sameAs)
+ * @method PaymentStatusType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method PaymentStatusType setSupersededBy(Property\SupersededByProperty $supersededBy)
+ * @method PaymentStatusType setUrl(Property\UrlProperty $url)
  */
-class PaymentStatusType extends Enumeration {
+class PaymentStatusType extends StatusEnumerationType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

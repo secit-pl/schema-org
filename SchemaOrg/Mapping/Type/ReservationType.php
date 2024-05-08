@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ReservationType.
+ * Describes a reservation for travel, dining or an event. Some reservations require tickets. Note: This type is for information about actual reservations, e.g. in confirmation emails or HTML pages with individual confirmations of reservations. For offers of tickets, restaurant reservations, flights, or rental cars, use Offer.
  * 
  * @method ReservationType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method ReservationType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,6 +17,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ReservationType setName(Property\NameProperty $name)
  * @method ReservationType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method ReservationType setSameAs(Property\SameAsProperty $sameAs)
+ * @method ReservationType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method ReservationType setUrl(Property\UrlProperty $url)
  */
 class ReservationType extends IntangibleType {
@@ -45,11 +46,6 @@ class ReservationType extends IntangibleType {
 	 * @var Property\ProgramMembershipUsedProperty
 	 */
 	private $programMembershipUsed;
-
-	/**
-	 * @var Property\ProviderProperty
-	 */
-	private $provider;
 
 	/**
 	 * @var Property\ReservationForProperty
@@ -83,7 +79,7 @@ class ReservationType extends IntangibleType {
 
 	/**
 	 * Get booking time.
-	 * 
+	 *
 	 * @return Property\BookingTimeProperty
 	 */
 	public function getBookingTime() {
@@ -92,7 +88,7 @@ class ReservationType extends IntangibleType {
 
 	/**
 	 * Get broker.
-	 * 
+	 *
 	 * @return Property\BrokerProperty
 	 */
 	public function getBroker() {
@@ -101,7 +97,7 @@ class ReservationType extends IntangibleType {
 
 	/**
 	 * Get modified time.
-	 * 
+	 *
 	 * @return Property\ModifiedTimeProperty
 	 */
 	public function getModifiedTime() {
@@ -110,7 +106,7 @@ class ReservationType extends IntangibleType {
 
 	/**
 	 * Get price currency.
-	 * 
+	 *
 	 * @return Property\PriceCurrencyProperty
 	 */
 	public function getPriceCurrency() {
@@ -119,7 +115,7 @@ class ReservationType extends IntangibleType {
 
 	/**
 	 * Get program membership used.
-	 * 
+	 *
 	 * @return Property\ProgramMembershipUsedProperty
 	 */
 	public function getProgramMembershipUsed() {
@@ -127,17 +123,8 @@ class ReservationType extends IntangibleType {
 	}
 
 	/**
-	 * Get provider.
-	 * 
-	 * @return Property\ProviderProperty
-	 */
-	public function getProvider() {
-		return $this->provider;
-	}
-
-	/**
 	 * Get reservation for.
-	 * 
+	 *
 	 * @return Property\ReservationForProperty
 	 */
 	public function getReservationFor() {
@@ -146,7 +133,7 @@ class ReservationType extends IntangibleType {
 
 	/**
 	 * Get reservation id.
-	 * 
+	 *
 	 * @return Property\ReservationIdProperty
 	 */
 	public function getReservationId() {
@@ -155,7 +142,7 @@ class ReservationType extends IntangibleType {
 
 	/**
 	 * Get reservation status.
-	 * 
+	 *
 	 * @return Property\ReservationStatusProperty
 	 */
 	public function getReservationStatus() {
@@ -164,7 +151,7 @@ class ReservationType extends IntangibleType {
 
 	/**
 	 * Get reserved ticket.
-	 * 
+	 *
 	 * @return Property\ReservedTicketProperty
 	 */
 	public function getReservedTicket() {
@@ -173,7 +160,7 @@ class ReservationType extends IntangibleType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -182,7 +169,7 @@ class ReservationType extends IntangibleType {
 
 	/**
 	 * Get total price.
-	 * 
+	 *
 	 * @return Property\TotalPriceProperty
 	 */
 	public function getTotalPrice() {
@@ -191,7 +178,7 @@ class ReservationType extends IntangibleType {
 
 	/**
 	 * Get under name.
-	 * 
+	 *
 	 * @return Property\UnderNameProperty
 	 */
 	public function getUnderName() {
@@ -200,7 +187,7 @@ class ReservationType extends IntangibleType {
 
 	/**
 	 * Set booking time.
-	 * 
+	 *
 	 * @param Property\BookingTimeProperty $bookingTime
 	 * @return ReservationType
 	 */
@@ -212,7 +199,7 @@ class ReservationType extends IntangibleType {
 
 	/**
 	 * Set broker.
-	 * 
+	 *
 	 * @param Property\BrokerProperty $broker
 	 * @return ReservationType
 	 */
@@ -224,7 +211,7 @@ class ReservationType extends IntangibleType {
 
 	/**
 	 * Set modified time.
-	 * 
+	 *
 	 * @param Property\ModifiedTimeProperty $modifiedTime
 	 * @return ReservationType
 	 */
@@ -236,7 +223,7 @@ class ReservationType extends IntangibleType {
 
 	/**
 	 * Set price currency.
-	 * 
+	 *
 	 * @param Property\PriceCurrencyProperty $priceCurrency
 	 * @return ReservationType
 	 */
@@ -248,7 +235,7 @@ class ReservationType extends IntangibleType {
 
 	/**
 	 * Set program membership used.
-	 * 
+	 *
 	 * @param Property\ProgramMembershipUsedProperty $programMembershipUsed
 	 * @return ReservationType
 	 */
@@ -259,20 +246,8 @@ class ReservationType extends IntangibleType {
 	}
 
 	/**
-	 * Set provider.
-	 * 
-	 * @param Property\ProviderProperty $provider
-	 * @return ReservationType
-	 */
-	public function setProvider(Property\ProviderProperty $provider) {
-		$this->provider = $provider;
-
-		return $this;
-	}
-
-	/**
 	 * Set reservation for.
-	 * 
+	 *
 	 * @param Property\ReservationForProperty $reservationFor
 	 * @return ReservationType
 	 */
@@ -284,7 +259,7 @@ class ReservationType extends IntangibleType {
 
 	/**
 	 * Set reservation id.
-	 * 
+	 *
 	 * @param Property\ReservationIdProperty $reservationId
 	 * @return ReservationType
 	 */
@@ -296,7 +271,7 @@ class ReservationType extends IntangibleType {
 
 	/**
 	 * Set reservation status.
-	 * 
+	 *
 	 * @param Property\ReservationStatusProperty $reservationStatus
 	 * @return ReservationType
 	 */
@@ -308,7 +283,7 @@ class ReservationType extends IntangibleType {
 
 	/**
 	 * Set reserved ticket.
-	 * 
+	 *
 	 * @param Property\ReservedTicketProperty $reservedTicket
 	 * @return ReservationType
 	 */
@@ -320,7 +295,7 @@ class ReservationType extends IntangibleType {
 
 	/**
 	 * Set total price.
-	 * 
+	 *
 	 * @param Property\TotalPriceProperty $totalPrice
 	 * @return ReservationType
 	 */
@@ -332,7 +307,7 @@ class ReservationType extends IntangibleType {
 
 	/**
 	 * Set under name.
-	 * 
+	 *
 	 * @param Property\UnderNameProperty $underName
 	 * @return ReservationType
 	 */

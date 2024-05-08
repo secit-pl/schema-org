@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class OnlineOnlyType.
+ * Indicates that the item is available only online.
  * 
  * @method OnlineOnlyType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method OnlineOnlyType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method OnlineOnlyType setName(Property\NameProperty $name)
  * @method OnlineOnlyType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method OnlineOnlyType setSameAs(Property\SameAsProperty $sameAs)
+ * @method OnlineOnlyType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method OnlineOnlyType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method OnlineOnlyType setUrl(Property\UrlProperty $url)
  */
 class OnlineOnlyType extends ItemAvailabilityType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

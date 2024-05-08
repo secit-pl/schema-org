@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * NumberOfPlayersProperty class.
+ * Indicate how many people can play this game (minimum, maximum, or range).
  * 
  * @method NumberOfPlayersProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class NumberOfPlayersProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class NumberOfPlayersProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

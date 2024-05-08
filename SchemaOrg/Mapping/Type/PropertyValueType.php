@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class PropertyValueType.
+ * A property-value pair, e.g. representing a feature of a product or place. Use the 'name' property for the name of the property. If there is an additional human-readable version of the value, put that into the 'description' property. Always use specific schema.org properties when a) they exist and b) you can populate them. Using PropertyValue as a substitute will typically not trigger the same effect as using the original, specific property.
  * 
  * @method PropertyValueType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method PropertyValueType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,6 +17,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method PropertyValueType setName(Property\NameProperty $name)
  * @method PropertyValueType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method PropertyValueType setSameAs(Property\SameAsProperty $sameAs)
+ * @method PropertyValueType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method PropertyValueType setUrl(Property\UrlProperty $url)
  */
 class PropertyValueType extends StructuredValueType {
@@ -58,7 +59,7 @@ class PropertyValueType extends StructuredValueType {
 
 	/**
 	 * Get max value.
-	 * 
+	 *
 	 * @return Property\MaxValueProperty
 	 */
 	public function getMaxValue() {
@@ -67,7 +68,7 @@ class PropertyValueType extends StructuredValueType {
 
 	/**
 	 * Get min value.
-	 * 
+	 *
 	 * @return Property\MinValueProperty
 	 */
 	public function getMinValue() {
@@ -76,7 +77,7 @@ class PropertyValueType extends StructuredValueType {
 
 	/**
 	 * Get propertyid.
-	 * 
+	 *
 	 * @return Property\PropertyIDProperty
 	 */
 	public function getPropertyID() {
@@ -85,7 +86,7 @@ class PropertyValueType extends StructuredValueType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -94,7 +95,7 @@ class PropertyValueType extends StructuredValueType {
 
 	/**
 	 * Get unit code.
-	 * 
+	 *
 	 * @return Property\UnitCodeProperty
 	 */
 	public function getUnitCode() {
@@ -103,7 +104,7 @@ class PropertyValueType extends StructuredValueType {
 
 	/**
 	 * Get unit text.
-	 * 
+	 *
 	 * @return Property\UnitTextProperty
 	 */
 	public function getUnitText() {
@@ -112,7 +113,7 @@ class PropertyValueType extends StructuredValueType {
 
 	/**
 	 * Get value.
-	 * 
+	 *
 	 * @return Property\ValueProperty
 	 */
 	public function getValue() {
@@ -121,7 +122,7 @@ class PropertyValueType extends StructuredValueType {
 
 	/**
 	 * Get value reference.
-	 * 
+	 *
 	 * @return Property\ValueReferenceProperty
 	 */
 	public function getValueReference() {
@@ -130,7 +131,7 @@ class PropertyValueType extends StructuredValueType {
 
 	/**
 	 * Set max value.
-	 * 
+	 *
 	 * @param Property\MaxValueProperty $maxValue
 	 * @return PropertyValueType
 	 */
@@ -142,7 +143,7 @@ class PropertyValueType extends StructuredValueType {
 
 	/**
 	 * Set min value.
-	 * 
+	 *
 	 * @param Property\MinValueProperty $minValue
 	 * @return PropertyValueType
 	 */
@@ -154,7 +155,7 @@ class PropertyValueType extends StructuredValueType {
 
 	/**
 	 * Set propertyid.
-	 * 
+	 *
 	 * @param Property\PropertyIDProperty $propertyID
 	 * @return PropertyValueType
 	 */
@@ -166,7 +167,7 @@ class PropertyValueType extends StructuredValueType {
 
 	/**
 	 * Set unit code.
-	 * 
+	 *
 	 * @param Property\UnitCodeProperty $unitCode
 	 * @return PropertyValueType
 	 */
@@ -178,7 +179,7 @@ class PropertyValueType extends StructuredValueType {
 
 	/**
 	 * Set unit text.
-	 * 
+	 *
 	 * @param Property\UnitTextProperty $unitText
 	 * @return PropertyValueType
 	 */
@@ -190,7 +191,7 @@ class PropertyValueType extends StructuredValueType {
 
 	/**
 	 * Set value.
-	 * 
+	 *
 	 * @param Property\ValueProperty $value
 	 * @return PropertyValueType
 	 */
@@ -202,7 +203,7 @@ class PropertyValueType extends StructuredValueType {
 
 	/**
 	 * Set value reference.
-	 * 
+	 *
 	 * @param Property\ValueReferenceProperty $valueReference
 	 * @return PropertyValueType
 	 */

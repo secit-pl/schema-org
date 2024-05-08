@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ProgramMembershipType.
+ * Used to describe membership in a loyalty programs (e.g. "StarAliance"), traveler clubs (e.g. "AAA"), purchase clubs ("Safeway Club"), etc.
  * 
  * @method ProgramMembershipType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method ProgramMembershipType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,6 +17,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ProgramMembershipType setName(Property\NameProperty $name)
  * @method ProgramMembershipType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method ProgramMembershipType setSameAs(Property\SameAsProperty $sameAs)
+ * @method ProgramMembershipType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method ProgramMembershipType setUrl(Property\UrlProperty $url)
  */
 class ProgramMembershipType extends IntangibleType {
@@ -43,7 +44,7 @@ class ProgramMembershipType extends IntangibleType {
 
 	/**
 	 * Get hosting organization.
-	 * 
+	 *
 	 * @return Property\HostingOrganizationProperty
 	 */
 	public function getHostingOrganization() {
@@ -52,7 +53,7 @@ class ProgramMembershipType extends IntangibleType {
 
 	/**
 	 * Get member.
-	 * 
+	 *
 	 * @return Property\MemberProperty
 	 */
 	public function getMember() {
@@ -61,7 +62,7 @@ class ProgramMembershipType extends IntangibleType {
 
 	/**
 	 * Get membership number.
-	 * 
+	 *
 	 * @return Property\MembershipNumberProperty
 	 */
 	public function getMembershipNumber() {
@@ -70,7 +71,7 @@ class ProgramMembershipType extends IntangibleType {
 
 	/**
 	 * Get program name.
-	 * 
+	 *
 	 * @return Property\ProgramNameProperty
 	 */
 	public function getProgramName() {
@@ -79,7 +80,7 @@ class ProgramMembershipType extends IntangibleType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -88,7 +89,7 @@ class ProgramMembershipType extends IntangibleType {
 
 	/**
 	 * Set hosting organization.
-	 * 
+	 *
 	 * @param Property\HostingOrganizationProperty $hostingOrganization
 	 * @return ProgramMembershipType
 	 */
@@ -100,7 +101,7 @@ class ProgramMembershipType extends IntangibleType {
 
 	/**
 	 * Set member.
-	 * 
+	 *
 	 * @param Property\MemberProperty $member
 	 * @return ProgramMembershipType
 	 */
@@ -112,7 +113,7 @@ class ProgramMembershipType extends IntangibleType {
 
 	/**
 	 * Set membership number.
-	 * 
+	 *
 	 * @param Property\MembershipNumberProperty $membershipNumber
 	 * @return ProgramMembershipType
 	 */
@@ -124,7 +125,7 @@ class ProgramMembershipType extends IntangibleType {
 
 	/**
 	 * Set program name.
-	 * 
+	 *
 	 * @param Property\ProgramNameProperty $programName
 	 * @return ProgramMembershipType
 	 */

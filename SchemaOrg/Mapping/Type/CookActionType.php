@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class CookActionType.
+ * The act of producing/preparing food.
  * 
  * @method CookActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method CookActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method CookActionType setResult(Property\ResultProperty $result)
  * @method CookActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method CookActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method CookActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method CookActionType setTarget(Property\TargetProperty $target)
  * @method CookActionType setUrl(Property\UrlProperty $url)
  */
@@ -49,7 +50,7 @@ class CookActionType extends CreateActionType {
 
 	/**
 	 * Get food establishment.
-	 * 
+	 *
 	 * @return Property\FoodEstablishmentProperty
 	 */
 	public function getFoodEstablishment() {
@@ -58,7 +59,7 @@ class CookActionType extends CreateActionType {
 
 	/**
 	 * Get food event.
-	 * 
+	 *
 	 * @return Property\FoodEventProperty
 	 */
 	public function getFoodEvent() {
@@ -67,7 +68,7 @@ class CookActionType extends CreateActionType {
 
 	/**
 	 * Get recipe.
-	 * 
+	 *
 	 * @return Property\RecipeProperty
 	 */
 	public function getRecipe() {
@@ -76,7 +77,7 @@ class CookActionType extends CreateActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -85,7 +86,7 @@ class CookActionType extends CreateActionType {
 
 	/**
 	 * Set food establishment.
-	 * 
+	 *
 	 * @param Property\FoodEstablishmentProperty $foodEstablishment
 	 * @return CookActionType
 	 */
@@ -97,7 +98,7 @@ class CookActionType extends CreateActionType {
 
 	/**
 	 * Set food event.
-	 * 
+	 *
 	 * @param Property\FoodEventProperty $foodEvent
 	 * @return CookActionType
 	 */
@@ -109,7 +110,7 @@ class CookActionType extends CreateActionType {
 
 	/**
 	 * Set recipe.
-	 * 
+	 *
 	 * @param Property\RecipeProperty $recipe
 	 * @return CookActionType
 	 */

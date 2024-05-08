@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class WPFooterType.
+ * The footer section of the page.
  * 
+ * @method WPFooterType setAbout(Property\AboutProperty $about)
  * @method WPFooterType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method WPFooterType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method WPFooterType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -33,7 +34,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method WPFooterType setContributor(Property\ContributorProperty $contributor)
  * @method WPFooterType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method WPFooterType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method WPFooterType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method WPFooterType setCreator(Property\CreatorProperty $creator)
+ * @method WPFooterType setCssSelector(Property\CssSelectorProperty $cssSelector)
  * @method WPFooterType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method WPFooterType setDateModified(Property\DateModifiedProperty $dateModified)
  * @method WPFooterType setDatePublished(Property\DatePublishedProperty $datePublished)
@@ -44,9 +47,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method WPFooterType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method WPFooterType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method WPFooterType setEncoding(Property\EncodingProperty $encoding)
+ * @method WPFooterType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method WPFooterType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method WPFooterType setExpires(Property\ExpiresProperty $expires)
- * @method WPFooterType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method WPFooterType setFunder(Property\FunderProperty $funder)
  * @method WPFooterType setGenre(Property\GenreProperty $genre)
  * @method WPFooterType setHasPart(Property\HasPartProperty $hasPart)
@@ -73,9 +76,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method WPFooterType setPosition(Property\PositionProperty $position)
  * @method WPFooterType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method WPFooterType setProducer(Property\ProducerProperty $producer)
- * @method WPFooterType setProvider(Property\ProviderProperty $provider)
  * @method WPFooterType setPublication(Property\PublicationProperty $publication)
  * @method WPFooterType setPublisher(Property\PublisherProperty $publisher)
+ * @method WPFooterType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method WPFooterType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method WPFooterType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method WPFooterType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -83,24 +86,31 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method WPFooterType setSameAs(Property\SameAsProperty $sameAs)
  * @method WPFooterType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method WPFooterType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method WPFooterType setSpatial(Property\SpatialProperty $spatial)
  * @method WPFooterType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method WPFooterType setSponsor(Property\SponsorProperty $sponsor)
+ * @method WPFooterType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method WPFooterType setTemporal(Property\TemporalProperty $temporal)
  * @method WPFooterType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method WPFooterType setText(Property\TextProperty $text)
+ * @method WPFooterType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method WPFooterType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method WPFooterType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method WPFooterType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method WPFooterType setTranslator(Property\TranslatorProperty $translator)
  * @method WPFooterType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method WPFooterType setUrl(Property\UrlProperty $url)
  * @method WPFooterType setVersion(Property\VersionProperty $version)
  * @method WPFooterType setVideo(Property\VideoProperty $video)
  * @method WPFooterType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method WPFooterType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
+ * @method WPFooterType setXpath(Property\XpathProperty $xpath)
  */
 class WPFooterType extends WebPageElementType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

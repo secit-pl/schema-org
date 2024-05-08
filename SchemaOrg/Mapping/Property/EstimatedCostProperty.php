@@ -6,7 +6,7 @@ use SecIT\SchemaOrg\Mapping\DataType;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * EstimatedCostProperty class.
+ * The estimated cost of the supply or supplies consumed when performing instructions.
  * 
  * @method EstimatedCostProperty setValue($value)
  */
@@ -14,7 +14,7 @@ class EstimatedCostProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -23,7 +23,7 @@ class EstimatedCostProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

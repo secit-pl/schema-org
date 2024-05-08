@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class PublicationVolumeType.
+ * A part of a successively published publication such as a periodical or multi-volume work, often numbered. It may represent a time span, such as a year. See also blog post.
  * 
+ * @method PublicationVolumeType setAbout(Property\AboutProperty $about)
  * @method PublicationVolumeType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method PublicationVolumeType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method PublicationVolumeType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -33,6 +34,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method PublicationVolumeType setContributor(Property\ContributorProperty $contributor)
  * @method PublicationVolumeType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method PublicationVolumeType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method PublicationVolumeType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method PublicationVolumeType setCreator(Property\CreatorProperty $creator)
  * @method PublicationVolumeType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method PublicationVolumeType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -44,9 +46,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method PublicationVolumeType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method PublicationVolumeType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method PublicationVolumeType setEncoding(Property\EncodingProperty $encoding)
+ * @method PublicationVolumeType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method PublicationVolumeType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method PublicationVolumeType setExpires(Property\ExpiresProperty $expires)
- * @method PublicationVolumeType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method PublicationVolumeType setFunder(Property\FunderProperty $funder)
  * @method PublicationVolumeType setGenre(Property\GenreProperty $genre)
  * @method PublicationVolumeType setHasPart(Property\HasPartProperty $hasPart)
@@ -73,9 +75,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method PublicationVolumeType setPosition(Property\PositionProperty $position)
  * @method PublicationVolumeType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method PublicationVolumeType setProducer(Property\ProducerProperty $producer)
- * @method PublicationVolumeType setProvider(Property\ProviderProperty $provider)
  * @method PublicationVolumeType setPublication(Property\PublicationProperty $publication)
  * @method PublicationVolumeType setPublisher(Property\PublisherProperty $publisher)
+ * @method PublicationVolumeType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method PublicationVolumeType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method PublicationVolumeType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method PublicationVolumeType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -83,18 +85,24 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method PublicationVolumeType setSameAs(Property\SameAsProperty $sameAs)
  * @method PublicationVolumeType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method PublicationVolumeType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method PublicationVolumeType setSpatial(Property\SpatialProperty $spatial)
  * @method PublicationVolumeType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method PublicationVolumeType setSponsor(Property\SponsorProperty $sponsor)
+ * @method PublicationVolumeType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method PublicationVolumeType setTemporal(Property\TemporalProperty $temporal)
  * @method PublicationVolumeType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method PublicationVolumeType setText(Property\TextProperty $text)
+ * @method PublicationVolumeType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method PublicationVolumeType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method PublicationVolumeType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method PublicationVolumeType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method PublicationVolumeType setTranslator(Property\TranslatorProperty $translator)
  * @method PublicationVolumeType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method PublicationVolumeType setUrl(Property\UrlProperty $url)
  * @method PublicationVolumeType setVersion(Property\VersionProperty $version)
  * @method PublicationVolumeType setVideo(Property\VideoProperty $video)
  * @method PublicationVolumeType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method PublicationVolumeType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class PublicationVolumeType extends CreativeWorkType {
 
@@ -120,7 +128,7 @@ class PublicationVolumeType extends CreativeWorkType {
 
 	/**
 	 * Get page end.
-	 * 
+	 *
 	 * @return Property\PageEndProperty
 	 */
 	public function getPageEnd() {
@@ -129,7 +137,7 @@ class PublicationVolumeType extends CreativeWorkType {
 
 	/**
 	 * Get page start.
-	 * 
+	 *
 	 * @return Property\PageStartProperty
 	 */
 	public function getPageStart() {
@@ -138,7 +146,7 @@ class PublicationVolumeType extends CreativeWorkType {
 
 	/**
 	 * Get pagination.
-	 * 
+	 *
 	 * @return Property\PaginationProperty
 	 */
 	public function getPagination() {
@@ -147,7 +155,7 @@ class PublicationVolumeType extends CreativeWorkType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -156,7 +164,7 @@ class PublicationVolumeType extends CreativeWorkType {
 
 	/**
 	 * Get volume number.
-	 * 
+	 *
 	 * @return Property\VolumeNumberProperty
 	 */
 	public function getVolumeNumber() {
@@ -165,7 +173,7 @@ class PublicationVolumeType extends CreativeWorkType {
 
 	/**
 	 * Set page end.
-	 * 
+	 *
 	 * @param Property\PageEndProperty $pageEnd
 	 * @return PublicationVolumeType
 	 */
@@ -177,7 +185,7 @@ class PublicationVolumeType extends CreativeWorkType {
 
 	/**
 	 * Set page start.
-	 * 
+	 *
 	 * @param Property\PageStartProperty $pageStart
 	 * @return PublicationVolumeType
 	 */
@@ -189,7 +197,7 @@ class PublicationVolumeType extends CreativeWorkType {
 
 	/**
 	 * Set pagination.
-	 * 
+	 *
 	 * @param Property\PaginationProperty $pagination
 	 * @return PublicationVolumeType
 	 */
@@ -201,7 +209,7 @@ class PublicationVolumeType extends CreativeWorkType {
 
 	/**
 	 * Set volume number.
-	 * 
+	 *
 	 * @param Property\VolumeNumberProperty $volumeNumber
 	 * @return PublicationVolumeType
 	 */

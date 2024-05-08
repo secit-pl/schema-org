@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class EducationEventType.
+ * Event type: Education event.
  * 
+ * @method EducationEventType setAbout(Property\AboutProperty $about)
  * @method EducationEventType setActor(Property\ActorProperty $actor)
  * @method EducationEventType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method EducationEventType setAggregateRating(Property\AggregateRatingProperty $aggregateRating)
@@ -19,6 +20,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method EducationEventType setDirector(Property\DirectorProperty $director)
  * @method EducationEventType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
  * @method EducationEventType setDoorTime(Property\DoorTimeProperty $doorTime)
+ * @method EducationEventType setDuration(Property\DurationProperty $duration)
  * @method EducationEventType setEndDate(Property\EndDateProperty $endDate)
  * @method EducationEventType setEventStatus(Property\EventStatusProperty $eventStatus)
  * @method EducationEventType setFunder(Property\FunderProperty $funder)
@@ -26,6 +28,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method EducationEventType setImage(Property\ImageProperty $image)
  * @method EducationEventType setInLanguage(Property\InLanguageProperty $inLanguage)
  * @method EducationEventType setIsAccessibleForFree(Property\IsAccessibleForFreeProperty $isAccessibleForFree)
+ * @method EducationEventType setKeywords(Property\KeywordsProperty $keywords)
  * @method EducationEventType setLocation(Property\LocationProperty $location)
  * @method EducationEventType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
  * @method EducationEventType setMaximumAttendeeCapacity(Property\MaximumAttendeeCapacityProperty $maximumAttendeeCapacity)
@@ -42,6 +45,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method EducationEventType setSponsor(Property\SponsorProperty $sponsor)
  * @method EducationEventType setStartDate(Property\StartDateProperty $startDate)
  * @method EducationEventType setSubEvent(Property\SubEventProperty $subEvent)
+ * @method EducationEventType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method EducationEventType setSuperEvent(Property\SuperEventProperty $superEvent)
  * @method EducationEventType setTranslator(Property\TranslatorProperty $translator)
  * @method EducationEventType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
@@ -53,7 +57,7 @@ class EducationEventType extends EventType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

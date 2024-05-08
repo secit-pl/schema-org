@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ListenActionType.
+ * The act of consuming audio content.
  * 
+ * @method ListenActionType setActionAccessibilityRequirement(Property\ActionAccessibilityRequirementProperty $actionAccessibilityRequirement)
  * @method ListenActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method ListenActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method ListenActionType setAgent(Property\AgentProperty $agent)
@@ -28,6 +29,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ListenActionType setResult(Property\ResultProperty $result)
  * @method ListenActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method ListenActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method ListenActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method ListenActionType setTarget(Property\TargetProperty $target)
  * @method ListenActionType setUrl(Property\UrlProperty $url)
  */
@@ -35,7 +37,7 @@ class ListenActionType extends ConsumeActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

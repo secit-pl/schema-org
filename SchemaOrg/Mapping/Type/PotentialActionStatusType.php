@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class PotentialActionStatusType.
+ * A description of an action that is supported.
  * 
  * @method PotentialActionStatusType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method PotentialActionStatusType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method PotentialActionStatusType setName(Property\NameProperty $name)
  * @method PotentialActionStatusType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method PotentialActionStatusType setSameAs(Property\SameAsProperty $sameAs)
+ * @method PotentialActionStatusType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method PotentialActionStatusType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method PotentialActionStatusType setUrl(Property\UrlProperty $url)
  */
 class PotentialActionStatusType extends ActionStatusType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

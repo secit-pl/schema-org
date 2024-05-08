@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class HowToStepType.
+ * A step in the instructions for how to achieve a result. It is an ordered list with HowToDirection and/or HowToTip items.
  * 
  * @method HowToStepType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method HowToStepType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -13,21 +13,22 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method HowToStepType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
  * @method HowToStepType setIdentifier(Property\IdentifierProperty $identifier)
  * @method HowToStepType setImage(Property\ImageProperty $image)
- * @method HowToStepType setItemListElements(array|Property\ItemListElementProperty[] $itemListElements)
- * @method HowToStepType addItemListElement(Property\ItemListElementProperty $itemListElement)
- * @method HowToStepType setItemListOrder(Property\ItemListOrderProperty $itemListOrder)
+ * @method HowToStepType setItem(Property\ItemProperty $item)
  * @method HowToStepType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
  * @method HowToStepType setName(Property\NameProperty $name)
- * @method HowToStepType setNumberOfItems(Property\NumberOfItemsProperty $numberOfItems)
+ * @method HowToStepType setNextItem(Property\NextItemProperty $nextItem)
+ * @method HowToStepType setPosition(Property\PositionProperty $position)
  * @method HowToStepType setPotentialAction(Property\PotentialActionProperty $potentialAction)
+ * @method HowToStepType setPreviousItem(Property\PreviousItemProperty $previousItem)
  * @method HowToStepType setSameAs(Property\SameAsProperty $sameAs)
+ * @method HowToStepType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method HowToStepType setUrl(Property\UrlProperty $url)
  */
-class HowToStepType extends ItemListType {
+class HowToStepType extends ListItemType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

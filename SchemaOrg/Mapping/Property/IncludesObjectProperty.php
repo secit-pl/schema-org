@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * IncludesObjectProperty class.
+ * This links to a node or nodes indicating the exact quantity of the products included in an Offer or ProductCollection.
  * 
  * @method IncludesObjectProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class IncludesObjectProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class IncludesObjectProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

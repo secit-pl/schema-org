@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class EventScheduledType.
+ * The event is taking place or has taken place on the startDate as scheduled. Use of this value is optional, as it is assumed by default.
  * 
  * @method EventScheduledType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method EventScheduledType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method EventScheduledType setName(Property\NameProperty $name)
  * @method EventScheduledType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method EventScheduledType setSameAs(Property\SameAsProperty $sameAs)
+ * @method EventScheduledType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method EventScheduledType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method EventScheduledType setUrl(Property\UrlProperty $url)
  */
 class EventScheduledType extends EventStatusType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

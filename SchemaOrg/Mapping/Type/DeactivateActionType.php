@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class DeactivateActionType.
+ * The act of stopping or deactivating a device or application (e.g. stopping a timer or turning off a flashlight).
  * 
  * @method DeactivateActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method DeactivateActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method DeactivateActionType setResult(Property\ResultProperty $result)
  * @method DeactivateActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method DeactivateActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method DeactivateActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method DeactivateActionType setTarget(Property\TargetProperty $target)
  * @method DeactivateActionType setUrl(Property\UrlProperty $url)
  */
@@ -34,7 +35,7 @@ class DeactivateActionType extends ControlActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

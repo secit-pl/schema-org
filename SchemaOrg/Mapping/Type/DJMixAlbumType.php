@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class DJMixAlbumType.
+ * DJMixAlbum.
  * 
  * @method DJMixAlbumType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method DJMixAlbumType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method DJMixAlbumType setName(Property\NameProperty $name)
  * @method DJMixAlbumType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method DJMixAlbumType setSameAs(Property\SameAsProperty $sameAs)
+ * @method DJMixAlbumType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method DJMixAlbumType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method DJMixAlbumType setUrl(Property\UrlProperty $url)
  */
 class DJMixAlbumType extends MusicAlbumProductionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

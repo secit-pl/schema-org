@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class DonateActionType.
+ * The act of providing goods, services, or money without compensation, often for philanthropic reasons.
  * 
  * @method DonateActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method DonateActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -25,10 +25,12 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method DonateActionType setParticipant(Property\ParticipantProperty $participant)
  * @method DonateActionType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method DonateActionType setPrice(Property\PriceProperty $price)
+ * @method DonateActionType setPriceCurrency(Property\PriceCurrencyProperty $priceCurrency)
  * @method DonateActionType setPriceSpecification(Property\PriceSpecificationProperty $priceSpecification)
  * @method DonateActionType setResult(Property\ResultProperty $result)
  * @method DonateActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method DonateActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method DonateActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method DonateActionType setTarget(Property\TargetProperty $target)
  * @method DonateActionType setUrl(Property\UrlProperty $url)
  */
@@ -41,7 +43,7 @@ class DonateActionType extends TradeActionType {
 
 	/**
 	 * Get recipient.
-	 * 
+	 *
 	 * @return Property\RecipientProperty
 	 */
 	public function getRecipient() {
@@ -50,7 +52,7 @@ class DonateActionType extends TradeActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -59,7 +61,7 @@ class DonateActionType extends TradeActionType {
 
 	/**
 	 * Set recipient.
-	 * 
+	 *
 	 * @param Property\RecipientProperty $recipient
 	 * @return DonateActionType
 	 */

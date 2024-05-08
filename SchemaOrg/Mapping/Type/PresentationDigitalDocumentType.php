@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class PresentationDigitalDocumentType.
+ * A file containing slides or used for a presentation.
  * 
+ * @method PresentationDigitalDocumentType setAbout(Property\AboutProperty $about)
  * @method PresentationDigitalDocumentType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method PresentationDigitalDocumentType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method PresentationDigitalDocumentType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -33,6 +34,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method PresentationDigitalDocumentType setContributor(Property\ContributorProperty $contributor)
  * @method PresentationDigitalDocumentType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method PresentationDigitalDocumentType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method PresentationDigitalDocumentType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method PresentationDigitalDocumentType setCreator(Property\CreatorProperty $creator)
  * @method PresentationDigitalDocumentType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method PresentationDigitalDocumentType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -44,9 +46,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method PresentationDigitalDocumentType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method PresentationDigitalDocumentType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method PresentationDigitalDocumentType setEncoding(Property\EncodingProperty $encoding)
+ * @method PresentationDigitalDocumentType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method PresentationDigitalDocumentType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method PresentationDigitalDocumentType setExpires(Property\ExpiresProperty $expires)
- * @method PresentationDigitalDocumentType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method PresentationDigitalDocumentType setFunder(Property\FunderProperty $funder)
  * @method PresentationDigitalDocumentType setGenre(Property\GenreProperty $genre)
  * @method PresentationDigitalDocumentType setHasDigitalDocumentPermission(Property\HasDigitalDocumentPermissionProperty $hasDigitalDocumentPermission)
@@ -74,9 +76,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method PresentationDigitalDocumentType setPosition(Property\PositionProperty $position)
  * @method PresentationDigitalDocumentType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method PresentationDigitalDocumentType setProducer(Property\ProducerProperty $producer)
- * @method PresentationDigitalDocumentType setProvider(Property\ProviderProperty $provider)
  * @method PresentationDigitalDocumentType setPublication(Property\PublicationProperty $publication)
  * @method PresentationDigitalDocumentType setPublisher(Property\PublisherProperty $publisher)
+ * @method PresentationDigitalDocumentType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method PresentationDigitalDocumentType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method PresentationDigitalDocumentType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method PresentationDigitalDocumentType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -84,24 +86,30 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method PresentationDigitalDocumentType setSameAs(Property\SameAsProperty $sameAs)
  * @method PresentationDigitalDocumentType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method PresentationDigitalDocumentType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method PresentationDigitalDocumentType setSpatial(Property\SpatialProperty $spatial)
  * @method PresentationDigitalDocumentType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method PresentationDigitalDocumentType setSponsor(Property\SponsorProperty $sponsor)
+ * @method PresentationDigitalDocumentType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method PresentationDigitalDocumentType setTemporal(Property\TemporalProperty $temporal)
  * @method PresentationDigitalDocumentType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method PresentationDigitalDocumentType setText(Property\TextProperty $text)
+ * @method PresentationDigitalDocumentType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method PresentationDigitalDocumentType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method PresentationDigitalDocumentType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method PresentationDigitalDocumentType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method PresentationDigitalDocumentType setTranslator(Property\TranslatorProperty $translator)
  * @method PresentationDigitalDocumentType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method PresentationDigitalDocumentType setUrl(Property\UrlProperty $url)
  * @method PresentationDigitalDocumentType setVersion(Property\VersionProperty $version)
  * @method PresentationDigitalDocumentType setVideo(Property\VideoProperty $video)
  * @method PresentationDigitalDocumentType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method PresentationDigitalDocumentType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class PresentationDigitalDocumentType extends DigitalDocumentType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

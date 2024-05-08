@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class DamagedConditionType.
+ * Indicates that the item is damaged.
  * 
  * @method DamagedConditionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method DamagedConditionType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method DamagedConditionType setName(Property\NameProperty $name)
  * @method DamagedConditionType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method DamagedConditionType setSameAs(Property\SameAsProperty $sameAs)
+ * @method DamagedConditionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method DamagedConditionType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method DamagedConditionType setUrl(Property\UrlProperty $url)
  */
 class DamagedConditionType extends OfferItemConditionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

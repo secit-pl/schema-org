@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class BusinessAudienceType.
+ * A set of characteristics belonging to businesses, e.g. who compose an item's target audience.
  * 
  * @method BusinessAudienceType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method BusinessAudienceType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -19,6 +19,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method BusinessAudienceType setName(Property\NameProperty $name)
  * @method BusinessAudienceType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method BusinessAudienceType setSameAs(Property\SameAsProperty $sameAs)
+ * @method BusinessAudienceType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method BusinessAudienceType setUrl(Property\UrlProperty $url)
  */
 class BusinessAudienceType extends AudienceType {
@@ -40,7 +41,7 @@ class BusinessAudienceType extends AudienceType {
 
 	/**
 	 * Get number of employees.
-	 * 
+	 *
 	 * @return Property\NumberOfEmployeesProperty
 	 */
 	public function getNumberOfEmployees() {
@@ -49,7 +50,7 @@ class BusinessAudienceType extends AudienceType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -58,7 +59,7 @@ class BusinessAudienceType extends AudienceType {
 
 	/**
 	 * Get yearly revenue.
-	 * 
+	 *
 	 * @return Property\YearlyRevenueProperty
 	 */
 	public function getYearlyRevenue() {
@@ -67,7 +68,7 @@ class BusinessAudienceType extends AudienceType {
 
 	/**
 	 * Get years in operation.
-	 * 
+	 *
 	 * @return Property\YearsInOperationProperty
 	 */
 	public function getYearsInOperation() {
@@ -76,7 +77,7 @@ class BusinessAudienceType extends AudienceType {
 
 	/**
 	 * Set number of employees.
-	 * 
+	 *
 	 * @param Property\NumberOfEmployeesProperty $numberOfEmployees
 	 * @return BusinessAudienceType
 	 */
@@ -88,7 +89,7 @@ class BusinessAudienceType extends AudienceType {
 
 	/**
 	 * Set yearly revenue.
-	 * 
+	 *
 	 * @param Property\YearlyRevenueProperty $yearlyRevenue
 	 * @return BusinessAudienceType
 	 */
@@ -100,7 +101,7 @@ class BusinessAudienceType extends AudienceType {
 
 	/**
 	 * Set years in operation.
-	 * 
+	 *
 	 * @param Property\YearsInOperationProperty $yearsInOperation
 	 * @return BusinessAudienceType
 	 */

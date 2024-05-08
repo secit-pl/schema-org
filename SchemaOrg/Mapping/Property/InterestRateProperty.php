@@ -6,7 +6,7 @@ use SecIT\SchemaOrg\Mapping\DataType;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * InterestRateProperty class.
+ * The interest rate, charged or paid, applicable to the financial product. Note: This is different from the calculated annualPercentageRate.
  * 
  * @method InterestRateProperty setValue($value)
  */
@@ -14,7 +14,7 @@ class InterestRateProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -23,7 +23,7 @@ class InterestRateProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

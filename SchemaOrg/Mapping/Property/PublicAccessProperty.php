@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * PublicAccessProperty class.
+ * A flag to signal that the Place is open to public visitors. If this property is omitted there is no assumed default boolean value.
  * 
  * @method PublicAccessProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class PublicAccessProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class PublicAccessProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

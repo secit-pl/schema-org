@@ -9,14 +9,14 @@ interface TypeInterface {
 
 	/**
 	 * Get id.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getId();
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl();

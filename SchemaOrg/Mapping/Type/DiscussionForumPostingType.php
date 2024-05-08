@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class DiscussionForumPostingType.
+ * A posting to a discussion forum.
  * 
+ * @method DiscussionForumPostingType setAbout(Property\AboutProperty $about)
  * @method DiscussionForumPostingType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method DiscussionForumPostingType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method DiscussionForumPostingType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -35,6 +36,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method DiscussionForumPostingType setContributor(Property\ContributorProperty $contributor)
  * @method DiscussionForumPostingType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method DiscussionForumPostingType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method DiscussionForumPostingType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method DiscussionForumPostingType setCreator(Property\CreatorProperty $creator)
  * @method DiscussionForumPostingType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method DiscussionForumPostingType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -46,9 +48,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method DiscussionForumPostingType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method DiscussionForumPostingType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method DiscussionForumPostingType setEncoding(Property\EncodingProperty $encoding)
+ * @method DiscussionForumPostingType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method DiscussionForumPostingType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method DiscussionForumPostingType setExpires(Property\ExpiresProperty $expires)
- * @method DiscussionForumPostingType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method DiscussionForumPostingType setFunder(Property\FunderProperty $funder)
  * @method DiscussionForumPostingType setGenre(Property\GenreProperty $genre)
  * @method DiscussionForumPostingType setHasPart(Property\HasPartProperty $hasPart)
@@ -78,9 +80,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method DiscussionForumPostingType setPosition(Property\PositionProperty $position)
  * @method DiscussionForumPostingType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method DiscussionForumPostingType setProducer(Property\ProducerProperty $producer)
- * @method DiscussionForumPostingType setProvider(Property\ProviderProperty $provider)
  * @method DiscussionForumPostingType setPublication(Property\PublicationProperty $publication)
  * @method DiscussionForumPostingType setPublisher(Property\PublisherProperty $publisher)
+ * @method DiscussionForumPostingType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method DiscussionForumPostingType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method DiscussionForumPostingType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method DiscussionForumPostingType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -89,12 +91,18 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method DiscussionForumPostingType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method DiscussionForumPostingType setSharedContent(Property\SharedContentProperty $sharedContent)
  * @method DiscussionForumPostingType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method DiscussionForumPostingType setSpatial(Property\SpatialProperty $spatial)
  * @method DiscussionForumPostingType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
+ * @method DiscussionForumPostingType setSpeakable(Property\SpeakableProperty $speakable)
  * @method DiscussionForumPostingType setSponsor(Property\SponsorProperty $sponsor)
+ * @method DiscussionForumPostingType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method DiscussionForumPostingType setTemporal(Property\TemporalProperty $temporal)
  * @method DiscussionForumPostingType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method DiscussionForumPostingType setText(Property\TextProperty $text)
+ * @method DiscussionForumPostingType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method DiscussionForumPostingType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method DiscussionForumPostingType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method DiscussionForumPostingType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method DiscussionForumPostingType setTranslator(Property\TranslatorProperty $translator)
  * @method DiscussionForumPostingType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method DiscussionForumPostingType setUrl(Property\UrlProperty $url)
@@ -102,12 +110,13 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method DiscussionForumPostingType setVideo(Property\VideoProperty $video)
  * @method DiscussionForumPostingType setWordCount(Property\WordCountProperty $wordCount)
  * @method DiscussionForumPostingType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method DiscussionForumPostingType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class DiscussionForumPostingType extends SocialMediaPostingType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class OfflineTemporarilyType.
+ * Game server status: OfflineTemporarily. Server is offline now but it can be online soon.
  * 
  * @method OfflineTemporarilyType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method OfflineTemporarilyType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method OfflineTemporarilyType setName(Property\NameProperty $name)
  * @method OfflineTemporarilyType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method OfflineTemporarilyType setSameAs(Property\SameAsProperty $sameAs)
+ * @method OfflineTemporarilyType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method OfflineTemporarilyType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method OfflineTemporarilyType setUrl(Property\UrlProperty $url)
  */
 class OfflineTemporarilyType extends GameServerStatusType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

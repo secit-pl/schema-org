@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class TravelActionType.
+ * The act of traveling from a fromLocation to a destination by a specified mode of transport, optionally with participants.
  * 
  * @method TravelActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method TravelActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -28,6 +28,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method TravelActionType setResult(Property\ResultProperty $result)
  * @method TravelActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method TravelActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method TravelActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method TravelActionType setTarget(Property\TargetProperty $target)
  * @method TravelActionType setToLocation(Property\ToLocationProperty $toLocation)
  * @method TravelActionType setUrl(Property\UrlProperty $url)
@@ -41,7 +42,7 @@ class TravelActionType extends MoveActionType {
 
 	/**
 	 * Get distance.
-	 * 
+	 *
 	 * @return Property\DistanceProperty
 	 */
 	public function getDistance() {
@@ -50,7 +51,7 @@ class TravelActionType extends MoveActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -59,7 +60,7 @@ class TravelActionType extends MoveActionType {
 
 	/**
 	 * Set distance.
-	 * 
+	 *
 	 * @param Property\DistanceProperty $distance
 	 * @return TravelActionType
 	 */

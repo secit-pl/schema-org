@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class RefurbishedConditionType.
+ * Indicates that the item is refurbished.
  * 
  * @method RefurbishedConditionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method RefurbishedConditionType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method RefurbishedConditionType setName(Property\NameProperty $name)
  * @method RefurbishedConditionType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method RefurbishedConditionType setSameAs(Property\SameAsProperty $sameAs)
+ * @method RefurbishedConditionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method RefurbishedConditionType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method RefurbishedConditionType setUrl(Property\UrlProperty $url)
  */
 class RefurbishedConditionType extends OfferItemConditionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

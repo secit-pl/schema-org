@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class MaleType.
+ * The male gender.
  * 
  * @method MaleType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method MaleType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MaleType setName(Property\NameProperty $name)
  * @method MaleType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method MaleType setSameAs(Property\SameAsProperty $sameAs)
+ * @method MaleType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method MaleType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method MaleType setUrl(Property\UrlProperty $url)
  */
 class MaleType extends GenderType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

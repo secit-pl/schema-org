@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class GameServerStatusType.
+ * Status of a game server.
  * 
  * @method GameServerStatusType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method GameServerStatusType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method GameServerStatusType setName(Property\NameProperty $name)
  * @method GameServerStatusType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method GameServerStatusType setSameAs(Property\SameAsProperty $sameAs)
+ * @method GameServerStatusType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method GameServerStatusType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method GameServerStatusType setUrl(Property\UrlProperty $url)
  */
-class GameServerStatusType extends EnumerationType {
+class GameServerStatusType extends StatusEnumerationType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

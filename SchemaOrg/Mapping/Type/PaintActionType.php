@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class PaintActionType.
+ * The act of producing a painting, typically with paint and canvas as instruments.
  * 
  * @method PaintActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method PaintActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method PaintActionType setResult(Property\ResultProperty $result)
  * @method PaintActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method PaintActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method PaintActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method PaintActionType setTarget(Property\TargetProperty $target)
  * @method PaintActionType setUrl(Property\UrlProperty $url)
  */
@@ -34,7 +35,7 @@ class PaintActionType extends CreateActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

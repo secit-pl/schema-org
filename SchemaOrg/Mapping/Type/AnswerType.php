@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class AnswerType.
+ * An answer offered to a question; perhaps correct, perhaps opinionated or wrong.
  * 
+ * @method AnswerType setAbout(Property\AboutProperty $about)
  * @method AnswerType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method AnswerType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method AnswerType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -33,6 +34,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method AnswerType setContributor(Property\ContributorProperty $contributor)
  * @method AnswerType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method AnswerType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method AnswerType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method AnswerType setCreator(Property\CreatorProperty $creator)
  * @method AnswerType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method AnswerType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -45,9 +47,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method AnswerType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method AnswerType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method AnswerType setEncoding(Property\EncodingProperty $encoding)
+ * @method AnswerType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method AnswerType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method AnswerType setExpires(Property\ExpiresProperty $expires)
- * @method AnswerType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method AnswerType setFunder(Property\FunderProperty $funder)
  * @method AnswerType setGenre(Property\GenreProperty $genre)
  * @method AnswerType setHasPart(Property\HasPartProperty $hasPart)
@@ -75,22 +77,28 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method AnswerType setPosition(Property\PositionProperty $position)
  * @method AnswerType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method AnswerType setProducer(Property\ProducerProperty $producer)
- * @method AnswerType setProvider(Property\ProviderProperty $provider)
  * @method AnswerType setPublication(Property\PublicationProperty $publication)
  * @method AnswerType setPublisher(Property\PublisherProperty $publisher)
+ * @method AnswerType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method AnswerType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method AnswerType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method AnswerType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
  * @method AnswerType setReview(Property\ReviewProperty $review)
  * @method AnswerType setSameAs(Property\SameAsProperty $sameAs)
  * @method AnswerType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
+ * @method AnswerType setSharedContent(Property\SharedContentProperty $sharedContent)
  * @method AnswerType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method AnswerType setSpatial(Property\SpatialProperty $spatial)
  * @method AnswerType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method AnswerType setSponsor(Property\SponsorProperty $sponsor)
+ * @method AnswerType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method AnswerType setTemporal(Property\TemporalProperty $temporal)
  * @method AnswerType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method AnswerType setText(Property\TextProperty $text)
+ * @method AnswerType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method AnswerType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method AnswerType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method AnswerType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method AnswerType setTranslator(Property\TranslatorProperty $translator)
  * @method AnswerType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method AnswerType setUpvoteCount(Property\UpvoteCountProperty $upvoteCount)
@@ -98,15 +106,42 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method AnswerType setVersion(Property\VersionProperty $version)
  * @method AnswerType setVideo(Property\VideoProperty $video)
  * @method AnswerType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method AnswerType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class AnswerType extends CommentType {
 
 	/**
+	 * @var Property\ParentItemProperty
+	 */
+	private $parentItem;
+
+	/**
+	 * Get parent item.
+	 *
+	 * @return Property\ParentItemProperty
+	 */
+	public function getParentItem() {
+		return $this->parentItem;
+	}
+
+	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
 		return 'https://schema.org/Answer';
+	}
+
+	/**
+	 * Set parent item.
+	 *
+	 * @param Property\ParentItemProperty $parentItem
+	 * @return AnswerType
+	 */
+	public function setParentItem(Property\ParentItemProperty $parentItem) {
+		$this->parentItem = $parentItem;
+
+		return $this;
 	}
 }

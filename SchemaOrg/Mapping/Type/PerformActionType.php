@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class PerformActionType.
+ * The act of participating in performance arts.
  * 
  * @method PerformActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method PerformActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -29,6 +29,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method PerformActionType setResult(Property\ResultProperty $result)
  * @method PerformActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method PerformActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method PerformActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method PerformActionType setTarget(Property\TargetProperty $target)
  * @method PerformActionType setUrl(Property\UrlProperty $url)
  */
@@ -41,7 +42,7 @@ class PerformActionType extends PlayActionType {
 
 	/**
 	 * Get entertainment business.
-	 * 
+	 *
 	 * @return Property\EntertainmentBusinessProperty
 	 */
 	public function getEntertainmentBusiness() {
@@ -50,7 +51,7 @@ class PerformActionType extends PlayActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -59,7 +60,7 @@ class PerformActionType extends PlayActionType {
 
 	/**
 	 * Set entertainment business.
-	 * 
+	 *
 	 * @param Property\EntertainmentBusinessProperty $entertainmentBusiness
 	 * @return PerformActionType
 	 */

@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * RecipeCategoryProperty class.
+ * The category of the recipe—for example, appetizer, entree, etc.
  * 
  * @method RecipeCategoryProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class RecipeCategoryProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class RecipeCategoryProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

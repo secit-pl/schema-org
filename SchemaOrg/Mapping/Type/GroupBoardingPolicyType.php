@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class GroupBoardingPolicyType.
+ * The airline boards by groups based on check-in time, priority, etc.
  * 
  * @method GroupBoardingPolicyType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method GroupBoardingPolicyType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method GroupBoardingPolicyType setName(Property\NameProperty $name)
  * @method GroupBoardingPolicyType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method GroupBoardingPolicyType setSameAs(Property\SameAsProperty $sameAs)
+ * @method GroupBoardingPolicyType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method GroupBoardingPolicyType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method GroupBoardingPolicyType setUrl(Property\UrlProperty $url)
  */
 class GroupBoardingPolicyType extends BoardingPolicyType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

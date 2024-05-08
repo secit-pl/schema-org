@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class NutritionInformationType.
+ * Nutritional information about the recipe.
  * 
  * @method NutritionInformationType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method NutritionInformationType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,6 +17,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method NutritionInformationType setName(Property\NameProperty $name)
  * @method NutritionInformationType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method NutritionInformationType setSameAs(Property\SameAsProperty $sameAs)
+ * @method NutritionInformationType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method NutritionInformationType setUrl(Property\UrlProperty $url)
  */
 class NutritionInformationType extends StructuredValueType {
@@ -83,7 +84,7 @@ class NutritionInformationType extends StructuredValueType {
 
 	/**
 	 * Get calories.
-	 * 
+	 *
 	 * @return Property\CaloriesProperty
 	 */
 	public function getCalories() {
@@ -92,7 +93,7 @@ class NutritionInformationType extends StructuredValueType {
 
 	/**
 	 * Get carbohydrate content.
-	 * 
+	 *
 	 * @return Property\CarbohydrateContentProperty
 	 */
 	public function getCarbohydrateContent() {
@@ -101,7 +102,7 @@ class NutritionInformationType extends StructuredValueType {
 
 	/**
 	 * Get cholesterol content.
-	 * 
+	 *
 	 * @return Property\CholesterolContentProperty
 	 */
 	public function getCholesterolContent() {
@@ -110,7 +111,7 @@ class NutritionInformationType extends StructuredValueType {
 
 	/**
 	 * Get fat content.
-	 * 
+	 *
 	 * @return Property\FatContentProperty
 	 */
 	public function getFatContent() {
@@ -119,7 +120,7 @@ class NutritionInformationType extends StructuredValueType {
 
 	/**
 	 * Get fiber content.
-	 * 
+	 *
 	 * @return Property\FiberContentProperty
 	 */
 	public function getFiberContent() {
@@ -128,7 +129,7 @@ class NutritionInformationType extends StructuredValueType {
 
 	/**
 	 * Get protein content.
-	 * 
+	 *
 	 * @return Property\ProteinContentProperty
 	 */
 	public function getProteinContent() {
@@ -137,7 +138,7 @@ class NutritionInformationType extends StructuredValueType {
 
 	/**
 	 * Get saturated fat content.
-	 * 
+	 *
 	 * @return Property\SaturatedFatContentProperty
 	 */
 	public function getSaturatedFatContent() {
@@ -146,7 +147,7 @@ class NutritionInformationType extends StructuredValueType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -155,7 +156,7 @@ class NutritionInformationType extends StructuredValueType {
 
 	/**
 	 * Get serving size.
-	 * 
+	 *
 	 * @return Property\ServingSizeProperty
 	 */
 	public function getServingSize() {
@@ -164,7 +165,7 @@ class NutritionInformationType extends StructuredValueType {
 
 	/**
 	 * Get sodium content.
-	 * 
+	 *
 	 * @return Property\SodiumContentProperty
 	 */
 	public function getSodiumContent() {
@@ -173,7 +174,7 @@ class NutritionInformationType extends StructuredValueType {
 
 	/**
 	 * Get sugar content.
-	 * 
+	 *
 	 * @return Property\SugarContentProperty
 	 */
 	public function getSugarContent() {
@@ -182,7 +183,7 @@ class NutritionInformationType extends StructuredValueType {
 
 	/**
 	 * Get trans fat content.
-	 * 
+	 *
 	 * @return Property\TransFatContentProperty
 	 */
 	public function getTransFatContent() {
@@ -191,7 +192,7 @@ class NutritionInformationType extends StructuredValueType {
 
 	/**
 	 * Get unsaturated fat content.
-	 * 
+	 *
 	 * @return Property\UnsaturatedFatContentProperty
 	 */
 	public function getUnsaturatedFatContent() {
@@ -200,7 +201,7 @@ class NutritionInformationType extends StructuredValueType {
 
 	/**
 	 * Set calories.
-	 * 
+	 *
 	 * @param Property\CaloriesProperty $calories
 	 * @return NutritionInformationType
 	 */
@@ -212,7 +213,7 @@ class NutritionInformationType extends StructuredValueType {
 
 	/**
 	 * Set carbohydrate content.
-	 * 
+	 *
 	 * @param Property\CarbohydrateContentProperty $carbohydrateContent
 	 * @return NutritionInformationType
 	 */
@@ -224,7 +225,7 @@ class NutritionInformationType extends StructuredValueType {
 
 	/**
 	 * Set cholesterol content.
-	 * 
+	 *
 	 * @param Property\CholesterolContentProperty $cholesterolContent
 	 * @return NutritionInformationType
 	 */
@@ -236,7 +237,7 @@ class NutritionInformationType extends StructuredValueType {
 
 	/**
 	 * Set fat content.
-	 * 
+	 *
 	 * @param Property\FatContentProperty $fatContent
 	 * @return NutritionInformationType
 	 */
@@ -248,7 +249,7 @@ class NutritionInformationType extends StructuredValueType {
 
 	/**
 	 * Set fiber content.
-	 * 
+	 *
 	 * @param Property\FiberContentProperty $fiberContent
 	 * @return NutritionInformationType
 	 */
@@ -260,7 +261,7 @@ class NutritionInformationType extends StructuredValueType {
 
 	/**
 	 * Set protein content.
-	 * 
+	 *
 	 * @param Property\ProteinContentProperty $proteinContent
 	 * @return NutritionInformationType
 	 */
@@ -272,7 +273,7 @@ class NutritionInformationType extends StructuredValueType {
 
 	/**
 	 * Set saturated fat content.
-	 * 
+	 *
 	 * @param Property\SaturatedFatContentProperty $saturatedFatContent
 	 * @return NutritionInformationType
 	 */
@@ -284,7 +285,7 @@ class NutritionInformationType extends StructuredValueType {
 
 	/**
 	 * Set serving size.
-	 * 
+	 *
 	 * @param Property\ServingSizeProperty $servingSize
 	 * @return NutritionInformationType
 	 */
@@ -296,7 +297,7 @@ class NutritionInformationType extends StructuredValueType {
 
 	/**
 	 * Set sodium content.
-	 * 
+	 *
 	 * @param Property\SodiumContentProperty $sodiumContent
 	 * @return NutritionInformationType
 	 */
@@ -308,7 +309,7 @@ class NutritionInformationType extends StructuredValueType {
 
 	/**
 	 * Set sugar content.
-	 * 
+	 *
 	 * @param Property\SugarContentProperty $sugarContent
 	 * @return NutritionInformationType
 	 */
@@ -320,7 +321,7 @@ class NutritionInformationType extends StructuredValueType {
 
 	/**
 	 * Set trans fat content.
-	 * 
+	 *
 	 * @param Property\TransFatContentProperty $transFatContent
 	 * @return NutritionInformationType
 	 */
@@ -332,7 +333,7 @@ class NutritionInformationType extends StructuredValueType {
 
 	/**
 	 * Set unsaturated fat content.
-	 * 
+	 *
 	 * @param Property\UnsaturatedFatContentProperty $unsaturatedFatContent
 	 * @return NutritionInformationType
 	 */

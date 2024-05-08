@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class LocationFeatureSpecificationType.
+ * Specifies a location feature by providing a structured value representing a feature of an accommodation as a property-value pair of varying degrees of formality.
  * 
  * @method LocationFeatureSpecificationType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method LocationFeatureSpecificationType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -20,6 +20,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method LocationFeatureSpecificationType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method LocationFeatureSpecificationType setPropertyID(Property\PropertyIDProperty $propertyID)
  * @method LocationFeatureSpecificationType setSameAs(Property\SameAsProperty $sameAs)
+ * @method LocationFeatureSpecificationType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method LocationFeatureSpecificationType setUnitCode(Property\UnitCodeProperty $unitCode)
  * @method LocationFeatureSpecificationType setUnitText(Property\UnitTextProperty $unitText)
  * @method LocationFeatureSpecificationType setUrl(Property\UrlProperty $url)
@@ -45,7 +46,7 @@ class LocationFeatureSpecificationType extends PropertyValueType {
 
 	/**
 	 * Get hours available.
-	 * 
+	 *
 	 * @return Property\HoursAvailableProperty
 	 */
 	public function getHoursAvailable() {
@@ -54,7 +55,7 @@ class LocationFeatureSpecificationType extends PropertyValueType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -63,7 +64,7 @@ class LocationFeatureSpecificationType extends PropertyValueType {
 
 	/**
 	 * Get valid from.
-	 * 
+	 *
 	 * @return Property\ValidFromProperty
 	 */
 	public function getValidFrom() {
@@ -72,7 +73,7 @@ class LocationFeatureSpecificationType extends PropertyValueType {
 
 	/**
 	 * Get valid through.
-	 * 
+	 *
 	 * @return Property\ValidThroughProperty
 	 */
 	public function getValidThrough() {
@@ -81,7 +82,7 @@ class LocationFeatureSpecificationType extends PropertyValueType {
 
 	/**
 	 * Set hours available.
-	 * 
+	 *
 	 * @param Property\HoursAvailableProperty $hoursAvailable
 	 * @return LocationFeatureSpecificationType
 	 */
@@ -93,7 +94,7 @@ class LocationFeatureSpecificationType extends PropertyValueType {
 
 	/**
 	 * Set valid from.
-	 * 
+	 *
 	 * @param Property\ValidFromProperty $validFrom
 	 * @return LocationFeatureSpecificationType
 	 */
@@ -105,7 +106,7 @@ class LocationFeatureSpecificationType extends PropertyValueType {
 
 	/**
 	 * Set valid through.
-	 * 
+	 *
 	 * @param Property\ValidThroughProperty $validThrough
 	 * @return LocationFeatureSpecificationType
 	 */

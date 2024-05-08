@@ -5,21 +5,26 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class FlightType.
+ * An airline flight.
  * 
  * @method FlightType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method FlightType setAlternateName(Property\AlternateNameProperty $alternateName)
+ * @method FlightType setArrivalTime(Property\ArrivalTimeProperty $arrivalTime)
+ * @method FlightType setDepartureTime(Property\DepartureTimeProperty $departureTime)
  * @method FlightType setDescription(Property\DescriptionProperty $description)
  * @method FlightType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
  * @method FlightType setIdentifier(Property\IdentifierProperty $identifier)
  * @method FlightType setImage(Property\ImageProperty $image)
  * @method FlightType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
  * @method FlightType setName(Property\NameProperty $name)
+ * @method FlightType setOffers(Property\OffersProperty $offers)
  * @method FlightType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method FlightType setSameAs(Property\SameAsProperty $sameAs)
+ * @method FlightType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method FlightType setTripOrigin(Property\TripOriginProperty $tripOrigin)
  * @method FlightType setUrl(Property\UrlProperty $url)
  */
-class FlightType extends IntangibleType {
+class FlightType extends TripType {
 
 	/**
 	 * @var Property\AircraftProperty
@@ -42,11 +47,6 @@ class FlightType extends IntangibleType {
 	private $arrivalTerminal;
 
 	/**
-	 * @var Property\ArrivalTimeProperty
-	 */
-	private $arrivalTime;
-
-	/**
 	 * @var Property\BoardingPolicyProperty
 	 */
 	private $boardingPolicy;
@@ -65,11 +65,6 @@ class FlightType extends IntangibleType {
 	 * @var Property\DepartureTerminalProperty
 	 */
 	private $departureTerminal;
-
-	/**
-	 * @var Property\DepartureTimeProperty
-	 */
-	private $departureTime;
 
 	/**
 	 * @var Property\EstimatedFlightDurationProperty
@@ -92,11 +87,6 @@ class FlightType extends IntangibleType {
 	private $mealService;
 
 	/**
-	 * @var Property\ProviderProperty
-	 */
-	private $provider;
-
-	/**
 	 * @var Property\SellerProperty
 	 */
 	private $seller;
@@ -108,7 +98,7 @@ class FlightType extends IntangibleType {
 
 	/**
 	 * Get aircraft.
-	 * 
+	 *
 	 * @return Property\AircraftProperty
 	 */
 	public function getAircraft() {
@@ -117,7 +107,7 @@ class FlightType extends IntangibleType {
 
 	/**
 	 * Get arrival airport.
-	 * 
+	 *
 	 * @return Property\ArrivalAirportProperty
 	 */
 	public function getArrivalAirport() {
@@ -126,7 +116,7 @@ class FlightType extends IntangibleType {
 
 	/**
 	 * Get arrival gate.
-	 * 
+	 *
 	 * @return Property\ArrivalGateProperty
 	 */
 	public function getArrivalGate() {
@@ -135,7 +125,7 @@ class FlightType extends IntangibleType {
 
 	/**
 	 * Get arrival terminal.
-	 * 
+	 *
 	 * @return Property\ArrivalTerminalProperty
 	 */
 	public function getArrivalTerminal() {
@@ -143,17 +133,8 @@ class FlightType extends IntangibleType {
 	}
 
 	/**
-	 * Get arrival time.
-	 * 
-	 * @return Property\ArrivalTimeProperty
-	 */
-	public function getArrivalTime() {
-		return $this->arrivalTime;
-	}
-
-	/**
 	 * Get boarding policy.
-	 * 
+	 *
 	 * @return Property\BoardingPolicyProperty
 	 */
 	public function getBoardingPolicy() {
@@ -162,7 +143,7 @@ class FlightType extends IntangibleType {
 
 	/**
 	 * Get departure airport.
-	 * 
+	 *
 	 * @return Property\DepartureAirportProperty
 	 */
 	public function getDepartureAirport() {
@@ -171,7 +152,7 @@ class FlightType extends IntangibleType {
 
 	/**
 	 * Get departure gate.
-	 * 
+	 *
 	 * @return Property\DepartureGateProperty
 	 */
 	public function getDepartureGate() {
@@ -180,7 +161,7 @@ class FlightType extends IntangibleType {
 
 	/**
 	 * Get departure terminal.
-	 * 
+	 *
 	 * @return Property\DepartureTerminalProperty
 	 */
 	public function getDepartureTerminal() {
@@ -188,17 +169,8 @@ class FlightType extends IntangibleType {
 	}
 
 	/**
-	 * Get departure time.
-	 * 
-	 * @return Property\DepartureTimeProperty
-	 */
-	public function getDepartureTime() {
-		return $this->departureTime;
-	}
-
-	/**
 	 * Get estimated flight duration.
-	 * 
+	 *
 	 * @return Property\EstimatedFlightDurationProperty
 	 */
 	public function getEstimatedFlightDuration() {
@@ -207,7 +179,7 @@ class FlightType extends IntangibleType {
 
 	/**
 	 * Get flight distance.
-	 * 
+	 *
 	 * @return Property\FlightDistanceProperty
 	 */
 	public function getFlightDistance() {
@@ -216,7 +188,7 @@ class FlightType extends IntangibleType {
 
 	/**
 	 * Get flight number.
-	 * 
+	 *
 	 * @return Property\FlightNumberProperty
 	 */
 	public function getFlightNumber() {
@@ -225,7 +197,7 @@ class FlightType extends IntangibleType {
 
 	/**
 	 * Get meal service.
-	 * 
+	 *
 	 * @return Property\MealServiceProperty
 	 */
 	public function getMealService() {
@@ -233,17 +205,8 @@ class FlightType extends IntangibleType {
 	}
 
 	/**
-	 * Get provider.
-	 * 
-	 * @return Property\ProviderProperty
-	 */
-	public function getProvider() {
-		return $this->provider;
-	}
-
-	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -252,7 +215,7 @@ class FlightType extends IntangibleType {
 
 	/**
 	 * Get seller.
-	 * 
+	 *
 	 * @return Property\SellerProperty
 	 */
 	public function getSeller() {
@@ -261,7 +224,7 @@ class FlightType extends IntangibleType {
 
 	/**
 	 * Get web checkin time.
-	 * 
+	 *
 	 * @return Property\WebCheckinTimeProperty
 	 */
 	public function getWebCheckinTime() {
@@ -270,7 +233,7 @@ class FlightType extends IntangibleType {
 
 	/**
 	 * Set aircraft.
-	 * 
+	 *
 	 * @param Property\AircraftProperty $aircraft
 	 * @return FlightType
 	 */
@@ -282,7 +245,7 @@ class FlightType extends IntangibleType {
 
 	/**
 	 * Set arrival airport.
-	 * 
+	 *
 	 * @param Property\ArrivalAirportProperty $arrivalAirport
 	 * @return FlightType
 	 */
@@ -294,7 +257,7 @@ class FlightType extends IntangibleType {
 
 	/**
 	 * Set arrival gate.
-	 * 
+	 *
 	 * @param Property\ArrivalGateProperty $arrivalGate
 	 * @return FlightType
 	 */
@@ -306,7 +269,7 @@ class FlightType extends IntangibleType {
 
 	/**
 	 * Set arrival terminal.
-	 * 
+	 *
 	 * @param Property\ArrivalTerminalProperty $arrivalTerminal
 	 * @return FlightType
 	 */
@@ -317,20 +280,8 @@ class FlightType extends IntangibleType {
 	}
 
 	/**
-	 * Set arrival time.
-	 * 
-	 * @param Property\ArrivalTimeProperty $arrivalTime
-	 * @return FlightType
-	 */
-	public function setArrivalTime(Property\ArrivalTimeProperty $arrivalTime) {
-		$this->arrivalTime = $arrivalTime;
-
-		return $this;
-	}
-
-	/**
 	 * Set boarding policy.
-	 * 
+	 *
 	 * @param Property\BoardingPolicyProperty $boardingPolicy
 	 * @return FlightType
 	 */
@@ -342,7 +293,7 @@ class FlightType extends IntangibleType {
 
 	/**
 	 * Set departure airport.
-	 * 
+	 *
 	 * @param Property\DepartureAirportProperty $departureAirport
 	 * @return FlightType
 	 */
@@ -354,7 +305,7 @@ class FlightType extends IntangibleType {
 
 	/**
 	 * Set departure gate.
-	 * 
+	 *
 	 * @param Property\DepartureGateProperty $departureGate
 	 * @return FlightType
 	 */
@@ -366,7 +317,7 @@ class FlightType extends IntangibleType {
 
 	/**
 	 * Set departure terminal.
-	 * 
+	 *
 	 * @param Property\DepartureTerminalProperty $departureTerminal
 	 * @return FlightType
 	 */
@@ -377,20 +328,8 @@ class FlightType extends IntangibleType {
 	}
 
 	/**
-	 * Set departure time.
-	 * 
-	 * @param Property\DepartureTimeProperty $departureTime
-	 * @return FlightType
-	 */
-	public function setDepartureTime(Property\DepartureTimeProperty $departureTime) {
-		$this->departureTime = $departureTime;
-
-		return $this;
-	}
-
-	/**
 	 * Set estimated flight duration.
-	 * 
+	 *
 	 * @param Property\EstimatedFlightDurationProperty $estimatedFlightDuration
 	 * @return FlightType
 	 */
@@ -402,7 +341,7 @@ class FlightType extends IntangibleType {
 
 	/**
 	 * Set flight distance.
-	 * 
+	 *
 	 * @param Property\FlightDistanceProperty $flightDistance
 	 * @return FlightType
 	 */
@@ -414,7 +353,7 @@ class FlightType extends IntangibleType {
 
 	/**
 	 * Set flight number.
-	 * 
+	 *
 	 * @param Property\FlightNumberProperty $flightNumber
 	 * @return FlightType
 	 */
@@ -426,7 +365,7 @@ class FlightType extends IntangibleType {
 
 	/**
 	 * Set meal service.
-	 * 
+	 *
 	 * @param Property\MealServiceProperty $mealService
 	 * @return FlightType
 	 */
@@ -437,20 +376,8 @@ class FlightType extends IntangibleType {
 	}
 
 	/**
-	 * Set provider.
-	 * 
-	 * @param Property\ProviderProperty $provider
-	 * @return FlightType
-	 */
-	public function setProvider(Property\ProviderProperty $provider) {
-		$this->provider = $provider;
-
-		return $this;
-	}
-
-	/**
 	 * Set seller.
-	 * 
+	 *
 	 * @param Property\SellerProperty $seller
 	 * @return FlightType
 	 */
@@ -462,7 +389,7 @@ class FlightType extends IntangibleType {
 
 	/**
 	 * Set web checkin time.
-	 * 
+	 *
 	 * @param Property\WebCheckinTimeProperty $webCheckinTime
 	 * @return FlightType
 	 */

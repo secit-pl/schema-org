@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class CompletedActionStatusType.
+ * An action that has already taken place.
  * 
  * @method CompletedActionStatusType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method CompletedActionStatusType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method CompletedActionStatusType setName(Property\NameProperty $name)
  * @method CompletedActionStatusType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method CompletedActionStatusType setSameAs(Property\SameAsProperty $sameAs)
+ * @method CompletedActionStatusType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method CompletedActionStatusType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method CompletedActionStatusType setUrl(Property\UrlProperty $url)
  */
 class CompletedActionStatusType extends ActionStatusType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

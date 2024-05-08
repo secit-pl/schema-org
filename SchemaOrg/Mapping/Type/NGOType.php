@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class NGOType.
+ * Organization: Non-governmental Organization.
  * 
  * @method NGOType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method NGOType setAddress(Property\AddressProperty $address)
@@ -30,11 +30,14 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method NGOType setFoundingLocation(Property\FoundingLocationProperty $foundingLocation)
  * @method NGOType setFunder(Property\FunderProperty $funder)
  * @method NGOType setGlobalLocationNumber(Property\GlobalLocationNumberProperty $globalLocationNumber)
+ * @method NGOType setHasCertification(Property\HasCertificationProperty $hasCertification)
  * @method NGOType setHasOfferCatalog(Property\HasOfferCatalogProperty $hasOfferCatalog)
  * @method NGOType setHasPOS(Property\HasPOSProperty $hasPOS)
  * @method NGOType setIdentifier(Property\IdentifierProperty $identifier)
  * @method NGOType setImage(Property\ImageProperty $image)
+ * @method NGOType setInteractionStatistic(Property\InteractionStatisticProperty $interactionStatistic)
  * @method NGOType setIsicV4(Property\IsicV4Property $isicV4)
+ * @method NGOType setKeywords(Property\KeywordsProperty $keywords)
  * @method NGOType setLegalName(Property\LegalNameProperty $legalName)
  * @method NGOType setLeiCode(Property\LeiCodeProperty $leiCode)
  * @method NGOType setLocation(Property\LocationProperty $location)
@@ -53,8 +56,10 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method NGOType setReview(Property\ReviewProperty $review)
  * @method NGOType setSameAs(Property\SameAsProperty $sameAs)
  * @method NGOType setSeeks(Property\SeeksProperty $seeks)
+ * @method NGOType setSlogan(Property\SloganProperty $slogan)
  * @method NGOType setSponsor(Property\SponsorProperty $sponsor)
  * @method NGOType setSubOrganization(Property\SubOrganizationProperty $subOrganization)
+ * @method NGOType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method NGOType setTaxID(Property\TaxIDProperty $taxID)
  * @method NGOType setTelephone(Property\TelephoneProperty $telephone)
  * @method NGOType setUrl(Property\UrlProperty $url)
@@ -64,7 +69,7 @@ class NGOType extends OrganizationType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

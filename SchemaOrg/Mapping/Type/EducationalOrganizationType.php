@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class EducationalOrganizationType.
+ * An educational organization.
  * 
  * @method EducationalOrganizationType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method EducationalOrganizationType setAddress(Property\AddressProperty $address)
@@ -30,11 +30,14 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method EducationalOrganizationType setFoundingLocation(Property\FoundingLocationProperty $foundingLocation)
  * @method EducationalOrganizationType setFunder(Property\FunderProperty $funder)
  * @method EducationalOrganizationType setGlobalLocationNumber(Property\GlobalLocationNumberProperty $globalLocationNumber)
+ * @method EducationalOrganizationType setHasCertification(Property\HasCertificationProperty $hasCertification)
  * @method EducationalOrganizationType setHasOfferCatalog(Property\HasOfferCatalogProperty $hasOfferCatalog)
  * @method EducationalOrganizationType setHasPOS(Property\HasPOSProperty $hasPOS)
  * @method EducationalOrganizationType setIdentifier(Property\IdentifierProperty $identifier)
  * @method EducationalOrganizationType setImage(Property\ImageProperty $image)
+ * @method EducationalOrganizationType setInteractionStatistic(Property\InteractionStatisticProperty $interactionStatistic)
  * @method EducationalOrganizationType setIsicV4(Property\IsicV4Property $isicV4)
+ * @method EducationalOrganizationType setKeywords(Property\KeywordsProperty $keywords)
  * @method EducationalOrganizationType setLegalName(Property\LegalNameProperty $legalName)
  * @method EducationalOrganizationType setLeiCode(Property\LeiCodeProperty $leiCode)
  * @method EducationalOrganizationType setLocation(Property\LocationProperty $location)
@@ -53,8 +56,10 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method EducationalOrganizationType setReview(Property\ReviewProperty $review)
  * @method EducationalOrganizationType setSameAs(Property\SameAsProperty $sameAs)
  * @method EducationalOrganizationType setSeeks(Property\SeeksProperty $seeks)
+ * @method EducationalOrganizationType setSlogan(Property\SloganProperty $slogan)
  * @method EducationalOrganizationType setSponsor(Property\SponsorProperty $sponsor)
  * @method EducationalOrganizationType setSubOrganization(Property\SubOrganizationProperty $subOrganization)
+ * @method EducationalOrganizationType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method EducationalOrganizationType setTaxID(Property\TaxIDProperty $taxID)
  * @method EducationalOrganizationType setTelephone(Property\TelephoneProperty $telephone)
  * @method EducationalOrganizationType setUrl(Property\UrlProperty $url)
@@ -69,7 +74,7 @@ class EducationalOrganizationType extends OrganizationType {
 
 	/**
 	 * Get alumni.
-	 * 
+	 *
 	 * @return Property\AlumniProperty
 	 */
 	public function getAlumni() {
@@ -78,7 +83,7 @@ class EducationalOrganizationType extends OrganizationType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -87,7 +92,7 @@ class EducationalOrganizationType extends OrganizationType {
 
 	/**
 	 * Set alumni.
-	 * 
+	 *
 	 * @param Property\AlumniProperty $alumni
 	 * @return EducationalOrganizationType
 	 */

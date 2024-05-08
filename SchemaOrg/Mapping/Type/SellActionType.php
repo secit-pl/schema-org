@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class SellActionType.
+ * The act of taking money from a buyer in exchange for goods or services rendered. An agent sells an object, product, or service to a buyer for a price. Reciprocal of BuyAction.
  * 
  * @method SellActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method SellActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -25,10 +25,12 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SellActionType setParticipant(Property\ParticipantProperty $participant)
  * @method SellActionType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method SellActionType setPrice(Property\PriceProperty $price)
+ * @method SellActionType setPriceCurrency(Property\PriceCurrencyProperty $priceCurrency)
  * @method SellActionType setPriceSpecification(Property\PriceSpecificationProperty $priceSpecification)
  * @method SellActionType setResult(Property\ResultProperty $result)
  * @method SellActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method SellActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method SellActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method SellActionType setTarget(Property\TargetProperty $target)
  * @method SellActionType setUrl(Property\UrlProperty $url)
  */
@@ -41,7 +43,7 @@ class SellActionType extends TradeActionType {
 
 	/**
 	 * Get buyer.
-	 * 
+	 *
 	 * @return Property\BuyerProperty
 	 */
 	public function getBuyer() {
@@ -50,7 +52,7 @@ class SellActionType extends TradeActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -59,7 +61,7 @@ class SellActionType extends TradeActionType {
 
 	/**
 	 * Set buyer.
-	 * 
+	 *
 	 * @param Property\BuyerProperty $buyer
 	 * @return SellActionType
 	 */

@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * ExampleOfWorkProperty class.
+ * A creative work that this work is an example/instance/realization/derivation of.
  * 
  * @method ExampleOfWorkProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class ExampleOfWorkProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class ExampleOfWorkProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

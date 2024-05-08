@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class SportsEventType.
+ * Event type: Sports event.
  * 
+ * @method SportsEventType setAbout(Property\AboutProperty $about)
  * @method SportsEventType setActor(Property\ActorProperty $actor)
  * @method SportsEventType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method SportsEventType setAggregateRating(Property\AggregateRatingProperty $aggregateRating)
@@ -19,6 +20,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SportsEventType setDirector(Property\DirectorProperty $director)
  * @method SportsEventType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
  * @method SportsEventType setDoorTime(Property\DoorTimeProperty $doorTime)
+ * @method SportsEventType setDuration(Property\DurationProperty $duration)
  * @method SportsEventType setEndDate(Property\EndDateProperty $endDate)
  * @method SportsEventType setEventStatus(Property\EventStatusProperty $eventStatus)
  * @method SportsEventType setFunder(Property\FunderProperty $funder)
@@ -26,6 +28,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SportsEventType setImage(Property\ImageProperty $image)
  * @method SportsEventType setInLanguage(Property\InLanguageProperty $inLanguage)
  * @method SportsEventType setIsAccessibleForFree(Property\IsAccessibleForFreeProperty $isAccessibleForFree)
+ * @method SportsEventType setKeywords(Property\KeywordsProperty $keywords)
  * @method SportsEventType setLocation(Property\LocationProperty $location)
  * @method SportsEventType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
  * @method SportsEventType setMaximumAttendeeCapacity(Property\MaximumAttendeeCapacityProperty $maximumAttendeeCapacity)
@@ -42,6 +45,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SportsEventType setSponsor(Property\SponsorProperty $sponsor)
  * @method SportsEventType setStartDate(Property\StartDateProperty $startDate)
  * @method SportsEventType setSubEvent(Property\SubEventProperty $subEvent)
+ * @method SportsEventType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method SportsEventType setSuperEvent(Property\SuperEventProperty $superEvent)
  * @method SportsEventType setTranslator(Property\TranslatorProperty $translator)
  * @method SportsEventType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
@@ -68,7 +72,7 @@ class SportsEventType extends EventType {
 
 	/**
 	 * Get away team.
-	 * 
+	 *
 	 * @return Property\AwayTeamProperty
 	 */
 	public function getAwayTeam() {
@@ -77,7 +81,7 @@ class SportsEventType extends EventType {
 
 	/**
 	 * Get competitor.
-	 * 
+	 *
 	 * @return Property\CompetitorProperty
 	 */
 	public function getCompetitor() {
@@ -86,7 +90,7 @@ class SportsEventType extends EventType {
 
 	/**
 	 * Get home team.
-	 * 
+	 *
 	 * @return Property\HomeTeamProperty
 	 */
 	public function getHomeTeam() {
@@ -95,7 +99,7 @@ class SportsEventType extends EventType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -104,7 +108,7 @@ class SportsEventType extends EventType {
 
 	/**
 	 * Set away team.
-	 * 
+	 *
 	 * @param Property\AwayTeamProperty $awayTeam
 	 * @return SportsEventType
 	 */
@@ -116,7 +120,7 @@ class SportsEventType extends EventType {
 
 	/**
 	 * Set competitor.
-	 * 
+	 *
 	 * @param Property\CompetitorProperty $competitor
 	 * @return SportsEventType
 	 */
@@ -128,7 +132,7 @@ class SportsEventType extends EventType {
 
 	/**
 	 * Set home team.
-	 * 
+	 *
 	 * @param Property\HomeTeamProperty $homeTeam
 	 * @return SportsEventType
 	 */

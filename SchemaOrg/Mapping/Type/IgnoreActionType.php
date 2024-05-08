@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class IgnoreActionType.
+ * The act of intentionally disregarding the object. An agent ignores an object.
  * 
  * @method IgnoreActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method IgnoreActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method IgnoreActionType setResult(Property\ResultProperty $result)
  * @method IgnoreActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method IgnoreActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method IgnoreActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method IgnoreActionType setTarget(Property\TargetProperty $target)
  * @method IgnoreActionType setUrl(Property\UrlProperty $url)
  */
@@ -34,7 +35,7 @@ class IgnoreActionType extends AssessActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

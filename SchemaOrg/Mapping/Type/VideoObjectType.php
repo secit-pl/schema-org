@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class VideoObjectType.
+ * A video file.
  * 
+ * @method VideoObjectType setAbout(Property\AboutProperty $about)
  * @method VideoObjectType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method VideoObjectType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method VideoObjectType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -37,6 +38,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method VideoObjectType setContributor(Property\ContributorProperty $contributor)
  * @method VideoObjectType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method VideoObjectType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method VideoObjectType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method VideoObjectType setCreator(Property\CreatorProperty $creator)
  * @method VideoObjectType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method VideoObjectType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -44,6 +46,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method VideoObjectType setDescription(Property\DescriptionProperty $description)
  * @method VideoObjectType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
  * @method VideoObjectType setDiscussionUrl(Property\DiscussionUrlProperty $discussionUrl)
+ * @method VideoObjectType setDuration(Property\DurationProperty $duration)
  * @method VideoObjectType setEditor(Property\EditorProperty $editor)
  * @method VideoObjectType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method VideoObjectType setEducationalUse(Property\EducationalUseProperty $educationalUse)
@@ -51,9 +54,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method VideoObjectType setEncodesCreativeWork(Property\EncodesCreativeWorkProperty $encodesCreativeWork)
  * @method VideoObjectType setEncoding(Property\EncodingProperty $encoding)
  * @method VideoObjectType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
+ * @method VideoObjectType setEndTime(Property\EndTimeProperty $endTime)
  * @method VideoObjectType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method VideoObjectType setExpires(Property\ExpiresProperty $expires)
- * @method VideoObjectType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method VideoObjectType setFunder(Property\FunderProperty $funder)
  * @method VideoObjectType setGenre(Property\GenreProperty $genre)
  * @method VideoObjectType setHasPart(Property\HasPartProperty $hasPart)
@@ -83,9 +86,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method VideoObjectType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method VideoObjectType setProducer(Property\ProducerProperty $producer)
  * @method VideoObjectType setProductionCompany(Property\ProductionCompanyProperty $productionCompany)
- * @method VideoObjectType setProvider(Property\ProviderProperty $provider)
  * @method VideoObjectType setPublication(Property\PublicationProperty $publication)
  * @method VideoObjectType setPublisher(Property\PublisherProperty $publisher)
+ * @method VideoObjectType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method VideoObjectType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method VideoObjectType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method VideoObjectType setRegionsAllowed(Property\RegionsAllowedProperty $regionsAllowed)
@@ -95,12 +98,18 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method VideoObjectType setSameAs(Property\SameAsProperty $sameAs)
  * @method VideoObjectType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method VideoObjectType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method VideoObjectType setSpatial(Property\SpatialProperty $spatial)
  * @method VideoObjectType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method VideoObjectType setSponsor(Property\SponsorProperty $sponsor)
+ * @method VideoObjectType setStartTime(Property\StartTimeProperty $startTime)
+ * @method VideoObjectType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method VideoObjectType setTemporal(Property\TemporalProperty $temporal)
  * @method VideoObjectType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method VideoObjectType setText(Property\TextProperty $text)
+ * @method VideoObjectType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method VideoObjectType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method VideoObjectType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method VideoObjectType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method VideoObjectType setTranslator(Property\TranslatorProperty $translator)
  * @method VideoObjectType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method VideoObjectType setUploadDate(Property\UploadDateProperty $uploadDate)
@@ -109,6 +118,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method VideoObjectType setVideo(Property\VideoProperty $video)
  * @method VideoObjectType setWidth(Property\WidthProperty $width)
  * @method VideoObjectType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method VideoObjectType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class VideoObjectType extends MediaObjectType {
 
@@ -133,11 +143,6 @@ class VideoObjectType extends MediaObjectType {
 	private $musicBy;
 
 	/**
-	 * @var Property\ThumbnailProperty
-	 */
-	private $thumbnail;
-
-	/**
 	 * @var Property\TranscriptProperty
 	 */
 	private $transcript;
@@ -154,7 +159,7 @@ class VideoObjectType extends MediaObjectType {
 
 	/**
 	 * Get actor.
-	 * 
+	 *
 	 * @return Property\ActorProperty
 	 */
 	public function getActor() {
@@ -163,7 +168,7 @@ class VideoObjectType extends MediaObjectType {
 
 	/**
 	 * Get caption.
-	 * 
+	 *
 	 * @return Property\CaptionProperty
 	 */
 	public function getCaption() {
@@ -172,7 +177,7 @@ class VideoObjectType extends MediaObjectType {
 
 	/**
 	 * Get director.
-	 * 
+	 *
 	 * @return Property\DirectorProperty
 	 */
 	public function getDirector() {
@@ -181,7 +186,7 @@ class VideoObjectType extends MediaObjectType {
 
 	/**
 	 * Get music by.
-	 * 
+	 *
 	 * @return Property\MusicByProperty
 	 */
 	public function getMusicBy() {
@@ -190,7 +195,7 @@ class VideoObjectType extends MediaObjectType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -198,17 +203,8 @@ class VideoObjectType extends MediaObjectType {
 	}
 
 	/**
-	 * Get thumbnail.
-	 * 
-	 * @return Property\ThumbnailProperty
-	 */
-	public function getThumbnail() {
-		return $this->thumbnail;
-	}
-
-	/**
 	 * Get transcript.
-	 * 
+	 *
 	 * @return Property\TranscriptProperty
 	 */
 	public function getTranscript() {
@@ -217,7 +213,7 @@ class VideoObjectType extends MediaObjectType {
 
 	/**
 	 * Get video frame size.
-	 * 
+	 *
 	 * @return Property\VideoFrameSizeProperty
 	 */
 	public function getVideoFrameSize() {
@@ -226,7 +222,7 @@ class VideoObjectType extends MediaObjectType {
 
 	/**
 	 * Get video quality.
-	 * 
+	 *
 	 * @return Property\VideoQualityProperty
 	 */
 	public function getVideoQuality() {
@@ -235,7 +231,7 @@ class VideoObjectType extends MediaObjectType {
 
 	/**
 	 * Set actor.
-	 * 
+	 *
 	 * @param Property\ActorProperty $actor
 	 * @return VideoObjectType
 	 */
@@ -247,7 +243,7 @@ class VideoObjectType extends MediaObjectType {
 
 	/**
 	 * Set caption.
-	 * 
+	 *
 	 * @param Property\CaptionProperty $caption
 	 * @return VideoObjectType
 	 */
@@ -259,7 +255,7 @@ class VideoObjectType extends MediaObjectType {
 
 	/**
 	 * Set director.
-	 * 
+	 *
 	 * @param Property\DirectorProperty $director
 	 * @return VideoObjectType
 	 */
@@ -271,7 +267,7 @@ class VideoObjectType extends MediaObjectType {
 
 	/**
 	 * Set music by.
-	 * 
+	 *
 	 * @param Property\MusicByProperty $musicBy
 	 * @return VideoObjectType
 	 */
@@ -282,20 +278,8 @@ class VideoObjectType extends MediaObjectType {
 	}
 
 	/**
-	 * Set thumbnail.
-	 * 
-	 * @param Property\ThumbnailProperty $thumbnail
-	 * @return VideoObjectType
-	 */
-	public function setThumbnail(Property\ThumbnailProperty $thumbnail) {
-		$this->thumbnail = $thumbnail;
-
-		return $this;
-	}
-
-	/**
 	 * Set transcript.
-	 * 
+	 *
 	 * @param Property\TranscriptProperty $transcript
 	 * @return VideoObjectType
 	 */
@@ -307,7 +291,7 @@ class VideoObjectType extends MediaObjectType {
 
 	/**
 	 * Set video frame size.
-	 * 
+	 *
 	 * @param Property\VideoFrameSizeProperty $videoFrameSize
 	 * @return VideoObjectType
 	 */
@@ -319,7 +303,7 @@ class VideoObjectType extends MediaObjectType {
 
 	/**
 	 * Set video quality.
-	 * 
+	 *
 	 * @param Property\VideoQualityProperty $videoQuality
 	 * @return VideoObjectType
 	 */

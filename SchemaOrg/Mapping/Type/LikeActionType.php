@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class LikeActionType.
+ * The act of expressing a positive sentiment about the object. An agent likes an object (a proposition, topic or theme) with participants.
  * 
  * @method LikeActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method LikeActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method LikeActionType setResult(Property\ResultProperty $result)
  * @method LikeActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method LikeActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method LikeActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method LikeActionType setTarget(Property\TargetProperty $target)
  * @method LikeActionType setUrl(Property\UrlProperty $url)
  */
@@ -34,7 +35,7 @@ class LikeActionType extends ReactActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

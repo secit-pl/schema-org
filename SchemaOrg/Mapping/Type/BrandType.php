@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class BrandType.
+ * A brand is a name used by an organization or business person for labeling a product, product group, or similar.
  * 
  * @method BrandType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method BrandType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,9 +17,10 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method BrandType setName(Property\NameProperty $name)
  * @method BrandType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method BrandType setSameAs(Property\SameAsProperty $sameAs)
+ * @method BrandType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method BrandType setUrl(Property\UrlProperty $url)
  */
-class BrandType extends ThingType {
+class BrandType extends IntangibleType {
 
 	/**
 	 * @var Property\AggregateRatingProperty
@@ -37,8 +38,13 @@ class BrandType extends ThingType {
 	private $review;
 
 	/**
+	 * @var Property\SloganProperty
+	 */
+	private $slogan;
+
+	/**
 	 * Get aggregate rating.
-	 * 
+	 *
 	 * @return Property\AggregateRatingProperty
 	 */
 	public function getAggregateRating() {
@@ -47,7 +53,7 @@ class BrandType extends ThingType {
 
 	/**
 	 * Get logo.
-	 * 
+	 *
 	 * @return Property\LogoProperty
 	 */
 	public function getLogo() {
@@ -56,7 +62,7 @@ class BrandType extends ThingType {
 
 	/**
 	 * Get review.
-	 * 
+	 *
 	 * @return Property\ReviewProperty
 	 */
 	public function getReview() {
@@ -65,7 +71,7 @@ class BrandType extends ThingType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -73,8 +79,17 @@ class BrandType extends ThingType {
 	}
 
 	/**
+	 * Get slogan.
+	 *
+	 * @return Property\SloganProperty
+	 */
+	public function getSlogan() {
+		return $this->slogan;
+	}
+
+	/**
 	 * Set aggregate rating.
-	 * 
+	 *
 	 * @param Property\AggregateRatingProperty $aggregateRating
 	 * @return BrandType
 	 */
@@ -86,7 +101,7 @@ class BrandType extends ThingType {
 
 	/**
 	 * Set logo.
-	 * 
+	 *
 	 * @param Property\LogoProperty $logo
 	 * @return BrandType
 	 */
@@ -98,12 +113,24 @@ class BrandType extends ThingType {
 
 	/**
 	 * Set review.
-	 * 
+	 *
 	 * @param Property\ReviewProperty $review
 	 * @return BrandType
 	 */
 	public function setReview(Property\ReviewProperty $review) {
 		$this->review = $review;
+
+		return $this;
+	}
+
+	/**
+	 * Set slogan.
+	 *
+	 * @param Property\SloganProperty $slogan
+	 * @return BrandType
+	 */
+	public function setSlogan(Property\SloganProperty $slogan) {
+		$this->slogan = $slogan;
 
 		return $this;
 	}

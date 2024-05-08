@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class DiabeticDietType.
+ * A diet appropriate for people with diabetes.
  * 
  * @method DiabeticDietType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method DiabeticDietType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method DiabeticDietType setName(Property\NameProperty $name)
  * @method DiabeticDietType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method DiabeticDietType setSameAs(Property\SameAsProperty $sameAs)
+ * @method DiabeticDietType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method DiabeticDietType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method DiabeticDietType setUrl(Property\UrlProperty $url)
  */
 class DiabeticDietType extends RestrictedDietType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

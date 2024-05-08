@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * HasDeliveryMethodProperty class.
+ * Method used for delivery or shipping.
  * 
  * @method HasDeliveryMethodProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class HasDeliveryMethodProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class HasDeliveryMethodProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * TicketTokenProperty class.
+ * Reference to an asset (e.g., Barcode, QR code image or PDF) usable for entrance.
  * 
  * @method TicketTokenProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class TicketTokenProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class TicketTokenProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

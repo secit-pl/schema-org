@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ContactPointType.
+ * A contact point—for example, a Customer Complaints department.
  * 
  * @method ContactPointType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method ContactPointType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,6 +17,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ContactPointType setName(Property\NameProperty $name)
  * @method ContactPointType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method ContactPointType setSameAs(Property\SameAsProperty $sameAs)
+ * @method ContactPointType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method ContactPointType setUrl(Property\UrlProperty $url)
  */
 class ContactPointType extends StructuredValueType {
@@ -68,7 +69,7 @@ class ContactPointType extends StructuredValueType {
 
 	/**
 	 * Get area served.
-	 * 
+	 *
 	 * @return Property\AreaServedProperty
 	 */
 	public function getAreaServed() {
@@ -77,7 +78,7 @@ class ContactPointType extends StructuredValueType {
 
 	/**
 	 * Get available language.
-	 * 
+	 *
 	 * @return Property\AvailableLanguageProperty
 	 */
 	public function getAvailableLanguage() {
@@ -86,7 +87,7 @@ class ContactPointType extends StructuredValueType {
 
 	/**
 	 * Get contact option.
-	 * 
+	 *
 	 * @return Property\ContactOptionProperty
 	 */
 	public function getContactOption() {
@@ -95,7 +96,7 @@ class ContactPointType extends StructuredValueType {
 
 	/**
 	 * Get contact type.
-	 * 
+	 *
 	 * @return Property\ContactTypeProperty
 	 */
 	public function getContactType() {
@@ -104,7 +105,7 @@ class ContactPointType extends StructuredValueType {
 
 	/**
 	 * Get email.
-	 * 
+	 *
 	 * @return Property\EmailProperty
 	 */
 	public function getEmail() {
@@ -113,7 +114,7 @@ class ContactPointType extends StructuredValueType {
 
 	/**
 	 * Get fax number.
-	 * 
+	 *
 	 * @return Property\FaxNumberProperty
 	 */
 	public function getFaxNumber() {
@@ -122,7 +123,7 @@ class ContactPointType extends StructuredValueType {
 
 	/**
 	 * Get hours available.
-	 * 
+	 *
 	 * @return Property\HoursAvailableProperty
 	 */
 	public function getHoursAvailable() {
@@ -131,7 +132,7 @@ class ContactPointType extends StructuredValueType {
 
 	/**
 	 * Get product supported.
-	 * 
+	 *
 	 * @return Property\ProductSupportedProperty
 	 */
 	public function getProductSupported() {
@@ -140,7 +141,7 @@ class ContactPointType extends StructuredValueType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -149,7 +150,7 @@ class ContactPointType extends StructuredValueType {
 
 	/**
 	 * Get telephone.
-	 * 
+	 *
 	 * @return Property\TelephoneProperty
 	 */
 	public function getTelephone() {
@@ -158,7 +159,7 @@ class ContactPointType extends StructuredValueType {
 
 	/**
 	 * Set area served.
-	 * 
+	 *
 	 * @param Property\AreaServedProperty $areaServed
 	 * @return ContactPointType
 	 */
@@ -170,7 +171,7 @@ class ContactPointType extends StructuredValueType {
 
 	/**
 	 * Set available language.
-	 * 
+	 *
 	 * @param Property\AvailableLanguageProperty $availableLanguage
 	 * @return ContactPointType
 	 */
@@ -182,7 +183,7 @@ class ContactPointType extends StructuredValueType {
 
 	/**
 	 * Set contact option.
-	 * 
+	 *
 	 * @param Property\ContactOptionProperty $contactOption
 	 * @return ContactPointType
 	 */
@@ -194,7 +195,7 @@ class ContactPointType extends StructuredValueType {
 
 	/**
 	 * Set contact type.
-	 * 
+	 *
 	 * @param Property\ContactTypeProperty $contactType
 	 * @return ContactPointType
 	 */
@@ -206,7 +207,7 @@ class ContactPointType extends StructuredValueType {
 
 	/**
 	 * Set email.
-	 * 
+	 *
 	 * @param Property\EmailProperty $email
 	 * @return ContactPointType
 	 */
@@ -218,7 +219,7 @@ class ContactPointType extends StructuredValueType {
 
 	/**
 	 * Set fax number.
-	 * 
+	 *
 	 * @param Property\FaxNumberProperty $faxNumber
 	 * @return ContactPointType
 	 */
@@ -230,7 +231,7 @@ class ContactPointType extends StructuredValueType {
 
 	/**
 	 * Set hours available.
-	 * 
+	 *
 	 * @param Property\HoursAvailableProperty $hoursAvailable
 	 * @return ContactPointType
 	 */
@@ -242,7 +243,7 @@ class ContactPointType extends StructuredValueType {
 
 	/**
 	 * Set product supported.
-	 * 
+	 *
 	 * @param Property\ProductSupportedProperty $productSupported
 	 * @return ContactPointType
 	 */
@@ -254,7 +255,7 @@ class ContactPointType extends StructuredValueType {
 
 	/**
 	 * Set telephone.
-	 * 
+	 *
 	 * @param Property\TelephoneProperty $telephone
 	 * @return ContactPointType
 	 */

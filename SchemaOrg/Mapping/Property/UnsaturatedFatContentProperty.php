@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * UnsaturatedFatContentProperty class.
+ * The number of grams of unsaturated fat.
  * 
  * @method UnsaturatedFatContentProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class UnsaturatedFatContentProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class UnsaturatedFatContentProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

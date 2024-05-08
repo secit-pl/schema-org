@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class AirportType.
+ * An airport.
  * 
  * @method AirportType setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method AirportType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -21,13 +21,27 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method AirportType setEvent(Property\EventProperty $event)
  * @method AirportType setFaxNumber(Property\FaxNumberProperty $faxNumber)
  * @method AirportType setGeo(Property\GeoProperty $geo)
+ * @method AirportType setGeoContains(Property\GeoContainsProperty $geoContains)
+ * @method AirportType setGeoCoveredBy(Property\GeoCoveredByProperty $geoCoveredBy)
+ * @method AirportType setGeoCovers(Property\GeoCoversProperty $geoCovers)
+ * @method AirportType setGeoCrosses(Property\GeoCrossesProperty $geoCrosses)
+ * @method AirportType setGeoDisjoint(Property\GeoDisjointProperty $geoDisjoint)
+ * @method AirportType setGeoEquals(Property\GeoEqualsProperty $geoEquals)
+ * @method AirportType setGeoIntersects(Property\GeoIntersectsProperty $geoIntersects)
+ * @method AirportType setGeoOverlaps(Property\GeoOverlapsProperty $geoOverlaps)
+ * @method AirportType setGeoTouches(Property\GeoTouchesProperty $geoTouches)
+ * @method AirportType setGeoWithin(Property\GeoWithinProperty $geoWithin)
  * @method AirportType setGlobalLocationNumber(Property\GlobalLocationNumberProperty $globalLocationNumber)
+ * @method AirportType setHasCertification(Property\HasCertificationProperty $hasCertification)
  * @method AirportType setHasMap(Property\HasMapProperty $hasMap)
  * @method AirportType setIdentifier(Property\IdentifierProperty $identifier)
  * @method AirportType setImage(Property\ImageProperty $image)
  * @method AirportType setIsAccessibleForFree(Property\IsAccessibleForFreeProperty $isAccessibleForFree)
  * @method AirportType setIsicV4(Property\IsicV4Property $isicV4)
+ * @method AirportType setKeywords(Property\KeywordsProperty $keywords)
+ * @method AirportType setLatitude(Property\LatitudeProperty $latitude)
  * @method AirportType setLogo(Property\LogoProperty $logo)
+ * @method AirportType setLongitude(Property\LongitudeProperty $longitude)
  * @method AirportType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
  * @method AirportType setMaximumAttendeeCapacity(Property\MaximumAttendeeCapacityProperty $maximumAttendeeCapacity)
  * @method AirportType setName(Property\NameProperty $name)
@@ -38,8 +52,10 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method AirportType setPublicAccess(Property\PublicAccessProperty $publicAccess)
  * @method AirportType setReview(Property\ReviewProperty $review)
  * @method AirportType setSameAs(Property\SameAsProperty $sameAs)
+ * @method AirportType setSlogan(Property\SloganProperty $slogan)
  * @method AirportType setSmokingAllowed(Property\SmokingAllowedProperty $smokingAllowed)
  * @method AirportType setSpecialOpeningHoursSpecification(Property\SpecialOpeningHoursSpecificationProperty $specialOpeningHoursSpecification)
+ * @method AirportType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method AirportType setTelephone(Property\TelephoneProperty $telephone)
  * @method AirportType setUrl(Property\UrlProperty $url)
  */
@@ -57,7 +73,7 @@ class AirportType extends CivicStructureType {
 
 	/**
 	 * Get iata code.
-	 * 
+	 *
 	 * @return Property\IataCodeProperty
 	 */
 	public function getIataCode() {
@@ -66,7 +82,7 @@ class AirportType extends CivicStructureType {
 
 	/**
 	 * Get icao code.
-	 * 
+	 *
 	 * @return Property\IcaoCodeProperty
 	 */
 	public function getIcaoCode() {
@@ -75,7 +91,7 @@ class AirportType extends CivicStructureType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -84,7 +100,7 @@ class AirportType extends CivicStructureType {
 
 	/**
 	 * Set iata code.
-	 * 
+	 *
 	 * @param Property\IataCodeProperty $iataCode
 	 * @return AirportType
 	 */
@@ -96,7 +112,7 @@ class AirportType extends CivicStructureType {
 
 	/**
 	 * Set icao code.
-	 * 
+	 *
 	 * @param Property\IcaoCodeProperty $icaoCode
 	 * @return AirportType
 	 */

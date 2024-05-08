@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * VehicleModelDateProperty class.
+ * The release date of a vehicle model (often used to differentiate versions of the same make and model).
  * 
  * @method VehicleModelDateProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class VehicleModelDateProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class VehicleModelDateProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

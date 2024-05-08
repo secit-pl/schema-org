@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class MarryActionType.
+ * The act of marrying a person.
  * 
  * @method MarryActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method MarryActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MarryActionType setResult(Property\ResultProperty $result)
  * @method MarryActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method MarryActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method MarryActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method MarryActionType setTarget(Property\TargetProperty $target)
  * @method MarryActionType setUrl(Property\UrlProperty $url)
  */
@@ -34,7 +35,7 @@ class MarryActionType extends InteractActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

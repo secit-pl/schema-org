@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ViewActionType.
+ * The act of consuming static visual content.
  * 
+ * @method ViewActionType setActionAccessibilityRequirement(Property\ActionAccessibilityRequirementProperty $actionAccessibilityRequirement)
  * @method ViewActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method ViewActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method ViewActionType setAgent(Property\AgentProperty $agent)
@@ -28,6 +29,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ViewActionType setResult(Property\ResultProperty $result)
  * @method ViewActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method ViewActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method ViewActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method ViewActionType setTarget(Property\TargetProperty $target)
  * @method ViewActionType setUrl(Property\UrlProperty $url)
  */
@@ -35,7 +37,7 @@ class ViewActionType extends ConsumeActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

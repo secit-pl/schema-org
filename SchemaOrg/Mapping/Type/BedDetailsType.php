@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class BedDetailsType.
+ * An entity holding detailed information about the available bed types, e.g. the quantity of twin beds for a hotel room. For the single case of just one bed of a certain type, you can use bed directly with a text. See also BedType (under development).
  * 
  * @method BedDetailsType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method BedDetailsType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,6 +17,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method BedDetailsType setName(Property\NameProperty $name)
  * @method BedDetailsType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method BedDetailsType setSameAs(Property\SameAsProperty $sameAs)
+ * @method BedDetailsType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method BedDetailsType setUrl(Property\UrlProperty $url)
  */
 class BedDetailsType extends IntangibleType {
@@ -33,7 +34,7 @@ class BedDetailsType extends IntangibleType {
 
 	/**
 	 * Get number of beds.
-	 * 
+	 *
 	 * @return Property\NumberOfBedsProperty
 	 */
 	public function getNumberOfBeds() {
@@ -42,7 +43,7 @@ class BedDetailsType extends IntangibleType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -51,7 +52,7 @@ class BedDetailsType extends IntangibleType {
 
 	/**
 	 * Get type of bed.
-	 * 
+	 *
 	 * @return Property\TypeOfBedProperty
 	 */
 	public function getTypeOfBed() {
@@ -60,7 +61,7 @@ class BedDetailsType extends IntangibleType {
 
 	/**
 	 * Set number of beds.
-	 * 
+	 *
 	 * @param Property\NumberOfBedsProperty $numberOfBeds
 	 * @return BedDetailsType
 	 */
@@ -72,7 +73,7 @@ class BedDetailsType extends IntangibleType {
 
 	/**
 	 * Set type of bed.
-	 * 
+	 *
 	 * @param Property\TypeOfBedProperty $typeOfBed
 	 * @return BedDetailsType
 	 */

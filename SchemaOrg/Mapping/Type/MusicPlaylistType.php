@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class MusicPlaylistType.
+ * A collection of music tracks in playlist form.
  * 
+ * @method MusicPlaylistType setAbout(Property\AboutProperty $about)
  * @method MusicPlaylistType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method MusicPlaylistType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method MusicPlaylistType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -33,6 +34,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MusicPlaylistType setContributor(Property\ContributorProperty $contributor)
  * @method MusicPlaylistType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method MusicPlaylistType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method MusicPlaylistType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method MusicPlaylistType setCreator(Property\CreatorProperty $creator)
  * @method MusicPlaylistType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method MusicPlaylistType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -44,9 +46,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MusicPlaylistType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method MusicPlaylistType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method MusicPlaylistType setEncoding(Property\EncodingProperty $encoding)
+ * @method MusicPlaylistType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method MusicPlaylistType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method MusicPlaylistType setExpires(Property\ExpiresProperty $expires)
- * @method MusicPlaylistType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method MusicPlaylistType setFunder(Property\FunderProperty $funder)
  * @method MusicPlaylistType setGenre(Property\GenreProperty $genre)
  * @method MusicPlaylistType setHasPart(Property\HasPartProperty $hasPart)
@@ -73,9 +75,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MusicPlaylistType setPosition(Property\PositionProperty $position)
  * @method MusicPlaylistType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method MusicPlaylistType setProducer(Property\ProducerProperty $producer)
- * @method MusicPlaylistType setProvider(Property\ProviderProperty $provider)
  * @method MusicPlaylistType setPublication(Property\PublicationProperty $publication)
  * @method MusicPlaylistType setPublisher(Property\PublisherProperty $publisher)
+ * @method MusicPlaylistType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method MusicPlaylistType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method MusicPlaylistType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method MusicPlaylistType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -83,18 +85,24 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MusicPlaylistType setSameAs(Property\SameAsProperty $sameAs)
  * @method MusicPlaylistType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method MusicPlaylistType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method MusicPlaylistType setSpatial(Property\SpatialProperty $spatial)
  * @method MusicPlaylistType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method MusicPlaylistType setSponsor(Property\SponsorProperty $sponsor)
+ * @method MusicPlaylistType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method MusicPlaylistType setTemporal(Property\TemporalProperty $temporal)
  * @method MusicPlaylistType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method MusicPlaylistType setText(Property\TextProperty $text)
+ * @method MusicPlaylistType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method MusicPlaylistType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method MusicPlaylistType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method MusicPlaylistType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method MusicPlaylistType setTranslator(Property\TranslatorProperty $translator)
  * @method MusicPlaylistType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method MusicPlaylistType setUrl(Property\UrlProperty $url)
  * @method MusicPlaylistType setVersion(Property\VersionProperty $version)
  * @method MusicPlaylistType setVideo(Property\VideoProperty $video)
  * @method MusicPlaylistType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method MusicPlaylistType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class MusicPlaylistType extends CreativeWorkType {
 
@@ -110,7 +118,7 @@ class MusicPlaylistType extends CreativeWorkType {
 
 	/**
 	 * Get num tracks.
-	 * 
+	 *
 	 * @return Property\NumTracksProperty
 	 */
 	public function getNumTracks() {
@@ -119,7 +127,7 @@ class MusicPlaylistType extends CreativeWorkType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -128,7 +136,7 @@ class MusicPlaylistType extends CreativeWorkType {
 
 	/**
 	 * Get track.
-	 * 
+	 *
 	 * @return Property\TrackProperty
 	 */
 	public function getTrack() {
@@ -137,7 +145,7 @@ class MusicPlaylistType extends CreativeWorkType {
 
 	/**
 	 * Set num tracks.
-	 * 
+	 *
 	 * @param Property\NumTracksProperty $numTracks
 	 * @return MusicPlaylistType
 	 */
@@ -149,7 +157,7 @@ class MusicPlaylistType extends CreativeWorkType {
 
 	/**
 	 * Set track.
-	 * 
+	 *
 	 * @param Property\TrackProperty $track
 	 * @return MusicPlaylistType
 	 */

@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class VisualArtsEventType.
+ * Event type: Visual arts event.
  * 
+ * @method VisualArtsEventType setAbout(Property\AboutProperty $about)
  * @method VisualArtsEventType setActor(Property\ActorProperty $actor)
  * @method VisualArtsEventType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method VisualArtsEventType setAggregateRating(Property\AggregateRatingProperty $aggregateRating)
@@ -19,6 +20,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method VisualArtsEventType setDirector(Property\DirectorProperty $director)
  * @method VisualArtsEventType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
  * @method VisualArtsEventType setDoorTime(Property\DoorTimeProperty $doorTime)
+ * @method VisualArtsEventType setDuration(Property\DurationProperty $duration)
  * @method VisualArtsEventType setEndDate(Property\EndDateProperty $endDate)
  * @method VisualArtsEventType setEventStatus(Property\EventStatusProperty $eventStatus)
  * @method VisualArtsEventType setFunder(Property\FunderProperty $funder)
@@ -26,6 +28,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method VisualArtsEventType setImage(Property\ImageProperty $image)
  * @method VisualArtsEventType setInLanguage(Property\InLanguageProperty $inLanguage)
  * @method VisualArtsEventType setIsAccessibleForFree(Property\IsAccessibleForFreeProperty $isAccessibleForFree)
+ * @method VisualArtsEventType setKeywords(Property\KeywordsProperty $keywords)
  * @method VisualArtsEventType setLocation(Property\LocationProperty $location)
  * @method VisualArtsEventType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
  * @method VisualArtsEventType setMaximumAttendeeCapacity(Property\MaximumAttendeeCapacityProperty $maximumAttendeeCapacity)
@@ -42,6 +45,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method VisualArtsEventType setSponsor(Property\SponsorProperty $sponsor)
  * @method VisualArtsEventType setStartDate(Property\StartDateProperty $startDate)
  * @method VisualArtsEventType setSubEvent(Property\SubEventProperty $subEvent)
+ * @method VisualArtsEventType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method VisualArtsEventType setSuperEvent(Property\SuperEventProperty $superEvent)
  * @method VisualArtsEventType setTranslator(Property\TranslatorProperty $translator)
  * @method VisualArtsEventType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
@@ -53,7 +57,7 @@ class VisualArtsEventType extends EventType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * InBroadcastLineupProperty class.
+ * The CableOrSatelliteService offering the channel.
  * 
  * @method InBroadcastLineupProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class InBroadcastLineupProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class InBroadcastLineupProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

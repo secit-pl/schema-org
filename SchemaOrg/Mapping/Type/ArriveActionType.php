@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ArriveActionType.
+ * The act of arriving at a place. An agent arrives at a destination from a fromLocation, optionally with participants.
  * 
  * @method ArriveActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method ArriveActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -28,6 +28,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ArriveActionType setResult(Property\ResultProperty $result)
  * @method ArriveActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method ArriveActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method ArriveActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method ArriveActionType setTarget(Property\TargetProperty $target)
  * @method ArriveActionType setToLocation(Property\ToLocationProperty $toLocation)
  * @method ArriveActionType setUrl(Property\UrlProperty $url)
@@ -36,7 +37,7 @@ class ArriveActionType extends MoveActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

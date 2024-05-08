@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * HonorificPrefixProperty class.
+ * An honorific prefix preceding a Person's name such as Dr/Mrs/Mr.
  * 
  * @method HonorificPrefixProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class HonorificPrefixProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class HonorificPrefixProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

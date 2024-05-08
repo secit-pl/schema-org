@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class CheckOutActionType.
+ * The act of an agent communicating (service provider, social media, etc) their departure of a previously reserved service (e.g. flight check-in) or place (e.g. hotel). Related actions: CheckInAction: The antonym of CheckOutAction. DepartAction: Unlike DepartAction, CheckOutAction implies that the agent is informing/confirming the end of a previously reserved service. CancelAction: Unlike CancelAction, CheckOutAction implies that the agent is informing/confirming the end of a previously reserved service.
  * 
+ * @method CheckOutActionType setAbout(Property\AboutProperty $about)
  * @method CheckOutActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method CheckOutActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method CheckOutActionType setAgent(Property\AgentProperty $agent)
@@ -29,6 +30,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method CheckOutActionType setResult(Property\ResultProperty $result)
  * @method CheckOutActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method CheckOutActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method CheckOutActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method CheckOutActionType setTarget(Property\TargetProperty $target)
  * @method CheckOutActionType setUrl(Property\UrlProperty $url)
  */
@@ -36,7 +38,7 @@ class CheckOutActionType extends CommunicateActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class MapType.
+ * A map.
  * 
+ * @method MapType setAbout(Property\AboutProperty $about)
  * @method MapType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method MapType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method MapType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -33,6 +34,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MapType setContributor(Property\ContributorProperty $contributor)
  * @method MapType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method MapType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method MapType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method MapType setCreator(Property\CreatorProperty $creator)
  * @method MapType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method MapType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -44,9 +46,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MapType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method MapType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method MapType setEncoding(Property\EncodingProperty $encoding)
+ * @method MapType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method MapType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method MapType setExpires(Property\ExpiresProperty $expires)
- * @method MapType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method MapType setFunder(Property\FunderProperty $funder)
  * @method MapType setGenre(Property\GenreProperty $genre)
  * @method MapType setHasPart(Property\HasPartProperty $hasPart)
@@ -73,9 +75,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MapType setPosition(Property\PositionProperty $position)
  * @method MapType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method MapType setProducer(Property\ProducerProperty $producer)
- * @method MapType setProvider(Property\ProviderProperty $provider)
  * @method MapType setPublication(Property\PublicationProperty $publication)
  * @method MapType setPublisher(Property\PublisherProperty $publisher)
+ * @method MapType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method MapType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method MapType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method MapType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -83,18 +85,24 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MapType setSameAs(Property\SameAsProperty $sameAs)
  * @method MapType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method MapType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method MapType setSpatial(Property\SpatialProperty $spatial)
  * @method MapType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method MapType setSponsor(Property\SponsorProperty $sponsor)
+ * @method MapType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method MapType setTemporal(Property\TemporalProperty $temporal)
  * @method MapType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method MapType setText(Property\TextProperty $text)
+ * @method MapType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method MapType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method MapType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method MapType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method MapType setTranslator(Property\TranslatorProperty $translator)
  * @method MapType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method MapType setUrl(Property\UrlProperty $url)
  * @method MapType setVersion(Property\VersionProperty $version)
  * @method MapType setVideo(Property\VideoProperty $video)
  * @method MapType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method MapType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class MapType extends CreativeWorkType {
 
@@ -105,7 +113,7 @@ class MapType extends CreativeWorkType {
 
 	/**
 	 * Get map type.
-	 * 
+	 *
 	 * @return Property\MapTypeProperty
 	 */
 	public function getMapType() {
@@ -114,7 +122,7 @@ class MapType extends CreativeWorkType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -123,7 +131,7 @@ class MapType extends CreativeWorkType {
 
 	/**
 	 * Set map type.
-	 * 
+	 *
 	 * @param Property\MapTypeProperty $mapType
 	 * @return MapType
 	 */

@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ChooseActionType.
+ * The act of expressing a preference from a set of options or a large or unbounded set of choices/options.
  * 
  * @method ChooseActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method ChooseActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ChooseActionType setResult(Property\ResultProperty $result)
  * @method ChooseActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method ChooseActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method ChooseActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method ChooseActionType setTarget(Property\TargetProperty $target)
  * @method ChooseActionType setUrl(Property\UrlProperty $url)
  */
@@ -39,7 +40,7 @@ class ChooseActionType extends AssessActionType {
 
 	/**
 	 * Get action option.
-	 * 
+	 *
 	 * @return Property\ActionOptionProperty
 	 */
 	public function getActionOption() {
@@ -48,7 +49,7 @@ class ChooseActionType extends AssessActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -57,7 +58,7 @@ class ChooseActionType extends AssessActionType {
 
 	/**
 	 * Set action option.
-	 * 
+	 *
 	 * @param Property\ActionOptionProperty $actionOption
 	 * @return ChooseActionType
 	 */

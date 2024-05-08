@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class PropertyValueSpecificationType.
+ * A Property value specification.
  * 
  * @method PropertyValueSpecificationType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method PropertyValueSpecificationType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,6 +17,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method PropertyValueSpecificationType setName(Property\NameProperty $name)
  * @method PropertyValueSpecificationType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method PropertyValueSpecificationType setSameAs(Property\SameAsProperty $sameAs)
+ * @method PropertyValueSpecificationType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method PropertyValueSpecificationType setUrl(Property\UrlProperty $url)
  */
 class PropertyValueSpecificationType extends IntangibleType {
@@ -78,7 +79,7 @@ class PropertyValueSpecificationType extends IntangibleType {
 
 	/**
 	 * Get default value.
-	 * 
+	 *
 	 * @return Property\DefaultValueProperty
 	 */
 	public function getDefaultValue() {
@@ -87,7 +88,7 @@ class PropertyValueSpecificationType extends IntangibleType {
 
 	/**
 	 * Get max value.
-	 * 
+	 *
 	 * @return Property\MaxValueProperty
 	 */
 	public function getMaxValue() {
@@ -96,7 +97,7 @@ class PropertyValueSpecificationType extends IntangibleType {
 
 	/**
 	 * Get min value.
-	 * 
+	 *
 	 * @return Property\MinValueProperty
 	 */
 	public function getMinValue() {
@@ -105,7 +106,7 @@ class PropertyValueSpecificationType extends IntangibleType {
 
 	/**
 	 * Get multiple values.
-	 * 
+	 *
 	 * @return Property\MultipleValuesProperty
 	 */
 	public function getMultipleValues() {
@@ -114,7 +115,7 @@ class PropertyValueSpecificationType extends IntangibleType {
 
 	/**
 	 * Get readonly value.
-	 * 
+	 *
 	 * @return Property\ReadonlyValueProperty
 	 */
 	public function getReadonlyValue() {
@@ -123,7 +124,7 @@ class PropertyValueSpecificationType extends IntangibleType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -132,7 +133,7 @@ class PropertyValueSpecificationType extends IntangibleType {
 
 	/**
 	 * Get step value.
-	 * 
+	 *
 	 * @return Property\StepValueProperty
 	 */
 	public function getStepValue() {
@@ -141,7 +142,7 @@ class PropertyValueSpecificationType extends IntangibleType {
 
 	/**
 	 * Get value max length.
-	 * 
+	 *
 	 * @return Property\ValueMaxLengthProperty
 	 */
 	public function getValueMaxLength() {
@@ -150,7 +151,7 @@ class PropertyValueSpecificationType extends IntangibleType {
 
 	/**
 	 * Get value min length.
-	 * 
+	 *
 	 * @return Property\ValueMinLengthProperty
 	 */
 	public function getValueMinLength() {
@@ -159,7 +160,7 @@ class PropertyValueSpecificationType extends IntangibleType {
 
 	/**
 	 * Get value name.
-	 * 
+	 *
 	 * @return Property\ValueNameProperty
 	 */
 	public function getValueName() {
@@ -168,7 +169,7 @@ class PropertyValueSpecificationType extends IntangibleType {
 
 	/**
 	 * Get value pattern.
-	 * 
+	 *
 	 * @return Property\ValuePatternProperty
 	 */
 	public function getValuePattern() {
@@ -177,7 +178,7 @@ class PropertyValueSpecificationType extends IntangibleType {
 
 	/**
 	 * Get value required.
-	 * 
+	 *
 	 * @return Property\ValueRequiredProperty
 	 */
 	public function getValueRequired() {
@@ -186,7 +187,7 @@ class PropertyValueSpecificationType extends IntangibleType {
 
 	/**
 	 * Set default value.
-	 * 
+	 *
 	 * @param Property\DefaultValueProperty $defaultValue
 	 * @return PropertyValueSpecificationType
 	 */
@@ -198,7 +199,7 @@ class PropertyValueSpecificationType extends IntangibleType {
 
 	/**
 	 * Set max value.
-	 * 
+	 *
 	 * @param Property\MaxValueProperty $maxValue
 	 * @return PropertyValueSpecificationType
 	 */
@@ -210,7 +211,7 @@ class PropertyValueSpecificationType extends IntangibleType {
 
 	/**
 	 * Set min value.
-	 * 
+	 *
 	 * @param Property\MinValueProperty $minValue
 	 * @return PropertyValueSpecificationType
 	 */
@@ -222,7 +223,7 @@ class PropertyValueSpecificationType extends IntangibleType {
 
 	/**
 	 * Set multiple values.
-	 * 
+	 *
 	 * @param Property\MultipleValuesProperty $multipleValues
 	 * @return PropertyValueSpecificationType
 	 */
@@ -234,7 +235,7 @@ class PropertyValueSpecificationType extends IntangibleType {
 
 	/**
 	 * Set readonly value.
-	 * 
+	 *
 	 * @param Property\ReadonlyValueProperty $readonlyValue
 	 * @return PropertyValueSpecificationType
 	 */
@@ -246,7 +247,7 @@ class PropertyValueSpecificationType extends IntangibleType {
 
 	/**
 	 * Set step value.
-	 * 
+	 *
 	 * @param Property\StepValueProperty $stepValue
 	 * @return PropertyValueSpecificationType
 	 */
@@ -258,7 +259,7 @@ class PropertyValueSpecificationType extends IntangibleType {
 
 	/**
 	 * Set value max length.
-	 * 
+	 *
 	 * @param Property\ValueMaxLengthProperty $valueMaxLength
 	 * @return PropertyValueSpecificationType
 	 */
@@ -270,7 +271,7 @@ class PropertyValueSpecificationType extends IntangibleType {
 
 	/**
 	 * Set value min length.
-	 * 
+	 *
 	 * @param Property\ValueMinLengthProperty $valueMinLength
 	 * @return PropertyValueSpecificationType
 	 */
@@ -282,7 +283,7 @@ class PropertyValueSpecificationType extends IntangibleType {
 
 	/**
 	 * Set value name.
-	 * 
+	 *
 	 * @param Property\ValueNameProperty $valueName
 	 * @return PropertyValueSpecificationType
 	 */
@@ -294,7 +295,7 @@ class PropertyValueSpecificationType extends IntangibleType {
 
 	/**
 	 * Set value pattern.
-	 * 
+	 *
 	 * @param Property\ValuePatternProperty $valuePattern
 	 * @return PropertyValueSpecificationType
 	 */
@@ -306,7 +307,7 @@ class PropertyValueSpecificationType extends IntangibleType {
 
 	/**
 	 * Set value required.
-	 * 
+	 *
 	 * @param Property\ValueRequiredProperty $valueRequired
 	 * @return PropertyValueSpecificationType
 	 */

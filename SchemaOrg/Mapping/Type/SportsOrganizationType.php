@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class SportsOrganizationType.
+ * Represents the collection of all sports organizations, including sports teams, governing bodies, and sports associations.
  * 
  * @method SportsOrganizationType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method SportsOrganizationType setAddress(Property\AddressProperty $address)
@@ -30,11 +30,14 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SportsOrganizationType setFoundingLocation(Property\FoundingLocationProperty $foundingLocation)
  * @method SportsOrganizationType setFunder(Property\FunderProperty $funder)
  * @method SportsOrganizationType setGlobalLocationNumber(Property\GlobalLocationNumberProperty $globalLocationNumber)
+ * @method SportsOrganizationType setHasCertification(Property\HasCertificationProperty $hasCertification)
  * @method SportsOrganizationType setHasOfferCatalog(Property\HasOfferCatalogProperty $hasOfferCatalog)
  * @method SportsOrganizationType setHasPOS(Property\HasPOSProperty $hasPOS)
  * @method SportsOrganizationType setIdentifier(Property\IdentifierProperty $identifier)
  * @method SportsOrganizationType setImage(Property\ImageProperty $image)
+ * @method SportsOrganizationType setInteractionStatistic(Property\InteractionStatisticProperty $interactionStatistic)
  * @method SportsOrganizationType setIsicV4(Property\IsicV4Property $isicV4)
+ * @method SportsOrganizationType setKeywords(Property\KeywordsProperty $keywords)
  * @method SportsOrganizationType setLegalName(Property\LegalNameProperty $legalName)
  * @method SportsOrganizationType setLeiCode(Property\LeiCodeProperty $leiCode)
  * @method SportsOrganizationType setLocation(Property\LocationProperty $location)
@@ -53,8 +56,10 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SportsOrganizationType setReview(Property\ReviewProperty $review)
  * @method SportsOrganizationType setSameAs(Property\SameAsProperty $sameAs)
  * @method SportsOrganizationType setSeeks(Property\SeeksProperty $seeks)
+ * @method SportsOrganizationType setSlogan(Property\SloganProperty $slogan)
  * @method SportsOrganizationType setSponsor(Property\SponsorProperty $sponsor)
  * @method SportsOrganizationType setSubOrganization(Property\SubOrganizationProperty $subOrganization)
+ * @method SportsOrganizationType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method SportsOrganizationType setTaxID(Property\TaxIDProperty $taxID)
  * @method SportsOrganizationType setTelephone(Property\TelephoneProperty $telephone)
  * @method SportsOrganizationType setUrl(Property\UrlProperty $url)
@@ -63,37 +68,11 @@ use SecIT\SchemaOrg\Mapping\Property;
 class SportsOrganizationType extends OrganizationType {
 
 	/**
-	 * @var Property\SportProperty
-	 */
-	private $sport;
-
-	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
 		return 'https://schema.org/SportsOrganization';
-	}
-
-	/**
-	 * Get sport.
-	 * 
-	 * @return Property\SportProperty
-	 */
-	public function getSport() {
-		return $this->sport;
-	}
-
-	/**
-	 * Set sport.
-	 * 
-	 * @param Property\SportProperty $sport
-	 * @return SportsOrganizationType
-	 */
-	public function setSport(Property\SportProperty $sport) {
-		$this->sport = $sport;
-
-		return $this;
 	}
 }

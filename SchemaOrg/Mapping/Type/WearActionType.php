@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class WearActionType.
+ * The act of dressing oneself in clothing.
  * 
+ * @method WearActionType setActionAccessibilityRequirement(Property\ActionAccessibilityRequirementProperty $actionAccessibilityRequirement)
  * @method WearActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method WearActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method WearActionType setAgent(Property\AgentProperty $agent)
@@ -28,6 +29,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method WearActionType setResult(Property\ResultProperty $result)
  * @method WearActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method WearActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method WearActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method WearActionType setTarget(Property\TargetProperty $target)
  * @method WearActionType setUrl(Property\UrlProperty $url)
  */
@@ -35,7 +37,7 @@ class WearActionType extends UseActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

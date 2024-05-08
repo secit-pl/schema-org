@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class WPAdBlockType.
+ * An advertising section of the page.
  * 
+ * @method WPAdBlockType setAbout(Property\AboutProperty $about)
  * @method WPAdBlockType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method WPAdBlockType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method WPAdBlockType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -33,7 +34,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method WPAdBlockType setContributor(Property\ContributorProperty $contributor)
  * @method WPAdBlockType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method WPAdBlockType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method WPAdBlockType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method WPAdBlockType setCreator(Property\CreatorProperty $creator)
+ * @method WPAdBlockType setCssSelector(Property\CssSelectorProperty $cssSelector)
  * @method WPAdBlockType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method WPAdBlockType setDateModified(Property\DateModifiedProperty $dateModified)
  * @method WPAdBlockType setDatePublished(Property\DatePublishedProperty $datePublished)
@@ -44,9 +47,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method WPAdBlockType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method WPAdBlockType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method WPAdBlockType setEncoding(Property\EncodingProperty $encoding)
+ * @method WPAdBlockType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method WPAdBlockType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method WPAdBlockType setExpires(Property\ExpiresProperty $expires)
- * @method WPAdBlockType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method WPAdBlockType setFunder(Property\FunderProperty $funder)
  * @method WPAdBlockType setGenre(Property\GenreProperty $genre)
  * @method WPAdBlockType setHasPart(Property\HasPartProperty $hasPart)
@@ -73,9 +76,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method WPAdBlockType setPosition(Property\PositionProperty $position)
  * @method WPAdBlockType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method WPAdBlockType setProducer(Property\ProducerProperty $producer)
- * @method WPAdBlockType setProvider(Property\ProviderProperty $provider)
  * @method WPAdBlockType setPublication(Property\PublicationProperty $publication)
  * @method WPAdBlockType setPublisher(Property\PublisherProperty $publisher)
+ * @method WPAdBlockType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method WPAdBlockType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method WPAdBlockType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method WPAdBlockType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -83,24 +86,31 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method WPAdBlockType setSameAs(Property\SameAsProperty $sameAs)
  * @method WPAdBlockType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method WPAdBlockType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method WPAdBlockType setSpatial(Property\SpatialProperty $spatial)
  * @method WPAdBlockType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method WPAdBlockType setSponsor(Property\SponsorProperty $sponsor)
+ * @method WPAdBlockType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method WPAdBlockType setTemporal(Property\TemporalProperty $temporal)
  * @method WPAdBlockType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method WPAdBlockType setText(Property\TextProperty $text)
+ * @method WPAdBlockType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method WPAdBlockType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method WPAdBlockType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method WPAdBlockType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method WPAdBlockType setTranslator(Property\TranslatorProperty $translator)
  * @method WPAdBlockType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method WPAdBlockType setUrl(Property\UrlProperty $url)
  * @method WPAdBlockType setVersion(Property\VersionProperty $version)
  * @method WPAdBlockType setVideo(Property\VideoProperty $video)
  * @method WPAdBlockType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method WPAdBlockType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
+ * @method WPAdBlockType setXpath(Property\XpathProperty $xpath)
  */
 class WPAdBlockType extends WebPageElementType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

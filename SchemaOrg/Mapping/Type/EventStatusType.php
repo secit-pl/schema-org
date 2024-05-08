@@ -5,27 +5,27 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class EventStatusType.
+ * EventStatusType is an enumeration type whose instances represent several states that an Event may be in.
  * 
- * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\EventStatusType instead.
- * 
- * @method EventStatusType setAdditionalType(Property\AdditionalType $additionalType)
- * @method EventStatusType setAlternateName(Property\AlternateName $alternateName)
- * @method EventStatusType setDescription(Property\Description $description)
- * @method EventStatusType setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method EventStatusType setIdentifier(Property\Identifier $identifier)
- * @method EventStatusType setImage(Property\Image $image)
- * @method EventStatusType setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method EventStatusType setName(Property\Name $name)
- * @method EventStatusType setPotentialAction(Property\PotentialAction $potentialAction)
- * @method EventStatusType setSameAs(Property\SameAs $sameAs)
- * @method EventStatusType setUrl(Property\Url $url)
+ * @method EventStatusType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
+ * @method EventStatusType setAlternateName(Property\AlternateNameProperty $alternateName)
+ * @method EventStatusType setDescription(Property\DescriptionProperty $description)
+ * @method EventStatusType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
+ * @method EventStatusType setIdentifier(Property\IdentifierProperty $identifier)
+ * @method EventStatusType setImage(Property\ImageProperty $image)
+ * @method EventStatusType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
+ * @method EventStatusType setName(Property\NameProperty $name)
+ * @method EventStatusType setPotentialAction(Property\PotentialActionProperty $potentialAction)
+ * @method EventStatusType setSameAs(Property\SameAsProperty $sameAs)
+ * @method EventStatusType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method EventStatusType setSupersededBy(Property\SupersededByProperty $supersededBy)
+ * @method EventStatusType setUrl(Property\UrlProperty $url)
  */
-class EventStatusType extends Enumeration {
+class EventStatusType extends StatusEnumerationType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

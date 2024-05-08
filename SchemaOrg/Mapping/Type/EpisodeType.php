@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class EpisodeType.
+ * A media episode (e.g. TV, radio, video game) which can be part of a series or season.
  * 
+ * @method EpisodeType setAbout(Property\AboutProperty $about)
  * @method EpisodeType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method EpisodeType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method EpisodeType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -33,6 +34,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method EpisodeType setContributor(Property\ContributorProperty $contributor)
  * @method EpisodeType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method EpisodeType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method EpisodeType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method EpisodeType setCreator(Property\CreatorProperty $creator)
  * @method EpisodeType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method EpisodeType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -44,9 +46,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method EpisodeType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method EpisodeType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method EpisodeType setEncoding(Property\EncodingProperty $encoding)
+ * @method EpisodeType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method EpisodeType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method EpisodeType setExpires(Property\ExpiresProperty $expires)
- * @method EpisodeType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method EpisodeType setFunder(Property\FunderProperty $funder)
  * @method EpisodeType setGenre(Property\GenreProperty $genre)
  * @method EpisodeType setHasPart(Property\HasPartProperty $hasPart)
@@ -73,9 +75,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method EpisodeType setPosition(Property\PositionProperty $position)
  * @method EpisodeType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method EpisodeType setProducer(Property\ProducerProperty $producer)
- * @method EpisodeType setProvider(Property\ProviderProperty $provider)
  * @method EpisodeType setPublication(Property\PublicationProperty $publication)
  * @method EpisodeType setPublisher(Property\PublisherProperty $publisher)
+ * @method EpisodeType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method EpisodeType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method EpisodeType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method EpisodeType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -83,18 +85,24 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method EpisodeType setSameAs(Property\SameAsProperty $sameAs)
  * @method EpisodeType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method EpisodeType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method EpisodeType setSpatial(Property\SpatialProperty $spatial)
  * @method EpisodeType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method EpisodeType setSponsor(Property\SponsorProperty $sponsor)
+ * @method EpisodeType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method EpisodeType setTemporal(Property\TemporalProperty $temporal)
  * @method EpisodeType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method EpisodeType setText(Property\TextProperty $text)
+ * @method EpisodeType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method EpisodeType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method EpisodeType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method EpisodeType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method EpisodeType setTranslator(Property\TranslatorProperty $translator)
  * @method EpisodeType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method EpisodeType setUrl(Property\UrlProperty $url)
  * @method EpisodeType setVersion(Property\VersionProperty $version)
  * @method EpisodeType setVideo(Property\VideoProperty $video)
  * @method EpisodeType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method EpisodeType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class EpisodeType extends CreativeWorkType {
 
@@ -107,6 +115,11 @@ class EpisodeType extends CreativeWorkType {
 	 * @var Property\DirectorProperty
 	 */
 	private $director;
+
+	/**
+	 * @var Property\DurationProperty
+	 */
+	private $duration;
 
 	/**
 	 * @var Property\EpisodeNumberProperty
@@ -140,7 +153,7 @@ class EpisodeType extends CreativeWorkType {
 
 	/**
 	 * Get actor.
-	 * 
+	 *
 	 * @return Property\ActorProperty
 	 */
 	public function getActor() {
@@ -149,7 +162,7 @@ class EpisodeType extends CreativeWorkType {
 
 	/**
 	 * Get director.
-	 * 
+	 *
 	 * @return Property\DirectorProperty
 	 */
 	public function getDirector() {
@@ -157,8 +170,17 @@ class EpisodeType extends CreativeWorkType {
 	}
 
 	/**
+	 * Get duration.
+	 *
+	 * @return Property\DurationProperty
+	 */
+	public function getDuration() {
+		return $this->duration;
+	}
+
+	/**
 	 * Get episode number.
-	 * 
+	 *
 	 * @return Property\EpisodeNumberProperty
 	 */
 	public function getEpisodeNumber() {
@@ -167,7 +189,7 @@ class EpisodeType extends CreativeWorkType {
 
 	/**
 	 * Get music by.
-	 * 
+	 *
 	 * @return Property\MusicByProperty
 	 */
 	public function getMusicBy() {
@@ -176,7 +198,7 @@ class EpisodeType extends CreativeWorkType {
 
 	/**
 	 * Get part of season.
-	 * 
+	 *
 	 * @return Property\PartOfSeasonProperty
 	 */
 	public function getPartOfSeason() {
@@ -185,7 +207,7 @@ class EpisodeType extends CreativeWorkType {
 
 	/**
 	 * Get part of series.
-	 * 
+	 *
 	 * @return Property\PartOfSeriesProperty
 	 */
 	public function getPartOfSeries() {
@@ -194,7 +216,7 @@ class EpisodeType extends CreativeWorkType {
 
 	/**
 	 * Get production company.
-	 * 
+	 *
 	 * @return Property\ProductionCompanyProperty
 	 */
 	public function getProductionCompany() {
@@ -203,7 +225,7 @@ class EpisodeType extends CreativeWorkType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -212,7 +234,7 @@ class EpisodeType extends CreativeWorkType {
 
 	/**
 	 * Get trailer.
-	 * 
+	 *
 	 * @return Property\TrailerProperty
 	 */
 	public function getTrailer() {
@@ -221,7 +243,7 @@ class EpisodeType extends CreativeWorkType {
 
 	/**
 	 * Set actor.
-	 * 
+	 *
 	 * @param Property\ActorProperty $actor
 	 * @return EpisodeType
 	 */
@@ -233,7 +255,7 @@ class EpisodeType extends CreativeWorkType {
 
 	/**
 	 * Set director.
-	 * 
+	 *
 	 * @param Property\DirectorProperty $director
 	 * @return EpisodeType
 	 */
@@ -244,8 +266,20 @@ class EpisodeType extends CreativeWorkType {
 	}
 
 	/**
+	 * Set duration.
+	 *
+	 * @param Property\DurationProperty $duration
+	 * @return EpisodeType
+	 */
+	public function setDuration(Property\DurationProperty $duration) {
+		$this->duration = $duration;
+
+		return $this;
+	}
+
+	/**
 	 * Set episode number.
-	 * 
+	 *
 	 * @param Property\EpisodeNumberProperty $episodeNumber
 	 * @return EpisodeType
 	 */
@@ -257,7 +291,7 @@ class EpisodeType extends CreativeWorkType {
 
 	/**
 	 * Set music by.
-	 * 
+	 *
 	 * @param Property\MusicByProperty $musicBy
 	 * @return EpisodeType
 	 */
@@ -269,7 +303,7 @@ class EpisodeType extends CreativeWorkType {
 
 	/**
 	 * Set part of season.
-	 * 
+	 *
 	 * @param Property\PartOfSeasonProperty $partOfSeason
 	 * @return EpisodeType
 	 */
@@ -281,7 +315,7 @@ class EpisodeType extends CreativeWorkType {
 
 	/**
 	 * Set part of series.
-	 * 
+	 *
 	 * @param Property\PartOfSeriesProperty $partOfSeries
 	 * @return EpisodeType
 	 */
@@ -293,7 +327,7 @@ class EpisodeType extends CreativeWorkType {
 
 	/**
 	 * Set production company.
-	 * 
+	 *
 	 * @param Property\ProductionCompanyProperty $productionCompany
 	 * @return EpisodeType
 	 */
@@ -305,7 +339,7 @@ class EpisodeType extends CreativeWorkType {
 
 	/**
 	 * Set trailer.
-	 * 
+	 *
 	 * @param Property\TrailerProperty $trailer
 	 * @return EpisodeType
 	 */

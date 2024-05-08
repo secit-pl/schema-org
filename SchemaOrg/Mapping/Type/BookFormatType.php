@@ -5,27 +5,27 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class BookFormatType.
+ * The publication format of the book.
  * 
- * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\BookFormatType instead.
- * 
- * @method BookFormatType setAdditionalType(Property\AdditionalType $additionalType)
- * @method BookFormatType setAlternateName(Property\AlternateName $alternateName)
- * @method BookFormatType setDescription(Property\Description $description)
- * @method BookFormatType setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method BookFormatType setIdentifier(Property\Identifier $identifier)
- * @method BookFormatType setImage(Property\Image $image)
- * @method BookFormatType setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method BookFormatType setName(Property\Name $name)
- * @method BookFormatType setPotentialAction(Property\PotentialAction $potentialAction)
- * @method BookFormatType setSameAs(Property\SameAs $sameAs)
- * @method BookFormatType setUrl(Property\Url $url)
+ * @method BookFormatType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
+ * @method BookFormatType setAlternateName(Property\AlternateNameProperty $alternateName)
+ * @method BookFormatType setDescription(Property\DescriptionProperty $description)
+ * @method BookFormatType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
+ * @method BookFormatType setIdentifier(Property\IdentifierProperty $identifier)
+ * @method BookFormatType setImage(Property\ImageProperty $image)
+ * @method BookFormatType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
+ * @method BookFormatType setName(Property\NameProperty $name)
+ * @method BookFormatType setPotentialAction(Property\PotentialActionProperty $potentialAction)
+ * @method BookFormatType setSameAs(Property\SameAsProperty $sameAs)
+ * @method BookFormatType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method BookFormatType setSupersededBy(Property\SupersededByProperty $supersededBy)
+ * @method BookFormatType setUrl(Property\UrlProperty $url)
  */
-class BookFormatType extends Enumeration {
+class BookFormatType extends EnumerationType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

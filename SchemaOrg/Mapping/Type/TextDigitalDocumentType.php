@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class TextDigitalDocumentType.
+ * A file composed primarily of text.
  * 
+ * @method TextDigitalDocumentType setAbout(Property\AboutProperty $about)
  * @method TextDigitalDocumentType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method TextDigitalDocumentType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method TextDigitalDocumentType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -33,6 +34,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method TextDigitalDocumentType setContributor(Property\ContributorProperty $contributor)
  * @method TextDigitalDocumentType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method TextDigitalDocumentType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method TextDigitalDocumentType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method TextDigitalDocumentType setCreator(Property\CreatorProperty $creator)
  * @method TextDigitalDocumentType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method TextDigitalDocumentType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -44,9 +46,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method TextDigitalDocumentType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method TextDigitalDocumentType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method TextDigitalDocumentType setEncoding(Property\EncodingProperty $encoding)
+ * @method TextDigitalDocumentType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method TextDigitalDocumentType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method TextDigitalDocumentType setExpires(Property\ExpiresProperty $expires)
- * @method TextDigitalDocumentType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method TextDigitalDocumentType setFunder(Property\FunderProperty $funder)
  * @method TextDigitalDocumentType setGenre(Property\GenreProperty $genre)
  * @method TextDigitalDocumentType setHasDigitalDocumentPermission(Property\HasDigitalDocumentPermissionProperty $hasDigitalDocumentPermission)
@@ -74,9 +76,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method TextDigitalDocumentType setPosition(Property\PositionProperty $position)
  * @method TextDigitalDocumentType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method TextDigitalDocumentType setProducer(Property\ProducerProperty $producer)
- * @method TextDigitalDocumentType setProvider(Property\ProviderProperty $provider)
  * @method TextDigitalDocumentType setPublication(Property\PublicationProperty $publication)
  * @method TextDigitalDocumentType setPublisher(Property\PublisherProperty $publisher)
+ * @method TextDigitalDocumentType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method TextDigitalDocumentType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method TextDigitalDocumentType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method TextDigitalDocumentType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -84,24 +86,30 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method TextDigitalDocumentType setSameAs(Property\SameAsProperty $sameAs)
  * @method TextDigitalDocumentType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method TextDigitalDocumentType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method TextDigitalDocumentType setSpatial(Property\SpatialProperty $spatial)
  * @method TextDigitalDocumentType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method TextDigitalDocumentType setSponsor(Property\SponsorProperty $sponsor)
+ * @method TextDigitalDocumentType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method TextDigitalDocumentType setTemporal(Property\TemporalProperty $temporal)
  * @method TextDigitalDocumentType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method TextDigitalDocumentType setText(Property\TextProperty $text)
+ * @method TextDigitalDocumentType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method TextDigitalDocumentType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method TextDigitalDocumentType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method TextDigitalDocumentType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method TextDigitalDocumentType setTranslator(Property\TranslatorProperty $translator)
  * @method TextDigitalDocumentType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method TextDigitalDocumentType setUrl(Property\UrlProperty $url)
  * @method TextDigitalDocumentType setVersion(Property\VersionProperty $version)
  * @method TextDigitalDocumentType setVideo(Property\VideoProperty $video)
  * @method TextDigitalDocumentType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method TextDigitalDocumentType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class TextDigitalDocumentType extends DigitalDocumentType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

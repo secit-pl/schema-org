@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class CDFormatType.
+ * CDFormat.
  * 
  * @method CDFormatType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method CDFormatType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method CDFormatType setName(Property\NameProperty $name)
  * @method CDFormatType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method CDFormatType setSameAs(Property\SameAsProperty $sameAs)
+ * @method CDFormatType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method CDFormatType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method CDFormatType setUrl(Property\UrlProperty $url)
  */
 class CDFormatType extends MusicReleaseFormatType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

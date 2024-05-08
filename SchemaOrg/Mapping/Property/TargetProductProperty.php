@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * TargetProductProperty class.
+ * Target Operating System / Product to which the code applies. If applies to several versions, just the product name can be used.
  * 
  * @method TargetProductProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class TargetProductProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class TargetProductProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

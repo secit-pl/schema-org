@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class PaymentCompleteType.
+ * The payment has been received and processed.
  * 
  * @method PaymentCompleteType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method PaymentCompleteType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method PaymentCompleteType setName(Property\NameProperty $name)
  * @method PaymentCompleteType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method PaymentCompleteType setSameAs(Property\SameAsProperty $sameAs)
+ * @method PaymentCompleteType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method PaymentCompleteType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method PaymentCompleteType setUrl(Property\UrlProperty $url)
  */
 class PaymentCompleteType extends PaymentStatusType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

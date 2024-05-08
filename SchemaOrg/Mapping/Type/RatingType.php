@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class RatingType.
+ * A rating is an evaluation on a numeric scale, such as 1 to 5 stars.
  * 
  * @method RatingType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method RatingType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,6 +17,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method RatingType setName(Property\NameProperty $name)
  * @method RatingType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method RatingType setSameAs(Property\SameAsProperty $sameAs)
+ * @method RatingType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method RatingType setUrl(Property\UrlProperty $url)
  */
 class RatingType extends IntangibleType {
@@ -37,13 +38,18 @@ class RatingType extends IntangibleType {
 	private $ratingValue;
 
 	/**
+	 * @var Property\ReviewAspectProperty
+	 */
+	private $reviewAspect;
+
+	/**
 	 * @var Property\WorstRatingProperty
 	 */
 	private $worstRating;
 
 	/**
 	 * Get author.
-	 * 
+	 *
 	 * @return Property\AuthorProperty
 	 */
 	public function getAuthor() {
@@ -52,7 +58,7 @@ class RatingType extends IntangibleType {
 
 	/**
 	 * Get best rating.
-	 * 
+	 *
 	 * @return Property\BestRatingProperty
 	 */
 	public function getBestRating() {
@@ -61,7 +67,7 @@ class RatingType extends IntangibleType {
 
 	/**
 	 * Get rating value.
-	 * 
+	 *
 	 * @return Property\RatingValueProperty
 	 */
 	public function getRatingValue() {
@@ -69,8 +75,17 @@ class RatingType extends IntangibleType {
 	}
 
 	/**
+	 * Get review aspect.
+	 *
+	 * @return Property\ReviewAspectProperty
+	 */
+	public function getReviewAspect() {
+		return $this->reviewAspect;
+	}
+
+	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -79,7 +94,7 @@ class RatingType extends IntangibleType {
 
 	/**
 	 * Get worst rating.
-	 * 
+	 *
 	 * @return Property\WorstRatingProperty
 	 */
 	public function getWorstRating() {
@@ -88,7 +103,7 @@ class RatingType extends IntangibleType {
 
 	/**
 	 * Set author.
-	 * 
+	 *
 	 * @param Property\AuthorProperty $author
 	 * @return RatingType
 	 */
@@ -100,7 +115,7 @@ class RatingType extends IntangibleType {
 
 	/**
 	 * Set best rating.
-	 * 
+	 *
 	 * @param Property\BestRatingProperty $bestRating
 	 * @return RatingType
 	 */
@@ -112,7 +127,7 @@ class RatingType extends IntangibleType {
 
 	/**
 	 * Set rating value.
-	 * 
+	 *
 	 * @param Property\RatingValueProperty $ratingValue
 	 * @return RatingType
 	 */
@@ -123,8 +138,20 @@ class RatingType extends IntangibleType {
 	}
 
 	/**
+	 * Set review aspect.
+	 *
+	 * @param Property\ReviewAspectProperty $reviewAspect
+	 * @return RatingType
+	 */
+	public function setReviewAspect(Property\ReviewAspectProperty $reviewAspect) {
+		$this->reviewAspect = $reviewAspect;
+
+		return $this;
+	}
+
+	/**
 	 * Set worst rating.
-	 * 
+	 *
 	 * @param Property\WorstRatingProperty $worstRating
 	 * @return RatingType
 	 */

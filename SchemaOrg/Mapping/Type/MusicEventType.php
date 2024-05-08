@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class MusicEventType.
+ * Event type: Music event.
  * 
+ * @method MusicEventType setAbout(Property\AboutProperty $about)
  * @method MusicEventType setActor(Property\ActorProperty $actor)
  * @method MusicEventType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method MusicEventType setAggregateRating(Property\AggregateRatingProperty $aggregateRating)
@@ -19,6 +20,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MusicEventType setDirector(Property\DirectorProperty $director)
  * @method MusicEventType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
  * @method MusicEventType setDoorTime(Property\DoorTimeProperty $doorTime)
+ * @method MusicEventType setDuration(Property\DurationProperty $duration)
  * @method MusicEventType setEndDate(Property\EndDateProperty $endDate)
  * @method MusicEventType setEventStatus(Property\EventStatusProperty $eventStatus)
  * @method MusicEventType setFunder(Property\FunderProperty $funder)
@@ -26,6 +28,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MusicEventType setImage(Property\ImageProperty $image)
  * @method MusicEventType setInLanguage(Property\InLanguageProperty $inLanguage)
  * @method MusicEventType setIsAccessibleForFree(Property\IsAccessibleForFreeProperty $isAccessibleForFree)
+ * @method MusicEventType setKeywords(Property\KeywordsProperty $keywords)
  * @method MusicEventType setLocation(Property\LocationProperty $location)
  * @method MusicEventType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
  * @method MusicEventType setMaximumAttendeeCapacity(Property\MaximumAttendeeCapacityProperty $maximumAttendeeCapacity)
@@ -42,6 +45,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MusicEventType setSponsor(Property\SponsorProperty $sponsor)
  * @method MusicEventType setStartDate(Property\StartDateProperty $startDate)
  * @method MusicEventType setSubEvent(Property\SubEventProperty $subEvent)
+ * @method MusicEventType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method MusicEventType setSuperEvent(Property\SuperEventProperty $superEvent)
  * @method MusicEventType setTranslator(Property\TranslatorProperty $translator)
  * @method MusicEventType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
@@ -53,7 +57,7 @@ class MusicEventType extends EventType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

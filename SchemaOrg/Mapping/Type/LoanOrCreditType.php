@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class LoanOrCreditType.
+ * A financial product for the loaning of an amount of money, or line of credit, under agreed terms and charges.
  * 
  * @method LoanOrCreditType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method LoanOrCreditType setAggregateRating(Property\AggregateRatingProperty $aggregateRating)
@@ -21,6 +21,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method LoanOrCreditType setDescription(Property\DescriptionProperty $description)
  * @method LoanOrCreditType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
  * @method LoanOrCreditType setFeesAndCommissionsSpecification(Property\FeesAndCommissionsSpecificationProperty $feesAndCommissionsSpecification)
+ * @method LoanOrCreditType setHasCertification(Property\HasCertificationProperty $hasCertification)
  * @method LoanOrCreditType setHasOfferCatalog(Property\HasOfferCatalogProperty $hasOfferCatalog)
  * @method LoanOrCreditType setHoursAvailable(Property\HoursAvailableProperty $hoursAvailable)
  * @method LoanOrCreditType setIdentifier(Property\IdentifierProperty $identifier)
@@ -33,12 +34,13 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method LoanOrCreditType setName(Property\NameProperty $name)
  * @method LoanOrCreditType setOffers(Property\OffersProperty $offers)
  * @method LoanOrCreditType setPotentialAction(Property\PotentialActionProperty $potentialAction)
- * @method LoanOrCreditType setProvider(Property\ProviderProperty $provider)
  * @method LoanOrCreditType setProviderMobility(Property\ProviderMobilityProperty $providerMobility)
  * @method LoanOrCreditType setReview(Property\ReviewProperty $review)
  * @method LoanOrCreditType setSameAs(Property\SameAsProperty $sameAs)
  * @method LoanOrCreditType setServiceOutput(Property\ServiceOutputProperty $serviceOutput)
  * @method LoanOrCreditType setServiceType(Property\ServiceTypeProperty $serviceType)
+ * @method LoanOrCreditType setSlogan(Property\SloganProperty $slogan)
+ * @method LoanOrCreditType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method LoanOrCreditType setUrl(Property\UrlProperty $url)
  */
 class LoanOrCreditType extends FinancialProductType {
@@ -47,6 +49,11 @@ class LoanOrCreditType extends FinancialProductType {
 	 * @var Property\AmountProperty
 	 */
 	private $amount;
+
+	/**
+	 * @var Property\CurrencyProperty
+	 */
+	private $currency;
 
 	/**
 	 * @var Property\LoanTermProperty
@@ -60,7 +67,7 @@ class LoanOrCreditType extends FinancialProductType {
 
 	/**
 	 * Get amount.
-	 * 
+	 *
 	 * @return Property\AmountProperty
 	 */
 	public function getAmount() {
@@ -68,8 +75,17 @@ class LoanOrCreditType extends FinancialProductType {
 	}
 
 	/**
+	 * Get currency.
+	 *
+	 * @return Property\CurrencyProperty
+	 */
+	public function getCurrency() {
+		return $this->currency;
+	}
+
+	/**
 	 * Get loan term.
-	 * 
+	 *
 	 * @return Property\LoanTermProperty
 	 */
 	public function getLoanTerm() {
@@ -78,7 +94,7 @@ class LoanOrCreditType extends FinancialProductType {
 
 	/**
 	 * Get required collateral.
-	 * 
+	 *
 	 * @return Property\RequiredCollateralProperty
 	 */
 	public function getRequiredCollateral() {
@@ -87,7 +103,7 @@ class LoanOrCreditType extends FinancialProductType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -96,7 +112,7 @@ class LoanOrCreditType extends FinancialProductType {
 
 	/**
 	 * Set amount.
-	 * 
+	 *
 	 * @param Property\AmountProperty $amount
 	 * @return LoanOrCreditType
 	 */
@@ -107,8 +123,20 @@ class LoanOrCreditType extends FinancialProductType {
 	}
 
 	/**
+	 * Set currency.
+	 *
+	 * @param Property\CurrencyProperty $currency
+	 * @return LoanOrCreditType
+	 */
+	public function setCurrency(Property\CurrencyProperty $currency) {
+		$this->currency = $currency;
+
+		return $this;
+	}
+
+	/**
 	 * Set loan term.
-	 * 
+	 *
 	 * @param Property\LoanTermProperty $loanTerm
 	 * @return LoanOrCreditType
 	 */
@@ -120,7 +148,7 @@ class LoanOrCreditType extends FinancialProductType {
 
 	/**
 	 * Set required collateral.
-	 * 
+	 *
 	 * @param Property\RequiredCollateralProperty $requiredCollateral
 	 * @return LoanOrCreditType
 	 */

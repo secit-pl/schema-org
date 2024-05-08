@@ -3,7 +3,7 @@
 namespace SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * Class FloatType.
+ * Data type: Floating number.
  * 
  * @method FloatType setValue($value)
  */
@@ -11,7 +11,7 @@ class FloatType extends NumberType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

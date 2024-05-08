@@ -5,62 +5,60 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class LocalBusinessType.
+ * A particular physical business or branch of an organization. Examples of LocalBusiness include a restaurant, a particular branch of a restaurant chain, a branch of a bank, a medical practice, a club, a bowling alley, etc.
  * 
+ * @method LocalBusinessType setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method LocalBusinessType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method LocalBusinessType setAddress(Property\AddressProperty $address)
  * @method LocalBusinessType setAggregateRating(Property\AggregateRatingProperty $aggregateRating)
  * @method LocalBusinessType setAlternateName(Property\AlternateNameProperty $alternateName)
- * @method LocalBusinessType setAlumni(Property\AlumniProperty $alumni)
- * @method LocalBusinessType setAreaServed(Property\AreaServedProperty $areaServed)
- * @method LocalBusinessType setAward(Property\AwardProperty $award)
- * @method LocalBusinessType setBrand(Property\BrandProperty $brand)
- * @method LocalBusinessType setContactPoint(Property\ContactPointProperty $contactPoint)
- * @method LocalBusinessType setDepartment(Property\DepartmentProperty $department)
+ * @method LocalBusinessType setAmenityFeature(Property\AmenityFeatureProperty $amenityFeature)
+ * @method LocalBusinessType setBranchCode(Property\BranchCodeProperty $branchCode)
+ * @method LocalBusinessType setContainedInPlace(Property\ContainedInPlaceProperty $containedInPlace)
+ * @method LocalBusinessType setContainsPlace(Property\ContainsPlaceProperty $containsPlace)
  * @method LocalBusinessType setDescription(Property\DescriptionProperty $description)
  * @method LocalBusinessType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
- * @method LocalBusinessType setDissolutionDate(Property\DissolutionDateProperty $dissolutionDate)
- * @method LocalBusinessType setDuns(Property\DunsProperty $duns)
- * @method LocalBusinessType setEmail(Property\EmailProperty $email)
- * @method LocalBusinessType setEmployee(Property\EmployeeProperty $employee)
  * @method LocalBusinessType setEvent(Property\EventProperty $event)
  * @method LocalBusinessType setFaxNumber(Property\FaxNumberProperty $faxNumber)
- * @method LocalBusinessType setFounder(Property\FounderProperty $founder)
- * @method LocalBusinessType setFoundingDate(Property\FoundingDateProperty $foundingDate)
- * @method LocalBusinessType setFoundingLocation(Property\FoundingLocationProperty $foundingLocation)
- * @method LocalBusinessType setFunder(Property\FunderProperty $funder)
+ * @method LocalBusinessType setGeo(Property\GeoProperty $geo)
+ * @method LocalBusinessType setGeoContains(Property\GeoContainsProperty $geoContains)
+ * @method LocalBusinessType setGeoCoveredBy(Property\GeoCoveredByProperty $geoCoveredBy)
+ * @method LocalBusinessType setGeoCovers(Property\GeoCoversProperty $geoCovers)
+ * @method LocalBusinessType setGeoCrosses(Property\GeoCrossesProperty $geoCrosses)
+ * @method LocalBusinessType setGeoDisjoint(Property\GeoDisjointProperty $geoDisjoint)
+ * @method LocalBusinessType setGeoEquals(Property\GeoEqualsProperty $geoEquals)
+ * @method LocalBusinessType setGeoIntersects(Property\GeoIntersectsProperty $geoIntersects)
+ * @method LocalBusinessType setGeoOverlaps(Property\GeoOverlapsProperty $geoOverlaps)
+ * @method LocalBusinessType setGeoTouches(Property\GeoTouchesProperty $geoTouches)
+ * @method LocalBusinessType setGeoWithin(Property\GeoWithinProperty $geoWithin)
  * @method LocalBusinessType setGlobalLocationNumber(Property\GlobalLocationNumberProperty $globalLocationNumber)
- * @method LocalBusinessType setHasOfferCatalog(Property\HasOfferCatalogProperty $hasOfferCatalog)
- * @method LocalBusinessType setHasPOS(Property\HasPOSProperty $hasPOS)
+ * @method LocalBusinessType setHasCertification(Property\HasCertificationProperty $hasCertification)
+ * @method LocalBusinessType setHasMap(Property\HasMapProperty $hasMap)
  * @method LocalBusinessType setIdentifier(Property\IdentifierProperty $identifier)
  * @method LocalBusinessType setImage(Property\ImageProperty $image)
+ * @method LocalBusinessType setIsAccessibleForFree(Property\IsAccessibleForFreeProperty $isAccessibleForFree)
  * @method LocalBusinessType setIsicV4(Property\IsicV4Property $isicV4)
- * @method LocalBusinessType setLegalName(Property\LegalNameProperty $legalName)
- * @method LocalBusinessType setLeiCode(Property\LeiCodeProperty $leiCode)
- * @method LocalBusinessType setLocation(Property\LocationProperty $location)
+ * @method LocalBusinessType setKeywords(Property\KeywordsProperty $keywords)
+ * @method LocalBusinessType setLatitude(Property\LatitudeProperty $latitude)
  * @method LocalBusinessType setLogo(Property\LogoProperty $logo)
+ * @method LocalBusinessType setLongitude(Property\LongitudeProperty $longitude)
  * @method LocalBusinessType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
- * @method LocalBusinessType setMakesOffer(Property\MakesOfferProperty $makesOffer)
- * @method LocalBusinessType setMember(Property\MemberProperty $member)
- * @method LocalBusinessType setMemberOf(Property\MemberOfProperty $memberOf)
- * @method LocalBusinessType setNaics(Property\NaicsProperty $naics)
+ * @method LocalBusinessType setMaximumAttendeeCapacity(Property\MaximumAttendeeCapacityProperty $maximumAttendeeCapacity)
  * @method LocalBusinessType setName(Property\NameProperty $name)
- * @method LocalBusinessType setNumberOfEmployees(Property\NumberOfEmployeesProperty $numberOfEmployees)
- * @method LocalBusinessType setOwns(Property\OwnsProperty $owns)
- * @method LocalBusinessType setParentOrganization(Property\ParentOrganizationProperty $parentOrganization)
+ * @method LocalBusinessType setOpeningHoursSpecification(Property\OpeningHoursSpecificationProperty $openingHoursSpecification)
+ * @method LocalBusinessType setPhoto(Property\PhotoProperty $photo)
  * @method LocalBusinessType setPotentialAction(Property\PotentialActionProperty $potentialAction)
- * @method LocalBusinessType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
+ * @method LocalBusinessType setPublicAccess(Property\PublicAccessProperty $publicAccess)
  * @method LocalBusinessType setReview(Property\ReviewProperty $review)
  * @method LocalBusinessType setSameAs(Property\SameAsProperty $sameAs)
- * @method LocalBusinessType setSeeks(Property\SeeksProperty $seeks)
- * @method LocalBusinessType setSponsor(Property\SponsorProperty $sponsor)
- * @method LocalBusinessType setSubOrganization(Property\SubOrganizationProperty $subOrganization)
- * @method LocalBusinessType setTaxID(Property\TaxIDProperty $taxID)
+ * @method LocalBusinessType setSlogan(Property\SloganProperty $slogan)
+ * @method LocalBusinessType setSmokingAllowed(Property\SmokingAllowedProperty $smokingAllowed)
+ * @method LocalBusinessType setSpecialOpeningHoursSpecification(Property\SpecialOpeningHoursSpecificationProperty $specialOpeningHoursSpecification)
+ * @method LocalBusinessType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method LocalBusinessType setTelephone(Property\TelephoneProperty $telephone)
  * @method LocalBusinessType setUrl(Property\UrlProperty $url)
- * @method LocalBusinessType setVatID(Property\VatIDProperty $vatID)
  */
-class LocalBusinessType extends OrganizationType {
+class LocalBusinessType extends PlaceType {
 
 	/**
 	 * @var Property\CurrenciesAcceptedProperty
@@ -84,7 +82,7 @@ class LocalBusinessType extends OrganizationType {
 
 	/**
 	 * Get currencies accepted.
-	 * 
+	 *
 	 * @return Property\CurrenciesAcceptedProperty
 	 */
 	public function getCurrenciesAccepted() {
@@ -93,7 +91,7 @@ class LocalBusinessType extends OrganizationType {
 
 	/**
 	 * Get opening hours.
-	 * 
+	 *
 	 * @return Property\OpeningHoursProperty
 	 */
 	public function getOpeningHours() {
@@ -102,7 +100,7 @@ class LocalBusinessType extends OrganizationType {
 
 	/**
 	 * Get payment accepted.
-	 * 
+	 *
 	 * @return Property\PaymentAcceptedProperty
 	 */
 	public function getPaymentAccepted() {
@@ -111,7 +109,7 @@ class LocalBusinessType extends OrganizationType {
 
 	/**
 	 * Get price range.
-	 * 
+	 *
 	 * @return Property\PriceRangeProperty
 	 */
 	public function getPriceRange() {
@@ -120,7 +118,7 @@ class LocalBusinessType extends OrganizationType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -129,7 +127,7 @@ class LocalBusinessType extends OrganizationType {
 
 	/**
 	 * Set currencies accepted.
-	 * 
+	 *
 	 * @param Property\CurrenciesAcceptedProperty $currenciesAccepted
 	 * @return LocalBusinessType
 	 */
@@ -141,7 +139,7 @@ class LocalBusinessType extends OrganizationType {
 
 	/**
 	 * Set opening hours.
-	 * 
+	 *
 	 * @param Property\OpeningHoursProperty $openingHours
 	 * @return LocalBusinessType
 	 */
@@ -153,7 +151,7 @@ class LocalBusinessType extends OrganizationType {
 
 	/**
 	 * Set payment accepted.
-	 * 
+	 *
 	 * @param Property\PaymentAcceptedProperty $paymentAccepted
 	 * @return LocalBusinessType
 	 */
@@ -165,7 +163,7 @@ class LocalBusinessType extends OrganizationType {
 
 	/**
 	 * Set price range.
-	 * 
+	 *
 	 * @param Property\PriceRangeProperty $priceRange
 	 * @return LocalBusinessType
 	 */

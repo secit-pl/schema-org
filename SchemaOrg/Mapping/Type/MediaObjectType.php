@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class MediaObjectType.
+ * A media object, such as an image, video, audio, or text object embedded in a web page or a downloadable dataset i.e. DataDownload. Note that a creative work may have many media objects associated with it on the same web page. For example, a page about a single song (MusicRecording) may have a music video (VideoObject), and a high and low bandwidth audio stream (2 AudioObject's).
  * 
+ * @method MediaObjectType setAbout(Property\AboutProperty $about)
  * @method MediaObjectType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method MediaObjectType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method MediaObjectType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -33,6 +34,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MediaObjectType setContributor(Property\ContributorProperty $contributor)
  * @method MediaObjectType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method MediaObjectType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method MediaObjectType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method MediaObjectType setCreator(Property\CreatorProperty $creator)
  * @method MediaObjectType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method MediaObjectType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -44,9 +46,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MediaObjectType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method MediaObjectType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method MediaObjectType setEncoding(Property\EncodingProperty $encoding)
+ * @method MediaObjectType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method MediaObjectType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method MediaObjectType setExpires(Property\ExpiresProperty $expires)
- * @method MediaObjectType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method MediaObjectType setFunder(Property\FunderProperty $funder)
  * @method MediaObjectType setGenre(Property\GenreProperty $genre)
  * @method MediaObjectType setHasPart(Property\HasPartProperty $hasPart)
@@ -73,9 +75,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MediaObjectType setPosition(Property\PositionProperty $position)
  * @method MediaObjectType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method MediaObjectType setProducer(Property\ProducerProperty $producer)
- * @method MediaObjectType setProvider(Property\ProviderProperty $provider)
  * @method MediaObjectType setPublication(Property\PublicationProperty $publication)
  * @method MediaObjectType setPublisher(Property\PublisherProperty $publisher)
+ * @method MediaObjectType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method MediaObjectType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method MediaObjectType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method MediaObjectType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -83,18 +85,24 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MediaObjectType setSameAs(Property\SameAsProperty $sameAs)
  * @method MediaObjectType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method MediaObjectType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method MediaObjectType setSpatial(Property\SpatialProperty $spatial)
  * @method MediaObjectType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method MediaObjectType setSponsor(Property\SponsorProperty $sponsor)
+ * @method MediaObjectType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method MediaObjectType setTemporal(Property\TemporalProperty $temporal)
  * @method MediaObjectType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method MediaObjectType setText(Property\TextProperty $text)
+ * @method MediaObjectType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method MediaObjectType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method MediaObjectType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method MediaObjectType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method MediaObjectType setTranslator(Property\TranslatorProperty $translator)
  * @method MediaObjectType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method MediaObjectType setUrl(Property\UrlProperty $url)
  * @method MediaObjectType setVersion(Property\VersionProperty $version)
  * @method MediaObjectType setVideo(Property\VideoProperty $video)
  * @method MediaObjectType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method MediaObjectType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class MediaObjectType extends CreativeWorkType {
 
@@ -119,6 +127,11 @@ class MediaObjectType extends CreativeWorkType {
 	private $contentUrl;
 
 	/**
+	 * @var Property\DurationProperty
+	 */
+	private $duration;
+
+	/**
 	 * @var Property\EmbedUrlProperty
 	 */
 	private $embedUrl;
@@ -132,6 +145,11 @@ class MediaObjectType extends CreativeWorkType {
 	 * @var Property\EncodingFormatProperty
 	 */
 	private $encodingFormat;
+
+	/**
+	 * @var Property\EndTimeProperty
+	 */
+	private $endTime;
 
 	/**
 	 * @var Property\HeightProperty
@@ -159,6 +177,11 @@ class MediaObjectType extends CreativeWorkType {
 	private $requiresSubscription;
 
 	/**
+	 * @var Property\StartTimeProperty
+	 */
+	private $startTime;
+
+	/**
 	 * @var Property\UploadDateProperty
 	 */
 	private $uploadDate;
@@ -170,7 +193,7 @@ class MediaObjectType extends CreativeWorkType {
 
 	/**
 	 * Get associated article.
-	 * 
+	 *
 	 * @return Property\AssociatedArticleProperty
 	 */
 	public function getAssociatedArticle() {
@@ -179,7 +202,7 @@ class MediaObjectType extends CreativeWorkType {
 
 	/**
 	 * Get bitrate.
-	 * 
+	 *
 	 * @return Property\BitrateProperty
 	 */
 	public function getBitrate() {
@@ -188,7 +211,7 @@ class MediaObjectType extends CreativeWorkType {
 
 	/**
 	 * Get content size.
-	 * 
+	 *
 	 * @return Property\ContentSizeProperty
 	 */
 	public function getContentSize() {
@@ -197,7 +220,7 @@ class MediaObjectType extends CreativeWorkType {
 
 	/**
 	 * Get content url.
-	 * 
+	 *
 	 * @return Property\ContentUrlProperty
 	 */
 	public function getContentUrl() {
@@ -205,8 +228,17 @@ class MediaObjectType extends CreativeWorkType {
 	}
 
 	/**
+	 * Get duration.
+	 *
+	 * @return Property\DurationProperty
+	 */
+	public function getDuration() {
+		return $this->duration;
+	}
+
+	/**
 	 * Get embed url.
-	 * 
+	 *
 	 * @return Property\EmbedUrlProperty
 	 */
 	public function getEmbedUrl() {
@@ -215,7 +247,7 @@ class MediaObjectType extends CreativeWorkType {
 
 	/**
 	 * Get encodes creative work.
-	 * 
+	 *
 	 * @return Property\EncodesCreativeWorkProperty
 	 */
 	public function getEncodesCreativeWork() {
@@ -224,7 +256,7 @@ class MediaObjectType extends CreativeWorkType {
 
 	/**
 	 * Get encoding format.
-	 * 
+	 *
 	 * @return Property\EncodingFormatProperty
 	 */
 	public function getEncodingFormat() {
@@ -232,8 +264,17 @@ class MediaObjectType extends CreativeWorkType {
 	}
 
 	/**
+	 * Get end time.
+	 *
+	 * @return Property\EndTimeProperty
+	 */
+	public function getEndTime() {
+		return $this->endTime;
+	}
+
+	/**
 	 * Get height.
-	 * 
+	 *
 	 * @return Property\HeightProperty
 	 */
 	public function getHeight() {
@@ -242,7 +283,7 @@ class MediaObjectType extends CreativeWorkType {
 
 	/**
 	 * Get player type.
-	 * 
+	 *
 	 * @return Property\PlayerTypeProperty
 	 */
 	public function getPlayerType() {
@@ -251,7 +292,7 @@ class MediaObjectType extends CreativeWorkType {
 
 	/**
 	 * Get production company.
-	 * 
+	 *
 	 * @return Property\ProductionCompanyProperty
 	 */
 	public function getProductionCompany() {
@@ -260,7 +301,7 @@ class MediaObjectType extends CreativeWorkType {
 
 	/**
 	 * Get regions allowed.
-	 * 
+	 *
 	 * @return Property\RegionsAllowedProperty
 	 */
 	public function getRegionsAllowed() {
@@ -269,7 +310,7 @@ class MediaObjectType extends CreativeWorkType {
 
 	/**
 	 * Get requires subscription.
-	 * 
+	 *
 	 * @return Property\RequiresSubscriptionProperty
 	 */
 	public function getRequiresSubscription() {
@@ -278,7 +319,7 @@ class MediaObjectType extends CreativeWorkType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -286,8 +327,17 @@ class MediaObjectType extends CreativeWorkType {
 	}
 
 	/**
+	 * Get start time.
+	 *
+	 * @return Property\StartTimeProperty
+	 */
+	public function getStartTime() {
+		return $this->startTime;
+	}
+
+	/**
 	 * Get upload date.
-	 * 
+	 *
 	 * @return Property\UploadDateProperty
 	 */
 	public function getUploadDate() {
@@ -296,7 +346,7 @@ class MediaObjectType extends CreativeWorkType {
 
 	/**
 	 * Get width.
-	 * 
+	 *
 	 * @return Property\WidthProperty
 	 */
 	public function getWidth() {
@@ -305,7 +355,7 @@ class MediaObjectType extends CreativeWorkType {
 
 	/**
 	 * Set associated article.
-	 * 
+	 *
 	 * @param Property\AssociatedArticleProperty $associatedArticle
 	 * @return MediaObjectType
 	 */
@@ -317,7 +367,7 @@ class MediaObjectType extends CreativeWorkType {
 
 	/**
 	 * Set bitrate.
-	 * 
+	 *
 	 * @param Property\BitrateProperty $bitrate
 	 * @return MediaObjectType
 	 */
@@ -329,7 +379,7 @@ class MediaObjectType extends CreativeWorkType {
 
 	/**
 	 * Set content size.
-	 * 
+	 *
 	 * @param Property\ContentSizeProperty $contentSize
 	 * @return MediaObjectType
 	 */
@@ -341,7 +391,7 @@ class MediaObjectType extends CreativeWorkType {
 
 	/**
 	 * Set content url.
-	 * 
+	 *
 	 * @param Property\ContentUrlProperty $contentUrl
 	 * @return MediaObjectType
 	 */
@@ -352,8 +402,20 @@ class MediaObjectType extends CreativeWorkType {
 	}
 
 	/**
+	 * Set duration.
+	 *
+	 * @param Property\DurationProperty $duration
+	 * @return MediaObjectType
+	 */
+	public function setDuration(Property\DurationProperty $duration) {
+		$this->duration = $duration;
+
+		return $this;
+	}
+
+	/**
 	 * Set embed url.
-	 * 
+	 *
 	 * @param Property\EmbedUrlProperty $embedUrl
 	 * @return MediaObjectType
 	 */
@@ -365,7 +427,7 @@ class MediaObjectType extends CreativeWorkType {
 
 	/**
 	 * Set encodes creative work.
-	 * 
+	 *
 	 * @param Property\EncodesCreativeWorkProperty $encodesCreativeWork
 	 * @return MediaObjectType
 	 */
@@ -377,7 +439,7 @@ class MediaObjectType extends CreativeWorkType {
 
 	/**
 	 * Set encoding format.
-	 * 
+	 *
 	 * @param Property\EncodingFormatProperty $encodingFormat
 	 * @return MediaObjectType
 	 */
@@ -388,8 +450,20 @@ class MediaObjectType extends CreativeWorkType {
 	}
 
 	/**
+	 * Set end time.
+	 *
+	 * @param Property\EndTimeProperty $endTime
+	 * @return MediaObjectType
+	 */
+	public function setEndTime(Property\EndTimeProperty $endTime) {
+		$this->endTime = $endTime;
+
+		return $this;
+	}
+
+	/**
 	 * Set height.
-	 * 
+	 *
 	 * @param Property\HeightProperty $height
 	 * @return MediaObjectType
 	 */
@@ -401,7 +475,7 @@ class MediaObjectType extends CreativeWorkType {
 
 	/**
 	 * Set player type.
-	 * 
+	 *
 	 * @param Property\PlayerTypeProperty $playerType
 	 * @return MediaObjectType
 	 */
@@ -413,7 +487,7 @@ class MediaObjectType extends CreativeWorkType {
 
 	/**
 	 * Set production company.
-	 * 
+	 *
 	 * @param Property\ProductionCompanyProperty $productionCompany
 	 * @return MediaObjectType
 	 */
@@ -425,7 +499,7 @@ class MediaObjectType extends CreativeWorkType {
 
 	/**
 	 * Set regions allowed.
-	 * 
+	 *
 	 * @param Property\RegionsAllowedProperty $regionsAllowed
 	 * @return MediaObjectType
 	 */
@@ -437,7 +511,7 @@ class MediaObjectType extends CreativeWorkType {
 
 	/**
 	 * Set requires subscription.
-	 * 
+	 *
 	 * @param Property\RequiresSubscriptionProperty $requiresSubscription
 	 * @return MediaObjectType
 	 */
@@ -448,8 +522,20 @@ class MediaObjectType extends CreativeWorkType {
 	}
 
 	/**
+	 * Set start time.
+	 *
+	 * @param Property\StartTimeProperty $startTime
+	 * @return MediaObjectType
+	 */
+	public function setStartTime(Property\StartTimeProperty $startTime) {
+		$this->startTime = $startTime;
+
+		return $this;
+	}
+
+	/**
 	 * Set upload date.
-	 * 
+	 *
 	 * @param Property\UploadDateProperty $uploadDate
 	 * @return MediaObjectType
 	 */
@@ -461,7 +547,7 @@ class MediaObjectType extends CreativeWorkType {
 
 	/**
 	 * Set width.
-	 * 
+	 *
 	 * @param Property\WidthProperty $width
 	 * @return MediaObjectType
 	 */

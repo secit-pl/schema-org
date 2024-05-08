@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class AskActionType.
+ * The act of posing a question / favor to someone. Related actions: ReplyAction: Appears generally as a response to AskAction.
  * 
+ * @method AskActionType setAbout(Property\AboutProperty $about)
  * @method AskActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method AskActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method AskActionType setAgent(Property\AgentProperty $agent)
@@ -29,6 +30,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method AskActionType setResult(Property\ResultProperty $result)
  * @method AskActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method AskActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method AskActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method AskActionType setTarget(Property\TargetProperty $target)
  * @method AskActionType setUrl(Property\UrlProperty $url)
  */
@@ -41,7 +43,7 @@ class AskActionType extends CommunicateActionType {
 
 	/**
 	 * Get question.
-	 * 
+	 *
 	 * @return Property\QuestionProperty
 	 */
 	public function getQuestion() {
@@ -50,7 +52,7 @@ class AskActionType extends CommunicateActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -59,7 +61,7 @@ class AskActionType extends CommunicateActionType {
 
 	/**
 	 * Set question.
-	 * 
+	 *
 	 * @param Property\QuestionProperty $question
 	 * @return AskActionType
 	 */

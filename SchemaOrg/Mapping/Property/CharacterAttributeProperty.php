@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * CharacterAttributeProperty class.
+ * A piece of data that represents a particular aspect of a fictional character (skill, power, character points, advantage, disadvantage).
  * 
  * @method CharacterAttributeProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class CharacterAttributeProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class CharacterAttributeProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

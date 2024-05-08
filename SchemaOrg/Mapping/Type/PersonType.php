@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class PersonType.
+ * A person (alive, dead, undead, or fictional).
  * 
  * @method PersonType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method PersonType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,6 +17,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method PersonType setName(Property\NameProperty $name)
  * @method PersonType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method PersonType setSameAs(Property\SameAsProperty $sameAs)
+ * @method PersonType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method PersonType setUrl(Property\UrlProperty $url)
  */
 class PersonType extends ThingType {
@@ -117,11 +118,6 @@ class PersonType extends ThingType {
 	private $funder;
 
 	/**
-	 * @var Property\GenderProperty
-	 */
-	private $gender;
-
-	/**
 	 * @var Property\GivenNameProperty
 	 */
 	private $givenName;
@@ -130,6 +126,16 @@ class PersonType extends ThingType {
 	 * @var Property\GlobalLocationNumberProperty
 	 */
 	private $globalLocationNumber;
+
+	/**
+	 * @var Property\HasCertificationProperty
+	 */
+	private $hasCertification;
+
+	/**
+	 * @var Property\HasOccupationProperty
+	 */
+	private $hasOccupation;
 
 	/**
 	 * @var Property\HasOfferCatalogProperty
@@ -162,14 +168,14 @@ class PersonType extends ThingType {
 	private $honorificSuffix;
 
 	/**
+	 * @var Property\InteractionStatisticProperty
+	 */
+	private $interactionStatistic;
+
+	/**
 	 * @var Property\IsicV4Property
 	 */
 	private $isicV4;
-
-	/**
-	 * @var Property\JobTitleProperty
-	 */
-	private $jobTitle;
 
 	/**
 	 * @var Property\KnowsProperty
@@ -278,7 +284,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Get additional name.
-	 * 
+	 *
 	 * @return Property\AdditionalNameProperty
 	 */
 	public function getAdditionalName() {
@@ -287,7 +293,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Get address.
-	 * 
+	 *
 	 * @return Property\AddressProperty
 	 */
 	public function getAddress() {
@@ -296,7 +302,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Get affiliation.
-	 * 
+	 *
 	 * @return Property\AffiliationProperty
 	 */
 	public function getAffiliation() {
@@ -305,7 +311,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Get alumni of.
-	 * 
+	 *
 	 * @return Property\AlumniOfProperty
 	 */
 	public function getAlumniOf() {
@@ -314,7 +320,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Get award.
-	 * 
+	 *
 	 * @return Property\AwardProperty
 	 */
 	public function getAward() {
@@ -323,7 +329,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Get birth date.
-	 * 
+	 *
 	 * @return Property\BirthDateProperty
 	 */
 	public function getBirthDate() {
@@ -332,7 +338,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Get birth place.
-	 * 
+	 *
 	 * @return Property\BirthPlaceProperty
 	 */
 	public function getBirthPlace() {
@@ -341,7 +347,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Get brand.
-	 * 
+	 *
 	 * @return Property\BrandProperty
 	 */
 	public function getBrand() {
@@ -350,7 +356,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Get children.
-	 * 
+	 *
 	 * @return Property\ChildrenProperty
 	 */
 	public function getChildren() {
@@ -359,7 +365,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Get colleague.
-	 * 
+	 *
 	 * @return Property\ColleagueProperty
 	 */
 	public function getColleague() {
@@ -368,7 +374,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Get contact point.
-	 * 
+	 *
 	 * @return Property\ContactPointProperty
 	 */
 	public function getContactPoint() {
@@ -377,7 +383,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Get death date.
-	 * 
+	 *
 	 * @return Property\DeathDateProperty
 	 */
 	public function getDeathDate() {
@@ -386,7 +392,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Get death place.
-	 * 
+	 *
 	 * @return Property\DeathPlaceProperty
 	 */
 	public function getDeathPlace() {
@@ -395,7 +401,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Get duns.
-	 * 
+	 *
 	 * @return Property\DunsProperty
 	 */
 	public function getDuns() {
@@ -404,7 +410,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Get email.
-	 * 
+	 *
 	 * @return Property\EmailProperty
 	 */
 	public function getEmail() {
@@ -413,7 +419,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Get family name.
-	 * 
+	 *
 	 * @return Property\FamilyNameProperty
 	 */
 	public function getFamilyName() {
@@ -422,7 +428,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Get fax number.
-	 * 
+	 *
 	 * @return Property\FaxNumberProperty
 	 */
 	public function getFaxNumber() {
@@ -431,7 +437,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Get follows.
-	 * 
+	 *
 	 * @return Property\FollowsProperty
 	 */
 	public function getFollows() {
@@ -440,7 +446,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Get funder.
-	 * 
+	 *
 	 * @return Property\FunderProperty
 	 */
 	public function getFunder() {
@@ -448,17 +454,8 @@ class PersonType extends ThingType {
 	}
 
 	/**
-	 * Get gender.
-	 * 
-	 * @return Property\GenderProperty
-	 */
-	public function getGender() {
-		return $this->gender;
-	}
-
-	/**
 	 * Get given name.
-	 * 
+	 *
 	 * @return Property\GivenNameProperty
 	 */
 	public function getGivenName() {
@@ -467,7 +464,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Get global location number.
-	 * 
+	 *
 	 * @return Property\GlobalLocationNumberProperty
 	 */
 	public function getGlobalLocationNumber() {
@@ -475,8 +472,26 @@ class PersonType extends ThingType {
 	}
 
 	/**
+	 * Get has certification.
+	 *
+	 * @return Property\HasCertificationProperty
+	 */
+	public function getHasCertification() {
+		return $this->hasCertification;
+	}
+
+	/**
+	 * Get has occupation.
+	 *
+	 * @return Property\HasOccupationProperty
+	 */
+	public function getHasOccupation() {
+		return $this->hasOccupation;
+	}
+
+	/**
 	 * Get has offer catalog.
-	 * 
+	 *
 	 * @return Property\HasOfferCatalogProperty
 	 */
 	public function getHasOfferCatalog() {
@@ -485,7 +500,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Get haspos.
-	 * 
+	 *
 	 * @return Property\HasPOSProperty
 	 */
 	public function getHasPOS() {
@@ -494,7 +509,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Get height.
-	 * 
+	 *
 	 * @return Property\HeightProperty
 	 */
 	public function getHeight() {
@@ -503,7 +518,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Get home location.
-	 * 
+	 *
 	 * @return Property\HomeLocationProperty
 	 */
 	public function getHomeLocation() {
@@ -512,7 +527,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Get honorific prefix.
-	 * 
+	 *
 	 * @return Property\HonorificPrefixProperty
 	 */
 	public function getHonorificPrefix() {
@@ -521,7 +536,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Get honorific suffix.
-	 * 
+	 *
 	 * @return Property\HonorificSuffixProperty
 	 */
 	public function getHonorificSuffix() {
@@ -529,8 +544,17 @@ class PersonType extends ThingType {
 	}
 
 	/**
+	 * Get interaction statistic.
+	 *
+	 * @return Property\InteractionStatisticProperty
+	 */
+	public function getInteractionStatistic() {
+		return $this->interactionStatistic;
+	}
+
+	/**
 	 * Get isicv4.
-	 * 
+	 *
 	 * @return Property\IsicV4Property
 	 */
 	public function getIsicV4() {
@@ -538,17 +562,8 @@ class PersonType extends ThingType {
 	}
 
 	/**
-	 * Get job title.
-	 * 
-	 * @return Property\JobTitleProperty
-	 */
-	public function getJobTitle() {
-		return $this->jobTitle;
-	}
-
-	/**
 	 * Get knows.
-	 * 
+	 *
 	 * @return Property\KnowsProperty
 	 */
 	public function getKnows() {
@@ -557,7 +572,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Get makes offer.
-	 * 
+	 *
 	 * @return Property\MakesOfferProperty
 	 */
 	public function getMakesOffer() {
@@ -566,7 +581,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Get member of.
-	 * 
+	 *
 	 * @return Property\MemberOfProperty
 	 */
 	public function getMemberOf() {
@@ -575,7 +590,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Get naics.
-	 * 
+	 *
 	 * @return Property\NaicsProperty
 	 */
 	public function getNaics() {
@@ -584,7 +599,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Get nationality.
-	 * 
+	 *
 	 * @return Property\NationalityProperty
 	 */
 	public function getNationality() {
@@ -593,7 +608,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Get net worth.
-	 * 
+	 *
 	 * @return Property\NetWorthProperty
 	 */
 	public function getNetWorth() {
@@ -602,7 +617,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Get owns.
-	 * 
+	 *
 	 * @return Property\OwnsProperty
 	 */
 	public function getOwns() {
@@ -611,7 +626,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Get parent.
-	 * 
+	 *
 	 * @return Property\ParentProperty
 	 */
 	public function getParent() {
@@ -620,7 +635,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Get performer in.
-	 * 
+	 *
 	 * @return Property\PerformerInProperty
 	 */
 	public function getPerformerIn() {
@@ -629,7 +644,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Get publishing principles.
-	 * 
+	 *
 	 * @return Property\PublishingPrinciplesProperty
 	 */
 	public function getPublishingPrinciples() {
@@ -638,7 +653,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Get related to.
-	 * 
+	 *
 	 * @return Property\RelatedToProperty
 	 */
 	public function getRelatedTo() {
@@ -647,7 +662,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -656,7 +671,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Get seeks.
-	 * 
+	 *
 	 * @return Property\SeeksProperty
 	 */
 	public function getSeeks() {
@@ -665,7 +680,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Get sibling.
-	 * 
+	 *
 	 * @return Property\SiblingProperty
 	 */
 	public function getSibling() {
@@ -674,7 +689,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Get sponsor.
-	 * 
+	 *
 	 * @return Property\SponsorProperty
 	 */
 	public function getSponsor() {
@@ -683,7 +698,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Get spouse.
-	 * 
+	 *
 	 * @return Property\SpouseProperty
 	 */
 	public function getSpouse() {
@@ -692,7 +707,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Get taxid.
-	 * 
+	 *
 	 * @return Property\TaxIDProperty
 	 */
 	public function getTaxID() {
@@ -701,7 +716,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Get telephone.
-	 * 
+	 *
 	 * @return Property\TelephoneProperty
 	 */
 	public function getTelephone() {
@@ -710,7 +725,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Get vatid.
-	 * 
+	 *
 	 * @return Property\VatIDProperty
 	 */
 	public function getVatID() {
@@ -719,7 +734,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Get weight.
-	 * 
+	 *
 	 * @return Property\WeightProperty
 	 */
 	public function getWeight() {
@@ -728,7 +743,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Get work location.
-	 * 
+	 *
 	 * @return Property\WorkLocationProperty
 	 */
 	public function getWorkLocation() {
@@ -737,7 +752,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Get works for.
-	 * 
+	 *
 	 * @return Property\WorksForProperty
 	 */
 	public function getWorksFor() {
@@ -746,7 +761,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Set additional name.
-	 * 
+	 *
 	 * @param Property\AdditionalNameProperty $additionalName
 	 * @return PersonType
 	 */
@@ -758,7 +773,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Set address.
-	 * 
+	 *
 	 * @param Property\AddressProperty $address
 	 * @return PersonType
 	 */
@@ -770,7 +785,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Set affiliation.
-	 * 
+	 *
 	 * @param Property\AffiliationProperty $affiliation
 	 * @return PersonType
 	 */
@@ -782,7 +797,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Set alumni of.
-	 * 
+	 *
 	 * @param Property\AlumniOfProperty $alumniOf
 	 * @return PersonType
 	 */
@@ -794,7 +809,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Set award.
-	 * 
+	 *
 	 * @param Property\AwardProperty $award
 	 * @return PersonType
 	 */
@@ -806,7 +821,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Set birth date.
-	 * 
+	 *
 	 * @param Property\BirthDateProperty $birthDate
 	 * @return PersonType
 	 */
@@ -818,7 +833,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Set birth place.
-	 * 
+	 *
 	 * @param Property\BirthPlaceProperty $birthPlace
 	 * @return PersonType
 	 */
@@ -830,7 +845,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Set brand.
-	 * 
+	 *
 	 * @param Property\BrandProperty $brand
 	 * @return PersonType
 	 */
@@ -842,7 +857,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Set children.
-	 * 
+	 *
 	 * @param Property\ChildrenProperty $children
 	 * @return PersonType
 	 */
@@ -854,7 +869,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Set colleague.
-	 * 
+	 *
 	 * @param Property\ColleagueProperty $colleague
 	 * @return PersonType
 	 */
@@ -866,7 +881,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Set contact point.
-	 * 
+	 *
 	 * @param Property\ContactPointProperty $contactPoint
 	 * @return PersonType
 	 */
@@ -878,7 +893,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Set death date.
-	 * 
+	 *
 	 * @param Property\DeathDateProperty $deathDate
 	 * @return PersonType
 	 */
@@ -890,7 +905,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Set death place.
-	 * 
+	 *
 	 * @param Property\DeathPlaceProperty $deathPlace
 	 * @return PersonType
 	 */
@@ -902,7 +917,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Set duns.
-	 * 
+	 *
 	 * @param Property\DunsProperty $duns
 	 * @return PersonType
 	 */
@@ -914,7 +929,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Set email.
-	 * 
+	 *
 	 * @param Property\EmailProperty $email
 	 * @return PersonType
 	 */
@@ -926,7 +941,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Set family name.
-	 * 
+	 *
 	 * @param Property\FamilyNameProperty $familyName
 	 * @return PersonType
 	 */
@@ -938,7 +953,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Set fax number.
-	 * 
+	 *
 	 * @param Property\FaxNumberProperty $faxNumber
 	 * @return PersonType
 	 */
@@ -950,7 +965,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Set follows.
-	 * 
+	 *
 	 * @param Property\FollowsProperty $follows
 	 * @return PersonType
 	 */
@@ -962,7 +977,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Set funder.
-	 * 
+	 *
 	 * @param Property\FunderProperty $funder
 	 * @return PersonType
 	 */
@@ -973,20 +988,8 @@ class PersonType extends ThingType {
 	}
 
 	/**
-	 * Set gender.
-	 * 
-	 * @param Property\GenderProperty $gender
-	 * @return PersonType
-	 */
-	public function setGender(Property\GenderProperty $gender) {
-		$this->gender = $gender;
-
-		return $this;
-	}
-
-	/**
 	 * Set given name.
-	 * 
+	 *
 	 * @param Property\GivenNameProperty $givenName
 	 * @return PersonType
 	 */
@@ -998,7 +1001,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Set global location number.
-	 * 
+	 *
 	 * @param Property\GlobalLocationNumberProperty $globalLocationNumber
 	 * @return PersonType
 	 */
@@ -1009,8 +1012,32 @@ class PersonType extends ThingType {
 	}
 
 	/**
+	 * Set has certification.
+	 *
+	 * @param Property\HasCertificationProperty $hasCertification
+	 * @return PersonType
+	 */
+	public function setHasCertification(Property\HasCertificationProperty $hasCertification) {
+		$this->hasCertification = $hasCertification;
+
+		return $this;
+	}
+
+	/**
+	 * Set has occupation.
+	 *
+	 * @param Property\HasOccupationProperty $hasOccupation
+	 * @return PersonType
+	 */
+	public function setHasOccupation(Property\HasOccupationProperty $hasOccupation) {
+		$this->hasOccupation = $hasOccupation;
+
+		return $this;
+	}
+
+	/**
 	 * Set has offer catalog.
-	 * 
+	 *
 	 * @param Property\HasOfferCatalogProperty $hasOfferCatalog
 	 * @return PersonType
 	 */
@@ -1022,7 +1049,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Set haspos.
-	 * 
+	 *
 	 * @param Property\HasPOSProperty $hasPOS
 	 * @return PersonType
 	 */
@@ -1034,7 +1061,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Set height.
-	 * 
+	 *
 	 * @param Property\HeightProperty $height
 	 * @return PersonType
 	 */
@@ -1046,7 +1073,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Set home location.
-	 * 
+	 *
 	 * @param Property\HomeLocationProperty $homeLocation
 	 * @return PersonType
 	 */
@@ -1058,7 +1085,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Set honorific prefix.
-	 * 
+	 *
 	 * @param Property\HonorificPrefixProperty $honorificPrefix
 	 * @return PersonType
 	 */
@@ -1070,7 +1097,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Set honorific suffix.
-	 * 
+	 *
 	 * @param Property\HonorificSuffixProperty $honorificSuffix
 	 * @return PersonType
 	 */
@@ -1081,8 +1108,20 @@ class PersonType extends ThingType {
 	}
 
 	/**
+	 * Set interaction statistic.
+	 *
+	 * @param Property\InteractionStatisticProperty $interactionStatistic
+	 * @return PersonType
+	 */
+	public function setInteractionStatistic(Property\InteractionStatisticProperty $interactionStatistic) {
+		$this->interactionStatistic = $interactionStatistic;
+
+		return $this;
+	}
+
+	/**
 	 * Set isicv4.
-	 * 
+	 *
 	 * @param Property\IsicV4Property $isicV4
 	 * @return PersonType
 	 */
@@ -1093,20 +1132,8 @@ class PersonType extends ThingType {
 	}
 
 	/**
-	 * Set job title.
-	 * 
-	 * @param Property\JobTitleProperty $jobTitle
-	 * @return PersonType
-	 */
-	public function setJobTitle(Property\JobTitleProperty $jobTitle) {
-		$this->jobTitle = $jobTitle;
-
-		return $this;
-	}
-
-	/**
 	 * Set knows.
-	 * 
+	 *
 	 * @param Property\KnowsProperty $knows
 	 * @return PersonType
 	 */
@@ -1118,7 +1145,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Set makes offer.
-	 * 
+	 *
 	 * @param Property\MakesOfferProperty $makesOffer
 	 * @return PersonType
 	 */
@@ -1130,7 +1157,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Set member of.
-	 * 
+	 *
 	 * @param Property\MemberOfProperty $memberOf
 	 * @return PersonType
 	 */
@@ -1142,7 +1169,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Set naics.
-	 * 
+	 *
 	 * @param Property\NaicsProperty $naics
 	 * @return PersonType
 	 */
@@ -1154,7 +1181,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Set nationality.
-	 * 
+	 *
 	 * @param Property\NationalityProperty $nationality
 	 * @return PersonType
 	 */
@@ -1166,7 +1193,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Set net worth.
-	 * 
+	 *
 	 * @param Property\NetWorthProperty $netWorth
 	 * @return PersonType
 	 */
@@ -1178,7 +1205,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Set owns.
-	 * 
+	 *
 	 * @param Property\OwnsProperty $owns
 	 * @return PersonType
 	 */
@@ -1190,7 +1217,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Set parent.
-	 * 
+	 *
 	 * @param Property\ParentProperty $parent
 	 * @return PersonType
 	 */
@@ -1202,7 +1229,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Set performer in.
-	 * 
+	 *
 	 * @param Property\PerformerInProperty $performerIn
 	 * @return PersonType
 	 */
@@ -1214,7 +1241,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Set publishing principles.
-	 * 
+	 *
 	 * @param Property\PublishingPrinciplesProperty $publishingPrinciples
 	 * @return PersonType
 	 */
@@ -1226,7 +1253,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Set related to.
-	 * 
+	 *
 	 * @param Property\RelatedToProperty $relatedTo
 	 * @return PersonType
 	 */
@@ -1238,7 +1265,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Set seeks.
-	 * 
+	 *
 	 * @param Property\SeeksProperty $seeks
 	 * @return PersonType
 	 */
@@ -1250,7 +1277,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Set sibling.
-	 * 
+	 *
 	 * @param Property\SiblingProperty $sibling
 	 * @return PersonType
 	 */
@@ -1262,7 +1289,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Set sponsor.
-	 * 
+	 *
 	 * @param Property\SponsorProperty $sponsor
 	 * @return PersonType
 	 */
@@ -1274,7 +1301,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Set spouse.
-	 * 
+	 *
 	 * @param Property\SpouseProperty $spouse
 	 * @return PersonType
 	 */
@@ -1286,7 +1313,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Set taxid.
-	 * 
+	 *
 	 * @param Property\TaxIDProperty $taxID
 	 * @return PersonType
 	 */
@@ -1298,7 +1325,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Set telephone.
-	 * 
+	 *
 	 * @param Property\TelephoneProperty $telephone
 	 * @return PersonType
 	 */
@@ -1310,7 +1337,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Set vatid.
-	 * 
+	 *
 	 * @param Property\VatIDProperty $vatID
 	 * @return PersonType
 	 */
@@ -1322,7 +1349,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Set weight.
-	 * 
+	 *
 	 * @param Property\WeightProperty $weight
 	 * @return PersonType
 	 */
@@ -1334,7 +1361,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Set work location.
-	 * 
+	 *
 	 * @param Property\WorkLocationProperty $workLocation
 	 * @return PersonType
 	 */
@@ -1346,7 +1373,7 @@ class PersonType extends ThingType {
 
 	/**
 	 * Set works for.
-	 * 
+	 *
 	 * @param Property\WorksForProperty $worksFor
 	 * @return PersonType
 	 */

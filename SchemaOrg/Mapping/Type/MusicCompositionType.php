@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class MusicCompositionType.
+ * A musical composition.
  * 
+ * @method MusicCompositionType setAbout(Property\AboutProperty $about)
  * @method MusicCompositionType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method MusicCompositionType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method MusicCompositionType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -33,6 +34,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MusicCompositionType setContributor(Property\ContributorProperty $contributor)
  * @method MusicCompositionType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method MusicCompositionType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method MusicCompositionType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method MusicCompositionType setCreator(Property\CreatorProperty $creator)
  * @method MusicCompositionType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method MusicCompositionType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -44,9 +46,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MusicCompositionType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method MusicCompositionType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method MusicCompositionType setEncoding(Property\EncodingProperty $encoding)
+ * @method MusicCompositionType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method MusicCompositionType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method MusicCompositionType setExpires(Property\ExpiresProperty $expires)
- * @method MusicCompositionType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method MusicCompositionType setFunder(Property\FunderProperty $funder)
  * @method MusicCompositionType setGenre(Property\GenreProperty $genre)
  * @method MusicCompositionType setHasPart(Property\HasPartProperty $hasPart)
@@ -73,9 +75,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MusicCompositionType setPosition(Property\PositionProperty $position)
  * @method MusicCompositionType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method MusicCompositionType setProducer(Property\ProducerProperty $producer)
- * @method MusicCompositionType setProvider(Property\ProviderProperty $provider)
  * @method MusicCompositionType setPublication(Property\PublicationProperty $publication)
  * @method MusicCompositionType setPublisher(Property\PublisherProperty $publisher)
+ * @method MusicCompositionType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method MusicCompositionType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method MusicCompositionType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method MusicCompositionType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -83,18 +85,24 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MusicCompositionType setSameAs(Property\SameAsProperty $sameAs)
  * @method MusicCompositionType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method MusicCompositionType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method MusicCompositionType setSpatial(Property\SpatialProperty $spatial)
  * @method MusicCompositionType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method MusicCompositionType setSponsor(Property\SponsorProperty $sponsor)
+ * @method MusicCompositionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method MusicCompositionType setTemporal(Property\TemporalProperty $temporal)
  * @method MusicCompositionType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method MusicCompositionType setText(Property\TextProperty $text)
+ * @method MusicCompositionType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method MusicCompositionType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method MusicCompositionType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method MusicCompositionType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method MusicCompositionType setTranslator(Property\TranslatorProperty $translator)
  * @method MusicCompositionType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method MusicCompositionType setUrl(Property\UrlProperty $url)
  * @method MusicCompositionType setVersion(Property\VersionProperty $version)
  * @method MusicCompositionType setVideo(Property\VideoProperty $video)
  * @method MusicCompositionType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method MusicCompositionType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class MusicCompositionType extends CreativeWorkType {
 
@@ -150,7 +158,7 @@ class MusicCompositionType extends CreativeWorkType {
 
 	/**
 	 * Get composer.
-	 * 
+	 *
 	 * @return Property\ComposerProperty
 	 */
 	public function getComposer() {
@@ -159,7 +167,7 @@ class MusicCompositionType extends CreativeWorkType {
 
 	/**
 	 * Get first performance.
-	 * 
+	 *
 	 * @return Property\FirstPerformanceProperty
 	 */
 	public function getFirstPerformance() {
@@ -168,7 +176,7 @@ class MusicCompositionType extends CreativeWorkType {
 
 	/**
 	 * Get included composition.
-	 * 
+	 *
 	 * @return Property\IncludedCompositionProperty
 	 */
 	public function getIncludedComposition() {
@@ -177,7 +185,7 @@ class MusicCompositionType extends CreativeWorkType {
 
 	/**
 	 * Get iswc code.
-	 * 
+	 *
 	 * @return Property\IswcCodeProperty
 	 */
 	public function getIswcCode() {
@@ -186,7 +194,7 @@ class MusicCompositionType extends CreativeWorkType {
 
 	/**
 	 * Get lyricist.
-	 * 
+	 *
 	 * @return Property\LyricistProperty
 	 */
 	public function getLyricist() {
@@ -195,7 +203,7 @@ class MusicCompositionType extends CreativeWorkType {
 
 	/**
 	 * Get lyrics.
-	 * 
+	 *
 	 * @return Property\LyricsProperty
 	 */
 	public function getLyrics() {
@@ -204,7 +212,7 @@ class MusicCompositionType extends CreativeWorkType {
 
 	/**
 	 * Get musical key.
-	 * 
+	 *
 	 * @return Property\MusicalKeyProperty
 	 */
 	public function getMusicalKey() {
@@ -213,7 +221,7 @@ class MusicCompositionType extends CreativeWorkType {
 
 	/**
 	 * Get music arrangement.
-	 * 
+	 *
 	 * @return Property\MusicArrangementProperty
 	 */
 	public function getMusicArrangement() {
@@ -222,7 +230,7 @@ class MusicCompositionType extends CreativeWorkType {
 
 	/**
 	 * Get music composition form.
-	 * 
+	 *
 	 * @return Property\MusicCompositionFormProperty
 	 */
 	public function getMusicCompositionForm() {
@@ -231,7 +239,7 @@ class MusicCompositionType extends CreativeWorkType {
 
 	/**
 	 * Get recorded as.
-	 * 
+	 *
 	 * @return Property\RecordedAsProperty
 	 */
 	public function getRecordedAs() {
@@ -240,7 +248,7 @@ class MusicCompositionType extends CreativeWorkType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -249,7 +257,7 @@ class MusicCompositionType extends CreativeWorkType {
 
 	/**
 	 * Set composer.
-	 * 
+	 *
 	 * @param Property\ComposerProperty $composer
 	 * @return MusicCompositionType
 	 */
@@ -261,7 +269,7 @@ class MusicCompositionType extends CreativeWorkType {
 
 	/**
 	 * Set first performance.
-	 * 
+	 *
 	 * @param Property\FirstPerformanceProperty $firstPerformance
 	 * @return MusicCompositionType
 	 */
@@ -273,7 +281,7 @@ class MusicCompositionType extends CreativeWorkType {
 
 	/**
 	 * Set included composition.
-	 * 
+	 *
 	 * @param Property\IncludedCompositionProperty $includedComposition
 	 * @return MusicCompositionType
 	 */
@@ -285,7 +293,7 @@ class MusicCompositionType extends CreativeWorkType {
 
 	/**
 	 * Set iswc code.
-	 * 
+	 *
 	 * @param Property\IswcCodeProperty $iswcCode
 	 * @return MusicCompositionType
 	 */
@@ -297,7 +305,7 @@ class MusicCompositionType extends CreativeWorkType {
 
 	/**
 	 * Set lyricist.
-	 * 
+	 *
 	 * @param Property\LyricistProperty $lyricist
 	 * @return MusicCompositionType
 	 */
@@ -309,7 +317,7 @@ class MusicCompositionType extends CreativeWorkType {
 
 	/**
 	 * Set lyrics.
-	 * 
+	 *
 	 * @param Property\LyricsProperty $lyrics
 	 * @return MusicCompositionType
 	 */
@@ -321,7 +329,7 @@ class MusicCompositionType extends CreativeWorkType {
 
 	/**
 	 * Set musical key.
-	 * 
+	 *
 	 * @param Property\MusicalKeyProperty $musicalKey
 	 * @return MusicCompositionType
 	 */
@@ -333,7 +341,7 @@ class MusicCompositionType extends CreativeWorkType {
 
 	/**
 	 * Set music arrangement.
-	 * 
+	 *
 	 * @param Property\MusicArrangementProperty $musicArrangement
 	 * @return MusicCompositionType
 	 */
@@ -345,7 +353,7 @@ class MusicCompositionType extends CreativeWorkType {
 
 	/**
 	 * Set music composition form.
-	 * 
+	 *
 	 * @param Property\MusicCompositionFormProperty $musicCompositionForm
 	 * @return MusicCompositionType
 	 */
@@ -357,7 +365,7 @@ class MusicCompositionType extends CreativeWorkType {
 
 	/**
 	 * Set recorded as.
-	 * 
+	 *
 	 * @param Property\RecordedAsProperty $recordedAs
 	 * @return MusicCompositionType
 	 */

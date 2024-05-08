@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class MoveActionType.
+ * The act of an agent relocating to a place. Related actions: TransferAction: Unlike TransferAction, the subject of the move is a living Person or Organization rather than an inanimate object.
  * 
  * @method MoveActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method MoveActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MoveActionType setResult(Property\ResultProperty $result)
  * @method MoveActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method MoveActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method MoveActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method MoveActionType setTarget(Property\TargetProperty $target)
  * @method MoveActionType setUrl(Property\UrlProperty $url)
  */
@@ -44,7 +45,7 @@ class MoveActionType extends ActionType {
 
 	/**
 	 * Get from location.
-	 * 
+	 *
 	 * @return Property\FromLocationProperty
 	 */
 	public function getFromLocation() {
@@ -53,7 +54,7 @@ class MoveActionType extends ActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -62,7 +63,7 @@ class MoveActionType extends ActionType {
 
 	/**
 	 * Get to location.
-	 * 
+	 *
 	 * @return Property\ToLocationProperty
 	 */
 	public function getToLocation() {
@@ -71,7 +72,7 @@ class MoveActionType extends ActionType {
 
 	/**
 	 * Set from location.
-	 * 
+	 *
 	 * @param Property\FromLocationProperty $fromLocation
 	 * @return MoveActionType
 	 */
@@ -83,7 +84,7 @@ class MoveActionType extends ActionType {
 
 	/**
 	 * Set to location.
-	 * 
+	 *
 	 * @param Property\ToLocationProperty $toLocation
 	 * @return MoveActionType
 	 */

@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ReceiveActionType.
+ * The act of physically/electronically taking delivery of an object that has been transferred from an origin to a destination. Reciprocal of SendAction. Related actions: SendAction: The reciprocal of ReceiveAction. TakeAction: Unlike TakeAction, ReceiveAction does not imply that the ownership has been transferred (e.g. I can receive a package, but it does not mean the package is now mine).
  * 
  * @method ReceiveActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method ReceiveActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -28,6 +28,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ReceiveActionType setResult(Property\ResultProperty $result)
  * @method ReceiveActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method ReceiveActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method ReceiveActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method ReceiveActionType setTarget(Property\TargetProperty $target)
  * @method ReceiveActionType setToLocation(Property\ToLocationProperty $toLocation)
  * @method ReceiveActionType setUrl(Property\UrlProperty $url)
@@ -46,7 +47,7 @@ class ReceiveActionType extends TransferActionType {
 
 	/**
 	 * Get delivery method.
-	 * 
+	 *
 	 * @return Property\DeliveryMethodProperty
 	 */
 	public function getDeliveryMethod() {
@@ -55,7 +56,7 @@ class ReceiveActionType extends TransferActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -64,7 +65,7 @@ class ReceiveActionType extends TransferActionType {
 
 	/**
 	 * Get sender.
-	 * 
+	 *
 	 * @return Property\SenderProperty
 	 */
 	public function getSender() {
@@ -73,7 +74,7 @@ class ReceiveActionType extends TransferActionType {
 
 	/**
 	 * Set delivery method.
-	 * 
+	 *
 	 * @param Property\DeliveryMethodProperty $deliveryMethod
 	 * @return ReceiveActionType
 	 */
@@ -85,7 +86,7 @@ class ReceiveActionType extends TransferActionType {
 
 	/**
 	 * Set sender.
-	 * 
+	 *
 	 * @param Property\SenderProperty $sender
 	 * @return ReceiveActionType
 	 */

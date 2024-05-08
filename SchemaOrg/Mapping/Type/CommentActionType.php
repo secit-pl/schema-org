@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class CommentActionType.
+ * The act of generating a comment about a subject.
  * 
+ * @method CommentActionType setAbout(Property\AboutProperty $about)
  * @method CommentActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method CommentActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method CommentActionType setAgent(Property\AgentProperty $agent)
@@ -29,6 +30,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method CommentActionType setResult(Property\ResultProperty $result)
  * @method CommentActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method CommentActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method CommentActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method CommentActionType setTarget(Property\TargetProperty $target)
  * @method CommentActionType setUrl(Property\UrlProperty $url)
  */
@@ -41,7 +43,7 @@ class CommentActionType extends CommunicateActionType {
 
 	/**
 	 * Get result comment.
-	 * 
+	 *
 	 * @return Property\ResultCommentProperty
 	 */
 	public function getResultComment() {
@@ -50,7 +52,7 @@ class CommentActionType extends CommunicateActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -59,7 +61,7 @@ class CommentActionType extends CommunicateActionType {
 
 	/**
 	 * Set result comment.
-	 * 
+	 *
 	 * @param Property\ResultCommentProperty $resultComment
 	 * @return CommentActionType
 	 */

@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class SiteNavigationElementType.
+ * A navigation element of the page.
  * 
+ * @method SiteNavigationElementType setAbout(Property\AboutProperty $about)
  * @method SiteNavigationElementType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method SiteNavigationElementType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method SiteNavigationElementType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -33,7 +34,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SiteNavigationElementType setContributor(Property\ContributorProperty $contributor)
  * @method SiteNavigationElementType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method SiteNavigationElementType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method SiteNavigationElementType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method SiteNavigationElementType setCreator(Property\CreatorProperty $creator)
+ * @method SiteNavigationElementType setCssSelector(Property\CssSelectorProperty $cssSelector)
  * @method SiteNavigationElementType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method SiteNavigationElementType setDateModified(Property\DateModifiedProperty $dateModified)
  * @method SiteNavigationElementType setDatePublished(Property\DatePublishedProperty $datePublished)
@@ -44,9 +47,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SiteNavigationElementType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method SiteNavigationElementType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method SiteNavigationElementType setEncoding(Property\EncodingProperty $encoding)
+ * @method SiteNavigationElementType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method SiteNavigationElementType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method SiteNavigationElementType setExpires(Property\ExpiresProperty $expires)
- * @method SiteNavigationElementType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method SiteNavigationElementType setFunder(Property\FunderProperty $funder)
  * @method SiteNavigationElementType setGenre(Property\GenreProperty $genre)
  * @method SiteNavigationElementType setHasPart(Property\HasPartProperty $hasPart)
@@ -73,9 +76,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SiteNavigationElementType setPosition(Property\PositionProperty $position)
  * @method SiteNavigationElementType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method SiteNavigationElementType setProducer(Property\ProducerProperty $producer)
- * @method SiteNavigationElementType setProvider(Property\ProviderProperty $provider)
  * @method SiteNavigationElementType setPublication(Property\PublicationProperty $publication)
  * @method SiteNavigationElementType setPublisher(Property\PublisherProperty $publisher)
+ * @method SiteNavigationElementType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method SiteNavigationElementType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method SiteNavigationElementType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method SiteNavigationElementType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -83,24 +86,31 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SiteNavigationElementType setSameAs(Property\SameAsProperty $sameAs)
  * @method SiteNavigationElementType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method SiteNavigationElementType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method SiteNavigationElementType setSpatial(Property\SpatialProperty $spatial)
  * @method SiteNavigationElementType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method SiteNavigationElementType setSponsor(Property\SponsorProperty $sponsor)
+ * @method SiteNavigationElementType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method SiteNavigationElementType setTemporal(Property\TemporalProperty $temporal)
  * @method SiteNavigationElementType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method SiteNavigationElementType setText(Property\TextProperty $text)
+ * @method SiteNavigationElementType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method SiteNavigationElementType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method SiteNavigationElementType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method SiteNavigationElementType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method SiteNavigationElementType setTranslator(Property\TranslatorProperty $translator)
  * @method SiteNavigationElementType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method SiteNavigationElementType setUrl(Property\UrlProperty $url)
  * @method SiteNavigationElementType setVersion(Property\VersionProperty $version)
  * @method SiteNavigationElementType setVideo(Property\VideoProperty $video)
  * @method SiteNavigationElementType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method SiteNavigationElementType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
+ * @method SiteNavigationElementType setXpath(Property\XpathProperty $xpath)
  */
 class SiteNavigationElementType extends WebPageElementType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

@@ -5,27 +5,27 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class BoardingPolicyType.
+ * A type of boarding policy used by an airline.
  * 
- * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\BoardingPolicyType instead.
- * 
- * @method BoardingPolicyType setAdditionalType(Property\AdditionalType $additionalType)
- * @method BoardingPolicyType setAlternateName(Property\AlternateName $alternateName)
- * @method BoardingPolicyType setDescription(Property\Description $description)
- * @method BoardingPolicyType setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method BoardingPolicyType setIdentifier(Property\Identifier $identifier)
- * @method BoardingPolicyType setImage(Property\Image $image)
- * @method BoardingPolicyType setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method BoardingPolicyType setName(Property\Name $name)
- * @method BoardingPolicyType setPotentialAction(Property\PotentialAction $potentialAction)
- * @method BoardingPolicyType setSameAs(Property\SameAs $sameAs)
- * @method BoardingPolicyType setUrl(Property\Url $url)
+ * @method BoardingPolicyType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
+ * @method BoardingPolicyType setAlternateName(Property\AlternateNameProperty $alternateName)
+ * @method BoardingPolicyType setDescription(Property\DescriptionProperty $description)
+ * @method BoardingPolicyType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
+ * @method BoardingPolicyType setIdentifier(Property\IdentifierProperty $identifier)
+ * @method BoardingPolicyType setImage(Property\ImageProperty $image)
+ * @method BoardingPolicyType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
+ * @method BoardingPolicyType setName(Property\NameProperty $name)
+ * @method BoardingPolicyType setPotentialAction(Property\PotentialActionProperty $potentialAction)
+ * @method BoardingPolicyType setSameAs(Property\SameAsProperty $sameAs)
+ * @method BoardingPolicyType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method BoardingPolicyType setSupersededBy(Property\SupersededByProperty $supersededBy)
+ * @method BoardingPolicyType setUrl(Property\UrlProperty $url)
  */
-class BoardingPolicyType extends Enumeration {
+class BoardingPolicyType extends EnumerationType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

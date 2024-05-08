@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class GamePlayModeType.
+ * Indicates whether this game is multi-player, co-op or single-player.
  * 
  * @method GamePlayModeType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method GamePlayModeType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method GamePlayModeType setName(Property\NameProperty $name)
  * @method GamePlayModeType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method GamePlayModeType setSameAs(Property\SameAsProperty $sameAs)
+ * @method GamePlayModeType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method GamePlayModeType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method GamePlayModeType setUrl(Property\UrlProperty $url)
  */
 class GamePlayModeType extends EnumerationType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class DrinkActionType.
+ * The act of swallowing liquids.
  * 
+ * @method DrinkActionType setActionAccessibilityRequirement(Property\ActionAccessibilityRequirementProperty $actionAccessibilityRequirement)
  * @method DrinkActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method DrinkActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method DrinkActionType setAgent(Property\AgentProperty $agent)
@@ -28,6 +29,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method DrinkActionType setResult(Property\ResultProperty $result)
  * @method DrinkActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method DrinkActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method DrinkActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method DrinkActionType setTarget(Property\TargetProperty $target)
  * @method DrinkActionType setUrl(Property\UrlProperty $url)
  */
@@ -35,7 +37,7 @@ class DrinkActionType extends ConsumeActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

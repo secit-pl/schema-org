@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * PetsAllowedProperty class.
+ * Indicates whether pets are allowed to enter the accommodation or lodging business. More detailed information can be put in a text value.
  * 
  * @method PetsAllowedProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class PetsAllowedProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class PetsAllowedProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

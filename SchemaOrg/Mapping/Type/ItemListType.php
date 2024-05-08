@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ItemListType.
+ * A list of items of any sort—for example, Top 10 Movies About Weathermen, or Top 100 Party Songs. Not to be confused with HTML lists, which are often used only for formatting.
  * 
  * @method ItemListType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method ItemListType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,6 +17,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ItemListType setName(Property\NameProperty $name)
  * @method ItemListType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method ItemListType setSameAs(Property\SameAsProperty $sameAs)
+ * @method ItemListType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method ItemListType setUrl(Property\UrlProperty $url)
  */
 class ItemListType extends IntangibleType {
@@ -38,7 +39,7 @@ class ItemListType extends IntangibleType {
 
 	/**
 	 * ItemListType constructor.
-	 * 
+	 *
 	 * @param string $id
 	 */
 	public function __construct($id = null) {
@@ -48,7 +49,7 @@ class ItemListType extends IntangibleType {
 
 	/**
 	 * Add an item list element.
-	 * 
+	 *
 	 * @param Property\ItemListElementProperty $itemListElement
 	 * @return ItemListType
 	 */
@@ -63,7 +64,7 @@ class ItemListType extends IntangibleType {
 
 	/**
 	 * Get item list elements.
-	 * 
+	 *
 	 * @return array|Property\ItemListElementProperty[]
 	 */
 	public function getItemListElements() {
@@ -72,7 +73,7 @@ class ItemListType extends IntangibleType {
 
 	/**
 	 * Get item list order.
-	 * 
+	 *
 	 * @return Property\ItemListOrderProperty
 	 */
 	public function getItemListOrder() {
@@ -81,7 +82,7 @@ class ItemListType extends IntangibleType {
 
 	/**
 	 * Get number of items.
-	 * 
+	 *
 	 * @return Property\NumberOfItemsProperty
 	 */
 	public function getNumberOfItems() {
@@ -90,7 +91,7 @@ class ItemListType extends IntangibleType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -99,7 +100,7 @@ class ItemListType extends IntangibleType {
 
 	/**
 	 * Set item list elements.
-	 * 
+	 *
 	 * @param array|Property\ItemListElementProperty[] $itemListElements
 	 * @return ItemListType
 	 */
@@ -119,7 +120,7 @@ class ItemListType extends IntangibleType {
 
 	/**
 	 * Set item list order.
-	 * 
+	 *
 	 * @param Property\ItemListOrderProperty $itemListOrder
 	 * @return ItemListType
 	 */
@@ -131,7 +132,7 @@ class ItemListType extends IntangibleType {
 
 	/**
 	 * Set number of items.
-	 * 
+	 *
 	 * @param Property\NumberOfItemsProperty $numberOfItems
 	 * @return ItemListType
 	 */

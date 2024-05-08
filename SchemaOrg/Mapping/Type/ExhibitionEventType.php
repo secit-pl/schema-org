@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ExhibitionEventType.
+ * Event type: Exhibition event, e.g. at a museum, library, archive, tradeshow, ...
  * 
+ * @method ExhibitionEventType setAbout(Property\AboutProperty $about)
  * @method ExhibitionEventType setActor(Property\ActorProperty $actor)
  * @method ExhibitionEventType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method ExhibitionEventType setAggregateRating(Property\AggregateRatingProperty $aggregateRating)
@@ -19,6 +20,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ExhibitionEventType setDirector(Property\DirectorProperty $director)
  * @method ExhibitionEventType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
  * @method ExhibitionEventType setDoorTime(Property\DoorTimeProperty $doorTime)
+ * @method ExhibitionEventType setDuration(Property\DurationProperty $duration)
  * @method ExhibitionEventType setEndDate(Property\EndDateProperty $endDate)
  * @method ExhibitionEventType setEventStatus(Property\EventStatusProperty $eventStatus)
  * @method ExhibitionEventType setFunder(Property\FunderProperty $funder)
@@ -26,6 +28,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ExhibitionEventType setImage(Property\ImageProperty $image)
  * @method ExhibitionEventType setInLanguage(Property\InLanguageProperty $inLanguage)
  * @method ExhibitionEventType setIsAccessibleForFree(Property\IsAccessibleForFreeProperty $isAccessibleForFree)
+ * @method ExhibitionEventType setKeywords(Property\KeywordsProperty $keywords)
  * @method ExhibitionEventType setLocation(Property\LocationProperty $location)
  * @method ExhibitionEventType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
  * @method ExhibitionEventType setMaximumAttendeeCapacity(Property\MaximumAttendeeCapacityProperty $maximumAttendeeCapacity)
@@ -42,6 +45,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ExhibitionEventType setSponsor(Property\SponsorProperty $sponsor)
  * @method ExhibitionEventType setStartDate(Property\StartDateProperty $startDate)
  * @method ExhibitionEventType setSubEvent(Property\SubEventProperty $subEvent)
+ * @method ExhibitionEventType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method ExhibitionEventType setSuperEvent(Property\SuperEventProperty $superEvent)
  * @method ExhibitionEventType setTranslator(Property\TranslatorProperty $translator)
  * @method ExhibitionEventType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
@@ -53,7 +57,7 @@ class ExhibitionEventType extends EventType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

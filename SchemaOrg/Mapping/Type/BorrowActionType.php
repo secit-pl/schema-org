@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class BorrowActionType.
+ * The act of obtaining an object under an agreement to return it at a later date. Reciprocal of LendAction. Related actions: LendAction: Reciprocal of BorrowAction.
  * 
  * @method BorrowActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method BorrowActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -28,6 +28,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method BorrowActionType setResult(Property\ResultProperty $result)
  * @method BorrowActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method BorrowActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method BorrowActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method BorrowActionType setTarget(Property\TargetProperty $target)
  * @method BorrowActionType setToLocation(Property\ToLocationProperty $toLocation)
  * @method BorrowActionType setUrl(Property\UrlProperty $url)
@@ -41,7 +42,7 @@ class BorrowActionType extends TransferActionType {
 
 	/**
 	 * Get lender.
-	 * 
+	 *
 	 * @return Property\LenderProperty
 	 */
 	public function getLender() {
@@ -50,7 +51,7 @@ class BorrowActionType extends TransferActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -59,7 +60,7 @@ class BorrowActionType extends TransferActionType {
 
 	/**
 	 * Set lender.
-	 * 
+	 *
 	 * @param Property\LenderProperty $lender
 	 * @return BorrowActionType
 	 */

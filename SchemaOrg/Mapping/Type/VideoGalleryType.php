@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class VideoGalleryType.
+ * Web page type: Video gallery page.
  * 
+ * @method VideoGalleryType setAbout(Property\AboutProperty $about)
  * @method VideoGalleryType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method VideoGalleryType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method VideoGalleryType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -34,6 +35,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method VideoGalleryType setContributor(Property\ContributorProperty $contributor)
  * @method VideoGalleryType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method VideoGalleryType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method VideoGalleryType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method VideoGalleryType setCreator(Property\CreatorProperty $creator)
  * @method VideoGalleryType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method VideoGalleryType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -45,9 +47,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method VideoGalleryType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method VideoGalleryType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method VideoGalleryType setEncoding(Property\EncodingProperty $encoding)
+ * @method VideoGalleryType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method VideoGalleryType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method VideoGalleryType setExpires(Property\ExpiresProperty $expires)
- * @method VideoGalleryType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method VideoGalleryType setFunder(Property\FunderProperty $funder)
  * @method VideoGalleryType setGenre(Property\GenreProperty $genre)
  * @method VideoGalleryType setHasPart(Property\HasPartProperty $hasPart)
@@ -77,9 +79,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method VideoGalleryType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method VideoGalleryType setPrimaryImageOfPage(Property\PrimaryImageOfPageProperty $primaryImageOfPage)
  * @method VideoGalleryType setProducer(Property\ProducerProperty $producer)
- * @method VideoGalleryType setProvider(Property\ProviderProperty $provider)
  * @method VideoGalleryType setPublication(Property\PublicationProperty $publication)
  * @method VideoGalleryType setPublisher(Property\PublisherProperty $publisher)
+ * @method VideoGalleryType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method VideoGalleryType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method VideoGalleryType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method VideoGalleryType setRelatedLink(Property\RelatedLinkProperty $relatedLink)
@@ -90,25 +92,32 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method VideoGalleryType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method VideoGalleryType setSignificantLink(Property\SignificantLinkProperty $significantLink)
  * @method VideoGalleryType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method VideoGalleryType setSpatial(Property\SpatialProperty $spatial)
  * @method VideoGalleryType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
+ * @method VideoGalleryType setSpeakable(Property\SpeakableProperty $speakable)
  * @method VideoGalleryType setSpecialty(Property\SpecialtyProperty $specialty)
  * @method VideoGalleryType setSponsor(Property\SponsorProperty $sponsor)
+ * @method VideoGalleryType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method VideoGalleryType setTemporal(Property\TemporalProperty $temporal)
  * @method VideoGalleryType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method VideoGalleryType setText(Property\TextProperty $text)
+ * @method VideoGalleryType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method VideoGalleryType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method VideoGalleryType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method VideoGalleryType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method VideoGalleryType setTranslator(Property\TranslatorProperty $translator)
  * @method VideoGalleryType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method VideoGalleryType setUrl(Property\UrlProperty $url)
  * @method VideoGalleryType setVersion(Property\VersionProperty $version)
  * @method VideoGalleryType setVideo(Property\VideoProperty $video)
  * @method VideoGalleryType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method VideoGalleryType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
-class VideoGalleryType extends CollectionPageType {
+class VideoGalleryType extends MediaGalleryType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

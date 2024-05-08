@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class DVDFormatType.
+ * DVDFormat.
  * 
  * @method DVDFormatType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method DVDFormatType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method DVDFormatType setName(Property\NameProperty $name)
  * @method DVDFormatType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method DVDFormatType setSameAs(Property\SameAsProperty $sameAs)
+ * @method DVDFormatType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method DVDFormatType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method DVDFormatType setUrl(Property\UrlProperty $url)
  */
 class DVDFormatType extends MusicReleaseFormatType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

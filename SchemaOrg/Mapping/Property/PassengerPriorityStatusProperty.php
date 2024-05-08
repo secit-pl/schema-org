@@ -6,7 +6,7 @@ use SecIT\SchemaOrg\Mapping\DataType;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * PassengerPriorityStatusProperty class.
+ * The priority status assigned to a passenger for security or boarding (e.g. FastTrack or Priority).
  * 
  * @method PassengerPriorityStatusProperty setValue($value)
  */
@@ -14,7 +14,7 @@ class PassengerPriorityStatusProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -23,7 +23,7 @@ class PassengerPriorityStatusProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

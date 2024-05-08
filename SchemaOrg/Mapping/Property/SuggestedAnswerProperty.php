@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * SuggestedAnswerProperty class.
+ * An answer (possibly one of several, possibly incorrect) to a Question, e.g. on a Question/Answer site.
  * 
  * @method SuggestedAnswerProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class SuggestedAnswerProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,11 +22,11 @@ class SuggestedAnswerProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */
 	public function isValueValid($value) {
-		return $value instanceof Type\AnswerType;
+		return $value instanceof Type\AnswerType || $value instanceof Type\ItemListType;
 	}
 }

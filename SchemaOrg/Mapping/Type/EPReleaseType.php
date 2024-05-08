@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class EPReleaseType.
+ * EPRelease.
  * 
  * @method EPReleaseType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method EPReleaseType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method EPReleaseType setName(Property\NameProperty $name)
  * @method EPReleaseType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method EPReleaseType setSameAs(Property\SameAsProperty $sameAs)
+ * @method EPReleaseType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method EPReleaseType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method EPReleaseType setUrl(Property\UrlProperty $url)
  */
 class EPReleaseType extends MusicAlbumReleaseType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

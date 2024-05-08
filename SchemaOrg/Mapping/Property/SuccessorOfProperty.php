@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * SuccessorOfProperty class.
+ * A pointer from a newer variant of a product to its previous, often discontinued predecessor.
  * 
  * @method SuccessorOfProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class SuccessorOfProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class SuccessorOfProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

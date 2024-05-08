@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class AirlineType.
+ * An organization that provides flights for passengers.
  * 
  * @method AirlineType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method AirlineType setAddress(Property\AddressProperty $address)
@@ -30,11 +30,14 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method AirlineType setFoundingLocation(Property\FoundingLocationProperty $foundingLocation)
  * @method AirlineType setFunder(Property\FunderProperty $funder)
  * @method AirlineType setGlobalLocationNumber(Property\GlobalLocationNumberProperty $globalLocationNumber)
+ * @method AirlineType setHasCertification(Property\HasCertificationProperty $hasCertification)
  * @method AirlineType setHasOfferCatalog(Property\HasOfferCatalogProperty $hasOfferCatalog)
  * @method AirlineType setHasPOS(Property\HasPOSProperty $hasPOS)
  * @method AirlineType setIdentifier(Property\IdentifierProperty $identifier)
  * @method AirlineType setImage(Property\ImageProperty $image)
+ * @method AirlineType setInteractionStatistic(Property\InteractionStatisticProperty $interactionStatistic)
  * @method AirlineType setIsicV4(Property\IsicV4Property $isicV4)
+ * @method AirlineType setKeywords(Property\KeywordsProperty $keywords)
  * @method AirlineType setLegalName(Property\LegalNameProperty $legalName)
  * @method AirlineType setLeiCode(Property\LeiCodeProperty $leiCode)
  * @method AirlineType setLocation(Property\LocationProperty $location)
@@ -53,8 +56,10 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method AirlineType setReview(Property\ReviewProperty $review)
  * @method AirlineType setSameAs(Property\SameAsProperty $sameAs)
  * @method AirlineType setSeeks(Property\SeeksProperty $seeks)
+ * @method AirlineType setSlogan(Property\SloganProperty $slogan)
  * @method AirlineType setSponsor(Property\SponsorProperty $sponsor)
  * @method AirlineType setSubOrganization(Property\SubOrganizationProperty $subOrganization)
+ * @method AirlineType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method AirlineType setTaxID(Property\TaxIDProperty $taxID)
  * @method AirlineType setTelephone(Property\TelephoneProperty $telephone)
  * @method AirlineType setUrl(Property\UrlProperty $url)
@@ -74,7 +79,7 @@ class AirlineType extends OrganizationType {
 
 	/**
 	 * Get boarding policy.
-	 * 
+	 *
 	 * @return Property\BoardingPolicyProperty
 	 */
 	public function getBoardingPolicy() {
@@ -83,7 +88,7 @@ class AirlineType extends OrganizationType {
 
 	/**
 	 * Get iata code.
-	 * 
+	 *
 	 * @return Property\IataCodeProperty
 	 */
 	public function getIataCode() {
@@ -92,7 +97,7 @@ class AirlineType extends OrganizationType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -101,7 +106,7 @@ class AirlineType extends OrganizationType {
 
 	/**
 	 * Set boarding policy.
-	 * 
+	 *
 	 * @param Property\BoardingPolicyProperty $boardingPolicy
 	 * @return AirlineType
 	 */
@@ -113,7 +118,7 @@ class AirlineType extends OrganizationType {
 
 	/**
 	 * Set iata code.
-	 * 
+	 *
 	 * @param Property\IataCodeProperty $iataCode
 	 * @return AirlineType
 	 */

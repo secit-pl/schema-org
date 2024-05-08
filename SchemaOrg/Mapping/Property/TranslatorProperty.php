@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * TranslatorProperty class.
+ * Organization or person who adapts a creative work to different languages, regional differences and technical requirements of a target market, or that translates during some event.
  * 
  * @method TranslatorProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class TranslatorProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class TranslatorProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

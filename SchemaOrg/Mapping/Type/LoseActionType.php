@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class LoseActionType.
+ * The act of being defeated in a competitive activity.
  * 
  * @method LoseActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method LoseActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method LoseActionType setResult(Property\ResultProperty $result)
  * @method LoseActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method LoseActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method LoseActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method LoseActionType setTarget(Property\TargetProperty $target)
  * @method LoseActionType setUrl(Property\UrlProperty $url)
  */
@@ -39,7 +40,7 @@ class LoseActionType extends AchieveActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -48,7 +49,7 @@ class LoseActionType extends AchieveActionType {
 
 	/**
 	 * Get winner.
-	 * 
+	 *
 	 * @return Property\WinnerProperty
 	 */
 	public function getWinner() {
@@ -57,7 +58,7 @@ class LoseActionType extends AchieveActionType {
 
 	/**
 	 * Set winner.
-	 * 
+	 *
 	 * @param Property\WinnerProperty $winner
 	 * @return LoseActionType
 	 */

@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class CheckoutPageType.
+ * Web page type: Checkout page.
  * 
+ * @method CheckoutPageType setAbout(Property\AboutProperty $about)
  * @method CheckoutPageType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method CheckoutPageType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method CheckoutPageType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -34,6 +35,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method CheckoutPageType setContributor(Property\ContributorProperty $contributor)
  * @method CheckoutPageType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method CheckoutPageType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method CheckoutPageType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method CheckoutPageType setCreator(Property\CreatorProperty $creator)
  * @method CheckoutPageType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method CheckoutPageType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -45,9 +47,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method CheckoutPageType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method CheckoutPageType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method CheckoutPageType setEncoding(Property\EncodingProperty $encoding)
+ * @method CheckoutPageType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method CheckoutPageType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method CheckoutPageType setExpires(Property\ExpiresProperty $expires)
- * @method CheckoutPageType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method CheckoutPageType setFunder(Property\FunderProperty $funder)
  * @method CheckoutPageType setGenre(Property\GenreProperty $genre)
  * @method CheckoutPageType setHasPart(Property\HasPartProperty $hasPart)
@@ -77,9 +79,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method CheckoutPageType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method CheckoutPageType setPrimaryImageOfPage(Property\PrimaryImageOfPageProperty $primaryImageOfPage)
  * @method CheckoutPageType setProducer(Property\ProducerProperty $producer)
- * @method CheckoutPageType setProvider(Property\ProviderProperty $provider)
  * @method CheckoutPageType setPublication(Property\PublicationProperty $publication)
  * @method CheckoutPageType setPublisher(Property\PublisherProperty $publisher)
+ * @method CheckoutPageType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method CheckoutPageType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method CheckoutPageType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method CheckoutPageType setRelatedLink(Property\RelatedLinkProperty $relatedLink)
@@ -90,25 +92,32 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method CheckoutPageType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method CheckoutPageType setSignificantLink(Property\SignificantLinkProperty $significantLink)
  * @method CheckoutPageType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method CheckoutPageType setSpatial(Property\SpatialProperty $spatial)
  * @method CheckoutPageType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
+ * @method CheckoutPageType setSpeakable(Property\SpeakableProperty $speakable)
  * @method CheckoutPageType setSpecialty(Property\SpecialtyProperty $specialty)
  * @method CheckoutPageType setSponsor(Property\SponsorProperty $sponsor)
+ * @method CheckoutPageType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method CheckoutPageType setTemporal(Property\TemporalProperty $temporal)
  * @method CheckoutPageType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method CheckoutPageType setText(Property\TextProperty $text)
+ * @method CheckoutPageType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method CheckoutPageType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method CheckoutPageType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method CheckoutPageType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method CheckoutPageType setTranslator(Property\TranslatorProperty $translator)
  * @method CheckoutPageType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method CheckoutPageType setUrl(Property\UrlProperty $url)
  * @method CheckoutPageType setVersion(Property\VersionProperty $version)
  * @method CheckoutPageType setVideo(Property\VideoProperty $video)
  * @method CheckoutPageType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method CheckoutPageType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class CheckoutPageType extends WebPageType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

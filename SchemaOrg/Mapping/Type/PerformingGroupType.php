@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class PerformingGroupType.
+ * A performance group, such as a band, an orchestra, or a circus.
  * 
  * @method PerformingGroupType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method PerformingGroupType setAddress(Property\AddressProperty $address)
@@ -30,11 +30,14 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method PerformingGroupType setFoundingLocation(Property\FoundingLocationProperty $foundingLocation)
  * @method PerformingGroupType setFunder(Property\FunderProperty $funder)
  * @method PerformingGroupType setGlobalLocationNumber(Property\GlobalLocationNumberProperty $globalLocationNumber)
+ * @method PerformingGroupType setHasCertification(Property\HasCertificationProperty $hasCertification)
  * @method PerformingGroupType setHasOfferCatalog(Property\HasOfferCatalogProperty $hasOfferCatalog)
  * @method PerformingGroupType setHasPOS(Property\HasPOSProperty $hasPOS)
  * @method PerformingGroupType setIdentifier(Property\IdentifierProperty $identifier)
  * @method PerformingGroupType setImage(Property\ImageProperty $image)
+ * @method PerformingGroupType setInteractionStatistic(Property\InteractionStatisticProperty $interactionStatistic)
  * @method PerformingGroupType setIsicV4(Property\IsicV4Property $isicV4)
+ * @method PerformingGroupType setKeywords(Property\KeywordsProperty $keywords)
  * @method PerformingGroupType setLegalName(Property\LegalNameProperty $legalName)
  * @method PerformingGroupType setLeiCode(Property\LeiCodeProperty $leiCode)
  * @method PerformingGroupType setLocation(Property\LocationProperty $location)
@@ -53,8 +56,10 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method PerformingGroupType setReview(Property\ReviewProperty $review)
  * @method PerformingGroupType setSameAs(Property\SameAsProperty $sameAs)
  * @method PerformingGroupType setSeeks(Property\SeeksProperty $seeks)
+ * @method PerformingGroupType setSlogan(Property\SloganProperty $slogan)
  * @method PerformingGroupType setSponsor(Property\SponsorProperty $sponsor)
  * @method PerformingGroupType setSubOrganization(Property\SubOrganizationProperty $subOrganization)
+ * @method PerformingGroupType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method PerformingGroupType setTaxID(Property\TaxIDProperty $taxID)
  * @method PerformingGroupType setTelephone(Property\TelephoneProperty $telephone)
  * @method PerformingGroupType setUrl(Property\UrlProperty $url)
@@ -64,7 +69,7 @@ class PerformingGroupType extends OrganizationType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

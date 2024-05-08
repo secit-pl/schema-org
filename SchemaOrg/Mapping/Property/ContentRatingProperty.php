@@ -3,9 +3,10 @@
 namespace SecIT\SchemaOrg\Mapping\Property;
 
 use SecIT\SchemaOrg\Mapping\DataType;
+use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * ContentRatingProperty class.
+ * Official rating of a piece of content—for example, 'MPAA PG-13'.
  * 
  * @method ContentRatingProperty setValue($value)
  */
@@ -13,7 +14,7 @@ class ContentRatingProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,11 +23,11 @@ class ContentRatingProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */
 	public function isValueValid($value) {
-		return $value instanceof DataType\TextType;
+		return $value instanceof Type\RatingType || $value instanceof DataType\TextType;
 	}
 }

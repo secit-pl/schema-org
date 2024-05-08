@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class DriveWheelConfigurationValueType.
+ * A value indicating which roadwheels will receive torque.
  * 
  * @method DriveWheelConfigurationValueType setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method DriveWheelConfigurationValueType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -24,6 +24,8 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method DriveWheelConfigurationValueType setNonEqual(Property\NonEqualProperty $nonEqual)
  * @method DriveWheelConfigurationValueType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method DriveWheelConfigurationValueType setSameAs(Property\SameAsProperty $sameAs)
+ * @method DriveWheelConfigurationValueType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method DriveWheelConfigurationValueType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method DriveWheelConfigurationValueType setUrl(Property\UrlProperty $url)
  * @method DriveWheelConfigurationValueType setValueReference(Property\ValueReferenceProperty $valueReference)
  */
@@ -31,7 +33,7 @@ class DriveWheelConfigurationValueType extends QualitativeValueType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

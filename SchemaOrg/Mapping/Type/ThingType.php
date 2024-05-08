@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ThingType.
+ * The most generic type of item.
  */
 class ThingType implements TypeInterface {
 
@@ -64,13 +64,18 @@ class ThingType implements TypeInterface {
 	private $sameAs;
 
 	/**
+	 * @var Property\SubjectOfProperty
+	 */
+	private $subjectOf;
+
+	/**
 	 * @var Property\UrlProperty
 	 */
 	private $url;
 
 	/**
 	 * ThingType constructor.
-	 * 
+	 *
 	 * @param string $id
 	 */
 	public function __construct($id = null) {
@@ -79,7 +84,7 @@ class ThingType implements TypeInterface {
 
 	/**
 	 * Get additional type.
-	 * 
+	 *
 	 * @return Property\AdditionalTypeProperty
 	 */
 	public function getAdditionalType() {
@@ -88,7 +93,7 @@ class ThingType implements TypeInterface {
 
 	/**
 	 * Get alternate name.
-	 * 
+	 *
 	 * @return Property\AlternateNameProperty
 	 */
 	public function getAlternateName() {
@@ -97,7 +102,7 @@ class ThingType implements TypeInterface {
 
 	/**
 	 * Get description.
-	 * 
+	 *
 	 * @return Property\DescriptionProperty
 	 */
 	public function getDescription() {
@@ -106,7 +111,7 @@ class ThingType implements TypeInterface {
 
 	/**
 	 * Get disambiguating description.
-	 * 
+	 *
 	 * @return Property\DisambiguatingDescriptionProperty
 	 */
 	public function getDisambiguatingDescription() {
@@ -115,7 +120,7 @@ class ThingType implements TypeInterface {
 
 	/**
 	 * Get id.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getId() {
@@ -124,7 +129,7 @@ class ThingType implements TypeInterface {
 
 	/**
 	 * Get identifier.
-	 * 
+	 *
 	 * @return Property\IdentifierProperty
 	 */
 	public function getIdentifier() {
@@ -133,7 +138,7 @@ class ThingType implements TypeInterface {
 
 	/**
 	 * Get image.
-	 * 
+	 *
 	 * @return Property\ImageProperty
 	 */
 	public function getImage() {
@@ -142,7 +147,7 @@ class ThingType implements TypeInterface {
 
 	/**
 	 * Get main entity of page.
-	 * 
+	 *
 	 * @return Property\MainEntityOfPageProperty
 	 */
 	public function getMainEntityOfPage() {
@@ -151,7 +156,7 @@ class ThingType implements TypeInterface {
 
 	/**
 	 * Get name.
-	 * 
+	 *
 	 * @return Property\NameProperty
 	 */
 	public function getName() {
@@ -160,7 +165,7 @@ class ThingType implements TypeInterface {
 
 	/**
 	 * Get potential action.
-	 * 
+	 *
 	 * @return Property\PotentialActionProperty
 	 */
 	public function getPotentialAction() {
@@ -169,7 +174,7 @@ class ThingType implements TypeInterface {
 
 	/**
 	 * Get same as.
-	 * 
+	 *
 	 * @return Property\SameAsProperty
 	 */
 	public function getSameAs() {
@@ -178,7 +183,7 @@ class ThingType implements TypeInterface {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -186,8 +191,17 @@ class ThingType implements TypeInterface {
 	}
 
 	/**
+	 * Get subject of.
+	 *
+	 * @return Property\SubjectOfProperty
+	 */
+	public function getSubjectOf() {
+		return $this->subjectOf;
+	}
+
+	/**
 	 * Get url.
-	 * 
+	 *
 	 * @return Property\UrlProperty
 	 */
 	public function getUrl() {
@@ -196,7 +210,7 @@ class ThingType implements TypeInterface {
 
 	/**
 	 * Set additional type.
-	 * 
+	 *
 	 * @param Property\AdditionalTypeProperty $additionalType
 	 * @return ThingType
 	 */
@@ -208,7 +222,7 @@ class ThingType implements TypeInterface {
 
 	/**
 	 * Set alternate name.
-	 * 
+	 *
 	 * @param Property\AlternateNameProperty $alternateName
 	 * @return ThingType
 	 */
@@ -220,7 +234,7 @@ class ThingType implements TypeInterface {
 
 	/**
 	 * Set description.
-	 * 
+	 *
 	 * @param Property\DescriptionProperty $description
 	 * @return ThingType
 	 */
@@ -232,7 +246,7 @@ class ThingType implements TypeInterface {
 
 	/**
 	 * Set disambiguating description.
-	 * 
+	 *
 	 * @param Property\DisambiguatingDescriptionProperty $disambiguatingDescription
 	 * @return ThingType
 	 */
@@ -244,7 +258,7 @@ class ThingType implements TypeInterface {
 
 	/**
 	 * Set identifier.
-	 * 
+	 *
 	 * @param Property\IdentifierProperty $identifier
 	 * @return ThingType
 	 */
@@ -256,7 +270,7 @@ class ThingType implements TypeInterface {
 
 	/**
 	 * Set image.
-	 * 
+	 *
 	 * @param Property\ImageProperty $image
 	 * @return ThingType
 	 */
@@ -268,7 +282,7 @@ class ThingType implements TypeInterface {
 
 	/**
 	 * Set main entity of page.
-	 * 
+	 *
 	 * @param Property\MainEntityOfPageProperty $mainEntityOfPage
 	 * @return ThingType
 	 */
@@ -280,7 +294,7 @@ class ThingType implements TypeInterface {
 
 	/**
 	 * Set name.
-	 * 
+	 *
 	 * @param Property\NameProperty $name
 	 * @return ThingType
 	 */
@@ -292,7 +306,7 @@ class ThingType implements TypeInterface {
 
 	/**
 	 * Set potential action.
-	 * 
+	 *
 	 * @param Property\PotentialActionProperty $potentialAction
 	 * @return ThingType
 	 */
@@ -304,7 +318,7 @@ class ThingType implements TypeInterface {
 
 	/**
 	 * Set same as.
-	 * 
+	 *
 	 * @param Property\SameAsProperty $sameAs
 	 * @return ThingType
 	 */
@@ -315,8 +329,20 @@ class ThingType implements TypeInterface {
 	}
 
 	/**
+	 * Set subject of.
+	 *
+	 * @param Property\SubjectOfProperty $subjectOf
+	 * @return ThingType
+	 */
+	public function setSubjectOf(Property\SubjectOfProperty $subjectOf) {
+		$this->subjectOf = $subjectOf;
+
+		return $this;
+	}
+
+	/**
 	 * Set url.
-	 * 
+	 *
 	 * @param Property\UrlProperty $url
 	 * @return ThingType
 	 */

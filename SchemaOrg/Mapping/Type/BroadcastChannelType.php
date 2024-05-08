@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class BroadcastChannelType.
+ * A unique instance of a BroadcastService on a CableOrSatelliteService lineup.
  * 
  * @method BroadcastChannelType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method BroadcastChannelType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,6 +17,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method BroadcastChannelType setName(Property\NameProperty $name)
  * @method BroadcastChannelType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method BroadcastChannelType setSameAs(Property\SameAsProperty $sameAs)
+ * @method BroadcastChannelType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method BroadcastChannelType setUrl(Property\UrlProperty $url)
  */
 class BroadcastChannelType extends IntangibleType {
@@ -25,6 +26,11 @@ class BroadcastChannelType extends IntangibleType {
 	 * @var Property\BroadcastChannelIdProperty
 	 */
 	private $broadcastChannelId;
+
+	/**
+	 * @var Property\BroadcastFrequencyProperty
+	 */
+	private $broadcastFrequency;
 
 	/**
 	 * @var Property\BroadcastServiceTierProperty
@@ -48,7 +54,7 @@ class BroadcastChannelType extends IntangibleType {
 
 	/**
 	 * Get broadcast channel id.
-	 * 
+	 *
 	 * @return Property\BroadcastChannelIdProperty
 	 */
 	public function getBroadcastChannelId() {
@@ -56,8 +62,17 @@ class BroadcastChannelType extends IntangibleType {
 	}
 
 	/**
+	 * Get broadcast frequency.
+	 *
+	 * @return Property\BroadcastFrequencyProperty
+	 */
+	public function getBroadcastFrequency() {
+		return $this->broadcastFrequency;
+	}
+
+	/**
 	 * Get broadcast service tier.
-	 * 
+	 *
 	 * @return Property\BroadcastServiceTierProperty
 	 */
 	public function getBroadcastServiceTier() {
@@ -66,7 +81,7 @@ class BroadcastChannelType extends IntangibleType {
 
 	/**
 	 * Get genre.
-	 * 
+	 *
 	 * @return Property\GenreProperty
 	 */
 	public function getGenre() {
@@ -75,7 +90,7 @@ class BroadcastChannelType extends IntangibleType {
 
 	/**
 	 * Get in broadcast lineup.
-	 * 
+	 *
 	 * @return Property\InBroadcastLineupProperty
 	 */
 	public function getInBroadcastLineup() {
@@ -84,7 +99,7 @@ class BroadcastChannelType extends IntangibleType {
 
 	/**
 	 * Get provides broadcast service.
-	 * 
+	 *
 	 * @return Property\ProvidesBroadcastServiceProperty
 	 */
 	public function getProvidesBroadcastService() {
@@ -93,7 +108,7 @@ class BroadcastChannelType extends IntangibleType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -102,7 +117,7 @@ class BroadcastChannelType extends IntangibleType {
 
 	/**
 	 * Set broadcast channel id.
-	 * 
+	 *
 	 * @param Property\BroadcastChannelIdProperty $broadcastChannelId
 	 * @return BroadcastChannelType
 	 */
@@ -113,8 +128,20 @@ class BroadcastChannelType extends IntangibleType {
 	}
 
 	/**
+	 * Set broadcast frequency.
+	 *
+	 * @param Property\BroadcastFrequencyProperty $broadcastFrequency
+	 * @return BroadcastChannelType
+	 */
+	public function setBroadcastFrequency(Property\BroadcastFrequencyProperty $broadcastFrequency) {
+		$this->broadcastFrequency = $broadcastFrequency;
+
+		return $this;
+	}
+
+	/**
 	 * Set broadcast service tier.
-	 * 
+	 *
 	 * @param Property\BroadcastServiceTierProperty $broadcastServiceTier
 	 * @return BroadcastChannelType
 	 */
@@ -126,7 +153,7 @@ class BroadcastChannelType extends IntangibleType {
 
 	/**
 	 * Set genre.
-	 * 
+	 *
 	 * @param Property\GenreProperty $genre
 	 * @return BroadcastChannelType
 	 */
@@ -138,7 +165,7 @@ class BroadcastChannelType extends IntangibleType {
 
 	/**
 	 * Set in broadcast lineup.
-	 * 
+	 *
 	 * @param Property\InBroadcastLineupProperty $inBroadcastLineup
 	 * @return BroadcastChannelType
 	 */
@@ -150,7 +177,7 @@ class BroadcastChannelType extends IntangibleType {
 
 	/**
 	 * Set provides broadcast service.
-	 * 
+	 *
 	 * @param Property\ProvidesBroadcastServiceProperty $providesBroadcastService
 	 * @return BroadcastChannelType
 	 */

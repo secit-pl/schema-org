@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class MusicRecordingType.
+ * A music recording (track), usually a single song.
  * 
+ * @method MusicRecordingType setAbout(Property\AboutProperty $about)
  * @method MusicRecordingType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method MusicRecordingType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method MusicRecordingType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -33,6 +34,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MusicRecordingType setContributor(Property\ContributorProperty $contributor)
  * @method MusicRecordingType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method MusicRecordingType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method MusicRecordingType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method MusicRecordingType setCreator(Property\CreatorProperty $creator)
  * @method MusicRecordingType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method MusicRecordingType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -44,9 +46,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MusicRecordingType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method MusicRecordingType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method MusicRecordingType setEncoding(Property\EncodingProperty $encoding)
+ * @method MusicRecordingType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method MusicRecordingType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method MusicRecordingType setExpires(Property\ExpiresProperty $expires)
- * @method MusicRecordingType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method MusicRecordingType setFunder(Property\FunderProperty $funder)
  * @method MusicRecordingType setGenre(Property\GenreProperty $genre)
  * @method MusicRecordingType setHasPart(Property\HasPartProperty $hasPart)
@@ -73,9 +75,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MusicRecordingType setPosition(Property\PositionProperty $position)
  * @method MusicRecordingType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method MusicRecordingType setProducer(Property\ProducerProperty $producer)
- * @method MusicRecordingType setProvider(Property\ProviderProperty $provider)
  * @method MusicRecordingType setPublication(Property\PublicationProperty $publication)
  * @method MusicRecordingType setPublisher(Property\PublisherProperty $publisher)
+ * @method MusicRecordingType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method MusicRecordingType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method MusicRecordingType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method MusicRecordingType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -83,18 +85,24 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MusicRecordingType setSameAs(Property\SameAsProperty $sameAs)
  * @method MusicRecordingType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method MusicRecordingType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method MusicRecordingType setSpatial(Property\SpatialProperty $spatial)
  * @method MusicRecordingType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method MusicRecordingType setSponsor(Property\SponsorProperty $sponsor)
+ * @method MusicRecordingType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method MusicRecordingType setTemporal(Property\TemporalProperty $temporal)
  * @method MusicRecordingType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method MusicRecordingType setText(Property\TextProperty $text)
+ * @method MusicRecordingType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method MusicRecordingType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method MusicRecordingType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method MusicRecordingType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method MusicRecordingType setTranslator(Property\TranslatorProperty $translator)
  * @method MusicRecordingType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method MusicRecordingType setUrl(Property\UrlProperty $url)
  * @method MusicRecordingType setVersion(Property\VersionProperty $version)
  * @method MusicRecordingType setVideo(Property\VideoProperty $video)
  * @method MusicRecordingType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method MusicRecordingType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class MusicRecordingType extends CreativeWorkType {
 
@@ -102,6 +110,11 @@ class MusicRecordingType extends CreativeWorkType {
 	 * @var Property\ByArtistProperty
 	 */
 	private $byArtist;
+
+	/**
+	 * @var Property\DurationProperty
+	 */
+	private $duration;
 
 	/**
 	 * @var Property\InAlbumProperty
@@ -125,7 +138,7 @@ class MusicRecordingType extends CreativeWorkType {
 
 	/**
 	 * Get by artist.
-	 * 
+	 *
 	 * @return Property\ByArtistProperty
 	 */
 	public function getByArtist() {
@@ -133,8 +146,17 @@ class MusicRecordingType extends CreativeWorkType {
 	}
 
 	/**
+	 * Get duration.
+	 *
+	 * @return Property\DurationProperty
+	 */
+	public function getDuration() {
+		return $this->duration;
+	}
+
+	/**
 	 * Get in album.
-	 * 
+	 *
 	 * @return Property\InAlbumProperty
 	 */
 	public function getInAlbum() {
@@ -143,7 +165,7 @@ class MusicRecordingType extends CreativeWorkType {
 
 	/**
 	 * Get in playlist.
-	 * 
+	 *
 	 * @return Property\InPlaylistProperty
 	 */
 	public function getInPlaylist() {
@@ -152,7 +174,7 @@ class MusicRecordingType extends CreativeWorkType {
 
 	/**
 	 * Get isrc code.
-	 * 
+	 *
 	 * @return Property\IsrcCodeProperty
 	 */
 	public function getIsrcCode() {
@@ -161,7 +183,7 @@ class MusicRecordingType extends CreativeWorkType {
 
 	/**
 	 * Get recording of.
-	 * 
+	 *
 	 * @return Property\RecordingOfProperty
 	 */
 	public function getRecordingOf() {
@@ -170,7 +192,7 @@ class MusicRecordingType extends CreativeWorkType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -179,7 +201,7 @@ class MusicRecordingType extends CreativeWorkType {
 
 	/**
 	 * Set by artist.
-	 * 
+	 *
 	 * @param Property\ByArtistProperty $byArtist
 	 * @return MusicRecordingType
 	 */
@@ -190,8 +212,20 @@ class MusicRecordingType extends CreativeWorkType {
 	}
 
 	/**
+	 * Set duration.
+	 *
+	 * @param Property\DurationProperty $duration
+	 * @return MusicRecordingType
+	 */
+	public function setDuration(Property\DurationProperty $duration) {
+		$this->duration = $duration;
+
+		return $this;
+	}
+
+	/**
 	 * Set in album.
-	 * 
+	 *
 	 * @param Property\InAlbumProperty $inAlbum
 	 * @return MusicRecordingType
 	 */
@@ -203,7 +237,7 @@ class MusicRecordingType extends CreativeWorkType {
 
 	/**
 	 * Set in playlist.
-	 * 
+	 *
 	 * @param Property\InPlaylistProperty $inPlaylist
 	 * @return MusicRecordingType
 	 */
@@ -215,7 +249,7 @@ class MusicRecordingType extends CreativeWorkType {
 
 	/**
 	 * Set isrc code.
-	 * 
+	 *
 	 * @param Property\IsrcCodeProperty $isrcCode
 	 * @return MusicRecordingType
 	 */
@@ -227,7 +261,7 @@ class MusicRecordingType extends CreativeWorkType {
 
 	/**
 	 * Set recording of.
-	 * 
+	 *
 	 * @param Property\RecordingOfProperty $recordingOf
 	 * @return MusicRecordingType
 	 */

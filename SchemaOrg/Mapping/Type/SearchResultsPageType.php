@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class SearchResultsPageType.
+ * Web page type: Search results page.
  * 
+ * @method SearchResultsPageType setAbout(Property\AboutProperty $about)
  * @method SearchResultsPageType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method SearchResultsPageType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method SearchResultsPageType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -34,6 +35,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SearchResultsPageType setContributor(Property\ContributorProperty $contributor)
  * @method SearchResultsPageType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method SearchResultsPageType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method SearchResultsPageType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method SearchResultsPageType setCreator(Property\CreatorProperty $creator)
  * @method SearchResultsPageType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method SearchResultsPageType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -45,9 +47,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SearchResultsPageType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method SearchResultsPageType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method SearchResultsPageType setEncoding(Property\EncodingProperty $encoding)
+ * @method SearchResultsPageType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method SearchResultsPageType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method SearchResultsPageType setExpires(Property\ExpiresProperty $expires)
- * @method SearchResultsPageType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method SearchResultsPageType setFunder(Property\FunderProperty $funder)
  * @method SearchResultsPageType setGenre(Property\GenreProperty $genre)
  * @method SearchResultsPageType setHasPart(Property\HasPartProperty $hasPart)
@@ -77,9 +79,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SearchResultsPageType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method SearchResultsPageType setPrimaryImageOfPage(Property\PrimaryImageOfPageProperty $primaryImageOfPage)
  * @method SearchResultsPageType setProducer(Property\ProducerProperty $producer)
- * @method SearchResultsPageType setProvider(Property\ProviderProperty $provider)
  * @method SearchResultsPageType setPublication(Property\PublicationProperty $publication)
  * @method SearchResultsPageType setPublisher(Property\PublisherProperty $publisher)
+ * @method SearchResultsPageType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method SearchResultsPageType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method SearchResultsPageType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method SearchResultsPageType setRelatedLink(Property\RelatedLinkProperty $relatedLink)
@@ -90,25 +92,32 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SearchResultsPageType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method SearchResultsPageType setSignificantLink(Property\SignificantLinkProperty $significantLink)
  * @method SearchResultsPageType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method SearchResultsPageType setSpatial(Property\SpatialProperty $spatial)
  * @method SearchResultsPageType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
+ * @method SearchResultsPageType setSpeakable(Property\SpeakableProperty $speakable)
  * @method SearchResultsPageType setSpecialty(Property\SpecialtyProperty $specialty)
  * @method SearchResultsPageType setSponsor(Property\SponsorProperty $sponsor)
+ * @method SearchResultsPageType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method SearchResultsPageType setTemporal(Property\TemporalProperty $temporal)
  * @method SearchResultsPageType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method SearchResultsPageType setText(Property\TextProperty $text)
+ * @method SearchResultsPageType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method SearchResultsPageType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method SearchResultsPageType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method SearchResultsPageType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method SearchResultsPageType setTranslator(Property\TranslatorProperty $translator)
  * @method SearchResultsPageType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method SearchResultsPageType setUrl(Property\UrlProperty $url)
  * @method SearchResultsPageType setVersion(Property\VersionProperty $version)
  * @method SearchResultsPageType setVideo(Property\VideoProperty $video)
  * @method SearchResultsPageType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method SearchResultsPageType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class SearchResultsPageType extends WebPageType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

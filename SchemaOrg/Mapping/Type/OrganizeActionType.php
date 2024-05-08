@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class OrganizeActionType.
+ * The act of manipulating/administering/supervising/controlling one or more objects.
  * 
  * @method OrganizeActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method OrganizeActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method OrganizeActionType setResult(Property\ResultProperty $result)
  * @method OrganizeActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method OrganizeActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method OrganizeActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method OrganizeActionType setTarget(Property\TargetProperty $target)
  * @method OrganizeActionType setUrl(Property\UrlProperty $url)
  */
@@ -34,7 +35,7 @@ class OrganizeActionType extends ActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

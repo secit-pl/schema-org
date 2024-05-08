@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * DurationOfWarrantyProperty class.
+ * The duration of the warranty promise. Common unitCode values are ANN for year, MON for months, or DAY for days.
  * 
  * @method DurationOfWarrantyProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class DurationOfWarrantyProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class DurationOfWarrantyProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

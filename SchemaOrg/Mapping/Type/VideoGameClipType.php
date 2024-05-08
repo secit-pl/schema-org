@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class VideoGameClipType.
+ * A short segment/part of a video game.
  * 
+ * @method VideoGameClipType setAbout(Property\AboutProperty $about)
  * @method VideoGameClipType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method VideoGameClipType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method VideoGameClipType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -35,6 +36,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method VideoGameClipType setContributor(Property\ContributorProperty $contributor)
  * @method VideoGameClipType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method VideoGameClipType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method VideoGameClipType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method VideoGameClipType setCreator(Property\CreatorProperty $creator)
  * @method VideoGameClipType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method VideoGameClipType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -47,9 +49,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method VideoGameClipType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method VideoGameClipType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method VideoGameClipType setEncoding(Property\EncodingProperty $encoding)
+ * @method VideoGameClipType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method VideoGameClipType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method VideoGameClipType setExpires(Property\ExpiresProperty $expires)
- * @method VideoGameClipType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method VideoGameClipType setFunder(Property\FunderProperty $funder)
  * @method VideoGameClipType setGenre(Property\GenreProperty $genre)
  * @method VideoGameClipType setHasPart(Property\HasPartProperty $hasPart)
@@ -80,9 +82,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method VideoGameClipType setPosition(Property\PositionProperty $position)
  * @method VideoGameClipType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method VideoGameClipType setProducer(Property\ProducerProperty $producer)
- * @method VideoGameClipType setProvider(Property\ProviderProperty $provider)
  * @method VideoGameClipType setPublication(Property\PublicationProperty $publication)
  * @method VideoGameClipType setPublisher(Property\PublisherProperty $publisher)
+ * @method VideoGameClipType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method VideoGameClipType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method VideoGameClipType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method VideoGameClipType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -90,24 +92,30 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method VideoGameClipType setSameAs(Property\SameAsProperty $sameAs)
  * @method VideoGameClipType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method VideoGameClipType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method VideoGameClipType setSpatial(Property\SpatialProperty $spatial)
  * @method VideoGameClipType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method VideoGameClipType setSponsor(Property\SponsorProperty $sponsor)
+ * @method VideoGameClipType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method VideoGameClipType setTemporal(Property\TemporalProperty $temporal)
  * @method VideoGameClipType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method VideoGameClipType setText(Property\TextProperty $text)
+ * @method VideoGameClipType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method VideoGameClipType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method VideoGameClipType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method VideoGameClipType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method VideoGameClipType setTranslator(Property\TranslatorProperty $translator)
  * @method VideoGameClipType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method VideoGameClipType setUrl(Property\UrlProperty $url)
  * @method VideoGameClipType setVersion(Property\VersionProperty $version)
  * @method VideoGameClipType setVideo(Property\VideoProperty $video)
  * @method VideoGameClipType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method VideoGameClipType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class VideoGameClipType extends ClipType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

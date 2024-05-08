@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class BlogType.
+ * A blog, sometimes known as a "weblog". Note that the individual posts (BlogPostings) in a Blog are often colloquially referred to by the same term.
  * 
+ * @method BlogType setAbout(Property\AboutProperty $about)
  * @method BlogType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method BlogType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method BlogType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -33,6 +34,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method BlogType setContributor(Property\ContributorProperty $contributor)
  * @method BlogType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method BlogType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method BlogType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method BlogType setCreator(Property\CreatorProperty $creator)
  * @method BlogType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method BlogType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -44,9 +46,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method BlogType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method BlogType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method BlogType setEncoding(Property\EncodingProperty $encoding)
+ * @method BlogType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method BlogType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method BlogType setExpires(Property\ExpiresProperty $expires)
- * @method BlogType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method BlogType setFunder(Property\FunderProperty $funder)
  * @method BlogType setGenre(Property\GenreProperty $genre)
  * @method BlogType setHasPart(Property\HasPartProperty $hasPart)
@@ -73,9 +75,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method BlogType setPosition(Property\PositionProperty $position)
  * @method BlogType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method BlogType setProducer(Property\ProducerProperty $producer)
- * @method BlogType setProvider(Property\ProviderProperty $provider)
  * @method BlogType setPublication(Property\PublicationProperty $publication)
  * @method BlogType setPublisher(Property\PublisherProperty $publisher)
+ * @method BlogType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method BlogType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method BlogType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method BlogType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -83,18 +85,24 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method BlogType setSameAs(Property\SameAsProperty $sameAs)
  * @method BlogType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method BlogType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method BlogType setSpatial(Property\SpatialProperty $spatial)
  * @method BlogType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method BlogType setSponsor(Property\SponsorProperty $sponsor)
+ * @method BlogType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method BlogType setTemporal(Property\TemporalProperty $temporal)
  * @method BlogType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method BlogType setText(Property\TextProperty $text)
+ * @method BlogType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method BlogType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method BlogType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method BlogType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method BlogType setTranslator(Property\TranslatorProperty $translator)
  * @method BlogType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method BlogType setUrl(Property\UrlProperty $url)
  * @method BlogType setVersion(Property\VersionProperty $version)
  * @method BlogType setVideo(Property\VideoProperty $video)
  * @method BlogType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method BlogType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class BlogType extends CreativeWorkType {
 
@@ -110,7 +118,7 @@ class BlogType extends CreativeWorkType {
 
 	/**
 	 * Get blog post.
-	 * 
+	 *
 	 * @return Property\BlogPostProperty
 	 */
 	public function getBlogPost() {
@@ -119,7 +127,7 @@ class BlogType extends CreativeWorkType {
 
 	/**
 	 * Get issn.
-	 * 
+	 *
 	 * @return Property\IssnProperty
 	 */
 	public function getIssn() {
@@ -128,7 +136,7 @@ class BlogType extends CreativeWorkType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -137,7 +145,7 @@ class BlogType extends CreativeWorkType {
 
 	/**
 	 * Set blog post.
-	 * 
+	 *
 	 * @param Property\BlogPostProperty $blogPost
 	 * @return BlogType
 	 */
@@ -149,7 +157,7 @@ class BlogType extends CreativeWorkType {
 
 	/**
 	 * Set issn.
-	 * 
+	 *
 	 * @param Property\IssnProperty $issn
 	 * @return BlogType
 	 */

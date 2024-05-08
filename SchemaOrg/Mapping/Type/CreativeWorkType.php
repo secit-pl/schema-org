@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class CreativeWorkType.
+ * The most generic kind of creative work, including books, movies, photographs, software programs, etc.
  * 
  * @method CreativeWorkType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method CreativeWorkType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,9 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method CreativeWorkType setName(Property\NameProperty $name)
  * @method CreativeWorkType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method CreativeWorkType setSameAs(Property\SameAsProperty $sameAs)
+ * @method CreativeWorkType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method CreativeWorkType setUrl(Property\UrlProperty $url)
  */
 class CreativeWorkType extends ThingType {
+
+	/**
+	 * @var Property\AboutProperty
+	 */
+	private $about;
 
 	/**
 	 * @var Property\AccessibilityAPIProperty
@@ -142,6 +148,11 @@ class CreativeWorkType extends ThingType {
 	private $copyrightYear;
 
 	/**
+	 * @var Property\CountryOfOriginProperty
+	 */
+	private $countryOfOrigin;
+
+	/**
 	 * @var Property\CreatorProperty
 	 */
 	private $creator;
@@ -187,6 +198,11 @@ class CreativeWorkType extends ThingType {
 	private $encoding;
 
 	/**
+	 * @var Property\EncodingFormatProperty
+	 */
+	private $encodingFormat;
+
+	/**
 	 * @var Property\ExampleOfWorkProperty
 	 */
 	private $exampleOfWork;
@@ -195,11 +211,6 @@ class CreativeWorkType extends ThingType {
 	 * @var Property\ExpiresProperty
 	 */
 	private $expires;
-
-	/**
-	 * @var Property\FileFormatProperty
-	 */
-	private $fileFormat;
 
 	/**
 	 * @var Property\FunderProperty
@@ -307,11 +318,6 @@ class CreativeWorkType extends ThingType {
 	private $producer;
 
 	/**
-	 * @var Property\ProviderProperty
-	 */
-	private $provider;
-
-	/**
 	 * @var Property\PublicationProperty
 	 */
 	private $publication;
@@ -320,6 +326,11 @@ class CreativeWorkType extends ThingType {
 	 * @var Property\PublisherProperty
 	 */
 	private $publisher;
+
+	/**
+	 * @var Property\PublisherImprintProperty
+	 */
+	private $publisherImprint;
 
 	/**
 	 * @var Property\PublishingPrinciplesProperty
@@ -352,6 +363,11 @@ class CreativeWorkType extends ThingType {
 	private $sourceOrganization;
 
 	/**
+	 * @var Property\SpatialProperty
+	 */
+	private $spatial;
+
+	/**
 	 * @var Property\SpatialCoverageProperty
 	 */
 	private $spatialCoverage;
@@ -360,6 +376,11 @@ class CreativeWorkType extends ThingType {
 	 * @var Property\SponsorProperty
 	 */
 	private $sponsor;
+
+	/**
+	 * @var Property\TemporalProperty
+	 */
+	private $temporal;
 
 	/**
 	 * @var Property\TemporalCoverageProperty
@@ -372,6 +393,11 @@ class CreativeWorkType extends ThingType {
 	private $text;
 
 	/**
+	 * @var Property\ThumbnailProperty
+	 */
+	private $thumbnail;
+
+	/**
 	 * @var Property\ThumbnailUrlProperty
 	 */
 	private $thumbnailUrl;
@@ -380,6 +406,11 @@ class CreativeWorkType extends ThingType {
 	 * @var Property\TimeRequiredProperty
 	 */
 	private $timeRequired;
+
+	/**
+	 * @var Property\TranslationOfWorkProperty
+	 */
+	private $translationOfWork;
 
 	/**
 	 * @var Property\TranslatorProperty
@@ -407,8 +438,22 @@ class CreativeWorkType extends ThingType {
 	private $workExample;
 
 	/**
+	 * @var Property\WorkTranslationProperty
+	 */
+	private $workTranslation;
+
+	/**
+	 * Get about.
+	 *
+	 * @return Property\AboutProperty
+	 */
+	public function getAbout() {
+		return $this->about;
+	}
+
+	/**
 	 * Get accessibilityapi.
-	 * 
+	 *
 	 * @return Property\AccessibilityAPIProperty
 	 */
 	public function getAccessibilityAPI() {
@@ -417,7 +462,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get accessibility control.
-	 * 
+	 *
 	 * @return Property\AccessibilityControlProperty
 	 */
 	public function getAccessibilityControl() {
@@ -426,7 +471,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get accessibility feature.
-	 * 
+	 *
 	 * @return Property\AccessibilityFeatureProperty
 	 */
 	public function getAccessibilityFeature() {
@@ -435,7 +480,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get accessibility hazard.
-	 * 
+	 *
 	 * @return Property\AccessibilityHazardProperty
 	 */
 	public function getAccessibilityHazard() {
@@ -444,7 +489,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get accessibility summary.
-	 * 
+	 *
 	 * @return Property\AccessibilitySummaryProperty
 	 */
 	public function getAccessibilitySummary() {
@@ -453,7 +498,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get access mode.
-	 * 
+	 *
 	 * @return Property\AccessModeProperty
 	 */
 	public function getAccessMode() {
@@ -462,7 +507,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get access mode sufficient.
-	 * 
+	 *
 	 * @return Property\AccessModeSufficientProperty
 	 */
 	public function getAccessModeSufficient() {
@@ -471,7 +516,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get accountable person.
-	 * 
+	 *
 	 * @return Property\AccountablePersonProperty
 	 */
 	public function getAccountablePerson() {
@@ -480,7 +525,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get aggregate rating.
-	 * 
+	 *
 	 * @return Property\AggregateRatingProperty
 	 */
 	public function getAggregateRating() {
@@ -489,7 +534,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get alternative headline.
-	 * 
+	 *
 	 * @return Property\AlternativeHeadlineProperty
 	 */
 	public function getAlternativeHeadline() {
@@ -498,7 +543,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get associated media.
-	 * 
+	 *
 	 * @return Property\AssociatedMediaProperty
 	 */
 	public function getAssociatedMedia() {
@@ -507,7 +552,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get audience.
-	 * 
+	 *
 	 * @return Property\AudienceProperty
 	 */
 	public function getAudience() {
@@ -516,7 +561,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get audio.
-	 * 
+	 *
 	 * @return Property\AudioProperty
 	 */
 	public function getAudio() {
@@ -525,7 +570,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get author.
-	 * 
+	 *
 	 * @return Property\AuthorProperty
 	 */
 	public function getAuthor() {
@@ -534,7 +579,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get award.
-	 * 
+	 *
 	 * @return Property\AwardProperty
 	 */
 	public function getAward() {
@@ -543,7 +588,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get character.
-	 * 
+	 *
 	 * @return Property\CharacterProperty
 	 */
 	public function getCharacter() {
@@ -552,7 +597,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get citation.
-	 * 
+	 *
 	 * @return Property\CitationProperty
 	 */
 	public function getCitation() {
@@ -561,7 +606,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get comment.
-	 * 
+	 *
 	 * @return Property\CommentProperty
 	 */
 	public function getComment() {
@@ -570,7 +615,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get comment count.
-	 * 
+	 *
 	 * @return Property\CommentCountProperty
 	 */
 	public function getCommentCount() {
@@ -579,7 +624,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get content location.
-	 * 
+	 *
 	 * @return Property\ContentLocationProperty
 	 */
 	public function getContentLocation() {
@@ -588,7 +633,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get content rating.
-	 * 
+	 *
 	 * @return Property\ContentRatingProperty
 	 */
 	public function getContentRating() {
@@ -597,7 +642,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get contributor.
-	 * 
+	 *
 	 * @return Property\ContributorProperty
 	 */
 	public function getContributor() {
@@ -606,7 +651,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get copyright holder.
-	 * 
+	 *
 	 * @return Property\CopyrightHolderProperty
 	 */
 	public function getCopyrightHolder() {
@@ -615,7 +660,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get copyright year.
-	 * 
+	 *
 	 * @return Property\CopyrightYearProperty
 	 */
 	public function getCopyrightYear() {
@@ -623,8 +668,17 @@ class CreativeWorkType extends ThingType {
 	}
 
 	/**
+	 * Get country of origin.
+	 *
+	 * @return Property\CountryOfOriginProperty
+	 */
+	public function getCountryOfOrigin() {
+		return $this->countryOfOrigin;
+	}
+
+	/**
 	 * Get creator.
-	 * 
+	 *
 	 * @return Property\CreatorProperty
 	 */
 	public function getCreator() {
@@ -633,7 +687,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get date created.
-	 * 
+	 *
 	 * @return Property\DateCreatedProperty
 	 */
 	public function getDateCreated() {
@@ -642,7 +696,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get date modified.
-	 * 
+	 *
 	 * @return Property\DateModifiedProperty
 	 */
 	public function getDateModified() {
@@ -651,7 +705,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get date published.
-	 * 
+	 *
 	 * @return Property\DatePublishedProperty
 	 */
 	public function getDatePublished() {
@@ -660,7 +714,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get discussion url.
-	 * 
+	 *
 	 * @return Property\DiscussionUrlProperty
 	 */
 	public function getDiscussionUrl() {
@@ -669,7 +723,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get editor.
-	 * 
+	 *
 	 * @return Property\EditorProperty
 	 */
 	public function getEditor() {
@@ -678,7 +732,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get educational alignment.
-	 * 
+	 *
 	 * @return Property\EducationalAlignmentProperty
 	 */
 	public function getEducationalAlignment() {
@@ -687,7 +741,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get educational use.
-	 * 
+	 *
 	 * @return Property\EducationalUseProperty
 	 */
 	public function getEducationalUse() {
@@ -696,7 +750,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get encoding.
-	 * 
+	 *
 	 * @return Property\EncodingProperty
 	 */
 	public function getEncoding() {
@@ -704,8 +758,17 @@ class CreativeWorkType extends ThingType {
 	}
 
 	/**
+	 * Get encoding format.
+	 *
+	 * @return Property\EncodingFormatProperty
+	 */
+	public function getEncodingFormat() {
+		return $this->encodingFormat;
+	}
+
+	/**
 	 * Get example of work.
-	 * 
+	 *
 	 * @return Property\ExampleOfWorkProperty
 	 */
 	public function getExampleOfWork() {
@@ -714,7 +777,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get expires.
-	 * 
+	 *
 	 * @return Property\ExpiresProperty
 	 */
 	public function getExpires() {
@@ -722,17 +785,8 @@ class CreativeWorkType extends ThingType {
 	}
 
 	/**
-	 * Get file format.
-	 * 
-	 * @return Property\FileFormatProperty
-	 */
-	public function getFileFormat() {
-		return $this->fileFormat;
-	}
-
-	/**
 	 * Get funder.
-	 * 
+	 *
 	 * @return Property\FunderProperty
 	 */
 	public function getFunder() {
@@ -741,7 +795,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get genre.
-	 * 
+	 *
 	 * @return Property\GenreProperty
 	 */
 	public function getGenre() {
@@ -750,7 +804,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get has part.
-	 * 
+	 *
 	 * @return Property\HasPartProperty
 	 */
 	public function getHasPart() {
@@ -759,7 +813,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get headline.
-	 * 
+	 *
 	 * @return Property\HeadlineProperty
 	 */
 	public function getHeadline() {
@@ -768,7 +822,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get in language.
-	 * 
+	 *
 	 * @return Property\InLanguageProperty
 	 */
 	public function getInLanguage() {
@@ -777,7 +831,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get interaction statistic.
-	 * 
+	 *
 	 * @return Property\InteractionStatisticProperty
 	 */
 	public function getInteractionStatistic() {
@@ -786,7 +840,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get interactivity type.
-	 * 
+	 *
 	 * @return Property\InteractivityTypeProperty
 	 */
 	public function getInteractivityType() {
@@ -795,7 +849,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get is accessible for free.
-	 * 
+	 *
 	 * @return Property\IsAccessibleForFreeProperty
 	 */
 	public function getIsAccessibleForFree() {
@@ -804,7 +858,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get is based on.
-	 * 
+	 *
 	 * @return Property\IsBasedOnProperty
 	 */
 	public function getIsBasedOn() {
@@ -813,7 +867,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get is family friendly.
-	 * 
+	 *
 	 * @return Property\IsFamilyFriendlyProperty
 	 */
 	public function getIsFamilyFriendly() {
@@ -822,7 +876,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get is part of.
-	 * 
+	 *
 	 * @return Property\IsPartOfProperty
 	 */
 	public function getIsPartOf() {
@@ -831,7 +885,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get keywords.
-	 * 
+	 *
 	 * @return Property\KeywordsProperty
 	 */
 	public function getKeywords() {
@@ -840,7 +894,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get learning resource type.
-	 * 
+	 *
 	 * @return Property\LearningResourceTypeProperty
 	 */
 	public function getLearningResourceType() {
@@ -849,7 +903,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get license.
-	 * 
+	 *
 	 * @return Property\LicenseProperty
 	 */
 	public function getLicense() {
@@ -858,7 +912,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get location created.
-	 * 
+	 *
 	 * @return Property\LocationCreatedProperty
 	 */
 	public function getLocationCreated() {
@@ -867,7 +921,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get main entity.
-	 * 
+	 *
 	 * @return Property\MainEntityProperty
 	 */
 	public function getMainEntity() {
@@ -876,7 +930,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get material.
-	 * 
+	 *
 	 * @return Property\MaterialProperty
 	 */
 	public function getMaterial() {
@@ -885,7 +939,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get mentions.
-	 * 
+	 *
 	 * @return Property\MentionsProperty
 	 */
 	public function getMentions() {
@@ -894,7 +948,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get offers.
-	 * 
+	 *
 	 * @return Property\OffersProperty
 	 */
 	public function getOffers() {
@@ -903,7 +957,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get position.
-	 * 
+	 *
 	 * @return Property\PositionProperty
 	 */
 	public function getPosition() {
@@ -912,7 +966,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get producer.
-	 * 
+	 *
 	 * @return Property\ProducerProperty
 	 */
 	public function getProducer() {
@@ -920,17 +974,8 @@ class CreativeWorkType extends ThingType {
 	}
 
 	/**
-	 * Get provider.
-	 * 
-	 * @return Property\ProviderProperty
-	 */
-	public function getProvider() {
-		return $this->provider;
-	}
-
-	/**
 	 * Get publication.
-	 * 
+	 *
 	 * @return Property\PublicationProperty
 	 */
 	public function getPublication() {
@@ -939,7 +984,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get publisher.
-	 * 
+	 *
 	 * @return Property\PublisherProperty
 	 */
 	public function getPublisher() {
@@ -947,8 +992,17 @@ class CreativeWorkType extends ThingType {
 	}
 
 	/**
+	 * Get publisher imprint.
+	 *
+	 * @return Property\PublisherImprintProperty
+	 */
+	public function getPublisherImprint() {
+		return $this->publisherImprint;
+	}
+
+	/**
 	 * Get publishing principles.
-	 * 
+	 *
 	 * @return Property\PublishingPrinciplesProperty
 	 */
 	public function getPublishingPrinciples() {
@@ -957,7 +1011,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get recorded at.
-	 * 
+	 *
 	 * @return Property\RecordedAtProperty
 	 */
 	public function getRecordedAt() {
@@ -966,7 +1020,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get released event.
-	 * 
+	 *
 	 * @return Property\ReleasedEventProperty
 	 */
 	public function getReleasedEvent() {
@@ -975,7 +1029,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get review.
-	 * 
+	 *
 	 * @return Property\ReviewProperty
 	 */
 	public function getReview() {
@@ -984,7 +1038,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -993,7 +1047,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get schema version.
-	 * 
+	 *
 	 * @return Property\SchemaVersionProperty
 	 */
 	public function getSchemaVersion() {
@@ -1002,7 +1056,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get source organization.
-	 * 
+	 *
 	 * @return Property\SourceOrganizationProperty
 	 */
 	public function getSourceOrganization() {
@@ -1010,8 +1064,17 @@ class CreativeWorkType extends ThingType {
 	}
 
 	/**
+	 * Get spatial.
+	 *
+	 * @return Property\SpatialProperty
+	 */
+	public function getSpatial() {
+		return $this->spatial;
+	}
+
+	/**
 	 * Get spatial coverage.
-	 * 
+	 *
 	 * @return Property\SpatialCoverageProperty
 	 */
 	public function getSpatialCoverage() {
@@ -1020,7 +1083,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get sponsor.
-	 * 
+	 *
 	 * @return Property\SponsorProperty
 	 */
 	public function getSponsor() {
@@ -1028,8 +1091,17 @@ class CreativeWorkType extends ThingType {
 	}
 
 	/**
+	 * Get temporal.
+	 *
+	 * @return Property\TemporalProperty
+	 */
+	public function getTemporal() {
+		return $this->temporal;
+	}
+
+	/**
 	 * Get temporal coverage.
-	 * 
+	 *
 	 * @return Property\TemporalCoverageProperty
 	 */
 	public function getTemporalCoverage() {
@@ -1038,7 +1110,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get text.
-	 * 
+	 *
 	 * @return Property\TextProperty
 	 */
 	public function getText() {
@@ -1046,8 +1118,17 @@ class CreativeWorkType extends ThingType {
 	}
 
 	/**
+	 * Get thumbnail.
+	 *
+	 * @return Property\ThumbnailProperty
+	 */
+	public function getThumbnail() {
+		return $this->thumbnail;
+	}
+
+	/**
 	 * Get thumbnail url.
-	 * 
+	 *
 	 * @return Property\ThumbnailUrlProperty
 	 */
 	public function getThumbnailUrl() {
@@ -1056,7 +1137,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get time required.
-	 * 
+	 *
 	 * @return Property\TimeRequiredProperty
 	 */
 	public function getTimeRequired() {
@@ -1064,8 +1145,17 @@ class CreativeWorkType extends ThingType {
 	}
 
 	/**
+	 * Get translation of work.
+	 *
+	 * @return Property\TranslationOfWorkProperty
+	 */
+	public function getTranslationOfWork() {
+		return $this->translationOfWork;
+	}
+
+	/**
 	 * Get translator.
-	 * 
+	 *
 	 * @return Property\TranslatorProperty
 	 */
 	public function getTranslator() {
@@ -1074,7 +1164,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get typical age range.
-	 * 
+	 *
 	 * @return Property\TypicalAgeRangeProperty
 	 */
 	public function getTypicalAgeRange() {
@@ -1083,7 +1173,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get version.
-	 * 
+	 *
 	 * @return Property\VersionProperty
 	 */
 	public function getVersion() {
@@ -1092,7 +1182,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get video.
-	 * 
+	 *
 	 * @return Property\VideoProperty
 	 */
 	public function getVideo() {
@@ -1101,7 +1191,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Get work example.
-	 * 
+	 *
 	 * @return Property\WorkExampleProperty
 	 */
 	public function getWorkExample() {
@@ -1109,8 +1199,29 @@ class CreativeWorkType extends ThingType {
 	}
 
 	/**
+	 * Get work translation.
+	 *
+	 * @return Property\WorkTranslationProperty
+	 */
+	public function getWorkTranslation() {
+		return $this->workTranslation;
+	}
+
+	/**
+	 * Set about.
+	 *
+	 * @param Property\AboutProperty $about
+	 * @return CreativeWorkType
+	 */
+	public function setAbout(Property\AboutProperty $about) {
+		$this->about = $about;
+
+		return $this;
+	}
+
+	/**
 	 * Set accessibilityapi.
-	 * 
+	 *
 	 * @param Property\AccessibilityAPIProperty $accessibilityAPI
 	 * @return CreativeWorkType
 	 */
@@ -1122,7 +1233,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set accessibility control.
-	 * 
+	 *
 	 * @param Property\AccessibilityControlProperty $accessibilityControl
 	 * @return CreativeWorkType
 	 */
@@ -1134,7 +1245,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set accessibility feature.
-	 * 
+	 *
 	 * @param Property\AccessibilityFeatureProperty $accessibilityFeature
 	 * @return CreativeWorkType
 	 */
@@ -1146,7 +1257,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set accessibility hazard.
-	 * 
+	 *
 	 * @param Property\AccessibilityHazardProperty $accessibilityHazard
 	 * @return CreativeWorkType
 	 */
@@ -1158,7 +1269,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set accessibility summary.
-	 * 
+	 *
 	 * @param Property\AccessibilitySummaryProperty $accessibilitySummary
 	 * @return CreativeWorkType
 	 */
@@ -1170,7 +1281,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set access mode.
-	 * 
+	 *
 	 * @param Property\AccessModeProperty $accessMode
 	 * @return CreativeWorkType
 	 */
@@ -1182,7 +1293,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set access mode sufficient.
-	 * 
+	 *
 	 * @param Property\AccessModeSufficientProperty $accessModeSufficient
 	 * @return CreativeWorkType
 	 */
@@ -1194,7 +1305,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set accountable person.
-	 * 
+	 *
 	 * @param Property\AccountablePersonProperty $accountablePerson
 	 * @return CreativeWorkType
 	 */
@@ -1206,7 +1317,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set aggregate rating.
-	 * 
+	 *
 	 * @param Property\AggregateRatingProperty $aggregateRating
 	 * @return CreativeWorkType
 	 */
@@ -1218,7 +1329,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set alternative headline.
-	 * 
+	 *
 	 * @param Property\AlternativeHeadlineProperty $alternativeHeadline
 	 * @return CreativeWorkType
 	 */
@@ -1230,7 +1341,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set associated media.
-	 * 
+	 *
 	 * @param Property\AssociatedMediaProperty $associatedMedia
 	 * @return CreativeWorkType
 	 */
@@ -1242,7 +1353,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set audience.
-	 * 
+	 *
 	 * @param Property\AudienceProperty $audience
 	 * @return CreativeWorkType
 	 */
@@ -1254,7 +1365,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set audio.
-	 * 
+	 *
 	 * @param Property\AudioProperty $audio
 	 * @return CreativeWorkType
 	 */
@@ -1266,7 +1377,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set author.
-	 * 
+	 *
 	 * @param Property\AuthorProperty $author
 	 * @return CreativeWorkType
 	 */
@@ -1278,7 +1389,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set award.
-	 * 
+	 *
 	 * @param Property\AwardProperty $award
 	 * @return CreativeWorkType
 	 */
@@ -1290,7 +1401,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set character.
-	 * 
+	 *
 	 * @param Property\CharacterProperty $character
 	 * @return CreativeWorkType
 	 */
@@ -1302,7 +1413,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set citation.
-	 * 
+	 *
 	 * @param Property\CitationProperty $citation
 	 * @return CreativeWorkType
 	 */
@@ -1314,7 +1425,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set comment.
-	 * 
+	 *
 	 * @param Property\CommentProperty $comment
 	 * @return CreativeWorkType
 	 */
@@ -1326,7 +1437,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set comment count.
-	 * 
+	 *
 	 * @param Property\CommentCountProperty $commentCount
 	 * @return CreativeWorkType
 	 */
@@ -1338,7 +1449,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set content location.
-	 * 
+	 *
 	 * @param Property\ContentLocationProperty $contentLocation
 	 * @return CreativeWorkType
 	 */
@@ -1350,7 +1461,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set content rating.
-	 * 
+	 *
 	 * @param Property\ContentRatingProperty $contentRating
 	 * @return CreativeWorkType
 	 */
@@ -1362,7 +1473,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set contributor.
-	 * 
+	 *
 	 * @param Property\ContributorProperty $contributor
 	 * @return CreativeWorkType
 	 */
@@ -1374,7 +1485,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set copyright holder.
-	 * 
+	 *
 	 * @param Property\CopyrightHolderProperty $copyrightHolder
 	 * @return CreativeWorkType
 	 */
@@ -1386,7 +1497,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set copyright year.
-	 * 
+	 *
 	 * @param Property\CopyrightYearProperty $copyrightYear
 	 * @return CreativeWorkType
 	 */
@@ -1397,8 +1508,20 @@ class CreativeWorkType extends ThingType {
 	}
 
 	/**
+	 * Set country of origin.
+	 *
+	 * @param Property\CountryOfOriginProperty $countryOfOrigin
+	 * @return CreativeWorkType
+	 */
+	public function setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin) {
+		$this->countryOfOrigin = $countryOfOrigin;
+
+		return $this;
+	}
+
+	/**
 	 * Set creator.
-	 * 
+	 *
 	 * @param Property\CreatorProperty $creator
 	 * @return CreativeWorkType
 	 */
@@ -1410,7 +1533,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set date created.
-	 * 
+	 *
 	 * @param Property\DateCreatedProperty $dateCreated
 	 * @return CreativeWorkType
 	 */
@@ -1422,7 +1545,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set date modified.
-	 * 
+	 *
 	 * @param Property\DateModifiedProperty $dateModified
 	 * @return CreativeWorkType
 	 */
@@ -1434,7 +1557,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set date published.
-	 * 
+	 *
 	 * @param Property\DatePublishedProperty $datePublished
 	 * @return CreativeWorkType
 	 */
@@ -1446,7 +1569,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set discussion url.
-	 * 
+	 *
 	 * @param Property\DiscussionUrlProperty $discussionUrl
 	 * @return CreativeWorkType
 	 */
@@ -1458,7 +1581,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set editor.
-	 * 
+	 *
 	 * @param Property\EditorProperty $editor
 	 * @return CreativeWorkType
 	 */
@@ -1470,7 +1593,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set educational alignment.
-	 * 
+	 *
 	 * @param Property\EducationalAlignmentProperty $educationalAlignment
 	 * @return CreativeWorkType
 	 */
@@ -1482,7 +1605,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set educational use.
-	 * 
+	 *
 	 * @param Property\EducationalUseProperty $educationalUse
 	 * @return CreativeWorkType
 	 */
@@ -1494,7 +1617,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set encoding.
-	 * 
+	 *
 	 * @param Property\EncodingProperty $encoding
 	 * @return CreativeWorkType
 	 */
@@ -1505,8 +1628,20 @@ class CreativeWorkType extends ThingType {
 	}
 
 	/**
+	 * Set encoding format.
+	 *
+	 * @param Property\EncodingFormatProperty $encodingFormat
+	 * @return CreativeWorkType
+	 */
+	public function setEncodingFormat(Property\EncodingFormatProperty $encodingFormat) {
+		$this->encodingFormat = $encodingFormat;
+
+		return $this;
+	}
+
+	/**
 	 * Set example of work.
-	 * 
+	 *
 	 * @param Property\ExampleOfWorkProperty $exampleOfWork
 	 * @return CreativeWorkType
 	 */
@@ -1518,7 +1653,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set expires.
-	 * 
+	 *
 	 * @param Property\ExpiresProperty $expires
 	 * @return CreativeWorkType
 	 */
@@ -1529,20 +1664,8 @@ class CreativeWorkType extends ThingType {
 	}
 
 	/**
-	 * Set file format.
-	 * 
-	 * @param Property\FileFormatProperty $fileFormat
-	 * @return CreativeWorkType
-	 */
-	public function setFileFormat(Property\FileFormatProperty $fileFormat) {
-		$this->fileFormat = $fileFormat;
-
-		return $this;
-	}
-
-	/**
 	 * Set funder.
-	 * 
+	 *
 	 * @param Property\FunderProperty $funder
 	 * @return CreativeWorkType
 	 */
@@ -1554,7 +1677,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set genre.
-	 * 
+	 *
 	 * @param Property\GenreProperty $genre
 	 * @return CreativeWorkType
 	 */
@@ -1566,7 +1689,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set has part.
-	 * 
+	 *
 	 * @param Property\HasPartProperty $hasPart
 	 * @return CreativeWorkType
 	 */
@@ -1578,7 +1701,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set headline.
-	 * 
+	 *
 	 * @param Property\HeadlineProperty $headline
 	 * @return CreativeWorkType
 	 */
@@ -1590,7 +1713,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set in language.
-	 * 
+	 *
 	 * @param Property\InLanguageProperty $inLanguage
 	 * @return CreativeWorkType
 	 */
@@ -1602,7 +1725,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set interaction statistic.
-	 * 
+	 *
 	 * @param Property\InteractionStatisticProperty $interactionStatistic
 	 * @return CreativeWorkType
 	 */
@@ -1614,7 +1737,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set interactivity type.
-	 * 
+	 *
 	 * @param Property\InteractivityTypeProperty $interactivityType
 	 * @return CreativeWorkType
 	 */
@@ -1626,7 +1749,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set is accessible for free.
-	 * 
+	 *
 	 * @param Property\IsAccessibleForFreeProperty $isAccessibleForFree
 	 * @return CreativeWorkType
 	 */
@@ -1638,7 +1761,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set is based on.
-	 * 
+	 *
 	 * @param Property\IsBasedOnProperty $isBasedOn
 	 * @return CreativeWorkType
 	 */
@@ -1650,7 +1773,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set is family friendly.
-	 * 
+	 *
 	 * @param Property\IsFamilyFriendlyProperty $isFamilyFriendly
 	 * @return CreativeWorkType
 	 */
@@ -1662,7 +1785,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set is part of.
-	 * 
+	 *
 	 * @param Property\IsPartOfProperty $isPartOf
 	 * @return CreativeWorkType
 	 */
@@ -1674,7 +1797,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set keywords.
-	 * 
+	 *
 	 * @param Property\KeywordsProperty $keywords
 	 * @return CreativeWorkType
 	 */
@@ -1686,7 +1809,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set learning resource type.
-	 * 
+	 *
 	 * @param Property\LearningResourceTypeProperty $learningResourceType
 	 * @return CreativeWorkType
 	 */
@@ -1698,7 +1821,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set license.
-	 * 
+	 *
 	 * @param Property\LicenseProperty $license
 	 * @return CreativeWorkType
 	 */
@@ -1710,7 +1833,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set location created.
-	 * 
+	 *
 	 * @param Property\LocationCreatedProperty $locationCreated
 	 * @return CreativeWorkType
 	 */
@@ -1722,7 +1845,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set main entity.
-	 * 
+	 *
 	 * @param Property\MainEntityProperty $mainEntity
 	 * @return CreativeWorkType
 	 */
@@ -1734,7 +1857,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set material.
-	 * 
+	 *
 	 * @param Property\MaterialProperty $material
 	 * @return CreativeWorkType
 	 */
@@ -1746,7 +1869,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set mentions.
-	 * 
+	 *
 	 * @param Property\MentionsProperty $mentions
 	 * @return CreativeWorkType
 	 */
@@ -1758,7 +1881,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set offers.
-	 * 
+	 *
 	 * @param Property\OffersProperty $offers
 	 * @return CreativeWorkType
 	 */
@@ -1770,7 +1893,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set position.
-	 * 
+	 *
 	 * @param Property\PositionProperty $position
 	 * @return CreativeWorkType
 	 */
@@ -1782,7 +1905,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set producer.
-	 * 
+	 *
 	 * @param Property\ProducerProperty $producer
 	 * @return CreativeWorkType
 	 */
@@ -1793,20 +1916,8 @@ class CreativeWorkType extends ThingType {
 	}
 
 	/**
-	 * Set provider.
-	 * 
-	 * @param Property\ProviderProperty $provider
-	 * @return CreativeWorkType
-	 */
-	public function setProvider(Property\ProviderProperty $provider) {
-		$this->provider = $provider;
-
-		return $this;
-	}
-
-	/**
 	 * Set publication.
-	 * 
+	 *
 	 * @param Property\PublicationProperty $publication
 	 * @return CreativeWorkType
 	 */
@@ -1818,7 +1929,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set publisher.
-	 * 
+	 *
 	 * @param Property\PublisherProperty $publisher
 	 * @return CreativeWorkType
 	 */
@@ -1829,8 +1940,20 @@ class CreativeWorkType extends ThingType {
 	}
 
 	/**
+	 * Set publisher imprint.
+	 *
+	 * @param Property\PublisherImprintProperty $publisherImprint
+	 * @return CreativeWorkType
+	 */
+	public function setPublisherImprint(Property\PublisherImprintProperty $publisherImprint) {
+		$this->publisherImprint = $publisherImprint;
+
+		return $this;
+	}
+
+	/**
 	 * Set publishing principles.
-	 * 
+	 *
 	 * @param Property\PublishingPrinciplesProperty $publishingPrinciples
 	 * @return CreativeWorkType
 	 */
@@ -1842,7 +1965,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set recorded at.
-	 * 
+	 *
 	 * @param Property\RecordedAtProperty $recordedAt
 	 * @return CreativeWorkType
 	 */
@@ -1854,7 +1977,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set released event.
-	 * 
+	 *
 	 * @param Property\ReleasedEventProperty $releasedEvent
 	 * @return CreativeWorkType
 	 */
@@ -1866,7 +1989,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set review.
-	 * 
+	 *
 	 * @param Property\ReviewProperty $review
 	 * @return CreativeWorkType
 	 */
@@ -1878,7 +2001,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set schema version.
-	 * 
+	 *
 	 * @param Property\SchemaVersionProperty $schemaVersion
 	 * @return CreativeWorkType
 	 */
@@ -1890,7 +2013,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set source organization.
-	 * 
+	 *
 	 * @param Property\SourceOrganizationProperty $sourceOrganization
 	 * @return CreativeWorkType
 	 */
@@ -1901,8 +2024,20 @@ class CreativeWorkType extends ThingType {
 	}
 
 	/**
+	 * Set spatial.
+	 *
+	 * @param Property\SpatialProperty $spatial
+	 * @return CreativeWorkType
+	 */
+	public function setSpatial(Property\SpatialProperty $spatial) {
+		$this->spatial = $spatial;
+
+		return $this;
+	}
+
+	/**
 	 * Set spatial coverage.
-	 * 
+	 *
 	 * @param Property\SpatialCoverageProperty $spatialCoverage
 	 * @return CreativeWorkType
 	 */
@@ -1914,7 +2049,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set sponsor.
-	 * 
+	 *
 	 * @param Property\SponsorProperty $sponsor
 	 * @return CreativeWorkType
 	 */
@@ -1925,8 +2060,20 @@ class CreativeWorkType extends ThingType {
 	}
 
 	/**
+	 * Set temporal.
+	 *
+	 * @param Property\TemporalProperty $temporal
+	 * @return CreativeWorkType
+	 */
+	public function setTemporal(Property\TemporalProperty $temporal) {
+		$this->temporal = $temporal;
+
+		return $this;
+	}
+
+	/**
 	 * Set temporal coverage.
-	 * 
+	 *
 	 * @param Property\TemporalCoverageProperty $temporalCoverage
 	 * @return CreativeWorkType
 	 */
@@ -1938,7 +2085,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set text.
-	 * 
+	 *
 	 * @param Property\TextProperty $text
 	 * @return CreativeWorkType
 	 */
@@ -1949,8 +2096,20 @@ class CreativeWorkType extends ThingType {
 	}
 
 	/**
+	 * Set thumbnail.
+	 *
+	 * @param Property\ThumbnailProperty $thumbnail
+	 * @return CreativeWorkType
+	 */
+	public function setThumbnail(Property\ThumbnailProperty $thumbnail) {
+		$this->thumbnail = $thumbnail;
+
+		return $this;
+	}
+
+	/**
 	 * Set thumbnail url.
-	 * 
+	 *
 	 * @param Property\ThumbnailUrlProperty $thumbnailUrl
 	 * @return CreativeWorkType
 	 */
@@ -1962,7 +2121,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set time required.
-	 * 
+	 *
 	 * @param Property\TimeRequiredProperty $timeRequired
 	 * @return CreativeWorkType
 	 */
@@ -1973,8 +2132,20 @@ class CreativeWorkType extends ThingType {
 	}
 
 	/**
+	 * Set translation of work.
+	 *
+	 * @param Property\TranslationOfWorkProperty $translationOfWork
+	 * @return CreativeWorkType
+	 */
+	public function setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork) {
+		$this->translationOfWork = $translationOfWork;
+
+		return $this;
+	}
+
+	/**
 	 * Set translator.
-	 * 
+	 *
 	 * @param Property\TranslatorProperty $translator
 	 * @return CreativeWorkType
 	 */
@@ -1986,7 +2157,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set typical age range.
-	 * 
+	 *
 	 * @param Property\TypicalAgeRangeProperty $typicalAgeRange
 	 * @return CreativeWorkType
 	 */
@@ -1998,7 +2169,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set version.
-	 * 
+	 *
 	 * @param Property\VersionProperty $version
 	 * @return CreativeWorkType
 	 */
@@ -2010,7 +2181,7 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set video.
-	 * 
+	 *
 	 * @param Property\VideoProperty $video
 	 * @return CreativeWorkType
 	 */
@@ -2022,12 +2193,24 @@ class CreativeWorkType extends ThingType {
 
 	/**
 	 * Set work example.
-	 * 
+	 *
 	 * @param Property\WorkExampleProperty $workExample
 	 * @return CreativeWorkType
 	 */
 	public function setWorkExample(Property\WorkExampleProperty $workExample) {
 		$this->workExample = $workExample;
+
+		return $this;
+	}
+
+	/**
+	 * Set work translation.
+	 *
+	 * @param Property\WorkTranslationProperty $workTranslation
+	 * @return CreativeWorkType
+	 */
+	public function setWorkTranslation(Property\WorkTranslationProperty $workTranslation) {
+		$this->workTranslation = $workTranslation;
 
 		return $this;
 	}

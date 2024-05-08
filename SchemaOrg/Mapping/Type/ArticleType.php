@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ArticleType.
+ * An article, such as a news article or piece of investigative report. Newspapers and magazines have articles of many different types and this is intended to cover them all. See also blog post.
  * 
+ * @method ArticleType setAbout(Property\AboutProperty $about)
  * @method ArticleType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method ArticleType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method ArticleType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -33,6 +34,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ArticleType setContributor(Property\ContributorProperty $contributor)
  * @method ArticleType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method ArticleType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method ArticleType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method ArticleType setCreator(Property\CreatorProperty $creator)
  * @method ArticleType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method ArticleType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -44,9 +46,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ArticleType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method ArticleType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method ArticleType setEncoding(Property\EncodingProperty $encoding)
+ * @method ArticleType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method ArticleType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method ArticleType setExpires(Property\ExpiresProperty $expires)
- * @method ArticleType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method ArticleType setFunder(Property\FunderProperty $funder)
  * @method ArticleType setGenre(Property\GenreProperty $genre)
  * @method ArticleType setHasPart(Property\HasPartProperty $hasPart)
@@ -73,9 +75,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ArticleType setPosition(Property\PositionProperty $position)
  * @method ArticleType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method ArticleType setProducer(Property\ProducerProperty $producer)
- * @method ArticleType setProvider(Property\ProviderProperty $provider)
  * @method ArticleType setPublication(Property\PublicationProperty $publication)
  * @method ArticleType setPublisher(Property\PublisherProperty $publisher)
+ * @method ArticleType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method ArticleType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method ArticleType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method ArticleType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -83,18 +85,24 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ArticleType setSameAs(Property\SameAsProperty $sameAs)
  * @method ArticleType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method ArticleType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method ArticleType setSpatial(Property\SpatialProperty $spatial)
  * @method ArticleType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method ArticleType setSponsor(Property\SponsorProperty $sponsor)
+ * @method ArticleType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method ArticleType setTemporal(Property\TemporalProperty $temporal)
  * @method ArticleType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method ArticleType setText(Property\TextProperty $text)
+ * @method ArticleType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method ArticleType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method ArticleType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method ArticleType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method ArticleType setTranslator(Property\TranslatorProperty $translator)
  * @method ArticleType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method ArticleType setUrl(Property\UrlProperty $url)
  * @method ArticleType setVersion(Property\VersionProperty $version)
  * @method ArticleType setVideo(Property\VideoProperty $video)
  * @method ArticleType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method ArticleType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class ArticleType extends CreativeWorkType {
 
@@ -124,13 +132,18 @@ class ArticleType extends CreativeWorkType {
 	private $pagination;
 
 	/**
+	 * @var Property\SpeakableProperty
+	 */
+	private $speakable;
+
+	/**
 	 * @var Property\WordCountProperty
 	 */
 	private $wordCount;
 
 	/**
 	 * Get article body.
-	 * 
+	 *
 	 * @return Property\ArticleBodyProperty
 	 */
 	public function getArticleBody() {
@@ -139,7 +152,7 @@ class ArticleType extends CreativeWorkType {
 
 	/**
 	 * Get article section.
-	 * 
+	 *
 	 * @return Property\ArticleSectionProperty
 	 */
 	public function getArticleSection() {
@@ -148,7 +161,7 @@ class ArticleType extends CreativeWorkType {
 
 	/**
 	 * Get page end.
-	 * 
+	 *
 	 * @return Property\PageEndProperty
 	 */
 	public function getPageEnd() {
@@ -157,7 +170,7 @@ class ArticleType extends CreativeWorkType {
 
 	/**
 	 * Get page start.
-	 * 
+	 *
 	 * @return Property\PageStartProperty
 	 */
 	public function getPageStart() {
@@ -166,7 +179,7 @@ class ArticleType extends CreativeWorkType {
 
 	/**
 	 * Get pagination.
-	 * 
+	 *
 	 * @return Property\PaginationProperty
 	 */
 	public function getPagination() {
@@ -175,7 +188,7 @@ class ArticleType extends CreativeWorkType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -183,8 +196,17 @@ class ArticleType extends CreativeWorkType {
 	}
 
 	/**
+	 * Get speakable.
+	 *
+	 * @return Property\SpeakableProperty
+	 */
+	public function getSpeakable() {
+		return $this->speakable;
+	}
+
+	/**
 	 * Get word count.
-	 * 
+	 *
 	 * @return Property\WordCountProperty
 	 */
 	public function getWordCount() {
@@ -193,7 +215,7 @@ class ArticleType extends CreativeWorkType {
 
 	/**
 	 * Set article body.
-	 * 
+	 *
 	 * @param Property\ArticleBodyProperty $articleBody
 	 * @return ArticleType
 	 */
@@ -205,7 +227,7 @@ class ArticleType extends CreativeWorkType {
 
 	/**
 	 * Set article section.
-	 * 
+	 *
 	 * @param Property\ArticleSectionProperty $articleSection
 	 * @return ArticleType
 	 */
@@ -217,7 +239,7 @@ class ArticleType extends CreativeWorkType {
 
 	/**
 	 * Set page end.
-	 * 
+	 *
 	 * @param Property\PageEndProperty $pageEnd
 	 * @return ArticleType
 	 */
@@ -229,7 +251,7 @@ class ArticleType extends CreativeWorkType {
 
 	/**
 	 * Set page start.
-	 * 
+	 *
 	 * @param Property\PageStartProperty $pageStart
 	 * @return ArticleType
 	 */
@@ -241,7 +263,7 @@ class ArticleType extends CreativeWorkType {
 
 	/**
 	 * Set pagination.
-	 * 
+	 *
 	 * @param Property\PaginationProperty $pagination
 	 * @return ArticleType
 	 */
@@ -252,8 +274,20 @@ class ArticleType extends CreativeWorkType {
 	}
 
 	/**
+	 * Set speakable.
+	 *
+	 * @param Property\SpeakableProperty $speakable
+	 * @return ArticleType
+	 */
+	public function setSpeakable(Property\SpeakableProperty $speakable) {
+		$this->speakable = $speakable;
+
+		return $this;
+	}
+
+	/**
 	 * Set word count.
-	 * 
+	 *
 	 * @param Property\WordCountProperty $wordCount
 	 * @return ArticleType
 	 */

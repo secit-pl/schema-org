@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class DigitalAudioTapeFormatType.
+ * DigitalAudioTapeFormat.
  * 
  * @method DigitalAudioTapeFormatType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method DigitalAudioTapeFormatType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method DigitalAudioTapeFormatType setName(Property\NameProperty $name)
  * @method DigitalAudioTapeFormatType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method DigitalAudioTapeFormatType setSameAs(Property\SameAsProperty $sameAs)
+ * @method DigitalAudioTapeFormatType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method DigitalAudioTapeFormatType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method DigitalAudioTapeFormatType setUrl(Property\UrlProperty $url)
  */
 class DigitalAudioTapeFormatType extends MusicReleaseFormatType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

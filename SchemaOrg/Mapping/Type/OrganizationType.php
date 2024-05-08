@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class OrganizationType.
+ * An organization such as a school, NGO, corporation, club, etc.
  * 
  * @method OrganizationType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method OrganizationType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,6 +17,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method OrganizationType setName(Property\NameProperty $name)
  * @method OrganizationType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method OrganizationType setSameAs(Property\SameAsProperty $sameAs)
+ * @method OrganizationType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method OrganizationType setUrl(Property\UrlProperty $url)
  */
 class OrganizationType extends ThingType {
@@ -117,6 +118,11 @@ class OrganizationType extends ThingType {
 	private $globalLocationNumber;
 
 	/**
+	 * @var Property\HasCertificationProperty
+	 */
+	private $hasCertification;
+
+	/**
 	 * @var Property\HasOfferCatalogProperty
 	 */
 	private $hasOfferCatalog;
@@ -127,9 +133,19 @@ class OrganizationType extends ThingType {
 	private $hasPOS;
 
 	/**
+	 * @var Property\InteractionStatisticProperty
+	 */
+	private $interactionStatistic;
+
+	/**
 	 * @var Property\IsicV4Property
 	 */
 	private $isicV4;
+
+	/**
+	 * @var Property\KeywordsProperty
+	 */
+	private $keywords;
 
 	/**
 	 * @var Property\LegalNameProperty
@@ -202,6 +218,11 @@ class OrganizationType extends ThingType {
 	private $seeks;
 
 	/**
+	 * @var Property\SloganProperty
+	 */
+	private $slogan;
+
+	/**
 	 * @var Property\SponsorProperty
 	 */
 	private $sponsor;
@@ -228,7 +249,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Get address.
-	 * 
+	 *
 	 * @return Property\AddressProperty
 	 */
 	public function getAddress() {
@@ -237,7 +258,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Get aggregate rating.
-	 * 
+	 *
 	 * @return Property\AggregateRatingProperty
 	 */
 	public function getAggregateRating() {
@@ -246,7 +267,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Get alumni.
-	 * 
+	 *
 	 * @return Property\AlumniProperty
 	 */
 	public function getAlumni() {
@@ -255,7 +276,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Get area served.
-	 * 
+	 *
 	 * @return Property\AreaServedProperty
 	 */
 	public function getAreaServed() {
@@ -264,7 +285,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Get award.
-	 * 
+	 *
 	 * @return Property\AwardProperty
 	 */
 	public function getAward() {
@@ -273,7 +294,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Get brand.
-	 * 
+	 *
 	 * @return Property\BrandProperty
 	 */
 	public function getBrand() {
@@ -282,7 +303,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Get contact point.
-	 * 
+	 *
 	 * @return Property\ContactPointProperty
 	 */
 	public function getContactPoint() {
@@ -291,7 +312,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Get department.
-	 * 
+	 *
 	 * @return Property\DepartmentProperty
 	 */
 	public function getDepartment() {
@@ -300,7 +321,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Get dissolution date.
-	 * 
+	 *
 	 * @return Property\DissolutionDateProperty
 	 */
 	public function getDissolutionDate() {
@@ -309,7 +330,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Get duns.
-	 * 
+	 *
 	 * @return Property\DunsProperty
 	 */
 	public function getDuns() {
@@ -318,7 +339,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Get email.
-	 * 
+	 *
 	 * @return Property\EmailProperty
 	 */
 	public function getEmail() {
@@ -327,7 +348,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Get employee.
-	 * 
+	 *
 	 * @return Property\EmployeeProperty
 	 */
 	public function getEmployee() {
@@ -336,7 +357,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Get event.
-	 * 
+	 *
 	 * @return Property\EventProperty
 	 */
 	public function getEvent() {
@@ -345,7 +366,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Get fax number.
-	 * 
+	 *
 	 * @return Property\FaxNumberProperty
 	 */
 	public function getFaxNumber() {
@@ -354,7 +375,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Get founder.
-	 * 
+	 *
 	 * @return Property\FounderProperty
 	 */
 	public function getFounder() {
@@ -363,7 +384,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Get founding date.
-	 * 
+	 *
 	 * @return Property\FoundingDateProperty
 	 */
 	public function getFoundingDate() {
@@ -372,7 +393,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Get founding location.
-	 * 
+	 *
 	 * @return Property\FoundingLocationProperty
 	 */
 	public function getFoundingLocation() {
@@ -381,7 +402,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Get funder.
-	 * 
+	 *
 	 * @return Property\FunderProperty
 	 */
 	public function getFunder() {
@@ -390,7 +411,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Get global location number.
-	 * 
+	 *
 	 * @return Property\GlobalLocationNumberProperty
 	 */
 	public function getGlobalLocationNumber() {
@@ -398,8 +419,17 @@ class OrganizationType extends ThingType {
 	}
 
 	/**
+	 * Get has certification.
+	 *
+	 * @return Property\HasCertificationProperty
+	 */
+	public function getHasCertification() {
+		return $this->hasCertification;
+	}
+
+	/**
 	 * Get has offer catalog.
-	 * 
+	 *
 	 * @return Property\HasOfferCatalogProperty
 	 */
 	public function getHasOfferCatalog() {
@@ -408,7 +438,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Get haspos.
-	 * 
+	 *
 	 * @return Property\HasPOSProperty
 	 */
 	public function getHasPOS() {
@@ -416,8 +446,17 @@ class OrganizationType extends ThingType {
 	}
 
 	/**
+	 * Get interaction statistic.
+	 *
+	 * @return Property\InteractionStatisticProperty
+	 */
+	public function getInteractionStatistic() {
+		return $this->interactionStatistic;
+	}
+
+	/**
 	 * Get isicv4.
-	 * 
+	 *
 	 * @return Property\IsicV4Property
 	 */
 	public function getIsicV4() {
@@ -425,8 +464,17 @@ class OrganizationType extends ThingType {
 	}
 
 	/**
+	 * Get keywords.
+	 *
+	 * @return Property\KeywordsProperty
+	 */
+	public function getKeywords() {
+		return $this->keywords;
+	}
+
+	/**
 	 * Get legal name.
-	 * 
+	 *
 	 * @return Property\LegalNameProperty
 	 */
 	public function getLegalName() {
@@ -435,7 +483,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Get lei code.
-	 * 
+	 *
 	 * @return Property\LeiCodeProperty
 	 */
 	public function getLeiCode() {
@@ -444,7 +492,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Get location.
-	 * 
+	 *
 	 * @return Property\LocationProperty
 	 */
 	public function getLocation() {
@@ -453,7 +501,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Get logo.
-	 * 
+	 *
 	 * @return Property\LogoProperty
 	 */
 	public function getLogo() {
@@ -462,7 +510,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Get makes offer.
-	 * 
+	 *
 	 * @return Property\MakesOfferProperty
 	 */
 	public function getMakesOffer() {
@@ -471,7 +519,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Get member.
-	 * 
+	 *
 	 * @return Property\MemberProperty
 	 */
 	public function getMember() {
@@ -480,7 +528,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Get member of.
-	 * 
+	 *
 	 * @return Property\MemberOfProperty
 	 */
 	public function getMemberOf() {
@@ -489,7 +537,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Get naics.
-	 * 
+	 *
 	 * @return Property\NaicsProperty
 	 */
 	public function getNaics() {
@@ -498,7 +546,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Get number of employees.
-	 * 
+	 *
 	 * @return Property\NumberOfEmployeesProperty
 	 */
 	public function getNumberOfEmployees() {
@@ -507,7 +555,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Get owns.
-	 * 
+	 *
 	 * @return Property\OwnsProperty
 	 */
 	public function getOwns() {
@@ -516,7 +564,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Get parent organization.
-	 * 
+	 *
 	 * @return Property\ParentOrganizationProperty
 	 */
 	public function getParentOrganization() {
@@ -525,7 +573,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Get publishing principles.
-	 * 
+	 *
 	 * @return Property\PublishingPrinciplesProperty
 	 */
 	public function getPublishingPrinciples() {
@@ -534,7 +582,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Get review.
-	 * 
+	 *
 	 * @return Property\ReviewProperty
 	 */
 	public function getReview() {
@@ -543,7 +591,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -552,7 +600,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Get seeks.
-	 * 
+	 *
 	 * @return Property\SeeksProperty
 	 */
 	public function getSeeks() {
@@ -560,8 +608,17 @@ class OrganizationType extends ThingType {
 	}
 
 	/**
+	 * Get slogan.
+	 *
+	 * @return Property\SloganProperty
+	 */
+	public function getSlogan() {
+		return $this->slogan;
+	}
+
+	/**
 	 * Get sponsor.
-	 * 
+	 *
 	 * @return Property\SponsorProperty
 	 */
 	public function getSponsor() {
@@ -570,7 +627,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Get sub organization.
-	 * 
+	 *
 	 * @return Property\SubOrganizationProperty
 	 */
 	public function getSubOrganization() {
@@ -579,7 +636,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Get taxid.
-	 * 
+	 *
 	 * @return Property\TaxIDProperty
 	 */
 	public function getTaxID() {
@@ -588,7 +645,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Get telephone.
-	 * 
+	 *
 	 * @return Property\TelephoneProperty
 	 */
 	public function getTelephone() {
@@ -597,7 +654,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Get vatid.
-	 * 
+	 *
 	 * @return Property\VatIDProperty
 	 */
 	public function getVatID() {
@@ -606,7 +663,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Set address.
-	 * 
+	 *
 	 * @param Property\AddressProperty $address
 	 * @return OrganizationType
 	 */
@@ -618,7 +675,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Set aggregate rating.
-	 * 
+	 *
 	 * @param Property\AggregateRatingProperty $aggregateRating
 	 * @return OrganizationType
 	 */
@@ -630,7 +687,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Set alumni.
-	 * 
+	 *
 	 * @param Property\AlumniProperty $alumni
 	 * @return OrganizationType
 	 */
@@ -642,7 +699,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Set area served.
-	 * 
+	 *
 	 * @param Property\AreaServedProperty $areaServed
 	 * @return OrganizationType
 	 */
@@ -654,7 +711,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Set award.
-	 * 
+	 *
 	 * @param Property\AwardProperty $award
 	 * @return OrganizationType
 	 */
@@ -666,7 +723,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Set brand.
-	 * 
+	 *
 	 * @param Property\BrandProperty $brand
 	 * @return OrganizationType
 	 */
@@ -678,7 +735,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Set contact point.
-	 * 
+	 *
 	 * @param Property\ContactPointProperty $contactPoint
 	 * @return OrganizationType
 	 */
@@ -690,7 +747,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Set department.
-	 * 
+	 *
 	 * @param Property\DepartmentProperty $department
 	 * @return OrganizationType
 	 */
@@ -702,7 +759,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Set dissolution date.
-	 * 
+	 *
 	 * @param Property\DissolutionDateProperty $dissolutionDate
 	 * @return OrganizationType
 	 */
@@ -714,7 +771,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Set duns.
-	 * 
+	 *
 	 * @param Property\DunsProperty $duns
 	 * @return OrganizationType
 	 */
@@ -726,7 +783,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Set email.
-	 * 
+	 *
 	 * @param Property\EmailProperty $email
 	 * @return OrganizationType
 	 */
@@ -738,7 +795,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Set employee.
-	 * 
+	 *
 	 * @param Property\EmployeeProperty $employee
 	 * @return OrganizationType
 	 */
@@ -750,7 +807,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Set event.
-	 * 
+	 *
 	 * @param Property\EventProperty $event
 	 * @return OrganizationType
 	 */
@@ -762,7 +819,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Set fax number.
-	 * 
+	 *
 	 * @param Property\FaxNumberProperty $faxNumber
 	 * @return OrganizationType
 	 */
@@ -774,7 +831,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Set founder.
-	 * 
+	 *
 	 * @param Property\FounderProperty $founder
 	 * @return OrganizationType
 	 */
@@ -786,7 +843,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Set founding date.
-	 * 
+	 *
 	 * @param Property\FoundingDateProperty $foundingDate
 	 * @return OrganizationType
 	 */
@@ -798,7 +855,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Set founding location.
-	 * 
+	 *
 	 * @param Property\FoundingLocationProperty $foundingLocation
 	 * @return OrganizationType
 	 */
@@ -810,7 +867,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Set funder.
-	 * 
+	 *
 	 * @param Property\FunderProperty $funder
 	 * @return OrganizationType
 	 */
@@ -822,7 +879,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Set global location number.
-	 * 
+	 *
 	 * @param Property\GlobalLocationNumberProperty $globalLocationNumber
 	 * @return OrganizationType
 	 */
@@ -833,8 +890,20 @@ class OrganizationType extends ThingType {
 	}
 
 	/**
+	 * Set has certification.
+	 *
+	 * @param Property\HasCertificationProperty $hasCertification
+	 * @return OrganizationType
+	 */
+	public function setHasCertification(Property\HasCertificationProperty $hasCertification) {
+		$this->hasCertification = $hasCertification;
+
+		return $this;
+	}
+
+	/**
 	 * Set has offer catalog.
-	 * 
+	 *
 	 * @param Property\HasOfferCatalogProperty $hasOfferCatalog
 	 * @return OrganizationType
 	 */
@@ -846,7 +915,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Set haspos.
-	 * 
+	 *
 	 * @param Property\HasPOSProperty $hasPOS
 	 * @return OrganizationType
 	 */
@@ -857,8 +926,20 @@ class OrganizationType extends ThingType {
 	}
 
 	/**
+	 * Set interaction statistic.
+	 *
+	 * @param Property\InteractionStatisticProperty $interactionStatistic
+	 * @return OrganizationType
+	 */
+	public function setInteractionStatistic(Property\InteractionStatisticProperty $interactionStatistic) {
+		$this->interactionStatistic = $interactionStatistic;
+
+		return $this;
+	}
+
+	/**
 	 * Set isicv4.
-	 * 
+	 *
 	 * @param Property\IsicV4Property $isicV4
 	 * @return OrganizationType
 	 */
@@ -869,8 +950,20 @@ class OrganizationType extends ThingType {
 	}
 
 	/**
+	 * Set keywords.
+	 *
+	 * @param Property\KeywordsProperty $keywords
+	 * @return OrganizationType
+	 */
+	public function setKeywords(Property\KeywordsProperty $keywords) {
+		$this->keywords = $keywords;
+
+		return $this;
+	}
+
+	/**
 	 * Set legal name.
-	 * 
+	 *
 	 * @param Property\LegalNameProperty $legalName
 	 * @return OrganizationType
 	 */
@@ -882,7 +975,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Set lei code.
-	 * 
+	 *
 	 * @param Property\LeiCodeProperty $leiCode
 	 * @return OrganizationType
 	 */
@@ -894,7 +987,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Set location.
-	 * 
+	 *
 	 * @param Property\LocationProperty $location
 	 * @return OrganizationType
 	 */
@@ -906,7 +999,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Set logo.
-	 * 
+	 *
 	 * @param Property\LogoProperty $logo
 	 * @return OrganizationType
 	 */
@@ -918,7 +1011,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Set makes offer.
-	 * 
+	 *
 	 * @param Property\MakesOfferProperty $makesOffer
 	 * @return OrganizationType
 	 */
@@ -930,7 +1023,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Set member.
-	 * 
+	 *
 	 * @param Property\MemberProperty $member
 	 * @return OrganizationType
 	 */
@@ -942,7 +1035,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Set member of.
-	 * 
+	 *
 	 * @param Property\MemberOfProperty $memberOf
 	 * @return OrganizationType
 	 */
@@ -954,7 +1047,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Set naics.
-	 * 
+	 *
 	 * @param Property\NaicsProperty $naics
 	 * @return OrganizationType
 	 */
@@ -966,7 +1059,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Set number of employees.
-	 * 
+	 *
 	 * @param Property\NumberOfEmployeesProperty $numberOfEmployees
 	 * @return OrganizationType
 	 */
@@ -978,7 +1071,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Set owns.
-	 * 
+	 *
 	 * @param Property\OwnsProperty $owns
 	 * @return OrganizationType
 	 */
@@ -990,7 +1083,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Set parent organization.
-	 * 
+	 *
 	 * @param Property\ParentOrganizationProperty $parentOrganization
 	 * @return OrganizationType
 	 */
@@ -1002,7 +1095,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Set publishing principles.
-	 * 
+	 *
 	 * @param Property\PublishingPrinciplesProperty $publishingPrinciples
 	 * @return OrganizationType
 	 */
@@ -1014,7 +1107,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Set review.
-	 * 
+	 *
 	 * @param Property\ReviewProperty $review
 	 * @return OrganizationType
 	 */
@@ -1026,7 +1119,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Set seeks.
-	 * 
+	 *
 	 * @param Property\SeeksProperty $seeks
 	 * @return OrganizationType
 	 */
@@ -1037,8 +1130,20 @@ class OrganizationType extends ThingType {
 	}
 
 	/**
+	 * Set slogan.
+	 *
+	 * @param Property\SloganProperty $slogan
+	 * @return OrganizationType
+	 */
+	public function setSlogan(Property\SloganProperty $slogan) {
+		$this->slogan = $slogan;
+
+		return $this;
+	}
+
+	/**
 	 * Set sponsor.
-	 * 
+	 *
 	 * @param Property\SponsorProperty $sponsor
 	 * @return OrganizationType
 	 */
@@ -1050,7 +1155,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Set sub organization.
-	 * 
+	 *
 	 * @param Property\SubOrganizationProperty $subOrganization
 	 * @return OrganizationType
 	 */
@@ -1062,7 +1167,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Set taxid.
-	 * 
+	 *
 	 * @param Property\TaxIDProperty $taxID
 	 * @return OrganizationType
 	 */
@@ -1074,7 +1179,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Set telephone.
-	 * 
+	 *
 	 * @param Property\TelephoneProperty $telephone
 	 * @return OrganizationType
 	 */
@@ -1086,7 +1191,7 @@ class OrganizationType extends ThingType {
 
 	/**
 	 * Set vatid.
-	 * 
+	 *
 	 * @param Property\VatIDProperty $vatID
 	 * @return OrganizationType
 	 */

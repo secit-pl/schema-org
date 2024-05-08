@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class MassType.
+ * Properties that take Mass as values are of the form ' '. E.g., '7 kg'.
  * 
  * @method MassType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method MassType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,14 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MassType setName(Property\NameProperty $name)
  * @method MassType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method MassType setSameAs(Property\SameAsProperty $sameAs)
+ * @method MassType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method MassType setUrl(Property\UrlProperty $url)
  */
 class MassType extends QuantityType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

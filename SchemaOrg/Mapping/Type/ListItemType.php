@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ListItemType.
+ * An list item, e.g. a step in a checklist or how-to description.
  * 
  * @method ListItemType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method ListItemType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,6 +17,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ListItemType setName(Property\NameProperty $name)
  * @method ListItemType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method ListItemType setSameAs(Property\SameAsProperty $sameAs)
+ * @method ListItemType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method ListItemType setUrl(Property\UrlProperty $url)
  */
 class ListItemType extends IntangibleType {
@@ -43,7 +44,7 @@ class ListItemType extends IntangibleType {
 
 	/**
 	 * Get item.
-	 * 
+	 *
 	 * @return Property\ItemProperty
 	 */
 	public function getItem() {
@@ -52,7 +53,7 @@ class ListItemType extends IntangibleType {
 
 	/**
 	 * Get next item.
-	 * 
+	 *
 	 * @return Property\NextItemProperty
 	 */
 	public function getNextItem() {
@@ -61,7 +62,7 @@ class ListItemType extends IntangibleType {
 
 	/**
 	 * Get position.
-	 * 
+	 *
 	 * @return Property\PositionProperty
 	 */
 	public function getPosition() {
@@ -70,7 +71,7 @@ class ListItemType extends IntangibleType {
 
 	/**
 	 * Get previous item.
-	 * 
+	 *
 	 * @return Property\PreviousItemProperty
 	 */
 	public function getPreviousItem() {
@@ -79,7 +80,7 @@ class ListItemType extends IntangibleType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -88,7 +89,7 @@ class ListItemType extends IntangibleType {
 
 	/**
 	 * Set item.
-	 * 
+	 *
 	 * @param Property\ItemProperty $item
 	 * @return ListItemType
 	 */
@@ -100,7 +101,7 @@ class ListItemType extends IntangibleType {
 
 	/**
 	 * Set next item.
-	 * 
+	 *
 	 * @param Property\NextItemProperty $nextItem
 	 * @return ListItemType
 	 */
@@ -112,7 +113,7 @@ class ListItemType extends IntangibleType {
 
 	/**
 	 * Set position.
-	 * 
+	 *
 	 * @param Property\PositionProperty $position
 	 * @return ListItemType
 	 */
@@ -124,7 +125,7 @@ class ListItemType extends IntangibleType {
 
 	/**
 	 * Set previous item.
-	 * 
+	 *
 	 * @param Property\PreviousItemProperty $previousItem
 	 * @return ListItemType
 	 */

@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class WriteActionType.
+ * The act of authoring written creative content.
  * 
  * @method WriteActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method WriteActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method WriteActionType setResult(Property\ResultProperty $result)
  * @method WriteActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method WriteActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method WriteActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method WriteActionType setTarget(Property\TargetProperty $target)
  * @method WriteActionType setUrl(Property\UrlProperty $url)
  */
@@ -39,7 +40,7 @@ class WriteActionType extends CreateActionType {
 
 	/**
 	 * Get in language.
-	 * 
+	 *
 	 * @return Property\InLanguageProperty
 	 */
 	public function getInLanguage() {
@@ -48,7 +49,7 @@ class WriteActionType extends CreateActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -57,7 +58,7 @@ class WriteActionType extends CreateActionType {
 
 	/**
 	 * Set in language.
-	 * 
+	 *
 	 * @param Property\InLanguageProperty $inLanguage
 	 * @return WriteActionType
 	 */

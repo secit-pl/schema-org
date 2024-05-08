@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * BroadcastDisplayNameProperty class.
+ * The name displayed in the channel guide. For many US affiliates, it is the network name.
  * 
  * @method BroadcastDisplayNameProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class BroadcastDisplayNameProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class BroadcastDisplayNameProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class PerformanceRoleType.
+ * A PerformanceRole is a Role that some entity places with regard to a theatrical performance, e.g. in a Movie, TVSeries etc.
  * 
  * @method PerformanceRoleType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method PerformanceRoleType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -20,6 +20,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method PerformanceRoleType setRoleName(Property\RoleNameProperty $roleName)
  * @method PerformanceRoleType setSameAs(Property\SameAsProperty $sameAs)
  * @method PerformanceRoleType setStartDate(Property\StartDateProperty $startDate)
+ * @method PerformanceRoleType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method PerformanceRoleType setUrl(Property\UrlProperty $url)
  */
 class PerformanceRoleType extends RoleType {
@@ -31,7 +32,7 @@ class PerformanceRoleType extends RoleType {
 
 	/**
 	 * Get character name.
-	 * 
+	 *
 	 * @return Property\CharacterNameProperty
 	 */
 	public function getCharacterName() {
@@ -40,7 +41,7 @@ class PerformanceRoleType extends RoleType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -49,7 +50,7 @@ class PerformanceRoleType extends RoleType {
 
 	/**
 	 * Set character name.
-	 * 
+	 *
 	 * @param Property\CharacterNameProperty $characterName
 	 * @return PerformanceRoleType
 	 */

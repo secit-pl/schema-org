@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ReservationPendingType.
+ * The status of a reservation when a request has been sent, but not confirmed.
  * 
  * @method ReservationPendingType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method ReservationPendingType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ReservationPendingType setName(Property\NameProperty $name)
  * @method ReservationPendingType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method ReservationPendingType setSameAs(Property\SameAsProperty $sameAs)
+ * @method ReservationPendingType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method ReservationPendingType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method ReservationPendingType setUrl(Property\UrlProperty $url)
  */
 class ReservationPendingType extends ReservationStatusType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

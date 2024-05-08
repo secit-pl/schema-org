@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class LaserDiscFormatType.
+ * LaserDiscFormat.
  * 
  * @method LaserDiscFormatType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method LaserDiscFormatType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method LaserDiscFormatType setName(Property\NameProperty $name)
  * @method LaserDiscFormatType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method LaserDiscFormatType setSameAs(Property\SameAsProperty $sameAs)
+ * @method LaserDiscFormatType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method LaserDiscFormatType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method LaserDiscFormatType setUrl(Property\UrlProperty $url)
  */
 class LaserDiscFormatType extends MusicReleaseFormatType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

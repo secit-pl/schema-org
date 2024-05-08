@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class OnDemandEventType.
+ * A publication event, e.g. catch-up TV or radio podcast, during which a program is available on-demand.
  * 
+ * @method OnDemandEventType setAbout(Property\AboutProperty $about)
  * @method OnDemandEventType setActor(Property\ActorProperty $actor)
  * @method OnDemandEventType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method OnDemandEventType setAggregateRating(Property\AggregateRatingProperty $aggregateRating)
@@ -19,6 +20,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method OnDemandEventType setDirector(Property\DirectorProperty $director)
  * @method OnDemandEventType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
  * @method OnDemandEventType setDoorTime(Property\DoorTimeProperty $doorTime)
+ * @method OnDemandEventType setDuration(Property\DurationProperty $duration)
  * @method OnDemandEventType setEndDate(Property\EndDateProperty $endDate)
  * @method OnDemandEventType setEventStatus(Property\EventStatusProperty $eventStatus)
  * @method OnDemandEventType setFunder(Property\FunderProperty $funder)
@@ -26,6 +28,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method OnDemandEventType setImage(Property\ImageProperty $image)
  * @method OnDemandEventType setInLanguage(Property\InLanguageProperty $inLanguage)
  * @method OnDemandEventType setIsAccessibleForFree(Property\IsAccessibleForFreeProperty $isAccessibleForFree)
+ * @method OnDemandEventType setKeywords(Property\KeywordsProperty $keywords)
  * @method OnDemandEventType setLocation(Property\LocationProperty $location)
  * @method OnDemandEventType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
  * @method OnDemandEventType setMaximumAttendeeCapacity(Property\MaximumAttendeeCapacityProperty $maximumAttendeeCapacity)
@@ -35,6 +38,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method OnDemandEventType setPerformer(Property\PerformerProperty $performer)
  * @method OnDemandEventType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method OnDemandEventType setPreviousStartDate(Property\PreviousStartDateProperty $previousStartDate)
+ * @method OnDemandEventType setPublishedBy(Property\PublishedByProperty $publishedBy)
  * @method OnDemandEventType setPublishedOn(Property\PublishedOnProperty $publishedOn)
  * @method OnDemandEventType setRecordedIn(Property\RecordedInProperty $recordedIn)
  * @method OnDemandEventType setRemainingAttendeeCapacity(Property\RemainingAttendeeCapacityProperty $remainingAttendeeCapacity)
@@ -43,6 +47,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method OnDemandEventType setSponsor(Property\SponsorProperty $sponsor)
  * @method OnDemandEventType setStartDate(Property\StartDateProperty $startDate)
  * @method OnDemandEventType setSubEvent(Property\SubEventProperty $subEvent)
+ * @method OnDemandEventType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method OnDemandEventType setSuperEvent(Property\SuperEventProperty $superEvent)
  * @method OnDemandEventType setTranslator(Property\TranslatorProperty $translator)
  * @method OnDemandEventType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
@@ -54,7 +59,7 @@ class OnDemandEventType extends PublicationEventType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

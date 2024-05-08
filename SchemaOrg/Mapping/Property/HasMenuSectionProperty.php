@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * HasMenuSectionProperty class.
+ * A subgrouping of the menu (by dishes, course, serving time period, etc.).
  * 
  * @method HasMenuSectionProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class HasMenuSectionProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class HasMenuSectionProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

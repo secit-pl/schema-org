@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class BroadcastReleaseType.
+ * BroadcastRelease.
  * 
  * @method BroadcastReleaseType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method BroadcastReleaseType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method BroadcastReleaseType setName(Property\NameProperty $name)
  * @method BroadcastReleaseType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method BroadcastReleaseType setSameAs(Property\SameAsProperty $sameAs)
+ * @method BroadcastReleaseType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method BroadcastReleaseType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method BroadcastReleaseType setUrl(Property\UrlProperty $url)
  */
 class BroadcastReleaseType extends MusicAlbumReleaseType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class PaymentServiceType.
+ * A Service to transfer funds from a person or organization to a beneficiary person or organization.
  * 
  * @method PaymentServiceType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method PaymentServiceType setAggregateRating(Property\AggregateRatingProperty $aggregateRating)
@@ -21,6 +21,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method PaymentServiceType setDescription(Property\DescriptionProperty $description)
  * @method PaymentServiceType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
  * @method PaymentServiceType setFeesAndCommissionsSpecification(Property\FeesAndCommissionsSpecificationProperty $feesAndCommissionsSpecification)
+ * @method PaymentServiceType setHasCertification(Property\HasCertificationProperty $hasCertification)
  * @method PaymentServiceType setHasOfferCatalog(Property\HasOfferCatalogProperty $hasOfferCatalog)
  * @method PaymentServiceType setHoursAvailable(Property\HoursAvailableProperty $hoursAvailable)
  * @method PaymentServiceType setIdentifier(Property\IdentifierProperty $identifier)
@@ -33,19 +34,20 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method PaymentServiceType setName(Property\NameProperty $name)
  * @method PaymentServiceType setOffers(Property\OffersProperty $offers)
  * @method PaymentServiceType setPotentialAction(Property\PotentialActionProperty $potentialAction)
- * @method PaymentServiceType setProvider(Property\ProviderProperty $provider)
  * @method PaymentServiceType setProviderMobility(Property\ProviderMobilityProperty $providerMobility)
  * @method PaymentServiceType setReview(Property\ReviewProperty $review)
  * @method PaymentServiceType setSameAs(Property\SameAsProperty $sameAs)
  * @method PaymentServiceType setServiceOutput(Property\ServiceOutputProperty $serviceOutput)
  * @method PaymentServiceType setServiceType(Property\ServiceTypeProperty $serviceType)
+ * @method PaymentServiceType setSlogan(Property\SloganProperty $slogan)
+ * @method PaymentServiceType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method PaymentServiceType setUrl(Property\UrlProperty $url)
  */
 class PaymentServiceType extends FinancialProductType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

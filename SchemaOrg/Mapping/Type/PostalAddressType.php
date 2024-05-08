@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class PostalAddressType.
+ * The mailing address.
  * 
  * @method PostalAddressType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method PostalAddressType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -25,6 +25,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method PostalAddressType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method PostalAddressType setProductSupported(Property\ProductSupportedProperty $productSupported)
  * @method PostalAddressType setSameAs(Property\SameAsProperty $sameAs)
+ * @method PostalAddressType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method PostalAddressType setTelephone(Property\TelephoneProperty $telephone)
  * @method PostalAddressType setUrl(Property\UrlProperty $url)
  */
@@ -62,7 +63,7 @@ class PostalAddressType extends ContactPointType {
 
 	/**
 	 * Get address country.
-	 * 
+	 *
 	 * @return Property\AddressCountryProperty
 	 */
 	public function getAddressCountry() {
@@ -71,7 +72,7 @@ class PostalAddressType extends ContactPointType {
 
 	/**
 	 * Get address locality.
-	 * 
+	 *
 	 * @return Property\AddressLocalityProperty
 	 */
 	public function getAddressLocality() {
@@ -80,7 +81,7 @@ class PostalAddressType extends ContactPointType {
 
 	/**
 	 * Get address region.
-	 * 
+	 *
 	 * @return Property\AddressRegionProperty
 	 */
 	public function getAddressRegion() {
@@ -89,7 +90,7 @@ class PostalAddressType extends ContactPointType {
 
 	/**
 	 * Get postal code.
-	 * 
+	 *
 	 * @return Property\PostalCodeProperty
 	 */
 	public function getPostalCode() {
@@ -98,7 +99,7 @@ class PostalAddressType extends ContactPointType {
 
 	/**
 	 * Get post office box number.
-	 * 
+	 *
 	 * @return Property\PostOfficeBoxNumberProperty
 	 */
 	public function getPostOfficeBoxNumber() {
@@ -107,7 +108,7 @@ class PostalAddressType extends ContactPointType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -116,7 +117,7 @@ class PostalAddressType extends ContactPointType {
 
 	/**
 	 * Get street address.
-	 * 
+	 *
 	 * @return Property\StreetAddressProperty
 	 */
 	public function getStreetAddress() {
@@ -125,7 +126,7 @@ class PostalAddressType extends ContactPointType {
 
 	/**
 	 * Set address country.
-	 * 
+	 *
 	 * @param Property\AddressCountryProperty $addressCountry
 	 * @return PostalAddressType
 	 */
@@ -137,7 +138,7 @@ class PostalAddressType extends ContactPointType {
 
 	/**
 	 * Set address locality.
-	 * 
+	 *
 	 * @param Property\AddressLocalityProperty $addressLocality
 	 * @return PostalAddressType
 	 */
@@ -149,7 +150,7 @@ class PostalAddressType extends ContactPointType {
 
 	/**
 	 * Set address region.
-	 * 
+	 *
 	 * @param Property\AddressRegionProperty $addressRegion
 	 * @return PostalAddressType
 	 */
@@ -161,7 +162,7 @@ class PostalAddressType extends ContactPointType {
 
 	/**
 	 * Set postal code.
-	 * 
+	 *
 	 * @param Property\PostalCodeProperty $postalCode
 	 * @return PostalAddressType
 	 */
@@ -173,7 +174,7 @@ class PostalAddressType extends ContactPointType {
 
 	/**
 	 * Set post office box number.
-	 * 
+	 *
 	 * @param Property\PostOfficeBoxNumberProperty $postOfficeBoxNumber
 	 * @return PostalAddressType
 	 */
@@ -185,7 +186,7 @@ class PostalAddressType extends ContactPointType {
 
 	/**
 	 * Set street address.
-	 * 
+	 *
 	 * @param Property\StreetAddressProperty $streetAddress
 	 * @return PostalAddressType
 	 */

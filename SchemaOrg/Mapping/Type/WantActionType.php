@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class WantActionType.
+ * The act of expressing a desire about the object. An agent wants an object.
  * 
  * @method WantActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method WantActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method WantActionType setResult(Property\ResultProperty $result)
  * @method WantActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method WantActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method WantActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method WantActionType setTarget(Property\TargetProperty $target)
  * @method WantActionType setUrl(Property\UrlProperty $url)
  */
@@ -34,7 +35,7 @@ class WantActionType extends ReactActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

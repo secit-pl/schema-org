@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class OfferType.
+ * An offer to transfer some rights to an item or to provide a service — for example, an offer to sell tickets to an event, to rent the DVD of a movie, to stream a TV show over the internet, to repair a motorcycle, or to loan a book. Note: As the businessFunction property, which identifies the form of offer (e.g. sell, lease, repair, dispose), defaults to http://purl.org/goodrelations/v1#Sell; an Offer without a defined businessFunction value can be assumed to be an offer to sell. For GTIN-related fields, see Check Digit calculator and validation guide from GS1.
  * 
  * @method OfferType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method OfferType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,6 +17,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method OfferType setName(Property\NameProperty $name)
  * @method OfferType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method OfferType setSameAs(Property\SameAsProperty $sameAs)
+ * @method OfferType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method OfferType setUrl(Property\UrlProperty $url)
  */
 class OfferType extends IntangibleType {
@@ -25,6 +26,11 @@ class OfferType extends IntangibleType {
 	 * @var Property\AcceptedPaymentMethodProperty
 	 */
 	private $acceptedPaymentMethod;
+
+	/**
+	 * @var Property\AdditionalProperty
+	 */
+	private $additionalProperty;
 
 	/**
 	 * @var Property\AddOnProperty
@@ -137,14 +143,14 @@ class OfferType extends IntangibleType {
 	private $includesObject;
 
 	/**
-	 * @var Property\IneligibleRegionProperty
-	 */
-	private $ineligibleRegion;
-
-	/**
 	 * @var Property\InventoryLevelProperty
 	 */
 	private $inventoryLevel;
+
+	/**
+	 * @var Property\IsFamilyFriendlyProperty
+	 */
+	private $isFamilyFriendly;
 
 	/**
 	 * @var Property\ItemConditionProperty
@@ -223,7 +229,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Get accepted payment method.
-	 * 
+	 *
 	 * @return Property\AcceptedPaymentMethodProperty
 	 */
 	public function getAcceptedPaymentMethod() {
@@ -231,8 +237,17 @@ class OfferType extends IntangibleType {
 	}
 
 	/**
+	 * Get additional property.
+	 *
+	 * @return Property\AdditionalProperty
+	 */
+	public function getAdditionalProperty() {
+		return $this->additionalProperty;
+	}
+
+	/**
 	 * Get add on.
-	 * 
+	 *
 	 * @return Property\AddOnProperty
 	 */
 	public function getAddOn() {
@@ -241,7 +256,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Get advance booking requirement.
-	 * 
+	 *
 	 * @return Property\AdvanceBookingRequirementProperty
 	 */
 	public function getAdvanceBookingRequirement() {
@@ -250,7 +265,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Get aggregate rating.
-	 * 
+	 *
 	 * @return Property\AggregateRatingProperty
 	 */
 	public function getAggregateRating() {
@@ -259,7 +274,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Get area served.
-	 * 
+	 *
 	 * @return Property\AreaServedProperty
 	 */
 	public function getAreaServed() {
@@ -268,7 +283,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Get availability.
-	 * 
+	 *
 	 * @return Property\AvailabilityProperty
 	 */
 	public function getAvailability() {
@@ -277,7 +292,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Get availability ends.
-	 * 
+	 *
 	 * @return Property\AvailabilityEndsProperty
 	 */
 	public function getAvailabilityEnds() {
@@ -286,7 +301,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Get availability starts.
-	 * 
+	 *
 	 * @return Property\AvailabilityStartsProperty
 	 */
 	public function getAvailabilityStarts() {
@@ -295,7 +310,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Get available at or from.
-	 * 
+	 *
 	 * @return Property\AvailableAtOrFromProperty
 	 */
 	public function getAvailableAtOrFrom() {
@@ -304,7 +319,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Get available delivery method.
-	 * 
+	 *
 	 * @return Property\AvailableDeliveryMethodProperty
 	 */
 	public function getAvailableDeliveryMethod() {
@@ -313,7 +328,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Get business function.
-	 * 
+	 *
 	 * @return Property\BusinessFunctionProperty
 	 */
 	public function getBusinessFunction() {
@@ -322,7 +337,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Get category.
-	 * 
+	 *
 	 * @return Property\CategoryProperty
 	 */
 	public function getCategory() {
@@ -331,7 +346,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Get delivery lead time.
-	 * 
+	 *
 	 * @return Property\DeliveryLeadTimeProperty
 	 */
 	public function getDeliveryLeadTime() {
@@ -340,7 +355,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Get eligible customer type.
-	 * 
+	 *
 	 * @return Property\EligibleCustomerTypeProperty
 	 */
 	public function getEligibleCustomerType() {
@@ -349,7 +364,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Get eligible duration.
-	 * 
+	 *
 	 * @return Property\EligibleDurationProperty
 	 */
 	public function getEligibleDuration() {
@@ -358,7 +373,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Get eligible quantity.
-	 * 
+	 *
 	 * @return Property\EligibleQuantityProperty
 	 */
 	public function getEligibleQuantity() {
@@ -367,7 +382,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Get eligible region.
-	 * 
+	 *
 	 * @return Property\EligibleRegionProperty
 	 */
 	public function getEligibleRegion() {
@@ -376,7 +391,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Get eligible transaction volume.
-	 * 
+	 *
 	 * @return Property\EligibleTransactionVolumeProperty
 	 */
 	public function getEligibleTransactionVolume() {
@@ -385,7 +400,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Get gtin12.
-	 * 
+	 *
 	 * @return Property\Gtin12Property
 	 */
 	public function getGtin12() {
@@ -394,7 +409,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Get gtin13.
-	 * 
+	 *
 	 * @return Property\Gtin13Property
 	 */
 	public function getGtin13() {
@@ -403,7 +418,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Get gtin14.
-	 * 
+	 *
 	 * @return Property\Gtin14Property
 	 */
 	public function getGtin14() {
@@ -412,7 +427,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Get gtin8.
-	 * 
+	 *
 	 * @return Property\Gtin8Property
 	 */
 	public function getGtin8() {
@@ -421,7 +436,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Get includes object.
-	 * 
+	 *
 	 * @return Property\IncludesObjectProperty
 	 */
 	public function getIncludesObject() {
@@ -429,17 +444,8 @@ class OfferType extends IntangibleType {
 	}
 
 	/**
-	 * Get ineligible region.
-	 * 
-	 * @return Property\IneligibleRegionProperty
-	 */
-	public function getIneligibleRegion() {
-		return $this->ineligibleRegion;
-	}
-
-	/**
 	 * Get inventory level.
-	 * 
+	 *
 	 * @return Property\InventoryLevelProperty
 	 */
 	public function getInventoryLevel() {
@@ -447,8 +453,17 @@ class OfferType extends IntangibleType {
 	}
 
 	/**
+	 * Get is family friendly.
+	 *
+	 * @return Property\IsFamilyFriendlyProperty
+	 */
+	public function getIsFamilyFriendly() {
+		return $this->isFamilyFriendly;
+	}
+
+	/**
 	 * Get item condition.
-	 * 
+	 *
 	 * @return Property\ItemConditionProperty
 	 */
 	public function getItemCondition() {
@@ -457,7 +472,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Get item offered.
-	 * 
+	 *
 	 * @return Property\ItemOfferedProperty
 	 */
 	public function getItemOffered() {
@@ -466,7 +481,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Get mpn.
-	 * 
+	 *
 	 * @return Property\MpnProperty
 	 */
 	public function getMpn() {
@@ -475,7 +490,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Get offered by.
-	 * 
+	 *
 	 * @return Property\OfferedByProperty
 	 */
 	public function getOfferedBy() {
@@ -484,7 +499,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Get price.
-	 * 
+	 *
 	 * @return Property\PriceProperty
 	 */
 	public function getPrice() {
@@ -493,7 +508,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Get price currency.
-	 * 
+	 *
 	 * @return Property\PriceCurrencyProperty
 	 */
 	public function getPriceCurrency() {
@@ -502,7 +517,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Get price specification.
-	 * 
+	 *
 	 * @return Property\PriceSpecificationProperty
 	 */
 	public function getPriceSpecification() {
@@ -511,7 +526,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Get price valid until.
-	 * 
+	 *
 	 * @return Property\PriceValidUntilProperty
 	 */
 	public function getPriceValidUntil() {
@@ -520,7 +535,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Get review.
-	 * 
+	 *
 	 * @return Property\ReviewProperty
 	 */
 	public function getReview() {
@@ -529,7 +544,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -538,7 +553,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Get seller.
-	 * 
+	 *
 	 * @return Property\SellerProperty
 	 */
 	public function getSeller() {
@@ -547,7 +562,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Get serial number.
-	 * 
+	 *
 	 * @return Property\SerialNumberProperty
 	 */
 	public function getSerialNumber() {
@@ -556,7 +571,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Get sku.
-	 * 
+	 *
 	 * @return Property\SkuProperty
 	 */
 	public function getSku() {
@@ -565,7 +580,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Get valid from.
-	 * 
+	 *
 	 * @return Property\ValidFromProperty
 	 */
 	public function getValidFrom() {
@@ -574,7 +589,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Get valid through.
-	 * 
+	 *
 	 * @return Property\ValidThroughProperty
 	 */
 	public function getValidThrough() {
@@ -583,7 +598,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Get warranty.
-	 * 
+	 *
 	 * @return Property\WarrantyProperty
 	 */
 	public function getWarranty() {
@@ -592,7 +607,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Set accepted payment method.
-	 * 
+	 *
 	 * @param Property\AcceptedPaymentMethodProperty $acceptedPaymentMethod
 	 * @return OfferType
 	 */
@@ -603,8 +618,20 @@ class OfferType extends IntangibleType {
 	}
 
 	/**
+	 * Set additional property.
+	 *
+	 * @param Property\AdditionalProperty $additionalProperty
+	 * @return OfferType
+	 */
+	public function setAdditionalProperty(Property\AdditionalProperty $additionalProperty) {
+		$this->additionalProperty = $additionalProperty;
+
+		return $this;
+	}
+
+	/**
 	 * Set add on.
-	 * 
+	 *
 	 * @param Property\AddOnProperty $addOn
 	 * @return OfferType
 	 */
@@ -616,7 +643,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Set advance booking requirement.
-	 * 
+	 *
 	 * @param Property\AdvanceBookingRequirementProperty $advanceBookingRequirement
 	 * @return OfferType
 	 */
@@ -628,7 +655,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Set aggregate rating.
-	 * 
+	 *
 	 * @param Property\AggregateRatingProperty $aggregateRating
 	 * @return OfferType
 	 */
@@ -640,7 +667,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Set area served.
-	 * 
+	 *
 	 * @param Property\AreaServedProperty $areaServed
 	 * @return OfferType
 	 */
@@ -652,7 +679,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Set availability.
-	 * 
+	 *
 	 * @param Property\AvailabilityProperty $availability
 	 * @return OfferType
 	 */
@@ -664,7 +691,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Set availability ends.
-	 * 
+	 *
 	 * @param Property\AvailabilityEndsProperty $availabilityEnds
 	 * @return OfferType
 	 */
@@ -676,7 +703,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Set availability starts.
-	 * 
+	 *
 	 * @param Property\AvailabilityStartsProperty $availabilityStarts
 	 * @return OfferType
 	 */
@@ -688,7 +715,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Set available at or from.
-	 * 
+	 *
 	 * @param Property\AvailableAtOrFromProperty $availableAtOrFrom
 	 * @return OfferType
 	 */
@@ -700,7 +727,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Set available delivery method.
-	 * 
+	 *
 	 * @param Property\AvailableDeliveryMethodProperty $availableDeliveryMethod
 	 * @return OfferType
 	 */
@@ -712,7 +739,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Set business function.
-	 * 
+	 *
 	 * @param Property\BusinessFunctionProperty $businessFunction
 	 * @return OfferType
 	 */
@@ -724,7 +751,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Set category.
-	 * 
+	 *
 	 * @param Property\CategoryProperty $category
 	 * @return OfferType
 	 */
@@ -736,7 +763,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Set delivery lead time.
-	 * 
+	 *
 	 * @param Property\DeliveryLeadTimeProperty $deliveryLeadTime
 	 * @return OfferType
 	 */
@@ -748,7 +775,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Set eligible customer type.
-	 * 
+	 *
 	 * @param Property\EligibleCustomerTypeProperty $eligibleCustomerType
 	 * @return OfferType
 	 */
@@ -760,7 +787,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Set eligible duration.
-	 * 
+	 *
 	 * @param Property\EligibleDurationProperty $eligibleDuration
 	 * @return OfferType
 	 */
@@ -772,7 +799,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Set eligible quantity.
-	 * 
+	 *
 	 * @param Property\EligibleQuantityProperty $eligibleQuantity
 	 * @return OfferType
 	 */
@@ -784,7 +811,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Set eligible region.
-	 * 
+	 *
 	 * @param Property\EligibleRegionProperty $eligibleRegion
 	 * @return OfferType
 	 */
@@ -796,7 +823,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Set eligible transaction volume.
-	 * 
+	 *
 	 * @param Property\EligibleTransactionVolumeProperty $eligibleTransactionVolume
 	 * @return OfferType
 	 */
@@ -808,7 +835,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Set gtin12.
-	 * 
+	 *
 	 * @param Property\Gtin12Property $gtin12
 	 * @return OfferType
 	 */
@@ -820,7 +847,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Set gtin13.
-	 * 
+	 *
 	 * @param Property\Gtin13Property $gtin13
 	 * @return OfferType
 	 */
@@ -832,7 +859,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Set gtin14.
-	 * 
+	 *
 	 * @param Property\Gtin14Property $gtin14
 	 * @return OfferType
 	 */
@@ -844,7 +871,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Set gtin8.
-	 * 
+	 *
 	 * @param Property\Gtin8Property $gtin8
 	 * @return OfferType
 	 */
@@ -856,7 +883,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Set includes object.
-	 * 
+	 *
 	 * @param Property\IncludesObjectProperty $includesObject
 	 * @return OfferType
 	 */
@@ -867,20 +894,8 @@ class OfferType extends IntangibleType {
 	}
 
 	/**
-	 * Set ineligible region.
-	 * 
-	 * @param Property\IneligibleRegionProperty $ineligibleRegion
-	 * @return OfferType
-	 */
-	public function setIneligibleRegion(Property\IneligibleRegionProperty $ineligibleRegion) {
-		$this->ineligibleRegion = $ineligibleRegion;
-
-		return $this;
-	}
-
-	/**
 	 * Set inventory level.
-	 * 
+	 *
 	 * @param Property\InventoryLevelProperty $inventoryLevel
 	 * @return OfferType
 	 */
@@ -891,8 +906,20 @@ class OfferType extends IntangibleType {
 	}
 
 	/**
+	 * Set is family friendly.
+	 *
+	 * @param Property\IsFamilyFriendlyProperty $isFamilyFriendly
+	 * @return OfferType
+	 */
+	public function setIsFamilyFriendly(Property\IsFamilyFriendlyProperty $isFamilyFriendly) {
+		$this->isFamilyFriendly = $isFamilyFriendly;
+
+		return $this;
+	}
+
+	/**
 	 * Set item condition.
-	 * 
+	 *
 	 * @param Property\ItemConditionProperty $itemCondition
 	 * @return OfferType
 	 */
@@ -904,7 +931,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Set item offered.
-	 * 
+	 *
 	 * @param Property\ItemOfferedProperty $itemOffered
 	 * @return OfferType
 	 */
@@ -916,7 +943,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Set mpn.
-	 * 
+	 *
 	 * @param Property\MpnProperty $mpn
 	 * @return OfferType
 	 */
@@ -928,7 +955,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Set offered by.
-	 * 
+	 *
 	 * @param Property\OfferedByProperty $offeredBy
 	 * @return OfferType
 	 */
@@ -940,7 +967,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Set price.
-	 * 
+	 *
 	 * @param Property\PriceProperty $price
 	 * @return OfferType
 	 */
@@ -952,7 +979,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Set price currency.
-	 * 
+	 *
 	 * @param Property\PriceCurrencyProperty $priceCurrency
 	 * @return OfferType
 	 */
@@ -964,7 +991,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Set price specification.
-	 * 
+	 *
 	 * @param Property\PriceSpecificationProperty $priceSpecification
 	 * @return OfferType
 	 */
@@ -976,7 +1003,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Set price valid until.
-	 * 
+	 *
 	 * @param Property\PriceValidUntilProperty $priceValidUntil
 	 * @return OfferType
 	 */
@@ -988,7 +1015,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Set review.
-	 * 
+	 *
 	 * @param Property\ReviewProperty $review
 	 * @return OfferType
 	 */
@@ -1000,7 +1027,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Set seller.
-	 * 
+	 *
 	 * @param Property\SellerProperty $seller
 	 * @return OfferType
 	 */
@@ -1012,7 +1039,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Set serial number.
-	 * 
+	 *
 	 * @param Property\SerialNumberProperty $serialNumber
 	 * @return OfferType
 	 */
@@ -1024,7 +1051,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Set sku.
-	 * 
+	 *
 	 * @param Property\SkuProperty $sku
 	 * @return OfferType
 	 */
@@ -1036,7 +1063,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Set valid from.
-	 * 
+	 *
 	 * @param Property\ValidFromProperty $validFrom
 	 * @return OfferType
 	 */
@@ -1048,7 +1075,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Set valid through.
-	 * 
+	 *
 	 * @param Property\ValidThroughProperty $validThrough
 	 * @return OfferType
 	 */
@@ -1060,7 +1087,7 @@ class OfferType extends IntangibleType {
 
 	/**
 	 * Set warranty.
-	 * 
+	 *
 	 * @param Property\WarrantyProperty $warranty
 	 * @return OfferType
 	 */

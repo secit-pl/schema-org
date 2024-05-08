@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ElementarySchoolType.
+ * An elementary school.
  * 
  * @method ElementarySchoolType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method ElementarySchoolType setAddress(Property\AddressProperty $address)
@@ -30,11 +30,14 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ElementarySchoolType setFoundingLocation(Property\FoundingLocationProperty $foundingLocation)
  * @method ElementarySchoolType setFunder(Property\FunderProperty $funder)
  * @method ElementarySchoolType setGlobalLocationNumber(Property\GlobalLocationNumberProperty $globalLocationNumber)
+ * @method ElementarySchoolType setHasCertification(Property\HasCertificationProperty $hasCertification)
  * @method ElementarySchoolType setHasOfferCatalog(Property\HasOfferCatalogProperty $hasOfferCatalog)
  * @method ElementarySchoolType setHasPOS(Property\HasPOSProperty $hasPOS)
  * @method ElementarySchoolType setIdentifier(Property\IdentifierProperty $identifier)
  * @method ElementarySchoolType setImage(Property\ImageProperty $image)
+ * @method ElementarySchoolType setInteractionStatistic(Property\InteractionStatisticProperty $interactionStatistic)
  * @method ElementarySchoolType setIsicV4(Property\IsicV4Property $isicV4)
+ * @method ElementarySchoolType setKeywords(Property\KeywordsProperty $keywords)
  * @method ElementarySchoolType setLegalName(Property\LegalNameProperty $legalName)
  * @method ElementarySchoolType setLeiCode(Property\LeiCodeProperty $leiCode)
  * @method ElementarySchoolType setLocation(Property\LocationProperty $location)
@@ -53,8 +56,10 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ElementarySchoolType setReview(Property\ReviewProperty $review)
  * @method ElementarySchoolType setSameAs(Property\SameAsProperty $sameAs)
  * @method ElementarySchoolType setSeeks(Property\SeeksProperty $seeks)
+ * @method ElementarySchoolType setSlogan(Property\SloganProperty $slogan)
  * @method ElementarySchoolType setSponsor(Property\SponsorProperty $sponsor)
  * @method ElementarySchoolType setSubOrganization(Property\SubOrganizationProperty $subOrganization)
+ * @method ElementarySchoolType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method ElementarySchoolType setTaxID(Property\TaxIDProperty $taxID)
  * @method ElementarySchoolType setTelephone(Property\TelephoneProperty $telephone)
  * @method ElementarySchoolType setUrl(Property\UrlProperty $url)
@@ -64,7 +69,7 @@ class ElementarySchoolType extends EducationalOrganizationType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

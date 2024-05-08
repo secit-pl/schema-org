@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class UseActionType.
+ * The act of applying an object to its intended purpose.
  * 
+ * @method UseActionType setActionAccessibilityRequirement(Property\ActionAccessibilityRequirementProperty $actionAccessibilityRequirement)
  * @method UseActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method UseActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method UseActionType setAgent(Property\AgentProperty $agent)
@@ -28,6 +29,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method UseActionType setResult(Property\ResultProperty $result)
  * @method UseActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method UseActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method UseActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method UseActionType setTarget(Property\TargetProperty $target)
  * @method UseActionType setUrl(Property\UrlProperty $url)
  */
@@ -35,7 +37,7 @@ class UseActionType extends ConsumeActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

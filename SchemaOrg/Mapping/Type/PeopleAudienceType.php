@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class PeopleAudienceType.
+ * A set of characteristics belonging to people, e.g. who compose an item's target audience.
  * 
  * @method PeopleAudienceType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method PeopleAudienceType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -19,9 +19,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method PeopleAudienceType setName(Property\NameProperty $name)
  * @method PeopleAudienceType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method PeopleAudienceType setSameAs(Property\SameAsProperty $sameAs)
+ * @method PeopleAudienceType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method PeopleAudienceType setUrl(Property\UrlProperty $url)
  */
 class PeopleAudienceType extends AudienceType {
+
+	/**
+	 * @var Property\HealthConditionProperty
+	 */
+	private $healthCondition;
 
 	/**
 	 * @var Property\RequiredGenderProperty
@@ -54,8 +60,17 @@ class PeopleAudienceType extends AudienceType {
 	private $suggestedMinAge;
 
 	/**
+	 * Get health condition.
+	 *
+	 * @return Property\HealthConditionProperty
+	 */
+	public function getHealthCondition() {
+		return $this->healthCondition;
+	}
+
+	/**
 	 * Get required gender.
-	 * 
+	 *
 	 * @return Property\RequiredGenderProperty
 	 */
 	public function getRequiredGender() {
@@ -64,7 +79,7 @@ class PeopleAudienceType extends AudienceType {
 
 	/**
 	 * Get required max age.
-	 * 
+	 *
 	 * @return Property\RequiredMaxAgeProperty
 	 */
 	public function getRequiredMaxAge() {
@@ -73,7 +88,7 @@ class PeopleAudienceType extends AudienceType {
 
 	/**
 	 * Get required min age.
-	 * 
+	 *
 	 * @return Property\RequiredMinAgeProperty
 	 */
 	public function getRequiredMinAge() {
@@ -82,7 +97,7 @@ class PeopleAudienceType extends AudienceType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -91,7 +106,7 @@ class PeopleAudienceType extends AudienceType {
 
 	/**
 	 * Get suggested gender.
-	 * 
+	 *
 	 * @return Property\SuggestedGenderProperty
 	 */
 	public function getSuggestedGender() {
@@ -100,7 +115,7 @@ class PeopleAudienceType extends AudienceType {
 
 	/**
 	 * Get suggested max age.
-	 * 
+	 *
 	 * @return Property\SuggestedMaxAgeProperty
 	 */
 	public function getSuggestedMaxAge() {
@@ -109,7 +124,7 @@ class PeopleAudienceType extends AudienceType {
 
 	/**
 	 * Get suggested min age.
-	 * 
+	 *
 	 * @return Property\SuggestedMinAgeProperty
 	 */
 	public function getSuggestedMinAge() {
@@ -117,8 +132,20 @@ class PeopleAudienceType extends AudienceType {
 	}
 
 	/**
+	 * Set health condition.
+	 *
+	 * @param Property\HealthConditionProperty $healthCondition
+	 * @return PeopleAudienceType
+	 */
+	public function setHealthCondition(Property\HealthConditionProperty $healthCondition) {
+		$this->healthCondition = $healthCondition;
+
+		return $this;
+	}
+
+	/**
 	 * Set required gender.
-	 * 
+	 *
 	 * @param Property\RequiredGenderProperty $requiredGender
 	 * @return PeopleAudienceType
 	 */
@@ -130,7 +157,7 @@ class PeopleAudienceType extends AudienceType {
 
 	/**
 	 * Set required max age.
-	 * 
+	 *
 	 * @param Property\RequiredMaxAgeProperty $requiredMaxAge
 	 * @return PeopleAudienceType
 	 */
@@ -142,7 +169,7 @@ class PeopleAudienceType extends AudienceType {
 
 	/**
 	 * Set required min age.
-	 * 
+	 *
 	 * @param Property\RequiredMinAgeProperty $requiredMinAge
 	 * @return PeopleAudienceType
 	 */
@@ -154,7 +181,7 @@ class PeopleAudienceType extends AudienceType {
 
 	/**
 	 * Set suggested gender.
-	 * 
+	 *
 	 * @param Property\SuggestedGenderProperty $suggestedGender
 	 * @return PeopleAudienceType
 	 */
@@ -166,7 +193,7 @@ class PeopleAudienceType extends AudienceType {
 
 	/**
 	 * Set suggested max age.
-	 * 
+	 *
 	 * @param Property\SuggestedMaxAgeProperty $suggestedMaxAge
 	 * @return PeopleAudienceType
 	 */
@@ -178,7 +205,7 @@ class PeopleAudienceType extends AudienceType {
 
 	/**
 	 * Set suggested min age.
-	 * 
+	 *
 	 * @param Property\SuggestedMinAgeProperty $suggestedMinAge
 	 * @return PeopleAudienceType
 	 */

@@ -6,7 +6,7 @@ use SecIT\SchemaOrg\Mapping\DataType;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * DriveWheelConfigurationProperty class.
+ * The drive wheel configuration, i.e. which roadwheels will receive torque from the vehicle's engine via the drivetrain.
  * 
  * @method DriveWheelConfigurationProperty setValue($value)
  */
@@ -14,7 +14,7 @@ class DriveWheelConfigurationProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -23,7 +23,7 @@ class DriveWheelConfigurationProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * ExecutableLibraryNameProperty class.
+ * Library file name, e.g., mscorlib.dll, system.web.dll.
  * 
  * @method ExecutableLibraryNameProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class ExecutableLibraryNameProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class ExecutableLibraryNameProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

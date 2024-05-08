@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class AuthorizeActionType.
+ * The act of granting permission to an object.
  * 
  * @method AuthorizeActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method AuthorizeActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method AuthorizeActionType setResult(Property\ResultProperty $result)
  * @method AuthorizeActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method AuthorizeActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method AuthorizeActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method AuthorizeActionType setTarget(Property\TargetProperty $target)
  * @method AuthorizeActionType setUrl(Property\UrlProperty $url)
  */
@@ -39,7 +40,7 @@ class AuthorizeActionType extends AllocateActionType {
 
 	/**
 	 * Get recipient.
-	 * 
+	 *
 	 * @return Property\RecipientProperty
 	 */
 	public function getRecipient() {
@@ -48,7 +49,7 @@ class AuthorizeActionType extends AllocateActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -57,7 +58,7 @@ class AuthorizeActionType extends AllocateActionType {
 
 	/**
 	 * Set recipient.
-	 * 
+	 *
 	 * @param Property\RecipientProperty $recipient
 	 * @return AuthorizeActionType
 	 */

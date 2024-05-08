@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class OrganizationRoleType.
+ * A subclass of Role used to describe roles within organizations.
  * 
  * @method OrganizationRoleType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method OrganizationRoleType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -20,6 +20,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method OrganizationRoleType setRoleName(Property\RoleNameProperty $roleName)
  * @method OrganizationRoleType setSameAs(Property\SameAsProperty $sameAs)
  * @method OrganizationRoleType setStartDate(Property\StartDateProperty $startDate)
+ * @method OrganizationRoleType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method OrganizationRoleType setUrl(Property\UrlProperty $url)
  */
 class OrganizationRoleType extends RoleType {
@@ -31,7 +32,7 @@ class OrganizationRoleType extends RoleType {
 
 	/**
 	 * Get numbered position.
-	 * 
+	 *
 	 * @return Property\NumberedPositionProperty
 	 */
 	public function getNumberedPosition() {
@@ -40,7 +41,7 @@ class OrganizationRoleType extends RoleType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -49,7 +50,7 @@ class OrganizationRoleType extends RoleType {
 
 	/**
 	 * Set numbered position.
-	 * 
+	 *
 	 * @param Property\NumberedPositionProperty $numberedPosition
 	 * @return OrganizationRoleType
 	 */

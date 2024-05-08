@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class NewConditionType.
+ * Indicates that the item is new.
  * 
  * @method NewConditionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method NewConditionType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method NewConditionType setName(Property\NameProperty $name)
  * @method NewConditionType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method NewConditionType setSameAs(Property\SameAsProperty $sameAs)
+ * @method NewConditionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method NewConditionType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method NewConditionType setUrl(Property\UrlProperty $url)
  */
 class NewConditionType extends OfferItemConditionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

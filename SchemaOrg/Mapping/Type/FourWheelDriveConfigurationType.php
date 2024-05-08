@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class FourWheelDriveConfigurationType.
+ * Four-wheel drive is a transmission layout where the engine primarily drives two wheels with a part-time four-wheel drive capability.
  * 
  * @method FourWheelDriveConfigurationType setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method FourWheelDriveConfigurationType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -24,6 +24,8 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method FourWheelDriveConfigurationType setNonEqual(Property\NonEqualProperty $nonEqual)
  * @method FourWheelDriveConfigurationType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method FourWheelDriveConfigurationType setSameAs(Property\SameAsProperty $sameAs)
+ * @method FourWheelDriveConfigurationType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method FourWheelDriveConfigurationType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method FourWheelDriveConfigurationType setUrl(Property\UrlProperty $url)
  * @method FourWheelDriveConfigurationType setValueReference(Property\ValueReferenceProperty $valueReference)
  */
@@ -31,7 +33,7 @@ class FourWheelDriveConfigurationType extends DriveWheelConfigurationValueType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class IntangibleType.
+ * A utility class that serves as the umbrella for a number of 'intangible' things such as quantities, structured values, etc.
  * 
  * @method IntangibleType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method IntangibleType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,14 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method IntangibleType setName(Property\NameProperty $name)
  * @method IntangibleType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method IntangibleType setSameAs(Property\SameAsProperty $sameAs)
+ * @method IntangibleType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method IntangibleType setUrl(Property\UrlProperty $url)
  */
 class IntangibleType extends ThingType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

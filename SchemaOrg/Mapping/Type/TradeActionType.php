@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class TradeActionType.
+ * The act of participating in an exchange of goods and services for monetary compensation. An agent trades an object, product or service with a participant in exchange for a one time or periodic payment.
  * 
  * @method TradeActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method TradeActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method TradeActionType setResult(Property\ResultProperty $result)
  * @method TradeActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method TradeActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method TradeActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method TradeActionType setTarget(Property\TargetProperty $target)
  * @method TradeActionType setUrl(Property\UrlProperty $url)
  */
@@ -38,13 +39,18 @@ class TradeActionType extends ActionType {
 	private $price;
 
 	/**
+	 * @var Property\PriceCurrencyProperty
+	 */
+	private $priceCurrency;
+
+	/**
 	 * @var Property\PriceSpecificationProperty
 	 */
 	private $priceSpecification;
 
 	/**
 	 * Get price.
-	 * 
+	 *
 	 * @return Property\PriceProperty
 	 */
 	public function getPrice() {
@@ -52,8 +58,17 @@ class TradeActionType extends ActionType {
 	}
 
 	/**
+	 * Get price currency.
+	 *
+	 * @return Property\PriceCurrencyProperty
+	 */
+	public function getPriceCurrency() {
+		return $this->priceCurrency;
+	}
+
+	/**
 	 * Get price specification.
-	 * 
+	 *
 	 * @return Property\PriceSpecificationProperty
 	 */
 	public function getPriceSpecification() {
@@ -62,7 +77,7 @@ class TradeActionType extends ActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -71,7 +86,7 @@ class TradeActionType extends ActionType {
 
 	/**
 	 * Set price.
-	 * 
+	 *
 	 * @param Property\PriceProperty $price
 	 * @return TradeActionType
 	 */
@@ -82,8 +97,20 @@ class TradeActionType extends ActionType {
 	}
 
 	/**
+	 * Set price currency.
+	 *
+	 * @param Property\PriceCurrencyProperty $priceCurrency
+	 * @return TradeActionType
+	 */
+	public function setPriceCurrency(Property\PriceCurrencyProperty $priceCurrency) {
+		$this->priceCurrency = $priceCurrency;
+
+		return $this;
+	}
+
+	/**
 	 * Set price specification.
-	 * 
+	 *
 	 * @param Property\PriceSpecificationProperty $priceSpecification
 	 * @return TradeActionType
 	 */

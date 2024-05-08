@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class CoOpType.
+ * Play mode: CoOp. Co-operative games, where you play on the same team with friends.
  * 
  * @method CoOpType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method CoOpType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method CoOpType setName(Property\NameProperty $name)
  * @method CoOpType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method CoOpType setSameAs(Property\SameAsProperty $sameAs)
+ * @method CoOpType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method CoOpType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method CoOpType setUrl(Property\UrlProperty $url)
  */
 class CoOpType extends GamePlayModeType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

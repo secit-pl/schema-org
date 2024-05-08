@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ScreeningEventType.
+ * A screening of a movie or other video.
  * 
+ * @method ScreeningEventType setAbout(Property\AboutProperty $about)
  * @method ScreeningEventType setActor(Property\ActorProperty $actor)
  * @method ScreeningEventType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method ScreeningEventType setAggregateRating(Property\AggregateRatingProperty $aggregateRating)
@@ -19,6 +20,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ScreeningEventType setDirector(Property\DirectorProperty $director)
  * @method ScreeningEventType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
  * @method ScreeningEventType setDoorTime(Property\DoorTimeProperty $doorTime)
+ * @method ScreeningEventType setDuration(Property\DurationProperty $duration)
  * @method ScreeningEventType setEndDate(Property\EndDateProperty $endDate)
  * @method ScreeningEventType setEventStatus(Property\EventStatusProperty $eventStatus)
  * @method ScreeningEventType setFunder(Property\FunderProperty $funder)
@@ -26,6 +28,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ScreeningEventType setImage(Property\ImageProperty $image)
  * @method ScreeningEventType setInLanguage(Property\InLanguageProperty $inLanguage)
  * @method ScreeningEventType setIsAccessibleForFree(Property\IsAccessibleForFreeProperty $isAccessibleForFree)
+ * @method ScreeningEventType setKeywords(Property\KeywordsProperty $keywords)
  * @method ScreeningEventType setLocation(Property\LocationProperty $location)
  * @method ScreeningEventType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
  * @method ScreeningEventType setMaximumAttendeeCapacity(Property\MaximumAttendeeCapacityProperty $maximumAttendeeCapacity)
@@ -42,6 +45,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ScreeningEventType setSponsor(Property\SponsorProperty $sponsor)
  * @method ScreeningEventType setStartDate(Property\StartDateProperty $startDate)
  * @method ScreeningEventType setSubEvent(Property\SubEventProperty $subEvent)
+ * @method ScreeningEventType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method ScreeningEventType setSuperEvent(Property\SuperEventProperty $superEvent)
  * @method ScreeningEventType setTranslator(Property\TranslatorProperty $translator)
  * @method ScreeningEventType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
@@ -50,11 +54,6 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ScreeningEventType setWorkPerformed(Property\WorkPerformedProperty $workPerformed)
  */
 class ScreeningEventType extends EventType {
-
-	/**
-	 * @var Property\SubtitleLanguageProperty
-	 */
-	private $subtitleLanguage;
 
 	/**
 	 * @var Property\VideoFormatProperty
@@ -68,7 +67,7 @@ class ScreeningEventType extends EventType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -76,17 +75,8 @@ class ScreeningEventType extends EventType {
 	}
 
 	/**
-	 * Get subtitle language.
-	 * 
-	 * @return Property\SubtitleLanguageProperty
-	 */
-	public function getSubtitleLanguage() {
-		return $this->subtitleLanguage;
-	}
-
-	/**
 	 * Get video format.
-	 * 
+	 *
 	 * @return Property\VideoFormatProperty
 	 */
 	public function getVideoFormat() {
@@ -95,7 +85,7 @@ class ScreeningEventType extends EventType {
 
 	/**
 	 * Get work presented.
-	 * 
+	 *
 	 * @return Property\WorkPresentedProperty
 	 */
 	public function getWorkPresented() {
@@ -103,20 +93,8 @@ class ScreeningEventType extends EventType {
 	}
 
 	/**
-	 * Set subtitle language.
-	 * 
-	 * @param Property\SubtitleLanguageProperty $subtitleLanguage
-	 * @return ScreeningEventType
-	 */
-	public function setSubtitleLanguage(Property\SubtitleLanguageProperty $subtitleLanguage) {
-		$this->subtitleLanguage = $subtitleLanguage;
-
-		return $this;
-	}
-
-	/**
 	 * Set video format.
-	 * 
+	 *
 	 * @param Property\VideoFormatProperty $videoFormat
 	 * @return ScreeningEventType
 	 */
@@ -128,7 +106,7 @@ class ScreeningEventType extends EventType {
 
 	/**
 	 * Set work presented.
-	 * 
+	 *
 	 * @param Property\WorkPresentedProperty $workPresented
 	 * @return ScreeningEventType
 	 */

@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ReviewActionType.
+ * The act of producing a balanced opinion about the object for an audience. An agent reviews an object with participants resulting in a review.
  * 
  * @method ReviewActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method ReviewActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ReviewActionType setResult(Property\ResultProperty $result)
  * @method ReviewActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method ReviewActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method ReviewActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method ReviewActionType setTarget(Property\TargetProperty $target)
  * @method ReviewActionType setUrl(Property\UrlProperty $url)
  */
@@ -39,7 +40,7 @@ class ReviewActionType extends AssessActionType {
 
 	/**
 	 * Get result review.
-	 * 
+	 *
 	 * @return Property\ResultReviewProperty
 	 */
 	public function getResultReview() {
@@ -48,7 +49,7 @@ class ReviewActionType extends AssessActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -57,7 +58,7 @@ class ReviewActionType extends AssessActionType {
 
 	/**
 	 * Set result review.
-	 * 
+	 *
 	 * @param Property\ResultReviewProperty $resultReview
 	 * @return ReviewActionType
 	 */

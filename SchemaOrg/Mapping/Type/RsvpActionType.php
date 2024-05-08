@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class RsvpActionType.
+ * The act of notifying an event organizer as to whether you expect to attend the event.
  * 
+ * @method RsvpActionType setAbout(Property\AboutProperty $about)
  * @method RsvpActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method RsvpActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method RsvpActionType setAgent(Property\AgentProperty $agent)
@@ -30,6 +31,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method RsvpActionType setResult(Property\ResultProperty $result)
  * @method RsvpActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method RsvpActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method RsvpActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method RsvpActionType setTarget(Property\TargetProperty $target)
  * @method RsvpActionType setUrl(Property\UrlProperty $url)
  */
@@ -52,7 +54,7 @@ class RsvpActionType extends InformActionType {
 
 	/**
 	 * Get additional number of guests.
-	 * 
+	 *
 	 * @return Property\AdditionalNumberOfGuestsProperty
 	 */
 	public function getAdditionalNumberOfGuests() {
@@ -61,7 +63,7 @@ class RsvpActionType extends InformActionType {
 
 	/**
 	 * Get comment.
-	 * 
+	 *
 	 * @return Property\CommentProperty
 	 */
 	public function getComment() {
@@ -70,7 +72,7 @@ class RsvpActionType extends InformActionType {
 
 	/**
 	 * Get rsvp response.
-	 * 
+	 *
 	 * @return Property\RsvpResponseProperty
 	 */
 	public function getRsvpResponse() {
@@ -79,7 +81,7 @@ class RsvpActionType extends InformActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -88,7 +90,7 @@ class RsvpActionType extends InformActionType {
 
 	/**
 	 * Set additional number of guests.
-	 * 
+	 *
 	 * @param Property\AdditionalNumberOfGuestsProperty $additionalNumberOfGuests
 	 * @return RsvpActionType
 	 */
@@ -100,7 +102,7 @@ class RsvpActionType extends InformActionType {
 
 	/**
 	 * Set comment.
-	 * 
+	 *
 	 * @param Property\CommentProperty $comment
 	 * @return RsvpActionType
 	 */
@@ -112,7 +114,7 @@ class RsvpActionType extends InformActionType {
 
 	/**
 	 * Set rsvp response.
-	 * 
+	 *
 	 * @param Property\RsvpResponseProperty $rsvpResponse
 	 * @return RsvpActionType
 	 */

@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ShareActionType.
+ * The act of distributing content to people for their amusement or edification.
  * 
+ * @method ShareActionType setAbout(Property\AboutProperty $about)
  * @method ShareActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method ShareActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method ShareActionType setAgent(Property\AgentProperty $agent)
@@ -29,6 +30,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ShareActionType setResult(Property\ResultProperty $result)
  * @method ShareActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method ShareActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method ShareActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method ShareActionType setTarget(Property\TargetProperty $target)
  * @method ShareActionType setUrl(Property\UrlProperty $url)
  */
@@ -36,7 +38,7 @@ class ShareActionType extends CommunicateActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

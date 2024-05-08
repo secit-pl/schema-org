@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class AcceptActionType.
+ * The act of committing to/adopting an object. Related actions: RejectAction: The antonym of AcceptAction.
  * 
  * @method AcceptActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method AcceptActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method AcceptActionType setResult(Property\ResultProperty $result)
  * @method AcceptActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method AcceptActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method AcceptActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method AcceptActionType setTarget(Property\TargetProperty $target)
  * @method AcceptActionType setUrl(Property\UrlProperty $url)
  */
@@ -34,7 +35,7 @@ class AcceptActionType extends AllocateActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

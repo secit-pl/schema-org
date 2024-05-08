@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ActivateActionType.
+ * The act of starting or activating a device or application (e.g. starting a timer or turning on a flashlight).
  * 
  * @method ActivateActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method ActivateActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ActivateActionType setResult(Property\ResultProperty $result)
  * @method ActivateActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method ActivateActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method ActivateActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method ActivateActionType setTarget(Property\TargetProperty $target)
  * @method ActivateActionType setUrl(Property\UrlProperty $url)
  */
@@ -34,7 +35,7 @@ class ActivateActionType extends ControlActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

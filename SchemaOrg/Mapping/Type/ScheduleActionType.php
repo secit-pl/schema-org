@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ScheduleActionType.
+ * Scheduling future actions, events, or tasks. Related actions: ReserveAction: Unlike ReserveAction, ScheduleAction allocates future actions (e.g. an event, a task, etc) towards a time slot / spatial allocation.
  * 
  * @method ScheduleActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method ScheduleActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -28,6 +28,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ScheduleActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method ScheduleActionType setScheduledTime(Property\ScheduledTimeProperty $scheduledTime)
  * @method ScheduleActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method ScheduleActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method ScheduleActionType setTarget(Property\TargetProperty $target)
  * @method ScheduleActionType setUrl(Property\UrlProperty $url)
  */
@@ -35,7 +36,7 @@ class ScheduleActionType extends PlanActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

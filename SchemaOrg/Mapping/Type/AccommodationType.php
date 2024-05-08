@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class AccommodationType.
+ * An accommodation is a place that can accommodate human beings, e.g. a hotel room, a camping pitch, or a meeting room. Many accommodations are for overnight stays, but this is not a mandatory requirement. For more specific types of accommodations not defined in schema.org, one can use additionalType with external vocabularies. See also the dedicated document on the use of schema.org for marking up hotels and other forms of accommodations.
  * 
  * @method AccommodationType setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method AccommodationType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -21,13 +21,27 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method AccommodationType setEvent(Property\EventProperty $event)
  * @method AccommodationType setFaxNumber(Property\FaxNumberProperty $faxNumber)
  * @method AccommodationType setGeo(Property\GeoProperty $geo)
+ * @method AccommodationType setGeoContains(Property\GeoContainsProperty $geoContains)
+ * @method AccommodationType setGeoCoveredBy(Property\GeoCoveredByProperty $geoCoveredBy)
+ * @method AccommodationType setGeoCovers(Property\GeoCoversProperty $geoCovers)
+ * @method AccommodationType setGeoCrosses(Property\GeoCrossesProperty $geoCrosses)
+ * @method AccommodationType setGeoDisjoint(Property\GeoDisjointProperty $geoDisjoint)
+ * @method AccommodationType setGeoEquals(Property\GeoEqualsProperty $geoEquals)
+ * @method AccommodationType setGeoIntersects(Property\GeoIntersectsProperty $geoIntersects)
+ * @method AccommodationType setGeoOverlaps(Property\GeoOverlapsProperty $geoOverlaps)
+ * @method AccommodationType setGeoTouches(Property\GeoTouchesProperty $geoTouches)
+ * @method AccommodationType setGeoWithin(Property\GeoWithinProperty $geoWithin)
  * @method AccommodationType setGlobalLocationNumber(Property\GlobalLocationNumberProperty $globalLocationNumber)
+ * @method AccommodationType setHasCertification(Property\HasCertificationProperty $hasCertification)
  * @method AccommodationType setHasMap(Property\HasMapProperty $hasMap)
  * @method AccommodationType setIdentifier(Property\IdentifierProperty $identifier)
  * @method AccommodationType setImage(Property\ImageProperty $image)
  * @method AccommodationType setIsAccessibleForFree(Property\IsAccessibleForFreeProperty $isAccessibleForFree)
  * @method AccommodationType setIsicV4(Property\IsicV4Property $isicV4)
+ * @method AccommodationType setKeywords(Property\KeywordsProperty $keywords)
+ * @method AccommodationType setLatitude(Property\LatitudeProperty $latitude)
  * @method AccommodationType setLogo(Property\LogoProperty $logo)
+ * @method AccommodationType setLongitude(Property\LongitudeProperty $longitude)
  * @method AccommodationType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
  * @method AccommodationType setMaximumAttendeeCapacity(Property\MaximumAttendeeCapacityProperty $maximumAttendeeCapacity)
  * @method AccommodationType setName(Property\NameProperty $name)
@@ -37,8 +51,10 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method AccommodationType setPublicAccess(Property\PublicAccessProperty $publicAccess)
  * @method AccommodationType setReview(Property\ReviewProperty $review)
  * @method AccommodationType setSameAs(Property\SameAsProperty $sameAs)
+ * @method AccommodationType setSlogan(Property\SloganProperty $slogan)
  * @method AccommodationType setSmokingAllowed(Property\SmokingAllowedProperty $smokingAllowed)
  * @method AccommodationType setSpecialOpeningHoursSpecification(Property\SpecialOpeningHoursSpecificationProperty $specialOpeningHoursSpecification)
+ * @method AccommodationType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method AccommodationType setTelephone(Property\TelephoneProperty $telephone)
  * @method AccommodationType setUrl(Property\UrlProperty $url)
  */
@@ -50,6 +66,11 @@ class AccommodationType extends PlaceType {
 	private $amenityFeature;
 
 	/**
+	 * @var Property\BedProperty
+	 */
+	private $bed;
+
+	/**
 	 * @var Property\FloorSizeProperty
 	 */
 	private $floorSize;
@@ -58,6 +79,11 @@ class AccommodationType extends PlaceType {
 	 * @var Property\NumberOfRoomsProperty
 	 */
 	private $numberOfRooms;
+
+	/**
+	 * @var Property\OccupancyProperty
+	 */
+	private $occupancy;
 
 	/**
 	 * @var Property\PermittedUsageProperty
@@ -71,7 +97,7 @@ class AccommodationType extends PlaceType {
 
 	/**
 	 * Get amenity feature.
-	 * 
+	 *
 	 * @return Property\AmenityFeatureProperty
 	 */
 	public function getAmenityFeature() {
@@ -79,8 +105,17 @@ class AccommodationType extends PlaceType {
 	}
 
 	/**
+	 * Get bed.
+	 *
+	 * @return Property\BedProperty
+	 */
+	public function getBed() {
+		return $this->bed;
+	}
+
+	/**
 	 * Get floor size.
-	 * 
+	 *
 	 * @return Property\FloorSizeProperty
 	 */
 	public function getFloorSize() {
@@ -89,7 +124,7 @@ class AccommodationType extends PlaceType {
 
 	/**
 	 * Get number of rooms.
-	 * 
+	 *
 	 * @return Property\NumberOfRoomsProperty
 	 */
 	public function getNumberOfRooms() {
@@ -97,8 +132,17 @@ class AccommodationType extends PlaceType {
 	}
 
 	/**
+	 * Get occupancy.
+	 *
+	 * @return Property\OccupancyProperty
+	 */
+	public function getOccupancy() {
+		return $this->occupancy;
+	}
+
+	/**
 	 * Get permitted usage.
-	 * 
+	 *
 	 * @return Property\PermittedUsageProperty
 	 */
 	public function getPermittedUsage() {
@@ -107,7 +151,7 @@ class AccommodationType extends PlaceType {
 
 	/**
 	 * Get pets allowed.
-	 * 
+	 *
 	 * @return Property\PetsAllowedProperty
 	 */
 	public function getPetsAllowed() {
@@ -116,7 +160,7 @@ class AccommodationType extends PlaceType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -125,7 +169,7 @@ class AccommodationType extends PlaceType {
 
 	/**
 	 * Set amenity feature.
-	 * 
+	 *
 	 * @param Property\AmenityFeatureProperty $amenityFeature
 	 * @return AccommodationType
 	 */
@@ -136,8 +180,20 @@ class AccommodationType extends PlaceType {
 	}
 
 	/**
+	 * Set bed.
+	 *
+	 * @param Property\BedProperty $bed
+	 * @return AccommodationType
+	 */
+	public function setBed(Property\BedProperty $bed) {
+		$this->bed = $bed;
+
+		return $this;
+	}
+
+	/**
 	 * Set floor size.
-	 * 
+	 *
 	 * @param Property\FloorSizeProperty $floorSize
 	 * @return AccommodationType
 	 */
@@ -149,7 +205,7 @@ class AccommodationType extends PlaceType {
 
 	/**
 	 * Set number of rooms.
-	 * 
+	 *
 	 * @param Property\NumberOfRoomsProperty $numberOfRooms
 	 * @return AccommodationType
 	 */
@@ -160,8 +216,20 @@ class AccommodationType extends PlaceType {
 	}
 
 	/**
+	 * Set occupancy.
+	 *
+	 * @param Property\OccupancyProperty $occupancy
+	 * @return AccommodationType
+	 */
+	public function setOccupancy(Property\OccupancyProperty $occupancy) {
+		$this->occupancy = $occupancy;
+
+		return $this;
+	}
+
+	/**
 	 * Set permitted usage.
-	 * 
+	 *
 	 * @param Property\PermittedUsageProperty $permittedUsage
 	 * @return AccommodationType
 	 */
@@ -173,7 +241,7 @@ class AccommodationType extends PlaceType {
 
 	/**
 	 * Set pets allowed.
-	 * 
+	 *
 	 * @param Property\PetsAllowedProperty $petsAllowed
 	 * @return AccommodationType
 	 */

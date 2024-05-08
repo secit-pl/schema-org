@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * LesserOrEqualProperty class.
+ * This ordering relation for qualitative values indicates that the subject is lesser than or equal to the object.
  * 
  * @method LesserOrEqualProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class LesserOrEqualProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class LesserOrEqualProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

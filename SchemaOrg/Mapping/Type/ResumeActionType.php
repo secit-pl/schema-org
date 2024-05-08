@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ResumeActionType.
+ * The act of resuming a device or application which was formerly paused (e.g. resume music playback or resume a timer).
  * 
  * @method ResumeActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method ResumeActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ResumeActionType setResult(Property\ResultProperty $result)
  * @method ResumeActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method ResumeActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method ResumeActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method ResumeActionType setTarget(Property\TargetProperty $target)
  * @method ResumeActionType setUrl(Property\UrlProperty $url)
  */
@@ -34,7 +35,7 @@ class ResumeActionType extends ControlActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

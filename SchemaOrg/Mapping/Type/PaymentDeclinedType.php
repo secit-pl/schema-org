@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class PaymentDeclinedType.
+ * The payee received the payment, but it was declined for some reason.
  * 
  * @method PaymentDeclinedType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method PaymentDeclinedType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method PaymentDeclinedType setName(Property\NameProperty $name)
  * @method PaymentDeclinedType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method PaymentDeclinedType setSameAs(Property\SameAsProperty $sameAs)
+ * @method PaymentDeclinedType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method PaymentDeclinedType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method PaymentDeclinedType setUrl(Property\UrlProperty $url)
  */
 class PaymentDeclinedType extends PaymentStatusType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

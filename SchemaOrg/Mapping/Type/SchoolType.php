@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class SchoolType.
+ * A school.
  * 
  * @method SchoolType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method SchoolType setAddress(Property\AddressProperty $address)
@@ -30,11 +30,14 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SchoolType setFoundingLocation(Property\FoundingLocationProperty $foundingLocation)
  * @method SchoolType setFunder(Property\FunderProperty $funder)
  * @method SchoolType setGlobalLocationNumber(Property\GlobalLocationNumberProperty $globalLocationNumber)
+ * @method SchoolType setHasCertification(Property\HasCertificationProperty $hasCertification)
  * @method SchoolType setHasOfferCatalog(Property\HasOfferCatalogProperty $hasOfferCatalog)
  * @method SchoolType setHasPOS(Property\HasPOSProperty $hasPOS)
  * @method SchoolType setIdentifier(Property\IdentifierProperty $identifier)
  * @method SchoolType setImage(Property\ImageProperty $image)
+ * @method SchoolType setInteractionStatistic(Property\InteractionStatisticProperty $interactionStatistic)
  * @method SchoolType setIsicV4(Property\IsicV4Property $isicV4)
+ * @method SchoolType setKeywords(Property\KeywordsProperty $keywords)
  * @method SchoolType setLegalName(Property\LegalNameProperty $legalName)
  * @method SchoolType setLeiCode(Property\LeiCodeProperty $leiCode)
  * @method SchoolType setLocation(Property\LocationProperty $location)
@@ -53,8 +56,10 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SchoolType setReview(Property\ReviewProperty $review)
  * @method SchoolType setSameAs(Property\SameAsProperty $sameAs)
  * @method SchoolType setSeeks(Property\SeeksProperty $seeks)
+ * @method SchoolType setSlogan(Property\SloganProperty $slogan)
  * @method SchoolType setSponsor(Property\SponsorProperty $sponsor)
  * @method SchoolType setSubOrganization(Property\SubOrganizationProperty $subOrganization)
+ * @method SchoolType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method SchoolType setTaxID(Property\TaxIDProperty $taxID)
  * @method SchoolType setTelephone(Property\TelephoneProperty $telephone)
  * @method SchoolType setUrl(Property\UrlProperty $url)
@@ -64,7 +69,7 @@ class SchoolType extends EducationalOrganizationType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

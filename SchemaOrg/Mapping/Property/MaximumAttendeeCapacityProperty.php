@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * MaximumAttendeeCapacityProperty class.
+ * The total number of individuals that may attend an event or venue.
  * 
  * @method MaximumAttendeeCapacityProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class MaximumAttendeeCapacityProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class MaximumAttendeeCapacityProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class PreOrderType.
+ * Indicates that the item is available for pre-order.
  * 
  * @method PreOrderType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method PreOrderType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method PreOrderType setName(Property\NameProperty $name)
  * @method PreOrderType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method PreOrderType setSameAs(Property\SameAsProperty $sameAs)
+ * @method PreOrderType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method PreOrderType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method PreOrderType setUrl(Property\UrlProperty $url)
  */
 class PreOrderType extends ItemAvailabilityType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

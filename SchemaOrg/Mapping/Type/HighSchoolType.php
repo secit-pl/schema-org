@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class HighSchoolType.
+ * A high school.
  * 
  * @method HighSchoolType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method HighSchoolType setAddress(Property\AddressProperty $address)
@@ -30,11 +30,14 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method HighSchoolType setFoundingLocation(Property\FoundingLocationProperty $foundingLocation)
  * @method HighSchoolType setFunder(Property\FunderProperty $funder)
  * @method HighSchoolType setGlobalLocationNumber(Property\GlobalLocationNumberProperty $globalLocationNumber)
+ * @method HighSchoolType setHasCertification(Property\HasCertificationProperty $hasCertification)
  * @method HighSchoolType setHasOfferCatalog(Property\HasOfferCatalogProperty $hasOfferCatalog)
  * @method HighSchoolType setHasPOS(Property\HasPOSProperty $hasPOS)
  * @method HighSchoolType setIdentifier(Property\IdentifierProperty $identifier)
  * @method HighSchoolType setImage(Property\ImageProperty $image)
+ * @method HighSchoolType setInteractionStatistic(Property\InteractionStatisticProperty $interactionStatistic)
  * @method HighSchoolType setIsicV4(Property\IsicV4Property $isicV4)
+ * @method HighSchoolType setKeywords(Property\KeywordsProperty $keywords)
  * @method HighSchoolType setLegalName(Property\LegalNameProperty $legalName)
  * @method HighSchoolType setLeiCode(Property\LeiCodeProperty $leiCode)
  * @method HighSchoolType setLocation(Property\LocationProperty $location)
@@ -53,8 +56,10 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method HighSchoolType setReview(Property\ReviewProperty $review)
  * @method HighSchoolType setSameAs(Property\SameAsProperty $sameAs)
  * @method HighSchoolType setSeeks(Property\SeeksProperty $seeks)
+ * @method HighSchoolType setSlogan(Property\SloganProperty $slogan)
  * @method HighSchoolType setSponsor(Property\SponsorProperty $sponsor)
  * @method HighSchoolType setSubOrganization(Property\SubOrganizationProperty $subOrganization)
+ * @method HighSchoolType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method HighSchoolType setTaxID(Property\TaxIDProperty $taxID)
  * @method HighSchoolType setTelephone(Property\TelephoneProperty $telephone)
  * @method HighSchoolType setUrl(Property\UrlProperty $url)
@@ -64,7 +69,7 @@ class HighSchoolType extends EducationalOrganizationType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

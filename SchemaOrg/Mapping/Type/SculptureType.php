@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class SculptureType.
+ * A piece of sculpture.
  * 
+ * @method SculptureType setAbout(Property\AboutProperty $about)
  * @method SculptureType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method SculptureType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method SculptureType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -33,6 +34,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SculptureType setContributor(Property\ContributorProperty $contributor)
  * @method SculptureType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method SculptureType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method SculptureType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method SculptureType setCreator(Property\CreatorProperty $creator)
  * @method SculptureType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method SculptureType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -44,9 +46,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SculptureType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method SculptureType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method SculptureType setEncoding(Property\EncodingProperty $encoding)
+ * @method SculptureType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method SculptureType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method SculptureType setExpires(Property\ExpiresProperty $expires)
- * @method SculptureType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method SculptureType setFunder(Property\FunderProperty $funder)
  * @method SculptureType setGenre(Property\GenreProperty $genre)
  * @method SculptureType setHasPart(Property\HasPartProperty $hasPart)
@@ -73,9 +75,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SculptureType setPosition(Property\PositionProperty $position)
  * @method SculptureType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method SculptureType setProducer(Property\ProducerProperty $producer)
- * @method SculptureType setProvider(Property\ProviderProperty $provider)
  * @method SculptureType setPublication(Property\PublicationProperty $publication)
  * @method SculptureType setPublisher(Property\PublisherProperty $publisher)
+ * @method SculptureType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method SculptureType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method SculptureType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method SculptureType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -83,24 +85,30 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SculptureType setSameAs(Property\SameAsProperty $sameAs)
  * @method SculptureType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method SculptureType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method SculptureType setSpatial(Property\SpatialProperty $spatial)
  * @method SculptureType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method SculptureType setSponsor(Property\SponsorProperty $sponsor)
+ * @method SculptureType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method SculptureType setTemporal(Property\TemporalProperty $temporal)
  * @method SculptureType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method SculptureType setText(Property\TextProperty $text)
+ * @method SculptureType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method SculptureType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method SculptureType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method SculptureType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method SculptureType setTranslator(Property\TranslatorProperty $translator)
  * @method SculptureType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method SculptureType setUrl(Property\UrlProperty $url)
  * @method SculptureType setVersion(Property\VersionProperty $version)
  * @method SculptureType setVideo(Property\VideoProperty $video)
  * @method SculptureType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method SculptureType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class SculptureType extends CreativeWorkType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * ProductionCompanyProperty class.
+ * The production company or studio responsible for the item, e.g. series, video game, episode etc.
  * 
  * @method ProductionCompanyProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class ProductionCompanyProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class ProductionCompanyProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

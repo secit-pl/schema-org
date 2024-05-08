@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class GlutenFreeDietType.
+ * A diet exclusive of gluten.
  * 
  * @method GlutenFreeDietType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method GlutenFreeDietType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method GlutenFreeDietType setName(Property\NameProperty $name)
  * @method GlutenFreeDietType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method GlutenFreeDietType setSameAs(Property\SameAsProperty $sameAs)
+ * @method GlutenFreeDietType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method GlutenFreeDietType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method GlutenFreeDietType setUrl(Property\UrlProperty $url)
  */
 class GlutenFreeDietType extends RestrictedDietType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

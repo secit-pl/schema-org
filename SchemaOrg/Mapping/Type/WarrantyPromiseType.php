@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class WarrantyPromiseType.
+ * A structured value representing the duration and scope of services that will be provided to a customer free of charge in case of a defect or malfunction of a product.
  * 
  * @method WarrantyPromiseType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method WarrantyPromiseType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,6 +17,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method WarrantyPromiseType setName(Property\NameProperty $name)
  * @method WarrantyPromiseType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method WarrantyPromiseType setSameAs(Property\SameAsProperty $sameAs)
+ * @method WarrantyPromiseType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method WarrantyPromiseType setUrl(Property\UrlProperty $url)
  */
 class WarrantyPromiseType extends StructuredValueType {
@@ -33,7 +34,7 @@ class WarrantyPromiseType extends StructuredValueType {
 
 	/**
 	 * Get duration of warranty.
-	 * 
+	 *
 	 * @return Property\DurationOfWarrantyProperty
 	 */
 	public function getDurationOfWarranty() {
@@ -42,7 +43,7 @@ class WarrantyPromiseType extends StructuredValueType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -51,7 +52,7 @@ class WarrantyPromiseType extends StructuredValueType {
 
 	/**
 	 * Get warranty scope.
-	 * 
+	 *
 	 * @return Property\WarrantyScopeProperty
 	 */
 	public function getWarrantyScope() {
@@ -60,7 +61,7 @@ class WarrantyPromiseType extends StructuredValueType {
 
 	/**
 	 * Set duration of warranty.
-	 * 
+	 *
 	 * @param Property\DurationOfWarrantyProperty $durationOfWarranty
 	 * @return WarrantyPromiseType
 	 */
@@ -72,7 +73,7 @@ class WarrantyPromiseType extends StructuredValueType {
 
 	/**
 	 * Set warranty scope.
-	 * 
+	 *
 	 * @param Property\WarrantyScopeProperty $warrantyScope
 	 * @return WarrantyPromiseType
 	 */

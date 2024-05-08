@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ParcelDeliveryType.
+ * The delivery of a parcel either via the postal service or a commercial service.
  * 
  * @method ParcelDeliveryType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method ParcelDeliveryType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,6 +17,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ParcelDeliveryType setName(Property\NameProperty $name)
  * @method ParcelDeliveryType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method ParcelDeliveryType setSameAs(Property\SameAsProperty $sameAs)
+ * @method ParcelDeliveryType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method ParcelDeliveryType setUrl(Property\UrlProperty $url)
  */
 class ParcelDeliveryType extends IntangibleType {
@@ -62,11 +63,6 @@ class ParcelDeliveryType extends IntangibleType {
 	private $partOfOrder;
 
 	/**
-	 * @var Property\ProviderProperty
-	 */
-	private $provider;
-
-	/**
 	 * @var Property\TrackingNumberProperty
 	 */
 	private $trackingNumber;
@@ -78,7 +74,7 @@ class ParcelDeliveryType extends IntangibleType {
 
 	/**
 	 * Get delivery address.
-	 * 
+	 *
 	 * @return Property\DeliveryAddressProperty
 	 */
 	public function getDeliveryAddress() {
@@ -87,7 +83,7 @@ class ParcelDeliveryType extends IntangibleType {
 
 	/**
 	 * Get delivery status.
-	 * 
+	 *
 	 * @return Property\DeliveryStatusProperty
 	 */
 	public function getDeliveryStatus() {
@@ -96,7 +92,7 @@ class ParcelDeliveryType extends IntangibleType {
 
 	/**
 	 * Get expected arrival from.
-	 * 
+	 *
 	 * @return Property\ExpectedArrivalFromProperty
 	 */
 	public function getExpectedArrivalFrom() {
@@ -105,7 +101,7 @@ class ParcelDeliveryType extends IntangibleType {
 
 	/**
 	 * Get expected arrival until.
-	 * 
+	 *
 	 * @return Property\ExpectedArrivalUntilProperty
 	 */
 	public function getExpectedArrivalUntil() {
@@ -114,7 +110,7 @@ class ParcelDeliveryType extends IntangibleType {
 
 	/**
 	 * Get has delivery method.
-	 * 
+	 *
 	 * @return Property\HasDeliveryMethodProperty
 	 */
 	public function getHasDeliveryMethod() {
@@ -123,7 +119,7 @@ class ParcelDeliveryType extends IntangibleType {
 
 	/**
 	 * Get item shipped.
-	 * 
+	 *
 	 * @return Property\ItemShippedProperty
 	 */
 	public function getItemShipped() {
@@ -132,7 +128,7 @@ class ParcelDeliveryType extends IntangibleType {
 
 	/**
 	 * Get origin address.
-	 * 
+	 *
 	 * @return Property\OriginAddressProperty
 	 */
 	public function getOriginAddress() {
@@ -141,7 +137,7 @@ class ParcelDeliveryType extends IntangibleType {
 
 	/**
 	 * Get part of order.
-	 * 
+	 *
 	 * @return Property\PartOfOrderProperty
 	 */
 	public function getPartOfOrder() {
@@ -149,17 +145,8 @@ class ParcelDeliveryType extends IntangibleType {
 	}
 
 	/**
-	 * Get provider.
-	 * 
-	 * @return Property\ProviderProperty
-	 */
-	public function getProvider() {
-		return $this->provider;
-	}
-
-	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -168,7 +155,7 @@ class ParcelDeliveryType extends IntangibleType {
 
 	/**
 	 * Get tracking number.
-	 * 
+	 *
 	 * @return Property\TrackingNumberProperty
 	 */
 	public function getTrackingNumber() {
@@ -177,7 +164,7 @@ class ParcelDeliveryType extends IntangibleType {
 
 	/**
 	 * Get tracking url.
-	 * 
+	 *
 	 * @return Property\TrackingUrlProperty
 	 */
 	public function getTrackingUrl() {
@@ -186,7 +173,7 @@ class ParcelDeliveryType extends IntangibleType {
 
 	/**
 	 * Set delivery address.
-	 * 
+	 *
 	 * @param Property\DeliveryAddressProperty $deliveryAddress
 	 * @return ParcelDeliveryType
 	 */
@@ -198,7 +185,7 @@ class ParcelDeliveryType extends IntangibleType {
 
 	/**
 	 * Set delivery status.
-	 * 
+	 *
 	 * @param Property\DeliveryStatusProperty $deliveryStatus
 	 * @return ParcelDeliveryType
 	 */
@@ -210,7 +197,7 @@ class ParcelDeliveryType extends IntangibleType {
 
 	/**
 	 * Set expected arrival from.
-	 * 
+	 *
 	 * @param Property\ExpectedArrivalFromProperty $expectedArrivalFrom
 	 * @return ParcelDeliveryType
 	 */
@@ -222,7 +209,7 @@ class ParcelDeliveryType extends IntangibleType {
 
 	/**
 	 * Set expected arrival until.
-	 * 
+	 *
 	 * @param Property\ExpectedArrivalUntilProperty $expectedArrivalUntil
 	 * @return ParcelDeliveryType
 	 */
@@ -234,7 +221,7 @@ class ParcelDeliveryType extends IntangibleType {
 
 	/**
 	 * Set has delivery method.
-	 * 
+	 *
 	 * @param Property\HasDeliveryMethodProperty $hasDeliveryMethod
 	 * @return ParcelDeliveryType
 	 */
@@ -246,7 +233,7 @@ class ParcelDeliveryType extends IntangibleType {
 
 	/**
 	 * Set item shipped.
-	 * 
+	 *
 	 * @param Property\ItemShippedProperty $itemShipped
 	 * @return ParcelDeliveryType
 	 */
@@ -258,7 +245,7 @@ class ParcelDeliveryType extends IntangibleType {
 
 	/**
 	 * Set origin address.
-	 * 
+	 *
 	 * @param Property\OriginAddressProperty $originAddress
 	 * @return ParcelDeliveryType
 	 */
@@ -270,7 +257,7 @@ class ParcelDeliveryType extends IntangibleType {
 
 	/**
 	 * Set part of order.
-	 * 
+	 *
 	 * @param Property\PartOfOrderProperty $partOfOrder
 	 * @return ParcelDeliveryType
 	 */
@@ -281,20 +268,8 @@ class ParcelDeliveryType extends IntangibleType {
 	}
 
 	/**
-	 * Set provider.
-	 * 
-	 * @param Property\ProviderProperty $provider
-	 * @return ParcelDeliveryType
-	 */
-	public function setProvider(Property\ProviderProperty $provider) {
-		$this->provider = $provider;
-
-		return $this;
-	}
-
-	/**
 	 * Set tracking number.
-	 * 
+	 *
 	 * @param Property\TrackingNumberProperty $trackingNumber
 	 * @return ParcelDeliveryType
 	 */
@@ -306,7 +281,7 @@ class ParcelDeliveryType extends IntangibleType {
 
 	/**
 	 * Set tracking url.
-	 * 
+	 *
 	 * @param Property\TrackingUrlProperty $trackingUrl
 	 * @return ParcelDeliveryType
 	 */

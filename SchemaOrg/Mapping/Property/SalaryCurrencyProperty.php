@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * SalaryCurrencyProperty class.
+ * The currency (coded using ISO 4217) used for the main salary information in this job posting or for this employee.
  * 
  * @method SalaryCurrencyProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class SalaryCurrencyProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class SalaryCurrencyProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

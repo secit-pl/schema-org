@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class HowToItemType.
+ * An item used as either a tool or supply when performing the instructions for how to achieve a result.
  * 
  * @method HowToItemType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method HowToItemType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -21,6 +21,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method HowToItemType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method HowToItemType setPreviousItem(Property\PreviousItemProperty $previousItem)
  * @method HowToItemType setSameAs(Property\SameAsProperty $sameAs)
+ * @method HowToItemType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method HowToItemType setUrl(Property\UrlProperty $url)
  */
 class HowToItemType extends ListItemType {
@@ -32,7 +33,7 @@ class HowToItemType extends ListItemType {
 
 	/**
 	 * Get required quantity.
-	 * 
+	 *
 	 * @return Property\RequiredQuantityProperty
 	 */
 	public function getRequiredQuantity() {
@@ -41,7 +42,7 @@ class HowToItemType extends ListItemType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -50,7 +51,7 @@ class HowToItemType extends ListItemType {
 
 	/**
 	 * Set required quantity.
-	 * 
+	 *
 	 * @param Property\RequiredQuantityProperty $requiredQuantity
 	 * @return HowToItemType
 	 */

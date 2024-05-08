@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class OrderType.
+ * An order is a confirmation of a transaction (a receipt), which can contain multiple line items, each represented by an Offer that has been accepted by the customer.
  * 
  * @method OrderType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method OrderType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,6 +17,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method OrderType setName(Property\NameProperty $name)
  * @method OrderType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method OrderType setSameAs(Property\SameAsProperty $sameAs)
+ * @method OrderType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method OrderType setUrl(Property\UrlProperty $url)
  */
 class OrderType extends IntangibleType {
@@ -123,7 +124,7 @@ class OrderType extends IntangibleType {
 
 	/**
 	 * Get accepted offer.
-	 * 
+	 *
 	 * @return Property\AcceptedOfferProperty
 	 */
 	public function getAcceptedOffer() {
@@ -132,7 +133,7 @@ class OrderType extends IntangibleType {
 
 	/**
 	 * Get billing address.
-	 * 
+	 *
 	 * @return Property\BillingAddressProperty
 	 */
 	public function getBillingAddress() {
@@ -141,7 +142,7 @@ class OrderType extends IntangibleType {
 
 	/**
 	 * Get broker.
-	 * 
+	 *
 	 * @return Property\BrokerProperty
 	 */
 	public function getBroker() {
@@ -150,7 +151,7 @@ class OrderType extends IntangibleType {
 
 	/**
 	 * Get confirmation number.
-	 * 
+	 *
 	 * @return Property\ConfirmationNumberProperty
 	 */
 	public function getConfirmationNumber() {
@@ -159,7 +160,7 @@ class OrderType extends IntangibleType {
 
 	/**
 	 * Get customer.
-	 * 
+	 *
 	 * @return Property\CustomerProperty
 	 */
 	public function getCustomer() {
@@ -168,7 +169,7 @@ class OrderType extends IntangibleType {
 
 	/**
 	 * Get discount.
-	 * 
+	 *
 	 * @return Property\DiscountProperty
 	 */
 	public function getDiscount() {
@@ -177,7 +178,7 @@ class OrderType extends IntangibleType {
 
 	/**
 	 * Get discount code.
-	 * 
+	 *
 	 * @return Property\DiscountCodeProperty
 	 */
 	public function getDiscountCode() {
@@ -186,7 +187,7 @@ class OrderType extends IntangibleType {
 
 	/**
 	 * Get discount currency.
-	 * 
+	 *
 	 * @return Property\DiscountCurrencyProperty
 	 */
 	public function getDiscountCurrency() {
@@ -195,7 +196,7 @@ class OrderType extends IntangibleType {
 
 	/**
 	 * Get is gift.
-	 * 
+	 *
 	 * @return Property\IsGiftProperty
 	 */
 	public function getIsGift() {
@@ -204,7 +205,7 @@ class OrderType extends IntangibleType {
 
 	/**
 	 * Get order date.
-	 * 
+	 *
 	 * @return Property\OrderDateProperty
 	 */
 	public function getOrderDate() {
@@ -213,7 +214,7 @@ class OrderType extends IntangibleType {
 
 	/**
 	 * Get order delivery.
-	 * 
+	 *
 	 * @return Property\OrderDeliveryProperty
 	 */
 	public function getOrderDelivery() {
@@ -222,7 +223,7 @@ class OrderType extends IntangibleType {
 
 	/**
 	 * Get ordered item.
-	 * 
+	 *
 	 * @return Property\OrderedItemProperty
 	 */
 	public function getOrderedItem() {
@@ -231,7 +232,7 @@ class OrderType extends IntangibleType {
 
 	/**
 	 * Get order number.
-	 * 
+	 *
 	 * @return Property\OrderNumberProperty
 	 */
 	public function getOrderNumber() {
@@ -240,7 +241,7 @@ class OrderType extends IntangibleType {
 
 	/**
 	 * Get order status.
-	 * 
+	 *
 	 * @return Property\OrderStatusProperty
 	 */
 	public function getOrderStatus() {
@@ -249,7 +250,7 @@ class OrderType extends IntangibleType {
 
 	/**
 	 * Get part of invoice.
-	 * 
+	 *
 	 * @return Property\PartOfInvoiceProperty
 	 */
 	public function getPartOfInvoice() {
@@ -258,7 +259,7 @@ class OrderType extends IntangibleType {
 
 	/**
 	 * Get payment due date.
-	 * 
+	 *
 	 * @return Property\PaymentDueDateProperty
 	 */
 	public function getPaymentDueDate() {
@@ -267,7 +268,7 @@ class OrderType extends IntangibleType {
 
 	/**
 	 * Get payment method.
-	 * 
+	 *
 	 * @return Property\PaymentMethodProperty
 	 */
 	public function getPaymentMethod() {
@@ -276,7 +277,7 @@ class OrderType extends IntangibleType {
 
 	/**
 	 * Get payment method id.
-	 * 
+	 *
 	 * @return Property\PaymentMethodIdProperty
 	 */
 	public function getPaymentMethodId() {
@@ -285,7 +286,7 @@ class OrderType extends IntangibleType {
 
 	/**
 	 * Get payment url.
-	 * 
+	 *
 	 * @return Property\PaymentUrlProperty
 	 */
 	public function getPaymentUrl() {
@@ -294,7 +295,7 @@ class OrderType extends IntangibleType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -303,7 +304,7 @@ class OrderType extends IntangibleType {
 
 	/**
 	 * Get seller.
-	 * 
+	 *
 	 * @return Property\SellerProperty
 	 */
 	public function getSeller() {
@@ -312,7 +313,7 @@ class OrderType extends IntangibleType {
 
 	/**
 	 * Set accepted offer.
-	 * 
+	 *
 	 * @param Property\AcceptedOfferProperty $acceptedOffer
 	 * @return OrderType
 	 */
@@ -324,7 +325,7 @@ class OrderType extends IntangibleType {
 
 	/**
 	 * Set billing address.
-	 * 
+	 *
 	 * @param Property\BillingAddressProperty $billingAddress
 	 * @return OrderType
 	 */
@@ -336,7 +337,7 @@ class OrderType extends IntangibleType {
 
 	/**
 	 * Set broker.
-	 * 
+	 *
 	 * @param Property\BrokerProperty $broker
 	 * @return OrderType
 	 */
@@ -348,7 +349,7 @@ class OrderType extends IntangibleType {
 
 	/**
 	 * Set confirmation number.
-	 * 
+	 *
 	 * @param Property\ConfirmationNumberProperty $confirmationNumber
 	 * @return OrderType
 	 */
@@ -360,7 +361,7 @@ class OrderType extends IntangibleType {
 
 	/**
 	 * Set customer.
-	 * 
+	 *
 	 * @param Property\CustomerProperty $customer
 	 * @return OrderType
 	 */
@@ -372,7 +373,7 @@ class OrderType extends IntangibleType {
 
 	/**
 	 * Set discount.
-	 * 
+	 *
 	 * @param Property\DiscountProperty $discount
 	 * @return OrderType
 	 */
@@ -384,7 +385,7 @@ class OrderType extends IntangibleType {
 
 	/**
 	 * Set discount code.
-	 * 
+	 *
 	 * @param Property\DiscountCodeProperty $discountCode
 	 * @return OrderType
 	 */
@@ -396,7 +397,7 @@ class OrderType extends IntangibleType {
 
 	/**
 	 * Set discount currency.
-	 * 
+	 *
 	 * @param Property\DiscountCurrencyProperty $discountCurrency
 	 * @return OrderType
 	 */
@@ -408,7 +409,7 @@ class OrderType extends IntangibleType {
 
 	/**
 	 * Set is gift.
-	 * 
+	 *
 	 * @param Property\IsGiftProperty $isGift
 	 * @return OrderType
 	 */
@@ -420,7 +421,7 @@ class OrderType extends IntangibleType {
 
 	/**
 	 * Set order date.
-	 * 
+	 *
 	 * @param Property\OrderDateProperty $orderDate
 	 * @return OrderType
 	 */
@@ -432,7 +433,7 @@ class OrderType extends IntangibleType {
 
 	/**
 	 * Set order delivery.
-	 * 
+	 *
 	 * @param Property\OrderDeliveryProperty $orderDelivery
 	 * @return OrderType
 	 */
@@ -444,7 +445,7 @@ class OrderType extends IntangibleType {
 
 	/**
 	 * Set ordered item.
-	 * 
+	 *
 	 * @param Property\OrderedItemProperty $orderedItem
 	 * @return OrderType
 	 */
@@ -456,7 +457,7 @@ class OrderType extends IntangibleType {
 
 	/**
 	 * Set order number.
-	 * 
+	 *
 	 * @param Property\OrderNumberProperty $orderNumber
 	 * @return OrderType
 	 */
@@ -468,7 +469,7 @@ class OrderType extends IntangibleType {
 
 	/**
 	 * Set order status.
-	 * 
+	 *
 	 * @param Property\OrderStatusProperty $orderStatus
 	 * @return OrderType
 	 */
@@ -480,7 +481,7 @@ class OrderType extends IntangibleType {
 
 	/**
 	 * Set part of invoice.
-	 * 
+	 *
 	 * @param Property\PartOfInvoiceProperty $partOfInvoice
 	 * @return OrderType
 	 */
@@ -492,7 +493,7 @@ class OrderType extends IntangibleType {
 
 	/**
 	 * Set payment due date.
-	 * 
+	 *
 	 * @param Property\PaymentDueDateProperty $paymentDueDate
 	 * @return OrderType
 	 */
@@ -504,7 +505,7 @@ class OrderType extends IntangibleType {
 
 	/**
 	 * Set payment method.
-	 * 
+	 *
 	 * @param Property\PaymentMethodProperty $paymentMethod
 	 * @return OrderType
 	 */
@@ -516,7 +517,7 @@ class OrderType extends IntangibleType {
 
 	/**
 	 * Set payment method id.
-	 * 
+	 *
 	 * @param Property\PaymentMethodIdProperty $paymentMethodId
 	 * @return OrderType
 	 */
@@ -528,7 +529,7 @@ class OrderType extends IntangibleType {
 
 	/**
 	 * Set payment url.
-	 * 
+	 *
 	 * @param Property\PaymentUrlProperty $paymentUrl
 	 * @return OrderType
 	 */
@@ -540,7 +541,7 @@ class OrderType extends IntangibleType {
 
 	/**
 	 * Set seller.
-	 * 
+	 *
 	 * @param Property\SellerProperty $seller
 	 * @return OrderType
 	 */

@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class PaymentPastDueType.
+ * The payment is due and considered late.
  * 
  * @method PaymentPastDueType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method PaymentPastDueType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method PaymentPastDueType setName(Property\NameProperty $name)
  * @method PaymentPastDueType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method PaymentPastDueType setSameAs(Property\SameAsProperty $sameAs)
+ * @method PaymentPastDueType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method PaymentPastDueType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method PaymentPastDueType setUrl(Property\UrlProperty $url)
  */
 class PaymentPastDueType extends PaymentStatusType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

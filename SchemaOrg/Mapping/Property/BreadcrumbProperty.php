@@ -6,7 +6,7 @@ use SecIT\SchemaOrg\Mapping\DataType;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * BreadcrumbProperty class.
+ * A set of links that can help a user understand and navigate a website hierarchy.
  * 
  * @method BreadcrumbProperty setValue($value)
  */
@@ -14,7 +14,7 @@ class BreadcrumbProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -23,7 +23,7 @@ class BreadcrumbProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

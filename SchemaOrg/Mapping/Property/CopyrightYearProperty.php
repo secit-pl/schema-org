@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * CopyrightYearProperty class.
+ * The year during which the claimed copyright for the CreativeWork was first asserted.
  * 
  * @method CopyrightYearProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class CopyrightYearProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class CopyrightYearProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

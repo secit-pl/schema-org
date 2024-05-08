@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class OwnershipInfoType.
+ * A structured value providing information about when a certain organization or person owned a certain product.
  * 
  * @method OwnershipInfoType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method OwnershipInfoType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,6 +17,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method OwnershipInfoType setName(Property\NameProperty $name)
  * @method OwnershipInfoType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method OwnershipInfoType setSameAs(Property\SameAsProperty $sameAs)
+ * @method OwnershipInfoType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method OwnershipInfoType setUrl(Property\UrlProperty $url)
  */
 class OwnershipInfoType extends StructuredValueType {
@@ -43,7 +44,7 @@ class OwnershipInfoType extends StructuredValueType {
 
 	/**
 	 * Get acquired from.
-	 * 
+	 *
 	 * @return Property\AcquiredFromProperty
 	 */
 	public function getAcquiredFrom() {
@@ -52,7 +53,7 @@ class OwnershipInfoType extends StructuredValueType {
 
 	/**
 	 * Get owned from.
-	 * 
+	 *
 	 * @return Property\OwnedFromProperty
 	 */
 	public function getOwnedFrom() {
@@ -61,7 +62,7 @@ class OwnershipInfoType extends StructuredValueType {
 
 	/**
 	 * Get owned through.
-	 * 
+	 *
 	 * @return Property\OwnedThroughProperty
 	 */
 	public function getOwnedThrough() {
@@ -70,7 +71,7 @@ class OwnershipInfoType extends StructuredValueType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -79,7 +80,7 @@ class OwnershipInfoType extends StructuredValueType {
 
 	/**
 	 * Get type of good.
-	 * 
+	 *
 	 * @return Property\TypeOfGoodProperty
 	 */
 	public function getTypeOfGood() {
@@ -88,7 +89,7 @@ class OwnershipInfoType extends StructuredValueType {
 
 	/**
 	 * Set acquired from.
-	 * 
+	 *
 	 * @param Property\AcquiredFromProperty $acquiredFrom
 	 * @return OwnershipInfoType
 	 */
@@ -100,7 +101,7 @@ class OwnershipInfoType extends StructuredValueType {
 
 	/**
 	 * Set owned from.
-	 * 
+	 *
 	 * @param Property\OwnedFromProperty $ownedFrom
 	 * @return OwnershipInfoType
 	 */
@@ -112,7 +113,7 @@ class OwnershipInfoType extends StructuredValueType {
 
 	/**
 	 * Set owned through.
-	 * 
+	 *
 	 * @param Property\OwnedThroughProperty $ownedThrough
 	 * @return OwnershipInfoType
 	 */
@@ -124,7 +125,7 @@ class OwnershipInfoType extends StructuredValueType {
 
 	/**
 	 * Set type of good.
-	 * 
+	 *
 	 * @param Property\TypeOfGoodProperty $typeOfGood
 	 * @return OwnershipInfoType
 	 */

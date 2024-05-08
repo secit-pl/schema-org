@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * LocationCreatedProperty class.
+ * The location where the CreativeWork was created, which may not be the same as the location depicted in the CreativeWork.
  * 
  * @method LocationCreatedProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class LocationCreatedProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class LocationCreatedProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class WatchActionType.
+ * The act of consuming dynamic/moving visual content.
  * 
+ * @method WatchActionType setActionAccessibilityRequirement(Property\ActionAccessibilityRequirementProperty $actionAccessibilityRequirement)
  * @method WatchActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method WatchActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method WatchActionType setAgent(Property\AgentProperty $agent)
@@ -28,6 +29,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method WatchActionType setResult(Property\ResultProperty $result)
  * @method WatchActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method WatchActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method WatchActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method WatchActionType setTarget(Property\TargetProperty $target)
  * @method WatchActionType setUrl(Property\UrlProperty $url)
  */
@@ -35,7 +37,7 @@ class WatchActionType extends ConsumeActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ReactActionType.
+ * The act of responding instinctively and emotionally to an object, expressing a sentiment.
  * 
  * @method ReactActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method ReactActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ReactActionType setResult(Property\ResultProperty $result)
  * @method ReactActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method ReactActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method ReactActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method ReactActionType setTarget(Property\TargetProperty $target)
  * @method ReactActionType setUrl(Property\UrlProperty $url)
  */
@@ -34,7 +35,7 @@ class ReactActionType extends AssessActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

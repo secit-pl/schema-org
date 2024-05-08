@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class GovernmentServiceType.
+ * A service provided by a government organization, e.g. food stamps, veterans benefits, etc.
  * 
  * @method GovernmentServiceType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method GovernmentServiceType setAggregateRating(Property\AggregateRatingProperty $aggregateRating)
@@ -19,6 +19,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method GovernmentServiceType setCategory(Property\CategoryProperty $category)
  * @method GovernmentServiceType setDescription(Property\DescriptionProperty $description)
  * @method GovernmentServiceType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
+ * @method GovernmentServiceType setHasCertification(Property\HasCertificationProperty $hasCertification)
  * @method GovernmentServiceType setHasOfferCatalog(Property\HasOfferCatalogProperty $hasOfferCatalog)
  * @method GovernmentServiceType setHoursAvailable(Property\HoursAvailableProperty $hoursAvailable)
  * @method GovernmentServiceType setIdentifier(Property\IdentifierProperty $identifier)
@@ -30,12 +31,13 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method GovernmentServiceType setName(Property\NameProperty $name)
  * @method GovernmentServiceType setOffers(Property\OffersProperty $offers)
  * @method GovernmentServiceType setPotentialAction(Property\PotentialActionProperty $potentialAction)
- * @method GovernmentServiceType setProvider(Property\ProviderProperty $provider)
  * @method GovernmentServiceType setProviderMobility(Property\ProviderMobilityProperty $providerMobility)
  * @method GovernmentServiceType setReview(Property\ReviewProperty $review)
  * @method GovernmentServiceType setSameAs(Property\SameAsProperty $sameAs)
  * @method GovernmentServiceType setServiceOutput(Property\ServiceOutputProperty $serviceOutput)
  * @method GovernmentServiceType setServiceType(Property\ServiceTypeProperty $serviceType)
+ * @method GovernmentServiceType setSlogan(Property\SloganProperty $slogan)
+ * @method GovernmentServiceType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method GovernmentServiceType setUrl(Property\UrlProperty $url)
  */
 class GovernmentServiceType extends ServiceType {
@@ -47,7 +49,7 @@ class GovernmentServiceType extends ServiceType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -56,7 +58,7 @@ class GovernmentServiceType extends ServiceType {
 
 	/**
 	 * Get service operator.
-	 * 
+	 *
 	 * @return Property\ServiceOperatorProperty
 	 */
 	public function getServiceOperator() {
@@ -65,7 +67,7 @@ class GovernmentServiceType extends ServiceType {
 
 	/**
 	 * Set service operator.
-	 * 
+	 *
 	 * @param Property\ServiceOperatorProperty $serviceOperator
 	 * @return GovernmentServiceType
 	 */

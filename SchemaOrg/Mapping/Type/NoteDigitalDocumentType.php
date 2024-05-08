@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class NoteDigitalDocumentType.
+ * A file containing a note, primarily for the author.
  * 
+ * @method NoteDigitalDocumentType setAbout(Property\AboutProperty $about)
  * @method NoteDigitalDocumentType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method NoteDigitalDocumentType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method NoteDigitalDocumentType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -33,6 +34,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method NoteDigitalDocumentType setContributor(Property\ContributorProperty $contributor)
  * @method NoteDigitalDocumentType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method NoteDigitalDocumentType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method NoteDigitalDocumentType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method NoteDigitalDocumentType setCreator(Property\CreatorProperty $creator)
  * @method NoteDigitalDocumentType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method NoteDigitalDocumentType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -44,9 +46,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method NoteDigitalDocumentType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method NoteDigitalDocumentType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method NoteDigitalDocumentType setEncoding(Property\EncodingProperty $encoding)
+ * @method NoteDigitalDocumentType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method NoteDigitalDocumentType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method NoteDigitalDocumentType setExpires(Property\ExpiresProperty $expires)
- * @method NoteDigitalDocumentType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method NoteDigitalDocumentType setFunder(Property\FunderProperty $funder)
  * @method NoteDigitalDocumentType setGenre(Property\GenreProperty $genre)
  * @method NoteDigitalDocumentType setHasDigitalDocumentPermission(Property\HasDigitalDocumentPermissionProperty $hasDigitalDocumentPermission)
@@ -74,9 +76,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method NoteDigitalDocumentType setPosition(Property\PositionProperty $position)
  * @method NoteDigitalDocumentType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method NoteDigitalDocumentType setProducer(Property\ProducerProperty $producer)
- * @method NoteDigitalDocumentType setProvider(Property\ProviderProperty $provider)
  * @method NoteDigitalDocumentType setPublication(Property\PublicationProperty $publication)
  * @method NoteDigitalDocumentType setPublisher(Property\PublisherProperty $publisher)
+ * @method NoteDigitalDocumentType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method NoteDigitalDocumentType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method NoteDigitalDocumentType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method NoteDigitalDocumentType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -84,24 +86,30 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method NoteDigitalDocumentType setSameAs(Property\SameAsProperty $sameAs)
  * @method NoteDigitalDocumentType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method NoteDigitalDocumentType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method NoteDigitalDocumentType setSpatial(Property\SpatialProperty $spatial)
  * @method NoteDigitalDocumentType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method NoteDigitalDocumentType setSponsor(Property\SponsorProperty $sponsor)
+ * @method NoteDigitalDocumentType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method NoteDigitalDocumentType setTemporal(Property\TemporalProperty $temporal)
  * @method NoteDigitalDocumentType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method NoteDigitalDocumentType setText(Property\TextProperty $text)
+ * @method NoteDigitalDocumentType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method NoteDigitalDocumentType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method NoteDigitalDocumentType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method NoteDigitalDocumentType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method NoteDigitalDocumentType setTranslator(Property\TranslatorProperty $translator)
  * @method NoteDigitalDocumentType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method NoteDigitalDocumentType setUrl(Property\UrlProperty $url)
  * @method NoteDigitalDocumentType setVersion(Property\VersionProperty $version)
  * @method NoteDigitalDocumentType setVideo(Property\VideoProperty $video)
  * @method NoteDigitalDocumentType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method NoteDigitalDocumentType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class NoteDigitalDocumentType extends DigitalDocumentType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

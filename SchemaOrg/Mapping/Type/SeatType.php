@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class SeatType.
+ * Used to describe a seat, such as a reserved seat in an event reservation.
  * 
  * @method SeatType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method SeatType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,6 +17,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SeatType setName(Property\NameProperty $name)
  * @method SeatType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method SeatType setSameAs(Property\SameAsProperty $sameAs)
+ * @method SeatType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method SeatType setUrl(Property\UrlProperty $url)
  */
 class SeatType extends IntangibleType {
@@ -43,7 +44,7 @@ class SeatType extends IntangibleType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -52,7 +53,7 @@ class SeatType extends IntangibleType {
 
 	/**
 	 * Get seating type.
-	 * 
+	 *
 	 * @return Property\SeatingTypeProperty
 	 */
 	public function getSeatingType() {
@@ -61,7 +62,7 @@ class SeatType extends IntangibleType {
 
 	/**
 	 * Get seat number.
-	 * 
+	 *
 	 * @return Property\SeatNumberProperty
 	 */
 	public function getSeatNumber() {
@@ -70,7 +71,7 @@ class SeatType extends IntangibleType {
 
 	/**
 	 * Get seat row.
-	 * 
+	 *
 	 * @return Property\SeatRowProperty
 	 */
 	public function getSeatRow() {
@@ -79,7 +80,7 @@ class SeatType extends IntangibleType {
 
 	/**
 	 * Get seat section.
-	 * 
+	 *
 	 * @return Property\SeatSectionProperty
 	 */
 	public function getSeatSection() {
@@ -88,7 +89,7 @@ class SeatType extends IntangibleType {
 
 	/**
 	 * Set seating type.
-	 * 
+	 *
 	 * @param Property\SeatingTypeProperty $seatingType
 	 * @return SeatType
 	 */
@@ -100,7 +101,7 @@ class SeatType extends IntangibleType {
 
 	/**
 	 * Set seat number.
-	 * 
+	 *
 	 * @param Property\SeatNumberProperty $seatNumber
 	 * @return SeatType
 	 */
@@ -112,7 +113,7 @@ class SeatType extends IntangibleType {
 
 	/**
 	 * Set seat row.
-	 * 
+	 *
 	 * @param Property\SeatRowProperty $seatRow
 	 * @return SeatType
 	 */
@@ -124,7 +125,7 @@ class SeatType extends IntangibleType {
 
 	/**
 	 * Set seat section.
-	 * 
+	 *
 	 * @param Property\SeatSectionProperty $seatSection
 	 * @return SeatType
 	 */

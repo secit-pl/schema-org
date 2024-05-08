@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class OrderStatusType.
+ * Enumerated status values for Order.
  * 
  * @method OrderStatusType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method OrderStatusType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method OrderStatusType setName(Property\NameProperty $name)
  * @method OrderStatusType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method OrderStatusType setSameAs(Property\SameAsProperty $sameAs)
+ * @method OrderStatusType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method OrderStatusType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method OrderStatusType setUrl(Property\UrlProperty $url)
  */
-class OrderStatusType extends EnumerationType {
+class OrderStatusType extends StatusEnumerationType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

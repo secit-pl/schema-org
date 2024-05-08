@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * NumberOfBedsProperty class.
+ * The quantity of the given bed type available in the HotelRoom, Suite, House, or Apartment.
  * 
  * @method NumberOfBedsProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class NumberOfBedsProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class NumberOfBedsProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

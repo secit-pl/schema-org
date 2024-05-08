@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class StudioAlbumType.
+ * StudioAlbum.
  * 
  * @method StudioAlbumType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method StudioAlbumType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method StudioAlbumType setName(Property\NameProperty $name)
  * @method StudioAlbumType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method StudioAlbumType setSameAs(Property\SameAsProperty $sameAs)
+ * @method StudioAlbumType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method StudioAlbumType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method StudioAlbumType setUrl(Property\UrlProperty $url)
  */
 class StudioAlbumType extends MusicAlbumProductionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * ProviderMobilityProperty class.
+ * Indicates the mobility of a provided service (e.g. 'static', 'dynamic').
  * 
  * @method ProviderMobilityProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class ProviderMobilityProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class ProviderMobilityProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

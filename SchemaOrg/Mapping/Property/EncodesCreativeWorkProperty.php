@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * EncodesCreativeWorkProperty class.
+ * The CreativeWork encoded by this media object.
  * 
  * @method EncodesCreativeWorkProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class EncodesCreativeWorkProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class EncodesCreativeWorkProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

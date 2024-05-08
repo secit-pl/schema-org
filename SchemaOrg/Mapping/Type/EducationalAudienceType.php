@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class EducationalAudienceType.
+ * An EducationalAudience.
  * 
  * @method EducationalAudienceType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method EducationalAudienceType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -19,6 +19,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method EducationalAudienceType setName(Property\NameProperty $name)
  * @method EducationalAudienceType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method EducationalAudienceType setSameAs(Property\SameAsProperty $sameAs)
+ * @method EducationalAudienceType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method EducationalAudienceType setUrl(Property\UrlProperty $url)
  */
 class EducationalAudienceType extends AudienceType {
@@ -30,7 +31,7 @@ class EducationalAudienceType extends AudienceType {
 
 	/**
 	 * Get educational role.
-	 * 
+	 *
 	 * @return Property\EducationalRoleProperty
 	 */
 	public function getEducationalRole() {
@@ -39,7 +40,7 @@ class EducationalAudienceType extends AudienceType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -48,7 +49,7 @@ class EducationalAudienceType extends AudienceType {
 
 	/**
 	 * Set educational role.
-	 * 
+	 *
 	 * @param Property\EducationalRoleProperty $educationalRole
 	 * @return EducationalAudienceType
 	 */

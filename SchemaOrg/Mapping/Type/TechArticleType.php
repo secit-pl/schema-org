@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class TechArticleType.
+ * A technical article - Example: How-to (task) topics, step-by-step, procedural troubleshooting, specifications, etc.
  * 
+ * @method TechArticleType setAbout(Property\AboutProperty $about)
  * @method TechArticleType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method TechArticleType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method TechArticleType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -35,6 +36,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method TechArticleType setContributor(Property\ContributorProperty $contributor)
  * @method TechArticleType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method TechArticleType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method TechArticleType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method TechArticleType setCreator(Property\CreatorProperty $creator)
  * @method TechArticleType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method TechArticleType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -46,9 +48,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method TechArticleType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method TechArticleType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method TechArticleType setEncoding(Property\EncodingProperty $encoding)
+ * @method TechArticleType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method TechArticleType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method TechArticleType setExpires(Property\ExpiresProperty $expires)
- * @method TechArticleType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method TechArticleType setFunder(Property\FunderProperty $funder)
  * @method TechArticleType setGenre(Property\GenreProperty $genre)
  * @method TechArticleType setHasPart(Property\HasPartProperty $hasPart)
@@ -78,9 +80,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method TechArticleType setPosition(Property\PositionProperty $position)
  * @method TechArticleType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method TechArticleType setProducer(Property\ProducerProperty $producer)
- * @method TechArticleType setProvider(Property\ProviderProperty $provider)
  * @method TechArticleType setPublication(Property\PublicationProperty $publication)
  * @method TechArticleType setPublisher(Property\PublisherProperty $publisher)
+ * @method TechArticleType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method TechArticleType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method TechArticleType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method TechArticleType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -88,12 +90,18 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method TechArticleType setSameAs(Property\SameAsProperty $sameAs)
  * @method TechArticleType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method TechArticleType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method TechArticleType setSpatial(Property\SpatialProperty $spatial)
  * @method TechArticleType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
+ * @method TechArticleType setSpeakable(Property\SpeakableProperty $speakable)
  * @method TechArticleType setSponsor(Property\SponsorProperty $sponsor)
+ * @method TechArticleType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method TechArticleType setTemporal(Property\TemporalProperty $temporal)
  * @method TechArticleType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method TechArticleType setText(Property\TextProperty $text)
+ * @method TechArticleType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method TechArticleType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method TechArticleType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method TechArticleType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method TechArticleType setTranslator(Property\TranslatorProperty $translator)
  * @method TechArticleType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method TechArticleType setUrl(Property\UrlProperty $url)
@@ -101,6 +109,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method TechArticleType setVideo(Property\VideoProperty $video)
  * @method TechArticleType setWordCount(Property\WordCountProperty $wordCount)
  * @method TechArticleType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method TechArticleType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class TechArticleType extends ArticleType {
 
@@ -116,7 +125,7 @@ class TechArticleType extends ArticleType {
 
 	/**
 	 * Get dependencies.
-	 * 
+	 *
 	 * @return Property\DependenciesProperty
 	 */
 	public function getDependencies() {
@@ -125,7 +134,7 @@ class TechArticleType extends ArticleType {
 
 	/**
 	 * Get proficiency level.
-	 * 
+	 *
 	 * @return Property\ProficiencyLevelProperty
 	 */
 	public function getProficiencyLevel() {
@@ -134,7 +143,7 @@ class TechArticleType extends ArticleType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -143,7 +152,7 @@ class TechArticleType extends ArticleType {
 
 	/**
 	 * Set dependencies.
-	 * 
+	 *
 	 * @param Property\DependenciesProperty $dependencies
 	 * @return TechArticleType
 	 */
@@ -155,7 +164,7 @@ class TechArticleType extends ArticleType {
 
 	/**
 	 * Set proficiency level.
-	 * 
+	 *
 	 * @param Property\ProficiencyLevelProperty $proficiencyLevel
 	 * @return TechArticleType
 	 */

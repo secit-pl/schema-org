@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ItemAvailabilityType.
+ * A list of possible product availability options.
  * 
  * @method ItemAvailabilityType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method ItemAvailabilityType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ItemAvailabilityType setName(Property\NameProperty $name)
  * @method ItemAvailabilityType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method ItemAvailabilityType setSameAs(Property\SameAsProperty $sameAs)
+ * @method ItemAvailabilityType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method ItemAvailabilityType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method ItemAvailabilityType setUrl(Property\UrlProperty $url)
  */
 class ItemAvailabilityType extends EnumerationType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

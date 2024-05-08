@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * BoardingPolicyProperty class.
+ * The type of boarding policy used by the airline (e.g. zone-based or group-based).
  * 
  * @method BoardingPolicyProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class BoardingPolicyProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class BoardingPolicyProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ProfilePageType.
+ * Web page type: Profile page.
  * 
+ * @method ProfilePageType setAbout(Property\AboutProperty $about)
  * @method ProfilePageType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method ProfilePageType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method ProfilePageType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -34,6 +35,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ProfilePageType setContributor(Property\ContributorProperty $contributor)
  * @method ProfilePageType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method ProfilePageType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method ProfilePageType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method ProfilePageType setCreator(Property\CreatorProperty $creator)
  * @method ProfilePageType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method ProfilePageType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -45,9 +47,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ProfilePageType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method ProfilePageType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method ProfilePageType setEncoding(Property\EncodingProperty $encoding)
+ * @method ProfilePageType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method ProfilePageType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method ProfilePageType setExpires(Property\ExpiresProperty $expires)
- * @method ProfilePageType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method ProfilePageType setFunder(Property\FunderProperty $funder)
  * @method ProfilePageType setGenre(Property\GenreProperty $genre)
  * @method ProfilePageType setHasPart(Property\HasPartProperty $hasPart)
@@ -77,9 +79,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ProfilePageType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method ProfilePageType setPrimaryImageOfPage(Property\PrimaryImageOfPageProperty $primaryImageOfPage)
  * @method ProfilePageType setProducer(Property\ProducerProperty $producer)
- * @method ProfilePageType setProvider(Property\ProviderProperty $provider)
  * @method ProfilePageType setPublication(Property\PublicationProperty $publication)
  * @method ProfilePageType setPublisher(Property\PublisherProperty $publisher)
+ * @method ProfilePageType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method ProfilePageType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method ProfilePageType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method ProfilePageType setRelatedLink(Property\RelatedLinkProperty $relatedLink)
@@ -90,25 +92,32 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ProfilePageType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method ProfilePageType setSignificantLink(Property\SignificantLinkProperty $significantLink)
  * @method ProfilePageType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method ProfilePageType setSpatial(Property\SpatialProperty $spatial)
  * @method ProfilePageType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
+ * @method ProfilePageType setSpeakable(Property\SpeakableProperty $speakable)
  * @method ProfilePageType setSpecialty(Property\SpecialtyProperty $specialty)
  * @method ProfilePageType setSponsor(Property\SponsorProperty $sponsor)
+ * @method ProfilePageType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method ProfilePageType setTemporal(Property\TemporalProperty $temporal)
  * @method ProfilePageType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method ProfilePageType setText(Property\TextProperty $text)
+ * @method ProfilePageType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method ProfilePageType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method ProfilePageType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method ProfilePageType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method ProfilePageType setTranslator(Property\TranslatorProperty $translator)
  * @method ProfilePageType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method ProfilePageType setUrl(Property\UrlProperty $url)
  * @method ProfilePageType setVersion(Property\VersionProperty $version)
  * @method ProfilePageType setVideo(Property\VideoProperty $video)
  * @method ProfilePageType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method ProfilePageType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class ProfilePageType extends WebPageType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

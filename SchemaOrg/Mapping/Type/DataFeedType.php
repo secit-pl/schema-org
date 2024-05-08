@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class DataFeedType.
+ * A single feed providing structured information about one or more entities or topics.
  * 
+ * @method DataFeedType setAbout(Property\AboutProperty $about)
  * @method DataFeedType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method DataFeedType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method DataFeedType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -33,6 +34,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method DataFeedType setContributor(Property\ContributorProperty $contributor)
  * @method DataFeedType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method DataFeedType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method DataFeedType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method DataFeedType setCreator(Property\CreatorProperty $creator)
  * @method DataFeedType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method DataFeedType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -45,9 +47,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method DataFeedType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method DataFeedType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method DataFeedType setEncoding(Property\EncodingProperty $encoding)
+ * @method DataFeedType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method DataFeedType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method DataFeedType setExpires(Property\ExpiresProperty $expires)
- * @method DataFeedType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method DataFeedType setFunder(Property\FunderProperty $funder)
  * @method DataFeedType setGenre(Property\GenreProperty $genre)
  * @method DataFeedType setHasPart(Property\HasPartProperty $hasPart)
@@ -76,9 +78,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method DataFeedType setPosition(Property\PositionProperty $position)
  * @method DataFeedType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method DataFeedType setProducer(Property\ProducerProperty $producer)
- * @method DataFeedType setProvider(Property\ProviderProperty $provider)
  * @method DataFeedType setPublication(Property\PublicationProperty $publication)
  * @method DataFeedType setPublisher(Property\PublisherProperty $publisher)
+ * @method DataFeedType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method DataFeedType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method DataFeedType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method DataFeedType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -86,18 +88,24 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method DataFeedType setSameAs(Property\SameAsProperty $sameAs)
  * @method DataFeedType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method DataFeedType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method DataFeedType setSpatial(Property\SpatialProperty $spatial)
  * @method DataFeedType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method DataFeedType setSponsor(Property\SponsorProperty $sponsor)
+ * @method DataFeedType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method DataFeedType setTemporal(Property\TemporalProperty $temporal)
  * @method DataFeedType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method DataFeedType setText(Property\TextProperty $text)
+ * @method DataFeedType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method DataFeedType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method DataFeedType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method DataFeedType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method DataFeedType setTranslator(Property\TranslatorProperty $translator)
  * @method DataFeedType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method DataFeedType setUrl(Property\UrlProperty $url)
  * @method DataFeedType setVersion(Property\VersionProperty $version)
  * @method DataFeedType setVideo(Property\VideoProperty $video)
  * @method DataFeedType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method DataFeedType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class DataFeedType extends DatasetType {
 
@@ -108,7 +116,7 @@ class DataFeedType extends DatasetType {
 
 	/**
 	 * Get data feed element.
-	 * 
+	 *
 	 * @return Property\DataFeedElementProperty
 	 */
 	public function getDataFeedElement() {
@@ -117,7 +125,7 @@ class DataFeedType extends DatasetType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -126,7 +134,7 @@ class DataFeedType extends DatasetType {
 
 	/**
 	 * Set data feed element.
-	 * 
+	 *
 	 * @param Property\DataFeedElementProperty $dataFeedElement
 	 * @return DataFeedType
 	 */

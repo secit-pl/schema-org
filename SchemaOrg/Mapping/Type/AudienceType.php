@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class AudienceType.
+ * Intended audience for an item, i.e. the group for whom the item was created.
  * 
  * @method AudienceType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method AudienceType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,6 +17,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method AudienceType setName(Property\NameProperty $name)
  * @method AudienceType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method AudienceType setSameAs(Property\SameAsProperty $sameAs)
+ * @method AudienceType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method AudienceType setUrl(Property\UrlProperty $url)
  */
 class AudienceType extends IntangibleType {
@@ -33,7 +34,7 @@ class AudienceType extends IntangibleType {
 
 	/**
 	 * Get audience type.
-	 * 
+	 *
 	 * @return Property\AudienceTypeProperty
 	 */
 	public function getAudienceType() {
@@ -42,7 +43,7 @@ class AudienceType extends IntangibleType {
 
 	/**
 	 * Get geographic area.
-	 * 
+	 *
 	 * @return Property\GeographicAreaProperty
 	 */
 	public function getGeographicArea() {
@@ -51,7 +52,7 @@ class AudienceType extends IntangibleType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -60,7 +61,7 @@ class AudienceType extends IntangibleType {
 
 	/**
 	 * Set audience type.
-	 * 
+	 *
 	 * @param Property\AudienceTypeProperty $audienceType
 	 * @return AudienceType
 	 */
@@ -72,7 +73,7 @@ class AudienceType extends IntangibleType {
 
 	/**
 	 * Set geographic area.
-	 * 
+	 *
 	 * @param Property\GeographicAreaProperty $geographicArea
 	 * @return AudienceType
 	 */

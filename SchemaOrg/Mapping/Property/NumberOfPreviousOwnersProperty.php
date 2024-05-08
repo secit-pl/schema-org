@@ -6,7 +6,7 @@ use SecIT\SchemaOrg\Mapping\DataType;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * NumberOfPreviousOwnersProperty class.
+ * The number of owners of the vehicle, including the current one. Typical unit code(s): C62.
  * 
  * @method NumberOfPreviousOwnersProperty setValue($value)
  */
@@ -14,7 +14,7 @@ class NumberOfPreviousOwnersProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -23,7 +23,7 @@ class NumberOfPreviousOwnersProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

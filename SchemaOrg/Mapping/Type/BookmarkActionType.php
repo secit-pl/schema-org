@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class BookmarkActionType.
+ * An agent bookmarks/flags/labels/tags/marks an object.
  * 
  * @method BookmarkActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method BookmarkActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method BookmarkActionType setResult(Property\ResultProperty $result)
  * @method BookmarkActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method BookmarkActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method BookmarkActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method BookmarkActionType setTarget(Property\TargetProperty $target)
  * @method BookmarkActionType setUrl(Property\UrlProperty $url)
  */
@@ -34,7 +35,7 @@ class BookmarkActionType extends OrganizeActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

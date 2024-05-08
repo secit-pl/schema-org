@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class OutOfStockType.
+ * Indicates that the item is out of stock.
  * 
  * @method OutOfStockType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method OutOfStockType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method OutOfStockType setName(Property\NameProperty $name)
  * @method OutOfStockType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method OutOfStockType setSameAs(Property\SameAsProperty $sameAs)
+ * @method OutOfStockType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method OutOfStockType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method OutOfStockType setUrl(Property\UrlProperty $url)
  */
 class OutOfStockType extends ItemAvailabilityType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

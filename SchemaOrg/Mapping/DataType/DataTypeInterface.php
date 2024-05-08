@@ -9,7 +9,7 @@ interface DataTypeInterface {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl();
@@ -21,7 +21,7 @@ interface DataTypeInterface {
 
 	/**
 	 * Set value.
-	 * 
+	 *
 	 * @param string $value
 	 * @return DataTypeInterface
 	 */

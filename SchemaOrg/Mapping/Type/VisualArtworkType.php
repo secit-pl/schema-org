@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class VisualArtworkType.
+ * A work of art that is primarily visual in character.
  * 
+ * @method VisualArtworkType setAbout(Property\AboutProperty $about)
  * @method VisualArtworkType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method VisualArtworkType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method VisualArtworkType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -33,6 +34,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method VisualArtworkType setContributor(Property\ContributorProperty $contributor)
  * @method VisualArtworkType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method VisualArtworkType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method VisualArtworkType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method VisualArtworkType setCreator(Property\CreatorProperty $creator)
  * @method VisualArtworkType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method VisualArtworkType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -44,9 +46,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method VisualArtworkType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method VisualArtworkType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method VisualArtworkType setEncoding(Property\EncodingProperty $encoding)
+ * @method VisualArtworkType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method VisualArtworkType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method VisualArtworkType setExpires(Property\ExpiresProperty $expires)
- * @method VisualArtworkType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method VisualArtworkType setFunder(Property\FunderProperty $funder)
  * @method VisualArtworkType setGenre(Property\GenreProperty $genre)
  * @method VisualArtworkType setHasPart(Property\HasPartProperty $hasPart)
@@ -73,9 +75,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method VisualArtworkType setPosition(Property\PositionProperty $position)
  * @method VisualArtworkType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method VisualArtworkType setProducer(Property\ProducerProperty $producer)
- * @method VisualArtworkType setProvider(Property\ProviderProperty $provider)
  * @method VisualArtworkType setPublication(Property\PublicationProperty $publication)
  * @method VisualArtworkType setPublisher(Property\PublisherProperty $publisher)
+ * @method VisualArtworkType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method VisualArtworkType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method VisualArtworkType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method VisualArtworkType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -83,18 +85,24 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method VisualArtworkType setSameAs(Property\SameAsProperty $sameAs)
  * @method VisualArtworkType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method VisualArtworkType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method VisualArtworkType setSpatial(Property\SpatialProperty $spatial)
  * @method VisualArtworkType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method VisualArtworkType setSponsor(Property\SponsorProperty $sponsor)
+ * @method VisualArtworkType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method VisualArtworkType setTemporal(Property\TemporalProperty $temporal)
  * @method VisualArtworkType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method VisualArtworkType setText(Property\TextProperty $text)
+ * @method VisualArtworkType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method VisualArtworkType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method VisualArtworkType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method VisualArtworkType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method VisualArtworkType setTranslator(Property\TranslatorProperty $translator)
  * @method VisualArtworkType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method VisualArtworkType setUrl(Property\UrlProperty $url)
  * @method VisualArtworkType setVersion(Property\VersionProperty $version)
  * @method VisualArtworkType setVideo(Property\VideoProperty $video)
  * @method VisualArtworkType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method VisualArtworkType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class VisualArtworkType extends CreativeWorkType {
 
@@ -109,6 +117,11 @@ class VisualArtworkType extends CreativeWorkType {
 	private $artform;
 
 	/**
+	 * @var Property\ArtistProperty
+	 */
+	private $artist;
+
+	/**
 	 * @var Property\ArtMediumProperty
 	 */
 	private $artMedium;
@@ -117,6 +130,11 @@ class VisualArtworkType extends CreativeWorkType {
 	 * @var Property\ArtworkSurfaceProperty
 	 */
 	private $artworkSurface;
+
+	/**
+	 * @var Property\ColoristProperty
+	 */
+	private $colorist;
 
 	/**
 	 * @var Property\DepthProperty
@@ -129,13 +147,28 @@ class VisualArtworkType extends CreativeWorkType {
 	private $height;
 
 	/**
+	 * @var Property\InkerProperty
+	 */
+	private $inker;
+
+	/**
+	 * @var Property\LettererProperty
+	 */
+	private $letterer;
+
+	/**
+	 * @var Property\PencilerProperty
+	 */
+	private $penciler;
+
+	/**
 	 * @var Property\WidthProperty
 	 */
 	private $width;
 
 	/**
 	 * Get art edition.
-	 * 
+	 *
 	 * @return Property\ArtEditionProperty
 	 */
 	public function getArtEdition() {
@@ -144,7 +177,7 @@ class VisualArtworkType extends CreativeWorkType {
 
 	/**
 	 * Get artform.
-	 * 
+	 *
 	 * @return Property\ArtformProperty
 	 */
 	public function getArtform() {
@@ -152,8 +185,17 @@ class VisualArtworkType extends CreativeWorkType {
 	}
 
 	/**
+	 * Get artist.
+	 *
+	 * @return Property\ArtistProperty
+	 */
+	public function getArtist() {
+		return $this->artist;
+	}
+
+	/**
 	 * Get art medium.
-	 * 
+	 *
 	 * @return Property\ArtMediumProperty
 	 */
 	public function getArtMedium() {
@@ -162,7 +204,7 @@ class VisualArtworkType extends CreativeWorkType {
 
 	/**
 	 * Get artwork surface.
-	 * 
+	 *
 	 * @return Property\ArtworkSurfaceProperty
 	 */
 	public function getArtworkSurface() {
@@ -170,8 +212,17 @@ class VisualArtworkType extends CreativeWorkType {
 	}
 
 	/**
+	 * Get colorist.
+	 *
+	 * @return Property\ColoristProperty
+	 */
+	public function getColorist() {
+		return $this->colorist;
+	}
+
+	/**
 	 * Get depth.
-	 * 
+	 *
 	 * @return Property\DepthProperty
 	 */
 	public function getDepth() {
@@ -180,7 +231,7 @@ class VisualArtworkType extends CreativeWorkType {
 
 	/**
 	 * Get height.
-	 * 
+	 *
 	 * @return Property\HeightProperty
 	 */
 	public function getHeight() {
@@ -188,8 +239,35 @@ class VisualArtworkType extends CreativeWorkType {
 	}
 
 	/**
+	 * Get inker.
+	 *
+	 * @return Property\InkerProperty
+	 */
+	public function getInker() {
+		return $this->inker;
+	}
+
+	/**
+	 * Get letterer.
+	 *
+	 * @return Property\LettererProperty
+	 */
+	public function getLetterer() {
+		return $this->letterer;
+	}
+
+	/**
+	 * Get penciler.
+	 *
+	 * @return Property\PencilerProperty
+	 */
+	public function getPenciler() {
+		return $this->penciler;
+	}
+
+	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -198,7 +276,7 @@ class VisualArtworkType extends CreativeWorkType {
 
 	/**
 	 * Get width.
-	 * 
+	 *
 	 * @return Property\WidthProperty
 	 */
 	public function getWidth() {
@@ -207,7 +285,7 @@ class VisualArtworkType extends CreativeWorkType {
 
 	/**
 	 * Set art edition.
-	 * 
+	 *
 	 * @param Property\ArtEditionProperty $artEdition
 	 * @return VisualArtworkType
 	 */
@@ -219,7 +297,7 @@ class VisualArtworkType extends CreativeWorkType {
 
 	/**
 	 * Set artform.
-	 * 
+	 *
 	 * @param Property\ArtformProperty $artform
 	 * @return VisualArtworkType
 	 */
@@ -230,8 +308,20 @@ class VisualArtworkType extends CreativeWorkType {
 	}
 
 	/**
+	 * Set artist.
+	 *
+	 * @param Property\ArtistProperty $artist
+	 * @return VisualArtworkType
+	 */
+	public function setArtist(Property\ArtistProperty $artist) {
+		$this->artist = $artist;
+
+		return $this;
+	}
+
+	/**
 	 * Set art medium.
-	 * 
+	 *
 	 * @param Property\ArtMediumProperty $artMedium
 	 * @return VisualArtworkType
 	 */
@@ -243,7 +333,7 @@ class VisualArtworkType extends CreativeWorkType {
 
 	/**
 	 * Set artwork surface.
-	 * 
+	 *
 	 * @param Property\ArtworkSurfaceProperty $artworkSurface
 	 * @return VisualArtworkType
 	 */
@@ -254,8 +344,20 @@ class VisualArtworkType extends CreativeWorkType {
 	}
 
 	/**
+	 * Set colorist.
+	 *
+	 * @param Property\ColoristProperty $colorist
+	 * @return VisualArtworkType
+	 */
+	public function setColorist(Property\ColoristProperty $colorist) {
+		$this->colorist = $colorist;
+
+		return $this;
+	}
+
+	/**
 	 * Set depth.
-	 * 
+	 *
 	 * @param Property\DepthProperty $depth
 	 * @return VisualArtworkType
 	 */
@@ -267,7 +369,7 @@ class VisualArtworkType extends CreativeWorkType {
 
 	/**
 	 * Set height.
-	 * 
+	 *
 	 * @param Property\HeightProperty $height
 	 * @return VisualArtworkType
 	 */
@@ -278,8 +380,44 @@ class VisualArtworkType extends CreativeWorkType {
 	}
 
 	/**
+	 * Set inker.
+	 *
+	 * @param Property\InkerProperty $inker
+	 * @return VisualArtworkType
+	 */
+	public function setInker(Property\InkerProperty $inker) {
+		$this->inker = $inker;
+
+		return $this;
+	}
+
+	/**
+	 * Set letterer.
+	 *
+	 * @param Property\LettererProperty $letterer
+	 * @return VisualArtworkType
+	 */
+	public function setLetterer(Property\LettererProperty $letterer) {
+		$this->letterer = $letterer;
+
+		return $this;
+	}
+
+	/**
+	 * Set penciler.
+	 *
+	 * @param Property\PencilerProperty $penciler
+	 * @return VisualArtworkType
+	 */
+	public function setPenciler(Property\PencilerProperty $penciler) {
+		$this->penciler = $penciler;
+
+		return $this;
+	}
+
+	/**
 	 * Set width.
-	 * 
+	 *
 	 * @param Property\WidthProperty $width
 	 * @return VisualArtworkType
 	 */

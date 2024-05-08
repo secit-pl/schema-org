@@ -6,7 +6,7 @@ use SecIT\SchemaOrg\Mapping\DataType;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * EstimatedFlightDurationProperty class.
+ * The estimated time the flight will take.
  * 
  * @method EstimatedFlightDurationProperty setValue($value)
  */
@@ -14,7 +14,7 @@ class EstimatedFlightDurationProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -23,7 +23,7 @@ class EstimatedFlightDurationProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

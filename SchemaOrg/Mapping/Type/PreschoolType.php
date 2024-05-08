@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class PreschoolType.
+ * A preschool.
  * 
  * @method PreschoolType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method PreschoolType setAddress(Property\AddressProperty $address)
@@ -30,11 +30,14 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method PreschoolType setFoundingLocation(Property\FoundingLocationProperty $foundingLocation)
  * @method PreschoolType setFunder(Property\FunderProperty $funder)
  * @method PreschoolType setGlobalLocationNumber(Property\GlobalLocationNumberProperty $globalLocationNumber)
+ * @method PreschoolType setHasCertification(Property\HasCertificationProperty $hasCertification)
  * @method PreschoolType setHasOfferCatalog(Property\HasOfferCatalogProperty $hasOfferCatalog)
  * @method PreschoolType setHasPOS(Property\HasPOSProperty $hasPOS)
  * @method PreschoolType setIdentifier(Property\IdentifierProperty $identifier)
  * @method PreschoolType setImage(Property\ImageProperty $image)
+ * @method PreschoolType setInteractionStatistic(Property\InteractionStatisticProperty $interactionStatistic)
  * @method PreschoolType setIsicV4(Property\IsicV4Property $isicV4)
+ * @method PreschoolType setKeywords(Property\KeywordsProperty $keywords)
  * @method PreschoolType setLegalName(Property\LegalNameProperty $legalName)
  * @method PreschoolType setLeiCode(Property\LeiCodeProperty $leiCode)
  * @method PreschoolType setLocation(Property\LocationProperty $location)
@@ -53,8 +56,10 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method PreschoolType setReview(Property\ReviewProperty $review)
  * @method PreschoolType setSameAs(Property\SameAsProperty $sameAs)
  * @method PreschoolType setSeeks(Property\SeeksProperty $seeks)
+ * @method PreschoolType setSlogan(Property\SloganProperty $slogan)
  * @method PreschoolType setSponsor(Property\SponsorProperty $sponsor)
  * @method PreschoolType setSubOrganization(Property\SubOrganizationProperty $subOrganization)
+ * @method PreschoolType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method PreschoolType setTaxID(Property\TaxIDProperty $taxID)
  * @method PreschoolType setTelephone(Property\TelephoneProperty $telephone)
  * @method PreschoolType setUrl(Property\UrlProperty $url)
@@ -64,7 +69,7 @@ class PreschoolType extends EducationalOrganizationType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

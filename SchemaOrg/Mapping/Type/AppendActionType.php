@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class AppendActionType.
+ * The act of inserting at the end if an ordered collection.
  * 
  * @method AppendActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method AppendActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method AppendActionType setResult(Property\ResultProperty $result)
  * @method AppendActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method AppendActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method AppendActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method AppendActionType setTarget(Property\TargetProperty $target)
  * @method AppendActionType setTargetCollection(Property\TargetCollectionProperty $targetCollection)
  * @method AppendActionType setToLocation(Property\ToLocationProperty $toLocation)
@@ -36,7 +37,7 @@ class AppendActionType extends InsertActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

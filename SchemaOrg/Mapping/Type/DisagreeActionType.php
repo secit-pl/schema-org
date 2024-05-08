@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class DisagreeActionType.
+ * The act of expressing a difference of opinion with the object. An agent disagrees to/about an object (a proposition, topic or theme) with participants.
  * 
  * @method DisagreeActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method DisagreeActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method DisagreeActionType setResult(Property\ResultProperty $result)
  * @method DisagreeActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method DisagreeActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method DisagreeActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method DisagreeActionType setTarget(Property\TargetProperty $target)
  * @method DisagreeActionType setUrl(Property\UrlProperty $url)
  */
@@ -34,7 +35,7 @@ class DisagreeActionType extends ReactActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

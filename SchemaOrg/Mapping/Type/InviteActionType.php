@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class InviteActionType.
+ * The act of asking someone to attend an event. Reciprocal of RsvpAction.
  * 
+ * @method InviteActionType setAbout(Property\AboutProperty $about)
  * @method InviteActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method InviteActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method InviteActionType setAgent(Property\AgentProperty $agent)
@@ -29,6 +30,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method InviteActionType setResult(Property\ResultProperty $result)
  * @method InviteActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method InviteActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method InviteActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method InviteActionType setTarget(Property\TargetProperty $target)
  * @method InviteActionType setUrl(Property\UrlProperty $url)
  */
@@ -41,7 +43,7 @@ class InviteActionType extends CommunicateActionType {
 
 	/**
 	 * Get event.
-	 * 
+	 *
 	 * @return Property\EventProperty
 	 */
 	public function getEvent() {
@@ -50,7 +52,7 @@ class InviteActionType extends CommunicateActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -59,7 +61,7 @@ class InviteActionType extends CommunicateActionType {
 
 	/**
 	 * Set event.
-	 * 
+	 *
 	 * @param Property\EventProperty $event
 	 * @return InviteActionType
 	 */

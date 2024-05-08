@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * SubOrganizationProperty class.
+ * A relationship between two organizations where the first includes the second, e.g., as a subsidiary. See also: the more specific 'department' property.
  * 
  * @method SubOrganizationProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class SubOrganizationProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class SubOrganizationProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * ByArtistProperty class.
+ * The artist that performed this album or recording.
  * 
  * @method ByArtistProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class ByArtistProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,11 +22,11 @@ class ByArtistProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */
 	public function isValueValid($value) {
-		return $value instanceof Type\MusicGroupType;
+		return $value instanceof Type\MusicGroupType || $value instanceof Type\PersonType;
 	}
 }

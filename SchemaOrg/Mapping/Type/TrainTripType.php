@@ -5,21 +5,26 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class TrainTripType.
+ * A trip on a commercial train line.
  * 
  * @method TrainTripType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method TrainTripType setAlternateName(Property\AlternateNameProperty $alternateName)
+ * @method TrainTripType setArrivalTime(Property\ArrivalTimeProperty $arrivalTime)
+ * @method TrainTripType setDepartureTime(Property\DepartureTimeProperty $departureTime)
  * @method TrainTripType setDescription(Property\DescriptionProperty $description)
  * @method TrainTripType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
  * @method TrainTripType setIdentifier(Property\IdentifierProperty $identifier)
  * @method TrainTripType setImage(Property\ImageProperty $image)
  * @method TrainTripType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
  * @method TrainTripType setName(Property\NameProperty $name)
+ * @method TrainTripType setOffers(Property\OffersProperty $offers)
  * @method TrainTripType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method TrainTripType setSameAs(Property\SameAsProperty $sameAs)
+ * @method TrainTripType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method TrainTripType setTripOrigin(Property\TripOriginProperty $tripOrigin)
  * @method TrainTripType setUrl(Property\UrlProperty $url)
  */
-class TrainTripType extends IntangibleType {
+class TrainTripType extends TripType {
 
 	/**
 	 * @var Property\ArrivalPlatformProperty
@@ -32,11 +37,6 @@ class TrainTripType extends IntangibleType {
 	private $arrivalStation;
 
 	/**
-	 * @var Property\ArrivalTimeProperty
-	 */
-	private $arrivalTime;
-
-	/**
 	 * @var Property\DeparturePlatformProperty
 	 */
 	private $departurePlatform;
@@ -45,16 +45,6 @@ class TrainTripType extends IntangibleType {
 	 * @var Property\DepartureStationProperty
 	 */
 	private $departureStation;
-
-	/**
-	 * @var Property\DepartureTimeProperty
-	 */
-	private $departureTime;
-
-	/**
-	 * @var Property\ProviderProperty
-	 */
-	private $provider;
 
 	/**
 	 * @var Property\TrainNameProperty
@@ -68,7 +58,7 @@ class TrainTripType extends IntangibleType {
 
 	/**
 	 * Get arrival platform.
-	 * 
+	 *
 	 * @return Property\ArrivalPlatformProperty
 	 */
 	public function getArrivalPlatform() {
@@ -77,7 +67,7 @@ class TrainTripType extends IntangibleType {
 
 	/**
 	 * Get arrival station.
-	 * 
+	 *
 	 * @return Property\ArrivalStationProperty
 	 */
 	public function getArrivalStation() {
@@ -85,17 +75,8 @@ class TrainTripType extends IntangibleType {
 	}
 
 	/**
-	 * Get arrival time.
-	 * 
-	 * @return Property\ArrivalTimeProperty
-	 */
-	public function getArrivalTime() {
-		return $this->arrivalTime;
-	}
-
-	/**
 	 * Get departure platform.
-	 * 
+	 *
 	 * @return Property\DeparturePlatformProperty
 	 */
 	public function getDeparturePlatform() {
@@ -104,7 +85,7 @@ class TrainTripType extends IntangibleType {
 
 	/**
 	 * Get departure station.
-	 * 
+	 *
 	 * @return Property\DepartureStationProperty
 	 */
 	public function getDepartureStation() {
@@ -112,26 +93,8 @@ class TrainTripType extends IntangibleType {
 	}
 
 	/**
-	 * Get departure time.
-	 * 
-	 * @return Property\DepartureTimeProperty
-	 */
-	public function getDepartureTime() {
-		return $this->departureTime;
-	}
-
-	/**
-	 * Get provider.
-	 * 
-	 * @return Property\ProviderProperty
-	 */
-	public function getProvider() {
-		return $this->provider;
-	}
-
-	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -140,7 +103,7 @@ class TrainTripType extends IntangibleType {
 
 	/**
 	 * Get train name.
-	 * 
+	 *
 	 * @return Property\TrainNameProperty
 	 */
 	public function getTrainName() {
@@ -149,7 +112,7 @@ class TrainTripType extends IntangibleType {
 
 	/**
 	 * Get train number.
-	 * 
+	 *
 	 * @return Property\TrainNumberProperty
 	 */
 	public function getTrainNumber() {
@@ -158,7 +121,7 @@ class TrainTripType extends IntangibleType {
 
 	/**
 	 * Set arrival platform.
-	 * 
+	 *
 	 * @param Property\ArrivalPlatformProperty $arrivalPlatform
 	 * @return TrainTripType
 	 */
@@ -170,7 +133,7 @@ class TrainTripType extends IntangibleType {
 
 	/**
 	 * Set arrival station.
-	 * 
+	 *
 	 * @param Property\ArrivalStationProperty $arrivalStation
 	 * @return TrainTripType
 	 */
@@ -181,20 +144,8 @@ class TrainTripType extends IntangibleType {
 	}
 
 	/**
-	 * Set arrival time.
-	 * 
-	 * @param Property\ArrivalTimeProperty $arrivalTime
-	 * @return TrainTripType
-	 */
-	public function setArrivalTime(Property\ArrivalTimeProperty $arrivalTime) {
-		$this->arrivalTime = $arrivalTime;
-
-		return $this;
-	}
-
-	/**
 	 * Set departure platform.
-	 * 
+	 *
 	 * @param Property\DeparturePlatformProperty $departurePlatform
 	 * @return TrainTripType
 	 */
@@ -206,7 +157,7 @@ class TrainTripType extends IntangibleType {
 
 	/**
 	 * Set departure station.
-	 * 
+	 *
 	 * @param Property\DepartureStationProperty $departureStation
 	 * @return TrainTripType
 	 */
@@ -217,32 +168,8 @@ class TrainTripType extends IntangibleType {
 	}
 
 	/**
-	 * Set departure time.
-	 * 
-	 * @param Property\DepartureTimeProperty $departureTime
-	 * @return TrainTripType
-	 */
-	public function setDepartureTime(Property\DepartureTimeProperty $departureTime) {
-		$this->departureTime = $departureTime;
-
-		return $this;
-	}
-
-	/**
-	 * Set provider.
-	 * 
-	 * @param Property\ProviderProperty $provider
-	 * @return TrainTripType
-	 */
-	public function setProvider(Property\ProviderProperty $provider) {
-		$this->provider = $provider;
-
-		return $this;
-	}
-
-	/**
 	 * Set train name.
-	 * 
+	 *
 	 * @param Property\TrainNameProperty $trainName
 	 * @return TrainTripType
 	 */
@@ -254,7 +181,7 @@ class TrainTripType extends IntangibleType {
 
 	/**
 	 * Set train number.
-	 * 
+	 *
 	 * @param Property\TrainNumberProperty $trainNumber
 	 * @return TrainTripType
 	 */

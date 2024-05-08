@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class FlightReservationType.
+ * A reservation for air travel. Note: This type is for information about actual reservations, e.g. in confirmation emails or HTML pages with individual confirmations of reservations. For offers of tickets, use Offer.
  * 
  * @method FlightReservationType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method FlightReservationType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -21,12 +21,12 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method FlightReservationType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method FlightReservationType setPriceCurrency(Property\PriceCurrencyProperty $priceCurrency)
  * @method FlightReservationType setProgramMembershipUsed(Property\ProgramMembershipUsedProperty $programMembershipUsed)
- * @method FlightReservationType setProvider(Property\ProviderProperty $provider)
  * @method FlightReservationType setReservationFor(Property\ReservationForProperty $reservationFor)
  * @method FlightReservationType setReservationId(Property\ReservationIdProperty $reservationId)
  * @method FlightReservationType setReservationStatus(Property\ReservationStatusProperty $reservationStatus)
  * @method FlightReservationType setReservedTicket(Property\ReservedTicketProperty $reservedTicket)
  * @method FlightReservationType setSameAs(Property\SameAsProperty $sameAs)
+ * @method FlightReservationType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method FlightReservationType setTotalPrice(Property\TotalPriceProperty $totalPrice)
  * @method FlightReservationType setUnderName(Property\UnderNameProperty $underName)
  * @method FlightReservationType setUrl(Property\UrlProperty $url)
@@ -55,7 +55,7 @@ class FlightReservationType extends ReservationType {
 
 	/**
 	 * Get boarding group.
-	 * 
+	 *
 	 * @return Property\BoardingGroupProperty
 	 */
 	public function getBoardingGroup() {
@@ -64,7 +64,7 @@ class FlightReservationType extends ReservationType {
 
 	/**
 	 * Get passenger priority status.
-	 * 
+	 *
 	 * @return Property\PassengerPriorityStatusProperty
 	 */
 	public function getPassengerPriorityStatus() {
@@ -73,7 +73,7 @@ class FlightReservationType extends ReservationType {
 
 	/**
 	 * Get passenger sequence number.
-	 * 
+	 *
 	 * @return Property\PassengerSequenceNumberProperty
 	 */
 	public function getPassengerSequenceNumber() {
@@ -82,7 +82,7 @@ class FlightReservationType extends ReservationType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -91,7 +91,7 @@ class FlightReservationType extends ReservationType {
 
 	/**
 	 * Get security screening.
-	 * 
+	 *
 	 * @return Property\SecurityScreeningProperty
 	 */
 	public function getSecurityScreening() {
@@ -100,7 +100,7 @@ class FlightReservationType extends ReservationType {
 
 	/**
 	 * Set boarding group.
-	 * 
+	 *
 	 * @param Property\BoardingGroupProperty $boardingGroup
 	 * @return FlightReservationType
 	 */
@@ -112,7 +112,7 @@ class FlightReservationType extends ReservationType {
 
 	/**
 	 * Set passenger priority status.
-	 * 
+	 *
 	 * @param Property\PassengerPriorityStatusProperty $passengerPriorityStatus
 	 * @return FlightReservationType
 	 */
@@ -124,7 +124,7 @@ class FlightReservationType extends ReservationType {
 
 	/**
 	 * Set passenger sequence number.
-	 * 
+	 *
 	 * @param Property\PassengerSequenceNumberProperty $passengerSequenceNumber
 	 * @return FlightReservationType
 	 */
@@ -136,7 +136,7 @@ class FlightReservationType extends ReservationType {
 
 	/**
 	 * Set security screening.
-	 * 
+	 *
 	 * @param Property\SecurityScreeningProperty $securityScreening
 	 * @return FlightReservationType
 	 */

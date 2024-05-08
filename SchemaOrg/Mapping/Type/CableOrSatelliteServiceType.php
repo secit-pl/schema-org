@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class CableOrSatelliteServiceType.
+ * A service which provides access to media programming like TV or radio. Access may be via cable or satellite.
  * 
  * @method CableOrSatelliteServiceType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method CableOrSatelliteServiceType setAggregateRating(Property\AggregateRatingProperty $aggregateRating)
@@ -19,6 +19,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method CableOrSatelliteServiceType setCategory(Property\CategoryProperty $category)
  * @method CableOrSatelliteServiceType setDescription(Property\DescriptionProperty $description)
  * @method CableOrSatelliteServiceType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
+ * @method CableOrSatelliteServiceType setHasCertification(Property\HasCertificationProperty $hasCertification)
  * @method CableOrSatelliteServiceType setHasOfferCatalog(Property\HasOfferCatalogProperty $hasOfferCatalog)
  * @method CableOrSatelliteServiceType setHoursAvailable(Property\HoursAvailableProperty $hoursAvailable)
  * @method CableOrSatelliteServiceType setIdentifier(Property\IdentifierProperty $identifier)
@@ -30,19 +31,20 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method CableOrSatelliteServiceType setName(Property\NameProperty $name)
  * @method CableOrSatelliteServiceType setOffers(Property\OffersProperty $offers)
  * @method CableOrSatelliteServiceType setPotentialAction(Property\PotentialActionProperty $potentialAction)
- * @method CableOrSatelliteServiceType setProvider(Property\ProviderProperty $provider)
  * @method CableOrSatelliteServiceType setProviderMobility(Property\ProviderMobilityProperty $providerMobility)
  * @method CableOrSatelliteServiceType setReview(Property\ReviewProperty $review)
  * @method CableOrSatelliteServiceType setSameAs(Property\SameAsProperty $sameAs)
  * @method CableOrSatelliteServiceType setServiceOutput(Property\ServiceOutputProperty $serviceOutput)
  * @method CableOrSatelliteServiceType setServiceType(Property\ServiceTypeProperty $serviceType)
+ * @method CableOrSatelliteServiceType setSlogan(Property\SloganProperty $slogan)
+ * @method CableOrSatelliteServiceType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method CableOrSatelliteServiceType setUrl(Property\UrlProperty $url)
  */
 class CableOrSatelliteServiceType extends ServiceType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

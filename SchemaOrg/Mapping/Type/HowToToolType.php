@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class HowToToolType.
+ * A tool used (but not consumed) when performing instructions for how to achieve a result.
  * 
  * @method HowToToolType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method HowToToolType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -22,13 +22,14 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method HowToToolType setPreviousItem(Property\PreviousItemProperty $previousItem)
  * @method HowToToolType setRequiredQuantity(Property\RequiredQuantityProperty $requiredQuantity)
  * @method HowToToolType setSameAs(Property\SameAsProperty $sameAs)
+ * @method HowToToolType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method HowToToolType setUrl(Property\UrlProperty $url)
  */
 class HowToToolType extends HowToItemType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

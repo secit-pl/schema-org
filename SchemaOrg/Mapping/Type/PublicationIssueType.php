@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class PublicationIssueType.
+ * A part of a successively published publication such as a periodical or publication volume, often numbered, usually containing a grouping of works such as articles. See also blog post.
  * 
+ * @method PublicationIssueType setAbout(Property\AboutProperty $about)
  * @method PublicationIssueType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method PublicationIssueType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method PublicationIssueType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -33,6 +34,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method PublicationIssueType setContributor(Property\ContributorProperty $contributor)
  * @method PublicationIssueType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method PublicationIssueType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method PublicationIssueType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method PublicationIssueType setCreator(Property\CreatorProperty $creator)
  * @method PublicationIssueType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method PublicationIssueType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -44,9 +46,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method PublicationIssueType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method PublicationIssueType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method PublicationIssueType setEncoding(Property\EncodingProperty $encoding)
+ * @method PublicationIssueType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method PublicationIssueType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method PublicationIssueType setExpires(Property\ExpiresProperty $expires)
- * @method PublicationIssueType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method PublicationIssueType setFunder(Property\FunderProperty $funder)
  * @method PublicationIssueType setGenre(Property\GenreProperty $genre)
  * @method PublicationIssueType setHasPart(Property\HasPartProperty $hasPart)
@@ -73,9 +75,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method PublicationIssueType setPosition(Property\PositionProperty $position)
  * @method PublicationIssueType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method PublicationIssueType setProducer(Property\ProducerProperty $producer)
- * @method PublicationIssueType setProvider(Property\ProviderProperty $provider)
  * @method PublicationIssueType setPublication(Property\PublicationProperty $publication)
  * @method PublicationIssueType setPublisher(Property\PublisherProperty $publisher)
+ * @method PublicationIssueType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method PublicationIssueType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method PublicationIssueType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method PublicationIssueType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -83,18 +85,24 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method PublicationIssueType setSameAs(Property\SameAsProperty $sameAs)
  * @method PublicationIssueType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method PublicationIssueType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method PublicationIssueType setSpatial(Property\SpatialProperty $spatial)
  * @method PublicationIssueType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method PublicationIssueType setSponsor(Property\SponsorProperty $sponsor)
+ * @method PublicationIssueType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method PublicationIssueType setTemporal(Property\TemporalProperty $temporal)
  * @method PublicationIssueType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method PublicationIssueType setText(Property\TextProperty $text)
+ * @method PublicationIssueType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method PublicationIssueType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method PublicationIssueType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method PublicationIssueType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method PublicationIssueType setTranslator(Property\TranslatorProperty $translator)
  * @method PublicationIssueType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method PublicationIssueType setUrl(Property\UrlProperty $url)
  * @method PublicationIssueType setVersion(Property\VersionProperty $version)
  * @method PublicationIssueType setVideo(Property\VideoProperty $video)
  * @method PublicationIssueType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method PublicationIssueType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class PublicationIssueType extends CreativeWorkType {
 
@@ -120,7 +128,7 @@ class PublicationIssueType extends CreativeWorkType {
 
 	/**
 	 * Get issue number.
-	 * 
+	 *
 	 * @return Property\IssueNumberProperty
 	 */
 	public function getIssueNumber() {
@@ -129,7 +137,7 @@ class PublicationIssueType extends CreativeWorkType {
 
 	/**
 	 * Get page end.
-	 * 
+	 *
 	 * @return Property\PageEndProperty
 	 */
 	public function getPageEnd() {
@@ -138,7 +146,7 @@ class PublicationIssueType extends CreativeWorkType {
 
 	/**
 	 * Get page start.
-	 * 
+	 *
 	 * @return Property\PageStartProperty
 	 */
 	public function getPageStart() {
@@ -147,7 +155,7 @@ class PublicationIssueType extends CreativeWorkType {
 
 	/**
 	 * Get pagination.
-	 * 
+	 *
 	 * @return Property\PaginationProperty
 	 */
 	public function getPagination() {
@@ -156,7 +164,7 @@ class PublicationIssueType extends CreativeWorkType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -165,7 +173,7 @@ class PublicationIssueType extends CreativeWorkType {
 
 	/**
 	 * Set issue number.
-	 * 
+	 *
 	 * @param Property\IssueNumberProperty $issueNumber
 	 * @return PublicationIssueType
 	 */
@@ -177,7 +185,7 @@ class PublicationIssueType extends CreativeWorkType {
 
 	/**
 	 * Set page end.
-	 * 
+	 *
 	 * @param Property\PageEndProperty $pageEnd
 	 * @return PublicationIssueType
 	 */
@@ -189,7 +197,7 @@ class PublicationIssueType extends CreativeWorkType {
 
 	/**
 	 * Set page start.
-	 * 
+	 *
 	 * @param Property\PageStartProperty $pageStart
 	 * @return PublicationIssueType
 	 */
@@ -201,7 +209,7 @@ class PublicationIssueType extends CreativeWorkType {
 
 	/**
 	 * Set pagination.
-	 * 
+	 *
 	 * @param Property\PaginationProperty $pagination
 	 * @return PublicationIssueType
 	 */

@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * ProcessorRequirementsProperty class.
+ * Processor architecture required to run the application (e.g. IA64).
  * 
  * @method ProcessorRequirementsProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class ProcessorRequirementsProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class ProcessorRequirementsProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

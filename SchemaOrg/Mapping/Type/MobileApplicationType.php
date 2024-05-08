@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class MobileApplicationType.
+ * A software application designed specifically to work well on a mobile device such as a telephone.
  * 
+ * @method MobileApplicationType setAbout(Property\AboutProperty $about)
  * @method MobileApplicationType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method MobileApplicationType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method MobileApplicationType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -39,6 +40,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MobileApplicationType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
  * @method MobileApplicationType setCountriesNotSupported(Property\CountriesNotSupportedProperty $countriesNotSupported)
  * @method MobileApplicationType setCountriesSupported(Property\CountriesSupportedProperty $countriesSupported)
+ * @method MobileApplicationType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method MobileApplicationType setCreator(Property\CreatorProperty $creator)
  * @method MobileApplicationType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method MobileApplicationType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -51,10 +53,10 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MobileApplicationType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method MobileApplicationType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method MobileApplicationType setEncoding(Property\EncodingProperty $encoding)
+ * @method MobileApplicationType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method MobileApplicationType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method MobileApplicationType setExpires(Property\ExpiresProperty $expires)
  * @method MobileApplicationType setFeatureList(Property\FeatureListProperty $featureList)
- * @method MobileApplicationType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method MobileApplicationType setFileSize(Property\FileSizeProperty $fileSize)
  * @method MobileApplicationType setFunder(Property\FunderProperty $funder)
  * @method MobileApplicationType setGenre(Property\GenreProperty $genre)
@@ -87,9 +89,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MobileApplicationType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method MobileApplicationType setProcessorRequirements(Property\ProcessorRequirementsProperty $processorRequirements)
  * @method MobileApplicationType setProducer(Property\ProducerProperty $producer)
- * @method MobileApplicationType setProvider(Property\ProviderProperty $provider)
  * @method MobileApplicationType setPublication(Property\PublicationProperty $publication)
  * @method MobileApplicationType setPublisher(Property\PublisherProperty $publisher)
+ * @method MobileApplicationType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method MobileApplicationType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method MobileApplicationType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method MobileApplicationType setReleaseNotes(Property\ReleaseNotesProperty $releaseNotes)
@@ -103,20 +105,26 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MobileApplicationType setSoftwareRequirements(Property\SoftwareRequirementsProperty $softwareRequirements)
  * @method MobileApplicationType setSoftwareVersion(Property\SoftwareVersionProperty $softwareVersion)
  * @method MobileApplicationType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method MobileApplicationType setSpatial(Property\SpatialProperty $spatial)
  * @method MobileApplicationType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method MobileApplicationType setSponsor(Property\SponsorProperty $sponsor)
  * @method MobileApplicationType setStorageRequirements(Property\StorageRequirementsProperty $storageRequirements)
+ * @method MobileApplicationType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method MobileApplicationType setSupportingData(Property\SupportingDataProperty $supportingData)
+ * @method MobileApplicationType setTemporal(Property\TemporalProperty $temporal)
  * @method MobileApplicationType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method MobileApplicationType setText(Property\TextProperty $text)
+ * @method MobileApplicationType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method MobileApplicationType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method MobileApplicationType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method MobileApplicationType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method MobileApplicationType setTranslator(Property\TranslatorProperty $translator)
  * @method MobileApplicationType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method MobileApplicationType setUrl(Property\UrlProperty $url)
  * @method MobileApplicationType setVersion(Property\VersionProperty $version)
  * @method MobileApplicationType setVideo(Property\VideoProperty $video)
  * @method MobileApplicationType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method MobileApplicationType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class MobileApplicationType extends SoftwareApplicationType {
 
@@ -127,7 +135,7 @@ class MobileApplicationType extends SoftwareApplicationType {
 
 	/**
 	 * Get carrier requirements.
-	 * 
+	 *
 	 * @return Property\CarrierRequirementsProperty
 	 */
 	public function getCarrierRequirements() {
@@ -136,7 +144,7 @@ class MobileApplicationType extends SoftwareApplicationType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -145,7 +153,7 @@ class MobileApplicationType extends SoftwareApplicationType {
 
 	/**
 	 * Set carrier requirements.
-	 * 
+	 *
 	 * @param Property\CarrierRequirementsProperty $carrierRequirements
 	 * @return MobileApplicationType
 	 */

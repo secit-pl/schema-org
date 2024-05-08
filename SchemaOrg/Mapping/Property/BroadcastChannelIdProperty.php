@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * BroadcastChannelIdProperty class.
+ * The unique address by which the BroadcastService can be identified in a provider lineup. In US, this is typically a number.
  * 
  * @method BroadcastChannelIdProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class BroadcastChannelIdProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class BroadcastChannelIdProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

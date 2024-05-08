@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class PriceSpecificationType.
+ * A structured value representing a price or price range. Typically, only the subclasses of this type are used for markup. It is recommended to use MonetaryAmount to describe independent amounts of money such as a salary, credit card limits, etc.
  * 
  * @method PriceSpecificationType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method PriceSpecificationType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,6 +17,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method PriceSpecificationType setName(Property\NameProperty $name)
  * @method PriceSpecificationType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method PriceSpecificationType setSameAs(Property\SameAsProperty $sameAs)
+ * @method PriceSpecificationType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method PriceSpecificationType setUrl(Property\UrlProperty $url)
  */
 class PriceSpecificationType extends StructuredValueType {
@@ -68,7 +69,7 @@ class PriceSpecificationType extends StructuredValueType {
 
 	/**
 	 * Get eligible quantity.
-	 * 
+	 *
 	 * @return Property\EligibleQuantityProperty
 	 */
 	public function getEligibleQuantity() {
@@ -77,7 +78,7 @@ class PriceSpecificationType extends StructuredValueType {
 
 	/**
 	 * Get eligible transaction volume.
-	 * 
+	 *
 	 * @return Property\EligibleTransactionVolumeProperty
 	 */
 	public function getEligibleTransactionVolume() {
@@ -86,7 +87,7 @@ class PriceSpecificationType extends StructuredValueType {
 
 	/**
 	 * Get max price.
-	 * 
+	 *
 	 * @return Property\MaxPriceProperty
 	 */
 	public function getMaxPrice() {
@@ -95,7 +96,7 @@ class PriceSpecificationType extends StructuredValueType {
 
 	/**
 	 * Get min price.
-	 * 
+	 *
 	 * @return Property\MinPriceProperty
 	 */
 	public function getMinPrice() {
@@ -104,7 +105,7 @@ class PriceSpecificationType extends StructuredValueType {
 
 	/**
 	 * Get price.
-	 * 
+	 *
 	 * @return Property\PriceProperty
 	 */
 	public function getPrice() {
@@ -113,7 +114,7 @@ class PriceSpecificationType extends StructuredValueType {
 
 	/**
 	 * Get price currency.
-	 * 
+	 *
 	 * @return Property\PriceCurrencyProperty
 	 */
 	public function getPriceCurrency() {
@@ -122,7 +123,7 @@ class PriceSpecificationType extends StructuredValueType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -131,7 +132,7 @@ class PriceSpecificationType extends StructuredValueType {
 
 	/**
 	 * Get valid from.
-	 * 
+	 *
 	 * @return Property\ValidFromProperty
 	 */
 	public function getValidFrom() {
@@ -140,7 +141,7 @@ class PriceSpecificationType extends StructuredValueType {
 
 	/**
 	 * Get valid through.
-	 * 
+	 *
 	 * @return Property\ValidThroughProperty
 	 */
 	public function getValidThrough() {
@@ -149,7 +150,7 @@ class PriceSpecificationType extends StructuredValueType {
 
 	/**
 	 * Get value added tax included.
-	 * 
+	 *
 	 * @return Property\ValueAddedTaxIncludedProperty
 	 */
 	public function getValueAddedTaxIncluded() {
@@ -158,7 +159,7 @@ class PriceSpecificationType extends StructuredValueType {
 
 	/**
 	 * Set eligible quantity.
-	 * 
+	 *
 	 * @param Property\EligibleQuantityProperty $eligibleQuantity
 	 * @return PriceSpecificationType
 	 */
@@ -170,7 +171,7 @@ class PriceSpecificationType extends StructuredValueType {
 
 	/**
 	 * Set eligible transaction volume.
-	 * 
+	 *
 	 * @param Property\EligibleTransactionVolumeProperty $eligibleTransactionVolume
 	 * @return PriceSpecificationType
 	 */
@@ -182,7 +183,7 @@ class PriceSpecificationType extends StructuredValueType {
 
 	/**
 	 * Set max price.
-	 * 
+	 *
 	 * @param Property\MaxPriceProperty $maxPrice
 	 * @return PriceSpecificationType
 	 */
@@ -194,7 +195,7 @@ class PriceSpecificationType extends StructuredValueType {
 
 	/**
 	 * Set min price.
-	 * 
+	 *
 	 * @param Property\MinPriceProperty $minPrice
 	 * @return PriceSpecificationType
 	 */
@@ -206,7 +207,7 @@ class PriceSpecificationType extends StructuredValueType {
 
 	/**
 	 * Set price.
-	 * 
+	 *
 	 * @param Property\PriceProperty $price
 	 * @return PriceSpecificationType
 	 */
@@ -218,7 +219,7 @@ class PriceSpecificationType extends StructuredValueType {
 
 	/**
 	 * Set price currency.
-	 * 
+	 *
 	 * @param Property\PriceCurrencyProperty $priceCurrency
 	 * @return PriceSpecificationType
 	 */
@@ -230,7 +231,7 @@ class PriceSpecificationType extends StructuredValueType {
 
 	/**
 	 * Set valid from.
-	 * 
+	 *
 	 * @param Property\ValidFromProperty $validFrom
 	 * @return PriceSpecificationType
 	 */
@@ -242,7 +243,7 @@ class PriceSpecificationType extends StructuredValueType {
 
 	/**
 	 * Set valid through.
-	 * 
+	 *
 	 * @param Property\ValidThroughProperty $validThrough
 	 * @return PriceSpecificationType
 	 */
@@ -254,7 +255,7 @@ class PriceSpecificationType extends StructuredValueType {
 
 	/**
 	 * Set value added tax included.
-	 * 
+	 *
 	 * @param Property\ValueAddedTaxIncludedProperty $valueAddedTaxIncluded
 	 * @return PriceSpecificationType
 	 */

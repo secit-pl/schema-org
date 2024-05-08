@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * NumberOfEmployeesProperty class.
+ * The number of employees in an organization, e.g. business.
  * 
  * @method NumberOfEmployeesProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class NumberOfEmployeesProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class NumberOfEmployeesProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

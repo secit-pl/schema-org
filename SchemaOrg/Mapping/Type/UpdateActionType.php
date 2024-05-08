@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class UpdateActionType.
+ * The act of managing by changing/editing the state of the object.
  * 
  * @method UpdateActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method UpdateActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method UpdateActionType setResult(Property\ResultProperty $result)
  * @method UpdateActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method UpdateActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method UpdateActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method UpdateActionType setTarget(Property\TargetProperty $target)
  * @method UpdateActionType setUrl(Property\UrlProperty $url)
  */
@@ -39,7 +40,7 @@ class UpdateActionType extends ActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -48,7 +49,7 @@ class UpdateActionType extends ActionType {
 
 	/**
 	 * Get target collection.
-	 * 
+	 *
 	 * @return Property\TargetCollectionProperty
 	 */
 	public function getTargetCollection() {
@@ -57,7 +58,7 @@ class UpdateActionType extends ActionType {
 
 	/**
 	 * Set target collection.
-	 * 
+	 *
 	 * @param Property\TargetCollectionProperty $targetCollection
 	 * @return UpdateActionType
 	 */

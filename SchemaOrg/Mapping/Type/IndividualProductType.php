@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class IndividualProductType.
+ * A single, identifiable product instance (e.g. a laptop with a particular serial number).
  * 
  * @method IndividualProductType setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method IndividualProductType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -16,6 +16,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method IndividualProductType setBrand(Property\BrandProperty $brand)
  * @method IndividualProductType setCategory(Property\CategoryProperty $category)
  * @method IndividualProductType setColor(Property\ColorProperty $color)
+ * @method IndividualProductType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method IndividualProductType setDepth(Property\DepthProperty $depth)
  * @method IndividualProductType setDescription(Property\DescriptionProperty $description)
  * @method IndividualProductType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
@@ -23,14 +24,18 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method IndividualProductType setGtin13(Property\Gtin13Property $gtin13)
  * @method IndividualProductType setGtin14(Property\Gtin14Property $gtin14)
  * @method IndividualProductType setGtin8(Property\Gtin8Property $gtin8)
+ * @method IndividualProductType setHasCertification(Property\HasCertificationProperty $hasCertification)
  * @method IndividualProductType setHeight(Property\HeightProperty $height)
  * @method IndividualProductType setIdentifier(Property\IdentifierProperty $identifier)
  * @method IndividualProductType setImage(Property\ImageProperty $image)
  * @method IndividualProductType setIsAccessoryOrSparePartFor(Property\IsAccessoryOrSparePartForProperty $isAccessoryOrSparePartFor)
  * @method IndividualProductType setIsConsumableFor(Property\IsConsumableForProperty $isConsumableFor)
+ * @method IndividualProductType setIsFamilyFriendly(Property\IsFamilyFriendlyProperty $isFamilyFriendly)
  * @method IndividualProductType setIsRelatedTo(Property\IsRelatedToProperty $isRelatedTo)
  * @method IndividualProductType setIsSimilarTo(Property\IsSimilarToProperty $isSimilarTo)
+ * @method IndividualProductType setIsVariantOf(Property\IsVariantOfProperty $isVariantOf)
  * @method IndividualProductType setItemCondition(Property\ItemConditionProperty $itemCondition)
+ * @method IndividualProductType setKeywords(Property\KeywordsProperty $keywords)
  * @method IndividualProductType setLogo(Property\LogoProperty $logo)
  * @method IndividualProductType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
  * @method IndividualProductType setManufacturer(Property\ManufacturerProperty $manufacturer)
@@ -47,6 +52,8 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method IndividualProductType setReview(Property\ReviewProperty $review)
  * @method IndividualProductType setSameAs(Property\SameAsProperty $sameAs)
  * @method IndividualProductType setSku(Property\SkuProperty $sku)
+ * @method IndividualProductType setSlogan(Property\SloganProperty $slogan)
+ * @method IndividualProductType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method IndividualProductType setUrl(Property\UrlProperty $url)
  * @method IndividualProductType setWeight(Property\WeightProperty $weight)
  * @method IndividualProductType setWidth(Property\WidthProperty $width)
@@ -60,7 +67,7 @@ class IndividualProductType extends ProductType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -69,7 +76,7 @@ class IndividualProductType extends ProductType {
 
 	/**
 	 * Get serial number.
-	 * 
+	 *
 	 * @return Property\SerialNumberProperty
 	 */
 	public function getSerialNumber() {
@@ -78,7 +85,7 @@ class IndividualProductType extends ProductType {
 
 	/**
 	 * Set serial number.
-	 * 
+	 *
 	 * @param Property\SerialNumberProperty $serialNumber
 	 * @return IndividualProductType
 	 */

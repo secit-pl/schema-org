@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ReplyActionType.
+ * The act of responding to a question/message asked/sent by the object. Related to AskAction. Related actions: AskAction: Appears generally as an origin of a ReplyAction.
  * 
+ * @method ReplyActionType setAbout(Property\AboutProperty $about)
  * @method ReplyActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method ReplyActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method ReplyActionType setAgent(Property\AgentProperty $agent)
@@ -29,6 +30,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ReplyActionType setResult(Property\ResultProperty $result)
  * @method ReplyActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method ReplyActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method ReplyActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method ReplyActionType setTarget(Property\TargetProperty $target)
  * @method ReplyActionType setUrl(Property\UrlProperty $url)
  */
@@ -41,7 +43,7 @@ class ReplyActionType extends CommunicateActionType {
 
 	/**
 	 * Get result comment.
-	 * 
+	 *
 	 * @return Property\ResultCommentProperty
 	 */
 	public function getResultComment() {
@@ -50,7 +52,7 @@ class ReplyActionType extends CommunicateActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -59,7 +61,7 @@ class ReplyActionType extends CommunicateActionType {
 
 	/**
 	 * Set result comment.
-	 * 
+	 *
 	 * @param Property\ResultCommentProperty $resultComment
 	 * @return ReplyActionType
 	 */

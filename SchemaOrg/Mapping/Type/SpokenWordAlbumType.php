@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class SpokenWordAlbumType.
+ * SpokenWordAlbum.
  * 
  * @method SpokenWordAlbumType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method SpokenWordAlbumType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SpokenWordAlbumType setName(Property\NameProperty $name)
  * @method SpokenWordAlbumType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method SpokenWordAlbumType setSameAs(Property\SameAsProperty $sameAs)
+ * @method SpokenWordAlbumType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method SpokenWordAlbumType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method SpokenWordAlbumType setUrl(Property\UrlProperty $url)
  */
 class SpokenWordAlbumType extends MusicAlbumProductionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

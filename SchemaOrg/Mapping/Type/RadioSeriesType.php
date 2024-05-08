@@ -5,99 +5,23 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class RadioSeriesType.
+ * CreativeWorkSeries dedicated to radio broadcast and associated online delivery.
  * 
- * @method RadioSeriesType setAccessMode(Property\AccessModeProperty $accessMode)
- * @method RadioSeriesType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
- * @method RadioSeriesType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
- * @method RadioSeriesType setAccessibilityControl(Property\AccessibilityControlProperty $accessibilityControl)
- * @method RadioSeriesType setAccessibilityFeature(Property\AccessibilityFeatureProperty $accessibilityFeature)
- * @method RadioSeriesType setAccessibilityHazard(Property\AccessibilityHazardProperty $accessibilityHazard)
- * @method RadioSeriesType setAccessibilitySummary(Property\AccessibilitySummaryProperty $accessibilitySummary)
- * @method RadioSeriesType setAccountablePerson(Property\AccountablePersonProperty $accountablePerson)
  * @method RadioSeriesType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
- * @method RadioSeriesType setAggregateRating(Property\AggregateRatingProperty $aggregateRating)
  * @method RadioSeriesType setAlternateName(Property\AlternateNameProperty $alternateName)
- * @method RadioSeriesType setAlternativeHeadline(Property\AlternativeHeadlineProperty $alternativeHeadline)
- * @method RadioSeriesType setAssociatedMedia(Property\AssociatedMediaProperty $associatedMedia)
- * @method RadioSeriesType setAudience(Property\AudienceProperty $audience)
- * @method RadioSeriesType setAudio(Property\AudioProperty $audio)
- * @method RadioSeriesType setAuthor(Property\AuthorProperty $author)
- * @method RadioSeriesType setAward(Property\AwardProperty $award)
- * @method RadioSeriesType setCharacter(Property\CharacterProperty $character)
- * @method RadioSeriesType setCitation(Property\CitationProperty $citation)
- * @method RadioSeriesType setComment(Property\CommentProperty $comment)
- * @method RadioSeriesType setCommentCount(Property\CommentCountProperty $commentCount)
- * @method RadioSeriesType setContentLocation(Property\ContentLocationProperty $contentLocation)
- * @method RadioSeriesType setContentRating(Property\ContentRatingProperty $contentRating)
- * @method RadioSeriesType setContributor(Property\ContributorProperty $contributor)
- * @method RadioSeriesType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
- * @method RadioSeriesType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
- * @method RadioSeriesType setCreator(Property\CreatorProperty $creator)
- * @method RadioSeriesType setDateCreated(Property\DateCreatedProperty $dateCreated)
- * @method RadioSeriesType setDateModified(Property\DateModifiedProperty $dateModified)
- * @method RadioSeriesType setDatePublished(Property\DatePublishedProperty $datePublished)
  * @method RadioSeriesType setDescription(Property\DescriptionProperty $description)
  * @method RadioSeriesType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
- * @method RadioSeriesType setDiscussionUrl(Property\DiscussionUrlProperty $discussionUrl)
- * @method RadioSeriesType setEditor(Property\EditorProperty $editor)
- * @method RadioSeriesType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
- * @method RadioSeriesType setEducationalUse(Property\EducationalUseProperty $educationalUse)
- * @method RadioSeriesType setEncoding(Property\EncodingProperty $encoding)
  * @method RadioSeriesType setEndDate(Property\EndDateProperty $endDate)
- * @method RadioSeriesType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
- * @method RadioSeriesType setExpires(Property\ExpiresProperty $expires)
- * @method RadioSeriesType setFileFormat(Property\FileFormatProperty $fileFormat)
- * @method RadioSeriesType setFunder(Property\FunderProperty $funder)
- * @method RadioSeriesType setGenre(Property\GenreProperty $genre)
- * @method RadioSeriesType setHasPart(Property\HasPartProperty $hasPart)
- * @method RadioSeriesType setHeadline(Property\HeadlineProperty $headline)
  * @method RadioSeriesType setIdentifier(Property\IdentifierProperty $identifier)
  * @method RadioSeriesType setImage(Property\ImageProperty $image)
- * @method RadioSeriesType setInLanguage(Property\InLanguageProperty $inLanguage)
- * @method RadioSeriesType setInteractionStatistic(Property\InteractionStatisticProperty $interactionStatistic)
- * @method RadioSeriesType setInteractivityType(Property\InteractivityTypeProperty $interactivityType)
- * @method RadioSeriesType setIsAccessibleForFree(Property\IsAccessibleForFreeProperty $isAccessibleForFree)
- * @method RadioSeriesType setIsBasedOn(Property\IsBasedOnProperty $isBasedOn)
- * @method RadioSeriesType setIsFamilyFriendly(Property\IsFamilyFriendlyProperty $isFamilyFriendly)
- * @method RadioSeriesType setIsPartOf(Property\IsPartOfProperty $isPartOf)
  * @method RadioSeriesType setIssn(Property\IssnProperty $issn)
- * @method RadioSeriesType setKeywords(Property\KeywordsProperty $keywords)
- * @method RadioSeriesType setLearningResourceType(Property\LearningResourceTypeProperty $learningResourceType)
- * @method RadioSeriesType setLicense(Property\LicenseProperty $license)
- * @method RadioSeriesType setLocationCreated(Property\LocationCreatedProperty $locationCreated)
- * @method RadioSeriesType setMainEntity(Property\MainEntityProperty $mainEntity)
  * @method RadioSeriesType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
- * @method RadioSeriesType setMaterial(Property\MaterialProperty $material)
- * @method RadioSeriesType setMentions(Property\MentionsProperty $mentions)
  * @method RadioSeriesType setName(Property\NameProperty $name)
- * @method RadioSeriesType setOffers(Property\OffersProperty $offers)
- * @method RadioSeriesType setPosition(Property\PositionProperty $position)
  * @method RadioSeriesType setPotentialAction(Property\PotentialActionProperty $potentialAction)
- * @method RadioSeriesType setProducer(Property\ProducerProperty $producer)
- * @method RadioSeriesType setProvider(Property\ProviderProperty $provider)
- * @method RadioSeriesType setPublication(Property\PublicationProperty $publication)
- * @method RadioSeriesType setPublisher(Property\PublisherProperty $publisher)
- * @method RadioSeriesType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
- * @method RadioSeriesType setRecordedAt(Property\RecordedAtProperty $recordedAt)
- * @method RadioSeriesType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
- * @method RadioSeriesType setReview(Property\ReviewProperty $review)
  * @method RadioSeriesType setSameAs(Property\SameAsProperty $sameAs)
- * @method RadioSeriesType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
- * @method RadioSeriesType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
- * @method RadioSeriesType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
- * @method RadioSeriesType setSponsor(Property\SponsorProperty $sponsor)
  * @method RadioSeriesType setStartDate(Property\StartDateProperty $startDate)
- * @method RadioSeriesType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
- * @method RadioSeriesType setText(Property\TextProperty $text)
- * @method RadioSeriesType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
- * @method RadioSeriesType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
- * @method RadioSeriesType setTranslator(Property\TranslatorProperty $translator)
- * @method RadioSeriesType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
+ * @method RadioSeriesType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method RadioSeriesType setUrl(Property\UrlProperty $url)
- * @method RadioSeriesType setVersion(Property\VersionProperty $version)
- * @method RadioSeriesType setVideo(Property\VideoProperty $video)
- * @method RadioSeriesType setWorkExample(Property\WorkExampleProperty $workExample)
  */
 class RadioSeriesType extends CreativeWorkSeriesType {
 
@@ -148,7 +72,7 @@ class RadioSeriesType extends CreativeWorkSeriesType {
 
 	/**
 	 * Get actor.
-	 * 
+	 *
 	 * @return Property\ActorProperty
 	 */
 	public function getActor() {
@@ -157,7 +81,7 @@ class RadioSeriesType extends CreativeWorkSeriesType {
 
 	/**
 	 * Get contains season.
-	 * 
+	 *
 	 * @return Property\ContainsSeasonProperty
 	 */
 	public function getContainsSeason() {
@@ -166,7 +90,7 @@ class RadioSeriesType extends CreativeWorkSeriesType {
 
 	/**
 	 * Get director.
-	 * 
+	 *
 	 * @return Property\DirectorProperty
 	 */
 	public function getDirector() {
@@ -175,7 +99,7 @@ class RadioSeriesType extends CreativeWorkSeriesType {
 
 	/**
 	 * Get episode.
-	 * 
+	 *
 	 * @return Property\EpisodeProperty
 	 */
 	public function getEpisode() {
@@ -184,7 +108,7 @@ class RadioSeriesType extends CreativeWorkSeriesType {
 
 	/**
 	 * Get music by.
-	 * 
+	 *
 	 * @return Property\MusicByProperty
 	 */
 	public function getMusicBy() {
@@ -193,7 +117,7 @@ class RadioSeriesType extends CreativeWorkSeriesType {
 
 	/**
 	 * Get number of episodes.
-	 * 
+	 *
 	 * @return Property\NumberOfEpisodesProperty
 	 */
 	public function getNumberOfEpisodes() {
@@ -202,7 +126,7 @@ class RadioSeriesType extends CreativeWorkSeriesType {
 
 	/**
 	 * Get number of seasons.
-	 * 
+	 *
 	 * @return Property\NumberOfSeasonsProperty
 	 */
 	public function getNumberOfSeasons() {
@@ -211,7 +135,7 @@ class RadioSeriesType extends CreativeWorkSeriesType {
 
 	/**
 	 * Get production company.
-	 * 
+	 *
 	 * @return Property\ProductionCompanyProperty
 	 */
 	public function getProductionCompany() {
@@ -220,7 +144,7 @@ class RadioSeriesType extends CreativeWorkSeriesType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -229,7 +153,7 @@ class RadioSeriesType extends CreativeWorkSeriesType {
 
 	/**
 	 * Get trailer.
-	 * 
+	 *
 	 * @return Property\TrailerProperty
 	 */
 	public function getTrailer() {
@@ -238,7 +162,7 @@ class RadioSeriesType extends CreativeWorkSeriesType {
 
 	/**
 	 * Set actor.
-	 * 
+	 *
 	 * @param Property\ActorProperty $actor
 	 * @return RadioSeriesType
 	 */
@@ -250,7 +174,7 @@ class RadioSeriesType extends CreativeWorkSeriesType {
 
 	/**
 	 * Set contains season.
-	 * 
+	 *
 	 * @param Property\ContainsSeasonProperty $containsSeason
 	 * @return RadioSeriesType
 	 */
@@ -262,7 +186,7 @@ class RadioSeriesType extends CreativeWorkSeriesType {
 
 	/**
 	 * Set director.
-	 * 
+	 *
 	 * @param Property\DirectorProperty $director
 	 * @return RadioSeriesType
 	 */
@@ -274,7 +198,7 @@ class RadioSeriesType extends CreativeWorkSeriesType {
 
 	/**
 	 * Set episode.
-	 * 
+	 *
 	 * @param Property\EpisodeProperty $episode
 	 * @return RadioSeriesType
 	 */
@@ -286,7 +210,7 @@ class RadioSeriesType extends CreativeWorkSeriesType {
 
 	/**
 	 * Set music by.
-	 * 
+	 *
 	 * @param Property\MusicByProperty $musicBy
 	 * @return RadioSeriesType
 	 */
@@ -298,7 +222,7 @@ class RadioSeriesType extends CreativeWorkSeriesType {
 
 	/**
 	 * Set number of episodes.
-	 * 
+	 *
 	 * @param Property\NumberOfEpisodesProperty $numberOfEpisodes
 	 * @return RadioSeriesType
 	 */
@@ -310,7 +234,7 @@ class RadioSeriesType extends CreativeWorkSeriesType {
 
 	/**
 	 * Set number of seasons.
-	 * 
+	 *
 	 * @param Property\NumberOfSeasonsProperty $numberOfSeasons
 	 * @return RadioSeriesType
 	 */
@@ -322,7 +246,7 @@ class RadioSeriesType extends CreativeWorkSeriesType {
 
 	/**
 	 * Set production company.
-	 * 
+	 *
 	 * @param Property\ProductionCompanyProperty $productionCompany
 	 * @return RadioSeriesType
 	 */
@@ -334,7 +258,7 @@ class RadioSeriesType extends CreativeWorkSeriesType {
 
 	/**
 	 * Set trailer.
-	 * 
+	 *
 	 * @param Property\TrailerProperty $trailer
 	 * @return RadioSeriesType
 	 */

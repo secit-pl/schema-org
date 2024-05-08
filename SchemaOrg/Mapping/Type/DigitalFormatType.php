@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class DigitalFormatType.
+ * DigitalFormat.
  * 
  * @method DigitalFormatType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method DigitalFormatType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method DigitalFormatType setName(Property\NameProperty $name)
  * @method DigitalFormatType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method DigitalFormatType setSameAs(Property\SameAsProperty $sameAs)
+ * @method DigitalFormatType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method DigitalFormatType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method DigitalFormatType setUrl(Property\UrlProperty $url)
  */
 class DigitalFormatType extends MusicReleaseFormatType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

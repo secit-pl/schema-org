@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class PlaceType.
+ * Entities that have a somewhat fixed, physical extension.
  * 
  * @method PlaceType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method PlaceType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,6 +17,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method PlaceType setName(Property\NameProperty $name)
  * @method PlaceType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method PlaceType setSameAs(Property\SameAsProperty $sameAs)
+ * @method PlaceType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method PlaceType setUrl(Property\UrlProperty $url)
  */
 class PlaceType extends ThingType {
@@ -72,9 +73,64 @@ class PlaceType extends ThingType {
 	private $geo;
 
 	/**
+	 * @var Property\GeoContainsProperty
+	 */
+	private $geoContains;
+
+	/**
+	 * @var Property\GeoCoveredByProperty
+	 */
+	private $geoCoveredBy;
+
+	/**
+	 * @var Property\GeoCoversProperty
+	 */
+	private $geoCovers;
+
+	/**
+	 * @var Property\GeoCrossesProperty
+	 */
+	private $geoCrosses;
+
+	/**
+	 * @var Property\GeoDisjointProperty
+	 */
+	private $geoDisjoint;
+
+	/**
+	 * @var Property\GeoEqualsProperty
+	 */
+	private $geoEquals;
+
+	/**
+	 * @var Property\GeoIntersectsProperty
+	 */
+	private $geoIntersects;
+
+	/**
+	 * @var Property\GeoOverlapsProperty
+	 */
+	private $geoOverlaps;
+
+	/**
+	 * @var Property\GeoTouchesProperty
+	 */
+	private $geoTouches;
+
+	/**
+	 * @var Property\GeoWithinProperty
+	 */
+	private $geoWithin;
+
+	/**
 	 * @var Property\GlobalLocationNumberProperty
 	 */
 	private $globalLocationNumber;
+
+	/**
+	 * @var Property\HasCertificationProperty
+	 */
+	private $hasCertification;
 
 	/**
 	 * @var Property\HasMapProperty
@@ -92,9 +148,24 @@ class PlaceType extends ThingType {
 	private $isicV4;
 
 	/**
+	 * @var Property\KeywordsProperty
+	 */
+	private $keywords;
+
+	/**
+	 * @var Property\LatitudeProperty
+	 */
+	private $latitude;
+
+	/**
 	 * @var Property\LogoProperty
 	 */
 	private $logo;
+
+	/**
+	 * @var Property\LongitudeProperty
+	 */
+	private $longitude;
 
 	/**
 	 * @var Property\MaximumAttendeeCapacityProperty
@@ -122,6 +193,11 @@ class PlaceType extends ThingType {
 	private $review;
 
 	/**
+	 * @var Property\SloganProperty
+	 */
+	private $slogan;
+
+	/**
 	 * @var Property\SmokingAllowedProperty
 	 */
 	private $smokingAllowed;
@@ -138,7 +214,7 @@ class PlaceType extends ThingType {
 
 	/**
 	 * Get additional property.
-	 * 
+	 *
 	 * @return Property\AdditionalProperty
 	 */
 	public function getAdditionalProperty() {
@@ -147,7 +223,7 @@ class PlaceType extends ThingType {
 
 	/**
 	 * Get address.
-	 * 
+	 *
 	 * @return Property\AddressProperty
 	 */
 	public function getAddress() {
@@ -156,7 +232,7 @@ class PlaceType extends ThingType {
 
 	/**
 	 * Get aggregate rating.
-	 * 
+	 *
 	 * @return Property\AggregateRatingProperty
 	 */
 	public function getAggregateRating() {
@@ -165,7 +241,7 @@ class PlaceType extends ThingType {
 
 	/**
 	 * Get amenity feature.
-	 * 
+	 *
 	 * @return Property\AmenityFeatureProperty
 	 */
 	public function getAmenityFeature() {
@@ -174,7 +250,7 @@ class PlaceType extends ThingType {
 
 	/**
 	 * Get branch code.
-	 * 
+	 *
 	 * @return Property\BranchCodeProperty
 	 */
 	public function getBranchCode() {
@@ -183,7 +259,7 @@ class PlaceType extends ThingType {
 
 	/**
 	 * Get contained in place.
-	 * 
+	 *
 	 * @return Property\ContainedInPlaceProperty
 	 */
 	public function getContainedInPlace() {
@@ -192,7 +268,7 @@ class PlaceType extends ThingType {
 
 	/**
 	 * Get contains place.
-	 * 
+	 *
 	 * @return Property\ContainsPlaceProperty
 	 */
 	public function getContainsPlace() {
@@ -201,7 +277,7 @@ class PlaceType extends ThingType {
 
 	/**
 	 * Get event.
-	 * 
+	 *
 	 * @return Property\EventProperty
 	 */
 	public function getEvent() {
@@ -210,7 +286,7 @@ class PlaceType extends ThingType {
 
 	/**
 	 * Get fax number.
-	 * 
+	 *
 	 * @return Property\FaxNumberProperty
 	 */
 	public function getFaxNumber() {
@@ -219,7 +295,7 @@ class PlaceType extends ThingType {
 
 	/**
 	 * Get geo.
-	 * 
+	 *
 	 * @return Property\GeoProperty
 	 */
 	public function getGeo() {
@@ -227,8 +303,98 @@ class PlaceType extends ThingType {
 	}
 
 	/**
+	 * Get geo contains.
+	 *
+	 * @return Property\GeoContainsProperty
+	 */
+	public function getGeoContains() {
+		return $this->geoContains;
+	}
+
+	/**
+	 * Get geo covered by.
+	 *
+	 * @return Property\GeoCoveredByProperty
+	 */
+	public function getGeoCoveredBy() {
+		return $this->geoCoveredBy;
+	}
+
+	/**
+	 * Get geo covers.
+	 *
+	 * @return Property\GeoCoversProperty
+	 */
+	public function getGeoCovers() {
+		return $this->geoCovers;
+	}
+
+	/**
+	 * Get geo crosses.
+	 *
+	 * @return Property\GeoCrossesProperty
+	 */
+	public function getGeoCrosses() {
+		return $this->geoCrosses;
+	}
+
+	/**
+	 * Get geo disjoint.
+	 *
+	 * @return Property\GeoDisjointProperty
+	 */
+	public function getGeoDisjoint() {
+		return $this->geoDisjoint;
+	}
+
+	/**
+	 * Get geo equals.
+	 *
+	 * @return Property\GeoEqualsProperty
+	 */
+	public function getGeoEquals() {
+		return $this->geoEquals;
+	}
+
+	/**
+	 * Get geo intersects.
+	 *
+	 * @return Property\GeoIntersectsProperty
+	 */
+	public function getGeoIntersects() {
+		return $this->geoIntersects;
+	}
+
+	/**
+	 * Get geo overlaps.
+	 *
+	 * @return Property\GeoOverlapsProperty
+	 */
+	public function getGeoOverlaps() {
+		return $this->geoOverlaps;
+	}
+
+	/**
+	 * Get geo touches.
+	 *
+	 * @return Property\GeoTouchesProperty
+	 */
+	public function getGeoTouches() {
+		return $this->geoTouches;
+	}
+
+	/**
+	 * Get geo within.
+	 *
+	 * @return Property\GeoWithinProperty
+	 */
+	public function getGeoWithin() {
+		return $this->geoWithin;
+	}
+
+	/**
 	 * Get global location number.
-	 * 
+	 *
 	 * @return Property\GlobalLocationNumberProperty
 	 */
 	public function getGlobalLocationNumber() {
@@ -236,8 +402,17 @@ class PlaceType extends ThingType {
 	}
 
 	/**
+	 * Get has certification.
+	 *
+	 * @return Property\HasCertificationProperty
+	 */
+	public function getHasCertification() {
+		return $this->hasCertification;
+	}
+
+	/**
 	 * Get has map.
-	 * 
+	 *
 	 * @return Property\HasMapProperty
 	 */
 	public function getHasMap() {
@@ -246,7 +421,7 @@ class PlaceType extends ThingType {
 
 	/**
 	 * Get is accessible for free.
-	 * 
+	 *
 	 * @return Property\IsAccessibleForFreeProperty
 	 */
 	public function getIsAccessibleForFree() {
@@ -255,7 +430,7 @@ class PlaceType extends ThingType {
 
 	/**
 	 * Get isicv4.
-	 * 
+	 *
 	 * @return Property\IsicV4Property
 	 */
 	public function getIsicV4() {
@@ -263,8 +438,26 @@ class PlaceType extends ThingType {
 	}
 
 	/**
+	 * Get keywords.
+	 *
+	 * @return Property\KeywordsProperty
+	 */
+	public function getKeywords() {
+		return $this->keywords;
+	}
+
+	/**
+	 * Get latitude.
+	 *
+	 * @return Property\LatitudeProperty
+	 */
+	public function getLatitude() {
+		return $this->latitude;
+	}
+
+	/**
 	 * Get logo.
-	 * 
+	 *
 	 * @return Property\LogoProperty
 	 */
 	public function getLogo() {
@@ -272,8 +465,17 @@ class PlaceType extends ThingType {
 	}
 
 	/**
+	 * Get longitude.
+	 *
+	 * @return Property\LongitudeProperty
+	 */
+	public function getLongitude() {
+		return $this->longitude;
+	}
+
+	/**
 	 * Get maximum attendee capacity.
-	 * 
+	 *
 	 * @return Property\MaximumAttendeeCapacityProperty
 	 */
 	public function getMaximumAttendeeCapacity() {
@@ -282,7 +484,7 @@ class PlaceType extends ThingType {
 
 	/**
 	 * Get opening hours specification.
-	 * 
+	 *
 	 * @return Property\OpeningHoursSpecificationProperty
 	 */
 	public function getOpeningHoursSpecification() {
@@ -291,7 +493,7 @@ class PlaceType extends ThingType {
 
 	/**
 	 * Get photo.
-	 * 
+	 *
 	 * @return Property\PhotoProperty
 	 */
 	public function getPhoto() {
@@ -300,7 +502,7 @@ class PlaceType extends ThingType {
 
 	/**
 	 * Get public access.
-	 * 
+	 *
 	 * @return Property\PublicAccessProperty
 	 */
 	public function getPublicAccess() {
@@ -309,7 +511,7 @@ class PlaceType extends ThingType {
 
 	/**
 	 * Get review.
-	 * 
+	 *
 	 * @return Property\ReviewProperty
 	 */
 	public function getReview() {
@@ -318,7 +520,7 @@ class PlaceType extends ThingType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -326,8 +528,17 @@ class PlaceType extends ThingType {
 	}
 
 	/**
+	 * Get slogan.
+	 *
+	 * @return Property\SloganProperty
+	 */
+	public function getSlogan() {
+		return $this->slogan;
+	}
+
+	/**
 	 * Get smoking allowed.
-	 * 
+	 *
 	 * @return Property\SmokingAllowedProperty
 	 */
 	public function getSmokingAllowed() {
@@ -336,7 +547,7 @@ class PlaceType extends ThingType {
 
 	/**
 	 * Get special opening hours specification.
-	 * 
+	 *
 	 * @return Property\SpecialOpeningHoursSpecificationProperty
 	 */
 	public function getSpecialOpeningHoursSpecification() {
@@ -345,7 +556,7 @@ class PlaceType extends ThingType {
 
 	/**
 	 * Get telephone.
-	 * 
+	 *
 	 * @return Property\TelephoneProperty
 	 */
 	public function getTelephone() {
@@ -354,7 +565,7 @@ class PlaceType extends ThingType {
 
 	/**
 	 * Set additional property.
-	 * 
+	 *
 	 * @param Property\AdditionalProperty $additionalProperty
 	 * @return PlaceType
 	 */
@@ -366,7 +577,7 @@ class PlaceType extends ThingType {
 
 	/**
 	 * Set address.
-	 * 
+	 *
 	 * @param Property\AddressProperty $address
 	 * @return PlaceType
 	 */
@@ -378,7 +589,7 @@ class PlaceType extends ThingType {
 
 	/**
 	 * Set aggregate rating.
-	 * 
+	 *
 	 * @param Property\AggregateRatingProperty $aggregateRating
 	 * @return PlaceType
 	 */
@@ -390,7 +601,7 @@ class PlaceType extends ThingType {
 
 	/**
 	 * Set amenity feature.
-	 * 
+	 *
 	 * @param Property\AmenityFeatureProperty $amenityFeature
 	 * @return PlaceType
 	 */
@@ -402,7 +613,7 @@ class PlaceType extends ThingType {
 
 	/**
 	 * Set branch code.
-	 * 
+	 *
 	 * @param Property\BranchCodeProperty $branchCode
 	 * @return PlaceType
 	 */
@@ -414,7 +625,7 @@ class PlaceType extends ThingType {
 
 	/**
 	 * Set contained in place.
-	 * 
+	 *
 	 * @param Property\ContainedInPlaceProperty $containedInPlace
 	 * @return PlaceType
 	 */
@@ -426,7 +637,7 @@ class PlaceType extends ThingType {
 
 	/**
 	 * Set contains place.
-	 * 
+	 *
 	 * @param Property\ContainsPlaceProperty $containsPlace
 	 * @return PlaceType
 	 */
@@ -438,7 +649,7 @@ class PlaceType extends ThingType {
 
 	/**
 	 * Set event.
-	 * 
+	 *
 	 * @param Property\EventProperty $event
 	 * @return PlaceType
 	 */
@@ -450,7 +661,7 @@ class PlaceType extends ThingType {
 
 	/**
 	 * Set fax number.
-	 * 
+	 *
 	 * @param Property\FaxNumberProperty $faxNumber
 	 * @return PlaceType
 	 */
@@ -462,7 +673,7 @@ class PlaceType extends ThingType {
 
 	/**
 	 * Set geo.
-	 * 
+	 *
 	 * @param Property\GeoProperty $geo
 	 * @return PlaceType
 	 */
@@ -473,8 +684,128 @@ class PlaceType extends ThingType {
 	}
 
 	/**
+	 * Set geo contains.
+	 *
+	 * @param Property\GeoContainsProperty $geoContains
+	 * @return PlaceType
+	 */
+	public function setGeoContains(Property\GeoContainsProperty $geoContains) {
+		$this->geoContains = $geoContains;
+
+		return $this;
+	}
+
+	/**
+	 * Set geo covered by.
+	 *
+	 * @param Property\GeoCoveredByProperty $geoCoveredBy
+	 * @return PlaceType
+	 */
+	public function setGeoCoveredBy(Property\GeoCoveredByProperty $geoCoveredBy) {
+		$this->geoCoveredBy = $geoCoveredBy;
+
+		return $this;
+	}
+
+	/**
+	 * Set geo covers.
+	 *
+	 * @param Property\GeoCoversProperty $geoCovers
+	 * @return PlaceType
+	 */
+	public function setGeoCovers(Property\GeoCoversProperty $geoCovers) {
+		$this->geoCovers = $geoCovers;
+
+		return $this;
+	}
+
+	/**
+	 * Set geo crosses.
+	 *
+	 * @param Property\GeoCrossesProperty $geoCrosses
+	 * @return PlaceType
+	 */
+	public function setGeoCrosses(Property\GeoCrossesProperty $geoCrosses) {
+		$this->geoCrosses = $geoCrosses;
+
+		return $this;
+	}
+
+	/**
+	 * Set geo disjoint.
+	 *
+	 * @param Property\GeoDisjointProperty $geoDisjoint
+	 * @return PlaceType
+	 */
+	public function setGeoDisjoint(Property\GeoDisjointProperty $geoDisjoint) {
+		$this->geoDisjoint = $geoDisjoint;
+
+		return $this;
+	}
+
+	/**
+	 * Set geo equals.
+	 *
+	 * @param Property\GeoEqualsProperty $geoEquals
+	 * @return PlaceType
+	 */
+	public function setGeoEquals(Property\GeoEqualsProperty $geoEquals) {
+		$this->geoEquals = $geoEquals;
+
+		return $this;
+	}
+
+	/**
+	 * Set geo intersects.
+	 *
+	 * @param Property\GeoIntersectsProperty $geoIntersects
+	 * @return PlaceType
+	 */
+	public function setGeoIntersects(Property\GeoIntersectsProperty $geoIntersects) {
+		$this->geoIntersects = $geoIntersects;
+
+		return $this;
+	}
+
+	/**
+	 * Set geo overlaps.
+	 *
+	 * @param Property\GeoOverlapsProperty $geoOverlaps
+	 * @return PlaceType
+	 */
+	public function setGeoOverlaps(Property\GeoOverlapsProperty $geoOverlaps) {
+		$this->geoOverlaps = $geoOverlaps;
+
+		return $this;
+	}
+
+	/**
+	 * Set geo touches.
+	 *
+	 * @param Property\GeoTouchesProperty $geoTouches
+	 * @return PlaceType
+	 */
+	public function setGeoTouches(Property\GeoTouchesProperty $geoTouches) {
+		$this->geoTouches = $geoTouches;
+
+		return $this;
+	}
+
+	/**
+	 * Set geo within.
+	 *
+	 * @param Property\GeoWithinProperty $geoWithin
+	 * @return PlaceType
+	 */
+	public function setGeoWithin(Property\GeoWithinProperty $geoWithin) {
+		$this->geoWithin = $geoWithin;
+
+		return $this;
+	}
+
+	/**
 	 * Set global location number.
-	 * 
+	 *
 	 * @param Property\GlobalLocationNumberProperty $globalLocationNumber
 	 * @return PlaceType
 	 */
@@ -485,8 +816,20 @@ class PlaceType extends ThingType {
 	}
 
 	/**
+	 * Set has certification.
+	 *
+	 * @param Property\HasCertificationProperty $hasCertification
+	 * @return PlaceType
+	 */
+	public function setHasCertification(Property\HasCertificationProperty $hasCertification) {
+		$this->hasCertification = $hasCertification;
+
+		return $this;
+	}
+
+	/**
 	 * Set has map.
-	 * 
+	 *
 	 * @param Property\HasMapProperty $hasMap
 	 * @return PlaceType
 	 */
@@ -498,7 +841,7 @@ class PlaceType extends ThingType {
 
 	/**
 	 * Set is accessible for free.
-	 * 
+	 *
 	 * @param Property\IsAccessibleForFreeProperty $isAccessibleForFree
 	 * @return PlaceType
 	 */
@@ -510,7 +853,7 @@ class PlaceType extends ThingType {
 
 	/**
 	 * Set isicv4.
-	 * 
+	 *
 	 * @param Property\IsicV4Property $isicV4
 	 * @return PlaceType
 	 */
@@ -521,8 +864,32 @@ class PlaceType extends ThingType {
 	}
 
 	/**
+	 * Set keywords.
+	 *
+	 * @param Property\KeywordsProperty $keywords
+	 * @return PlaceType
+	 */
+	public function setKeywords(Property\KeywordsProperty $keywords) {
+		$this->keywords = $keywords;
+
+		return $this;
+	}
+
+	/**
+	 * Set latitude.
+	 *
+	 * @param Property\LatitudeProperty $latitude
+	 * @return PlaceType
+	 */
+	public function setLatitude(Property\LatitudeProperty $latitude) {
+		$this->latitude = $latitude;
+
+		return $this;
+	}
+
+	/**
 	 * Set logo.
-	 * 
+	 *
 	 * @param Property\LogoProperty $logo
 	 * @return PlaceType
 	 */
@@ -533,8 +900,20 @@ class PlaceType extends ThingType {
 	}
 
 	/**
+	 * Set longitude.
+	 *
+	 * @param Property\LongitudeProperty $longitude
+	 * @return PlaceType
+	 */
+	public function setLongitude(Property\LongitudeProperty $longitude) {
+		$this->longitude = $longitude;
+
+		return $this;
+	}
+
+	/**
 	 * Set maximum attendee capacity.
-	 * 
+	 *
 	 * @param Property\MaximumAttendeeCapacityProperty $maximumAttendeeCapacity
 	 * @return PlaceType
 	 */
@@ -546,7 +925,7 @@ class PlaceType extends ThingType {
 
 	/**
 	 * Set opening hours specification.
-	 * 
+	 *
 	 * @param Property\OpeningHoursSpecificationProperty $openingHoursSpecification
 	 * @return PlaceType
 	 */
@@ -558,7 +937,7 @@ class PlaceType extends ThingType {
 
 	/**
 	 * Set photo.
-	 * 
+	 *
 	 * @param Property\PhotoProperty $photo
 	 * @return PlaceType
 	 */
@@ -570,7 +949,7 @@ class PlaceType extends ThingType {
 
 	/**
 	 * Set public access.
-	 * 
+	 *
 	 * @param Property\PublicAccessProperty $publicAccess
 	 * @return PlaceType
 	 */
@@ -582,7 +961,7 @@ class PlaceType extends ThingType {
 
 	/**
 	 * Set review.
-	 * 
+	 *
 	 * @param Property\ReviewProperty $review
 	 * @return PlaceType
 	 */
@@ -593,8 +972,20 @@ class PlaceType extends ThingType {
 	}
 
 	/**
+	 * Set slogan.
+	 *
+	 * @param Property\SloganProperty $slogan
+	 * @return PlaceType
+	 */
+	public function setSlogan(Property\SloganProperty $slogan) {
+		$this->slogan = $slogan;
+
+		return $this;
+	}
+
+	/**
 	 * Set smoking allowed.
-	 * 
+	 *
 	 * @param Property\SmokingAllowedProperty $smokingAllowed
 	 * @return PlaceType
 	 */
@@ -606,7 +997,7 @@ class PlaceType extends ThingType {
 
 	/**
 	 * Set special opening hours specification.
-	 * 
+	 *
 	 * @param Property\SpecialOpeningHoursSpecificationProperty $specialOpeningHoursSpecification
 	 * @return PlaceType
 	 */
@@ -618,7 +1009,7 @@ class PlaceType extends ThingType {
 
 	/**
 	 * Set telephone.
-	 * 
+	 *
 	 * @param Property\TelephoneProperty $telephone
 	 * @return PlaceType
 	 */

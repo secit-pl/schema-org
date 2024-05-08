@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class RadioEpisodeType.
+ * A radio episode which can be part of a series or season.
  * 
+ * @method RadioEpisodeType setAbout(Property\AboutProperty $about)
  * @method RadioEpisodeType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method RadioEpisodeType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method RadioEpisodeType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -34,6 +35,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method RadioEpisodeType setContributor(Property\ContributorProperty $contributor)
  * @method RadioEpisodeType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method RadioEpisodeType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method RadioEpisodeType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method RadioEpisodeType setCreator(Property\CreatorProperty $creator)
  * @method RadioEpisodeType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method RadioEpisodeType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -42,14 +44,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method RadioEpisodeType setDirector(Property\DirectorProperty $director)
  * @method RadioEpisodeType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
  * @method RadioEpisodeType setDiscussionUrl(Property\DiscussionUrlProperty $discussionUrl)
+ * @method RadioEpisodeType setDuration(Property\DurationProperty $duration)
  * @method RadioEpisodeType setEditor(Property\EditorProperty $editor)
  * @method RadioEpisodeType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method RadioEpisodeType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method RadioEpisodeType setEncoding(Property\EncodingProperty $encoding)
+ * @method RadioEpisodeType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method RadioEpisodeType setEpisodeNumber(Property\EpisodeNumberProperty $episodeNumber)
  * @method RadioEpisodeType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method RadioEpisodeType setExpires(Property\ExpiresProperty $expires)
- * @method RadioEpisodeType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method RadioEpisodeType setFunder(Property\FunderProperty $funder)
  * @method RadioEpisodeType setGenre(Property\GenreProperty $genre)
  * @method RadioEpisodeType setHasPart(Property\HasPartProperty $hasPart)
@@ -80,9 +83,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method RadioEpisodeType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method RadioEpisodeType setProducer(Property\ProducerProperty $producer)
  * @method RadioEpisodeType setProductionCompany(Property\ProductionCompanyProperty $productionCompany)
- * @method RadioEpisodeType setProvider(Property\ProviderProperty $provider)
  * @method RadioEpisodeType setPublication(Property\PublicationProperty $publication)
  * @method RadioEpisodeType setPublisher(Property\PublisherProperty $publisher)
+ * @method RadioEpisodeType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method RadioEpisodeType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method RadioEpisodeType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method RadioEpisodeType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -90,25 +93,31 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method RadioEpisodeType setSameAs(Property\SameAsProperty $sameAs)
  * @method RadioEpisodeType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method RadioEpisodeType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method RadioEpisodeType setSpatial(Property\SpatialProperty $spatial)
  * @method RadioEpisodeType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method RadioEpisodeType setSponsor(Property\SponsorProperty $sponsor)
+ * @method RadioEpisodeType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method RadioEpisodeType setTemporal(Property\TemporalProperty $temporal)
  * @method RadioEpisodeType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method RadioEpisodeType setText(Property\TextProperty $text)
+ * @method RadioEpisodeType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method RadioEpisodeType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method RadioEpisodeType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
  * @method RadioEpisodeType setTrailer(Property\TrailerProperty $trailer)
+ * @method RadioEpisodeType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method RadioEpisodeType setTranslator(Property\TranslatorProperty $translator)
  * @method RadioEpisodeType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method RadioEpisodeType setUrl(Property\UrlProperty $url)
  * @method RadioEpisodeType setVersion(Property\VersionProperty $version)
  * @method RadioEpisodeType setVideo(Property\VideoProperty $video)
  * @method RadioEpisodeType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method RadioEpisodeType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class RadioEpisodeType extends EpisodeType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

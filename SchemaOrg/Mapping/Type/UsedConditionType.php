@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class UsedConditionType.
+ * Indicates that the item is used.
  * 
  * @method UsedConditionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method UsedConditionType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method UsedConditionType setName(Property\NameProperty $name)
  * @method UsedConditionType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method UsedConditionType setSameAs(Property\SameAsProperty $sameAs)
+ * @method UsedConditionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method UsedConditionType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method UsedConditionType setUrl(Property\UrlProperty $url)
  */
 class UsedConditionType extends OfferItemConditionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

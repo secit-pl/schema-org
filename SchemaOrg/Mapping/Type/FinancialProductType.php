@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class FinancialProductType.
+ * A product provided to consumers and businesses by financial institutions such as banks, insurance companies, brokerage firms, consumer finance companies, and investment companies which comprise the financial services industry.
  * 
  * @method FinancialProductType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method FinancialProductType setAggregateRating(Property\AggregateRatingProperty $aggregateRating)
@@ -19,6 +19,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method FinancialProductType setCategory(Property\CategoryProperty $category)
  * @method FinancialProductType setDescription(Property\DescriptionProperty $description)
  * @method FinancialProductType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
+ * @method FinancialProductType setHasCertification(Property\HasCertificationProperty $hasCertification)
  * @method FinancialProductType setHasOfferCatalog(Property\HasOfferCatalogProperty $hasOfferCatalog)
  * @method FinancialProductType setHoursAvailable(Property\HoursAvailableProperty $hoursAvailable)
  * @method FinancialProductType setIdentifier(Property\IdentifierProperty $identifier)
@@ -30,12 +31,13 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method FinancialProductType setName(Property\NameProperty $name)
  * @method FinancialProductType setOffers(Property\OffersProperty $offers)
  * @method FinancialProductType setPotentialAction(Property\PotentialActionProperty $potentialAction)
- * @method FinancialProductType setProvider(Property\ProviderProperty $provider)
  * @method FinancialProductType setProviderMobility(Property\ProviderMobilityProperty $providerMobility)
  * @method FinancialProductType setReview(Property\ReviewProperty $review)
  * @method FinancialProductType setSameAs(Property\SameAsProperty $sameAs)
  * @method FinancialProductType setServiceOutput(Property\ServiceOutputProperty $serviceOutput)
  * @method FinancialProductType setServiceType(Property\ServiceTypeProperty $serviceType)
+ * @method FinancialProductType setSlogan(Property\SloganProperty $slogan)
+ * @method FinancialProductType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method FinancialProductType setUrl(Property\UrlProperty $url)
  */
 class FinancialProductType extends ServiceType {
@@ -57,7 +59,7 @@ class FinancialProductType extends ServiceType {
 
 	/**
 	 * Get annual percentage rate.
-	 * 
+	 *
 	 * @return Property\AnnualPercentageRateProperty
 	 */
 	public function getAnnualPercentageRate() {
@@ -66,7 +68,7 @@ class FinancialProductType extends ServiceType {
 
 	/**
 	 * Get fees and commissions specification.
-	 * 
+	 *
 	 * @return Property\FeesAndCommissionsSpecificationProperty
 	 */
 	public function getFeesAndCommissionsSpecification() {
@@ -75,7 +77,7 @@ class FinancialProductType extends ServiceType {
 
 	/**
 	 * Get interest rate.
-	 * 
+	 *
 	 * @return Property\InterestRateProperty
 	 */
 	public function getInterestRate() {
@@ -84,7 +86,7 @@ class FinancialProductType extends ServiceType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -93,7 +95,7 @@ class FinancialProductType extends ServiceType {
 
 	/**
 	 * Set annual percentage rate.
-	 * 
+	 *
 	 * @param Property\AnnualPercentageRateProperty $annualPercentageRate
 	 * @return FinancialProductType
 	 */
@@ -105,7 +107,7 @@ class FinancialProductType extends ServiceType {
 
 	/**
 	 * Set fees and commissions specification.
-	 * 
+	 *
 	 * @param Property\FeesAndCommissionsSpecificationProperty $feesAndCommissionsSpecification
 	 * @return FinancialProductType
 	 */
@@ -117,7 +119,7 @@ class FinancialProductType extends ServiceType {
 
 	/**
 	 * Set interest rate.
-	 * 
+	 *
 	 * @param Property\InterestRateProperty $interestRate
 	 * @return FinancialProductType
 	 */

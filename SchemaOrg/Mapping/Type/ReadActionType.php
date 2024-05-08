@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ReadActionType.
+ * The act of consuming written content.
  * 
+ * @method ReadActionType setActionAccessibilityRequirement(Property\ActionAccessibilityRequirementProperty $actionAccessibilityRequirement)
  * @method ReadActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method ReadActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method ReadActionType setAgent(Property\AgentProperty $agent)
@@ -28,6 +29,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ReadActionType setResult(Property\ResultProperty $result)
  * @method ReadActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method ReadActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method ReadActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method ReadActionType setTarget(Property\TargetProperty $target)
  * @method ReadActionType setUrl(Property\UrlProperty $url)
  */
@@ -35,7 +37,7 @@ class ReadActionType extends ConsumeActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

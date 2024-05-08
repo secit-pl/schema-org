@@ -3,15 +3,15 @@
 namespace SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * Class FalseType.
+ * The boolean value false.
  * 
  * @method FalseType setValue($value)
  */
-class FalseType extends BooleanType {
+class FalseType extends DataType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class PreSaleType.
+ * Indicates that the item is available for ordering and delivery before general availability.
  * 
  * @method PreSaleType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method PreSaleType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method PreSaleType setName(Property\NameProperty $name)
  * @method PreSaleType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method PreSaleType setSameAs(Property\SameAsProperty $sameAs)
+ * @method PreSaleType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method PreSaleType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method PreSaleType setUrl(Property\UrlProperty $url)
  */
 class PreSaleType extends ItemAvailabilityType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

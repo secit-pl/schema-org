@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * FoodEstablishmentProperty class.
+ * A sub property of location. The specific food establishment where the action occurred.
  * 
  * @method FoodEstablishmentProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class FoodEstablishmentProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class FoodEstablishmentProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

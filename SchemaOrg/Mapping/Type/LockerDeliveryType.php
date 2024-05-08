@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class LockerDeliveryType.
+ * A DeliveryMethod in which an item is made available via locker.
  * 
  * @method LockerDeliveryType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method LockerDeliveryType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method LockerDeliveryType setName(Property\NameProperty $name)
  * @method LockerDeliveryType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method LockerDeliveryType setSameAs(Property\SameAsProperty $sameAs)
+ * @method LockerDeliveryType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method LockerDeliveryType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method LockerDeliveryType setUrl(Property\UrlProperty $url)
  */
 class LockerDeliveryType extends DeliveryMethodType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

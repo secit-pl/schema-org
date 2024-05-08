@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * ValueAddedTaxIncludedProperty class.
+ * Specifies whether the applicable value-added tax (VAT) is included in the price specification or not.
  * 
  * @method ValueAddedTaxIncludedProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class ValueAddedTaxIncludedProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class ValueAddedTaxIncludedProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class CommunicateActionType.
+ * The act of conveying information to another person via a communication medium (instrument) such as speech, email, or telephone conversation.
  * 
  * @method CommunicateActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method CommunicateActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,10 +27,16 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method CommunicateActionType setResult(Property\ResultProperty $result)
  * @method CommunicateActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method CommunicateActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method CommunicateActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method CommunicateActionType setTarget(Property\TargetProperty $target)
  * @method CommunicateActionType setUrl(Property\UrlProperty $url)
  */
 class CommunicateActionType extends InteractActionType {
+
+	/**
+	 * @var Property\AboutProperty
+	 */
+	private $about;
 
 	/**
 	 * @var Property\InLanguageProperty
@@ -43,8 +49,17 @@ class CommunicateActionType extends InteractActionType {
 	private $recipient;
 
 	/**
+	 * Get about.
+	 *
+	 * @return Property\AboutProperty
+	 */
+	public function getAbout() {
+		return $this->about;
+	}
+
+	/**
 	 * Get in language.
-	 * 
+	 *
 	 * @return Property\InLanguageProperty
 	 */
 	public function getInLanguage() {
@@ -53,7 +68,7 @@ class CommunicateActionType extends InteractActionType {
 
 	/**
 	 * Get recipient.
-	 * 
+	 *
 	 * @return Property\RecipientProperty
 	 */
 	public function getRecipient() {
@@ -62,7 +77,7 @@ class CommunicateActionType extends InteractActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -70,8 +85,20 @@ class CommunicateActionType extends InteractActionType {
 	}
 
 	/**
+	 * Set about.
+	 *
+	 * @param Property\AboutProperty $about
+	 * @return CommunicateActionType
+	 */
+	public function setAbout(Property\AboutProperty $about) {
+		$this->about = $about;
+
+		return $this;
+	}
+
+	/**
 	 * Set in language.
-	 * 
+	 *
 	 * @param Property\InLanguageProperty $inLanguage
 	 * @return CommunicateActionType
 	 */
@@ -83,7 +110,7 @@ class CommunicateActionType extends InteractActionType {
 
 	/**
 	 * Set recipient.
-	 * 
+	 *
 	 * @param Property\RecipientProperty $recipient
 	 * @return CommunicateActionType
 	 */

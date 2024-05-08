@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class CheckActionType.
+ * An agent inspects, determines, investigates, inquires, or examines an object's accuracy, quality, condition, or state.
  * 
  * @method CheckActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method CheckActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method CheckActionType setResult(Property\ResultProperty $result)
  * @method CheckActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method CheckActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method CheckActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method CheckActionType setTarget(Property\TargetProperty $target)
  * @method CheckActionType setUrl(Property\UrlProperty $url)
  */
@@ -34,7 +35,7 @@ class CheckActionType extends FindActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

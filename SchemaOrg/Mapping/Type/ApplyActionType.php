@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ApplyActionType.
+ * The act of registering to an organization/service without the guarantee to receive it. Related actions: RegisterAction: Unlike RegisterAction, ApplyAction has no guarantees that the application will be accepted.
  * 
  * @method ApplyActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method ApplyActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ApplyActionType setResult(Property\ResultProperty $result)
  * @method ApplyActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method ApplyActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method ApplyActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method ApplyActionType setTarget(Property\TargetProperty $target)
  * @method ApplyActionType setUrl(Property\UrlProperty $url)
  */
@@ -34,7 +35,7 @@ class ApplyActionType extends OrganizeActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

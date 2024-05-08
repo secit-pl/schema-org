@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * RepresentativeOfPageProperty class.
+ * Indicates whether this image is representative of the content of the page.
  * 
  * @method RepresentativeOfPageProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class RepresentativeOfPageProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class RepresentativeOfPageProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

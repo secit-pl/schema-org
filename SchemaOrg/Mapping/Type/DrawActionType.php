@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class DrawActionType.
+ * The act of producing a visual/graphical representation of an object, typically with a pen/pencil and paper as instruments.
  * 
  * @method DrawActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method DrawActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method DrawActionType setResult(Property\ResultProperty $result)
  * @method DrawActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method DrawActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method DrawActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method DrawActionType setTarget(Property\TargetProperty $target)
  * @method DrawActionType setUrl(Property\UrlProperty $url)
  */
@@ -34,7 +35,7 @@ class DrawActionType extends CreateActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ActionType.
+ * An action performed by a direct agent and indirect participants upon a direct object. Optionally happens at a location with the help of an inanimate instrument. The execution of the action may produce a result. Specific action sub-type documentation specifies the exact expectation of each argument/role. See also blog post and Actions overview document.
  * 
  * @method ActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method ActionType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,6 +17,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ActionType setName(Property\NameProperty $name)
  * @method ActionType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method ActionType setSameAs(Property\SameAsProperty $sameAs)
+ * @method ActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method ActionType setUrl(Property\UrlProperty $url)
  */
 class ActionType extends ThingType {
@@ -78,7 +79,7 @@ class ActionType extends ThingType {
 
 	/**
 	 * Get action status.
-	 * 
+	 *
 	 * @return Property\ActionStatusProperty
 	 */
 	public function getActionStatus() {
@@ -87,7 +88,7 @@ class ActionType extends ThingType {
 
 	/**
 	 * Get agent.
-	 * 
+	 *
 	 * @return Property\AgentProperty
 	 */
 	public function getAgent() {
@@ -96,7 +97,7 @@ class ActionType extends ThingType {
 
 	/**
 	 * Get end time.
-	 * 
+	 *
 	 * @return Property\EndTimeProperty
 	 */
 	public function getEndTime() {
@@ -105,7 +106,7 @@ class ActionType extends ThingType {
 
 	/**
 	 * Get error.
-	 * 
+	 *
 	 * @return Property\ErrorProperty
 	 */
 	public function getError() {
@@ -114,7 +115,7 @@ class ActionType extends ThingType {
 
 	/**
 	 * Get instrument.
-	 * 
+	 *
 	 * @return Property\InstrumentProperty
 	 */
 	public function getInstrument() {
@@ -123,7 +124,7 @@ class ActionType extends ThingType {
 
 	/**
 	 * Get location.
-	 * 
+	 *
 	 * @return Property\LocationProperty
 	 */
 	public function getLocation() {
@@ -132,7 +133,7 @@ class ActionType extends ThingType {
 
 	/**
 	 * Get object.
-	 * 
+	 *
 	 * @return Property\ObjectProperty
 	 */
 	public function getObject() {
@@ -141,7 +142,7 @@ class ActionType extends ThingType {
 
 	/**
 	 * Get participant.
-	 * 
+	 *
 	 * @return Property\ParticipantProperty
 	 */
 	public function getParticipant() {
@@ -150,7 +151,7 @@ class ActionType extends ThingType {
 
 	/**
 	 * Get result.
-	 * 
+	 *
 	 * @return Property\ResultProperty
 	 */
 	public function getResult() {
@@ -159,7 +160,7 @@ class ActionType extends ThingType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -168,7 +169,7 @@ class ActionType extends ThingType {
 
 	/**
 	 * Get start time.
-	 * 
+	 *
 	 * @return Property\StartTimeProperty
 	 */
 	public function getStartTime() {
@@ -177,7 +178,7 @@ class ActionType extends ThingType {
 
 	/**
 	 * Get target.
-	 * 
+	 *
 	 * @return Property\TargetProperty
 	 */
 	public function getTarget() {
@@ -186,7 +187,7 @@ class ActionType extends ThingType {
 
 	/**
 	 * Set action status.
-	 * 
+	 *
 	 * @param Property\ActionStatusProperty $actionStatus
 	 * @return ActionType
 	 */
@@ -198,7 +199,7 @@ class ActionType extends ThingType {
 
 	/**
 	 * Set agent.
-	 * 
+	 *
 	 * @param Property\AgentProperty $agent
 	 * @return ActionType
 	 */
@@ -210,7 +211,7 @@ class ActionType extends ThingType {
 
 	/**
 	 * Set end time.
-	 * 
+	 *
 	 * @param Property\EndTimeProperty $endTime
 	 * @return ActionType
 	 */
@@ -222,7 +223,7 @@ class ActionType extends ThingType {
 
 	/**
 	 * Set error.
-	 * 
+	 *
 	 * @param Property\ErrorProperty $error
 	 * @return ActionType
 	 */
@@ -234,7 +235,7 @@ class ActionType extends ThingType {
 
 	/**
 	 * Set instrument.
-	 * 
+	 *
 	 * @param Property\InstrumentProperty $instrument
 	 * @return ActionType
 	 */
@@ -246,7 +247,7 @@ class ActionType extends ThingType {
 
 	/**
 	 * Set location.
-	 * 
+	 *
 	 * @param Property\LocationProperty $location
 	 * @return ActionType
 	 */
@@ -258,7 +259,7 @@ class ActionType extends ThingType {
 
 	/**
 	 * Set object.
-	 * 
+	 *
 	 * @param Property\ObjectProperty $object
 	 * @return ActionType
 	 */
@@ -270,7 +271,7 @@ class ActionType extends ThingType {
 
 	/**
 	 * Set participant.
-	 * 
+	 *
 	 * @param Property\ParticipantProperty $participant
 	 * @return ActionType
 	 */
@@ -282,7 +283,7 @@ class ActionType extends ThingType {
 
 	/**
 	 * Set result.
-	 * 
+	 *
 	 * @param Property\ResultProperty $result
 	 * @return ActionType
 	 */
@@ -294,7 +295,7 @@ class ActionType extends ThingType {
 
 	/**
 	 * Set start time.
-	 * 
+	 *
 	 * @param Property\StartTimeProperty $startTime
 	 * @return ActionType
 	 */
@@ -306,7 +307,7 @@ class ActionType extends ThingType {
 
 	/**
 	 * Set target.
-	 * 
+	 *
 	 * @param Property\TargetProperty $target
 	 * @return ActionType
 	 */

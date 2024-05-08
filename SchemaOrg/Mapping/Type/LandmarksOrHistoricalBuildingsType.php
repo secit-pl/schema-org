@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class LandmarksOrHistoricalBuildingsType.
+ * An historical landmark or building.
  * 
  * @method LandmarksOrHistoricalBuildingsType setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method LandmarksOrHistoricalBuildingsType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -21,13 +21,27 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method LandmarksOrHistoricalBuildingsType setEvent(Property\EventProperty $event)
  * @method LandmarksOrHistoricalBuildingsType setFaxNumber(Property\FaxNumberProperty $faxNumber)
  * @method LandmarksOrHistoricalBuildingsType setGeo(Property\GeoProperty $geo)
+ * @method LandmarksOrHistoricalBuildingsType setGeoContains(Property\GeoContainsProperty $geoContains)
+ * @method LandmarksOrHistoricalBuildingsType setGeoCoveredBy(Property\GeoCoveredByProperty $geoCoveredBy)
+ * @method LandmarksOrHistoricalBuildingsType setGeoCovers(Property\GeoCoversProperty $geoCovers)
+ * @method LandmarksOrHistoricalBuildingsType setGeoCrosses(Property\GeoCrossesProperty $geoCrosses)
+ * @method LandmarksOrHistoricalBuildingsType setGeoDisjoint(Property\GeoDisjointProperty $geoDisjoint)
+ * @method LandmarksOrHistoricalBuildingsType setGeoEquals(Property\GeoEqualsProperty $geoEquals)
+ * @method LandmarksOrHistoricalBuildingsType setGeoIntersects(Property\GeoIntersectsProperty $geoIntersects)
+ * @method LandmarksOrHistoricalBuildingsType setGeoOverlaps(Property\GeoOverlapsProperty $geoOverlaps)
+ * @method LandmarksOrHistoricalBuildingsType setGeoTouches(Property\GeoTouchesProperty $geoTouches)
+ * @method LandmarksOrHistoricalBuildingsType setGeoWithin(Property\GeoWithinProperty $geoWithin)
  * @method LandmarksOrHistoricalBuildingsType setGlobalLocationNumber(Property\GlobalLocationNumberProperty $globalLocationNumber)
+ * @method LandmarksOrHistoricalBuildingsType setHasCertification(Property\HasCertificationProperty $hasCertification)
  * @method LandmarksOrHistoricalBuildingsType setHasMap(Property\HasMapProperty $hasMap)
  * @method LandmarksOrHistoricalBuildingsType setIdentifier(Property\IdentifierProperty $identifier)
  * @method LandmarksOrHistoricalBuildingsType setImage(Property\ImageProperty $image)
  * @method LandmarksOrHistoricalBuildingsType setIsAccessibleForFree(Property\IsAccessibleForFreeProperty $isAccessibleForFree)
  * @method LandmarksOrHistoricalBuildingsType setIsicV4(Property\IsicV4Property $isicV4)
+ * @method LandmarksOrHistoricalBuildingsType setKeywords(Property\KeywordsProperty $keywords)
+ * @method LandmarksOrHistoricalBuildingsType setLatitude(Property\LatitudeProperty $latitude)
  * @method LandmarksOrHistoricalBuildingsType setLogo(Property\LogoProperty $logo)
+ * @method LandmarksOrHistoricalBuildingsType setLongitude(Property\LongitudeProperty $longitude)
  * @method LandmarksOrHistoricalBuildingsType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
  * @method LandmarksOrHistoricalBuildingsType setMaximumAttendeeCapacity(Property\MaximumAttendeeCapacityProperty $maximumAttendeeCapacity)
  * @method LandmarksOrHistoricalBuildingsType setName(Property\NameProperty $name)
@@ -37,8 +51,10 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method LandmarksOrHistoricalBuildingsType setPublicAccess(Property\PublicAccessProperty $publicAccess)
  * @method LandmarksOrHistoricalBuildingsType setReview(Property\ReviewProperty $review)
  * @method LandmarksOrHistoricalBuildingsType setSameAs(Property\SameAsProperty $sameAs)
+ * @method LandmarksOrHistoricalBuildingsType setSlogan(Property\SloganProperty $slogan)
  * @method LandmarksOrHistoricalBuildingsType setSmokingAllowed(Property\SmokingAllowedProperty $smokingAllowed)
  * @method LandmarksOrHistoricalBuildingsType setSpecialOpeningHoursSpecification(Property\SpecialOpeningHoursSpecificationProperty $specialOpeningHoursSpecification)
+ * @method LandmarksOrHistoricalBuildingsType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method LandmarksOrHistoricalBuildingsType setTelephone(Property\TelephoneProperty $telephone)
  * @method LandmarksOrHistoricalBuildingsType setUrl(Property\UrlProperty $url)
  */
@@ -46,7 +62,7 @@ class LandmarksOrHistoricalBuildingsType extends PlaceType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

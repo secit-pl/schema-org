@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class AddActionType.
+ * The act of editing by adding an object to a collection.
  * 
  * @method AddActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method AddActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method AddActionType setResult(Property\ResultProperty $result)
  * @method AddActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method AddActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method AddActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method AddActionType setTarget(Property\TargetProperty $target)
  * @method AddActionType setTargetCollection(Property\TargetCollectionProperty $targetCollection)
  * @method AddActionType setUrl(Property\UrlProperty $url)
@@ -35,7 +36,7 @@ class AddActionType extends UpdateActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

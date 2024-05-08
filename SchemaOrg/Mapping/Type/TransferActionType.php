@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class TransferActionType.
+ * The act of transferring/moving (abstract or concrete) animate or inanimate objects from one place to another.
  * 
  * @method TransferActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method TransferActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method TransferActionType setResult(Property\ResultProperty $result)
  * @method TransferActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method TransferActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method TransferActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method TransferActionType setTarget(Property\TargetProperty $target)
  * @method TransferActionType setUrl(Property\UrlProperty $url)
  */
@@ -44,7 +45,7 @@ class TransferActionType extends ActionType {
 
 	/**
 	 * Get from location.
-	 * 
+	 *
 	 * @return Property\FromLocationProperty
 	 */
 	public function getFromLocation() {
@@ -53,7 +54,7 @@ class TransferActionType extends ActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -62,7 +63,7 @@ class TransferActionType extends ActionType {
 
 	/**
 	 * Get to location.
-	 * 
+	 *
 	 * @return Property\ToLocationProperty
 	 */
 	public function getToLocation() {
@@ -71,7 +72,7 @@ class TransferActionType extends ActionType {
 
 	/**
 	 * Set from location.
-	 * 
+	 *
 	 * @param Property\FromLocationProperty $fromLocation
 	 * @return TransferActionType
 	 */
@@ -83,7 +84,7 @@ class TransferActionType extends ActionType {
 
 	/**
 	 * Set to location.
-	 * 
+	 *
 	 * @param Property\ToLocationProperty $toLocation
 	 * @return TransferActionType
 	 */

@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class RoleType.
+ * Represents additional information about a relationship or property. For example a Role can be used to say that a 'member' role linking some SportsTeam to a player occurred during a particular time period. Or that a Person's 'actor' role in a Movie was for some particular characterName. Such properties can be attached to a Role entity, which is then associated with the main entities using ordinary properties like 'member' or 'actor'. See also blog post.
  * 
  * @method RoleType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method RoleType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,6 +17,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method RoleType setName(Property\NameProperty $name)
  * @method RoleType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method RoleType setSameAs(Property\SameAsProperty $sameAs)
+ * @method RoleType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method RoleType setUrl(Property\UrlProperty $url)
  */
 class RoleType extends IntangibleType {
@@ -38,7 +39,7 @@ class RoleType extends IntangibleType {
 
 	/**
 	 * Get end date.
-	 * 
+	 *
 	 * @return Property\EndDateProperty
 	 */
 	public function getEndDate() {
@@ -47,7 +48,7 @@ class RoleType extends IntangibleType {
 
 	/**
 	 * Get role name.
-	 * 
+	 *
 	 * @return Property\RoleNameProperty
 	 */
 	public function getRoleName() {
@@ -56,7 +57,7 @@ class RoleType extends IntangibleType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -65,7 +66,7 @@ class RoleType extends IntangibleType {
 
 	/**
 	 * Get start date.
-	 * 
+	 *
 	 * @return Property\StartDateProperty
 	 */
 	public function getStartDate() {
@@ -74,7 +75,7 @@ class RoleType extends IntangibleType {
 
 	/**
 	 * Set end date.
-	 * 
+	 *
 	 * @param Property\EndDateProperty $endDate
 	 * @return RoleType
 	 */
@@ -86,7 +87,7 @@ class RoleType extends IntangibleType {
 
 	/**
 	 * Set role name.
-	 * 
+	 *
 	 * @param Property\RoleNameProperty $roleName
 	 * @return RoleType
 	 */
@@ -98,7 +99,7 @@ class RoleType extends IntangibleType {
 
 	/**
 	 * Set start date.
-	 * 
+	 *
 	 * @param Property\StartDateProperty $startDate
 	 * @return RoleType
 	 */

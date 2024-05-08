@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class PaintingType.
+ * A painting.
  * 
+ * @method PaintingType setAbout(Property\AboutProperty $about)
  * @method PaintingType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method PaintingType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method PaintingType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -33,6 +34,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method PaintingType setContributor(Property\ContributorProperty $contributor)
  * @method PaintingType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method PaintingType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method PaintingType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method PaintingType setCreator(Property\CreatorProperty $creator)
  * @method PaintingType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method PaintingType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -44,9 +46,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method PaintingType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method PaintingType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method PaintingType setEncoding(Property\EncodingProperty $encoding)
+ * @method PaintingType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method PaintingType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method PaintingType setExpires(Property\ExpiresProperty $expires)
- * @method PaintingType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method PaintingType setFunder(Property\FunderProperty $funder)
  * @method PaintingType setGenre(Property\GenreProperty $genre)
  * @method PaintingType setHasPart(Property\HasPartProperty $hasPart)
@@ -73,9 +75,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method PaintingType setPosition(Property\PositionProperty $position)
  * @method PaintingType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method PaintingType setProducer(Property\ProducerProperty $producer)
- * @method PaintingType setProvider(Property\ProviderProperty $provider)
  * @method PaintingType setPublication(Property\PublicationProperty $publication)
  * @method PaintingType setPublisher(Property\PublisherProperty $publisher)
+ * @method PaintingType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method PaintingType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method PaintingType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method PaintingType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -83,24 +85,30 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method PaintingType setSameAs(Property\SameAsProperty $sameAs)
  * @method PaintingType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method PaintingType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method PaintingType setSpatial(Property\SpatialProperty $spatial)
  * @method PaintingType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method PaintingType setSponsor(Property\SponsorProperty $sponsor)
+ * @method PaintingType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method PaintingType setTemporal(Property\TemporalProperty $temporal)
  * @method PaintingType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method PaintingType setText(Property\TextProperty $text)
+ * @method PaintingType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method PaintingType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method PaintingType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method PaintingType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method PaintingType setTranslator(Property\TranslatorProperty $translator)
  * @method PaintingType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method PaintingType setUrl(Property\UrlProperty $url)
  * @method PaintingType setVersion(Property\VersionProperty $version)
  * @method PaintingType setVideo(Property\VideoProperty $video)
  * @method PaintingType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method PaintingType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class PaintingType extends CreativeWorkType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

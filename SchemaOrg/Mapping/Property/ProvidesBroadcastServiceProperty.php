@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * ProvidesBroadcastServiceProperty class.
+ * The BroadcastService offered on this channel.
  * 
  * @method ProvidesBroadcastServiceProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class ProvidesBroadcastServiceProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class ProvidesBroadcastServiceProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

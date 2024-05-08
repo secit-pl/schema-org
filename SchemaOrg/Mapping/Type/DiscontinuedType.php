@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class DiscontinuedType.
+ * Indicates that the item has been discontinued.
  * 
  * @method DiscontinuedType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method DiscontinuedType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method DiscontinuedType setName(Property\NameProperty $name)
  * @method DiscontinuedType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method DiscontinuedType setSameAs(Property\SameAsProperty $sameAs)
+ * @method DiscontinuedType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method DiscontinuedType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method DiscontinuedType setUrl(Property\UrlProperty $url)
  */
 class DiscontinuedType extends ItemAvailabilityType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

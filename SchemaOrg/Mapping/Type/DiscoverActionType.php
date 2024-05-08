@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class DiscoverActionType.
+ * The act of discovering/finding an object.
  * 
  * @method DiscoverActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method DiscoverActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method DiscoverActionType setResult(Property\ResultProperty $result)
  * @method DiscoverActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method DiscoverActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method DiscoverActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method DiscoverActionType setTarget(Property\TargetProperty $target)
  * @method DiscoverActionType setUrl(Property\UrlProperty $url)
  */
@@ -34,7 +35,7 @@ class DiscoverActionType extends FindActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

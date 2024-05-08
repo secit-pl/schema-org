@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class TransitMapType.
+ * A transit map.
  * 
  * @method TransitMapType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method TransitMapType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method TransitMapType setName(Property\NameProperty $name)
  * @method TransitMapType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method TransitMapType setSameAs(Property\SameAsProperty $sameAs)
+ * @method TransitMapType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method TransitMapType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method TransitMapType setUrl(Property\UrlProperty $url)
  */
 class TransitMapType extends MapCategoryType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

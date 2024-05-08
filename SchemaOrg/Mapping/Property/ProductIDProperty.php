@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * ProductIDProperty class.
+ * The product identifier, such as ISBN. For example: meta itemprop="productID" content="isbn:123-456-789".
  * 
  * @method ProductIDProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class ProductIDProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class ProductIDProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

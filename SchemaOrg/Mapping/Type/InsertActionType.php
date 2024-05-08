@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class InsertActionType.
+ * The act of adding at a specific location in an ordered collection.
  * 
  * @method InsertActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method InsertActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method InsertActionType setResult(Property\ResultProperty $result)
  * @method InsertActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method InsertActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method InsertActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method InsertActionType setTarget(Property\TargetProperty $target)
  * @method InsertActionType setTargetCollection(Property\TargetCollectionProperty $targetCollection)
  * @method InsertActionType setUrl(Property\UrlProperty $url)
@@ -40,7 +41,7 @@ class InsertActionType extends AddActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -49,7 +50,7 @@ class InsertActionType extends AddActionType {
 
 	/**
 	 * Get to location.
-	 * 
+	 *
 	 * @return Property\ToLocationProperty
 	 */
 	public function getToLocation() {
@@ -58,7 +59,7 @@ class InsertActionType extends AddActionType {
 
 	/**
 	 * Set to location.
-	 * 
+	 *
 	 * @param Property\ToLocationProperty $toLocation
 	 * @return InsertActionType
 	 */

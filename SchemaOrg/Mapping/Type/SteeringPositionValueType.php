@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class SteeringPositionValueType.
+ * A value indicating a steering position.
  * 
  * @method SteeringPositionValueType setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method SteeringPositionValueType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -24,6 +24,8 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SteeringPositionValueType setNonEqual(Property\NonEqualProperty $nonEqual)
  * @method SteeringPositionValueType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method SteeringPositionValueType setSameAs(Property\SameAsProperty $sameAs)
+ * @method SteeringPositionValueType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method SteeringPositionValueType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method SteeringPositionValueType setUrl(Property\UrlProperty $url)
  * @method SteeringPositionValueType setValueReference(Property\ValueReferenceProperty $valueReference)
  */
@@ -31,7 +33,7 @@ class SteeringPositionValueType extends QualitativeValueType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

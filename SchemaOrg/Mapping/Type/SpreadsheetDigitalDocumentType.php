@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class SpreadsheetDigitalDocumentType.
+ * A spreadsheet file.
  * 
+ * @method SpreadsheetDigitalDocumentType setAbout(Property\AboutProperty $about)
  * @method SpreadsheetDigitalDocumentType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method SpreadsheetDigitalDocumentType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method SpreadsheetDigitalDocumentType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -33,6 +34,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SpreadsheetDigitalDocumentType setContributor(Property\ContributorProperty $contributor)
  * @method SpreadsheetDigitalDocumentType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method SpreadsheetDigitalDocumentType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method SpreadsheetDigitalDocumentType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method SpreadsheetDigitalDocumentType setCreator(Property\CreatorProperty $creator)
  * @method SpreadsheetDigitalDocumentType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method SpreadsheetDigitalDocumentType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -44,9 +46,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SpreadsheetDigitalDocumentType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method SpreadsheetDigitalDocumentType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method SpreadsheetDigitalDocumentType setEncoding(Property\EncodingProperty $encoding)
+ * @method SpreadsheetDigitalDocumentType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method SpreadsheetDigitalDocumentType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method SpreadsheetDigitalDocumentType setExpires(Property\ExpiresProperty $expires)
- * @method SpreadsheetDigitalDocumentType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method SpreadsheetDigitalDocumentType setFunder(Property\FunderProperty $funder)
  * @method SpreadsheetDigitalDocumentType setGenre(Property\GenreProperty $genre)
  * @method SpreadsheetDigitalDocumentType setHasDigitalDocumentPermission(Property\HasDigitalDocumentPermissionProperty $hasDigitalDocumentPermission)
@@ -74,9 +76,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SpreadsheetDigitalDocumentType setPosition(Property\PositionProperty $position)
  * @method SpreadsheetDigitalDocumentType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method SpreadsheetDigitalDocumentType setProducer(Property\ProducerProperty $producer)
- * @method SpreadsheetDigitalDocumentType setProvider(Property\ProviderProperty $provider)
  * @method SpreadsheetDigitalDocumentType setPublication(Property\PublicationProperty $publication)
  * @method SpreadsheetDigitalDocumentType setPublisher(Property\PublisherProperty $publisher)
+ * @method SpreadsheetDigitalDocumentType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method SpreadsheetDigitalDocumentType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method SpreadsheetDigitalDocumentType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method SpreadsheetDigitalDocumentType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -84,24 +86,30 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SpreadsheetDigitalDocumentType setSameAs(Property\SameAsProperty $sameAs)
  * @method SpreadsheetDigitalDocumentType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method SpreadsheetDigitalDocumentType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method SpreadsheetDigitalDocumentType setSpatial(Property\SpatialProperty $spatial)
  * @method SpreadsheetDigitalDocumentType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method SpreadsheetDigitalDocumentType setSponsor(Property\SponsorProperty $sponsor)
+ * @method SpreadsheetDigitalDocumentType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method SpreadsheetDigitalDocumentType setTemporal(Property\TemporalProperty $temporal)
  * @method SpreadsheetDigitalDocumentType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method SpreadsheetDigitalDocumentType setText(Property\TextProperty $text)
+ * @method SpreadsheetDigitalDocumentType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method SpreadsheetDigitalDocumentType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method SpreadsheetDigitalDocumentType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method SpreadsheetDigitalDocumentType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method SpreadsheetDigitalDocumentType setTranslator(Property\TranslatorProperty $translator)
  * @method SpreadsheetDigitalDocumentType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method SpreadsheetDigitalDocumentType setUrl(Property\UrlProperty $url)
  * @method SpreadsheetDigitalDocumentType setVersion(Property\VersionProperty $version)
  * @method SpreadsheetDigitalDocumentType setVideo(Property\VideoProperty $video)
  * @method SpreadsheetDigitalDocumentType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method SpreadsheetDigitalDocumentType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class SpreadsheetDigitalDocumentType extends DigitalDocumentType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

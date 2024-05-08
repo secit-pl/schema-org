@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ReserveActionType.
+ * Reserving a concrete object. Related actions: ScheduleAction: Unlike ScheduleAction, ReserveAction reserves concrete objects (e.g. a table, a hotel) towards a time slot / spatial allocation.
  * 
  * @method ReserveActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method ReserveActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -28,6 +28,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ReserveActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method ReserveActionType setScheduledTime(Property\ScheduledTimeProperty $scheduledTime)
  * @method ReserveActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method ReserveActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method ReserveActionType setTarget(Property\TargetProperty $target)
  * @method ReserveActionType setUrl(Property\UrlProperty $url)
  */
@@ -35,7 +36,7 @@ class ReserveActionType extends PlanActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class HinduDietType.
+ * A diet conforming to Hindu dietary practices, in particular, beef-free.
  * 
  * @method HinduDietType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method HinduDietType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method HinduDietType setName(Property\NameProperty $name)
  * @method HinduDietType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method HinduDietType setSameAs(Property\SameAsProperty $sameAs)
+ * @method HinduDietType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method HinduDietType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method HinduDietType setUrl(Property\UrlProperty $url)
  */
 class HinduDietType extends RestrictedDietType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

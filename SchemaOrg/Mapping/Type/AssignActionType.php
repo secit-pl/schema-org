@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class AssignActionType.
+ * The act of allocating an action/event/task to some destination (someone or something).
  * 
  * @method AssignActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method AssignActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method AssignActionType setResult(Property\ResultProperty $result)
  * @method AssignActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method AssignActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method AssignActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method AssignActionType setTarget(Property\TargetProperty $target)
  * @method AssignActionType setUrl(Property\UrlProperty $url)
  */
@@ -34,7 +35,7 @@ class AssignActionType extends AllocateActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

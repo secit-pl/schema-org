@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class CassetteFormatType.
+ * CassetteFormat.
  * 
  * @method CassetteFormatType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method CassetteFormatType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method CassetteFormatType setName(Property\NameProperty $name)
  * @method CassetteFormatType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method CassetteFormatType setSameAs(Property\SameAsProperty $sameAs)
+ * @method CassetteFormatType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method CassetteFormatType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method CassetteFormatType setUrl(Property\UrlProperty $url)
  */
 class CassetteFormatType extends MusicReleaseFormatType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

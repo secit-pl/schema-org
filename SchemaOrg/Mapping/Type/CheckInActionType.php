@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class CheckInActionType.
+ * The act of an agent communicating (service provider, social media, etc) their arrival by registering/confirming for a previously reserved service (e.g. flight check-in) or at a place (e.g. hotel), possibly resulting in a result (boarding pass, etc). Related actions: CheckOutAction: The antonym of CheckInAction. ArriveAction: Unlike ArriveAction, CheckInAction implies that the agent is informing/confirming the start of a previously reserved service. ConfirmAction: Unlike ConfirmAction, CheckInAction implies that the agent is informing/confirming the start of a previously reserved service rather than its validity/existence.
  * 
+ * @method CheckInActionType setAbout(Property\AboutProperty $about)
  * @method CheckInActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method CheckInActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method CheckInActionType setAgent(Property\AgentProperty $agent)
@@ -29,6 +30,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method CheckInActionType setResult(Property\ResultProperty $result)
  * @method CheckInActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method CheckInActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method CheckInActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method CheckInActionType setTarget(Property\TargetProperty $target)
  * @method CheckInActionType setUrl(Property\UrlProperty $url)
  */
@@ -36,7 +38,7 @@ class CheckInActionType extends CommunicateActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

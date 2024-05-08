@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class DislikeActionType.
+ * The act of expressing a negative sentiment about the object. An agent dislikes an object (a proposition, topic or theme) with participants.
  * 
  * @method DislikeActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method DislikeActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method DislikeActionType setResult(Property\ResultProperty $result)
  * @method DislikeActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method DislikeActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method DislikeActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method DislikeActionType setTarget(Property\TargetProperty $target)
  * @method DislikeActionType setUrl(Property\UrlProperty $url)
  */
@@ -34,7 +35,7 @@ class DislikeActionType extends ReactActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

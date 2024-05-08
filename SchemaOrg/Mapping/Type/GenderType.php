@@ -5,27 +5,27 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class GenderType.
+ * An enumeration of genders.
  * 
- * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\GenderType instead.
- * 
- * @method GenderType setAdditionalType(Property\AdditionalType $additionalType)
- * @method GenderType setAlternateName(Property\AlternateName $alternateName)
- * @method GenderType setDescription(Property\Description $description)
- * @method GenderType setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method GenderType setIdentifier(Property\Identifier $identifier)
- * @method GenderType setImage(Property\Image $image)
- * @method GenderType setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method GenderType setName(Property\Name $name)
- * @method GenderType setPotentialAction(Property\PotentialAction $potentialAction)
- * @method GenderType setSameAs(Property\SameAs $sameAs)
- * @method GenderType setUrl(Property\Url $url)
+ * @method GenderType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
+ * @method GenderType setAlternateName(Property\AlternateNameProperty $alternateName)
+ * @method GenderType setDescription(Property\DescriptionProperty $description)
+ * @method GenderType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
+ * @method GenderType setIdentifier(Property\IdentifierProperty $identifier)
+ * @method GenderType setImage(Property\ImageProperty $image)
+ * @method GenderType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
+ * @method GenderType setName(Property\NameProperty $name)
+ * @method GenderType setPotentialAction(Property\PotentialActionProperty $potentialAction)
+ * @method GenderType setSameAs(Property\SameAsProperty $sameAs)
+ * @method GenderType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method GenderType setSupersededBy(Property\SupersededByProperty $supersededBy)
+ * @method GenderType setUrl(Property\UrlProperty $url)
  */
-class GenderType extends Enumeration {
+class GenderType extends EnumerationType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

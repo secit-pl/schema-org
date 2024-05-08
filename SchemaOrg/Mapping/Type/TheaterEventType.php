@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class TheaterEventType.
+ * Event type: Theater performance.
  * 
+ * @method TheaterEventType setAbout(Property\AboutProperty $about)
  * @method TheaterEventType setActor(Property\ActorProperty $actor)
  * @method TheaterEventType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method TheaterEventType setAggregateRating(Property\AggregateRatingProperty $aggregateRating)
@@ -19,6 +20,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method TheaterEventType setDirector(Property\DirectorProperty $director)
  * @method TheaterEventType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
  * @method TheaterEventType setDoorTime(Property\DoorTimeProperty $doorTime)
+ * @method TheaterEventType setDuration(Property\DurationProperty $duration)
  * @method TheaterEventType setEndDate(Property\EndDateProperty $endDate)
  * @method TheaterEventType setEventStatus(Property\EventStatusProperty $eventStatus)
  * @method TheaterEventType setFunder(Property\FunderProperty $funder)
@@ -26,6 +28,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method TheaterEventType setImage(Property\ImageProperty $image)
  * @method TheaterEventType setInLanguage(Property\InLanguageProperty $inLanguage)
  * @method TheaterEventType setIsAccessibleForFree(Property\IsAccessibleForFreeProperty $isAccessibleForFree)
+ * @method TheaterEventType setKeywords(Property\KeywordsProperty $keywords)
  * @method TheaterEventType setLocation(Property\LocationProperty $location)
  * @method TheaterEventType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
  * @method TheaterEventType setMaximumAttendeeCapacity(Property\MaximumAttendeeCapacityProperty $maximumAttendeeCapacity)
@@ -42,6 +45,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method TheaterEventType setSponsor(Property\SponsorProperty $sponsor)
  * @method TheaterEventType setStartDate(Property\StartDateProperty $startDate)
  * @method TheaterEventType setSubEvent(Property\SubEventProperty $subEvent)
+ * @method TheaterEventType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method TheaterEventType setSuperEvent(Property\SuperEventProperty $superEvent)
  * @method TheaterEventType setTranslator(Property\TranslatorProperty $translator)
  * @method TheaterEventType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
@@ -53,7 +57,7 @@ class TheaterEventType extends EventType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class EnergyType.
+ * Properties that take Energy as values are of the form ' '.
  * 
  * @method EnergyType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method EnergyType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,14 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method EnergyType setName(Property\NameProperty $name)
  * @method EnergyType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method EnergyType setSameAs(Property\SameAsProperty $sameAs)
+ * @method EnergyType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method EnergyType setUrl(Property\UrlProperty $url)
  */
 class EnergyType extends QuantityType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

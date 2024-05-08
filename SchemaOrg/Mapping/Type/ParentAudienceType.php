@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ParentAudienceType.
+ * A set of characteristics describing parents, who can be interested in viewing some content.
  * 
  * @method ParentAudienceType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method ParentAudienceType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -13,6 +13,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ParentAudienceType setDescription(Property\DescriptionProperty $description)
  * @method ParentAudienceType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
  * @method ParentAudienceType setGeographicArea(Property\GeographicAreaProperty $geographicArea)
+ * @method ParentAudienceType setHealthCondition(Property\HealthConditionProperty $healthCondition)
  * @method ParentAudienceType setIdentifier(Property\IdentifierProperty $identifier)
  * @method ParentAudienceType setImage(Property\ImageProperty $image)
  * @method ParentAudienceType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
@@ -22,6 +23,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ParentAudienceType setRequiredMaxAge(Property\RequiredMaxAgeProperty $requiredMaxAge)
  * @method ParentAudienceType setRequiredMinAge(Property\RequiredMinAgeProperty $requiredMinAge)
  * @method ParentAudienceType setSameAs(Property\SameAsProperty $sameAs)
+ * @method ParentAudienceType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method ParentAudienceType setSuggestedGender(Property\SuggestedGenderProperty $suggestedGender)
  * @method ParentAudienceType setSuggestedMaxAge(Property\SuggestedMaxAgeProperty $suggestedMaxAge)
  * @method ParentAudienceType setSuggestedMinAge(Property\SuggestedMinAgeProperty $suggestedMinAge)
@@ -41,7 +43,7 @@ class ParentAudienceType extends PeopleAudienceType {
 
 	/**
 	 * Get child max age.
-	 * 
+	 *
 	 * @return Property\ChildMaxAgeProperty
 	 */
 	public function getChildMaxAge() {
@@ -50,7 +52,7 @@ class ParentAudienceType extends PeopleAudienceType {
 
 	/**
 	 * Get child min age.
-	 * 
+	 *
 	 * @return Property\ChildMinAgeProperty
 	 */
 	public function getChildMinAge() {
@@ -59,7 +61,7 @@ class ParentAudienceType extends PeopleAudienceType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -68,7 +70,7 @@ class ParentAudienceType extends PeopleAudienceType {
 
 	/**
 	 * Set child max age.
-	 * 
+	 *
 	 * @param Property\ChildMaxAgeProperty $childMaxAge
 	 * @return ParentAudienceType
 	 */
@@ -80,7 +82,7 @@ class ParentAudienceType extends PeopleAudienceType {
 
 	/**
 	 * Set child min age.
-	 * 
+	 *
 	 * @param Property\ChildMinAgeProperty $childMinAge
 	 * @return ParentAudienceType
 	 */

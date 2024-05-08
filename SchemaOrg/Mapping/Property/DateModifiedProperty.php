@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * DateModifiedProperty class.
+ * The date on which the CreativeWork was most recently modified or when the item's entry was modified within a DataFeed.
  * 
  * @method DateModifiedProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class DateModifiedProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class DateModifiedProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

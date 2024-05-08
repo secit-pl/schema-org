@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * SubEventProperty class.
+ * An Event that is part of this event. For example, a conference event includes many presentations, each of which is a subEvent of the conference.
  * 
  * @method SubEventProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class SubEventProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class SubEventProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

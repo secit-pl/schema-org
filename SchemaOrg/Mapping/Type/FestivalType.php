@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class FestivalType.
+ * Event type: Festival.
  * 
+ * @method FestivalType setAbout(Property\AboutProperty $about)
  * @method FestivalType setActor(Property\ActorProperty $actor)
  * @method FestivalType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method FestivalType setAggregateRating(Property\AggregateRatingProperty $aggregateRating)
@@ -19,6 +20,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method FestivalType setDirector(Property\DirectorProperty $director)
  * @method FestivalType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
  * @method FestivalType setDoorTime(Property\DoorTimeProperty $doorTime)
+ * @method FestivalType setDuration(Property\DurationProperty $duration)
  * @method FestivalType setEndDate(Property\EndDateProperty $endDate)
  * @method FestivalType setEventStatus(Property\EventStatusProperty $eventStatus)
  * @method FestivalType setFunder(Property\FunderProperty $funder)
@@ -26,6 +28,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method FestivalType setImage(Property\ImageProperty $image)
  * @method FestivalType setInLanguage(Property\InLanguageProperty $inLanguage)
  * @method FestivalType setIsAccessibleForFree(Property\IsAccessibleForFreeProperty $isAccessibleForFree)
+ * @method FestivalType setKeywords(Property\KeywordsProperty $keywords)
  * @method FestivalType setLocation(Property\LocationProperty $location)
  * @method FestivalType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
  * @method FestivalType setMaximumAttendeeCapacity(Property\MaximumAttendeeCapacityProperty $maximumAttendeeCapacity)
@@ -42,6 +45,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method FestivalType setSponsor(Property\SponsorProperty $sponsor)
  * @method FestivalType setStartDate(Property\StartDateProperty $startDate)
  * @method FestivalType setSubEvent(Property\SubEventProperty $subEvent)
+ * @method FestivalType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method FestivalType setSuperEvent(Property\SuperEventProperty $superEvent)
  * @method FestivalType setTranslator(Property\TranslatorProperty $translator)
  * @method FestivalType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
@@ -53,7 +57,7 @@ class FestivalType extends EventType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class EntryPointType.
+ * An entry point, within some Web-based protocol.
  * 
  * @method EntryPointType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method EntryPointType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,6 +17,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method EntryPointType setName(Property\NameProperty $name)
  * @method EntryPointType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method EntryPointType setSameAs(Property\SameAsProperty $sameAs)
+ * @method EntryPointType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method EntryPointType setUrl(Property\UrlProperty $url)
  */
 class EntryPointType extends IntangibleType {
@@ -53,7 +54,7 @@ class EntryPointType extends IntangibleType {
 
 	/**
 	 * Get action application.
-	 * 
+	 *
 	 * @return Property\ActionApplicationProperty
 	 */
 	public function getActionApplication() {
@@ -62,7 +63,7 @@ class EntryPointType extends IntangibleType {
 
 	/**
 	 * Get action platform.
-	 * 
+	 *
 	 * @return Property\ActionPlatformProperty
 	 */
 	public function getActionPlatform() {
@@ -71,7 +72,7 @@ class EntryPointType extends IntangibleType {
 
 	/**
 	 * Get content type.
-	 * 
+	 *
 	 * @return Property\ContentTypeProperty
 	 */
 	public function getContentType() {
@@ -80,7 +81,7 @@ class EntryPointType extends IntangibleType {
 
 	/**
 	 * Get encoding type.
-	 * 
+	 *
 	 * @return Property\EncodingTypeProperty
 	 */
 	public function getEncodingType() {
@@ -89,7 +90,7 @@ class EntryPointType extends IntangibleType {
 
 	/**
 	 * Get http method.
-	 * 
+	 *
 	 * @return Property\HttpMethodProperty
 	 */
 	public function getHttpMethod() {
@@ -98,7 +99,7 @@ class EntryPointType extends IntangibleType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -107,7 +108,7 @@ class EntryPointType extends IntangibleType {
 
 	/**
 	 * Get url template.
-	 * 
+	 *
 	 * @return Property\UrlTemplateProperty
 	 */
 	public function getUrlTemplate() {
@@ -116,7 +117,7 @@ class EntryPointType extends IntangibleType {
 
 	/**
 	 * Set action application.
-	 * 
+	 *
 	 * @param Property\ActionApplicationProperty $actionApplication
 	 * @return EntryPointType
 	 */
@@ -128,7 +129,7 @@ class EntryPointType extends IntangibleType {
 
 	/**
 	 * Set action platform.
-	 * 
+	 *
 	 * @param Property\ActionPlatformProperty $actionPlatform
 	 * @return EntryPointType
 	 */
@@ -140,7 +141,7 @@ class EntryPointType extends IntangibleType {
 
 	/**
 	 * Set content type.
-	 * 
+	 *
 	 * @param Property\ContentTypeProperty $contentType
 	 * @return EntryPointType
 	 */
@@ -152,7 +153,7 @@ class EntryPointType extends IntangibleType {
 
 	/**
 	 * Set encoding type.
-	 * 
+	 *
 	 * @param Property\EncodingTypeProperty $encodingType
 	 * @return EntryPointType
 	 */
@@ -164,7 +165,7 @@ class EntryPointType extends IntangibleType {
 
 	/**
 	 * Set http method.
-	 * 
+	 *
 	 * @param Property\HttpMethodProperty $httpMethod
 	 * @return EntryPointType
 	 */
@@ -176,7 +177,7 @@ class EntryPointType extends IntangibleType {
 
 	/**
 	 * Set url template.
-	 * 
+	 *
 	 * @param Property\UrlTemplateProperty $urlTemplate
 	 * @return EntryPointType
 	 */

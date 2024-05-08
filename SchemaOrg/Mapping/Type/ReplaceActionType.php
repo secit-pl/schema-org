@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ReplaceActionType.
+ * The act of editing a recipient by replacing an old object with a new object.
  * 
  * @method ReplaceActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method ReplaceActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ReplaceActionType setResult(Property\ResultProperty $result)
  * @method ReplaceActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method ReplaceActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method ReplaceActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method ReplaceActionType setTarget(Property\TargetProperty $target)
  * @method ReplaceActionType setTargetCollection(Property\TargetCollectionProperty $targetCollection)
  * @method ReplaceActionType setUrl(Property\UrlProperty $url)
@@ -45,7 +46,7 @@ class ReplaceActionType extends UpdateActionType {
 
 	/**
 	 * Get replacee.
-	 * 
+	 *
 	 * @return Property\ReplaceeProperty
 	 */
 	public function getReplacee() {
@@ -54,7 +55,7 @@ class ReplaceActionType extends UpdateActionType {
 
 	/**
 	 * Get replacer.
-	 * 
+	 *
 	 * @return Property\ReplacerProperty
 	 */
 	public function getReplacer() {
@@ -63,7 +64,7 @@ class ReplaceActionType extends UpdateActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -72,7 +73,7 @@ class ReplaceActionType extends UpdateActionType {
 
 	/**
 	 * Set replacee.
-	 * 
+	 *
 	 * @param Property\ReplaceeProperty $replacee
 	 * @return ReplaceActionType
 	 */
@@ -84,7 +85,7 @@ class ReplaceActionType extends UpdateActionType {
 
 	/**
 	 * Set replacer.
-	 * 
+	 *
 	 * @param Property\ReplacerProperty $replacer
 	 * @return ReplaceActionType
 	 */

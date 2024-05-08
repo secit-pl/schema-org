@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class BarcodeType.
+ * An image of a visual machine-readable code such as a barcode or QR code.
  * 
+ * @method BarcodeType setAbout(Property\AboutProperty $about)
  * @method BarcodeType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method BarcodeType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method BarcodeType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -38,6 +39,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method BarcodeType setContributor(Property\ContributorProperty $contributor)
  * @method BarcodeType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method BarcodeType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method BarcodeType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method BarcodeType setCreator(Property\CreatorProperty $creator)
  * @method BarcodeType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method BarcodeType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -45,6 +47,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method BarcodeType setDescription(Property\DescriptionProperty $description)
  * @method BarcodeType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
  * @method BarcodeType setDiscussionUrl(Property\DiscussionUrlProperty $discussionUrl)
+ * @method BarcodeType setDuration(Property\DurationProperty $duration)
  * @method BarcodeType setEditor(Property\EditorProperty $editor)
  * @method BarcodeType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method BarcodeType setEducationalUse(Property\EducationalUseProperty $educationalUse)
@@ -52,10 +55,10 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method BarcodeType setEncodesCreativeWork(Property\EncodesCreativeWorkProperty $encodesCreativeWork)
  * @method BarcodeType setEncoding(Property\EncodingProperty $encoding)
  * @method BarcodeType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
+ * @method BarcodeType setEndTime(Property\EndTimeProperty $endTime)
  * @method BarcodeType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method BarcodeType setExifData(Property\ExifDataProperty $exifData)
  * @method BarcodeType setExpires(Property\ExpiresProperty $expires)
- * @method BarcodeType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method BarcodeType setFunder(Property\FunderProperty $funder)
  * @method BarcodeType setGenre(Property\GenreProperty $genre)
  * @method BarcodeType setHasPart(Property\HasPartProperty $hasPart)
@@ -85,9 +88,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method BarcodeType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method BarcodeType setProducer(Property\ProducerProperty $producer)
  * @method BarcodeType setProductionCompany(Property\ProductionCompanyProperty $productionCompany)
- * @method BarcodeType setProvider(Property\ProviderProperty $provider)
  * @method BarcodeType setPublication(Property\PublicationProperty $publication)
  * @method BarcodeType setPublisher(Property\PublisherProperty $publisher)
+ * @method BarcodeType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method BarcodeType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method BarcodeType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method BarcodeType setRegionsAllowed(Property\RegionsAllowedProperty $regionsAllowed)
@@ -98,13 +101,18 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method BarcodeType setSameAs(Property\SameAsProperty $sameAs)
  * @method BarcodeType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method BarcodeType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method BarcodeType setSpatial(Property\SpatialProperty $spatial)
  * @method BarcodeType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method BarcodeType setSponsor(Property\SponsorProperty $sponsor)
+ * @method BarcodeType setStartTime(Property\StartTimeProperty $startTime)
+ * @method BarcodeType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method BarcodeType setTemporal(Property\TemporalProperty $temporal)
  * @method BarcodeType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method BarcodeType setText(Property\TextProperty $text)
  * @method BarcodeType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method BarcodeType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method BarcodeType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method BarcodeType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method BarcodeType setTranslator(Property\TranslatorProperty $translator)
  * @method BarcodeType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method BarcodeType setUploadDate(Property\UploadDateProperty $uploadDate)
@@ -113,12 +121,13 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method BarcodeType setVideo(Property\VideoProperty $video)
  * @method BarcodeType setWidth(Property\WidthProperty $width)
  * @method BarcodeType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method BarcodeType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class BarcodeType extends ImageObjectType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class PermitType.
+ * A permit issued by an organization, e.g. a parking pass.
  * 
  * @method PermitType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method PermitType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,6 +17,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method PermitType setName(Property\NameProperty $name)
  * @method PermitType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method PermitType setSameAs(Property\SameAsProperty $sameAs)
+ * @method PermitType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method PermitType setUrl(Property\UrlProperty $url)
  */
 class PermitType extends IntangibleType {
@@ -58,7 +59,7 @@ class PermitType extends IntangibleType {
 
 	/**
 	 * Get issued by.
-	 * 
+	 *
 	 * @return Property\IssuedByProperty
 	 */
 	public function getIssuedBy() {
@@ -67,7 +68,7 @@ class PermitType extends IntangibleType {
 
 	/**
 	 * Get issued through.
-	 * 
+	 *
 	 * @return Property\IssuedThroughProperty
 	 */
 	public function getIssuedThrough() {
@@ -76,7 +77,7 @@ class PermitType extends IntangibleType {
 
 	/**
 	 * Get permit audience.
-	 * 
+	 *
 	 * @return Property\PermitAudienceProperty
 	 */
 	public function getPermitAudience() {
@@ -85,7 +86,7 @@ class PermitType extends IntangibleType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -94,7 +95,7 @@ class PermitType extends IntangibleType {
 
 	/**
 	 * Get valid for.
-	 * 
+	 *
 	 * @return Property\ValidForProperty
 	 */
 	public function getValidFor() {
@@ -103,7 +104,7 @@ class PermitType extends IntangibleType {
 
 	/**
 	 * Get valid from.
-	 * 
+	 *
 	 * @return Property\ValidFromProperty
 	 */
 	public function getValidFrom() {
@@ -112,7 +113,7 @@ class PermitType extends IntangibleType {
 
 	/**
 	 * Get valid in.
-	 * 
+	 *
 	 * @return Property\ValidInProperty
 	 */
 	public function getValidIn() {
@@ -121,7 +122,7 @@ class PermitType extends IntangibleType {
 
 	/**
 	 * Get valid until.
-	 * 
+	 *
 	 * @return Property\ValidUntilProperty
 	 */
 	public function getValidUntil() {
@@ -130,7 +131,7 @@ class PermitType extends IntangibleType {
 
 	/**
 	 * Set issued by.
-	 * 
+	 *
 	 * @param Property\IssuedByProperty $issuedBy
 	 * @return PermitType
 	 */
@@ -142,7 +143,7 @@ class PermitType extends IntangibleType {
 
 	/**
 	 * Set issued through.
-	 * 
+	 *
 	 * @param Property\IssuedThroughProperty $issuedThrough
 	 * @return PermitType
 	 */
@@ -154,7 +155,7 @@ class PermitType extends IntangibleType {
 
 	/**
 	 * Set permit audience.
-	 * 
+	 *
 	 * @param Property\PermitAudienceProperty $permitAudience
 	 * @return PermitType
 	 */
@@ -166,7 +167,7 @@ class PermitType extends IntangibleType {
 
 	/**
 	 * Set valid for.
-	 * 
+	 *
 	 * @param Property\ValidForProperty $validFor
 	 * @return PermitType
 	 */
@@ -178,7 +179,7 @@ class PermitType extends IntangibleType {
 
 	/**
 	 * Set valid from.
-	 * 
+	 *
 	 * @param Property\ValidFromProperty $validFrom
 	 * @return PermitType
 	 */
@@ -190,7 +191,7 @@ class PermitType extends IntangibleType {
 
 	/**
 	 * Set valid in.
-	 * 
+	 *
 	 * @param Property\ValidInProperty $validIn
 	 * @return PermitType
 	 */
@@ -202,7 +203,7 @@ class PermitType extends IntangibleType {
 
 	/**
 	 * Set valid until.
-	 * 
+	 *
 	 * @param Property\ValidUntilProperty $validUntil
 	 * @return PermitType
 	 */

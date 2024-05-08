@@ -5,10 +5,11 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class AggregateOfferType.
+ * When a single product is associated with multiple offers (for example, the same pair of shoes is offered by different merchants), then AggregateOffer can be used. Note: AggregateOffers are normally expected to associate multiple offers that all share the same defined businessFunction value, or default to http://purl.org/goodrelations/v1#Sell if businessFunction is not explicitly defined.
  * 
  * @method AggregateOfferType setAcceptedPaymentMethod(Property\AcceptedPaymentMethodProperty $acceptedPaymentMethod)
  * @method AggregateOfferType setAddOn(Property\AddOnProperty $addOn)
+ * @method AggregateOfferType setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method AggregateOfferType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method AggregateOfferType setAdvanceBookingRequirement(Property\AdvanceBookingRequirementProperty $advanceBookingRequirement)
  * @method AggregateOfferType setAggregateRating(Property\AggregateRatingProperty $aggregateRating)
@@ -36,8 +37,8 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method AggregateOfferType setIdentifier(Property\IdentifierProperty $identifier)
  * @method AggregateOfferType setImage(Property\ImageProperty $image)
  * @method AggregateOfferType setIncludesObject(Property\IncludesObjectProperty $includesObject)
- * @method AggregateOfferType setIneligibleRegion(Property\IneligibleRegionProperty $ineligibleRegion)
  * @method AggregateOfferType setInventoryLevel(Property\InventoryLevelProperty $inventoryLevel)
+ * @method AggregateOfferType setIsFamilyFriendly(Property\IsFamilyFriendlyProperty $isFamilyFriendly)
  * @method AggregateOfferType setItemCondition(Property\ItemConditionProperty $itemCondition)
  * @method AggregateOfferType setItemOffered(Property\ItemOfferedProperty $itemOffered)
  * @method AggregateOfferType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
@@ -54,6 +55,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method AggregateOfferType setSeller(Property\SellerProperty $seller)
  * @method AggregateOfferType setSerialNumber(Property\SerialNumberProperty $serialNumber)
  * @method AggregateOfferType setSku(Property\SkuProperty $sku)
+ * @method AggregateOfferType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method AggregateOfferType setUrl(Property\UrlProperty $url)
  * @method AggregateOfferType setValidFrom(Property\ValidFromProperty $validFrom)
  * @method AggregateOfferType setValidThrough(Property\ValidThroughProperty $validThrough)
@@ -83,7 +85,7 @@ class AggregateOfferType extends OfferType {
 
 	/**
 	 * Get high price.
-	 * 
+	 *
 	 * @return Property\HighPriceProperty
 	 */
 	public function getHighPrice() {
@@ -92,7 +94,7 @@ class AggregateOfferType extends OfferType {
 
 	/**
 	 * Get low price.
-	 * 
+	 *
 	 * @return Property\LowPriceProperty
 	 */
 	public function getLowPrice() {
@@ -101,7 +103,7 @@ class AggregateOfferType extends OfferType {
 
 	/**
 	 * Get offer count.
-	 * 
+	 *
 	 * @return Property\OfferCountProperty
 	 */
 	public function getOfferCount() {
@@ -110,7 +112,7 @@ class AggregateOfferType extends OfferType {
 
 	/**
 	 * Get offers.
-	 * 
+	 *
 	 * @return Property\OffersProperty
 	 */
 	public function getOffers() {
@@ -119,7 +121,7 @@ class AggregateOfferType extends OfferType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -128,7 +130,7 @@ class AggregateOfferType extends OfferType {
 
 	/**
 	 * Set high price.
-	 * 
+	 *
 	 * @param Property\HighPriceProperty $highPrice
 	 * @return AggregateOfferType
 	 */
@@ -140,7 +142,7 @@ class AggregateOfferType extends OfferType {
 
 	/**
 	 * Set low price.
-	 * 
+	 *
 	 * @param Property\LowPriceProperty $lowPrice
 	 * @return AggregateOfferType
 	 */
@@ -152,7 +154,7 @@ class AggregateOfferType extends OfferType {
 
 	/**
 	 * Set offer count.
-	 * 
+	 *
 	 * @param Property\OfferCountProperty $offerCount
 	 * @return AggregateOfferType
 	 */
@@ -164,7 +166,7 @@ class AggregateOfferType extends OfferType {
 
 	/**
 	 * Set offers.
-	 * 
+	 *
 	 * @param Property\OffersProperty $offers
 	 * @return AggregateOfferType
 	 */

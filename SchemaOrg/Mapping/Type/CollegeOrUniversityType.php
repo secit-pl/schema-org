@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class CollegeOrUniversityType.
+ * A college, university, or other third-level educational institution.
  * 
  * @method CollegeOrUniversityType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method CollegeOrUniversityType setAddress(Property\AddressProperty $address)
@@ -30,11 +30,14 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method CollegeOrUniversityType setFoundingLocation(Property\FoundingLocationProperty $foundingLocation)
  * @method CollegeOrUniversityType setFunder(Property\FunderProperty $funder)
  * @method CollegeOrUniversityType setGlobalLocationNumber(Property\GlobalLocationNumberProperty $globalLocationNumber)
+ * @method CollegeOrUniversityType setHasCertification(Property\HasCertificationProperty $hasCertification)
  * @method CollegeOrUniversityType setHasOfferCatalog(Property\HasOfferCatalogProperty $hasOfferCatalog)
  * @method CollegeOrUniversityType setHasPOS(Property\HasPOSProperty $hasPOS)
  * @method CollegeOrUniversityType setIdentifier(Property\IdentifierProperty $identifier)
  * @method CollegeOrUniversityType setImage(Property\ImageProperty $image)
+ * @method CollegeOrUniversityType setInteractionStatistic(Property\InteractionStatisticProperty $interactionStatistic)
  * @method CollegeOrUniversityType setIsicV4(Property\IsicV4Property $isicV4)
+ * @method CollegeOrUniversityType setKeywords(Property\KeywordsProperty $keywords)
  * @method CollegeOrUniversityType setLegalName(Property\LegalNameProperty $legalName)
  * @method CollegeOrUniversityType setLeiCode(Property\LeiCodeProperty $leiCode)
  * @method CollegeOrUniversityType setLocation(Property\LocationProperty $location)
@@ -53,8 +56,10 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method CollegeOrUniversityType setReview(Property\ReviewProperty $review)
  * @method CollegeOrUniversityType setSameAs(Property\SameAsProperty $sameAs)
  * @method CollegeOrUniversityType setSeeks(Property\SeeksProperty $seeks)
+ * @method CollegeOrUniversityType setSlogan(Property\SloganProperty $slogan)
  * @method CollegeOrUniversityType setSponsor(Property\SponsorProperty $sponsor)
  * @method CollegeOrUniversityType setSubOrganization(Property\SubOrganizationProperty $subOrganization)
+ * @method CollegeOrUniversityType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method CollegeOrUniversityType setTaxID(Property\TaxIDProperty $taxID)
  * @method CollegeOrUniversityType setTelephone(Property\TelephoneProperty $telephone)
  * @method CollegeOrUniversityType setUrl(Property\UrlProperty $url)
@@ -64,7 +69,7 @@ class CollegeOrUniversityType extends EducationalOrganizationType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

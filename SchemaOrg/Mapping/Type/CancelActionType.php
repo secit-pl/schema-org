@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class CancelActionType.
+ * The act of asserting that a future event/action is no longer going to happen. Related actions: ConfirmAction: The antonym of CancelAction.
  * 
  * @method CancelActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method CancelActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -28,6 +28,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method CancelActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method CancelActionType setScheduledTime(Property\ScheduledTimeProperty $scheduledTime)
  * @method CancelActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method CancelActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method CancelActionType setTarget(Property\TargetProperty $target)
  * @method CancelActionType setUrl(Property\UrlProperty $url)
  */
@@ -35,7 +36,7 @@ class CancelActionType extends PlanActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

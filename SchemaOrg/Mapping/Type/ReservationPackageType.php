@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ReservationPackageType.
+ * A group of multiple reservations with common values for all sub-reservations.
  * 
  * @method ReservationPackageType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method ReservationPackageType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -21,12 +21,12 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ReservationPackageType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method ReservationPackageType setPriceCurrency(Property\PriceCurrencyProperty $priceCurrency)
  * @method ReservationPackageType setProgramMembershipUsed(Property\ProgramMembershipUsedProperty $programMembershipUsed)
- * @method ReservationPackageType setProvider(Property\ProviderProperty $provider)
  * @method ReservationPackageType setReservationFor(Property\ReservationForProperty $reservationFor)
  * @method ReservationPackageType setReservationId(Property\ReservationIdProperty $reservationId)
  * @method ReservationPackageType setReservationStatus(Property\ReservationStatusProperty $reservationStatus)
  * @method ReservationPackageType setReservedTicket(Property\ReservedTicketProperty $reservedTicket)
  * @method ReservationPackageType setSameAs(Property\SameAsProperty $sameAs)
+ * @method ReservationPackageType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method ReservationPackageType setTotalPrice(Property\TotalPriceProperty $totalPrice)
  * @method ReservationPackageType setUnderName(Property\UnderNameProperty $underName)
  * @method ReservationPackageType setUrl(Property\UrlProperty $url)
@@ -40,7 +40,7 @@ class ReservationPackageType extends ReservationType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -49,7 +49,7 @@ class ReservationPackageType extends ReservationType {
 
 	/**
 	 * Get sub reservation.
-	 * 
+	 *
 	 * @return Property\SubReservationProperty
 	 */
 	public function getSubReservation() {
@@ -58,7 +58,7 @@ class ReservationPackageType extends ReservationType {
 
 	/**
 	 * Set sub reservation.
-	 * 
+	 *
 	 * @param Property\SubReservationProperty $subReservation
 	 * @return ReservationPackageType
 	 */

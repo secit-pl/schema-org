@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class HowToDirectionType.
+ * A direction indicating a single action to do in the instructions for how to achieve a result.
  * 
  * @method HowToDirectionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method HowToDirectionType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -21,6 +21,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method HowToDirectionType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method HowToDirectionType setPreviousItem(Property\PreviousItemProperty $previousItem)
  * @method HowToDirectionType setSameAs(Property\SameAsProperty $sameAs)
+ * @method HowToDirectionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method HowToDirectionType setUrl(Property\UrlProperty $url)
  */
 class HowToDirectionType extends ListItemType {
@@ -67,7 +68,7 @@ class HowToDirectionType extends ListItemType {
 
 	/**
 	 * Get after media.
-	 * 
+	 *
 	 * @return Property\AfterMediaProperty
 	 */
 	public function getAfterMedia() {
@@ -76,7 +77,7 @@ class HowToDirectionType extends ListItemType {
 
 	/**
 	 * Get before media.
-	 * 
+	 *
 	 * @return Property\BeforeMediaProperty
 	 */
 	public function getBeforeMedia() {
@@ -85,7 +86,7 @@ class HowToDirectionType extends ListItemType {
 
 	/**
 	 * Get during media.
-	 * 
+	 *
 	 * @return Property\DuringMediaProperty
 	 */
 	public function getDuringMedia() {
@@ -94,7 +95,7 @@ class HowToDirectionType extends ListItemType {
 
 	/**
 	 * Get perform time.
-	 * 
+	 *
 	 * @return Property\PerformTimeProperty
 	 */
 	public function getPerformTime() {
@@ -103,7 +104,7 @@ class HowToDirectionType extends ListItemType {
 
 	/**
 	 * Get prep time.
-	 * 
+	 *
 	 * @return Property\PrepTimeProperty
 	 */
 	public function getPrepTime() {
@@ -112,7 +113,7 @@ class HowToDirectionType extends ListItemType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -121,7 +122,7 @@ class HowToDirectionType extends ListItemType {
 
 	/**
 	 * Get supply.
-	 * 
+	 *
 	 * @return Property\SupplyProperty
 	 */
 	public function getSupply() {
@@ -130,7 +131,7 @@ class HowToDirectionType extends ListItemType {
 
 	/**
 	 * Get tool.
-	 * 
+	 *
 	 * @return Property\ToolProperty
 	 */
 	public function getTool() {
@@ -139,7 +140,7 @@ class HowToDirectionType extends ListItemType {
 
 	/**
 	 * Get total time.
-	 * 
+	 *
 	 * @return Property\TotalTimeProperty
 	 */
 	public function getTotalTime() {
@@ -148,7 +149,7 @@ class HowToDirectionType extends ListItemType {
 
 	/**
 	 * Set after media.
-	 * 
+	 *
 	 * @param Property\AfterMediaProperty $afterMedia
 	 * @return HowToDirectionType
 	 */
@@ -160,7 +161,7 @@ class HowToDirectionType extends ListItemType {
 
 	/**
 	 * Set before media.
-	 * 
+	 *
 	 * @param Property\BeforeMediaProperty $beforeMedia
 	 * @return HowToDirectionType
 	 */
@@ -172,7 +173,7 @@ class HowToDirectionType extends ListItemType {
 
 	/**
 	 * Set during media.
-	 * 
+	 *
 	 * @param Property\DuringMediaProperty $duringMedia
 	 * @return HowToDirectionType
 	 */
@@ -184,7 +185,7 @@ class HowToDirectionType extends ListItemType {
 
 	/**
 	 * Set perform time.
-	 * 
+	 *
 	 * @param Property\PerformTimeProperty $performTime
 	 * @return HowToDirectionType
 	 */
@@ -196,7 +197,7 @@ class HowToDirectionType extends ListItemType {
 
 	/**
 	 * Set prep time.
-	 * 
+	 *
 	 * @param Property\PrepTimeProperty $prepTime
 	 * @return HowToDirectionType
 	 */
@@ -208,7 +209,7 @@ class HowToDirectionType extends ListItemType {
 
 	/**
 	 * Set supply.
-	 * 
+	 *
 	 * @param Property\SupplyProperty $supply
 	 * @return HowToDirectionType
 	 */
@@ -220,7 +221,7 @@ class HowToDirectionType extends ListItemType {
 
 	/**
 	 * Set tool.
-	 * 
+	 *
 	 * @param Property\ToolProperty $tool
 	 * @return HowToDirectionType
 	 */
@@ -232,7 +233,7 @@ class HowToDirectionType extends ListItemType {
 
 	/**
 	 * Set total time.
-	 * 
+	 *
 	 * @param Property\TotalTimeProperty $totalTime
 	 * @return HowToDirectionType
 	 */

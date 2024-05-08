@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * AvailableAtOrFromProperty class.
+ * The place(s) from which the offer can be obtained (e.g. store locations).
  * 
  * @method AvailableAtOrFromProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class AvailableAtOrFromProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class AvailableAtOrFromProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

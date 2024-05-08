@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class PaymentDueType.
+ * The payment is due, but still within an acceptable time to be received.
  * 
  * @method PaymentDueType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method PaymentDueType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method PaymentDueType setName(Property\NameProperty $name)
  * @method PaymentDueType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method PaymentDueType setSameAs(Property\SameAsProperty $sameAs)
+ * @method PaymentDueType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method PaymentDueType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method PaymentDueType setUrl(Property\UrlProperty $url)
  */
 class PaymentDueType extends PaymentStatusType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

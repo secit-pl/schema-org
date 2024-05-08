@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ParkingMapType.
+ * A parking map.
  * 
  * @method ParkingMapType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method ParkingMapType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ParkingMapType setName(Property\NameProperty $name)
  * @method ParkingMapType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method ParkingMapType setSameAs(Property\SameAsProperty $sameAs)
+ * @method ParkingMapType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method ParkingMapType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method ParkingMapType setUrl(Property\UrlProperty $url)
  */
 class ParkingMapType extends MapCategoryType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

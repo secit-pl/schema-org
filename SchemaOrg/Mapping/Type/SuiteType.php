@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class SuiteType.
+ * A suite in a hotel or other public accommodation, denotes a class of luxury accommodations, the key feature of which is multiple rooms (source: Wikipedia, the free encyclopedia, see http://en.wikipedia.org/wiki/Suite_(hotel)). See also the dedicated document on the use of schema.org for marking up hotels and other forms of accommodations.
  * 
  * @method SuiteType setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method SuiteType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -13,6 +13,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SuiteType setAggregateRating(Property\AggregateRatingProperty $aggregateRating)
  * @method SuiteType setAlternateName(Property\AlternateNameProperty $alternateName)
  * @method SuiteType setAmenityFeature(Property\AmenityFeatureProperty $amenityFeature)
+ * @method SuiteType setBed(Property\BedProperty $bed)
  * @method SuiteType setBranchCode(Property\BranchCodeProperty $branchCode)
  * @method SuiteType setContainedInPlace(Property\ContainedInPlaceProperty $containedInPlace)
  * @method SuiteType setContainsPlace(Property\ContainsPlaceProperty $containsPlace)
@@ -22,17 +23,32 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SuiteType setFaxNumber(Property\FaxNumberProperty $faxNumber)
  * @method SuiteType setFloorSize(Property\FloorSizeProperty $floorSize)
  * @method SuiteType setGeo(Property\GeoProperty $geo)
+ * @method SuiteType setGeoContains(Property\GeoContainsProperty $geoContains)
+ * @method SuiteType setGeoCoveredBy(Property\GeoCoveredByProperty $geoCoveredBy)
+ * @method SuiteType setGeoCovers(Property\GeoCoversProperty $geoCovers)
+ * @method SuiteType setGeoCrosses(Property\GeoCrossesProperty $geoCrosses)
+ * @method SuiteType setGeoDisjoint(Property\GeoDisjointProperty $geoDisjoint)
+ * @method SuiteType setGeoEquals(Property\GeoEqualsProperty $geoEquals)
+ * @method SuiteType setGeoIntersects(Property\GeoIntersectsProperty $geoIntersects)
+ * @method SuiteType setGeoOverlaps(Property\GeoOverlapsProperty $geoOverlaps)
+ * @method SuiteType setGeoTouches(Property\GeoTouchesProperty $geoTouches)
+ * @method SuiteType setGeoWithin(Property\GeoWithinProperty $geoWithin)
  * @method SuiteType setGlobalLocationNumber(Property\GlobalLocationNumberProperty $globalLocationNumber)
+ * @method SuiteType setHasCertification(Property\HasCertificationProperty $hasCertification)
  * @method SuiteType setHasMap(Property\HasMapProperty $hasMap)
  * @method SuiteType setIdentifier(Property\IdentifierProperty $identifier)
  * @method SuiteType setImage(Property\ImageProperty $image)
  * @method SuiteType setIsAccessibleForFree(Property\IsAccessibleForFreeProperty $isAccessibleForFree)
  * @method SuiteType setIsicV4(Property\IsicV4Property $isicV4)
+ * @method SuiteType setKeywords(Property\KeywordsProperty $keywords)
+ * @method SuiteType setLatitude(Property\LatitudeProperty $latitude)
  * @method SuiteType setLogo(Property\LogoProperty $logo)
+ * @method SuiteType setLongitude(Property\LongitudeProperty $longitude)
  * @method SuiteType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
  * @method SuiteType setMaximumAttendeeCapacity(Property\MaximumAttendeeCapacityProperty $maximumAttendeeCapacity)
  * @method SuiteType setName(Property\NameProperty $name)
  * @method SuiteType setNumberOfRooms(Property\NumberOfRoomsProperty $numberOfRooms)
+ * @method SuiteType setOccupancy(Property\OccupancyProperty $occupancy)
  * @method SuiteType setOpeningHoursSpecification(Property\OpeningHoursSpecificationProperty $openingHoursSpecification)
  * @method SuiteType setPermittedUsage(Property\PermittedUsageProperty $permittedUsage)
  * @method SuiteType setPetsAllowed(Property\PetsAllowedProperty $petsAllowed)
@@ -41,8 +57,10 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SuiteType setPublicAccess(Property\PublicAccessProperty $publicAccess)
  * @method SuiteType setReview(Property\ReviewProperty $review)
  * @method SuiteType setSameAs(Property\SameAsProperty $sameAs)
+ * @method SuiteType setSlogan(Property\SloganProperty $slogan)
  * @method SuiteType setSmokingAllowed(Property\SmokingAllowedProperty $smokingAllowed)
  * @method SuiteType setSpecialOpeningHoursSpecification(Property\SpecialOpeningHoursSpecificationProperty $specialOpeningHoursSpecification)
+ * @method SuiteType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method SuiteType setTelephone(Property\TelephoneProperty $telephone)
  * @method SuiteType setUrl(Property\UrlProperty $url)
  */
@@ -65,7 +83,7 @@ class SuiteType extends AccommodationType {
 
 	/**
 	 * Get bed.
-	 * 
+	 *
 	 * @return Property\BedProperty
 	 */
 	public function getBed() {
@@ -74,7 +92,7 @@ class SuiteType extends AccommodationType {
 
 	/**
 	 * Get number of rooms.
-	 * 
+	 *
 	 * @return Property\NumberOfRoomsProperty
 	 */
 	public function getNumberOfRooms() {
@@ -83,7 +101,7 @@ class SuiteType extends AccommodationType {
 
 	/**
 	 * Get occupancy.
-	 * 
+	 *
 	 * @return Property\OccupancyProperty
 	 */
 	public function getOccupancy() {
@@ -92,7 +110,7 @@ class SuiteType extends AccommodationType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -101,7 +119,7 @@ class SuiteType extends AccommodationType {
 
 	/**
 	 * Set bed.
-	 * 
+	 *
 	 * @param Property\BedProperty $bed
 	 * @return SuiteType
 	 */
@@ -113,7 +131,7 @@ class SuiteType extends AccommodationType {
 
 	/**
 	 * Set number of rooms.
-	 * 
+	 *
 	 * @param Property\NumberOfRoomsProperty $numberOfRooms
 	 * @return SuiteType
 	 */
@@ -125,7 +143,7 @@ class SuiteType extends AccommodationType {
 
 	/**
 	 * Set occupancy.
-	 * 
+	 *
 	 * @param Property\OccupancyProperty $occupancy
 	 * @return SuiteType
 	 */

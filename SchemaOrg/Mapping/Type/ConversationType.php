@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ConversationType.
+ * One or more messages between organizations or people on a particular topic. Individual messages can be linked to the conversation with isPartOf or hasPart properties.
  * 
+ * @method ConversationType setAbout(Property\AboutProperty $about)
  * @method ConversationType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method ConversationType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method ConversationType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -33,6 +34,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ConversationType setContributor(Property\ContributorProperty $contributor)
  * @method ConversationType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method ConversationType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method ConversationType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method ConversationType setCreator(Property\CreatorProperty $creator)
  * @method ConversationType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method ConversationType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -44,9 +46,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ConversationType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method ConversationType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method ConversationType setEncoding(Property\EncodingProperty $encoding)
+ * @method ConversationType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method ConversationType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method ConversationType setExpires(Property\ExpiresProperty $expires)
- * @method ConversationType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method ConversationType setFunder(Property\FunderProperty $funder)
  * @method ConversationType setGenre(Property\GenreProperty $genre)
  * @method ConversationType setHasPart(Property\HasPartProperty $hasPart)
@@ -73,9 +75,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ConversationType setPosition(Property\PositionProperty $position)
  * @method ConversationType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method ConversationType setProducer(Property\ProducerProperty $producer)
- * @method ConversationType setProvider(Property\ProviderProperty $provider)
  * @method ConversationType setPublication(Property\PublicationProperty $publication)
  * @method ConversationType setPublisher(Property\PublisherProperty $publisher)
+ * @method ConversationType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method ConversationType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method ConversationType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method ConversationType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -83,24 +85,30 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ConversationType setSameAs(Property\SameAsProperty $sameAs)
  * @method ConversationType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method ConversationType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method ConversationType setSpatial(Property\SpatialProperty $spatial)
  * @method ConversationType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method ConversationType setSponsor(Property\SponsorProperty $sponsor)
+ * @method ConversationType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method ConversationType setTemporal(Property\TemporalProperty $temporal)
  * @method ConversationType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method ConversationType setText(Property\TextProperty $text)
+ * @method ConversationType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method ConversationType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method ConversationType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method ConversationType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method ConversationType setTranslator(Property\TranslatorProperty $translator)
  * @method ConversationType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method ConversationType setUrl(Property\UrlProperty $url)
  * @method ConversationType setVersion(Property\VersionProperty $version)
  * @method ConversationType setVideo(Property\VideoProperty $video)
  * @method ConversationType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method ConversationType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class ConversationType extends CreativeWorkType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

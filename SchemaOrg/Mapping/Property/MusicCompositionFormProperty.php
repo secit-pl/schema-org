@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * MusicCompositionFormProperty class.
+ * The type of composition (e.g. overture, sonata, symphony, etc.).
  * 
  * @method MusicCompositionFormProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class MusicCompositionFormProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class MusicCompositionFormProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

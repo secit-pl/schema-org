@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class AlignmentObjectType.
+ * An intangible item that describes an alignment between a learning resource and a node in an educational framework. Should not be used where the nature of the alignment can be described using a simple property, for example to express that a resource teaches or assesses a competency.
  * 
  * @method AlignmentObjectType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method AlignmentObjectType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,6 +17,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method AlignmentObjectType setName(Property\NameProperty $name)
  * @method AlignmentObjectType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method AlignmentObjectType setSameAs(Property\SameAsProperty $sameAs)
+ * @method AlignmentObjectType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method AlignmentObjectType setUrl(Property\UrlProperty $url)
  */
 class AlignmentObjectType extends IntangibleType {
@@ -48,7 +49,7 @@ class AlignmentObjectType extends IntangibleType {
 
 	/**
 	 * Get alignment type.
-	 * 
+	 *
 	 * @return Property\AlignmentTypeProperty
 	 */
 	public function getAlignmentType() {
@@ -57,7 +58,7 @@ class AlignmentObjectType extends IntangibleType {
 
 	/**
 	 * Get educational framework.
-	 * 
+	 *
 	 * @return Property\EducationalFrameworkProperty
 	 */
 	public function getEducationalFramework() {
@@ -66,7 +67,7 @@ class AlignmentObjectType extends IntangibleType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -75,7 +76,7 @@ class AlignmentObjectType extends IntangibleType {
 
 	/**
 	 * Get target description.
-	 * 
+	 *
 	 * @return Property\TargetDescriptionProperty
 	 */
 	public function getTargetDescription() {
@@ -84,7 +85,7 @@ class AlignmentObjectType extends IntangibleType {
 
 	/**
 	 * Get target name.
-	 * 
+	 *
 	 * @return Property\TargetNameProperty
 	 */
 	public function getTargetName() {
@@ -93,7 +94,7 @@ class AlignmentObjectType extends IntangibleType {
 
 	/**
 	 * Get target url.
-	 * 
+	 *
 	 * @return Property\TargetUrlProperty
 	 */
 	public function getTargetUrl() {
@@ -102,7 +103,7 @@ class AlignmentObjectType extends IntangibleType {
 
 	/**
 	 * Set alignment type.
-	 * 
+	 *
 	 * @param Property\AlignmentTypeProperty $alignmentType
 	 * @return AlignmentObjectType
 	 */
@@ -114,7 +115,7 @@ class AlignmentObjectType extends IntangibleType {
 
 	/**
 	 * Set educational framework.
-	 * 
+	 *
 	 * @param Property\EducationalFrameworkProperty $educationalFramework
 	 * @return AlignmentObjectType
 	 */
@@ -126,7 +127,7 @@ class AlignmentObjectType extends IntangibleType {
 
 	/**
 	 * Set target description.
-	 * 
+	 *
 	 * @param Property\TargetDescriptionProperty $targetDescription
 	 * @return AlignmentObjectType
 	 */
@@ -138,7 +139,7 @@ class AlignmentObjectType extends IntangibleType {
 
 	/**
 	 * Set target name.
-	 * 
+	 *
 	 * @param Property\TargetNameProperty $targetName
 	 * @return AlignmentObjectType
 	 */
@@ -150,7 +151,7 @@ class AlignmentObjectType extends IntangibleType {
 
 	/**
 	 * Set target url.
-	 * 
+	 *
 	 * @param Property\TargetUrlProperty $targetUrl
 	 * @return AlignmentObjectType
 	 */

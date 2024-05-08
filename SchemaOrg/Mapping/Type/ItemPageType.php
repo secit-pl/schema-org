@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ItemPageType.
+ * A page devoted to a single item, such as a particular product or hotel.
  * 
+ * @method ItemPageType setAbout(Property\AboutProperty $about)
  * @method ItemPageType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method ItemPageType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method ItemPageType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -34,6 +35,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ItemPageType setContributor(Property\ContributorProperty $contributor)
  * @method ItemPageType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method ItemPageType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method ItemPageType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method ItemPageType setCreator(Property\CreatorProperty $creator)
  * @method ItemPageType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method ItemPageType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -45,9 +47,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ItemPageType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method ItemPageType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method ItemPageType setEncoding(Property\EncodingProperty $encoding)
+ * @method ItemPageType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method ItemPageType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method ItemPageType setExpires(Property\ExpiresProperty $expires)
- * @method ItemPageType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method ItemPageType setFunder(Property\FunderProperty $funder)
  * @method ItemPageType setGenre(Property\GenreProperty $genre)
  * @method ItemPageType setHasPart(Property\HasPartProperty $hasPart)
@@ -77,9 +79,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ItemPageType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method ItemPageType setPrimaryImageOfPage(Property\PrimaryImageOfPageProperty $primaryImageOfPage)
  * @method ItemPageType setProducer(Property\ProducerProperty $producer)
- * @method ItemPageType setProvider(Property\ProviderProperty $provider)
  * @method ItemPageType setPublication(Property\PublicationProperty $publication)
  * @method ItemPageType setPublisher(Property\PublisherProperty $publisher)
+ * @method ItemPageType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method ItemPageType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method ItemPageType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method ItemPageType setRelatedLink(Property\RelatedLinkProperty $relatedLink)
@@ -90,25 +92,32 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ItemPageType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method ItemPageType setSignificantLink(Property\SignificantLinkProperty $significantLink)
  * @method ItemPageType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method ItemPageType setSpatial(Property\SpatialProperty $spatial)
  * @method ItemPageType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
+ * @method ItemPageType setSpeakable(Property\SpeakableProperty $speakable)
  * @method ItemPageType setSpecialty(Property\SpecialtyProperty $specialty)
  * @method ItemPageType setSponsor(Property\SponsorProperty $sponsor)
+ * @method ItemPageType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method ItemPageType setTemporal(Property\TemporalProperty $temporal)
  * @method ItemPageType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method ItemPageType setText(Property\TextProperty $text)
+ * @method ItemPageType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method ItemPageType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method ItemPageType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method ItemPageType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method ItemPageType setTranslator(Property\TranslatorProperty $translator)
  * @method ItemPageType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method ItemPageType setUrl(Property\UrlProperty $url)
  * @method ItemPageType setVersion(Property\VersionProperty $version)
  * @method ItemPageType setVideo(Property\VideoProperty $video)
  * @method ItemPageType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method ItemPageType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class ItemPageType extends WebPageType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class VehicleType.
+ * A vehicle is a device that is designed or used to transport people or cargo over land, water, air, or through space.
  * 
  * @method VehicleType setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method VehicleType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -16,6 +16,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method VehicleType setBrand(Property\BrandProperty $brand)
  * @method VehicleType setCategory(Property\CategoryProperty $category)
  * @method VehicleType setColor(Property\ColorProperty $color)
+ * @method VehicleType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method VehicleType setDepth(Property\DepthProperty $depth)
  * @method VehicleType setDescription(Property\DescriptionProperty $description)
  * @method VehicleType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
@@ -23,14 +24,18 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method VehicleType setGtin13(Property\Gtin13Property $gtin13)
  * @method VehicleType setGtin14(Property\Gtin14Property $gtin14)
  * @method VehicleType setGtin8(Property\Gtin8Property $gtin8)
+ * @method VehicleType setHasCertification(Property\HasCertificationProperty $hasCertification)
  * @method VehicleType setHeight(Property\HeightProperty $height)
  * @method VehicleType setIdentifier(Property\IdentifierProperty $identifier)
  * @method VehicleType setImage(Property\ImageProperty $image)
  * @method VehicleType setIsAccessoryOrSparePartFor(Property\IsAccessoryOrSparePartForProperty $isAccessoryOrSparePartFor)
  * @method VehicleType setIsConsumableFor(Property\IsConsumableForProperty $isConsumableFor)
+ * @method VehicleType setIsFamilyFriendly(Property\IsFamilyFriendlyProperty $isFamilyFriendly)
  * @method VehicleType setIsRelatedTo(Property\IsRelatedToProperty $isRelatedTo)
  * @method VehicleType setIsSimilarTo(Property\IsSimilarToProperty $isSimilarTo)
+ * @method VehicleType setIsVariantOf(Property\IsVariantOfProperty $isVariantOf)
  * @method VehicleType setItemCondition(Property\ItemConditionProperty $itemCondition)
+ * @method VehicleType setKeywords(Property\KeywordsProperty $keywords)
  * @method VehicleType setLogo(Property\LogoProperty $logo)
  * @method VehicleType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
  * @method VehicleType setManufacturer(Property\ManufacturerProperty $manufacturer)
@@ -47,11 +52,23 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method VehicleType setReview(Property\ReviewProperty $review)
  * @method VehicleType setSameAs(Property\SameAsProperty $sameAs)
  * @method VehicleType setSku(Property\SkuProperty $sku)
+ * @method VehicleType setSlogan(Property\SloganProperty $slogan)
+ * @method VehicleType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method VehicleType setUrl(Property\UrlProperty $url)
  * @method VehicleType setWeight(Property\WeightProperty $weight)
  * @method VehicleType setWidth(Property\WidthProperty $width)
  */
 class VehicleType extends ProductType {
+
+	/**
+	 * @var Property\AccelerationTimeProperty
+	 */
+	private $accelerationTime;
+
+	/**
+	 * @var Property\BodyTypeProperty
+	 */
+	private $bodyType;
 
 	/**
 	 * @var Property\CargoVolumeProperty
@@ -67,6 +84,16 @@ class VehicleType extends ProductType {
 	 * @var Property\DriveWheelConfigurationProperty
 	 */
 	private $driveWheelConfiguration;
+
+	/**
+	 * @var Property\EmissionsCO2Property
+	 */
+	private $emissionsCO2;
+
+	/**
+	 * @var Property\FuelCapacityProperty
+	 */
+	private $fuelCapacity;
 
 	/**
 	 * @var Property\FuelConsumptionProperty
@@ -89,9 +116,19 @@ class VehicleType extends ProductType {
 	private $knownVehicleDamages;
 
 	/**
+	 * @var Property\MeetsEmissionStandardProperty
+	 */
+	private $meetsEmissionStandard;
+
+	/**
 	 * @var Property\MileageFromOdometerProperty
 	 */
 	private $mileageFromOdometer;
+
+	/**
+	 * @var Property\ModelDateProperty
+	 */
+	private $modelDate;
 
 	/**
 	 * @var Property\NumberOfAirbagsProperty
@@ -119,6 +156,11 @@ class VehicleType extends ProductType {
 	private $numberOfPreviousOwners;
 
 	/**
+	 * @var Property\PayloadProperty
+	 */
+	private $payload;
+
+	/**
 	 * @var Property\ProductionDateProperty
 	 */
 	private $productionDate;
@@ -129,9 +171,29 @@ class VehicleType extends ProductType {
 	private $purchaseDate;
 
 	/**
+	 * @var Property\SeatingCapacityProperty
+	 */
+	private $seatingCapacity;
+
+	/**
+	 * @var Property\SpeedProperty
+	 */
+	private $speed;
+
+	/**
 	 * @var Property\SteeringPositionProperty
 	 */
 	private $steeringPosition;
+
+	/**
+	 * @var Property\TongueWeightProperty
+	 */
+	private $tongueWeight;
+
+	/**
+	 * @var Property\TrailerWeightProperty
+	 */
+	private $trailerWeight;
 
 	/**
 	 * @var Property\VehicleConfigurationProperty
@@ -169,13 +231,46 @@ class VehicleType extends ProductType {
 	private $vehicleSeatingCapacity;
 
 	/**
+	 * @var Property\VehicleSpecialUsageProperty
+	 */
+	private $vehicleSpecialUsage;
+
+	/**
 	 * @var Property\VehicleTransmissionProperty
 	 */
 	private $vehicleTransmission;
 
 	/**
+	 * @var Property\WeightTotalProperty
+	 */
+	private $weightTotal;
+
+	/**
+	 * @var Property\WheelbaseProperty
+	 */
+	private $wheelbase;
+
+	/**
+	 * Get acceleration time.
+	 *
+	 * @return Property\AccelerationTimeProperty
+	 */
+	public function getAccelerationTime() {
+		return $this->accelerationTime;
+	}
+
+	/**
+	 * Get body type.
+	 *
+	 * @return Property\BodyTypeProperty
+	 */
+	public function getBodyType() {
+		return $this->bodyType;
+	}
+
+	/**
 	 * Get cargo volume.
-	 * 
+	 *
 	 * @return Property\CargoVolumeProperty
 	 */
 	public function getCargoVolume() {
@@ -184,7 +279,7 @@ class VehicleType extends ProductType {
 
 	/**
 	 * Get date vehicle first registered.
-	 * 
+	 *
 	 * @return Property\DateVehicleFirstRegisteredProperty
 	 */
 	public function getDateVehicleFirstRegistered() {
@@ -193,7 +288,7 @@ class VehicleType extends ProductType {
 
 	/**
 	 * Get drive wheel configuration.
-	 * 
+	 *
 	 * @return Property\DriveWheelConfigurationProperty
 	 */
 	public function getDriveWheelConfiguration() {
@@ -201,8 +296,26 @@ class VehicleType extends ProductType {
 	}
 
 	/**
+	 * Get emissionsco2.
+	 *
+	 * @return Property\EmissionsCO2Property
+	 */
+	public function getEmissionsCO2() {
+		return $this->emissionsCO2;
+	}
+
+	/**
+	 * Get fuel capacity.
+	 *
+	 * @return Property\FuelCapacityProperty
+	 */
+	public function getFuelCapacity() {
+		return $this->fuelCapacity;
+	}
+
+	/**
 	 * Get fuel consumption.
-	 * 
+	 *
 	 * @return Property\FuelConsumptionProperty
 	 */
 	public function getFuelConsumption() {
@@ -211,7 +324,7 @@ class VehicleType extends ProductType {
 
 	/**
 	 * Get fuel efficiency.
-	 * 
+	 *
 	 * @return Property\FuelEfficiencyProperty
 	 */
 	public function getFuelEfficiency() {
@@ -220,7 +333,7 @@ class VehicleType extends ProductType {
 
 	/**
 	 * Get fuel type.
-	 * 
+	 *
 	 * @return Property\FuelTypeProperty
 	 */
 	public function getFuelType() {
@@ -229,7 +342,7 @@ class VehicleType extends ProductType {
 
 	/**
 	 * Get known vehicle damages.
-	 * 
+	 *
 	 * @return Property\KnownVehicleDamagesProperty
 	 */
 	public function getKnownVehicleDamages() {
@@ -237,8 +350,17 @@ class VehicleType extends ProductType {
 	}
 
 	/**
+	 * Get meets emission standard.
+	 *
+	 * @return Property\MeetsEmissionStandardProperty
+	 */
+	public function getMeetsEmissionStandard() {
+		return $this->meetsEmissionStandard;
+	}
+
+	/**
 	 * Get mileage from odometer.
-	 * 
+	 *
 	 * @return Property\MileageFromOdometerProperty
 	 */
 	public function getMileageFromOdometer() {
@@ -246,8 +368,17 @@ class VehicleType extends ProductType {
 	}
 
 	/**
+	 * Get model date.
+	 *
+	 * @return Property\ModelDateProperty
+	 */
+	public function getModelDate() {
+		return $this->modelDate;
+	}
+
+	/**
 	 * Get number of airbags.
-	 * 
+	 *
 	 * @return Property\NumberOfAirbagsProperty
 	 */
 	public function getNumberOfAirbags() {
@@ -256,7 +387,7 @@ class VehicleType extends ProductType {
 
 	/**
 	 * Get number of axles.
-	 * 
+	 *
 	 * @return Property\NumberOfAxlesProperty
 	 */
 	public function getNumberOfAxles() {
@@ -265,7 +396,7 @@ class VehicleType extends ProductType {
 
 	/**
 	 * Get number of doors.
-	 * 
+	 *
 	 * @return Property\NumberOfDoorsProperty
 	 */
 	public function getNumberOfDoors() {
@@ -274,7 +405,7 @@ class VehicleType extends ProductType {
 
 	/**
 	 * Get number of forward gears.
-	 * 
+	 *
 	 * @return Property\NumberOfForwardGearsProperty
 	 */
 	public function getNumberOfForwardGears() {
@@ -283,7 +414,7 @@ class VehicleType extends ProductType {
 
 	/**
 	 * Get number of previous owners.
-	 * 
+	 *
 	 * @return Property\NumberOfPreviousOwnersProperty
 	 */
 	public function getNumberOfPreviousOwners() {
@@ -291,8 +422,17 @@ class VehicleType extends ProductType {
 	}
 
 	/**
+	 * Get payload.
+	 *
+	 * @return Property\PayloadProperty
+	 */
+	public function getPayload() {
+		return $this->payload;
+	}
+
+	/**
 	 * Get production date.
-	 * 
+	 *
 	 * @return Property\ProductionDateProperty
 	 */
 	public function getProductionDate() {
@@ -301,7 +441,7 @@ class VehicleType extends ProductType {
 
 	/**
 	 * Get purchase date.
-	 * 
+	 *
 	 * @return Property\PurchaseDateProperty
 	 */
 	public function getPurchaseDate() {
@@ -310,7 +450,7 @@ class VehicleType extends ProductType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -318,8 +458,26 @@ class VehicleType extends ProductType {
 	}
 
 	/**
+	 * Get seating capacity.
+	 *
+	 * @return Property\SeatingCapacityProperty
+	 */
+	public function getSeatingCapacity() {
+		return $this->seatingCapacity;
+	}
+
+	/**
+	 * Get speed.
+	 *
+	 * @return Property\SpeedProperty
+	 */
+	public function getSpeed() {
+		return $this->speed;
+	}
+
+	/**
 	 * Get steering position.
-	 * 
+	 *
 	 * @return Property\SteeringPositionProperty
 	 */
 	public function getSteeringPosition() {
@@ -327,8 +485,26 @@ class VehicleType extends ProductType {
 	}
 
 	/**
+	 * Get tongue weight.
+	 *
+	 * @return Property\TongueWeightProperty
+	 */
+	public function getTongueWeight() {
+		return $this->tongueWeight;
+	}
+
+	/**
+	 * Get trailer weight.
+	 *
+	 * @return Property\TrailerWeightProperty
+	 */
+	public function getTrailerWeight() {
+		return $this->trailerWeight;
+	}
+
+	/**
 	 * Get vehicle configuration.
-	 * 
+	 *
 	 * @return Property\VehicleConfigurationProperty
 	 */
 	public function getVehicleConfiguration() {
@@ -337,7 +513,7 @@ class VehicleType extends ProductType {
 
 	/**
 	 * Get vehicle engine.
-	 * 
+	 *
 	 * @return Property\VehicleEngineProperty
 	 */
 	public function getVehicleEngine() {
@@ -346,7 +522,7 @@ class VehicleType extends ProductType {
 
 	/**
 	 * Get vehicle identification number.
-	 * 
+	 *
 	 * @return Property\VehicleIdentificationNumberProperty
 	 */
 	public function getVehicleIdentificationNumber() {
@@ -355,7 +531,7 @@ class VehicleType extends ProductType {
 
 	/**
 	 * Get vehicle interior color.
-	 * 
+	 *
 	 * @return Property\VehicleInteriorColorProperty
 	 */
 	public function getVehicleInteriorColor() {
@@ -364,7 +540,7 @@ class VehicleType extends ProductType {
 
 	/**
 	 * Get vehicle interior type.
-	 * 
+	 *
 	 * @return Property\VehicleInteriorTypeProperty
 	 */
 	public function getVehicleInteriorType() {
@@ -373,7 +549,7 @@ class VehicleType extends ProductType {
 
 	/**
 	 * Get vehicle model date.
-	 * 
+	 *
 	 * @return Property\VehicleModelDateProperty
 	 */
 	public function getVehicleModelDate() {
@@ -382,7 +558,7 @@ class VehicleType extends ProductType {
 
 	/**
 	 * Get vehicle seating capacity.
-	 * 
+	 *
 	 * @return Property\VehicleSeatingCapacityProperty
 	 */
 	public function getVehicleSeatingCapacity() {
@@ -390,8 +566,17 @@ class VehicleType extends ProductType {
 	}
 
 	/**
+	 * Get vehicle special usage.
+	 *
+	 * @return Property\VehicleSpecialUsageProperty
+	 */
+	public function getVehicleSpecialUsage() {
+		return $this->vehicleSpecialUsage;
+	}
+
+	/**
 	 * Get vehicle transmission.
-	 * 
+	 *
 	 * @return Property\VehicleTransmissionProperty
 	 */
 	public function getVehicleTransmission() {
@@ -399,8 +584,50 @@ class VehicleType extends ProductType {
 	}
 
 	/**
+	 * Get weight total.
+	 *
+	 * @return Property\WeightTotalProperty
+	 */
+	public function getWeightTotal() {
+		return $this->weightTotal;
+	}
+
+	/**
+	 * Get wheelbase.
+	 *
+	 * @return Property\WheelbaseProperty
+	 */
+	public function getWheelbase() {
+		return $this->wheelbase;
+	}
+
+	/**
+	 * Set acceleration time.
+	 *
+	 * @param Property\AccelerationTimeProperty $accelerationTime
+	 * @return VehicleType
+	 */
+	public function setAccelerationTime(Property\AccelerationTimeProperty $accelerationTime) {
+		$this->accelerationTime = $accelerationTime;
+
+		return $this;
+	}
+
+	/**
+	 * Set body type.
+	 *
+	 * @param Property\BodyTypeProperty $bodyType
+	 * @return VehicleType
+	 */
+	public function setBodyType(Property\BodyTypeProperty $bodyType) {
+		$this->bodyType = $bodyType;
+
+		return $this;
+	}
+
+	/**
 	 * Set cargo volume.
-	 * 
+	 *
 	 * @param Property\CargoVolumeProperty $cargoVolume
 	 * @return VehicleType
 	 */
@@ -412,7 +639,7 @@ class VehicleType extends ProductType {
 
 	/**
 	 * Set date vehicle first registered.
-	 * 
+	 *
 	 * @param Property\DateVehicleFirstRegisteredProperty $dateVehicleFirstRegistered
 	 * @return VehicleType
 	 */
@@ -424,7 +651,7 @@ class VehicleType extends ProductType {
 
 	/**
 	 * Set drive wheel configuration.
-	 * 
+	 *
 	 * @param Property\DriveWheelConfigurationProperty $driveWheelConfiguration
 	 * @return VehicleType
 	 */
@@ -435,8 +662,32 @@ class VehicleType extends ProductType {
 	}
 
 	/**
+	 * Set emissionsco2.
+	 *
+	 * @param Property\EmissionsCO2Property $emissionsCO2
+	 * @return VehicleType
+	 */
+	public function setEmissionsCO2(Property\EmissionsCO2Property $emissionsCO2) {
+		$this->emissionsCO2 = $emissionsCO2;
+
+		return $this;
+	}
+
+	/**
+	 * Set fuel capacity.
+	 *
+	 * @param Property\FuelCapacityProperty $fuelCapacity
+	 * @return VehicleType
+	 */
+	public function setFuelCapacity(Property\FuelCapacityProperty $fuelCapacity) {
+		$this->fuelCapacity = $fuelCapacity;
+
+		return $this;
+	}
+
+	/**
 	 * Set fuel consumption.
-	 * 
+	 *
 	 * @param Property\FuelConsumptionProperty $fuelConsumption
 	 * @return VehicleType
 	 */
@@ -448,7 +699,7 @@ class VehicleType extends ProductType {
 
 	/**
 	 * Set fuel efficiency.
-	 * 
+	 *
 	 * @param Property\FuelEfficiencyProperty $fuelEfficiency
 	 * @return VehicleType
 	 */
@@ -460,7 +711,7 @@ class VehicleType extends ProductType {
 
 	/**
 	 * Set fuel type.
-	 * 
+	 *
 	 * @param Property\FuelTypeProperty $fuelType
 	 * @return VehicleType
 	 */
@@ -472,7 +723,7 @@ class VehicleType extends ProductType {
 
 	/**
 	 * Set known vehicle damages.
-	 * 
+	 *
 	 * @param Property\KnownVehicleDamagesProperty $knownVehicleDamages
 	 * @return VehicleType
 	 */
@@ -483,8 +734,20 @@ class VehicleType extends ProductType {
 	}
 
 	/**
+	 * Set meets emission standard.
+	 *
+	 * @param Property\MeetsEmissionStandardProperty $meetsEmissionStandard
+	 * @return VehicleType
+	 */
+	public function setMeetsEmissionStandard(Property\MeetsEmissionStandardProperty $meetsEmissionStandard) {
+		$this->meetsEmissionStandard = $meetsEmissionStandard;
+
+		return $this;
+	}
+
+	/**
 	 * Set mileage from odometer.
-	 * 
+	 *
 	 * @param Property\MileageFromOdometerProperty $mileageFromOdometer
 	 * @return VehicleType
 	 */
@@ -495,8 +758,20 @@ class VehicleType extends ProductType {
 	}
 
 	/**
+	 * Set model date.
+	 *
+	 * @param Property\ModelDateProperty $modelDate
+	 * @return VehicleType
+	 */
+	public function setModelDate(Property\ModelDateProperty $modelDate) {
+		$this->modelDate = $modelDate;
+
+		return $this;
+	}
+
+	/**
 	 * Set number of airbags.
-	 * 
+	 *
 	 * @param Property\NumberOfAirbagsProperty $numberOfAirbags
 	 * @return VehicleType
 	 */
@@ -508,7 +783,7 @@ class VehicleType extends ProductType {
 
 	/**
 	 * Set number of axles.
-	 * 
+	 *
 	 * @param Property\NumberOfAxlesProperty $numberOfAxles
 	 * @return VehicleType
 	 */
@@ -520,7 +795,7 @@ class VehicleType extends ProductType {
 
 	/**
 	 * Set number of doors.
-	 * 
+	 *
 	 * @param Property\NumberOfDoorsProperty $numberOfDoors
 	 * @return VehicleType
 	 */
@@ -532,7 +807,7 @@ class VehicleType extends ProductType {
 
 	/**
 	 * Set number of forward gears.
-	 * 
+	 *
 	 * @param Property\NumberOfForwardGearsProperty $numberOfForwardGears
 	 * @return VehicleType
 	 */
@@ -544,7 +819,7 @@ class VehicleType extends ProductType {
 
 	/**
 	 * Set number of previous owners.
-	 * 
+	 *
 	 * @param Property\NumberOfPreviousOwnersProperty $numberOfPreviousOwners
 	 * @return VehicleType
 	 */
@@ -555,8 +830,20 @@ class VehicleType extends ProductType {
 	}
 
 	/**
+	 * Set payload.
+	 *
+	 * @param Property\PayloadProperty $payload
+	 * @return VehicleType
+	 */
+	public function setPayload(Property\PayloadProperty $payload) {
+		$this->payload = $payload;
+
+		return $this;
+	}
+
+	/**
 	 * Set production date.
-	 * 
+	 *
 	 * @param Property\ProductionDateProperty $productionDate
 	 * @return VehicleType
 	 */
@@ -568,7 +855,7 @@ class VehicleType extends ProductType {
 
 	/**
 	 * Set purchase date.
-	 * 
+	 *
 	 * @param Property\PurchaseDateProperty $purchaseDate
 	 * @return VehicleType
 	 */
@@ -579,8 +866,32 @@ class VehicleType extends ProductType {
 	}
 
 	/**
+	 * Set seating capacity.
+	 *
+	 * @param Property\SeatingCapacityProperty $seatingCapacity
+	 * @return VehicleType
+	 */
+	public function setSeatingCapacity(Property\SeatingCapacityProperty $seatingCapacity) {
+		$this->seatingCapacity = $seatingCapacity;
+
+		return $this;
+	}
+
+	/**
+	 * Set speed.
+	 *
+	 * @param Property\SpeedProperty $speed
+	 * @return VehicleType
+	 */
+	public function setSpeed(Property\SpeedProperty $speed) {
+		$this->speed = $speed;
+
+		return $this;
+	}
+
+	/**
 	 * Set steering position.
-	 * 
+	 *
 	 * @param Property\SteeringPositionProperty $steeringPosition
 	 * @return VehicleType
 	 */
@@ -591,8 +902,32 @@ class VehicleType extends ProductType {
 	}
 
 	/**
+	 * Set tongue weight.
+	 *
+	 * @param Property\TongueWeightProperty $tongueWeight
+	 * @return VehicleType
+	 */
+	public function setTongueWeight(Property\TongueWeightProperty $tongueWeight) {
+		$this->tongueWeight = $tongueWeight;
+
+		return $this;
+	}
+
+	/**
+	 * Set trailer weight.
+	 *
+	 * @param Property\TrailerWeightProperty $trailerWeight
+	 * @return VehicleType
+	 */
+	public function setTrailerWeight(Property\TrailerWeightProperty $trailerWeight) {
+		$this->trailerWeight = $trailerWeight;
+
+		return $this;
+	}
+
+	/**
 	 * Set vehicle configuration.
-	 * 
+	 *
 	 * @param Property\VehicleConfigurationProperty $vehicleConfiguration
 	 * @return VehicleType
 	 */
@@ -604,7 +939,7 @@ class VehicleType extends ProductType {
 
 	/**
 	 * Set vehicle engine.
-	 * 
+	 *
 	 * @param Property\VehicleEngineProperty $vehicleEngine
 	 * @return VehicleType
 	 */
@@ -616,7 +951,7 @@ class VehicleType extends ProductType {
 
 	/**
 	 * Set vehicle identification number.
-	 * 
+	 *
 	 * @param Property\VehicleIdentificationNumberProperty $vehicleIdentificationNumber
 	 * @return VehicleType
 	 */
@@ -628,7 +963,7 @@ class VehicleType extends ProductType {
 
 	/**
 	 * Set vehicle interior color.
-	 * 
+	 *
 	 * @param Property\VehicleInteriorColorProperty $vehicleInteriorColor
 	 * @return VehicleType
 	 */
@@ -640,7 +975,7 @@ class VehicleType extends ProductType {
 
 	/**
 	 * Set vehicle interior type.
-	 * 
+	 *
 	 * @param Property\VehicleInteriorTypeProperty $vehicleInteriorType
 	 * @return VehicleType
 	 */
@@ -652,7 +987,7 @@ class VehicleType extends ProductType {
 
 	/**
 	 * Set vehicle model date.
-	 * 
+	 *
 	 * @param Property\VehicleModelDateProperty $vehicleModelDate
 	 * @return VehicleType
 	 */
@@ -664,7 +999,7 @@ class VehicleType extends ProductType {
 
 	/**
 	 * Set vehicle seating capacity.
-	 * 
+	 *
 	 * @param Property\VehicleSeatingCapacityProperty $vehicleSeatingCapacity
 	 * @return VehicleType
 	 */
@@ -675,13 +1010,49 @@ class VehicleType extends ProductType {
 	}
 
 	/**
+	 * Set vehicle special usage.
+	 *
+	 * @param Property\VehicleSpecialUsageProperty $vehicleSpecialUsage
+	 * @return VehicleType
+	 */
+	public function setVehicleSpecialUsage(Property\VehicleSpecialUsageProperty $vehicleSpecialUsage) {
+		$this->vehicleSpecialUsage = $vehicleSpecialUsage;
+
+		return $this;
+	}
+
+	/**
 	 * Set vehicle transmission.
-	 * 
+	 *
 	 * @param Property\VehicleTransmissionProperty $vehicleTransmission
 	 * @return VehicleType
 	 */
 	public function setVehicleTransmission(Property\VehicleTransmissionProperty $vehicleTransmission) {
 		$this->vehicleTransmission = $vehicleTransmission;
+
+		return $this;
+	}
+
+	/**
+	 * Set weight total.
+	 *
+	 * @param Property\WeightTotalProperty $weightTotal
+	 * @return VehicleType
+	 */
+	public function setWeightTotal(Property\WeightTotalProperty $weightTotal) {
+		$this->weightTotal = $weightTotal;
+
+		return $this;
+	}
+
+	/**
+	 * Set wheelbase.
+	 *
+	 * @param Property\WheelbaseProperty $wheelbase
+	 * @return VehicleType
+	 */
+	public function setWheelbase(Property\WheelbaseProperty $wheelbase) {
+		$this->wheelbase = $wheelbase;
 
 		return $this;
 	}

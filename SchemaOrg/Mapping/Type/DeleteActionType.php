@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class DeleteActionType.
+ * The act of editing a recipient by removing one of its objects.
  * 
  * @method DeleteActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method DeleteActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method DeleteActionType setResult(Property\ResultProperty $result)
  * @method DeleteActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method DeleteActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method DeleteActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method DeleteActionType setTarget(Property\TargetProperty $target)
  * @method DeleteActionType setTargetCollection(Property\TargetCollectionProperty $targetCollection)
  * @method DeleteActionType setUrl(Property\UrlProperty $url)
@@ -35,7 +36,7 @@ class DeleteActionType extends UpdateActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class SendActionType.
+ * The act of physically/electronically dispatching an object for transfer from an origin to a destination. Related actions: ReceiveAction: The reciprocal of SendAction. GiveAction: Unlike GiveAction, SendAction does not imply the transfer of ownership (e.g. I can send you my laptop, but I'm not necessarily giving it to you).
  * 
  * @method SendActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method SendActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -28,6 +28,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SendActionType setResult(Property\ResultProperty $result)
  * @method SendActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method SendActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method SendActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method SendActionType setTarget(Property\TargetProperty $target)
  * @method SendActionType setToLocation(Property\ToLocationProperty $toLocation)
  * @method SendActionType setUrl(Property\UrlProperty $url)
@@ -46,7 +47,7 @@ class SendActionType extends TransferActionType {
 
 	/**
 	 * Get delivery method.
-	 * 
+	 *
 	 * @return Property\DeliveryMethodProperty
 	 */
 	public function getDeliveryMethod() {
@@ -55,7 +56,7 @@ class SendActionType extends TransferActionType {
 
 	/**
 	 * Get recipient.
-	 * 
+	 *
 	 * @return Property\RecipientProperty
 	 */
 	public function getRecipient() {
@@ -64,7 +65,7 @@ class SendActionType extends TransferActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -73,7 +74,7 @@ class SendActionType extends TransferActionType {
 
 	/**
 	 * Set delivery method.
-	 * 
+	 *
 	 * @param Property\DeliveryMethodProperty $deliveryMethod
 	 * @return SendActionType
 	 */
@@ -85,7 +86,7 @@ class SendActionType extends TransferActionType {
 
 	/**
 	 * Set recipient.
-	 * 
+	 *
 	 * @param Property\RecipientProperty $recipient
 	 * @return SendActionType
 	 */

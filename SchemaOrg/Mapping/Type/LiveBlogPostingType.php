@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class LiveBlogPostingType.
+ * A LiveBlogPosting is a BlogPosting intended to provide a rolling textual coverage of an ongoing event through continuous updates.
  * 
+ * @method LiveBlogPostingType setAbout(Property\AboutProperty $about)
  * @method LiveBlogPostingType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method LiveBlogPostingType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method LiveBlogPostingType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -35,6 +36,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method LiveBlogPostingType setContributor(Property\ContributorProperty $contributor)
  * @method LiveBlogPostingType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method LiveBlogPostingType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method LiveBlogPostingType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method LiveBlogPostingType setCreator(Property\CreatorProperty $creator)
  * @method LiveBlogPostingType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method LiveBlogPostingType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -46,9 +48,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method LiveBlogPostingType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method LiveBlogPostingType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method LiveBlogPostingType setEncoding(Property\EncodingProperty $encoding)
+ * @method LiveBlogPostingType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method LiveBlogPostingType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method LiveBlogPostingType setExpires(Property\ExpiresProperty $expires)
- * @method LiveBlogPostingType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method LiveBlogPostingType setFunder(Property\FunderProperty $funder)
  * @method LiveBlogPostingType setGenre(Property\GenreProperty $genre)
  * @method LiveBlogPostingType setHasPart(Property\HasPartProperty $hasPart)
@@ -78,9 +80,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method LiveBlogPostingType setPosition(Property\PositionProperty $position)
  * @method LiveBlogPostingType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method LiveBlogPostingType setProducer(Property\ProducerProperty $producer)
- * @method LiveBlogPostingType setProvider(Property\ProviderProperty $provider)
  * @method LiveBlogPostingType setPublication(Property\PublicationProperty $publication)
  * @method LiveBlogPostingType setPublisher(Property\PublisherProperty $publisher)
+ * @method LiveBlogPostingType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method LiveBlogPostingType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method LiveBlogPostingType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method LiveBlogPostingType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -89,12 +91,18 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method LiveBlogPostingType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method LiveBlogPostingType setSharedContent(Property\SharedContentProperty $sharedContent)
  * @method LiveBlogPostingType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method LiveBlogPostingType setSpatial(Property\SpatialProperty $spatial)
  * @method LiveBlogPostingType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
+ * @method LiveBlogPostingType setSpeakable(Property\SpeakableProperty $speakable)
  * @method LiveBlogPostingType setSponsor(Property\SponsorProperty $sponsor)
+ * @method LiveBlogPostingType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method LiveBlogPostingType setTemporal(Property\TemporalProperty $temporal)
  * @method LiveBlogPostingType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method LiveBlogPostingType setText(Property\TextProperty $text)
+ * @method LiveBlogPostingType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method LiveBlogPostingType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method LiveBlogPostingType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method LiveBlogPostingType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method LiveBlogPostingType setTranslator(Property\TranslatorProperty $translator)
  * @method LiveBlogPostingType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method LiveBlogPostingType setUrl(Property\UrlProperty $url)
@@ -102,6 +110,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method LiveBlogPostingType setVideo(Property\VideoProperty $video)
  * @method LiveBlogPostingType setWordCount(Property\WordCountProperty $wordCount)
  * @method LiveBlogPostingType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method LiveBlogPostingType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class LiveBlogPostingType extends BlogPostingType {
 
@@ -122,7 +131,7 @@ class LiveBlogPostingType extends BlogPostingType {
 
 	/**
 	 * Get coverage end time.
-	 * 
+	 *
 	 * @return Property\CoverageEndTimeProperty
 	 */
 	public function getCoverageEndTime() {
@@ -131,7 +140,7 @@ class LiveBlogPostingType extends BlogPostingType {
 
 	/**
 	 * Get coverage start time.
-	 * 
+	 *
 	 * @return Property\CoverageStartTimeProperty
 	 */
 	public function getCoverageStartTime() {
@@ -140,7 +149,7 @@ class LiveBlogPostingType extends BlogPostingType {
 
 	/**
 	 * Get live blog update.
-	 * 
+	 *
 	 * @return Property\LiveBlogUpdateProperty
 	 */
 	public function getLiveBlogUpdate() {
@@ -149,7 +158,7 @@ class LiveBlogPostingType extends BlogPostingType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -158,7 +167,7 @@ class LiveBlogPostingType extends BlogPostingType {
 
 	/**
 	 * Set coverage end time.
-	 * 
+	 *
 	 * @param Property\CoverageEndTimeProperty $coverageEndTime
 	 * @return LiveBlogPostingType
 	 */
@@ -170,7 +179,7 @@ class LiveBlogPostingType extends BlogPostingType {
 
 	/**
 	 * Set coverage start time.
-	 * 
+	 *
 	 * @param Property\CoverageStartTimeProperty $coverageStartTime
 	 * @return LiveBlogPostingType
 	 */
@@ -182,7 +191,7 @@ class LiveBlogPostingType extends BlogPostingType {
 
 	/**
 	 * Set live blog update.
-	 * 
+	 *
 	 * @param Property\LiveBlogUpdateProperty $liveBlogUpdate
 	 * @return LiveBlogPostingType
 	 */

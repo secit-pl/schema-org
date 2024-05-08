@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class EndorseActionType.
+ * An agent approves/certifies/likes/supports/sanctions an object.
  * 
  * @method EndorseActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method EndorseActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method EndorseActionType setResult(Property\ResultProperty $result)
  * @method EndorseActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method EndorseActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method EndorseActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method EndorseActionType setTarget(Property\TargetProperty $target)
  * @method EndorseActionType setUrl(Property\UrlProperty $url)
  */
@@ -39,7 +40,7 @@ class EndorseActionType extends ReactActionType {
 
 	/**
 	 * Get endorsee.
-	 * 
+	 *
 	 * @return Property\EndorseeProperty
 	 */
 	public function getEndorsee() {
@@ -48,7 +49,7 @@ class EndorseActionType extends ReactActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -57,7 +58,7 @@ class EndorseActionType extends ReactActionType {
 
 	/**
 	 * Set endorsee.
-	 * 
+	 *
 	 * @param Property\EndorseeProperty $endorsee
 	 * @return EndorseActionType
 	 */

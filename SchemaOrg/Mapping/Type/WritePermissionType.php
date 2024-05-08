@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class WritePermissionType.
+ * Permission to write or edit the document.
  * 
  * @method WritePermissionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method WritePermissionType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method WritePermissionType setName(Property\NameProperty $name)
  * @method WritePermissionType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method WritePermissionType setSameAs(Property\SameAsProperty $sameAs)
+ * @method WritePermissionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method WritePermissionType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method WritePermissionType setUrl(Property\UrlProperty $url)
  */
 class WritePermissionType extends DigitalDocumentPermissionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

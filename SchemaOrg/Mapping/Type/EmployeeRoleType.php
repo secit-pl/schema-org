@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class EmployeeRoleType.
+ * A subclass of OrganizationRole used to describe employee relationships.
  * 
  * @method EmployeeRoleType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method EmployeeRoleType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -21,6 +21,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method EmployeeRoleType setRoleName(Property\RoleNameProperty $roleName)
  * @method EmployeeRoleType setSameAs(Property\SameAsProperty $sameAs)
  * @method EmployeeRoleType setStartDate(Property\StartDateProperty $startDate)
+ * @method EmployeeRoleType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method EmployeeRoleType setUrl(Property\UrlProperty $url)
  */
 class EmployeeRoleType extends OrganizationRoleType {
@@ -37,7 +38,7 @@ class EmployeeRoleType extends OrganizationRoleType {
 
 	/**
 	 * Get base salary.
-	 * 
+	 *
 	 * @return Property\BaseSalaryProperty
 	 */
 	public function getBaseSalary() {
@@ -46,7 +47,7 @@ class EmployeeRoleType extends OrganizationRoleType {
 
 	/**
 	 * Get salary currency.
-	 * 
+	 *
 	 * @return Property\SalaryCurrencyProperty
 	 */
 	public function getSalaryCurrency() {
@@ -55,7 +56,7 @@ class EmployeeRoleType extends OrganizationRoleType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -64,7 +65,7 @@ class EmployeeRoleType extends OrganizationRoleType {
 
 	/**
 	 * Set base salary.
-	 * 
+	 *
 	 * @param Property\BaseSalaryProperty $baseSalary
 	 * @return EmployeeRoleType
 	 */
@@ -76,7 +77,7 @@ class EmployeeRoleType extends OrganizationRoleType {
 
 	/**
 	 * Set salary currency.
-	 * 
+	 *
 	 * @param Property\SalaryCurrencyProperty $salaryCurrency
 	 * @return EmployeeRoleType
 	 */

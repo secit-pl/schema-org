@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class DurationType.
+ * Quantity: Duration (use ISO 8601 duration format).
  * 
  * @method DurationType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method DurationType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,14 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method DurationType setName(Property\NameProperty $name)
  * @method DurationType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method DurationType setSameAs(Property\SameAsProperty $sameAs)
+ * @method DurationType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method DurationType setUrl(Property\UrlProperty $url)
  */
 class DurationType extends QuantityType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * RecipeIngredientProperty class.
+ * A single ingredient used in the recipe, e.g. sugar, flour or garlic.
  * 
  * @method RecipeIngredientProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class RecipeIngredientProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class RecipeIngredientProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

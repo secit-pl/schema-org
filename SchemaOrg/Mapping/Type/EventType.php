@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class EventType.
+ * An event happening at a certain time and location, such as a concert, lecture, or festival. Ticketing information may be added via the offers property. Repeated events may be structured as separate Event objects.
  * 
  * @method EventType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method EventType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,9 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method EventType setName(Property\NameProperty $name)
  * @method EventType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method EventType setSameAs(Property\SameAsProperty $sameAs)
+ * @method EventType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method EventType setUrl(Property\UrlProperty $url)
  */
 class EventType extends ThingType {
+
+	/**
+	 * @var Property\AboutProperty
+	 */
+	private $about;
 
 	/**
 	 * @var Property\ActorProperty
@@ -62,6 +68,11 @@ class EventType extends ThingType {
 	private $doorTime;
 
 	/**
+	 * @var Property\DurationProperty
+	 */
+	private $duration;
+
+	/**
 	 * @var Property\EndDateProperty
 	 */
 	private $endDate;
@@ -85,6 +96,11 @@ class EventType extends ThingType {
 	 * @var Property\IsAccessibleForFreeProperty
 	 */
 	private $isAccessibleForFree;
+
+	/**
+	 * @var Property\KeywordsProperty
+	 */
+	private $keywords;
 
 	/**
 	 * @var Property\LocationProperty
@@ -172,8 +188,17 @@ class EventType extends ThingType {
 	private $workPerformed;
 
 	/**
+	 * Get about.
+	 *
+	 * @return Property\AboutProperty
+	 */
+	public function getAbout() {
+		return $this->about;
+	}
+
+	/**
 	 * Get actor.
-	 * 
+	 *
 	 * @return Property\ActorProperty
 	 */
 	public function getActor() {
@@ -182,7 +207,7 @@ class EventType extends ThingType {
 
 	/**
 	 * Get aggregate rating.
-	 * 
+	 *
 	 * @return Property\AggregateRatingProperty
 	 */
 	public function getAggregateRating() {
@@ -191,7 +216,7 @@ class EventType extends ThingType {
 
 	/**
 	 * Get attendee.
-	 * 
+	 *
 	 * @return Property\AttendeeProperty
 	 */
 	public function getAttendee() {
@@ -200,7 +225,7 @@ class EventType extends ThingType {
 
 	/**
 	 * Get audience.
-	 * 
+	 *
 	 * @return Property\AudienceProperty
 	 */
 	public function getAudience() {
@@ -209,7 +234,7 @@ class EventType extends ThingType {
 
 	/**
 	 * Get composer.
-	 * 
+	 *
 	 * @return Property\ComposerProperty
 	 */
 	public function getComposer() {
@@ -218,7 +243,7 @@ class EventType extends ThingType {
 
 	/**
 	 * Get contributor.
-	 * 
+	 *
 	 * @return Property\ContributorProperty
 	 */
 	public function getContributor() {
@@ -227,7 +252,7 @@ class EventType extends ThingType {
 
 	/**
 	 * Get director.
-	 * 
+	 *
 	 * @return Property\DirectorProperty
 	 */
 	public function getDirector() {
@@ -236,7 +261,7 @@ class EventType extends ThingType {
 
 	/**
 	 * Get door time.
-	 * 
+	 *
 	 * @return Property\DoorTimeProperty
 	 */
 	public function getDoorTime() {
@@ -244,8 +269,17 @@ class EventType extends ThingType {
 	}
 
 	/**
+	 * Get duration.
+	 *
+	 * @return Property\DurationProperty
+	 */
+	public function getDuration() {
+		return $this->duration;
+	}
+
+	/**
 	 * Get end date.
-	 * 
+	 *
 	 * @return Property\EndDateProperty
 	 */
 	public function getEndDate() {
@@ -254,7 +288,7 @@ class EventType extends ThingType {
 
 	/**
 	 * Get event status.
-	 * 
+	 *
 	 * @return Property\EventStatusProperty
 	 */
 	public function getEventStatus() {
@@ -263,7 +297,7 @@ class EventType extends ThingType {
 
 	/**
 	 * Get funder.
-	 * 
+	 *
 	 * @return Property\FunderProperty
 	 */
 	public function getFunder() {
@@ -272,7 +306,7 @@ class EventType extends ThingType {
 
 	/**
 	 * Get in language.
-	 * 
+	 *
 	 * @return Property\InLanguageProperty
 	 */
 	public function getInLanguage() {
@@ -281,7 +315,7 @@ class EventType extends ThingType {
 
 	/**
 	 * Get is accessible for free.
-	 * 
+	 *
 	 * @return Property\IsAccessibleForFreeProperty
 	 */
 	public function getIsAccessibleForFree() {
@@ -289,8 +323,17 @@ class EventType extends ThingType {
 	}
 
 	/**
+	 * Get keywords.
+	 *
+	 * @return Property\KeywordsProperty
+	 */
+	public function getKeywords() {
+		return $this->keywords;
+	}
+
+	/**
 	 * Get location.
-	 * 
+	 *
 	 * @return Property\LocationProperty
 	 */
 	public function getLocation() {
@@ -299,7 +342,7 @@ class EventType extends ThingType {
 
 	/**
 	 * Get maximum attendee capacity.
-	 * 
+	 *
 	 * @return Property\MaximumAttendeeCapacityProperty
 	 */
 	public function getMaximumAttendeeCapacity() {
@@ -308,7 +351,7 @@ class EventType extends ThingType {
 
 	/**
 	 * Get offers.
-	 * 
+	 *
 	 * @return Property\OffersProperty
 	 */
 	public function getOffers() {
@@ -317,7 +360,7 @@ class EventType extends ThingType {
 
 	/**
 	 * Get organizer.
-	 * 
+	 *
 	 * @return Property\OrganizerProperty
 	 */
 	public function getOrganizer() {
@@ -326,7 +369,7 @@ class EventType extends ThingType {
 
 	/**
 	 * Get performer.
-	 * 
+	 *
 	 * @return Property\PerformerProperty
 	 */
 	public function getPerformer() {
@@ -335,7 +378,7 @@ class EventType extends ThingType {
 
 	/**
 	 * Get previous start date.
-	 * 
+	 *
 	 * @return Property\PreviousStartDateProperty
 	 */
 	public function getPreviousStartDate() {
@@ -344,7 +387,7 @@ class EventType extends ThingType {
 
 	/**
 	 * Get recorded in.
-	 * 
+	 *
 	 * @return Property\RecordedInProperty
 	 */
 	public function getRecordedIn() {
@@ -353,7 +396,7 @@ class EventType extends ThingType {
 
 	/**
 	 * Get remaining attendee capacity.
-	 * 
+	 *
 	 * @return Property\RemainingAttendeeCapacityProperty
 	 */
 	public function getRemainingAttendeeCapacity() {
@@ -362,7 +405,7 @@ class EventType extends ThingType {
 
 	/**
 	 * Get review.
-	 * 
+	 *
 	 * @return Property\ReviewProperty
 	 */
 	public function getReview() {
@@ -371,7 +414,7 @@ class EventType extends ThingType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -380,7 +423,7 @@ class EventType extends ThingType {
 
 	/**
 	 * Get sponsor.
-	 * 
+	 *
 	 * @return Property\SponsorProperty
 	 */
 	public function getSponsor() {
@@ -389,7 +432,7 @@ class EventType extends ThingType {
 
 	/**
 	 * Get start date.
-	 * 
+	 *
 	 * @return Property\StartDateProperty
 	 */
 	public function getStartDate() {
@@ -398,7 +441,7 @@ class EventType extends ThingType {
 
 	/**
 	 * Get sub event.
-	 * 
+	 *
 	 * @return Property\SubEventProperty
 	 */
 	public function getSubEvent() {
@@ -407,7 +450,7 @@ class EventType extends ThingType {
 
 	/**
 	 * Get super event.
-	 * 
+	 *
 	 * @return Property\SuperEventProperty
 	 */
 	public function getSuperEvent() {
@@ -416,7 +459,7 @@ class EventType extends ThingType {
 
 	/**
 	 * Get translator.
-	 * 
+	 *
 	 * @return Property\TranslatorProperty
 	 */
 	public function getTranslator() {
@@ -425,7 +468,7 @@ class EventType extends ThingType {
 
 	/**
 	 * Get typical age range.
-	 * 
+	 *
 	 * @return Property\TypicalAgeRangeProperty
 	 */
 	public function getTypicalAgeRange() {
@@ -434,7 +477,7 @@ class EventType extends ThingType {
 
 	/**
 	 * Get work featured.
-	 * 
+	 *
 	 * @return Property\WorkFeaturedProperty
 	 */
 	public function getWorkFeatured() {
@@ -443,7 +486,7 @@ class EventType extends ThingType {
 
 	/**
 	 * Get work performed.
-	 * 
+	 *
 	 * @return Property\WorkPerformedProperty
 	 */
 	public function getWorkPerformed() {
@@ -451,8 +494,20 @@ class EventType extends ThingType {
 	}
 
 	/**
+	 * Set about.
+	 *
+	 * @param Property\AboutProperty $about
+	 * @return EventType
+	 */
+	public function setAbout(Property\AboutProperty $about) {
+		$this->about = $about;
+
+		return $this;
+	}
+
+	/**
 	 * Set actor.
-	 * 
+	 *
 	 * @param Property\ActorProperty $actor
 	 * @return EventType
 	 */
@@ -464,7 +519,7 @@ class EventType extends ThingType {
 
 	/**
 	 * Set aggregate rating.
-	 * 
+	 *
 	 * @param Property\AggregateRatingProperty $aggregateRating
 	 * @return EventType
 	 */
@@ -476,7 +531,7 @@ class EventType extends ThingType {
 
 	/**
 	 * Set attendee.
-	 * 
+	 *
 	 * @param Property\AttendeeProperty $attendee
 	 * @return EventType
 	 */
@@ -488,7 +543,7 @@ class EventType extends ThingType {
 
 	/**
 	 * Set audience.
-	 * 
+	 *
 	 * @param Property\AudienceProperty $audience
 	 * @return EventType
 	 */
@@ -500,7 +555,7 @@ class EventType extends ThingType {
 
 	/**
 	 * Set composer.
-	 * 
+	 *
 	 * @param Property\ComposerProperty $composer
 	 * @return EventType
 	 */
@@ -512,7 +567,7 @@ class EventType extends ThingType {
 
 	/**
 	 * Set contributor.
-	 * 
+	 *
 	 * @param Property\ContributorProperty $contributor
 	 * @return EventType
 	 */
@@ -524,7 +579,7 @@ class EventType extends ThingType {
 
 	/**
 	 * Set director.
-	 * 
+	 *
 	 * @param Property\DirectorProperty $director
 	 * @return EventType
 	 */
@@ -536,7 +591,7 @@ class EventType extends ThingType {
 
 	/**
 	 * Set door time.
-	 * 
+	 *
 	 * @param Property\DoorTimeProperty $doorTime
 	 * @return EventType
 	 */
@@ -547,8 +602,20 @@ class EventType extends ThingType {
 	}
 
 	/**
+	 * Set duration.
+	 *
+	 * @param Property\DurationProperty $duration
+	 * @return EventType
+	 */
+	public function setDuration(Property\DurationProperty $duration) {
+		$this->duration = $duration;
+
+		return $this;
+	}
+
+	/**
 	 * Set end date.
-	 * 
+	 *
 	 * @param Property\EndDateProperty $endDate
 	 * @return EventType
 	 */
@@ -560,7 +627,7 @@ class EventType extends ThingType {
 
 	/**
 	 * Set event status.
-	 * 
+	 *
 	 * @param Property\EventStatusProperty $eventStatus
 	 * @return EventType
 	 */
@@ -572,7 +639,7 @@ class EventType extends ThingType {
 
 	/**
 	 * Set funder.
-	 * 
+	 *
 	 * @param Property\FunderProperty $funder
 	 * @return EventType
 	 */
@@ -584,7 +651,7 @@ class EventType extends ThingType {
 
 	/**
 	 * Set in language.
-	 * 
+	 *
 	 * @param Property\InLanguageProperty $inLanguage
 	 * @return EventType
 	 */
@@ -596,7 +663,7 @@ class EventType extends ThingType {
 
 	/**
 	 * Set is accessible for free.
-	 * 
+	 *
 	 * @param Property\IsAccessibleForFreeProperty $isAccessibleForFree
 	 * @return EventType
 	 */
@@ -607,8 +674,20 @@ class EventType extends ThingType {
 	}
 
 	/**
+	 * Set keywords.
+	 *
+	 * @param Property\KeywordsProperty $keywords
+	 * @return EventType
+	 */
+	public function setKeywords(Property\KeywordsProperty $keywords) {
+		$this->keywords = $keywords;
+
+		return $this;
+	}
+
+	/**
 	 * Set location.
-	 * 
+	 *
 	 * @param Property\LocationProperty $location
 	 * @return EventType
 	 */
@@ -620,7 +699,7 @@ class EventType extends ThingType {
 
 	/**
 	 * Set maximum attendee capacity.
-	 * 
+	 *
 	 * @param Property\MaximumAttendeeCapacityProperty $maximumAttendeeCapacity
 	 * @return EventType
 	 */
@@ -632,7 +711,7 @@ class EventType extends ThingType {
 
 	/**
 	 * Set offers.
-	 * 
+	 *
 	 * @param Property\OffersProperty $offers
 	 * @return EventType
 	 */
@@ -644,7 +723,7 @@ class EventType extends ThingType {
 
 	/**
 	 * Set organizer.
-	 * 
+	 *
 	 * @param Property\OrganizerProperty $organizer
 	 * @return EventType
 	 */
@@ -656,7 +735,7 @@ class EventType extends ThingType {
 
 	/**
 	 * Set performer.
-	 * 
+	 *
 	 * @param Property\PerformerProperty $performer
 	 * @return EventType
 	 */
@@ -668,7 +747,7 @@ class EventType extends ThingType {
 
 	/**
 	 * Set previous start date.
-	 * 
+	 *
 	 * @param Property\PreviousStartDateProperty $previousStartDate
 	 * @return EventType
 	 */
@@ -680,7 +759,7 @@ class EventType extends ThingType {
 
 	/**
 	 * Set recorded in.
-	 * 
+	 *
 	 * @param Property\RecordedInProperty $recordedIn
 	 * @return EventType
 	 */
@@ -692,7 +771,7 @@ class EventType extends ThingType {
 
 	/**
 	 * Set remaining attendee capacity.
-	 * 
+	 *
 	 * @param Property\RemainingAttendeeCapacityProperty $remainingAttendeeCapacity
 	 * @return EventType
 	 */
@@ -704,7 +783,7 @@ class EventType extends ThingType {
 
 	/**
 	 * Set review.
-	 * 
+	 *
 	 * @param Property\ReviewProperty $review
 	 * @return EventType
 	 */
@@ -716,7 +795,7 @@ class EventType extends ThingType {
 
 	/**
 	 * Set sponsor.
-	 * 
+	 *
 	 * @param Property\SponsorProperty $sponsor
 	 * @return EventType
 	 */
@@ -728,7 +807,7 @@ class EventType extends ThingType {
 
 	/**
 	 * Set start date.
-	 * 
+	 *
 	 * @param Property\StartDateProperty $startDate
 	 * @return EventType
 	 */
@@ -740,7 +819,7 @@ class EventType extends ThingType {
 
 	/**
 	 * Set sub event.
-	 * 
+	 *
 	 * @param Property\SubEventProperty $subEvent
 	 * @return EventType
 	 */
@@ -752,7 +831,7 @@ class EventType extends ThingType {
 
 	/**
 	 * Set super event.
-	 * 
+	 *
 	 * @param Property\SuperEventProperty $superEvent
 	 * @return EventType
 	 */
@@ -764,7 +843,7 @@ class EventType extends ThingType {
 
 	/**
 	 * Set translator.
-	 * 
+	 *
 	 * @param Property\TranslatorProperty $translator
 	 * @return EventType
 	 */
@@ -776,7 +855,7 @@ class EventType extends ThingType {
 
 	/**
 	 * Set typical age range.
-	 * 
+	 *
 	 * @param Property\TypicalAgeRangeProperty $typicalAgeRange
 	 * @return EventType
 	 */
@@ -788,7 +867,7 @@ class EventType extends ThingType {
 
 	/**
 	 * Set work featured.
-	 * 
+	 *
 	 * @param Property\WorkFeaturedProperty $workFeatured
 	 * @return EventType
 	 */
@@ -800,7 +879,7 @@ class EventType extends ThingType {
 
 	/**
 	 * Set work performed.
-	 * 
+	 *
 	 * @param Property\WorkPerformedProperty $workPerformed
 	 * @return EventType
 	 */

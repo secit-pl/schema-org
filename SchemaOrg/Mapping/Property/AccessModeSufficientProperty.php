@@ -2,10 +2,10 @@
 
 namespace SecIT\SchemaOrg\Mapping\Property;
 
-use SecIT\SchemaOrg\Mapping\DataType;
+use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * AccessModeSufficientProperty class.
+ * A list of single or combined accessModes that are sufficient to understand all the intellectual content of a resource. Values should be drawn from the approved vocabulary.
  * 
  * @method AccessModeSufficientProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class AccessModeSufficientProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,11 +22,11 @@ class AccessModeSufficientProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */
 	public function isValueValid($value) {
-		return $value instanceof DataType\TextType;
+		return $value instanceof Type\ItemListType;
 	}
 }

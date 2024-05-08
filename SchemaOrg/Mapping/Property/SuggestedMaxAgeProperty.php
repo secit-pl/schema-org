@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * SuggestedMaxAgeProperty class.
+ * Maximum recommended age in years for the audience or user.
  * 
  * @method SuggestedMaxAgeProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class SuggestedMaxAgeProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class SuggestedMaxAgeProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

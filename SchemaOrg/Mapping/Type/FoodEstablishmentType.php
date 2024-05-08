@@ -5,64 +5,62 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class FoodEstablishmentType.
+ * A food-related business.
  * 
+ * @method FoodEstablishmentType setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method FoodEstablishmentType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method FoodEstablishmentType setAddress(Property\AddressProperty $address)
  * @method FoodEstablishmentType setAggregateRating(Property\AggregateRatingProperty $aggregateRating)
  * @method FoodEstablishmentType setAlternateName(Property\AlternateNameProperty $alternateName)
- * @method FoodEstablishmentType setAlumni(Property\AlumniProperty $alumni)
- * @method FoodEstablishmentType setAreaServed(Property\AreaServedProperty $areaServed)
- * @method FoodEstablishmentType setAward(Property\AwardProperty $award)
- * @method FoodEstablishmentType setBrand(Property\BrandProperty $brand)
- * @method FoodEstablishmentType setContactPoint(Property\ContactPointProperty $contactPoint)
+ * @method FoodEstablishmentType setAmenityFeature(Property\AmenityFeatureProperty $amenityFeature)
+ * @method FoodEstablishmentType setBranchCode(Property\BranchCodeProperty $branchCode)
+ * @method FoodEstablishmentType setContainedInPlace(Property\ContainedInPlaceProperty $containedInPlace)
+ * @method FoodEstablishmentType setContainsPlace(Property\ContainsPlaceProperty $containsPlace)
  * @method FoodEstablishmentType setCurrenciesAccepted(Property\CurrenciesAcceptedProperty $currenciesAccepted)
- * @method FoodEstablishmentType setDepartment(Property\DepartmentProperty $department)
  * @method FoodEstablishmentType setDescription(Property\DescriptionProperty $description)
  * @method FoodEstablishmentType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
- * @method FoodEstablishmentType setDissolutionDate(Property\DissolutionDateProperty $dissolutionDate)
- * @method FoodEstablishmentType setDuns(Property\DunsProperty $duns)
- * @method FoodEstablishmentType setEmail(Property\EmailProperty $email)
- * @method FoodEstablishmentType setEmployee(Property\EmployeeProperty $employee)
  * @method FoodEstablishmentType setEvent(Property\EventProperty $event)
  * @method FoodEstablishmentType setFaxNumber(Property\FaxNumberProperty $faxNumber)
- * @method FoodEstablishmentType setFounder(Property\FounderProperty $founder)
- * @method FoodEstablishmentType setFoundingDate(Property\FoundingDateProperty $foundingDate)
- * @method FoodEstablishmentType setFoundingLocation(Property\FoundingLocationProperty $foundingLocation)
- * @method FoodEstablishmentType setFunder(Property\FunderProperty $funder)
+ * @method FoodEstablishmentType setGeo(Property\GeoProperty $geo)
+ * @method FoodEstablishmentType setGeoContains(Property\GeoContainsProperty $geoContains)
+ * @method FoodEstablishmentType setGeoCoveredBy(Property\GeoCoveredByProperty $geoCoveredBy)
+ * @method FoodEstablishmentType setGeoCovers(Property\GeoCoversProperty $geoCovers)
+ * @method FoodEstablishmentType setGeoCrosses(Property\GeoCrossesProperty $geoCrosses)
+ * @method FoodEstablishmentType setGeoDisjoint(Property\GeoDisjointProperty $geoDisjoint)
+ * @method FoodEstablishmentType setGeoEquals(Property\GeoEqualsProperty $geoEquals)
+ * @method FoodEstablishmentType setGeoIntersects(Property\GeoIntersectsProperty $geoIntersects)
+ * @method FoodEstablishmentType setGeoOverlaps(Property\GeoOverlapsProperty $geoOverlaps)
+ * @method FoodEstablishmentType setGeoTouches(Property\GeoTouchesProperty $geoTouches)
+ * @method FoodEstablishmentType setGeoWithin(Property\GeoWithinProperty $geoWithin)
  * @method FoodEstablishmentType setGlobalLocationNumber(Property\GlobalLocationNumberProperty $globalLocationNumber)
- * @method FoodEstablishmentType setHasOfferCatalog(Property\HasOfferCatalogProperty $hasOfferCatalog)
- * @method FoodEstablishmentType setHasPOS(Property\HasPOSProperty $hasPOS)
+ * @method FoodEstablishmentType setHasCertification(Property\HasCertificationProperty $hasCertification)
+ * @method FoodEstablishmentType setHasMap(Property\HasMapProperty $hasMap)
  * @method FoodEstablishmentType setIdentifier(Property\IdentifierProperty $identifier)
  * @method FoodEstablishmentType setImage(Property\ImageProperty $image)
+ * @method FoodEstablishmentType setIsAccessibleForFree(Property\IsAccessibleForFreeProperty $isAccessibleForFree)
  * @method FoodEstablishmentType setIsicV4(Property\IsicV4Property $isicV4)
- * @method FoodEstablishmentType setLegalName(Property\LegalNameProperty $legalName)
- * @method FoodEstablishmentType setLeiCode(Property\LeiCodeProperty $leiCode)
- * @method FoodEstablishmentType setLocation(Property\LocationProperty $location)
+ * @method FoodEstablishmentType setKeywords(Property\KeywordsProperty $keywords)
+ * @method FoodEstablishmentType setLatitude(Property\LatitudeProperty $latitude)
  * @method FoodEstablishmentType setLogo(Property\LogoProperty $logo)
+ * @method FoodEstablishmentType setLongitude(Property\LongitudeProperty $longitude)
  * @method FoodEstablishmentType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
- * @method FoodEstablishmentType setMakesOffer(Property\MakesOfferProperty $makesOffer)
- * @method FoodEstablishmentType setMember(Property\MemberProperty $member)
- * @method FoodEstablishmentType setMemberOf(Property\MemberOfProperty $memberOf)
- * @method FoodEstablishmentType setNaics(Property\NaicsProperty $naics)
+ * @method FoodEstablishmentType setMaximumAttendeeCapacity(Property\MaximumAttendeeCapacityProperty $maximumAttendeeCapacity)
  * @method FoodEstablishmentType setName(Property\NameProperty $name)
- * @method FoodEstablishmentType setNumberOfEmployees(Property\NumberOfEmployeesProperty $numberOfEmployees)
  * @method FoodEstablishmentType setOpeningHours(Property\OpeningHoursProperty $openingHours)
- * @method FoodEstablishmentType setOwns(Property\OwnsProperty $owns)
- * @method FoodEstablishmentType setParentOrganization(Property\ParentOrganizationProperty $parentOrganization)
+ * @method FoodEstablishmentType setOpeningHoursSpecification(Property\OpeningHoursSpecificationProperty $openingHoursSpecification)
  * @method FoodEstablishmentType setPaymentAccepted(Property\PaymentAcceptedProperty $paymentAccepted)
+ * @method FoodEstablishmentType setPhoto(Property\PhotoProperty $photo)
  * @method FoodEstablishmentType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method FoodEstablishmentType setPriceRange(Property\PriceRangeProperty $priceRange)
- * @method FoodEstablishmentType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
+ * @method FoodEstablishmentType setPublicAccess(Property\PublicAccessProperty $publicAccess)
  * @method FoodEstablishmentType setReview(Property\ReviewProperty $review)
  * @method FoodEstablishmentType setSameAs(Property\SameAsProperty $sameAs)
- * @method FoodEstablishmentType setSeeks(Property\SeeksProperty $seeks)
- * @method FoodEstablishmentType setSponsor(Property\SponsorProperty $sponsor)
- * @method FoodEstablishmentType setSubOrganization(Property\SubOrganizationProperty $subOrganization)
- * @method FoodEstablishmentType setTaxID(Property\TaxIDProperty $taxID)
+ * @method FoodEstablishmentType setSlogan(Property\SloganProperty $slogan)
+ * @method FoodEstablishmentType setSmokingAllowed(Property\SmokingAllowedProperty $smokingAllowed)
+ * @method FoodEstablishmentType setSpecialOpeningHoursSpecification(Property\SpecialOpeningHoursSpecificationProperty $specialOpeningHoursSpecification)
+ * @method FoodEstablishmentType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method FoodEstablishmentType setTelephone(Property\TelephoneProperty $telephone)
  * @method FoodEstablishmentType setUrl(Property\UrlProperty $url)
- * @method FoodEstablishmentType setVatID(Property\VatIDProperty $vatID)
  */
 class FoodEstablishmentType extends LocalBusinessType {
 
@@ -88,7 +86,7 @@ class FoodEstablishmentType extends LocalBusinessType {
 
 	/**
 	 * Get accepts reservations.
-	 * 
+	 *
 	 * @return Property\AcceptsReservationsProperty
 	 */
 	public function getAcceptsReservations() {
@@ -97,7 +95,7 @@ class FoodEstablishmentType extends LocalBusinessType {
 
 	/**
 	 * Get has menu.
-	 * 
+	 *
 	 * @return Property\HasMenuProperty
 	 */
 	public function getHasMenu() {
@@ -106,7 +104,7 @@ class FoodEstablishmentType extends LocalBusinessType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -115,7 +113,7 @@ class FoodEstablishmentType extends LocalBusinessType {
 
 	/**
 	 * Get serves cuisine.
-	 * 
+	 *
 	 * @return Property\ServesCuisineProperty
 	 */
 	public function getServesCuisine() {
@@ -124,7 +122,7 @@ class FoodEstablishmentType extends LocalBusinessType {
 
 	/**
 	 * Get star rating.
-	 * 
+	 *
 	 * @return Property\StarRatingProperty
 	 */
 	public function getStarRating() {
@@ -133,7 +131,7 @@ class FoodEstablishmentType extends LocalBusinessType {
 
 	/**
 	 * Set accepts reservations.
-	 * 
+	 *
 	 * @param Property\AcceptsReservationsProperty $acceptsReservations
 	 * @return FoodEstablishmentType
 	 */
@@ -145,7 +143,7 @@ class FoodEstablishmentType extends LocalBusinessType {
 
 	/**
 	 * Set has menu.
-	 * 
+	 *
 	 * @param Property\HasMenuProperty $hasMenu
 	 * @return FoodEstablishmentType
 	 */
@@ -157,7 +155,7 @@ class FoodEstablishmentType extends LocalBusinessType {
 
 	/**
 	 * Set serves cuisine.
-	 * 
+	 *
 	 * @param Property\ServesCuisineProperty $servesCuisine
 	 * @return FoodEstablishmentType
 	 */
@@ -169,7 +167,7 @@ class FoodEstablishmentType extends LocalBusinessType {
 
 	/**
 	 * Set star rating.
-	 * 
+	 *
 	 * @param Property\StarRatingProperty $starRating
 	 * @return FoodEstablishmentType
 	 */

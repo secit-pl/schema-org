@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ExerciseActionType.
+ * The act of participating in exertive activity for the purposes of improving health and fitness.
  * 
  * @method ExerciseActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method ExerciseActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -29,10 +29,16 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ExerciseActionType setResult(Property\ResultProperty $result)
  * @method ExerciseActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method ExerciseActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method ExerciseActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method ExerciseActionType setTarget(Property\TargetProperty $target)
  * @method ExerciseActionType setUrl(Property\UrlProperty $url)
  */
 class ExerciseActionType extends PlayActionType {
+
+	/**
+	 * @var Property\DietProperty
+	 */
+	private $diet;
 
 	/**
 	 * @var Property\DistanceProperty
@@ -43,6 +49,21 @@ class ExerciseActionType extends PlayActionType {
 	 * @var Property\ExerciseCourseProperty
 	 */
 	private $exerciseCourse;
+
+	/**
+	 * @var Property\ExercisePlanProperty
+	 */
+	private $exercisePlan;
+
+	/**
+	 * @var Property\ExerciseRelatedDietProperty
+	 */
+	private $exerciseRelatedDiet;
+
+	/**
+	 * @var Property\ExerciseTypeProperty
+	 */
+	private $exerciseType;
 
 	/**
 	 * @var Property\FromLocationProperty
@@ -75,8 +96,17 @@ class ExerciseActionType extends PlayActionType {
 	private $toLocation;
 
 	/**
+	 * Get diet.
+	 *
+	 * @return Property\DietProperty
+	 */
+	public function getDiet() {
+		return $this->diet;
+	}
+
+	/**
 	 * Get distance.
-	 * 
+	 *
 	 * @return Property\DistanceProperty
 	 */
 	public function getDistance() {
@@ -85,7 +115,7 @@ class ExerciseActionType extends PlayActionType {
 
 	/**
 	 * Get exercise course.
-	 * 
+	 *
 	 * @return Property\ExerciseCourseProperty
 	 */
 	public function getExerciseCourse() {
@@ -93,8 +123,35 @@ class ExerciseActionType extends PlayActionType {
 	}
 
 	/**
+	 * Get exercise plan.
+	 *
+	 * @return Property\ExercisePlanProperty
+	 */
+	public function getExercisePlan() {
+		return $this->exercisePlan;
+	}
+
+	/**
+	 * Get exercise related diet.
+	 *
+	 * @return Property\ExerciseRelatedDietProperty
+	 */
+	public function getExerciseRelatedDiet() {
+		return $this->exerciseRelatedDiet;
+	}
+
+	/**
+	 * Get exercise type.
+	 *
+	 * @return Property\ExerciseTypeProperty
+	 */
+	public function getExerciseType() {
+		return $this->exerciseType;
+	}
+
+	/**
 	 * Get from location.
-	 * 
+	 *
 	 * @return Property\FromLocationProperty
 	 */
 	public function getFromLocation() {
@@ -103,7 +160,7 @@ class ExerciseActionType extends PlayActionType {
 
 	/**
 	 * Get opponent.
-	 * 
+	 *
 	 * @return Property\OpponentProperty
 	 */
 	public function getOpponent() {
@@ -112,7 +169,7 @@ class ExerciseActionType extends PlayActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -121,7 +178,7 @@ class ExerciseActionType extends PlayActionType {
 
 	/**
 	 * Get sports activity location.
-	 * 
+	 *
 	 * @return Property\SportsActivityLocationProperty
 	 */
 	public function getSportsActivityLocation() {
@@ -130,7 +187,7 @@ class ExerciseActionType extends PlayActionType {
 
 	/**
 	 * Get sports event.
-	 * 
+	 *
 	 * @return Property\SportsEventProperty
 	 */
 	public function getSportsEvent() {
@@ -139,7 +196,7 @@ class ExerciseActionType extends PlayActionType {
 
 	/**
 	 * Get sports team.
-	 * 
+	 *
 	 * @return Property\SportsTeamProperty
 	 */
 	public function getSportsTeam() {
@@ -148,7 +205,7 @@ class ExerciseActionType extends PlayActionType {
 
 	/**
 	 * Get to location.
-	 * 
+	 *
 	 * @return Property\ToLocationProperty
 	 */
 	public function getToLocation() {
@@ -156,8 +213,20 @@ class ExerciseActionType extends PlayActionType {
 	}
 
 	/**
+	 * Set diet.
+	 *
+	 * @param Property\DietProperty $diet
+	 * @return ExerciseActionType
+	 */
+	public function setDiet(Property\DietProperty $diet) {
+		$this->diet = $diet;
+
+		return $this;
+	}
+
+	/**
 	 * Set distance.
-	 * 
+	 *
 	 * @param Property\DistanceProperty $distance
 	 * @return ExerciseActionType
 	 */
@@ -169,7 +238,7 @@ class ExerciseActionType extends PlayActionType {
 
 	/**
 	 * Set exercise course.
-	 * 
+	 *
 	 * @param Property\ExerciseCourseProperty $exerciseCourse
 	 * @return ExerciseActionType
 	 */
@@ -180,8 +249,44 @@ class ExerciseActionType extends PlayActionType {
 	}
 
 	/**
+	 * Set exercise plan.
+	 *
+	 * @param Property\ExercisePlanProperty $exercisePlan
+	 * @return ExerciseActionType
+	 */
+	public function setExercisePlan(Property\ExercisePlanProperty $exercisePlan) {
+		$this->exercisePlan = $exercisePlan;
+
+		return $this;
+	}
+
+	/**
+	 * Set exercise related diet.
+	 *
+	 * @param Property\ExerciseRelatedDietProperty $exerciseRelatedDiet
+	 * @return ExerciseActionType
+	 */
+	public function setExerciseRelatedDiet(Property\ExerciseRelatedDietProperty $exerciseRelatedDiet) {
+		$this->exerciseRelatedDiet = $exerciseRelatedDiet;
+
+		return $this;
+	}
+
+	/**
+	 * Set exercise type.
+	 *
+	 * @param Property\ExerciseTypeProperty $exerciseType
+	 * @return ExerciseActionType
+	 */
+	public function setExerciseType(Property\ExerciseTypeProperty $exerciseType) {
+		$this->exerciseType = $exerciseType;
+
+		return $this;
+	}
+
+	/**
 	 * Set from location.
-	 * 
+	 *
 	 * @param Property\FromLocationProperty $fromLocation
 	 * @return ExerciseActionType
 	 */
@@ -193,7 +298,7 @@ class ExerciseActionType extends PlayActionType {
 
 	/**
 	 * Set opponent.
-	 * 
+	 *
 	 * @param Property\OpponentProperty $opponent
 	 * @return ExerciseActionType
 	 */
@@ -205,7 +310,7 @@ class ExerciseActionType extends PlayActionType {
 
 	/**
 	 * Set sports activity location.
-	 * 
+	 *
 	 * @param Property\SportsActivityLocationProperty $sportsActivityLocation
 	 * @return ExerciseActionType
 	 */
@@ -217,7 +322,7 @@ class ExerciseActionType extends PlayActionType {
 
 	/**
 	 * Set sports event.
-	 * 
+	 *
 	 * @param Property\SportsEventProperty $sportsEvent
 	 * @return ExerciseActionType
 	 */
@@ -229,7 +334,7 @@ class ExerciseActionType extends PlayActionType {
 
 	/**
 	 * Set sports team.
-	 * 
+	 *
 	 * @param Property\SportsTeamProperty $sportsTeam
 	 * @return ExerciseActionType
 	 */
@@ -241,7 +346,7 @@ class ExerciseActionType extends PlayActionType {
 
 	/**
 	 * Set to location.
-	 * 
+	 *
 	 * @param Property\ToLocationProperty $toLocation
 	 * @return ExerciseActionType
 	 */

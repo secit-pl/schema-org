@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * RecordedAtProperty class.
+ * The Event where the CreativeWork was recorded. The CreativeWork may capture all or part of the event.
  * 
  * @method RecordedAtProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class RecordedAtProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class RecordedAtProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

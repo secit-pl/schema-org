@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ControlActionType.
+ * An agent controls a device or application.
  * 
  * @method ControlActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method ControlActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ControlActionType setResult(Property\ResultProperty $result)
  * @method ControlActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method ControlActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method ControlActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method ControlActionType setTarget(Property\TargetProperty $target)
  * @method ControlActionType setUrl(Property\UrlProperty $url)
  */
@@ -34,7 +35,7 @@ class ControlActionType extends ActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

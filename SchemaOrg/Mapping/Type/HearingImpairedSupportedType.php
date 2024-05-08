@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class HearingImpairedSupportedType.
+ * Uses devices to support users with hearing impairments.
  * 
  * @method HearingImpairedSupportedType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method HearingImpairedSupportedType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method HearingImpairedSupportedType setName(Property\NameProperty $name)
  * @method HearingImpairedSupportedType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method HearingImpairedSupportedType setSameAs(Property\SameAsProperty $sameAs)
+ * @method HearingImpairedSupportedType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method HearingImpairedSupportedType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method HearingImpairedSupportedType setUrl(Property\UrlProperty $url)
  */
 class HearingImpairedSupportedType extends ContactPointOptionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class InformActionType.
+ * The act of notifying someone of information pertinent to them, with no expectation of a response.
  * 
+ * @method InformActionType setAbout(Property\AboutProperty $about)
  * @method InformActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method InformActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method InformActionType setAgent(Property\AgentProperty $agent)
@@ -29,6 +30,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method InformActionType setResult(Property\ResultProperty $result)
  * @method InformActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method InformActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method InformActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method InformActionType setTarget(Property\TargetProperty $target)
  * @method InformActionType setUrl(Property\UrlProperty $url)
  */
@@ -41,7 +43,7 @@ class InformActionType extends CommunicateActionType {
 
 	/**
 	 * Get event.
-	 * 
+	 *
 	 * @return Property\EventProperty
 	 */
 	public function getEvent() {
@@ -50,7 +52,7 @@ class InformActionType extends CommunicateActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -59,7 +61,7 @@ class InformActionType extends CommunicateActionType {
 
 	/**
 	 * Set event.
-	 * 
+	 *
 	 * @param Property\EventProperty $event
 	 * @return InformActionType
 	 */

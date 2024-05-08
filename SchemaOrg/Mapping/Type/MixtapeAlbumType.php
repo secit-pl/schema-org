@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class MixtapeAlbumType.
+ * MixtapeAlbum.
  * 
  * @method MixtapeAlbumType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method MixtapeAlbumType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MixtapeAlbumType setName(Property\NameProperty $name)
  * @method MixtapeAlbumType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method MixtapeAlbumType setSameAs(Property\SameAsProperty $sameAs)
+ * @method MixtapeAlbumType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method MixtapeAlbumType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method MixtapeAlbumType setUrl(Property\UrlProperty $url)
  */
 class MixtapeAlbumType extends MusicAlbumProductionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

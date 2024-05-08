@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class GeoCoordinatesType.
+ * The geographic coordinates of a place or event.
  * 
  * @method GeoCoordinatesType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method GeoCoordinatesType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,6 +17,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method GeoCoordinatesType setName(Property\NameProperty $name)
  * @method GeoCoordinatesType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method GeoCoordinatesType setSameAs(Property\SameAsProperty $sameAs)
+ * @method GeoCoordinatesType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method GeoCoordinatesType setUrl(Property\UrlProperty $url)
  */
 class GeoCoordinatesType extends StructuredValueType {
@@ -53,7 +54,7 @@ class GeoCoordinatesType extends StructuredValueType {
 
 	/**
 	 * Get address.
-	 * 
+	 *
 	 * @return Property\AddressProperty
 	 */
 	public function getAddress() {
@@ -62,7 +63,7 @@ class GeoCoordinatesType extends StructuredValueType {
 
 	/**
 	 * Get address country.
-	 * 
+	 *
 	 * @return Property\AddressCountryProperty
 	 */
 	public function getAddressCountry() {
@@ -71,7 +72,7 @@ class GeoCoordinatesType extends StructuredValueType {
 
 	/**
 	 * Get elevation.
-	 * 
+	 *
 	 * @return Property\ElevationProperty
 	 */
 	public function getElevation() {
@@ -80,7 +81,7 @@ class GeoCoordinatesType extends StructuredValueType {
 
 	/**
 	 * Get latitude.
-	 * 
+	 *
 	 * @return Property\LatitudeProperty
 	 */
 	public function getLatitude() {
@@ -89,7 +90,7 @@ class GeoCoordinatesType extends StructuredValueType {
 
 	/**
 	 * Get longitude.
-	 * 
+	 *
 	 * @return Property\LongitudeProperty
 	 */
 	public function getLongitude() {
@@ -98,7 +99,7 @@ class GeoCoordinatesType extends StructuredValueType {
 
 	/**
 	 * Get postal code.
-	 * 
+	 *
 	 * @return Property\PostalCodeProperty
 	 */
 	public function getPostalCode() {
@@ -107,7 +108,7 @@ class GeoCoordinatesType extends StructuredValueType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -116,7 +117,7 @@ class GeoCoordinatesType extends StructuredValueType {
 
 	/**
 	 * Set address.
-	 * 
+	 *
 	 * @param Property\AddressProperty $address
 	 * @return GeoCoordinatesType
 	 */
@@ -128,7 +129,7 @@ class GeoCoordinatesType extends StructuredValueType {
 
 	/**
 	 * Set address country.
-	 * 
+	 *
 	 * @param Property\AddressCountryProperty $addressCountry
 	 * @return GeoCoordinatesType
 	 */
@@ -140,7 +141,7 @@ class GeoCoordinatesType extends StructuredValueType {
 
 	/**
 	 * Set elevation.
-	 * 
+	 *
 	 * @param Property\ElevationProperty $elevation
 	 * @return GeoCoordinatesType
 	 */
@@ -152,7 +153,7 @@ class GeoCoordinatesType extends StructuredValueType {
 
 	/**
 	 * Set latitude.
-	 * 
+	 *
 	 * @param Property\LatitudeProperty $latitude
 	 * @return GeoCoordinatesType
 	 */
@@ -164,7 +165,7 @@ class GeoCoordinatesType extends StructuredValueType {
 
 	/**
 	 * Set longitude.
-	 * 
+	 *
 	 * @param Property\LongitudeProperty $longitude
 	 * @return GeoCoordinatesType
 	 */
@@ -176,7 +177,7 @@ class GeoCoordinatesType extends StructuredValueType {
 
 	/**
 	 * Set postal code.
-	 * 
+	 *
 	 * @param Property\PostalCodeProperty $postalCode
 	 * @return GeoCoordinatesType
 	 */

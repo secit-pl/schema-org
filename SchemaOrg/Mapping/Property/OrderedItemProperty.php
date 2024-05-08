@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * OrderedItemProperty class.
+ * The item ordered.
  * 
  * @method OrderedItemProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class OrderedItemProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,11 +22,11 @@ class OrderedItemProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */
 	public function isValueValid($value) {
-		return $value instanceof Type\OrderItemType || $value instanceof Type\ProductType;
+		return $value instanceof Type\OrderItemType || $value instanceof Type\ProductType || $value instanceof Type\ServiceType;
 	}
 }

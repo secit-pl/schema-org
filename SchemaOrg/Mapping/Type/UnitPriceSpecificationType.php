@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class UnitPriceSpecificationType.
+ * The price asked for a given offer by the respective organization or person.
  * 
  * @method UnitPriceSpecificationType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method UnitPriceSpecificationType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -23,6 +23,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method UnitPriceSpecificationType setPrice(Property\PriceProperty $price)
  * @method UnitPriceSpecificationType setPriceCurrency(Property\PriceCurrencyProperty $priceCurrency)
  * @method UnitPriceSpecificationType setSameAs(Property\SameAsProperty $sameAs)
+ * @method UnitPriceSpecificationType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method UnitPriceSpecificationType setUrl(Property\UrlProperty $url)
  * @method UnitPriceSpecificationType setValidFrom(Property\ValidFromProperty $validFrom)
  * @method UnitPriceSpecificationType setValidThrough(Property\ValidThroughProperty $validThrough)
@@ -57,7 +58,7 @@ class UnitPriceSpecificationType extends PriceSpecificationType {
 
 	/**
 	 * Get billing increment.
-	 * 
+	 *
 	 * @return Property\BillingIncrementProperty
 	 */
 	public function getBillingIncrement() {
@@ -66,7 +67,7 @@ class UnitPriceSpecificationType extends PriceSpecificationType {
 
 	/**
 	 * Get price type.
-	 * 
+	 *
 	 * @return Property\PriceTypeProperty
 	 */
 	public function getPriceType() {
@@ -75,7 +76,7 @@ class UnitPriceSpecificationType extends PriceSpecificationType {
 
 	/**
 	 * Get reference quantity.
-	 * 
+	 *
 	 * @return Property\ReferenceQuantityProperty
 	 */
 	public function getReferenceQuantity() {
@@ -84,7 +85,7 @@ class UnitPriceSpecificationType extends PriceSpecificationType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -93,7 +94,7 @@ class UnitPriceSpecificationType extends PriceSpecificationType {
 
 	/**
 	 * Get unit code.
-	 * 
+	 *
 	 * @return Property\UnitCodeProperty
 	 */
 	public function getUnitCode() {
@@ -102,7 +103,7 @@ class UnitPriceSpecificationType extends PriceSpecificationType {
 
 	/**
 	 * Get unit text.
-	 * 
+	 *
 	 * @return Property\UnitTextProperty
 	 */
 	public function getUnitText() {
@@ -111,7 +112,7 @@ class UnitPriceSpecificationType extends PriceSpecificationType {
 
 	/**
 	 * Set billing increment.
-	 * 
+	 *
 	 * @param Property\BillingIncrementProperty $billingIncrement
 	 * @return UnitPriceSpecificationType
 	 */
@@ -123,7 +124,7 @@ class UnitPriceSpecificationType extends PriceSpecificationType {
 
 	/**
 	 * Set price type.
-	 * 
+	 *
 	 * @param Property\PriceTypeProperty $priceType
 	 * @return UnitPriceSpecificationType
 	 */
@@ -135,7 +136,7 @@ class UnitPriceSpecificationType extends PriceSpecificationType {
 
 	/**
 	 * Set reference quantity.
-	 * 
+	 *
 	 * @param Property\ReferenceQuantityProperty $referenceQuantity
 	 * @return UnitPriceSpecificationType
 	 */
@@ -147,7 +148,7 @@ class UnitPriceSpecificationType extends PriceSpecificationType {
 
 	/**
 	 * Set unit code.
-	 * 
+	 *
 	 * @param Property\UnitCodeProperty $unitCode
 	 * @return UnitPriceSpecificationType
 	 */
@@ -159,7 +160,7 @@ class UnitPriceSpecificationType extends PriceSpecificationType {
 
 	/**
 	 * Set unit text.
-	 * 
+	 *
 	 * @param Property\UnitTextProperty $unitText
 	 * @return UnitPriceSpecificationType
 	 */

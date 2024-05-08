@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * SignificantLinkProperty class.
+ * One of the more significant URLs on the page. Typically, these are the non-navigation links that are clicked on the most.
  * 
  * @method SignificantLinkProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class SignificantLinkProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class SignificantLinkProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

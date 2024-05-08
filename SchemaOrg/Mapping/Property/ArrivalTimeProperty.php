@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * ArrivalTimeProperty class.
+ * The expected arrival time.
  * 
  * @method ArrivalTimeProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class ArrivalTimeProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,11 +22,11 @@ class ArrivalTimeProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */
 	public function isValueValid($value) {
-		return $value instanceof DataType\DateTimeType;
+		return $value instanceof DataType\DateTimeType || $value instanceof DataType\TimeType;
 	}
 }

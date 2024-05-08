@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class SocialMediaPostingType.
+ * A post to a social media platform, including blog posts, tweets, Facebook posts, etc.
  * 
+ * @method SocialMediaPostingType setAbout(Property\AboutProperty $about)
  * @method SocialMediaPostingType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method SocialMediaPostingType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method SocialMediaPostingType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -35,6 +36,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SocialMediaPostingType setContributor(Property\ContributorProperty $contributor)
  * @method SocialMediaPostingType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method SocialMediaPostingType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method SocialMediaPostingType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method SocialMediaPostingType setCreator(Property\CreatorProperty $creator)
  * @method SocialMediaPostingType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method SocialMediaPostingType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -46,9 +48,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SocialMediaPostingType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method SocialMediaPostingType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method SocialMediaPostingType setEncoding(Property\EncodingProperty $encoding)
+ * @method SocialMediaPostingType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method SocialMediaPostingType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method SocialMediaPostingType setExpires(Property\ExpiresProperty $expires)
- * @method SocialMediaPostingType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method SocialMediaPostingType setFunder(Property\FunderProperty $funder)
  * @method SocialMediaPostingType setGenre(Property\GenreProperty $genre)
  * @method SocialMediaPostingType setHasPart(Property\HasPartProperty $hasPart)
@@ -78,9 +80,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SocialMediaPostingType setPosition(Property\PositionProperty $position)
  * @method SocialMediaPostingType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method SocialMediaPostingType setProducer(Property\ProducerProperty $producer)
- * @method SocialMediaPostingType setProvider(Property\ProviderProperty $provider)
  * @method SocialMediaPostingType setPublication(Property\PublicationProperty $publication)
  * @method SocialMediaPostingType setPublisher(Property\PublisherProperty $publisher)
+ * @method SocialMediaPostingType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method SocialMediaPostingType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method SocialMediaPostingType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method SocialMediaPostingType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -88,12 +90,18 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SocialMediaPostingType setSameAs(Property\SameAsProperty $sameAs)
  * @method SocialMediaPostingType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method SocialMediaPostingType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method SocialMediaPostingType setSpatial(Property\SpatialProperty $spatial)
  * @method SocialMediaPostingType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
+ * @method SocialMediaPostingType setSpeakable(Property\SpeakableProperty $speakable)
  * @method SocialMediaPostingType setSponsor(Property\SponsorProperty $sponsor)
+ * @method SocialMediaPostingType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method SocialMediaPostingType setTemporal(Property\TemporalProperty $temporal)
  * @method SocialMediaPostingType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method SocialMediaPostingType setText(Property\TextProperty $text)
+ * @method SocialMediaPostingType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method SocialMediaPostingType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method SocialMediaPostingType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method SocialMediaPostingType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method SocialMediaPostingType setTranslator(Property\TranslatorProperty $translator)
  * @method SocialMediaPostingType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method SocialMediaPostingType setUrl(Property\UrlProperty $url)
@@ -101,6 +109,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SocialMediaPostingType setVideo(Property\VideoProperty $video)
  * @method SocialMediaPostingType setWordCount(Property\WordCountProperty $wordCount)
  * @method SocialMediaPostingType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method SocialMediaPostingType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class SocialMediaPostingType extends ArticleType {
 
@@ -111,7 +120,7 @@ class SocialMediaPostingType extends ArticleType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -120,7 +129,7 @@ class SocialMediaPostingType extends ArticleType {
 
 	/**
 	 * Get shared content.
-	 * 
+	 *
 	 * @return Property\SharedContentProperty
 	 */
 	public function getSharedContent() {
@@ -129,7 +138,7 @@ class SocialMediaPostingType extends ArticleType {
 
 	/**
 	 * Set shared content.
-	 * 
+	 *
 	 * @param Property\SharedContentProperty $sharedContent
 	 * @return SocialMediaPostingType
 	 */

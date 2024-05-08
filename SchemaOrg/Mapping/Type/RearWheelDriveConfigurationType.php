@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class RearWheelDriveConfigurationType.
+ * Real-wheel drive is a transmission layout where the engine drives the rear wheels.
  * 
  * @method RearWheelDriveConfigurationType setAdditionalProperty(Property\AdditionalProperty $additionalProperty)
  * @method RearWheelDriveConfigurationType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -24,6 +24,8 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method RearWheelDriveConfigurationType setNonEqual(Property\NonEqualProperty $nonEqual)
  * @method RearWheelDriveConfigurationType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method RearWheelDriveConfigurationType setSameAs(Property\SameAsProperty $sameAs)
+ * @method RearWheelDriveConfigurationType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method RearWheelDriveConfigurationType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method RearWheelDriveConfigurationType setUrl(Property\UrlProperty $url)
  * @method RearWheelDriveConfigurationType setValueReference(Property\ValueReferenceProperty $valueReference)
  */
@@ -31,7 +33,7 @@ class RearWheelDriveConfigurationType extends DriveWheelConfigurationValueType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

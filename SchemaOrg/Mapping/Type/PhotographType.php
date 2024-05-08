@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class PhotographType.
+ * A photograph.
  * 
+ * @method PhotographType setAbout(Property\AboutProperty $about)
  * @method PhotographType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method PhotographType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method PhotographType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -33,6 +34,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method PhotographType setContributor(Property\ContributorProperty $contributor)
  * @method PhotographType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method PhotographType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method PhotographType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method PhotographType setCreator(Property\CreatorProperty $creator)
  * @method PhotographType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method PhotographType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -44,9 +46,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method PhotographType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method PhotographType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method PhotographType setEncoding(Property\EncodingProperty $encoding)
+ * @method PhotographType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method PhotographType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method PhotographType setExpires(Property\ExpiresProperty $expires)
- * @method PhotographType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method PhotographType setFunder(Property\FunderProperty $funder)
  * @method PhotographType setGenre(Property\GenreProperty $genre)
  * @method PhotographType setHasPart(Property\HasPartProperty $hasPart)
@@ -73,9 +75,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method PhotographType setPosition(Property\PositionProperty $position)
  * @method PhotographType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method PhotographType setProducer(Property\ProducerProperty $producer)
- * @method PhotographType setProvider(Property\ProviderProperty $provider)
  * @method PhotographType setPublication(Property\PublicationProperty $publication)
  * @method PhotographType setPublisher(Property\PublisherProperty $publisher)
+ * @method PhotographType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method PhotographType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method PhotographType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method PhotographType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -83,24 +85,30 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method PhotographType setSameAs(Property\SameAsProperty $sameAs)
  * @method PhotographType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method PhotographType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method PhotographType setSpatial(Property\SpatialProperty $spatial)
  * @method PhotographType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method PhotographType setSponsor(Property\SponsorProperty $sponsor)
+ * @method PhotographType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method PhotographType setTemporal(Property\TemporalProperty $temporal)
  * @method PhotographType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method PhotographType setText(Property\TextProperty $text)
+ * @method PhotographType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method PhotographType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method PhotographType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method PhotographType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method PhotographType setTranslator(Property\TranslatorProperty $translator)
  * @method PhotographType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method PhotographType setUrl(Property\UrlProperty $url)
  * @method PhotographType setVersion(Property\VersionProperty $version)
  * @method PhotographType setVideo(Property\VideoProperty $video)
  * @method PhotographType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method PhotographType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class PhotographType extends CreativeWorkType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

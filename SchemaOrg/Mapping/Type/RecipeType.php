@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class RecipeType.
+ * A recipe. For dietary restrictions covered by the recipe, a few common restrictions are enumerated via suitableForDiet. The keywords property can also be used to add more detail.
  * 
+ * @method RecipeType setAbout(Property\AboutProperty $about)
  * @method RecipeType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method RecipeType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method RecipeType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -33,6 +34,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method RecipeType setContributor(Property\ContributorProperty $contributor)
  * @method RecipeType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method RecipeType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method RecipeType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method RecipeType setCreator(Property\CreatorProperty $creator)
  * @method RecipeType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method RecipeType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -44,10 +46,10 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method RecipeType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method RecipeType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method RecipeType setEncoding(Property\EncodingProperty $encoding)
+ * @method RecipeType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method RecipeType setEstimatedCost(Property\EstimatedCostProperty $estimatedCost)
  * @method RecipeType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method RecipeType setExpires(Property\ExpiresProperty $expires)
- * @method RecipeType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method RecipeType setFunder(Property\FunderProperty $funder)
  * @method RecipeType setGenre(Property\GenreProperty $genre)
  * @method RecipeType setHasPart(Property\HasPartProperty $hasPart)
@@ -76,9 +78,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method RecipeType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method RecipeType setPrepTime(Property\PrepTimeProperty $prepTime)
  * @method RecipeType setProducer(Property\ProducerProperty $producer)
- * @method RecipeType setProvider(Property\ProviderProperty $provider)
  * @method RecipeType setPublication(Property\PublicationProperty $publication)
  * @method RecipeType setPublisher(Property\PublisherProperty $publisher)
+ * @method RecipeType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method RecipeType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method RecipeType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method RecipeType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -86,22 +88,28 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method RecipeType setSameAs(Property\SameAsProperty $sameAs)
  * @method RecipeType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method RecipeType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method RecipeType setSpatial(Property\SpatialProperty $spatial)
  * @method RecipeType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method RecipeType setSponsor(Property\SponsorProperty $sponsor)
  * @method RecipeType setStep(Property\StepProperty $step)
+ * @method RecipeType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method RecipeType setSupply(Property\SupplyProperty $supply)
+ * @method RecipeType setTemporal(Property\TemporalProperty $temporal)
  * @method RecipeType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method RecipeType setText(Property\TextProperty $text)
+ * @method RecipeType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method RecipeType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method RecipeType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
  * @method RecipeType setTool(Property\ToolProperty $tool)
  * @method RecipeType setTotalTime(Property\TotalTimeProperty $totalTime)
+ * @method RecipeType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method RecipeType setTranslator(Property\TranslatorProperty $translator)
  * @method RecipeType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method RecipeType setUrl(Property\UrlProperty $url)
  * @method RecipeType setVersion(Property\VersionProperty $version)
  * @method RecipeType setVideo(Property\VideoProperty $video)
  * @method RecipeType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method RecipeType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  * @method RecipeType setYield(Property\YieldProperty $yield)
  */
 class RecipeType extends HowToType {
@@ -153,7 +161,7 @@ class RecipeType extends HowToType {
 
 	/**
 	 * Get cooking method.
-	 * 
+	 *
 	 * @return Property\CookingMethodProperty
 	 */
 	public function getCookingMethod() {
@@ -162,7 +170,7 @@ class RecipeType extends HowToType {
 
 	/**
 	 * Get cook time.
-	 * 
+	 *
 	 * @return Property\CookTimeProperty
 	 */
 	public function getCookTime() {
@@ -171,7 +179,7 @@ class RecipeType extends HowToType {
 
 	/**
 	 * Get nutrition.
-	 * 
+	 *
 	 * @return Property\NutritionProperty
 	 */
 	public function getNutrition() {
@@ -180,7 +188,7 @@ class RecipeType extends HowToType {
 
 	/**
 	 * Get recipe category.
-	 * 
+	 *
 	 * @return Property\RecipeCategoryProperty
 	 */
 	public function getRecipeCategory() {
@@ -189,7 +197,7 @@ class RecipeType extends HowToType {
 
 	/**
 	 * Get recipe cuisine.
-	 * 
+	 *
 	 * @return Property\RecipeCuisineProperty
 	 */
 	public function getRecipeCuisine() {
@@ -198,7 +206,7 @@ class RecipeType extends HowToType {
 
 	/**
 	 * Get recipe ingredient.
-	 * 
+	 *
 	 * @return Property\RecipeIngredientProperty
 	 */
 	public function getRecipeIngredient() {
@@ -207,7 +215,7 @@ class RecipeType extends HowToType {
 
 	/**
 	 * Get recipe instructions.
-	 * 
+	 *
 	 * @return Property\RecipeInstructionsProperty
 	 */
 	public function getRecipeInstructions() {
@@ -216,7 +224,7 @@ class RecipeType extends HowToType {
 
 	/**
 	 * Get recipe yield.
-	 * 
+	 *
 	 * @return Property\RecipeYieldProperty
 	 */
 	public function getRecipeYield() {
@@ -225,7 +233,7 @@ class RecipeType extends HowToType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -234,7 +242,7 @@ class RecipeType extends HowToType {
 
 	/**
 	 * Get suitable for diet.
-	 * 
+	 *
 	 * @return Property\SuitableForDietProperty
 	 */
 	public function getSuitableForDiet() {
@@ -243,7 +251,7 @@ class RecipeType extends HowToType {
 
 	/**
 	 * Set cooking method.
-	 * 
+	 *
 	 * @param Property\CookingMethodProperty $cookingMethod
 	 * @return RecipeType
 	 */
@@ -255,7 +263,7 @@ class RecipeType extends HowToType {
 
 	/**
 	 * Set cook time.
-	 * 
+	 *
 	 * @param Property\CookTimeProperty $cookTime
 	 * @return RecipeType
 	 */
@@ -267,7 +275,7 @@ class RecipeType extends HowToType {
 
 	/**
 	 * Set nutrition.
-	 * 
+	 *
 	 * @param Property\NutritionProperty $nutrition
 	 * @return RecipeType
 	 */
@@ -279,7 +287,7 @@ class RecipeType extends HowToType {
 
 	/**
 	 * Set recipe category.
-	 * 
+	 *
 	 * @param Property\RecipeCategoryProperty $recipeCategory
 	 * @return RecipeType
 	 */
@@ -291,7 +299,7 @@ class RecipeType extends HowToType {
 
 	/**
 	 * Set recipe cuisine.
-	 * 
+	 *
 	 * @param Property\RecipeCuisineProperty $recipeCuisine
 	 * @return RecipeType
 	 */
@@ -303,7 +311,7 @@ class RecipeType extends HowToType {
 
 	/**
 	 * Set recipe ingredient.
-	 * 
+	 *
 	 * @param Property\RecipeIngredientProperty $recipeIngredient
 	 * @return RecipeType
 	 */
@@ -315,7 +323,7 @@ class RecipeType extends HowToType {
 
 	/**
 	 * Set recipe instructions.
-	 * 
+	 *
 	 * @param Property\RecipeInstructionsProperty $recipeInstructions
 	 * @return RecipeType
 	 */
@@ -327,7 +335,7 @@ class RecipeType extends HowToType {
 
 	/**
 	 * Set recipe yield.
-	 * 
+	 *
 	 * @param Property\RecipeYieldProperty $recipeYield
 	 * @return RecipeType
 	 */
@@ -339,7 +347,7 @@ class RecipeType extends HowToType {
 
 	/**
 	 * Set suitable for diet.
-	 * 
+	 *
 	 * @param Property\SuitableForDietProperty $suitableForDiet
 	 * @return RecipeType
 	 */

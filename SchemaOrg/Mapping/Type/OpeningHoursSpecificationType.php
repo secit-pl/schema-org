@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class OpeningHoursSpecificationType.
+ * A structured value providing information about the opening hours of a place or a certain service inside a place. The place is open if the opens property is specified, and closed otherwise. If the value for the closes property is less than the value for the opens property then the hour range is assumed to span over the next day.
  * 
  * @method OpeningHoursSpecificationType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method OpeningHoursSpecificationType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,6 +17,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method OpeningHoursSpecificationType setName(Property\NameProperty $name)
  * @method OpeningHoursSpecificationType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method OpeningHoursSpecificationType setSameAs(Property\SameAsProperty $sameAs)
+ * @method OpeningHoursSpecificationType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method OpeningHoursSpecificationType setUrl(Property\UrlProperty $url)
  */
 class OpeningHoursSpecificationType extends StructuredValueType {
@@ -48,7 +49,7 @@ class OpeningHoursSpecificationType extends StructuredValueType {
 
 	/**
 	 * Get closes.
-	 * 
+	 *
 	 * @return Property\ClosesProperty
 	 */
 	public function getCloses() {
@@ -57,7 +58,7 @@ class OpeningHoursSpecificationType extends StructuredValueType {
 
 	/**
 	 * Get day of week.
-	 * 
+	 *
 	 * @return Property\DayOfWeekProperty
 	 */
 	public function getDayOfWeek() {
@@ -66,7 +67,7 @@ class OpeningHoursSpecificationType extends StructuredValueType {
 
 	/**
 	 * Get opens.
-	 * 
+	 *
 	 * @return Property\OpensProperty
 	 */
 	public function getOpens() {
@@ -75,7 +76,7 @@ class OpeningHoursSpecificationType extends StructuredValueType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -84,7 +85,7 @@ class OpeningHoursSpecificationType extends StructuredValueType {
 
 	/**
 	 * Get valid from.
-	 * 
+	 *
 	 * @return Property\ValidFromProperty
 	 */
 	public function getValidFrom() {
@@ -93,7 +94,7 @@ class OpeningHoursSpecificationType extends StructuredValueType {
 
 	/**
 	 * Get valid through.
-	 * 
+	 *
 	 * @return Property\ValidThroughProperty
 	 */
 	public function getValidThrough() {
@@ -102,7 +103,7 @@ class OpeningHoursSpecificationType extends StructuredValueType {
 
 	/**
 	 * Set closes.
-	 * 
+	 *
 	 * @param Property\ClosesProperty $closes
 	 * @return OpeningHoursSpecificationType
 	 */
@@ -114,7 +115,7 @@ class OpeningHoursSpecificationType extends StructuredValueType {
 
 	/**
 	 * Set day of week.
-	 * 
+	 *
 	 * @param Property\DayOfWeekProperty $dayOfWeek
 	 * @return OpeningHoursSpecificationType
 	 */
@@ -126,7 +127,7 @@ class OpeningHoursSpecificationType extends StructuredValueType {
 
 	/**
 	 * Set opens.
-	 * 
+	 *
 	 * @param Property\OpensProperty $opens
 	 * @return OpeningHoursSpecificationType
 	 */
@@ -138,7 +139,7 @@ class OpeningHoursSpecificationType extends StructuredValueType {
 
 	/**
 	 * Set valid from.
-	 * 
+	 *
 	 * @param Property\ValidFromProperty $validFrom
 	 * @return OpeningHoursSpecificationType
 	 */
@@ -150,7 +151,7 @@ class OpeningHoursSpecificationType extends StructuredValueType {
 
 	/**
 	 * Set valid through.
-	 * 
+	 *
 	 * @param Property\ValidThroughProperty $validThrough
 	 * @return OpeningHoursSpecificationType
 	 */

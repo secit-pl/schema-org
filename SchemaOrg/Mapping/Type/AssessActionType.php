@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class AssessActionType.
+ * The act of forming one's opinion, reaction or sentiment.
  * 
  * @method AssessActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method AssessActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method AssessActionType setResult(Property\ResultProperty $result)
  * @method AssessActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method AssessActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method AssessActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method AssessActionType setTarget(Property\TargetProperty $target)
  * @method AssessActionType setUrl(Property\UrlProperty $url)
  */
@@ -34,7 +35,7 @@ class AssessActionType extends ActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class HalalDietType.
+ * A diet conforming to Islamic dietary practices.
  * 
  * @method HalalDietType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method HalalDietType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method HalalDietType setName(Property\NameProperty $name)
  * @method HalalDietType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method HalalDietType setSameAs(Property\SameAsProperty $sameAs)
+ * @method HalalDietType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method HalalDietType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method HalalDietType setUrl(Property\UrlProperty $url)
  */
 class HalalDietType extends RestrictedDietType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

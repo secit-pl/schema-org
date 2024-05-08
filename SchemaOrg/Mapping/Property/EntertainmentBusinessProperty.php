@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * EntertainmentBusinessProperty class.
+ * A sub property of location. The entertainment business where the action occurred.
  * 
  * @method EntertainmentBusinessProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class EntertainmentBusinessProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class EntertainmentBusinessProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

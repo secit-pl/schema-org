@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * AvailableOnDeviceProperty class.
+ * Device required to run the application. Used in cases where a specific make/model is required to run the application.
  * 
  * @method AvailableOnDeviceProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class AvailableOnDeviceProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class AvailableOnDeviceProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

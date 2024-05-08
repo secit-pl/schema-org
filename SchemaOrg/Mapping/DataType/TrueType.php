@@ -3,15 +3,15 @@
 namespace SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * Class TrueType.
+ * The boolean value true.
  * 
  * @method TrueType setValue($value)
  */
-class TrueType extends BooleanType {
+class TrueType extends DataType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

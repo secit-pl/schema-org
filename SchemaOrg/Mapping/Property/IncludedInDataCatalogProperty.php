@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * IncludedInDataCatalogProperty class.
+ * A data catalog which contains this dataset.
  * 
  * @method IncludedInDataCatalogProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class IncludedInDataCatalogProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class IncludedInDataCatalogProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

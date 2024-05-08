@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class InvestmentOrDepositType.
+ * A type of financial product that typically requires the client to transfer funds to a financial service in return for potential beneficial financial return.
  * 
  * @method InvestmentOrDepositType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method InvestmentOrDepositType setAggregateRating(Property\AggregateRatingProperty $aggregateRating)
@@ -21,6 +21,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method InvestmentOrDepositType setDescription(Property\DescriptionProperty $description)
  * @method InvestmentOrDepositType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
  * @method InvestmentOrDepositType setFeesAndCommissionsSpecification(Property\FeesAndCommissionsSpecificationProperty $feesAndCommissionsSpecification)
+ * @method InvestmentOrDepositType setHasCertification(Property\HasCertificationProperty $hasCertification)
  * @method InvestmentOrDepositType setHasOfferCatalog(Property\HasOfferCatalogProperty $hasOfferCatalog)
  * @method InvestmentOrDepositType setHoursAvailable(Property\HoursAvailableProperty $hoursAvailable)
  * @method InvestmentOrDepositType setIdentifier(Property\IdentifierProperty $identifier)
@@ -33,12 +34,13 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method InvestmentOrDepositType setName(Property\NameProperty $name)
  * @method InvestmentOrDepositType setOffers(Property\OffersProperty $offers)
  * @method InvestmentOrDepositType setPotentialAction(Property\PotentialActionProperty $potentialAction)
- * @method InvestmentOrDepositType setProvider(Property\ProviderProperty $provider)
  * @method InvestmentOrDepositType setProviderMobility(Property\ProviderMobilityProperty $providerMobility)
  * @method InvestmentOrDepositType setReview(Property\ReviewProperty $review)
  * @method InvestmentOrDepositType setSameAs(Property\SameAsProperty $sameAs)
  * @method InvestmentOrDepositType setServiceOutput(Property\ServiceOutputProperty $serviceOutput)
  * @method InvestmentOrDepositType setServiceType(Property\ServiceTypeProperty $serviceType)
+ * @method InvestmentOrDepositType setSlogan(Property\SloganProperty $slogan)
+ * @method InvestmentOrDepositType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method InvestmentOrDepositType setUrl(Property\UrlProperty $url)
  */
 class InvestmentOrDepositType extends FinancialProductType {
@@ -50,7 +52,7 @@ class InvestmentOrDepositType extends FinancialProductType {
 
 	/**
 	 * Get amount.
-	 * 
+	 *
 	 * @return Property\AmountProperty
 	 */
 	public function getAmount() {
@@ -59,7 +61,7 @@ class InvestmentOrDepositType extends FinancialProductType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -68,7 +70,7 @@ class InvestmentOrDepositType extends FinancialProductType {
 
 	/**
 	 * Set amount.
-	 * 
+	 *
 	 * @param Property\AmountProperty $amount
 	 * @return InvestmentOrDepositType
 	 */

@@ -5,27 +5,27 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class MusicReleaseFormatType.
+ * Format of this release (the type of recording media used, i.e. compact disc, digital media, LP, etc.).
  * 
- * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\MusicReleaseFormatType instead.
- * 
- * @method MusicReleaseFormatType setAdditionalType(Property\AdditionalType $additionalType)
- * @method MusicReleaseFormatType setAlternateName(Property\AlternateName $alternateName)
- * @method MusicReleaseFormatType setDescription(Property\Description $description)
- * @method MusicReleaseFormatType setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method MusicReleaseFormatType setIdentifier(Property\Identifier $identifier)
- * @method MusicReleaseFormatType setImage(Property\Image $image)
- * @method MusicReleaseFormatType setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method MusicReleaseFormatType setName(Property\Name $name)
- * @method MusicReleaseFormatType setPotentialAction(Property\PotentialAction $potentialAction)
- * @method MusicReleaseFormatType setSameAs(Property\SameAs $sameAs)
- * @method MusicReleaseFormatType setUrl(Property\Url $url)
+ * @method MusicReleaseFormatType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
+ * @method MusicReleaseFormatType setAlternateName(Property\AlternateNameProperty $alternateName)
+ * @method MusicReleaseFormatType setDescription(Property\DescriptionProperty $description)
+ * @method MusicReleaseFormatType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
+ * @method MusicReleaseFormatType setIdentifier(Property\IdentifierProperty $identifier)
+ * @method MusicReleaseFormatType setImage(Property\ImageProperty $image)
+ * @method MusicReleaseFormatType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
+ * @method MusicReleaseFormatType setName(Property\NameProperty $name)
+ * @method MusicReleaseFormatType setPotentialAction(Property\PotentialActionProperty $potentialAction)
+ * @method MusicReleaseFormatType setSameAs(Property\SameAsProperty $sameAs)
+ * @method MusicReleaseFormatType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method MusicReleaseFormatType setSupersededBy(Property\SupersededByProperty $supersededBy)
+ * @method MusicReleaseFormatType setUrl(Property\UrlProperty $url)
  */
-class MusicReleaseFormatType extends Enumeration {
+class MusicReleaseFormatType extends EnumerationType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

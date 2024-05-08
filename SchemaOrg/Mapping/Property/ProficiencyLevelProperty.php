@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * ProficiencyLevelProperty class.
+ * Proficiency needed for this content; expected values: 'Beginner', 'Expert'.
  * 
  * @method ProficiencyLevelProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class ProficiencyLevelProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class ProficiencyLevelProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

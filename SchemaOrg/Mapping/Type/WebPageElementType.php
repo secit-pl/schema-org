@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class WebPageElementType.
+ * A web page element, like a table or an image.
  * 
+ * @method WebPageElementType setAbout(Property\AboutProperty $about)
  * @method WebPageElementType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method WebPageElementType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method WebPageElementType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -33,6 +34,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method WebPageElementType setContributor(Property\ContributorProperty $contributor)
  * @method WebPageElementType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method WebPageElementType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method WebPageElementType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method WebPageElementType setCreator(Property\CreatorProperty $creator)
  * @method WebPageElementType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method WebPageElementType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -44,9 +46,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method WebPageElementType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method WebPageElementType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method WebPageElementType setEncoding(Property\EncodingProperty $encoding)
+ * @method WebPageElementType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method WebPageElementType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method WebPageElementType setExpires(Property\ExpiresProperty $expires)
- * @method WebPageElementType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method WebPageElementType setFunder(Property\FunderProperty $funder)
  * @method WebPageElementType setGenre(Property\GenreProperty $genre)
  * @method WebPageElementType setHasPart(Property\HasPartProperty $hasPart)
@@ -73,9 +75,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method WebPageElementType setPosition(Property\PositionProperty $position)
  * @method WebPageElementType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method WebPageElementType setProducer(Property\ProducerProperty $producer)
- * @method WebPageElementType setProvider(Property\ProviderProperty $provider)
  * @method WebPageElementType setPublication(Property\PublicationProperty $publication)
  * @method WebPageElementType setPublisher(Property\PublisherProperty $publisher)
+ * @method WebPageElementType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method WebPageElementType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method WebPageElementType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method WebPageElementType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -83,27 +85,85 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method WebPageElementType setSameAs(Property\SameAsProperty $sameAs)
  * @method WebPageElementType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method WebPageElementType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method WebPageElementType setSpatial(Property\SpatialProperty $spatial)
  * @method WebPageElementType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method WebPageElementType setSponsor(Property\SponsorProperty $sponsor)
+ * @method WebPageElementType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method WebPageElementType setTemporal(Property\TemporalProperty $temporal)
  * @method WebPageElementType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method WebPageElementType setText(Property\TextProperty $text)
+ * @method WebPageElementType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method WebPageElementType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method WebPageElementType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method WebPageElementType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method WebPageElementType setTranslator(Property\TranslatorProperty $translator)
  * @method WebPageElementType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method WebPageElementType setUrl(Property\UrlProperty $url)
  * @method WebPageElementType setVersion(Property\VersionProperty $version)
  * @method WebPageElementType setVideo(Property\VideoProperty $video)
  * @method WebPageElementType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method WebPageElementType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class WebPageElementType extends CreativeWorkType {
 
 	/**
+	 * @var Property\CssSelectorProperty
+	 */
+	private $cssSelector;
+
+	/**
+	 * @var Property\XpathProperty
+	 */
+	private $xpath;
+
+	/**
+	 * Get css selector.
+	 *
+	 * @return Property\CssSelectorProperty
+	 */
+	public function getCssSelector() {
+		return $this->cssSelector;
+	}
+
+	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
 		return 'https://schema.org/WebPageElement';
+	}
+
+	/**
+	 * Get xpath.
+	 *
+	 * @return Property\XpathProperty
+	 */
+	public function getXpath() {
+		return $this->xpath;
+	}
+
+	/**
+	 * Set css selector.
+	 *
+	 * @param Property\CssSelectorProperty $cssSelector
+	 * @return WebPageElementType
+	 */
+	public function setCssSelector(Property\CssSelectorProperty $cssSelector) {
+		$this->cssSelector = $cssSelector;
+
+		return $this;
+	}
+
+	/**
+	 * Set xpath.
+	 *
+	 * @param Property\XpathProperty $xpath
+	 * @return WebPageElementType
+	 */
+	public function setXpath(Property\XpathProperty $xpath) {
+		$this->xpath = $xpath;
+
+		return $this;
 	}
 }

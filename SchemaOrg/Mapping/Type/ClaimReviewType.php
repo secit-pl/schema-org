@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ClaimReviewType.
+ * A fact-checking review of claims made (or reported) in some creative work (referenced via itemReviewed).
  * 
+ * @method ClaimReviewType setAbout(Property\AboutProperty $about)
  * @method ClaimReviewType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method ClaimReviewType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method ClaimReviewType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -33,6 +34,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ClaimReviewType setContributor(Property\ContributorProperty $contributor)
  * @method ClaimReviewType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method ClaimReviewType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method ClaimReviewType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method ClaimReviewType setCreator(Property\CreatorProperty $creator)
  * @method ClaimReviewType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method ClaimReviewType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -44,9 +46,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ClaimReviewType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method ClaimReviewType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method ClaimReviewType setEncoding(Property\EncodingProperty $encoding)
+ * @method ClaimReviewType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method ClaimReviewType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method ClaimReviewType setExpires(Property\ExpiresProperty $expires)
- * @method ClaimReviewType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method ClaimReviewType setFunder(Property\FunderProperty $funder)
  * @method ClaimReviewType setGenre(Property\GenreProperty $genre)
  * @method ClaimReviewType setHasPart(Property\HasPartProperty $hasPart)
@@ -74,30 +76,37 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ClaimReviewType setPosition(Property\PositionProperty $position)
  * @method ClaimReviewType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method ClaimReviewType setProducer(Property\ProducerProperty $producer)
- * @method ClaimReviewType setProvider(Property\ProviderProperty $provider)
  * @method ClaimReviewType setPublication(Property\PublicationProperty $publication)
  * @method ClaimReviewType setPublisher(Property\PublisherProperty $publisher)
+ * @method ClaimReviewType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method ClaimReviewType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method ClaimReviewType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method ClaimReviewType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
  * @method ClaimReviewType setReview(Property\ReviewProperty $review)
+ * @method ClaimReviewType setReviewAspect(Property\ReviewAspectProperty $reviewAspect)
  * @method ClaimReviewType setReviewBody(Property\ReviewBodyProperty $reviewBody)
  * @method ClaimReviewType setReviewRating(Property\ReviewRatingProperty $reviewRating)
  * @method ClaimReviewType setSameAs(Property\SameAsProperty $sameAs)
  * @method ClaimReviewType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method ClaimReviewType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method ClaimReviewType setSpatial(Property\SpatialProperty $spatial)
  * @method ClaimReviewType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method ClaimReviewType setSponsor(Property\SponsorProperty $sponsor)
+ * @method ClaimReviewType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method ClaimReviewType setTemporal(Property\TemporalProperty $temporal)
  * @method ClaimReviewType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method ClaimReviewType setText(Property\TextProperty $text)
+ * @method ClaimReviewType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method ClaimReviewType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method ClaimReviewType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method ClaimReviewType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method ClaimReviewType setTranslator(Property\TranslatorProperty $translator)
  * @method ClaimReviewType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method ClaimReviewType setUrl(Property\UrlProperty $url)
  * @method ClaimReviewType setVersion(Property\VersionProperty $version)
  * @method ClaimReviewType setVideo(Property\VideoProperty $video)
  * @method ClaimReviewType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method ClaimReviewType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class ClaimReviewType extends ReviewType {
 
@@ -108,7 +117,7 @@ class ClaimReviewType extends ReviewType {
 
 	/**
 	 * Get claim reviewed.
-	 * 
+	 *
 	 * @return Property\ClaimReviewedProperty
 	 */
 	public function getClaimReviewed() {
@@ -117,7 +126,7 @@ class ClaimReviewType extends ReviewType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -126,7 +135,7 @@ class ClaimReviewType extends ReviewType {
 
 	/**
 	 * Set claim reviewed.
-	 * 
+	 *
 	 * @param Property\ClaimReviewedProperty $claimReviewed
 	 * @return ClaimReviewType
 	 */

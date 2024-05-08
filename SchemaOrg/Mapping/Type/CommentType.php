@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class CommentType.
+ * A comment on an item - for example, a comment on a blog post. The comment's content is expressed via the text property, and its topic via about, properties shared with all CreativeWorks.
  * 
+ * @method CommentType setAbout(Property\AboutProperty $about)
  * @method CommentType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method CommentType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method CommentType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -33,6 +34,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method CommentType setContributor(Property\ContributorProperty $contributor)
  * @method CommentType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method CommentType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method CommentType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method CommentType setCreator(Property\CreatorProperty $creator)
  * @method CommentType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method CommentType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -44,9 +46,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method CommentType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method CommentType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method CommentType setEncoding(Property\EncodingProperty $encoding)
+ * @method CommentType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method CommentType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method CommentType setExpires(Property\ExpiresProperty $expires)
- * @method CommentType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method CommentType setFunder(Property\FunderProperty $funder)
  * @method CommentType setGenre(Property\GenreProperty $genre)
  * @method CommentType setHasPart(Property\HasPartProperty $hasPart)
@@ -73,9 +75,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method CommentType setPosition(Property\PositionProperty $position)
  * @method CommentType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method CommentType setProducer(Property\ProducerProperty $producer)
- * @method CommentType setProvider(Property\ProviderProperty $provider)
  * @method CommentType setPublication(Property\PublicationProperty $publication)
  * @method CommentType setPublisher(Property\PublisherProperty $publisher)
+ * @method CommentType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method CommentType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method CommentType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method CommentType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -83,18 +85,24 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method CommentType setSameAs(Property\SameAsProperty $sameAs)
  * @method CommentType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method CommentType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method CommentType setSpatial(Property\SpatialProperty $spatial)
  * @method CommentType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method CommentType setSponsor(Property\SponsorProperty $sponsor)
+ * @method CommentType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method CommentType setTemporal(Property\TemporalProperty $temporal)
  * @method CommentType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method CommentType setText(Property\TextProperty $text)
+ * @method CommentType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method CommentType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method CommentType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method CommentType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method CommentType setTranslator(Property\TranslatorProperty $translator)
  * @method CommentType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method CommentType setUrl(Property\UrlProperty $url)
  * @method CommentType setVersion(Property\VersionProperty $version)
  * @method CommentType setVideo(Property\VideoProperty $video)
  * @method CommentType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method CommentType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class CommentType extends CreativeWorkType {
 
@@ -109,13 +117,18 @@ class CommentType extends CreativeWorkType {
 	private $parentItem;
 
 	/**
+	 * @var Property\SharedContentProperty
+	 */
+	private $sharedContent;
+
+	/**
 	 * @var Property\UpvoteCountProperty
 	 */
 	private $upvoteCount;
 
 	/**
 	 * Get downvote count.
-	 * 
+	 *
 	 * @return Property\DownvoteCountProperty
 	 */
 	public function getDownvoteCount() {
@@ -124,7 +137,7 @@ class CommentType extends CreativeWorkType {
 
 	/**
 	 * Get parent item.
-	 * 
+	 *
 	 * @return Property\ParentItemProperty
 	 */
 	public function getParentItem() {
@@ -133,7 +146,7 @@ class CommentType extends CreativeWorkType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -141,8 +154,17 @@ class CommentType extends CreativeWorkType {
 	}
 
 	/**
+	 * Get shared content.
+	 *
+	 * @return Property\SharedContentProperty
+	 */
+	public function getSharedContent() {
+		return $this->sharedContent;
+	}
+
+	/**
 	 * Get upvote count.
-	 * 
+	 *
 	 * @return Property\UpvoteCountProperty
 	 */
 	public function getUpvoteCount() {
@@ -151,7 +173,7 @@ class CommentType extends CreativeWorkType {
 
 	/**
 	 * Set downvote count.
-	 * 
+	 *
 	 * @param Property\DownvoteCountProperty $downvoteCount
 	 * @return CommentType
 	 */
@@ -163,7 +185,7 @@ class CommentType extends CreativeWorkType {
 
 	/**
 	 * Set parent item.
-	 * 
+	 *
 	 * @param Property\ParentItemProperty $parentItem
 	 * @return CommentType
 	 */
@@ -174,8 +196,20 @@ class CommentType extends CreativeWorkType {
 	}
 
 	/**
+	 * Set shared content.
+	 *
+	 * @param Property\SharedContentProperty $sharedContent
+	 * @return CommentType
+	 */
+	public function setSharedContent(Property\SharedContentProperty $sharedContent) {
+		$this->sharedContent = $sharedContent;
+
+		return $this;
+	}
+
+	/**
 	 * Set upvote count.
-	 * 
+	 *
 	 * @param Property\UpvoteCountProperty $upvoteCount
 	 * @return CommentType
 	 */

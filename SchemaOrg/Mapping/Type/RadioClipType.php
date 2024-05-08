@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class RadioClipType.
+ * A short radio program or a segment/part of a radio program.
  * 
+ * @method RadioClipType setAbout(Property\AboutProperty $about)
  * @method RadioClipType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method RadioClipType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method RadioClipType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -35,6 +36,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method RadioClipType setContributor(Property\ContributorProperty $contributor)
  * @method RadioClipType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method RadioClipType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method RadioClipType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method RadioClipType setCreator(Property\CreatorProperty $creator)
  * @method RadioClipType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method RadioClipType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -47,9 +49,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method RadioClipType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method RadioClipType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method RadioClipType setEncoding(Property\EncodingProperty $encoding)
+ * @method RadioClipType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method RadioClipType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method RadioClipType setExpires(Property\ExpiresProperty $expires)
- * @method RadioClipType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method RadioClipType setFunder(Property\FunderProperty $funder)
  * @method RadioClipType setGenre(Property\GenreProperty $genre)
  * @method RadioClipType setHasPart(Property\HasPartProperty $hasPart)
@@ -80,9 +82,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method RadioClipType setPosition(Property\PositionProperty $position)
  * @method RadioClipType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method RadioClipType setProducer(Property\ProducerProperty $producer)
- * @method RadioClipType setProvider(Property\ProviderProperty $provider)
  * @method RadioClipType setPublication(Property\PublicationProperty $publication)
  * @method RadioClipType setPublisher(Property\PublisherProperty $publisher)
+ * @method RadioClipType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method RadioClipType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method RadioClipType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method RadioClipType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -90,24 +92,30 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method RadioClipType setSameAs(Property\SameAsProperty $sameAs)
  * @method RadioClipType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method RadioClipType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method RadioClipType setSpatial(Property\SpatialProperty $spatial)
  * @method RadioClipType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method RadioClipType setSponsor(Property\SponsorProperty $sponsor)
+ * @method RadioClipType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method RadioClipType setTemporal(Property\TemporalProperty $temporal)
  * @method RadioClipType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method RadioClipType setText(Property\TextProperty $text)
+ * @method RadioClipType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method RadioClipType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method RadioClipType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method RadioClipType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method RadioClipType setTranslator(Property\TranslatorProperty $translator)
  * @method RadioClipType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method RadioClipType setUrl(Property\UrlProperty $url)
  * @method RadioClipType setVersion(Property\VersionProperty $version)
  * @method RadioClipType setVideo(Property\VideoProperty $video)
  * @method RadioClipType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method RadioClipType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class RadioClipType extends ClipType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

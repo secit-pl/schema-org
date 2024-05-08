@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class SoftwareApplicationType.
+ * A software application.
  * 
+ * @method SoftwareApplicationType setAbout(Property\AboutProperty $about)
  * @method SoftwareApplicationType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method SoftwareApplicationType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method SoftwareApplicationType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -33,6 +34,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SoftwareApplicationType setContributor(Property\ContributorProperty $contributor)
  * @method SoftwareApplicationType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method SoftwareApplicationType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method SoftwareApplicationType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method SoftwareApplicationType setCreator(Property\CreatorProperty $creator)
  * @method SoftwareApplicationType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method SoftwareApplicationType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -44,9 +46,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SoftwareApplicationType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method SoftwareApplicationType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method SoftwareApplicationType setEncoding(Property\EncodingProperty $encoding)
+ * @method SoftwareApplicationType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method SoftwareApplicationType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method SoftwareApplicationType setExpires(Property\ExpiresProperty $expires)
- * @method SoftwareApplicationType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method SoftwareApplicationType setFunder(Property\FunderProperty $funder)
  * @method SoftwareApplicationType setGenre(Property\GenreProperty $genre)
  * @method SoftwareApplicationType setHasPart(Property\HasPartProperty $hasPart)
@@ -73,9 +75,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SoftwareApplicationType setPosition(Property\PositionProperty $position)
  * @method SoftwareApplicationType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method SoftwareApplicationType setProducer(Property\ProducerProperty $producer)
- * @method SoftwareApplicationType setProvider(Property\ProviderProperty $provider)
  * @method SoftwareApplicationType setPublication(Property\PublicationProperty $publication)
  * @method SoftwareApplicationType setPublisher(Property\PublisherProperty $publisher)
+ * @method SoftwareApplicationType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method SoftwareApplicationType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method SoftwareApplicationType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method SoftwareApplicationType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -83,18 +85,24 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method SoftwareApplicationType setSameAs(Property\SameAsProperty $sameAs)
  * @method SoftwareApplicationType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method SoftwareApplicationType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method SoftwareApplicationType setSpatial(Property\SpatialProperty $spatial)
  * @method SoftwareApplicationType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method SoftwareApplicationType setSponsor(Property\SponsorProperty $sponsor)
+ * @method SoftwareApplicationType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method SoftwareApplicationType setTemporal(Property\TemporalProperty $temporal)
  * @method SoftwareApplicationType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method SoftwareApplicationType setText(Property\TextProperty $text)
+ * @method SoftwareApplicationType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method SoftwareApplicationType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method SoftwareApplicationType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method SoftwareApplicationType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method SoftwareApplicationType setTranslator(Property\TranslatorProperty $translator)
  * @method SoftwareApplicationType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method SoftwareApplicationType setUrl(Property\UrlProperty $url)
  * @method SoftwareApplicationType setVersion(Property\VersionProperty $version)
  * @method SoftwareApplicationType setVideo(Property\VideoProperty $video)
  * @method SoftwareApplicationType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method SoftwareApplicationType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class SoftwareApplicationType extends CreativeWorkType {
 
@@ -210,7 +218,7 @@ class SoftwareApplicationType extends CreativeWorkType {
 
 	/**
 	 * Get application category.
-	 * 
+	 *
 	 * @return Property\ApplicationCategoryProperty
 	 */
 	public function getApplicationCategory() {
@@ -219,7 +227,7 @@ class SoftwareApplicationType extends CreativeWorkType {
 
 	/**
 	 * Get application sub category.
-	 * 
+	 *
 	 * @return Property\ApplicationSubCategoryProperty
 	 */
 	public function getApplicationSubCategory() {
@@ -228,7 +236,7 @@ class SoftwareApplicationType extends CreativeWorkType {
 
 	/**
 	 * Get application suite.
-	 * 
+	 *
 	 * @return Property\ApplicationSuiteProperty
 	 */
 	public function getApplicationSuite() {
@@ -237,7 +245,7 @@ class SoftwareApplicationType extends CreativeWorkType {
 
 	/**
 	 * Get available on device.
-	 * 
+	 *
 	 * @return Property\AvailableOnDeviceProperty
 	 */
 	public function getAvailableOnDevice() {
@@ -246,7 +254,7 @@ class SoftwareApplicationType extends CreativeWorkType {
 
 	/**
 	 * Get countries not supported.
-	 * 
+	 *
 	 * @return Property\CountriesNotSupportedProperty
 	 */
 	public function getCountriesNotSupported() {
@@ -255,7 +263,7 @@ class SoftwareApplicationType extends CreativeWorkType {
 
 	/**
 	 * Get countries supported.
-	 * 
+	 *
 	 * @return Property\CountriesSupportedProperty
 	 */
 	public function getCountriesSupported() {
@@ -264,7 +272,7 @@ class SoftwareApplicationType extends CreativeWorkType {
 
 	/**
 	 * Get download url.
-	 * 
+	 *
 	 * @return Property\DownloadUrlProperty
 	 */
 	public function getDownloadUrl() {
@@ -273,7 +281,7 @@ class SoftwareApplicationType extends CreativeWorkType {
 
 	/**
 	 * Get feature list.
-	 * 
+	 *
 	 * @return Property\FeatureListProperty
 	 */
 	public function getFeatureList() {
@@ -282,7 +290,7 @@ class SoftwareApplicationType extends CreativeWorkType {
 
 	/**
 	 * Get file size.
-	 * 
+	 *
 	 * @return Property\FileSizeProperty
 	 */
 	public function getFileSize() {
@@ -291,7 +299,7 @@ class SoftwareApplicationType extends CreativeWorkType {
 
 	/**
 	 * Get install url.
-	 * 
+	 *
 	 * @return Property\InstallUrlProperty
 	 */
 	public function getInstallUrl() {
@@ -300,7 +308,7 @@ class SoftwareApplicationType extends CreativeWorkType {
 
 	/**
 	 * Get memory requirements.
-	 * 
+	 *
 	 * @return Property\MemoryRequirementsProperty
 	 */
 	public function getMemoryRequirements() {
@@ -309,7 +317,7 @@ class SoftwareApplicationType extends CreativeWorkType {
 
 	/**
 	 * Get operating system.
-	 * 
+	 *
 	 * @return Property\OperatingSystemProperty
 	 */
 	public function getOperatingSystem() {
@@ -318,7 +326,7 @@ class SoftwareApplicationType extends CreativeWorkType {
 
 	/**
 	 * Get permissions.
-	 * 
+	 *
 	 * @return Property\PermissionsProperty
 	 */
 	public function getPermissions() {
@@ -327,7 +335,7 @@ class SoftwareApplicationType extends CreativeWorkType {
 
 	/**
 	 * Get processor requirements.
-	 * 
+	 *
 	 * @return Property\ProcessorRequirementsProperty
 	 */
 	public function getProcessorRequirements() {
@@ -336,7 +344,7 @@ class SoftwareApplicationType extends CreativeWorkType {
 
 	/**
 	 * Get release notes.
-	 * 
+	 *
 	 * @return Property\ReleaseNotesProperty
 	 */
 	public function getReleaseNotes() {
@@ -345,7 +353,7 @@ class SoftwareApplicationType extends CreativeWorkType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -354,7 +362,7 @@ class SoftwareApplicationType extends CreativeWorkType {
 
 	/**
 	 * Get screenshot.
-	 * 
+	 *
 	 * @return Property\ScreenshotProperty
 	 */
 	public function getScreenshot() {
@@ -363,7 +371,7 @@ class SoftwareApplicationType extends CreativeWorkType {
 
 	/**
 	 * Get software add on.
-	 * 
+	 *
 	 * @return Property\SoftwareAddOnProperty
 	 */
 	public function getSoftwareAddOn() {
@@ -372,7 +380,7 @@ class SoftwareApplicationType extends CreativeWorkType {
 
 	/**
 	 * Get software help.
-	 * 
+	 *
 	 * @return Property\SoftwareHelpProperty
 	 */
 	public function getSoftwareHelp() {
@@ -381,7 +389,7 @@ class SoftwareApplicationType extends CreativeWorkType {
 
 	/**
 	 * Get software requirements.
-	 * 
+	 *
 	 * @return Property\SoftwareRequirementsProperty
 	 */
 	public function getSoftwareRequirements() {
@@ -390,7 +398,7 @@ class SoftwareApplicationType extends CreativeWorkType {
 
 	/**
 	 * Get software version.
-	 * 
+	 *
 	 * @return Property\SoftwareVersionProperty
 	 */
 	public function getSoftwareVersion() {
@@ -399,7 +407,7 @@ class SoftwareApplicationType extends CreativeWorkType {
 
 	/**
 	 * Get storage requirements.
-	 * 
+	 *
 	 * @return Property\StorageRequirementsProperty
 	 */
 	public function getStorageRequirements() {
@@ -408,7 +416,7 @@ class SoftwareApplicationType extends CreativeWorkType {
 
 	/**
 	 * Get supporting data.
-	 * 
+	 *
 	 * @return Property\SupportingDataProperty
 	 */
 	public function getSupportingData() {
@@ -417,7 +425,7 @@ class SoftwareApplicationType extends CreativeWorkType {
 
 	/**
 	 * Set application category.
-	 * 
+	 *
 	 * @param Property\ApplicationCategoryProperty $applicationCategory
 	 * @return SoftwareApplicationType
 	 */
@@ -429,7 +437,7 @@ class SoftwareApplicationType extends CreativeWorkType {
 
 	/**
 	 * Set application sub category.
-	 * 
+	 *
 	 * @param Property\ApplicationSubCategoryProperty $applicationSubCategory
 	 * @return SoftwareApplicationType
 	 */
@@ -441,7 +449,7 @@ class SoftwareApplicationType extends CreativeWorkType {
 
 	/**
 	 * Set application suite.
-	 * 
+	 *
 	 * @param Property\ApplicationSuiteProperty $applicationSuite
 	 * @return SoftwareApplicationType
 	 */
@@ -453,7 +461,7 @@ class SoftwareApplicationType extends CreativeWorkType {
 
 	/**
 	 * Set available on device.
-	 * 
+	 *
 	 * @param Property\AvailableOnDeviceProperty $availableOnDevice
 	 * @return SoftwareApplicationType
 	 */
@@ -465,7 +473,7 @@ class SoftwareApplicationType extends CreativeWorkType {
 
 	/**
 	 * Set countries not supported.
-	 * 
+	 *
 	 * @param Property\CountriesNotSupportedProperty $countriesNotSupported
 	 * @return SoftwareApplicationType
 	 */
@@ -477,7 +485,7 @@ class SoftwareApplicationType extends CreativeWorkType {
 
 	/**
 	 * Set countries supported.
-	 * 
+	 *
 	 * @param Property\CountriesSupportedProperty $countriesSupported
 	 * @return SoftwareApplicationType
 	 */
@@ -489,7 +497,7 @@ class SoftwareApplicationType extends CreativeWorkType {
 
 	/**
 	 * Set download url.
-	 * 
+	 *
 	 * @param Property\DownloadUrlProperty $downloadUrl
 	 * @return SoftwareApplicationType
 	 */
@@ -501,7 +509,7 @@ class SoftwareApplicationType extends CreativeWorkType {
 
 	/**
 	 * Set feature list.
-	 * 
+	 *
 	 * @param Property\FeatureListProperty $featureList
 	 * @return SoftwareApplicationType
 	 */
@@ -513,7 +521,7 @@ class SoftwareApplicationType extends CreativeWorkType {
 
 	/**
 	 * Set file size.
-	 * 
+	 *
 	 * @param Property\FileSizeProperty $fileSize
 	 * @return SoftwareApplicationType
 	 */
@@ -525,7 +533,7 @@ class SoftwareApplicationType extends CreativeWorkType {
 
 	/**
 	 * Set install url.
-	 * 
+	 *
 	 * @param Property\InstallUrlProperty $installUrl
 	 * @return SoftwareApplicationType
 	 */
@@ -537,7 +545,7 @@ class SoftwareApplicationType extends CreativeWorkType {
 
 	/**
 	 * Set memory requirements.
-	 * 
+	 *
 	 * @param Property\MemoryRequirementsProperty $memoryRequirements
 	 * @return SoftwareApplicationType
 	 */
@@ -549,7 +557,7 @@ class SoftwareApplicationType extends CreativeWorkType {
 
 	/**
 	 * Set operating system.
-	 * 
+	 *
 	 * @param Property\OperatingSystemProperty $operatingSystem
 	 * @return SoftwareApplicationType
 	 */
@@ -561,7 +569,7 @@ class SoftwareApplicationType extends CreativeWorkType {
 
 	/**
 	 * Set permissions.
-	 * 
+	 *
 	 * @param Property\PermissionsProperty $permissions
 	 * @return SoftwareApplicationType
 	 */
@@ -573,7 +581,7 @@ class SoftwareApplicationType extends CreativeWorkType {
 
 	/**
 	 * Set processor requirements.
-	 * 
+	 *
 	 * @param Property\ProcessorRequirementsProperty $processorRequirements
 	 * @return SoftwareApplicationType
 	 */
@@ -585,7 +593,7 @@ class SoftwareApplicationType extends CreativeWorkType {
 
 	/**
 	 * Set release notes.
-	 * 
+	 *
 	 * @param Property\ReleaseNotesProperty $releaseNotes
 	 * @return SoftwareApplicationType
 	 */
@@ -597,7 +605,7 @@ class SoftwareApplicationType extends CreativeWorkType {
 
 	/**
 	 * Set screenshot.
-	 * 
+	 *
 	 * @param Property\ScreenshotProperty $screenshot
 	 * @return SoftwareApplicationType
 	 */
@@ -609,7 +617,7 @@ class SoftwareApplicationType extends CreativeWorkType {
 
 	/**
 	 * Set software add on.
-	 * 
+	 *
 	 * @param Property\SoftwareAddOnProperty $softwareAddOn
 	 * @return SoftwareApplicationType
 	 */
@@ -621,7 +629,7 @@ class SoftwareApplicationType extends CreativeWorkType {
 
 	/**
 	 * Set software help.
-	 * 
+	 *
 	 * @param Property\SoftwareHelpProperty $softwareHelp
 	 * @return SoftwareApplicationType
 	 */
@@ -633,7 +641,7 @@ class SoftwareApplicationType extends CreativeWorkType {
 
 	/**
 	 * Set software requirements.
-	 * 
+	 *
 	 * @param Property\SoftwareRequirementsProperty $softwareRequirements
 	 * @return SoftwareApplicationType
 	 */
@@ -645,7 +653,7 @@ class SoftwareApplicationType extends CreativeWorkType {
 
 	/**
 	 * Set software version.
-	 * 
+	 *
 	 * @param Property\SoftwareVersionProperty $softwareVersion
 	 * @return SoftwareApplicationType
 	 */
@@ -657,7 +665,7 @@ class SoftwareApplicationType extends CreativeWorkType {
 
 	/**
 	 * Set storage requirements.
-	 * 
+	 *
 	 * @param Property\StorageRequirementsProperty $storageRequirements
 	 * @return SoftwareApplicationType
 	 */
@@ -669,7 +677,7 @@ class SoftwareApplicationType extends CreativeWorkType {
 
 	/**
 	 * Set supporting data.
-	 * 
+	 *
 	 * @param Property\SupportingDataProperty $supportingData
 	 * @return SoftwareApplicationType
 	 */

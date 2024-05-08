@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class MusicVideoObjectType.
+ * A music video file.
  * 
+ * @method MusicVideoObjectType setAbout(Property\AboutProperty $about)
  * @method MusicVideoObjectType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method MusicVideoObjectType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method MusicVideoObjectType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -37,6 +38,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MusicVideoObjectType setContributor(Property\ContributorProperty $contributor)
  * @method MusicVideoObjectType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method MusicVideoObjectType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method MusicVideoObjectType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method MusicVideoObjectType setCreator(Property\CreatorProperty $creator)
  * @method MusicVideoObjectType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method MusicVideoObjectType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -44,6 +46,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MusicVideoObjectType setDescription(Property\DescriptionProperty $description)
  * @method MusicVideoObjectType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
  * @method MusicVideoObjectType setDiscussionUrl(Property\DiscussionUrlProperty $discussionUrl)
+ * @method MusicVideoObjectType setDuration(Property\DurationProperty $duration)
  * @method MusicVideoObjectType setEditor(Property\EditorProperty $editor)
  * @method MusicVideoObjectType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method MusicVideoObjectType setEducationalUse(Property\EducationalUseProperty $educationalUse)
@@ -51,9 +54,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MusicVideoObjectType setEncodesCreativeWork(Property\EncodesCreativeWorkProperty $encodesCreativeWork)
  * @method MusicVideoObjectType setEncoding(Property\EncodingProperty $encoding)
  * @method MusicVideoObjectType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
+ * @method MusicVideoObjectType setEndTime(Property\EndTimeProperty $endTime)
  * @method MusicVideoObjectType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method MusicVideoObjectType setExpires(Property\ExpiresProperty $expires)
- * @method MusicVideoObjectType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method MusicVideoObjectType setFunder(Property\FunderProperty $funder)
  * @method MusicVideoObjectType setGenre(Property\GenreProperty $genre)
  * @method MusicVideoObjectType setHasPart(Property\HasPartProperty $hasPart)
@@ -83,9 +86,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MusicVideoObjectType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method MusicVideoObjectType setProducer(Property\ProducerProperty $producer)
  * @method MusicVideoObjectType setProductionCompany(Property\ProductionCompanyProperty $productionCompany)
- * @method MusicVideoObjectType setProvider(Property\ProviderProperty $provider)
  * @method MusicVideoObjectType setPublication(Property\PublicationProperty $publication)
  * @method MusicVideoObjectType setPublisher(Property\PublisherProperty $publisher)
+ * @method MusicVideoObjectType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method MusicVideoObjectType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method MusicVideoObjectType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method MusicVideoObjectType setRegionsAllowed(Property\RegionsAllowedProperty $regionsAllowed)
@@ -95,12 +98,18 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MusicVideoObjectType setSameAs(Property\SameAsProperty $sameAs)
  * @method MusicVideoObjectType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method MusicVideoObjectType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method MusicVideoObjectType setSpatial(Property\SpatialProperty $spatial)
  * @method MusicVideoObjectType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method MusicVideoObjectType setSponsor(Property\SponsorProperty $sponsor)
+ * @method MusicVideoObjectType setStartTime(Property\StartTimeProperty $startTime)
+ * @method MusicVideoObjectType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method MusicVideoObjectType setTemporal(Property\TemporalProperty $temporal)
  * @method MusicVideoObjectType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method MusicVideoObjectType setText(Property\TextProperty $text)
+ * @method MusicVideoObjectType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method MusicVideoObjectType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method MusicVideoObjectType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method MusicVideoObjectType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method MusicVideoObjectType setTranslator(Property\TranslatorProperty $translator)
  * @method MusicVideoObjectType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method MusicVideoObjectType setUploadDate(Property\UploadDateProperty $uploadDate)
@@ -109,12 +118,13 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MusicVideoObjectType setVideo(Property\VideoProperty $video)
  * @method MusicVideoObjectType setWidth(Property\WidthProperty $width)
  * @method MusicVideoObjectType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method MusicVideoObjectType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class MusicVideoObjectType extends MediaObjectType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

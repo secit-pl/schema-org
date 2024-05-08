@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class MessageType.
+ * A single message from a sender to one or more organizations or people.
  * 
+ * @method MessageType setAbout(Property\AboutProperty $about)
  * @method MessageType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method MessageType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method MessageType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -33,6 +34,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MessageType setContributor(Property\ContributorProperty $contributor)
  * @method MessageType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method MessageType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method MessageType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method MessageType setCreator(Property\CreatorProperty $creator)
  * @method MessageType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method MessageType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -44,9 +46,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MessageType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method MessageType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method MessageType setEncoding(Property\EncodingProperty $encoding)
+ * @method MessageType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method MessageType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method MessageType setExpires(Property\ExpiresProperty $expires)
- * @method MessageType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method MessageType setFunder(Property\FunderProperty $funder)
  * @method MessageType setGenre(Property\GenreProperty $genre)
  * @method MessageType setHasPart(Property\HasPartProperty $hasPart)
@@ -73,9 +75,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MessageType setPosition(Property\PositionProperty $position)
  * @method MessageType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method MessageType setProducer(Property\ProducerProperty $producer)
- * @method MessageType setProvider(Property\ProviderProperty $provider)
  * @method MessageType setPublication(Property\PublicationProperty $publication)
  * @method MessageType setPublisher(Property\PublisherProperty $publisher)
+ * @method MessageType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method MessageType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method MessageType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method MessageType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -83,18 +85,24 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MessageType setSameAs(Property\SameAsProperty $sameAs)
  * @method MessageType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method MessageType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method MessageType setSpatial(Property\SpatialProperty $spatial)
  * @method MessageType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method MessageType setSponsor(Property\SponsorProperty $sponsor)
+ * @method MessageType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method MessageType setTemporal(Property\TemporalProperty $temporal)
  * @method MessageType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method MessageType setText(Property\TextProperty $text)
+ * @method MessageType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method MessageType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method MessageType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method MessageType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method MessageType setTranslator(Property\TranslatorProperty $translator)
  * @method MessageType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method MessageType setUrl(Property\UrlProperty $url)
  * @method MessageType setVersion(Property\VersionProperty $version)
  * @method MessageType setVideo(Property\VideoProperty $video)
  * @method MessageType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method MessageType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class MessageType extends CreativeWorkType {
 
@@ -145,7 +153,7 @@ class MessageType extends CreativeWorkType {
 
 	/**
 	 * Get bcc recipient.
-	 * 
+	 *
 	 * @return Property\BccRecipientProperty
 	 */
 	public function getBccRecipient() {
@@ -154,7 +162,7 @@ class MessageType extends CreativeWorkType {
 
 	/**
 	 * Get cc recipient.
-	 * 
+	 *
 	 * @return Property\CcRecipientProperty
 	 */
 	public function getCcRecipient() {
@@ -163,7 +171,7 @@ class MessageType extends CreativeWorkType {
 
 	/**
 	 * Get date read.
-	 * 
+	 *
 	 * @return Property\DateReadProperty
 	 */
 	public function getDateRead() {
@@ -172,7 +180,7 @@ class MessageType extends CreativeWorkType {
 
 	/**
 	 * Get date received.
-	 * 
+	 *
 	 * @return Property\DateReceivedProperty
 	 */
 	public function getDateReceived() {
@@ -181,7 +189,7 @@ class MessageType extends CreativeWorkType {
 
 	/**
 	 * Get date sent.
-	 * 
+	 *
 	 * @return Property\DateSentProperty
 	 */
 	public function getDateSent() {
@@ -190,7 +198,7 @@ class MessageType extends CreativeWorkType {
 
 	/**
 	 * Get message attachment.
-	 * 
+	 *
 	 * @return Property\MessageAttachmentProperty
 	 */
 	public function getMessageAttachment() {
@@ -199,7 +207,7 @@ class MessageType extends CreativeWorkType {
 
 	/**
 	 * Get recipient.
-	 * 
+	 *
 	 * @return Property\RecipientProperty
 	 */
 	public function getRecipient() {
@@ -208,7 +216,7 @@ class MessageType extends CreativeWorkType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -217,7 +225,7 @@ class MessageType extends CreativeWorkType {
 
 	/**
 	 * Get sender.
-	 * 
+	 *
 	 * @return Property\SenderProperty
 	 */
 	public function getSender() {
@@ -226,7 +234,7 @@ class MessageType extends CreativeWorkType {
 
 	/**
 	 * Get to recipient.
-	 * 
+	 *
 	 * @return Property\ToRecipientProperty
 	 */
 	public function getToRecipient() {
@@ -235,7 +243,7 @@ class MessageType extends CreativeWorkType {
 
 	/**
 	 * Set bcc recipient.
-	 * 
+	 *
 	 * @param Property\BccRecipientProperty $bccRecipient
 	 * @return MessageType
 	 */
@@ -247,7 +255,7 @@ class MessageType extends CreativeWorkType {
 
 	/**
 	 * Set cc recipient.
-	 * 
+	 *
 	 * @param Property\CcRecipientProperty $ccRecipient
 	 * @return MessageType
 	 */
@@ -259,7 +267,7 @@ class MessageType extends CreativeWorkType {
 
 	/**
 	 * Set date read.
-	 * 
+	 *
 	 * @param Property\DateReadProperty $dateRead
 	 * @return MessageType
 	 */
@@ -271,7 +279,7 @@ class MessageType extends CreativeWorkType {
 
 	/**
 	 * Set date received.
-	 * 
+	 *
 	 * @param Property\DateReceivedProperty $dateReceived
 	 * @return MessageType
 	 */
@@ -283,7 +291,7 @@ class MessageType extends CreativeWorkType {
 
 	/**
 	 * Set date sent.
-	 * 
+	 *
 	 * @param Property\DateSentProperty $dateSent
 	 * @return MessageType
 	 */
@@ -295,7 +303,7 @@ class MessageType extends CreativeWorkType {
 
 	/**
 	 * Set message attachment.
-	 * 
+	 *
 	 * @param Property\MessageAttachmentProperty $messageAttachment
 	 * @return MessageType
 	 */
@@ -307,7 +315,7 @@ class MessageType extends CreativeWorkType {
 
 	/**
 	 * Set recipient.
-	 * 
+	 *
 	 * @param Property\RecipientProperty $recipient
 	 * @return MessageType
 	 */
@@ -319,7 +327,7 @@ class MessageType extends CreativeWorkType {
 
 	/**
 	 * Set sender.
-	 * 
+	 *
 	 * @param Property\SenderProperty $sender
 	 * @return MessageType
 	 */
@@ -331,7 +339,7 @@ class MessageType extends CreativeWorkType {
 
 	/**
 	 * Set to recipient.
-	 * 
+	 *
 	 * @param Property\ToRecipientProperty $toRecipient
 	 * @return MessageType
 	 */

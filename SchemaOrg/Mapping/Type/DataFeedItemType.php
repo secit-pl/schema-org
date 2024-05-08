@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class DataFeedItemType.
+ * A single item within a larger data feed.
  * 
  * @method DataFeedItemType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method DataFeedItemType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,6 +17,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method DataFeedItemType setName(Property\NameProperty $name)
  * @method DataFeedItemType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method DataFeedItemType setSameAs(Property\SameAsProperty $sameAs)
+ * @method DataFeedItemType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method DataFeedItemType setUrl(Property\UrlProperty $url)
  */
 class DataFeedItemType extends IntangibleType {
@@ -43,7 +44,7 @@ class DataFeedItemType extends IntangibleType {
 
 	/**
 	 * Get date created.
-	 * 
+	 *
 	 * @return Property\DateCreatedProperty
 	 */
 	public function getDateCreated() {
@@ -52,7 +53,7 @@ class DataFeedItemType extends IntangibleType {
 
 	/**
 	 * Get date deleted.
-	 * 
+	 *
 	 * @return Property\DateDeletedProperty
 	 */
 	public function getDateDeleted() {
@@ -61,7 +62,7 @@ class DataFeedItemType extends IntangibleType {
 
 	/**
 	 * Get date modified.
-	 * 
+	 *
 	 * @return Property\DateModifiedProperty
 	 */
 	public function getDateModified() {
@@ -70,7 +71,7 @@ class DataFeedItemType extends IntangibleType {
 
 	/**
 	 * Get item.
-	 * 
+	 *
 	 * @return Property\ItemProperty
 	 */
 	public function getItem() {
@@ -79,7 +80,7 @@ class DataFeedItemType extends IntangibleType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -88,7 +89,7 @@ class DataFeedItemType extends IntangibleType {
 
 	/**
 	 * Set date created.
-	 * 
+	 *
 	 * @param Property\DateCreatedProperty $dateCreated
 	 * @return DataFeedItemType
 	 */
@@ -100,7 +101,7 @@ class DataFeedItemType extends IntangibleType {
 
 	/**
 	 * Set date deleted.
-	 * 
+	 *
 	 * @param Property\DateDeletedProperty $dateDeleted
 	 * @return DataFeedItemType
 	 */
@@ -112,7 +113,7 @@ class DataFeedItemType extends IntangibleType {
 
 	/**
 	 * Set date modified.
-	 * 
+	 *
 	 * @param Property\DateModifiedProperty $dateModified
 	 * @return DataFeedItemType
 	 */
@@ -124,7 +125,7 @@ class DataFeedItemType extends IntangibleType {
 
 	/**
 	 * Set item.
-	 * 
+	 *
 	 * @param Property\ItemProperty $item
 	 * @return DataFeedItemType
 	 */

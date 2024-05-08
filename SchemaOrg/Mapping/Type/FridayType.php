@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class FridayType.
+ * The day of the week between Thursday and Saturday.
  * 
  * @method FridayType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method FridayType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method FridayType setName(Property\NameProperty $name)
  * @method FridayType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method FridayType setSameAs(Property\SameAsProperty $sameAs)
+ * @method FridayType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method FridayType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method FridayType setUrl(Property\UrlProperty $url)
  */
 class FridayType extends DayOfWeekType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

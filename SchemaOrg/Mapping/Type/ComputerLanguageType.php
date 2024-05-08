@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ComputerLanguageType.
+ * This type covers computer programming languages such as Scheme and Lisp, as well as other language-like computer representations. Natural languages are best represented with the Language type.
  * 
  * @method ComputerLanguageType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method ComputerLanguageType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,14 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ComputerLanguageType setName(Property\NameProperty $name)
  * @method ComputerLanguageType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method ComputerLanguageType setSameAs(Property\SameAsProperty $sameAs)
+ * @method ComputerLanguageType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method ComputerLanguageType setUrl(Property\UrlProperty $url)
  */
 class ComputerLanguageType extends IntangibleType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

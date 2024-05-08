@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * BroadcastTimezoneProperty class.
+ * The timezone in ISO 8601 format for which the service bases its broadcasts.
  * 
  * @method BroadcastTimezoneProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class BroadcastTimezoneProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class BroadcastTimezoneProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

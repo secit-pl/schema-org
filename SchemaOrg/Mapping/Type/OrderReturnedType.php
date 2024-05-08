@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class OrderReturnedType.
+ * OrderStatus representing that an order has been returned.
  * 
  * @method OrderReturnedType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method OrderReturnedType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method OrderReturnedType setName(Property\NameProperty $name)
  * @method OrderReturnedType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method OrderReturnedType setSameAs(Property\SameAsProperty $sameAs)
+ * @method OrderReturnedType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method OrderReturnedType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method OrderReturnedType setUrl(Property\UrlProperty $url)
  */
 class OrderReturnedType extends OrderStatusType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

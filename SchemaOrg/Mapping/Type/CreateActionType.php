@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class CreateActionType.
+ * The act of deliberately creating/producing/generating/building a result out of the agent.
  * 
  * @method CreateActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method CreateActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method CreateActionType setResult(Property\ResultProperty $result)
  * @method CreateActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method CreateActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method CreateActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method CreateActionType setTarget(Property\TargetProperty $target)
  * @method CreateActionType setUrl(Property\UrlProperty $url)
  */
@@ -34,7 +35,7 @@ class CreateActionType extends ActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

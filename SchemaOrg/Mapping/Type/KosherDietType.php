@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class KosherDietType.
+ * A diet conforming to Jewish dietary practices.
  * 
  * @method KosherDietType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method KosherDietType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method KosherDietType setName(Property\NameProperty $name)
  * @method KosherDietType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method KosherDietType setSameAs(Property\SameAsProperty $sameAs)
+ * @method KosherDietType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method KosherDietType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method KosherDietType setUrl(Property\UrlProperty $url)
  */
 class KosherDietType extends RestrictedDietType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class DanceEventType.
+ * Event type: A social dance.
  * 
+ * @method DanceEventType setAbout(Property\AboutProperty $about)
  * @method DanceEventType setActor(Property\ActorProperty $actor)
  * @method DanceEventType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method DanceEventType setAggregateRating(Property\AggregateRatingProperty $aggregateRating)
@@ -19,6 +20,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method DanceEventType setDirector(Property\DirectorProperty $director)
  * @method DanceEventType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
  * @method DanceEventType setDoorTime(Property\DoorTimeProperty $doorTime)
+ * @method DanceEventType setDuration(Property\DurationProperty $duration)
  * @method DanceEventType setEndDate(Property\EndDateProperty $endDate)
  * @method DanceEventType setEventStatus(Property\EventStatusProperty $eventStatus)
  * @method DanceEventType setFunder(Property\FunderProperty $funder)
@@ -26,6 +28,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method DanceEventType setImage(Property\ImageProperty $image)
  * @method DanceEventType setInLanguage(Property\InLanguageProperty $inLanguage)
  * @method DanceEventType setIsAccessibleForFree(Property\IsAccessibleForFreeProperty $isAccessibleForFree)
+ * @method DanceEventType setKeywords(Property\KeywordsProperty $keywords)
  * @method DanceEventType setLocation(Property\LocationProperty $location)
  * @method DanceEventType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
  * @method DanceEventType setMaximumAttendeeCapacity(Property\MaximumAttendeeCapacityProperty $maximumAttendeeCapacity)
@@ -42,6 +45,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method DanceEventType setSponsor(Property\SponsorProperty $sponsor)
  * @method DanceEventType setStartDate(Property\StartDateProperty $startDate)
  * @method DanceEventType setSubEvent(Property\SubEventProperty $subEvent)
+ * @method DanceEventType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method DanceEventType setSuperEvent(Property\SuperEventProperty $superEvent)
  * @method DanceEventType setTranslator(Property\TranslatorProperty $translator)
  * @method DanceEventType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
@@ -53,7 +57,7 @@ class DanceEventType extends EventType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

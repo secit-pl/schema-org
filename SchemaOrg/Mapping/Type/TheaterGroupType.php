@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class TheaterGroupType.
+ * A theater group or company, for example, the Royal Shakespeare Company or Druid Theatre.
  * 
  * @method TheaterGroupType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method TheaterGroupType setAddress(Property\AddressProperty $address)
@@ -30,11 +30,14 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method TheaterGroupType setFoundingLocation(Property\FoundingLocationProperty $foundingLocation)
  * @method TheaterGroupType setFunder(Property\FunderProperty $funder)
  * @method TheaterGroupType setGlobalLocationNumber(Property\GlobalLocationNumberProperty $globalLocationNumber)
+ * @method TheaterGroupType setHasCertification(Property\HasCertificationProperty $hasCertification)
  * @method TheaterGroupType setHasOfferCatalog(Property\HasOfferCatalogProperty $hasOfferCatalog)
  * @method TheaterGroupType setHasPOS(Property\HasPOSProperty $hasPOS)
  * @method TheaterGroupType setIdentifier(Property\IdentifierProperty $identifier)
  * @method TheaterGroupType setImage(Property\ImageProperty $image)
+ * @method TheaterGroupType setInteractionStatistic(Property\InteractionStatisticProperty $interactionStatistic)
  * @method TheaterGroupType setIsicV4(Property\IsicV4Property $isicV4)
+ * @method TheaterGroupType setKeywords(Property\KeywordsProperty $keywords)
  * @method TheaterGroupType setLegalName(Property\LegalNameProperty $legalName)
  * @method TheaterGroupType setLeiCode(Property\LeiCodeProperty $leiCode)
  * @method TheaterGroupType setLocation(Property\LocationProperty $location)
@@ -53,8 +56,10 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method TheaterGroupType setReview(Property\ReviewProperty $review)
  * @method TheaterGroupType setSameAs(Property\SameAsProperty $sameAs)
  * @method TheaterGroupType setSeeks(Property\SeeksProperty $seeks)
+ * @method TheaterGroupType setSlogan(Property\SloganProperty $slogan)
  * @method TheaterGroupType setSponsor(Property\SponsorProperty $sponsor)
  * @method TheaterGroupType setSubOrganization(Property\SubOrganizationProperty $subOrganization)
+ * @method TheaterGroupType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method TheaterGroupType setTaxID(Property\TaxIDProperty $taxID)
  * @method TheaterGroupType setTelephone(Property\TelephoneProperty $telephone)
  * @method TheaterGroupType setUrl(Property\UrlProperty $url)
@@ -64,7 +69,7 @@ class TheaterGroupType extends PerformingGroupType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

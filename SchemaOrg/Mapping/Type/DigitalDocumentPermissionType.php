@@ -5,27 +5,27 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class DigitalDocumentPermissionType.
+ * A type of permission which can be granted for accessing a digital document.
  * 
- * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\DigitalDocumentPermissionType instead.
- * 
- * @method DigitalDocumentPermissionType setAdditionalType(Property\AdditionalType $additionalType)
- * @method DigitalDocumentPermissionType setAlternateName(Property\AlternateName $alternateName)
- * @method DigitalDocumentPermissionType setDescription(Property\Description $description)
- * @method DigitalDocumentPermissionType setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method DigitalDocumentPermissionType setIdentifier(Property\Identifier $identifier)
- * @method DigitalDocumentPermissionType setImage(Property\Image $image)
- * @method DigitalDocumentPermissionType setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method DigitalDocumentPermissionType setName(Property\Name $name)
- * @method DigitalDocumentPermissionType setPotentialAction(Property\PotentialAction $potentialAction)
- * @method DigitalDocumentPermissionType setSameAs(Property\SameAs $sameAs)
- * @method DigitalDocumentPermissionType setUrl(Property\Url $url)
+ * @method DigitalDocumentPermissionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
+ * @method DigitalDocumentPermissionType setAlternateName(Property\AlternateNameProperty $alternateName)
+ * @method DigitalDocumentPermissionType setDescription(Property\DescriptionProperty $description)
+ * @method DigitalDocumentPermissionType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
+ * @method DigitalDocumentPermissionType setIdentifier(Property\IdentifierProperty $identifier)
+ * @method DigitalDocumentPermissionType setImage(Property\ImageProperty $image)
+ * @method DigitalDocumentPermissionType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
+ * @method DigitalDocumentPermissionType setName(Property\NameProperty $name)
+ * @method DigitalDocumentPermissionType setPotentialAction(Property\PotentialActionProperty $potentialAction)
+ * @method DigitalDocumentPermissionType setSameAs(Property\SameAsProperty $sameAs)
+ * @method DigitalDocumentPermissionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method DigitalDocumentPermissionType setSupersededBy(Property\SupersededByProperty $supersededBy)
+ * @method DigitalDocumentPermissionType setUrl(Property\UrlProperty $url)
  */
-class DigitalDocumentPermissionType extends Enumeration {
+class DigitalDocumentPermissionType extends EnumerationType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

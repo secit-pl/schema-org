@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class RemixAlbumType.
+ * RemixAlbum.
  * 
  * @method RemixAlbumType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method RemixAlbumType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method RemixAlbumType setName(Property\NameProperty $name)
  * @method RemixAlbumType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method RemixAlbumType setSameAs(Property\SameAsProperty $sameAs)
+ * @method RemixAlbumType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method RemixAlbumType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method RemixAlbumType setUrl(Property\UrlProperty $url)
  */
 class RemixAlbumType extends MusicAlbumProductionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

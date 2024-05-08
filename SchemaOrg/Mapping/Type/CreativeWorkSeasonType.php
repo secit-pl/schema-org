@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class CreativeWorkSeasonType.
+ * A media season, e.g. TV, radio, video game etc.
  * 
+ * @method CreativeWorkSeasonType setAbout(Property\AboutProperty $about)
  * @method CreativeWorkSeasonType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method CreativeWorkSeasonType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method CreativeWorkSeasonType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -33,6 +34,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method CreativeWorkSeasonType setContributor(Property\ContributorProperty $contributor)
  * @method CreativeWorkSeasonType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method CreativeWorkSeasonType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method CreativeWorkSeasonType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method CreativeWorkSeasonType setCreator(Property\CreatorProperty $creator)
  * @method CreativeWorkSeasonType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method CreativeWorkSeasonType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -44,9 +46,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method CreativeWorkSeasonType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method CreativeWorkSeasonType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method CreativeWorkSeasonType setEncoding(Property\EncodingProperty $encoding)
+ * @method CreativeWorkSeasonType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method CreativeWorkSeasonType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method CreativeWorkSeasonType setExpires(Property\ExpiresProperty $expires)
- * @method CreativeWorkSeasonType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method CreativeWorkSeasonType setFunder(Property\FunderProperty $funder)
  * @method CreativeWorkSeasonType setGenre(Property\GenreProperty $genre)
  * @method CreativeWorkSeasonType setHasPart(Property\HasPartProperty $hasPart)
@@ -73,9 +75,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method CreativeWorkSeasonType setPosition(Property\PositionProperty $position)
  * @method CreativeWorkSeasonType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method CreativeWorkSeasonType setProducer(Property\ProducerProperty $producer)
- * @method CreativeWorkSeasonType setProvider(Property\ProviderProperty $provider)
  * @method CreativeWorkSeasonType setPublication(Property\PublicationProperty $publication)
  * @method CreativeWorkSeasonType setPublisher(Property\PublisherProperty $publisher)
+ * @method CreativeWorkSeasonType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method CreativeWorkSeasonType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method CreativeWorkSeasonType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method CreativeWorkSeasonType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -83,18 +85,24 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method CreativeWorkSeasonType setSameAs(Property\SameAsProperty $sameAs)
  * @method CreativeWorkSeasonType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method CreativeWorkSeasonType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method CreativeWorkSeasonType setSpatial(Property\SpatialProperty $spatial)
  * @method CreativeWorkSeasonType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method CreativeWorkSeasonType setSponsor(Property\SponsorProperty $sponsor)
+ * @method CreativeWorkSeasonType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method CreativeWorkSeasonType setTemporal(Property\TemporalProperty $temporal)
  * @method CreativeWorkSeasonType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method CreativeWorkSeasonType setText(Property\TextProperty $text)
+ * @method CreativeWorkSeasonType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method CreativeWorkSeasonType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method CreativeWorkSeasonType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method CreativeWorkSeasonType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method CreativeWorkSeasonType setTranslator(Property\TranslatorProperty $translator)
  * @method CreativeWorkSeasonType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method CreativeWorkSeasonType setUrl(Property\UrlProperty $url)
  * @method CreativeWorkSeasonType setVersion(Property\VersionProperty $version)
  * @method CreativeWorkSeasonType setVideo(Property\VideoProperty $video)
  * @method CreativeWorkSeasonType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method CreativeWorkSeasonType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class CreativeWorkSeasonType extends CreativeWorkType {
 
@@ -150,7 +158,7 @@ class CreativeWorkSeasonType extends CreativeWorkType {
 
 	/**
 	 * Get actor.
-	 * 
+	 *
 	 * @return Property\ActorProperty
 	 */
 	public function getActor() {
@@ -159,7 +167,7 @@ class CreativeWorkSeasonType extends CreativeWorkType {
 
 	/**
 	 * Get director.
-	 * 
+	 *
 	 * @return Property\DirectorProperty
 	 */
 	public function getDirector() {
@@ -168,7 +176,7 @@ class CreativeWorkSeasonType extends CreativeWorkType {
 
 	/**
 	 * Get end date.
-	 * 
+	 *
 	 * @return Property\EndDateProperty
 	 */
 	public function getEndDate() {
@@ -177,7 +185,7 @@ class CreativeWorkSeasonType extends CreativeWorkType {
 
 	/**
 	 * Get episode.
-	 * 
+	 *
 	 * @return Property\EpisodeProperty
 	 */
 	public function getEpisode() {
@@ -186,7 +194,7 @@ class CreativeWorkSeasonType extends CreativeWorkType {
 
 	/**
 	 * Get number of episodes.
-	 * 
+	 *
 	 * @return Property\NumberOfEpisodesProperty
 	 */
 	public function getNumberOfEpisodes() {
@@ -195,7 +203,7 @@ class CreativeWorkSeasonType extends CreativeWorkType {
 
 	/**
 	 * Get part of series.
-	 * 
+	 *
 	 * @return Property\PartOfSeriesProperty
 	 */
 	public function getPartOfSeries() {
@@ -204,7 +212,7 @@ class CreativeWorkSeasonType extends CreativeWorkType {
 
 	/**
 	 * Get production company.
-	 * 
+	 *
 	 * @return Property\ProductionCompanyProperty
 	 */
 	public function getProductionCompany() {
@@ -213,7 +221,7 @@ class CreativeWorkSeasonType extends CreativeWorkType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -222,7 +230,7 @@ class CreativeWorkSeasonType extends CreativeWorkType {
 
 	/**
 	 * Get season number.
-	 * 
+	 *
 	 * @return Property\SeasonNumberProperty
 	 */
 	public function getSeasonNumber() {
@@ -231,7 +239,7 @@ class CreativeWorkSeasonType extends CreativeWorkType {
 
 	/**
 	 * Get start date.
-	 * 
+	 *
 	 * @return Property\StartDateProperty
 	 */
 	public function getStartDate() {
@@ -240,7 +248,7 @@ class CreativeWorkSeasonType extends CreativeWorkType {
 
 	/**
 	 * Get trailer.
-	 * 
+	 *
 	 * @return Property\TrailerProperty
 	 */
 	public function getTrailer() {
@@ -249,7 +257,7 @@ class CreativeWorkSeasonType extends CreativeWorkType {
 
 	/**
 	 * Set actor.
-	 * 
+	 *
 	 * @param Property\ActorProperty $actor
 	 * @return CreativeWorkSeasonType
 	 */
@@ -261,7 +269,7 @@ class CreativeWorkSeasonType extends CreativeWorkType {
 
 	/**
 	 * Set director.
-	 * 
+	 *
 	 * @param Property\DirectorProperty $director
 	 * @return CreativeWorkSeasonType
 	 */
@@ -273,7 +281,7 @@ class CreativeWorkSeasonType extends CreativeWorkType {
 
 	/**
 	 * Set end date.
-	 * 
+	 *
 	 * @param Property\EndDateProperty $endDate
 	 * @return CreativeWorkSeasonType
 	 */
@@ -285,7 +293,7 @@ class CreativeWorkSeasonType extends CreativeWorkType {
 
 	/**
 	 * Set episode.
-	 * 
+	 *
 	 * @param Property\EpisodeProperty $episode
 	 * @return CreativeWorkSeasonType
 	 */
@@ -297,7 +305,7 @@ class CreativeWorkSeasonType extends CreativeWorkType {
 
 	/**
 	 * Set number of episodes.
-	 * 
+	 *
 	 * @param Property\NumberOfEpisodesProperty $numberOfEpisodes
 	 * @return CreativeWorkSeasonType
 	 */
@@ -309,7 +317,7 @@ class CreativeWorkSeasonType extends CreativeWorkType {
 
 	/**
 	 * Set part of series.
-	 * 
+	 *
 	 * @param Property\PartOfSeriesProperty $partOfSeries
 	 * @return CreativeWorkSeasonType
 	 */
@@ -321,7 +329,7 @@ class CreativeWorkSeasonType extends CreativeWorkType {
 
 	/**
 	 * Set production company.
-	 * 
+	 *
 	 * @param Property\ProductionCompanyProperty $productionCompany
 	 * @return CreativeWorkSeasonType
 	 */
@@ -333,7 +341,7 @@ class CreativeWorkSeasonType extends CreativeWorkType {
 
 	/**
 	 * Set season number.
-	 * 
+	 *
 	 * @param Property\SeasonNumberProperty $seasonNumber
 	 * @return CreativeWorkSeasonType
 	 */
@@ -345,7 +353,7 @@ class CreativeWorkSeasonType extends CreativeWorkType {
 
 	/**
 	 * Set start date.
-	 * 
+	 *
 	 * @param Property\StartDateProperty $startDate
 	 * @return CreativeWorkSeasonType
 	 */
@@ -357,7 +365,7 @@ class CreativeWorkSeasonType extends CreativeWorkType {
 
 	/**
 	 * Set trailer.
-	 * 
+	 *
 	 * @param Property\TrailerProperty $trailer
 	 * @return CreativeWorkSeasonType
 	 */

@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class InStockType.
+ * Indicates that the item is in stock.
  * 
  * @method InStockType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method InStockType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method InStockType setName(Property\NameProperty $name)
  * @method InStockType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method InStockType setSameAs(Property\SameAsProperty $sameAs)
+ * @method InStockType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method InStockType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method InStockType setUrl(Property\UrlProperty $url)
  */
 class InStockType extends ItemAvailabilityType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

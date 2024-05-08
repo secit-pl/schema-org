@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class MovieClipType.
+ * A short segment/part of a movie.
  * 
+ * @method MovieClipType setAbout(Property\AboutProperty $about)
  * @method MovieClipType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method MovieClipType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method MovieClipType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -35,6 +36,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MovieClipType setContributor(Property\ContributorProperty $contributor)
  * @method MovieClipType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method MovieClipType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method MovieClipType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method MovieClipType setCreator(Property\CreatorProperty $creator)
  * @method MovieClipType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method MovieClipType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -47,9 +49,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MovieClipType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method MovieClipType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method MovieClipType setEncoding(Property\EncodingProperty $encoding)
+ * @method MovieClipType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method MovieClipType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method MovieClipType setExpires(Property\ExpiresProperty $expires)
- * @method MovieClipType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method MovieClipType setFunder(Property\FunderProperty $funder)
  * @method MovieClipType setGenre(Property\GenreProperty $genre)
  * @method MovieClipType setHasPart(Property\HasPartProperty $hasPart)
@@ -80,9 +82,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MovieClipType setPosition(Property\PositionProperty $position)
  * @method MovieClipType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method MovieClipType setProducer(Property\ProducerProperty $producer)
- * @method MovieClipType setProvider(Property\ProviderProperty $provider)
  * @method MovieClipType setPublication(Property\PublicationProperty $publication)
  * @method MovieClipType setPublisher(Property\PublisherProperty $publisher)
+ * @method MovieClipType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method MovieClipType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method MovieClipType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method MovieClipType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -90,24 +92,30 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MovieClipType setSameAs(Property\SameAsProperty $sameAs)
  * @method MovieClipType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method MovieClipType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method MovieClipType setSpatial(Property\SpatialProperty $spatial)
  * @method MovieClipType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method MovieClipType setSponsor(Property\SponsorProperty $sponsor)
+ * @method MovieClipType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method MovieClipType setTemporal(Property\TemporalProperty $temporal)
  * @method MovieClipType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method MovieClipType setText(Property\TextProperty $text)
+ * @method MovieClipType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method MovieClipType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method MovieClipType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method MovieClipType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method MovieClipType setTranslator(Property\TranslatorProperty $translator)
  * @method MovieClipType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method MovieClipType setUrl(Property\UrlProperty $url)
  * @method MovieClipType setVersion(Property\VersionProperty $version)
  * @method MovieClipType setVideo(Property\VideoProperty $video)
  * @method MovieClipType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method MovieClipType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class MovieClipType extends ClipType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

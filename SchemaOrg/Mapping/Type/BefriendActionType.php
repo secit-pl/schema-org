@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class BefriendActionType.
+ * The act of forming a personal connection with someone (object) mutually/bidirectionally/symmetrically. Related actions: FollowAction: Unlike FollowAction, BefriendAction implies that the connection is reciprocal.
  * 
  * @method BefriendActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method BefriendActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method BefriendActionType setResult(Property\ResultProperty $result)
  * @method BefriendActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method BefriendActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method BefriendActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method BefriendActionType setTarget(Property\TargetProperty $target)
  * @method BefriendActionType setUrl(Property\UrlProperty $url)
  */
@@ -34,7 +35,7 @@ class BefriendActionType extends InteractActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

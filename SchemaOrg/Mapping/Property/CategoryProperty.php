@@ -6,7 +6,7 @@ use SecIT\SchemaOrg\Mapping\DataType;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * CategoryProperty class.
+ * A category for the item. Greater signs or slashes can be used to informally indicate a category hierarchy.
  * 
  * @method CategoryProperty setValue($value)
  */
@@ -14,7 +14,7 @@ class CategoryProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -23,11 +23,11 @@ class CategoryProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */
 	public function isValueValid($value) {
-		return $value instanceof DataType\TextType || $value instanceof Type\ThingType;
+		return $value instanceof Type\PhysicalActivityCategoryType || $value instanceof DataType\TextType || $value instanceof Type\ThingType || $value instanceof DataType\URLType;
 	}
 }

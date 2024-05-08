@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * PredecessorOfProperty class.
+ * A pointer from a previous, often discontinued variant of the product to its newer variant.
  * 
  * @method PredecessorOfProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class PredecessorOfProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class PredecessorOfProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

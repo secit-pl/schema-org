@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class UnRegisterActionType.
+ * The act of un-registering from a service. Related actions: RegisterAction: antonym of UnRegisterAction. LeaveAction: Unlike LeaveAction, UnRegisterAction implies that you are unregistering from a service you were previously registered, rather than leaving a team/group of people.
  * 
  * @method UnRegisterActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method UnRegisterActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method UnRegisterActionType setResult(Property\ResultProperty $result)
  * @method UnRegisterActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method UnRegisterActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method UnRegisterActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method UnRegisterActionType setTarget(Property\TargetProperty $target)
  * @method UnRegisterActionType setUrl(Property\UrlProperty $url)
  */
@@ -34,7 +35,7 @@ class UnRegisterActionType extends InteractActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

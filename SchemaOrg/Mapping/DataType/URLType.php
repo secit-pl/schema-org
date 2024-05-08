@@ -3,7 +3,7 @@
 namespace SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * Class URLType.
+ * Data type: URL.
  * 
  * @method URLType setValue($value)
  */
@@ -11,7 +11,7 @@ class URLType extends TextType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

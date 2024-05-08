@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class MusicReleaseType.
+ * A MusicRelease is a specific release of a music album.
  * 
+ * @method MusicReleaseType setAbout(Property\AboutProperty $about)
  * @method MusicReleaseType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method MusicReleaseType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method MusicReleaseType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -33,6 +34,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MusicReleaseType setContributor(Property\ContributorProperty $contributor)
  * @method MusicReleaseType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method MusicReleaseType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method MusicReleaseType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method MusicReleaseType setCreator(Property\CreatorProperty $creator)
  * @method MusicReleaseType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method MusicReleaseType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -44,9 +46,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MusicReleaseType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method MusicReleaseType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method MusicReleaseType setEncoding(Property\EncodingProperty $encoding)
+ * @method MusicReleaseType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method MusicReleaseType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method MusicReleaseType setExpires(Property\ExpiresProperty $expires)
- * @method MusicReleaseType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method MusicReleaseType setFunder(Property\FunderProperty $funder)
  * @method MusicReleaseType setGenre(Property\GenreProperty $genre)
  * @method MusicReleaseType setHasPart(Property\HasPartProperty $hasPart)
@@ -74,9 +76,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MusicReleaseType setPosition(Property\PositionProperty $position)
  * @method MusicReleaseType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method MusicReleaseType setProducer(Property\ProducerProperty $producer)
- * @method MusicReleaseType setProvider(Property\ProviderProperty $provider)
  * @method MusicReleaseType setPublication(Property\PublicationProperty $publication)
  * @method MusicReleaseType setPublisher(Property\PublisherProperty $publisher)
+ * @method MusicReleaseType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method MusicReleaseType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method MusicReleaseType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method MusicReleaseType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -84,19 +86,25 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MusicReleaseType setSameAs(Property\SameAsProperty $sameAs)
  * @method MusicReleaseType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method MusicReleaseType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method MusicReleaseType setSpatial(Property\SpatialProperty $spatial)
  * @method MusicReleaseType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method MusicReleaseType setSponsor(Property\SponsorProperty $sponsor)
+ * @method MusicReleaseType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method MusicReleaseType setTemporal(Property\TemporalProperty $temporal)
  * @method MusicReleaseType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method MusicReleaseType setText(Property\TextProperty $text)
+ * @method MusicReleaseType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method MusicReleaseType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method MusicReleaseType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
  * @method MusicReleaseType setTrack(Property\TrackProperty $track)
+ * @method MusicReleaseType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method MusicReleaseType setTranslator(Property\TranslatorProperty $translator)
  * @method MusicReleaseType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method MusicReleaseType setUrl(Property\UrlProperty $url)
  * @method MusicReleaseType setVersion(Property\VersionProperty $version)
  * @method MusicReleaseType setVideo(Property\VideoProperty $video)
  * @method MusicReleaseType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method MusicReleaseType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class MusicReleaseType extends MusicPlaylistType {
 
@@ -109,6 +117,11 @@ class MusicReleaseType extends MusicPlaylistType {
 	 * @var Property\CreditedToProperty
 	 */
 	private $creditedTo;
+
+	/**
+	 * @var Property\DurationProperty
+	 */
+	private $duration;
 
 	/**
 	 * @var Property\MusicReleaseFormatProperty
@@ -127,7 +140,7 @@ class MusicReleaseType extends MusicPlaylistType {
 
 	/**
 	 * Get catalog number.
-	 * 
+	 *
 	 * @return Property\CatalogNumberProperty
 	 */
 	public function getCatalogNumber() {
@@ -136,7 +149,7 @@ class MusicReleaseType extends MusicPlaylistType {
 
 	/**
 	 * Get credited to.
-	 * 
+	 *
 	 * @return Property\CreditedToProperty
 	 */
 	public function getCreditedTo() {
@@ -144,8 +157,17 @@ class MusicReleaseType extends MusicPlaylistType {
 	}
 
 	/**
+	 * Get duration.
+	 *
+	 * @return Property\DurationProperty
+	 */
+	public function getDuration() {
+		return $this->duration;
+	}
+
+	/**
 	 * Get music release format.
-	 * 
+	 *
 	 * @return Property\MusicReleaseFormatProperty
 	 */
 	public function getMusicReleaseFormat() {
@@ -154,7 +176,7 @@ class MusicReleaseType extends MusicPlaylistType {
 
 	/**
 	 * Get record label.
-	 * 
+	 *
 	 * @return Property\RecordLabelProperty
 	 */
 	public function getRecordLabel() {
@@ -163,7 +185,7 @@ class MusicReleaseType extends MusicPlaylistType {
 
 	/**
 	 * Get release of.
-	 * 
+	 *
 	 * @return Property\ReleaseOfProperty
 	 */
 	public function getReleaseOf() {
@@ -172,7 +194,7 @@ class MusicReleaseType extends MusicPlaylistType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -181,7 +203,7 @@ class MusicReleaseType extends MusicPlaylistType {
 
 	/**
 	 * Set catalog number.
-	 * 
+	 *
 	 * @param Property\CatalogNumberProperty $catalogNumber
 	 * @return MusicReleaseType
 	 */
@@ -193,7 +215,7 @@ class MusicReleaseType extends MusicPlaylistType {
 
 	/**
 	 * Set credited to.
-	 * 
+	 *
 	 * @param Property\CreditedToProperty $creditedTo
 	 * @return MusicReleaseType
 	 */
@@ -204,8 +226,20 @@ class MusicReleaseType extends MusicPlaylistType {
 	}
 
 	/**
+	 * Set duration.
+	 *
+	 * @param Property\DurationProperty $duration
+	 * @return MusicReleaseType
+	 */
+	public function setDuration(Property\DurationProperty $duration) {
+		$this->duration = $duration;
+
+		return $this;
+	}
+
+	/**
 	 * Set music release format.
-	 * 
+	 *
 	 * @param Property\MusicReleaseFormatProperty $musicReleaseFormat
 	 * @return MusicReleaseType
 	 */
@@ -217,7 +251,7 @@ class MusicReleaseType extends MusicPlaylistType {
 
 	/**
 	 * Set record label.
-	 * 
+	 *
 	 * @param Property\RecordLabelProperty $recordLabel
 	 * @return MusicReleaseType
 	 */
@@ -229,7 +263,7 @@ class MusicReleaseType extends MusicPlaylistType {
 
 	/**
 	 * Set release of.
-	 * 
+	 *
 	 * @param Property\ReleaseOfProperty $releaseOf
 	 * @return MusicReleaseType
 	 */

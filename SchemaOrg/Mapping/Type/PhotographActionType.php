@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class PhotographActionType.
+ * The act of capturing still images of objects using a camera.
  * 
  * @method PhotographActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method PhotographActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method PhotographActionType setResult(Property\ResultProperty $result)
  * @method PhotographActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method PhotographActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method PhotographActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method PhotographActionType setTarget(Property\TargetProperty $target)
  * @method PhotographActionType setUrl(Property\UrlProperty $url)
  */
@@ -34,7 +35,7 @@ class PhotographActionType extends CreateActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

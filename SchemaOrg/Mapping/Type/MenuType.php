@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class MenuType.
+ * A structured representation of food or drink items available from a FoodEstablishment.
  * 
+ * @method MenuType setAbout(Property\AboutProperty $about)
  * @method MenuType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method MenuType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method MenuType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -33,6 +34,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MenuType setContributor(Property\ContributorProperty $contributor)
  * @method MenuType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method MenuType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method MenuType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method MenuType setCreator(Property\CreatorProperty $creator)
  * @method MenuType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method MenuType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -44,9 +46,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MenuType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method MenuType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method MenuType setEncoding(Property\EncodingProperty $encoding)
+ * @method MenuType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method MenuType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method MenuType setExpires(Property\ExpiresProperty $expires)
- * @method MenuType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method MenuType setFunder(Property\FunderProperty $funder)
  * @method MenuType setGenre(Property\GenreProperty $genre)
  * @method MenuType setHasPart(Property\HasPartProperty $hasPart)
@@ -73,9 +75,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MenuType setPosition(Property\PositionProperty $position)
  * @method MenuType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method MenuType setProducer(Property\ProducerProperty $producer)
- * @method MenuType setProvider(Property\ProviderProperty $provider)
  * @method MenuType setPublication(Property\PublicationProperty $publication)
  * @method MenuType setPublisher(Property\PublisherProperty $publisher)
+ * @method MenuType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method MenuType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method MenuType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method MenuType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -83,18 +85,24 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method MenuType setSameAs(Property\SameAsProperty $sameAs)
  * @method MenuType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method MenuType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method MenuType setSpatial(Property\SpatialProperty $spatial)
  * @method MenuType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method MenuType setSponsor(Property\SponsorProperty $sponsor)
+ * @method MenuType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method MenuType setTemporal(Property\TemporalProperty $temporal)
  * @method MenuType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method MenuType setText(Property\TextProperty $text)
+ * @method MenuType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method MenuType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method MenuType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method MenuType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method MenuType setTranslator(Property\TranslatorProperty $translator)
  * @method MenuType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method MenuType setUrl(Property\UrlProperty $url)
  * @method MenuType setVersion(Property\VersionProperty $version)
  * @method MenuType setVideo(Property\VideoProperty $video)
  * @method MenuType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method MenuType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class MenuType extends CreativeWorkType {
 
@@ -110,7 +118,7 @@ class MenuType extends CreativeWorkType {
 
 	/**
 	 * Get has menu item.
-	 * 
+	 *
 	 * @return Property\HasMenuItemProperty
 	 */
 	public function getHasMenuItem() {
@@ -119,7 +127,7 @@ class MenuType extends CreativeWorkType {
 
 	/**
 	 * Get has menu section.
-	 * 
+	 *
 	 * @return Property\HasMenuSectionProperty
 	 */
 	public function getHasMenuSection() {
@@ -128,7 +136,7 @@ class MenuType extends CreativeWorkType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -137,7 +145,7 @@ class MenuType extends CreativeWorkType {
 
 	/**
 	 * Set has menu item.
-	 * 
+	 *
 	 * @param Property\HasMenuItemProperty $hasMenuItem
 	 * @return MenuType
 	 */
@@ -149,7 +157,7 @@ class MenuType extends CreativeWorkType {
 
 	/**
 	 * Set has menu section.
-	 * 
+	 *
 	 * @param Property\HasMenuSectionProperty $hasMenuSection
 	 * @return MenuType
 	 */

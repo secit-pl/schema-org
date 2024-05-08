@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class TieActionType.
+ * The act of reaching a draw in a competitive activity.
  * 
  * @method TieActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method TieActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method TieActionType setResult(Property\ResultProperty $result)
  * @method TieActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method TieActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method TieActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method TieActionType setTarget(Property\TargetProperty $target)
  * @method TieActionType setUrl(Property\UrlProperty $url)
  */
@@ -34,7 +35,7 @@ class TieActionType extends AchieveActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

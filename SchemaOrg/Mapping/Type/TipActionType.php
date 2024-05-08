@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class TipActionType.
+ * The act of giving money voluntarily to a beneficiary in recognition of services rendered.
  * 
  * @method TipActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method TipActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -25,10 +25,12 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method TipActionType setParticipant(Property\ParticipantProperty $participant)
  * @method TipActionType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method TipActionType setPrice(Property\PriceProperty $price)
+ * @method TipActionType setPriceCurrency(Property\PriceCurrencyProperty $priceCurrency)
  * @method TipActionType setPriceSpecification(Property\PriceSpecificationProperty $priceSpecification)
  * @method TipActionType setResult(Property\ResultProperty $result)
  * @method TipActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method TipActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method TipActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method TipActionType setTarget(Property\TargetProperty $target)
  * @method TipActionType setUrl(Property\UrlProperty $url)
  */
@@ -41,7 +43,7 @@ class TipActionType extends TradeActionType {
 
 	/**
 	 * Get recipient.
-	 * 
+	 *
 	 * @return Property\RecipientProperty
 	 */
 	public function getRecipient() {
@@ -50,7 +52,7 @@ class TipActionType extends TradeActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -59,7 +61,7 @@ class TipActionType extends TradeActionType {
 
 	/**
 	 * Set recipient.
-	 * 
+	 *
 	 * @param Property\RecipientProperty $recipient
 	 * @return TipActionType
 	 */

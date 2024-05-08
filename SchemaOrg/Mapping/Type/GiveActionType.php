@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class GiveActionType.
+ * The act of transferring ownership of an object to a destination. Reciprocal of TakeAction. Related actions: TakeAction: Reciprocal of GiveAction. SendAction: Unlike SendAction, GiveAction implies that ownership is being transferred (e.g. I may send my laptop to you, but that doesn't mean I'm giving it to you).
  * 
  * @method GiveActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method GiveActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -28,6 +28,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method GiveActionType setResult(Property\ResultProperty $result)
  * @method GiveActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method GiveActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method GiveActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method GiveActionType setTarget(Property\TargetProperty $target)
  * @method GiveActionType setToLocation(Property\ToLocationProperty $toLocation)
  * @method GiveActionType setUrl(Property\UrlProperty $url)
@@ -41,7 +42,7 @@ class GiveActionType extends TransferActionType {
 
 	/**
 	 * Get recipient.
-	 * 
+	 *
 	 * @return Property\RecipientProperty
 	 */
 	public function getRecipient() {
@@ -50,7 +51,7 @@ class GiveActionType extends TransferActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -59,7 +60,7 @@ class GiveActionType extends TransferActionType {
 
 	/**
 	 * Set recipient.
-	 * 
+	 *
 	 * @param Property\RecipientProperty $recipient
 	 * @return GiveActionType
 	 */

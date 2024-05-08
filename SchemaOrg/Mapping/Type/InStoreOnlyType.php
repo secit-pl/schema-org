@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class InStoreOnlyType.
+ * Indicates that the item is available only at physical locations.
  * 
  * @method InStoreOnlyType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method InStoreOnlyType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method InStoreOnlyType setName(Property\NameProperty $name)
  * @method InStoreOnlyType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method InStoreOnlyType setSameAs(Property\SameAsProperty $sameAs)
+ * @method InStoreOnlyType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method InStoreOnlyType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method InStoreOnlyType setUrl(Property\UrlProperty $url)
  */
 class InStoreOnlyType extends ItemAvailabilityType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

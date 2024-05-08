@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class WebApplicationType.
+ * Web applications.
  * 
+ * @method WebApplicationType setAbout(Property\AboutProperty $about)
  * @method WebApplicationType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method WebApplicationType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method WebApplicationType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -39,6 +40,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method WebApplicationType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
  * @method WebApplicationType setCountriesNotSupported(Property\CountriesNotSupportedProperty $countriesNotSupported)
  * @method WebApplicationType setCountriesSupported(Property\CountriesSupportedProperty $countriesSupported)
+ * @method WebApplicationType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method WebApplicationType setCreator(Property\CreatorProperty $creator)
  * @method WebApplicationType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method WebApplicationType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -51,10 +53,10 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method WebApplicationType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method WebApplicationType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method WebApplicationType setEncoding(Property\EncodingProperty $encoding)
+ * @method WebApplicationType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method WebApplicationType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method WebApplicationType setExpires(Property\ExpiresProperty $expires)
  * @method WebApplicationType setFeatureList(Property\FeatureListProperty $featureList)
- * @method WebApplicationType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method WebApplicationType setFileSize(Property\FileSizeProperty $fileSize)
  * @method WebApplicationType setFunder(Property\FunderProperty $funder)
  * @method WebApplicationType setGenre(Property\GenreProperty $genre)
@@ -87,9 +89,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method WebApplicationType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method WebApplicationType setProcessorRequirements(Property\ProcessorRequirementsProperty $processorRequirements)
  * @method WebApplicationType setProducer(Property\ProducerProperty $producer)
- * @method WebApplicationType setProvider(Property\ProviderProperty $provider)
  * @method WebApplicationType setPublication(Property\PublicationProperty $publication)
  * @method WebApplicationType setPublisher(Property\PublisherProperty $publisher)
+ * @method WebApplicationType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method WebApplicationType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method WebApplicationType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method WebApplicationType setReleaseNotes(Property\ReleaseNotesProperty $releaseNotes)
@@ -103,20 +105,26 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method WebApplicationType setSoftwareRequirements(Property\SoftwareRequirementsProperty $softwareRequirements)
  * @method WebApplicationType setSoftwareVersion(Property\SoftwareVersionProperty $softwareVersion)
  * @method WebApplicationType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method WebApplicationType setSpatial(Property\SpatialProperty $spatial)
  * @method WebApplicationType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method WebApplicationType setSponsor(Property\SponsorProperty $sponsor)
  * @method WebApplicationType setStorageRequirements(Property\StorageRequirementsProperty $storageRequirements)
+ * @method WebApplicationType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method WebApplicationType setSupportingData(Property\SupportingDataProperty $supportingData)
+ * @method WebApplicationType setTemporal(Property\TemporalProperty $temporal)
  * @method WebApplicationType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method WebApplicationType setText(Property\TextProperty $text)
+ * @method WebApplicationType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method WebApplicationType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method WebApplicationType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method WebApplicationType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method WebApplicationType setTranslator(Property\TranslatorProperty $translator)
  * @method WebApplicationType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method WebApplicationType setUrl(Property\UrlProperty $url)
  * @method WebApplicationType setVersion(Property\VersionProperty $version)
  * @method WebApplicationType setVideo(Property\VideoProperty $video)
  * @method WebApplicationType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method WebApplicationType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class WebApplicationType extends SoftwareApplicationType {
 
@@ -127,7 +135,7 @@ class WebApplicationType extends SoftwareApplicationType {
 
 	/**
 	 * Get browser requirements.
-	 * 
+	 *
 	 * @return Property\BrowserRequirementsProperty
 	 */
 	public function getBrowserRequirements() {
@@ -136,7 +144,7 @@ class WebApplicationType extends SoftwareApplicationType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -145,7 +153,7 @@ class WebApplicationType extends SoftwareApplicationType {
 
 	/**
 	 * Set browser requirements.
-	 * 
+	 *
 	 * @param Property\BrowserRequirementsProperty $browserRequirements
 	 * @return WebApplicationType
 	 */

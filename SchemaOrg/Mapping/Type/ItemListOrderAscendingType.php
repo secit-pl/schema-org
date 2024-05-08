@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ItemListOrderAscendingType.
+ * An ItemList ordered with lower values listed first.
  * 
  * @method ItemListOrderAscendingType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method ItemListOrderAscendingType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ItemListOrderAscendingType setName(Property\NameProperty $name)
  * @method ItemListOrderAscendingType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method ItemListOrderAscendingType setSameAs(Property\SameAsProperty $sameAs)
+ * @method ItemListOrderAscendingType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method ItemListOrderAscendingType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method ItemListOrderAscendingType setUrl(Property\UrlProperty $url)
  */
 class ItemListOrderAscendingType extends ItemListOrderType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

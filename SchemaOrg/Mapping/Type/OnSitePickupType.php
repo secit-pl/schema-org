@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class OnSitePickupType.
+ * A DeliveryMethod in which an item is collected on site, e.g. in a store or at a box office.
  * 
  * @method OnSitePickupType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method OnSitePickupType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method OnSitePickupType setName(Property\NameProperty $name)
  * @method OnSitePickupType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method OnSitePickupType setSameAs(Property\SameAsProperty $sameAs)
+ * @method OnSitePickupType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method OnSitePickupType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method OnSitePickupType setUrl(Property\UrlProperty $url)
  */
 class OnSitePickupType extends DeliveryMethodType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

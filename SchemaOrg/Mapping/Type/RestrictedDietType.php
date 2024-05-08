@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class RestrictedDietType.
+ * A diet restricted to certain foods or preparations for cultural, religious, health or lifestyle reasons.
  * 
  * @method RestrictedDietType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method RestrictedDietType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method RestrictedDietType setName(Property\NameProperty $name)
  * @method RestrictedDietType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method RestrictedDietType setSameAs(Property\SameAsProperty $sameAs)
+ * @method RestrictedDietType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method RestrictedDietType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method RestrictedDietType setUrl(Property\UrlProperty $url)
  */
 class RestrictedDietType extends EnumerationType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

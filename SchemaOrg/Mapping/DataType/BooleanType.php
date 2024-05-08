@@ -3,7 +3,7 @@
 namespace SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * Class BooleanType.
+ * Boolean: True or False.
  * 
  * @method BooleanType setValue($value)
  */
@@ -11,7 +11,7 @@ class BooleanType extends DataType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

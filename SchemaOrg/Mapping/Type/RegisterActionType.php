@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class RegisterActionType.
+ * The act of registering to be a user of a service, product or web page. Related actions: JoinAction: Unlike JoinAction, RegisterAction implies you are registering to be a user of a service, not a group/team of people. FollowAction: Unlike FollowAction, RegisterAction doesn't imply that the agent is expecting to poll for updates from the object. SubscribeAction: Unlike SubscribeAction, RegisterAction doesn't imply that the agent is expecting updates from the object.
  * 
  * @method RegisterActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method RegisterActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method RegisterActionType setResult(Property\ResultProperty $result)
  * @method RegisterActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method RegisterActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method RegisterActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method RegisterActionType setTarget(Property\TargetProperty $target)
  * @method RegisterActionType setUrl(Property\UrlProperty $url)
  */
@@ -34,7 +35,7 @@ class RegisterActionType extends InteractActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

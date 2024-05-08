@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ComedyEventType.
+ * Event type: Comedy event.
  * 
+ * @method ComedyEventType setAbout(Property\AboutProperty $about)
  * @method ComedyEventType setActor(Property\ActorProperty $actor)
  * @method ComedyEventType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method ComedyEventType setAggregateRating(Property\AggregateRatingProperty $aggregateRating)
@@ -19,6 +20,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ComedyEventType setDirector(Property\DirectorProperty $director)
  * @method ComedyEventType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
  * @method ComedyEventType setDoorTime(Property\DoorTimeProperty $doorTime)
+ * @method ComedyEventType setDuration(Property\DurationProperty $duration)
  * @method ComedyEventType setEndDate(Property\EndDateProperty $endDate)
  * @method ComedyEventType setEventStatus(Property\EventStatusProperty $eventStatus)
  * @method ComedyEventType setFunder(Property\FunderProperty $funder)
@@ -26,6 +28,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ComedyEventType setImage(Property\ImageProperty $image)
  * @method ComedyEventType setInLanguage(Property\InLanguageProperty $inLanguage)
  * @method ComedyEventType setIsAccessibleForFree(Property\IsAccessibleForFreeProperty $isAccessibleForFree)
+ * @method ComedyEventType setKeywords(Property\KeywordsProperty $keywords)
  * @method ComedyEventType setLocation(Property\LocationProperty $location)
  * @method ComedyEventType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
  * @method ComedyEventType setMaximumAttendeeCapacity(Property\MaximumAttendeeCapacityProperty $maximumAttendeeCapacity)
@@ -42,6 +45,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ComedyEventType setSponsor(Property\SponsorProperty $sponsor)
  * @method ComedyEventType setStartDate(Property\StartDateProperty $startDate)
  * @method ComedyEventType setSubEvent(Property\SubEventProperty $subEvent)
+ * @method ComedyEventType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method ComedyEventType setSuperEvent(Property\SuperEventProperty $superEvent)
  * @method ComedyEventType setTranslator(Property\TranslatorProperty $translator)
  * @method ComedyEventType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
@@ -53,7 +57,7 @@ class ComedyEventType extends EventType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

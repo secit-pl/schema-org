@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class QuoteActionType.
+ * An agent quotes/estimates/appraises an object/product/service with a price at a location/store.
  * 
  * @method QuoteActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method QuoteActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -25,10 +25,12 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method QuoteActionType setParticipant(Property\ParticipantProperty $participant)
  * @method QuoteActionType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method QuoteActionType setPrice(Property\PriceProperty $price)
+ * @method QuoteActionType setPriceCurrency(Property\PriceCurrencyProperty $priceCurrency)
  * @method QuoteActionType setPriceSpecification(Property\PriceSpecificationProperty $priceSpecification)
  * @method QuoteActionType setResult(Property\ResultProperty $result)
  * @method QuoteActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method QuoteActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method QuoteActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method QuoteActionType setTarget(Property\TargetProperty $target)
  * @method QuoteActionType setUrl(Property\UrlProperty $url)
  */
@@ -36,7 +38,7 @@ class QuoteActionType extends TradeActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

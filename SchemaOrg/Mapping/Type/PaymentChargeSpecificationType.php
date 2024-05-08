@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class PaymentChargeSpecificationType.
+ * The costs of settling the payment using a particular payment method.
  * 
  * @method PaymentChargeSpecificationType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method PaymentChargeSpecificationType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -23,6 +23,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method PaymentChargeSpecificationType setPrice(Property\PriceProperty $price)
  * @method PaymentChargeSpecificationType setPriceCurrency(Property\PriceCurrencyProperty $priceCurrency)
  * @method PaymentChargeSpecificationType setSameAs(Property\SameAsProperty $sameAs)
+ * @method PaymentChargeSpecificationType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method PaymentChargeSpecificationType setUrl(Property\UrlProperty $url)
  * @method PaymentChargeSpecificationType setValidFrom(Property\ValidFromProperty $validFrom)
  * @method PaymentChargeSpecificationType setValidThrough(Property\ValidThroughProperty $validThrough)
@@ -42,7 +43,7 @@ class PaymentChargeSpecificationType extends PriceSpecificationType {
 
 	/**
 	 * Get applies to delivery method.
-	 * 
+	 *
 	 * @return Property\AppliesToDeliveryMethodProperty
 	 */
 	public function getAppliesToDeliveryMethod() {
@@ -51,7 +52,7 @@ class PaymentChargeSpecificationType extends PriceSpecificationType {
 
 	/**
 	 * Get applies to payment method.
-	 * 
+	 *
 	 * @return Property\AppliesToPaymentMethodProperty
 	 */
 	public function getAppliesToPaymentMethod() {
@@ -60,7 +61,7 @@ class PaymentChargeSpecificationType extends PriceSpecificationType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -69,7 +70,7 @@ class PaymentChargeSpecificationType extends PriceSpecificationType {
 
 	/**
 	 * Set applies to delivery method.
-	 * 
+	 *
 	 * @param Property\AppliesToDeliveryMethodProperty $appliesToDeliveryMethod
 	 * @return PaymentChargeSpecificationType
 	 */
@@ -81,7 +82,7 @@ class PaymentChargeSpecificationType extends PriceSpecificationType {
 
 	/**
 	 * Set applies to payment method.
-	 * 
+	 *
 	 * @param Property\AppliesToPaymentMethodProperty $appliesToPaymentMethod
 	 * @return PaymentChargeSpecificationType
 	 */

@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ReadPermissionType.
+ * Permission to read or view the document.
  * 
  * @method ReadPermissionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method ReadPermissionType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ReadPermissionType setName(Property\NameProperty $name)
  * @method ReadPermissionType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method ReadPermissionType setSameAs(Property\SameAsProperty $sameAs)
+ * @method ReadPermissionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method ReadPermissionType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method ReadPermissionType setUrl(Property\UrlProperty $url)
  */
 class ReadPermissionType extends DigitalDocumentPermissionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

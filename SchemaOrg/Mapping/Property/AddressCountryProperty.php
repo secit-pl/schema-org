@@ -6,7 +6,7 @@ use SecIT\SchemaOrg\Mapping\DataType;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * AddressCountryProperty class.
+ * The country. For example, USA. You can also provide the two-letter ISO 3166-1 alpha-2 country code.
  * 
  * @method AddressCountryProperty setValue($value)
  */
@@ -14,7 +14,7 @@ class AddressCountryProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -23,7 +23,7 @@ class AddressCountryProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

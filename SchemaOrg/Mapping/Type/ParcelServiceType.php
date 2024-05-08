@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ParcelServiceType.
+ * A private parcel service as the delivery mode available for a certain offer. Commonly used values: http://purl.org/goodrelations/v1#DHL http://purl.org/goodrelations/v1#FederalExpress http://purl.org/goodrelations/v1#UPS
  * 
  * @method ParcelServiceType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method ParcelServiceType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ParcelServiceType setName(Property\NameProperty $name)
  * @method ParcelServiceType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method ParcelServiceType setSameAs(Property\SameAsProperty $sameAs)
+ * @method ParcelServiceType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method ParcelServiceType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method ParcelServiceType setUrl(Property\UrlProperty $url)
  */
 class ParcelServiceType extends DeliveryMethodType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

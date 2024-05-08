@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class BookType.
+ * A book.
  * 
+ * @method BookType setAbout(Property\AboutProperty $about)
  * @method BookType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method BookType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method BookType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -33,6 +34,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method BookType setContributor(Property\ContributorProperty $contributor)
  * @method BookType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method BookType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method BookType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method BookType setCreator(Property\CreatorProperty $creator)
  * @method BookType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method BookType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -44,9 +46,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method BookType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method BookType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method BookType setEncoding(Property\EncodingProperty $encoding)
+ * @method BookType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method BookType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method BookType setExpires(Property\ExpiresProperty $expires)
- * @method BookType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method BookType setFunder(Property\FunderProperty $funder)
  * @method BookType setGenre(Property\GenreProperty $genre)
  * @method BookType setHasPart(Property\HasPartProperty $hasPart)
@@ -73,9 +75,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method BookType setPosition(Property\PositionProperty $position)
  * @method BookType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method BookType setProducer(Property\ProducerProperty $producer)
- * @method BookType setProvider(Property\ProviderProperty $provider)
  * @method BookType setPublication(Property\PublicationProperty $publication)
  * @method BookType setPublisher(Property\PublisherProperty $publisher)
+ * @method BookType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method BookType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method BookType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method BookType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -83,20 +85,31 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method BookType setSameAs(Property\SameAsProperty $sameAs)
  * @method BookType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method BookType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method BookType setSpatial(Property\SpatialProperty $spatial)
  * @method BookType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method BookType setSponsor(Property\SponsorProperty $sponsor)
+ * @method BookType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method BookType setTemporal(Property\TemporalProperty $temporal)
  * @method BookType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method BookType setText(Property\TextProperty $text)
+ * @method BookType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method BookType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method BookType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method BookType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method BookType setTranslator(Property\TranslatorProperty $translator)
  * @method BookType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method BookType setUrl(Property\UrlProperty $url)
  * @method BookType setVersion(Property\VersionProperty $version)
  * @method BookType setVideo(Property\VideoProperty $video)
  * @method BookType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method BookType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class BookType extends CreativeWorkType {
+
+	/**
+	 * @var Property\AbridgedProperty
+	 */
+	private $abridged;
 
 	/**
 	 * @var Property\BookEditionProperty
@@ -124,8 +137,17 @@ class BookType extends CreativeWorkType {
 	private $numberOfPages;
 
 	/**
+	 * Get abridged.
+	 *
+	 * @return Property\AbridgedProperty
+	 */
+	public function getAbridged() {
+		return $this->abridged;
+	}
+
+	/**
 	 * Get book edition.
-	 * 
+	 *
 	 * @return Property\BookEditionProperty
 	 */
 	public function getBookEdition() {
@@ -134,7 +156,7 @@ class BookType extends CreativeWorkType {
 
 	/**
 	 * Get book format.
-	 * 
+	 *
 	 * @return Property\BookFormatProperty
 	 */
 	public function getBookFormat() {
@@ -143,7 +165,7 @@ class BookType extends CreativeWorkType {
 
 	/**
 	 * Get illustrator.
-	 * 
+	 *
 	 * @return Property\IllustratorProperty
 	 */
 	public function getIllustrator() {
@@ -152,7 +174,7 @@ class BookType extends CreativeWorkType {
 
 	/**
 	 * Get isbn.
-	 * 
+	 *
 	 * @return Property\IsbnProperty
 	 */
 	public function getIsbn() {
@@ -161,7 +183,7 @@ class BookType extends CreativeWorkType {
 
 	/**
 	 * Get number of pages.
-	 * 
+	 *
 	 * @return Property\NumberOfPagesProperty
 	 */
 	public function getNumberOfPages() {
@@ -170,7 +192,7 @@ class BookType extends CreativeWorkType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -178,8 +200,20 @@ class BookType extends CreativeWorkType {
 	}
 
 	/**
+	 * Set abridged.
+	 *
+	 * @param Property\AbridgedProperty $abridged
+	 * @return BookType
+	 */
+	public function setAbridged(Property\AbridgedProperty $abridged) {
+		$this->abridged = $abridged;
+
+		return $this;
+	}
+
+	/**
 	 * Set book edition.
-	 * 
+	 *
 	 * @param Property\BookEditionProperty $bookEdition
 	 * @return BookType
 	 */
@@ -191,7 +225,7 @@ class BookType extends CreativeWorkType {
 
 	/**
 	 * Set book format.
-	 * 
+	 *
 	 * @param Property\BookFormatProperty $bookFormat
 	 * @return BookType
 	 */
@@ -203,7 +237,7 @@ class BookType extends CreativeWorkType {
 
 	/**
 	 * Set illustrator.
-	 * 
+	 *
 	 * @param Property\IllustratorProperty $illustrator
 	 * @return BookType
 	 */
@@ -215,7 +249,7 @@ class BookType extends CreativeWorkType {
 
 	/**
 	 * Set isbn.
-	 * 
+	 *
 	 * @param Property\IsbnProperty $isbn
 	 * @return BookType
 	 */
@@ -227,7 +261,7 @@ class BookType extends CreativeWorkType {
 
 	/**
 	 * Set number of pages.
-	 * 
+	 *
 	 * @param Property\NumberOfPagesProperty $numberOfPages
 	 * @return BookType
 	 */

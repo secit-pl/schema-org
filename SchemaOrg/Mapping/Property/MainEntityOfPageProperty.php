@@ -6,7 +6,7 @@ use SecIT\SchemaOrg\Mapping\DataType;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * MainEntityOfPageProperty class.
+ * Indicates a page (or other CreativeWork) for which this thing is the main entity being described. See background notes for details.
  * 
  * @method MainEntityOfPageProperty setValue($value)
  */
@@ -14,7 +14,7 @@ class MainEntityOfPageProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -23,7 +23,7 @@ class MainEntityOfPageProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

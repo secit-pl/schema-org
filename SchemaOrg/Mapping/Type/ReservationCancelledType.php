@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ReservationCancelledType.
+ * The status for a previously confirmed reservation that is now cancelled.
  * 
  * @method ReservationCancelledType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method ReservationCancelledType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method ReservationCancelledType setName(Property\NameProperty $name)
  * @method ReservationCancelledType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method ReservationCancelledType setSameAs(Property\SameAsProperty $sameAs)
+ * @method ReservationCancelledType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method ReservationCancelledType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method ReservationCancelledType setUrl(Property\UrlProperty $url)
  */
 class ReservationCancelledType extends ReservationStatusType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

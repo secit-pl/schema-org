@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class AggregateRatingType.
+ * The average rating based on multiple ratings or reviews.
  * 
  * @method AggregateRatingType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method AggregateRatingType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -19,7 +19,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method AggregateRatingType setName(Property\NameProperty $name)
  * @method AggregateRatingType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method AggregateRatingType setRatingValue(Property\RatingValueProperty $ratingValue)
+ * @method AggregateRatingType setReviewAspect(Property\ReviewAspectProperty $reviewAspect)
  * @method AggregateRatingType setSameAs(Property\SameAsProperty $sameAs)
+ * @method AggregateRatingType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method AggregateRatingType setUrl(Property\UrlProperty $url)
  * @method AggregateRatingType setWorstRating(Property\WorstRatingProperty $worstRating)
  */
@@ -42,7 +44,7 @@ class AggregateRatingType extends RatingType {
 
 	/**
 	 * Get item reviewed.
-	 * 
+	 *
 	 * @return Property\ItemReviewedProperty
 	 */
 	public function getItemReviewed() {
@@ -51,7 +53,7 @@ class AggregateRatingType extends RatingType {
 
 	/**
 	 * Get rating count.
-	 * 
+	 *
 	 * @return Property\RatingCountProperty
 	 */
 	public function getRatingCount() {
@@ -60,7 +62,7 @@ class AggregateRatingType extends RatingType {
 
 	/**
 	 * Get review count.
-	 * 
+	 *
 	 * @return Property\ReviewCountProperty
 	 */
 	public function getReviewCount() {
@@ -69,7 +71,7 @@ class AggregateRatingType extends RatingType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -78,7 +80,7 @@ class AggregateRatingType extends RatingType {
 
 	/**
 	 * Set item reviewed.
-	 * 
+	 *
 	 * @param Property\ItemReviewedProperty $itemReviewed
 	 * @return AggregateRatingType
 	 */
@@ -90,7 +92,7 @@ class AggregateRatingType extends RatingType {
 
 	/**
 	 * Set rating count.
-	 * 
+	 *
 	 * @param Property\RatingCountProperty $ratingCount
 	 * @return AggregateRatingType
 	 */
@@ -102,7 +104,7 @@ class AggregateRatingType extends RatingType {
 
 	/**
 	 * Set review count.
-	 * 
+	 *
 	 * @param Property\ReviewCountProperty $reviewCount
 	 * @return AggregateRatingType
 	 */

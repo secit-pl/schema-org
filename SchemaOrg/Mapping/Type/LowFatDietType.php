@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class LowFatDietType.
+ * A diet focused on reduced fat and cholesterol intake.
  * 
  * @method LowFatDietType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method LowFatDietType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method LowFatDietType setName(Property\NameProperty $name)
  * @method LowFatDietType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method LowFatDietType setSameAs(Property\SameAsProperty $sameAs)
+ * @method LowFatDietType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method LowFatDietType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method LowFatDietType setUrl(Property\UrlProperty $url)
  */
 class LowFatDietType extends RestrictedDietType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

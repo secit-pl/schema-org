@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class FollowActionType.
+ * The act of forming a personal connection with someone/something (object) unidirectionally/asymmetrically to get updates polled from. Related actions: BefriendAction: Unlike BefriendAction, FollowAction implies that the connection is not necessarily reciprocal. SubscribeAction: Unlike SubscribeAction, FollowAction implies that the follower acts as an active agent constantly/actively polling for updates. RegisterAction: Unlike RegisterAction, FollowAction implies that the agent is interested in continuing receiving updates from the object. JoinAction: Unlike JoinAction, FollowAction implies that the agent is interested in getting updates from the object. TrackAction: Unlike TrackAction, FollowAction refers to the polling of updates of all aspects of animate objects rather than the location of inanimate objects (e.g. you track a package, but you don't follow it).
  * 
  * @method FollowActionType setActionStatus(Property\ActionStatusProperty $actionStatus)
  * @method FollowActionType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
@@ -27,6 +27,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method FollowActionType setResult(Property\ResultProperty $result)
  * @method FollowActionType setSameAs(Property\SameAsProperty $sameAs)
  * @method FollowActionType setStartTime(Property\StartTimeProperty $startTime)
+ * @method FollowActionType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method FollowActionType setTarget(Property\TargetProperty $target)
  * @method FollowActionType setUrl(Property\UrlProperty $url)
  */
@@ -39,7 +40,7 @@ class FollowActionType extends InteractActionType {
 
 	/**
 	 * Get followee.
-	 * 
+	 *
 	 * @return Property\FolloweeProperty
 	 */
 	public function getFollowee() {
@@ -48,7 +49,7 @@ class FollowActionType extends InteractActionType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -57,7 +58,7 @@ class FollowActionType extends InteractActionType {
 
 	/**
 	 * Set followee.
-	 * 
+	 *
 	 * @param Property\FolloweeProperty $followee
 	 * @return FollowActionType
 	 */

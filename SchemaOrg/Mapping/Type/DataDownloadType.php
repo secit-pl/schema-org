@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class DataDownloadType.
+ * All or part of a Dataset in downloadable form.
  * 
+ * @method DataDownloadType setAbout(Property\AboutProperty $about)
  * @method DataDownloadType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method DataDownloadType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method DataDownloadType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -37,6 +38,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method DataDownloadType setContributor(Property\ContributorProperty $contributor)
  * @method DataDownloadType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method DataDownloadType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method DataDownloadType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method DataDownloadType setCreator(Property\CreatorProperty $creator)
  * @method DataDownloadType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method DataDownloadType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -44,6 +46,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method DataDownloadType setDescription(Property\DescriptionProperty $description)
  * @method DataDownloadType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
  * @method DataDownloadType setDiscussionUrl(Property\DiscussionUrlProperty $discussionUrl)
+ * @method DataDownloadType setDuration(Property\DurationProperty $duration)
  * @method DataDownloadType setEditor(Property\EditorProperty $editor)
  * @method DataDownloadType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method DataDownloadType setEducationalUse(Property\EducationalUseProperty $educationalUse)
@@ -51,9 +54,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method DataDownloadType setEncodesCreativeWork(Property\EncodesCreativeWorkProperty $encodesCreativeWork)
  * @method DataDownloadType setEncoding(Property\EncodingProperty $encoding)
  * @method DataDownloadType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
+ * @method DataDownloadType setEndTime(Property\EndTimeProperty $endTime)
  * @method DataDownloadType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method DataDownloadType setExpires(Property\ExpiresProperty $expires)
- * @method DataDownloadType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method DataDownloadType setFunder(Property\FunderProperty $funder)
  * @method DataDownloadType setGenre(Property\GenreProperty $genre)
  * @method DataDownloadType setHasPart(Property\HasPartProperty $hasPart)
@@ -83,9 +86,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method DataDownloadType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method DataDownloadType setProducer(Property\ProducerProperty $producer)
  * @method DataDownloadType setProductionCompany(Property\ProductionCompanyProperty $productionCompany)
- * @method DataDownloadType setProvider(Property\ProviderProperty $provider)
  * @method DataDownloadType setPublication(Property\PublicationProperty $publication)
  * @method DataDownloadType setPublisher(Property\PublisherProperty $publisher)
+ * @method DataDownloadType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method DataDownloadType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method DataDownloadType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method DataDownloadType setRegionsAllowed(Property\RegionsAllowedProperty $regionsAllowed)
@@ -95,12 +98,18 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method DataDownloadType setSameAs(Property\SameAsProperty $sameAs)
  * @method DataDownloadType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method DataDownloadType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method DataDownloadType setSpatial(Property\SpatialProperty $spatial)
  * @method DataDownloadType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method DataDownloadType setSponsor(Property\SponsorProperty $sponsor)
+ * @method DataDownloadType setStartTime(Property\StartTimeProperty $startTime)
+ * @method DataDownloadType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method DataDownloadType setTemporal(Property\TemporalProperty $temporal)
  * @method DataDownloadType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method DataDownloadType setText(Property\TextProperty $text)
+ * @method DataDownloadType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method DataDownloadType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method DataDownloadType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
+ * @method DataDownloadType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method DataDownloadType setTranslator(Property\TranslatorProperty $translator)
  * @method DataDownloadType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method DataDownloadType setUploadDate(Property\UploadDateProperty $uploadDate)
@@ -109,12 +118,13 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method DataDownloadType setVideo(Property\VideoProperty $video)
  * @method DataDownloadType setWidth(Property\WidthProperty $width)
  * @method DataDownloadType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method DataDownloadType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class DataDownloadType extends MediaObjectType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

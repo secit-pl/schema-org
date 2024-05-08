@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * ValidThroughProperty class.
+ * The date after when the item is not valid. For example the end of an offer, salary period, or a period of opening hours.
  * 
  * @method ValidThroughProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class ValidThroughProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,11 +22,11 @@ class ValidThroughProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */
 	public function isValueValid($value) {
-		return $value instanceof DataType\DateTimeType;
+		return $value instanceof DataType\DateType || $value instanceof DataType\DateTimeType;
 	}
 }

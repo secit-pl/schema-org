@@ -5,27 +5,27 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class ItemListOrderType.
+ * Enumerated for values for itemListOrder for indicating how an ordered ItemList is organized.
  * 
- * @deprecated This class is deprecated and will be removed in release 3.4. Use SecIT\SchemaOrg\Mapping\Type\ItemListOrderType instead.
- * 
- * @method ItemListOrderType setAdditionalType(Property\AdditionalType $additionalType)
- * @method ItemListOrderType setAlternateName(Property\AlternateName $alternateName)
- * @method ItemListOrderType setDescription(Property\Description $description)
- * @method ItemListOrderType setDisambiguatingDescription(Property\DisambiguatingDescription $disambiguatingDescription)
- * @method ItemListOrderType setIdentifier(Property\Identifier $identifier)
- * @method ItemListOrderType setImage(Property\Image $image)
- * @method ItemListOrderType setMainEntityOfPage(Property\MainEntityOfPage $mainEntityOfPage)
- * @method ItemListOrderType setName(Property\Name $name)
- * @method ItemListOrderType setPotentialAction(Property\PotentialAction $potentialAction)
- * @method ItemListOrderType setSameAs(Property\SameAs $sameAs)
- * @method ItemListOrderType setUrl(Property\Url $url)
+ * @method ItemListOrderType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
+ * @method ItemListOrderType setAlternateName(Property\AlternateNameProperty $alternateName)
+ * @method ItemListOrderType setDescription(Property\DescriptionProperty $description)
+ * @method ItemListOrderType setDisambiguatingDescription(Property\DisambiguatingDescriptionProperty $disambiguatingDescription)
+ * @method ItemListOrderType setIdentifier(Property\IdentifierProperty $identifier)
+ * @method ItemListOrderType setImage(Property\ImageProperty $image)
+ * @method ItemListOrderType setMainEntityOfPage(Property\MainEntityOfPageProperty $mainEntityOfPage)
+ * @method ItemListOrderType setName(Property\NameProperty $name)
+ * @method ItemListOrderType setPotentialAction(Property\PotentialActionProperty $potentialAction)
+ * @method ItemListOrderType setSameAs(Property\SameAsProperty $sameAs)
+ * @method ItemListOrderType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method ItemListOrderType setSupersededBy(Property\SupersededByProperty $supersededBy)
+ * @method ItemListOrderType setUrl(Property\UrlProperty $url)
  */
-class ItemListOrderType extends Enumeration {
+class ItemListOrderType extends EnumerationType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

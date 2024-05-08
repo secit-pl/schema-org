@@ -14,7 +14,7 @@ abstract class AbstractProperty implements PropertyInterface {
 
 	/**
 	 * AbstractProperty constructor.
-	 * 
+	 *
 	 * @param string $value
 	 */
 	public function __construct($value = null) {
@@ -25,14 +25,14 @@ abstract class AbstractProperty implements PropertyInterface {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	abstract public function getSchemaUrl();
 
 	/**
 	 * Get value.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getValue() {
@@ -41,7 +41,7 @@ abstract class AbstractProperty implements PropertyInterface {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */
@@ -49,7 +49,7 @@ abstract class AbstractProperty implements PropertyInterface {
 
 	/**
 	 * Set value.
-	 * 
+	 *
 	 * @param string $value
 	 * @return AbstractProperty
 	 */

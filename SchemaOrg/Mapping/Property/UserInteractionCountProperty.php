@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * UserInteractionCountProperty class.
+ * The number of interactions for the CreativeWork using the WebSite or SoftwareApplication.
  * 
  * @method UserInteractionCountProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class UserInteractionCountProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class UserInteractionCountProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

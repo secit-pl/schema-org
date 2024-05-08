@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class OrderProcessingType.
+ * OrderStatus representing that an order is being processed.
  * 
  * @method OrderProcessingType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method OrderProcessingType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,13 +17,15 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method OrderProcessingType setName(Property\NameProperty $name)
  * @method OrderProcessingType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method OrderProcessingType setSameAs(Property\SameAsProperty $sameAs)
+ * @method OrderProcessingType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method OrderProcessingType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method OrderProcessingType setUrl(Property\UrlProperty $url)
  */
 class OrderProcessingType extends OrderStatusType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

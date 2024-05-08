@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class GeoCircleType.
+ * A GeoCircle is a GeoShape representing a circular geographic area. As it is a GeoShape it provides the simple textual property 'circle', but also allows the combination of postalCode alongside geoRadius. The center of the circle can be indicated via the 'geoMidpoint' property, or more approximately using 'address', 'postalCode'.
  * 
  * @method GeoCircleType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method GeoCircleType setAddress(Property\AddressProperty $address)
@@ -25,6 +25,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method GeoCircleType setPostalCode(Property\PostalCodeProperty $postalCode)
  * @method GeoCircleType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method GeoCircleType setSameAs(Property\SameAsProperty $sameAs)
+ * @method GeoCircleType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method GeoCircleType setUrl(Property\UrlProperty $url)
  */
 class GeoCircleType extends GeoShapeType {
@@ -41,7 +42,7 @@ class GeoCircleType extends GeoShapeType {
 
 	/**
 	 * Get geo midpoint.
-	 * 
+	 *
 	 * @return Property\GeoMidpointProperty
 	 */
 	public function getGeoMidpoint() {
@@ -50,7 +51,7 @@ class GeoCircleType extends GeoShapeType {
 
 	/**
 	 * Get geo radius.
-	 * 
+	 *
 	 * @return Property\GeoRadiusProperty
 	 */
 	public function getGeoRadius() {
@@ -59,7 +60,7 @@ class GeoCircleType extends GeoShapeType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -68,7 +69,7 @@ class GeoCircleType extends GeoShapeType {
 
 	/**
 	 * Set geo midpoint.
-	 * 
+	 *
 	 * @param Property\GeoMidpointProperty $geoMidpoint
 	 * @return GeoCircleType
 	 */
@@ -80,7 +81,7 @@ class GeoCircleType extends GeoShapeType {
 
 	/**
 	 * Set geo radius.
-	 * 
+	 *
 	 * @param Property\GeoRadiusProperty $geoRadius
 	 * @return GeoCircleType
 	 */

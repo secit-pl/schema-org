@@ -5,8 +5,9 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class RadioSeasonType.
+ * Season dedicated to radio broadcast and associated online delivery.
  * 
+ * @method RadioSeasonType setAbout(Property\AboutProperty $about)
  * @method RadioSeasonType setAccessMode(Property\AccessModeProperty $accessMode)
  * @method RadioSeasonType setAccessModeSufficient(Property\AccessModeSufficientProperty $accessModeSufficient)
  * @method RadioSeasonType setAccessibilityAPI(Property\AccessibilityAPIProperty $accessibilityAPI)
@@ -34,6 +35,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method RadioSeasonType setContributor(Property\ContributorProperty $contributor)
  * @method RadioSeasonType setCopyrightHolder(Property\CopyrightHolderProperty $copyrightHolder)
  * @method RadioSeasonType setCopyrightYear(Property\CopyrightYearProperty $copyrightYear)
+ * @method RadioSeasonType setCountryOfOrigin(Property\CountryOfOriginProperty $countryOfOrigin)
  * @method RadioSeasonType setCreator(Property\CreatorProperty $creator)
  * @method RadioSeasonType setDateCreated(Property\DateCreatedProperty $dateCreated)
  * @method RadioSeasonType setDateModified(Property\DateModifiedProperty $dateModified)
@@ -46,11 +48,11 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method RadioSeasonType setEducationalAlignment(Property\EducationalAlignmentProperty $educationalAlignment)
  * @method RadioSeasonType setEducationalUse(Property\EducationalUseProperty $educationalUse)
  * @method RadioSeasonType setEncoding(Property\EncodingProperty $encoding)
+ * @method RadioSeasonType setEncodingFormat(Property\EncodingFormatProperty $encodingFormat)
  * @method RadioSeasonType setEndDate(Property\EndDateProperty $endDate)
  * @method RadioSeasonType setEpisode(Property\EpisodeProperty $episode)
  * @method RadioSeasonType setExampleOfWork(Property\ExampleOfWorkProperty $exampleOfWork)
  * @method RadioSeasonType setExpires(Property\ExpiresProperty $expires)
- * @method RadioSeasonType setFileFormat(Property\FileFormatProperty $fileFormat)
  * @method RadioSeasonType setFunder(Property\FunderProperty $funder)
  * @method RadioSeasonType setGenre(Property\GenreProperty $genre)
  * @method RadioSeasonType setHasPart(Property\HasPartProperty $hasPart)
@@ -80,9 +82,9 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method RadioSeasonType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method RadioSeasonType setProducer(Property\ProducerProperty $producer)
  * @method RadioSeasonType setProductionCompany(Property\ProductionCompanyProperty $productionCompany)
- * @method RadioSeasonType setProvider(Property\ProviderProperty $provider)
  * @method RadioSeasonType setPublication(Property\PublicationProperty $publication)
  * @method RadioSeasonType setPublisher(Property\PublisherProperty $publisher)
+ * @method RadioSeasonType setPublisherImprint(Property\PublisherImprintProperty $publisherImprint)
  * @method RadioSeasonType setPublishingPrinciples(Property\PublishingPrinciplesProperty $publishingPrinciples)
  * @method RadioSeasonType setRecordedAt(Property\RecordedAtProperty $recordedAt)
  * @method RadioSeasonType setReleasedEvent(Property\ReleasedEventProperty $releasedEvent)
@@ -91,26 +93,32 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method RadioSeasonType setSchemaVersion(Property\SchemaVersionProperty $schemaVersion)
  * @method RadioSeasonType setSeasonNumber(Property\SeasonNumberProperty $seasonNumber)
  * @method RadioSeasonType setSourceOrganization(Property\SourceOrganizationProperty $sourceOrganization)
+ * @method RadioSeasonType setSpatial(Property\SpatialProperty $spatial)
  * @method RadioSeasonType setSpatialCoverage(Property\SpatialCoverageProperty $spatialCoverage)
  * @method RadioSeasonType setSponsor(Property\SponsorProperty $sponsor)
  * @method RadioSeasonType setStartDate(Property\StartDateProperty $startDate)
+ * @method RadioSeasonType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method RadioSeasonType setTemporal(Property\TemporalProperty $temporal)
  * @method RadioSeasonType setTemporalCoverage(Property\TemporalCoverageProperty $temporalCoverage)
  * @method RadioSeasonType setText(Property\TextProperty $text)
+ * @method RadioSeasonType setThumbnail(Property\ThumbnailProperty $thumbnail)
  * @method RadioSeasonType setThumbnailUrl(Property\ThumbnailUrlProperty $thumbnailUrl)
  * @method RadioSeasonType setTimeRequired(Property\TimeRequiredProperty $timeRequired)
  * @method RadioSeasonType setTrailer(Property\TrailerProperty $trailer)
+ * @method RadioSeasonType setTranslationOfWork(Property\TranslationOfWorkProperty $translationOfWork)
  * @method RadioSeasonType setTranslator(Property\TranslatorProperty $translator)
  * @method RadioSeasonType setTypicalAgeRange(Property\TypicalAgeRangeProperty $typicalAgeRange)
  * @method RadioSeasonType setUrl(Property\UrlProperty $url)
  * @method RadioSeasonType setVersion(Property\VersionProperty $version)
  * @method RadioSeasonType setVideo(Property\VideoProperty $video)
  * @method RadioSeasonType setWorkExample(Property\WorkExampleProperty $workExample)
+ * @method RadioSeasonType setWorkTranslation(Property\WorkTranslationProperty $workTranslation)
  */
 class RadioSeasonType extends CreativeWorkSeasonType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {

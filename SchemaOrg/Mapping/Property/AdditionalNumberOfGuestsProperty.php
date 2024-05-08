@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\DataType;
 
 /**
- * AdditionalNumberOfGuestsProperty class.
+ * If responding yes, the number of guests who will attend in addition to the invitee.
  * 
  * @method AdditionalNumberOfGuestsProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class AdditionalNumberOfGuestsProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class AdditionalNumberOfGuestsProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */

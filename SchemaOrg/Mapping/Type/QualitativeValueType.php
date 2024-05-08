@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class QualitativeValueType.
+ * A predefined value for a product characteristic, e.g. the power cord plug type 'US' or the garment sizes 'S', 'M', 'L', and 'XL'.
  * 
  * @method QualitativeValueType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method QualitativeValueType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,6 +17,8 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method QualitativeValueType setName(Property\NameProperty $name)
  * @method QualitativeValueType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method QualitativeValueType setSameAs(Property\SameAsProperty $sameAs)
+ * @method QualitativeValueType setSubjectOf(Property\SubjectOfProperty $subjectOf)
+ * @method QualitativeValueType setSupersededBy(Property\SupersededByProperty $supersededBy)
  * @method QualitativeValueType setUrl(Property\UrlProperty $url)
  */
 class QualitativeValueType extends EnumerationType {
@@ -63,7 +65,7 @@ class QualitativeValueType extends EnumerationType {
 
 	/**
 	 * Get additional property.
-	 * 
+	 *
 	 * @return Property\AdditionalProperty
 	 */
 	public function getAdditionalProperty() {
@@ -72,7 +74,7 @@ class QualitativeValueType extends EnumerationType {
 
 	/**
 	 * Get equal.
-	 * 
+	 *
 	 * @return Property\EqualProperty
 	 */
 	public function getEqual() {
@@ -81,7 +83,7 @@ class QualitativeValueType extends EnumerationType {
 
 	/**
 	 * Get greater.
-	 * 
+	 *
 	 * @return Property\GreaterProperty
 	 */
 	public function getGreater() {
@@ -90,7 +92,7 @@ class QualitativeValueType extends EnumerationType {
 
 	/**
 	 * Get greater or equal.
-	 * 
+	 *
 	 * @return Property\GreaterOrEqualProperty
 	 */
 	public function getGreaterOrEqual() {
@@ -99,7 +101,7 @@ class QualitativeValueType extends EnumerationType {
 
 	/**
 	 * Get lesser.
-	 * 
+	 *
 	 * @return Property\LesserProperty
 	 */
 	public function getLesser() {
@@ -108,7 +110,7 @@ class QualitativeValueType extends EnumerationType {
 
 	/**
 	 * Get lesser or equal.
-	 * 
+	 *
 	 * @return Property\LesserOrEqualProperty
 	 */
 	public function getLesserOrEqual() {
@@ -117,7 +119,7 @@ class QualitativeValueType extends EnumerationType {
 
 	/**
 	 * Get non equal.
-	 * 
+	 *
 	 * @return Property\NonEqualProperty
 	 */
 	public function getNonEqual() {
@@ -126,7 +128,7 @@ class QualitativeValueType extends EnumerationType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -135,7 +137,7 @@ class QualitativeValueType extends EnumerationType {
 
 	/**
 	 * Get value reference.
-	 * 
+	 *
 	 * @return Property\ValueReferenceProperty
 	 */
 	public function getValueReference() {
@@ -144,7 +146,7 @@ class QualitativeValueType extends EnumerationType {
 
 	/**
 	 * Set additional property.
-	 * 
+	 *
 	 * @param Property\AdditionalProperty $additionalProperty
 	 * @return QualitativeValueType
 	 */
@@ -156,7 +158,7 @@ class QualitativeValueType extends EnumerationType {
 
 	/**
 	 * Set equal.
-	 * 
+	 *
 	 * @param Property\EqualProperty $equal
 	 * @return QualitativeValueType
 	 */
@@ -168,7 +170,7 @@ class QualitativeValueType extends EnumerationType {
 
 	/**
 	 * Set greater.
-	 * 
+	 *
 	 * @param Property\GreaterProperty $greater
 	 * @return QualitativeValueType
 	 */
@@ -180,7 +182,7 @@ class QualitativeValueType extends EnumerationType {
 
 	/**
 	 * Set greater or equal.
-	 * 
+	 *
 	 * @param Property\GreaterOrEqualProperty $greaterOrEqual
 	 * @return QualitativeValueType
 	 */
@@ -192,7 +194,7 @@ class QualitativeValueType extends EnumerationType {
 
 	/**
 	 * Set lesser.
-	 * 
+	 *
 	 * @param Property\LesserProperty $lesser
 	 * @return QualitativeValueType
 	 */
@@ -204,7 +206,7 @@ class QualitativeValueType extends EnumerationType {
 
 	/**
 	 * Set lesser or equal.
-	 * 
+	 *
 	 * @param Property\LesserOrEqualProperty $lesserOrEqual
 	 * @return QualitativeValueType
 	 */
@@ -216,7 +218,7 @@ class QualitativeValueType extends EnumerationType {
 
 	/**
 	 * Set non equal.
-	 * 
+	 *
 	 * @param Property\NonEqualProperty $nonEqual
 	 * @return QualitativeValueType
 	 */
@@ -228,7 +230,7 @@ class QualitativeValueType extends EnumerationType {
 
 	/**
 	 * Set value reference.
-	 * 
+	 *
 	 * @param Property\ValueReferenceProperty $valueReference
 	 * @return QualitativeValueType
 	 */

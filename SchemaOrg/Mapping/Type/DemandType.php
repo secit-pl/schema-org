@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Type;
 use SecIT\SchemaOrg\Mapping\Property;
 
 /**
- * Class DemandType.
+ * A demand entity represents the public, not necessarily binding, not necessarily exclusive, announcement by an organization or person to seek a certain type of goods or services. For describing demand using this type, the very same properties used for Offer apply.
  * 
  * @method DemandType setAdditionalType(Property\AdditionalTypeProperty $additionalType)
  * @method DemandType setAlternateName(Property\AlternateNameProperty $alternateName)
@@ -17,6 +17,7 @@ use SecIT\SchemaOrg\Mapping\Property;
  * @method DemandType setName(Property\NameProperty $name)
  * @method DemandType setPotentialAction(Property\PotentialActionProperty $potentialAction)
  * @method DemandType setSameAs(Property\SameAsProperty $sameAs)
+ * @method DemandType setSubjectOf(Property\SubjectOfProperty $subjectOf)
  * @method DemandType setUrl(Property\UrlProperty $url)
  */
 class DemandType extends IntangibleType {
@@ -122,11 +123,6 @@ class DemandType extends IntangibleType {
 	private $includesObject;
 
 	/**
-	 * @var Property\IneligibleRegionProperty
-	 */
-	private $ineligibleRegion;
-
-	/**
 	 * @var Property\InventoryLevelProperty
 	 */
 	private $inventoryLevel;
@@ -183,7 +179,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Get accepted payment method.
-	 * 
+	 *
 	 * @return Property\AcceptedPaymentMethodProperty
 	 */
 	public function getAcceptedPaymentMethod() {
@@ -192,7 +188,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Get advance booking requirement.
-	 * 
+	 *
 	 * @return Property\AdvanceBookingRequirementProperty
 	 */
 	public function getAdvanceBookingRequirement() {
@@ -201,7 +197,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Get area served.
-	 * 
+	 *
 	 * @return Property\AreaServedProperty
 	 */
 	public function getAreaServed() {
@@ -210,7 +206,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Get availability.
-	 * 
+	 *
 	 * @return Property\AvailabilityProperty
 	 */
 	public function getAvailability() {
@@ -219,7 +215,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Get availability ends.
-	 * 
+	 *
 	 * @return Property\AvailabilityEndsProperty
 	 */
 	public function getAvailabilityEnds() {
@@ -228,7 +224,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Get availability starts.
-	 * 
+	 *
 	 * @return Property\AvailabilityStartsProperty
 	 */
 	public function getAvailabilityStarts() {
@@ -237,7 +233,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Get available at or from.
-	 * 
+	 *
 	 * @return Property\AvailableAtOrFromProperty
 	 */
 	public function getAvailableAtOrFrom() {
@@ -246,7 +242,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Get available delivery method.
-	 * 
+	 *
 	 * @return Property\AvailableDeliveryMethodProperty
 	 */
 	public function getAvailableDeliveryMethod() {
@@ -255,7 +251,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Get business function.
-	 * 
+	 *
 	 * @return Property\BusinessFunctionProperty
 	 */
 	public function getBusinessFunction() {
@@ -264,7 +260,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Get delivery lead time.
-	 * 
+	 *
 	 * @return Property\DeliveryLeadTimeProperty
 	 */
 	public function getDeliveryLeadTime() {
@@ -273,7 +269,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Get eligible customer type.
-	 * 
+	 *
 	 * @return Property\EligibleCustomerTypeProperty
 	 */
 	public function getEligibleCustomerType() {
@@ -282,7 +278,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Get eligible duration.
-	 * 
+	 *
 	 * @return Property\EligibleDurationProperty
 	 */
 	public function getEligibleDuration() {
@@ -291,7 +287,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Get eligible quantity.
-	 * 
+	 *
 	 * @return Property\EligibleQuantityProperty
 	 */
 	public function getEligibleQuantity() {
@@ -300,7 +296,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Get eligible region.
-	 * 
+	 *
 	 * @return Property\EligibleRegionProperty
 	 */
 	public function getEligibleRegion() {
@@ -309,7 +305,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Get eligible transaction volume.
-	 * 
+	 *
 	 * @return Property\EligibleTransactionVolumeProperty
 	 */
 	public function getEligibleTransactionVolume() {
@@ -318,7 +314,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Get gtin12.
-	 * 
+	 *
 	 * @return Property\Gtin12Property
 	 */
 	public function getGtin12() {
@@ -327,7 +323,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Get gtin13.
-	 * 
+	 *
 	 * @return Property\Gtin13Property
 	 */
 	public function getGtin13() {
@@ -336,7 +332,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Get gtin14.
-	 * 
+	 *
 	 * @return Property\Gtin14Property
 	 */
 	public function getGtin14() {
@@ -345,7 +341,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Get gtin8.
-	 * 
+	 *
 	 * @return Property\Gtin8Property
 	 */
 	public function getGtin8() {
@@ -354,7 +350,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Get includes object.
-	 * 
+	 *
 	 * @return Property\IncludesObjectProperty
 	 */
 	public function getIncludesObject() {
@@ -362,17 +358,8 @@ class DemandType extends IntangibleType {
 	}
 
 	/**
-	 * Get ineligible region.
-	 * 
-	 * @return Property\IneligibleRegionProperty
-	 */
-	public function getIneligibleRegion() {
-		return $this->ineligibleRegion;
-	}
-
-	/**
 	 * Get inventory level.
-	 * 
+	 *
 	 * @return Property\InventoryLevelProperty
 	 */
 	public function getInventoryLevel() {
@@ -381,7 +368,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Get item condition.
-	 * 
+	 *
 	 * @return Property\ItemConditionProperty
 	 */
 	public function getItemCondition() {
@@ -390,7 +377,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Get item offered.
-	 * 
+	 *
 	 * @return Property\ItemOfferedProperty
 	 */
 	public function getItemOffered() {
@@ -399,7 +386,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Get mpn.
-	 * 
+	 *
 	 * @return Property\MpnProperty
 	 */
 	public function getMpn() {
@@ -408,7 +395,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Get price specification.
-	 * 
+	 *
 	 * @return Property\PriceSpecificationProperty
 	 */
 	public function getPriceSpecification() {
@@ -417,7 +404,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -426,7 +413,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Get seller.
-	 * 
+	 *
 	 * @return Property\SellerProperty
 	 */
 	public function getSeller() {
@@ -435,7 +422,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Get serial number.
-	 * 
+	 *
 	 * @return Property\SerialNumberProperty
 	 */
 	public function getSerialNumber() {
@@ -444,7 +431,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Get sku.
-	 * 
+	 *
 	 * @return Property\SkuProperty
 	 */
 	public function getSku() {
@@ -453,7 +440,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Get valid from.
-	 * 
+	 *
 	 * @return Property\ValidFromProperty
 	 */
 	public function getValidFrom() {
@@ -462,7 +449,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Get valid through.
-	 * 
+	 *
 	 * @return Property\ValidThroughProperty
 	 */
 	public function getValidThrough() {
@@ -471,7 +458,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Get warranty.
-	 * 
+	 *
 	 * @return Property\WarrantyProperty
 	 */
 	public function getWarranty() {
@@ -480,7 +467,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Set accepted payment method.
-	 * 
+	 *
 	 * @param Property\AcceptedPaymentMethodProperty $acceptedPaymentMethod
 	 * @return DemandType
 	 */
@@ -492,7 +479,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Set advance booking requirement.
-	 * 
+	 *
 	 * @param Property\AdvanceBookingRequirementProperty $advanceBookingRequirement
 	 * @return DemandType
 	 */
@@ -504,7 +491,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Set area served.
-	 * 
+	 *
 	 * @param Property\AreaServedProperty $areaServed
 	 * @return DemandType
 	 */
@@ -516,7 +503,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Set availability.
-	 * 
+	 *
 	 * @param Property\AvailabilityProperty $availability
 	 * @return DemandType
 	 */
@@ -528,7 +515,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Set availability ends.
-	 * 
+	 *
 	 * @param Property\AvailabilityEndsProperty $availabilityEnds
 	 * @return DemandType
 	 */
@@ -540,7 +527,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Set availability starts.
-	 * 
+	 *
 	 * @param Property\AvailabilityStartsProperty $availabilityStarts
 	 * @return DemandType
 	 */
@@ -552,7 +539,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Set available at or from.
-	 * 
+	 *
 	 * @param Property\AvailableAtOrFromProperty $availableAtOrFrom
 	 * @return DemandType
 	 */
@@ -564,7 +551,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Set available delivery method.
-	 * 
+	 *
 	 * @param Property\AvailableDeliveryMethodProperty $availableDeliveryMethod
 	 * @return DemandType
 	 */
@@ -576,7 +563,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Set business function.
-	 * 
+	 *
 	 * @param Property\BusinessFunctionProperty $businessFunction
 	 * @return DemandType
 	 */
@@ -588,7 +575,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Set delivery lead time.
-	 * 
+	 *
 	 * @param Property\DeliveryLeadTimeProperty $deliveryLeadTime
 	 * @return DemandType
 	 */
@@ -600,7 +587,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Set eligible customer type.
-	 * 
+	 *
 	 * @param Property\EligibleCustomerTypeProperty $eligibleCustomerType
 	 * @return DemandType
 	 */
@@ -612,7 +599,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Set eligible duration.
-	 * 
+	 *
 	 * @param Property\EligibleDurationProperty $eligibleDuration
 	 * @return DemandType
 	 */
@@ -624,7 +611,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Set eligible quantity.
-	 * 
+	 *
 	 * @param Property\EligibleQuantityProperty $eligibleQuantity
 	 * @return DemandType
 	 */
@@ -636,7 +623,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Set eligible region.
-	 * 
+	 *
 	 * @param Property\EligibleRegionProperty $eligibleRegion
 	 * @return DemandType
 	 */
@@ -648,7 +635,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Set eligible transaction volume.
-	 * 
+	 *
 	 * @param Property\EligibleTransactionVolumeProperty $eligibleTransactionVolume
 	 * @return DemandType
 	 */
@@ -660,7 +647,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Set gtin12.
-	 * 
+	 *
 	 * @param Property\Gtin12Property $gtin12
 	 * @return DemandType
 	 */
@@ -672,7 +659,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Set gtin13.
-	 * 
+	 *
 	 * @param Property\Gtin13Property $gtin13
 	 * @return DemandType
 	 */
@@ -684,7 +671,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Set gtin14.
-	 * 
+	 *
 	 * @param Property\Gtin14Property $gtin14
 	 * @return DemandType
 	 */
@@ -696,7 +683,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Set gtin8.
-	 * 
+	 *
 	 * @param Property\Gtin8Property $gtin8
 	 * @return DemandType
 	 */
@@ -708,7 +695,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Set includes object.
-	 * 
+	 *
 	 * @param Property\IncludesObjectProperty $includesObject
 	 * @return DemandType
 	 */
@@ -719,20 +706,8 @@ class DemandType extends IntangibleType {
 	}
 
 	/**
-	 * Set ineligible region.
-	 * 
-	 * @param Property\IneligibleRegionProperty $ineligibleRegion
-	 * @return DemandType
-	 */
-	public function setIneligibleRegion(Property\IneligibleRegionProperty $ineligibleRegion) {
-		$this->ineligibleRegion = $ineligibleRegion;
-
-		return $this;
-	}
-
-	/**
 	 * Set inventory level.
-	 * 
+	 *
 	 * @param Property\InventoryLevelProperty $inventoryLevel
 	 * @return DemandType
 	 */
@@ -744,7 +719,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Set item condition.
-	 * 
+	 *
 	 * @param Property\ItemConditionProperty $itemCondition
 	 * @return DemandType
 	 */
@@ -756,7 +731,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Set item offered.
-	 * 
+	 *
 	 * @param Property\ItemOfferedProperty $itemOffered
 	 * @return DemandType
 	 */
@@ -768,7 +743,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Set mpn.
-	 * 
+	 *
 	 * @param Property\MpnProperty $mpn
 	 * @return DemandType
 	 */
@@ -780,7 +755,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Set price specification.
-	 * 
+	 *
 	 * @param Property\PriceSpecificationProperty $priceSpecification
 	 * @return DemandType
 	 */
@@ -792,7 +767,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Set seller.
-	 * 
+	 *
 	 * @param Property\SellerProperty $seller
 	 * @return DemandType
 	 */
@@ -804,7 +779,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Set serial number.
-	 * 
+	 *
 	 * @param Property\SerialNumberProperty $serialNumber
 	 * @return DemandType
 	 */
@@ -816,7 +791,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Set sku.
-	 * 
+	 *
 	 * @param Property\SkuProperty $sku
 	 * @return DemandType
 	 */
@@ -828,7 +803,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Set valid from.
-	 * 
+	 *
 	 * @param Property\ValidFromProperty $validFrom
 	 * @return DemandType
 	 */
@@ -840,7 +815,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Set valid through.
-	 * 
+	 *
 	 * @param Property\ValidThroughProperty $validThrough
 	 * @return DemandType
 	 */
@@ -852,7 +827,7 @@ class DemandType extends IntangibleType {
 
 	/**
 	 * Set warranty.
-	 * 
+	 *
 	 * @param Property\WarrantyProperty $warranty
 	 * @return DemandType
 	 */

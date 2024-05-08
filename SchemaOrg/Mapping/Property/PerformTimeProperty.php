@@ -5,7 +5,7 @@ namespace SecIT\SchemaOrg\Mapping\Property;
 use SecIT\SchemaOrg\Mapping\Type;
 
 /**
- * PerformTimeProperty class.
+ * The length of time it takes to perform instructions or a direction (not including time to prepare the supplies), in ISO 8601 duration format.
  * 
  * @method PerformTimeProperty setValue($value)
  */
@@ -13,7 +13,7 @@ class PerformTimeProperty extends AbstractProperty {
 
 	/**
 	 * Get schema URL.
-	 * 
+	 *
 	 * @return string
 	 */
 	public function getSchemaUrl() {
@@ -22,7 +22,7 @@ class PerformTimeProperty extends AbstractProperty {
 
 	/**
 	 * Check is value valid.
-	 * 
+	 *
 	 * @param string $value
 	 * @return bool
 	 */
