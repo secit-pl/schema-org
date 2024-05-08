@@ -273,7 +273,7 @@ final class Generator
         $class = new PhpClass();
         $class
             ->setQualifiedName('SecIT\\SchemaOrg\\Mapping\\DataType\\'.$dataType)
-            ->setDescription('Class '.$dataType.'.')
+            ->setDescription($data['comment_plain'])
             ->setMethod(PhpMethod::create('getSchemaUrl')
                 ->setDescription('Get schema URL.')
                 ->setType('string')
@@ -417,7 +417,7 @@ final class Generator
         $class
             ->setQualifiedName('SecIT\\SchemaOrg\\Mapping\\Property\\'.$property)
             ->setParentClassName('AbstractProperty')
-            ->setDescription($property.' class.'."\n\n".'@method '.$property.' setValue($value)')
+            ->setDescription($data['comment_plain']."\n\n".'@method '.$property.' setValue($value)')
             ->setMethod(PhpMethod::create('getSchemaUrl')
                 ->setDescription('Get schema URL.')
                 ->setType('string')
@@ -480,7 +480,7 @@ final class Generator
         $class = new PhpClass();
         $class
             ->setQualifiedName('SecIT\\SchemaOrg\\Mapping\\Type\\'.$type)
-            ->setDescription('Class '.$type.'.')
+            ->setDescription($data['comment_plain'])
             ->setMethod(PhpMethod::create('getSchemaUrl')
                 ->setDescription('Get schema URL.')
                 ->setType('string')
@@ -775,9 +775,10 @@ final class Generator
 
         $client = new Client(['base_uri' => 'https://schema.org']);
         $response = $client->get('/docs/full.html');
+
         $crawler = new Crawler($response->getBody()->__toString());
 
-        $dataTypes = $crawler->filter('#datatype_tree a');
+        $dataTypes = $crawler->filter('#tree2 a.core');
         foreach ($dataTypes as $index => $dataType) {
             echo '['.($index + 1).'/'.$dataTypes->count().'] ';
             if (strpos($dataType->getAttribute('class'), 'ext') !== false) {
@@ -789,7 +790,7 @@ final class Generator
             $schema['datatypes'][$dataType->textContent] = $this->getDataType($client, $dataType->getAttribute('href'));
         }
 
-        $types = $crawler->filter('#thing_tree a');
+        $types = $crawler->filter('#tree1 a.core');
         foreach ($types as $index => $type) {
             if (!isset($schema['types'][$type->textContent]) && substr($type->getAttribute('href'), 0, 1) !== '#') {
                 echo '['.($index + 1).'/'.$types->count().'] ';
@@ -859,17 +860,17 @@ final class Generator
         $crawler = new Crawler($response->getBody()->__toString());
 
         $ancestors = [];
-        $subclasses = $crawler->filter('[property="rdfs:subClassOf"]');
-        if ($subclasses->count() > 0) {
-            $ancestors[] = ltrim(preg_replace('/http[s]*:\/\/schema.org\//', '', $subclasses->first()->attr('href')), '/');
+        $subclasses = $crawler->filter('#infoblock .superPaths a');
+        if ($subclasses->count() > 1) {
+            $ancestors[] = ltrim(preg_replace('/http[s]*:\/\/schema.org\//', '', $subclasses->eq($subclasses->count() - 2)->attr('href')), '/');
         }
 
         return [
             'ancestors' => $ancestors,
-            'comment' => $crawler->filter('[property="rdfs:comment"]')->first()->text(),
-            'comment_plain' => strip_tags($crawler->filter('[property="rdfs:comment"]')->first()->text()),
-            'id' => $crawler->filter('[property="rdfs:label"]')->first()->text(),
-            'label' => $crawler->filter('[property="rdfs:label"]')->first()->text(),
+            'comment' => $crawler->filter('#infoblock .description')->first()->text(),
+            'comment_plain' => strip_tags($crawler->filter('#infoblock .description')->first()->text()),
+            'id' => $crawler->filter('#infoblock #infohead h1')->first()->text(),
+            'label' => $crawler->filter('#infoblock #infohead h1')->first()->text(),
             'url' => $client->getConfig('base_uri').$href,
         ];
     }
@@ -888,12 +889,12 @@ final class Generator
         $html = $response->getBody()->__toString();
         $crawler = new Crawler($html);
 
-        $id = $crawler->filter('[property="rdfs:label"]')->first()->text();
+        $id = $crawler->filter('#infoblock #infohead h1')->first()->text();
 
         $ancestors = [];
-        $subclasses = $crawler->filter('[property="rdfs:subClassOf"]');
-        if ($subclasses->count() > 0) {
-            $ancestors[] = ltrim(preg_replace('/http[s]*:\/\/schema.org\//', '', $subclasses->first()->attr('href')), '/');
+        $subclasses = $crawler->filter('#infoblock .superPaths a');
+        if ($subclasses->count() > 1) {
+            $ancestors[] = ltrim(preg_replace('/http[s]*:\/\/schema.org\//', '', $subclasses->eq($subclasses->count() - 2)->attr('href')), '/');
         }
 
         // if no breadcrumbs try to determine subclasses from the properties table
@@ -914,17 +915,32 @@ final class Generator
         $specificProperties = [];
         $supertypeNames = $crawler->filter('.definition-table .supertype .supertype-name a');
         if ($supertypeNames->count() > 0 && $supertypeNames->first()->text() == $id) {
-            $properties = $crawler->filter('.definition-table tbody.supertype')->first()->filter('.prop-nam a');
-            foreach ($properties as $property) {
-                if (strpos($property->getAttribute('class'), 'ext') === false) {
-                    $specificProperties[] = ltrim(preg_replace('/http[s]*:\/\/(.*?)schema.org\//', '', $property->getAttribute('href')), '/');
+            $start = null;
+            $crawler->filter('.definition-table')->first()->filter('tr')->each(function (Crawler $row, $i) use (&$start, &$specificProperties) {
+                if (strpos($row->attr('class', ''), 'supertype') !== false) {
+                    if ($start === null) {
+                        $start = true;
+                    } else {
+                        $start = false;
+                    }
+
+                    return;
                 }
-            }
+
+                if (!$start) {
+                    return;
+                }
+
+                $property = $row->filter('.prop-nam a.core')->first();
+                if ($property->count() > 0) {
+                    $specificProperties[] = ltrim(preg_replace('/http[s]*:\/\/(.*?)schema.org\//', '', $property->attr('href')), '/');
+                }
+            });
         }
 
         $enumerationMembers = [];
-        if (strpos($html, '<b>Enumeration members</b>') !== false) {
-            $enumerationMembersList = $crawler->filter('ul')->last()->filter('a');
+        if (strpos($html, '<h4>Enumeration members</h4>') !== false) {
+            $enumerationMembersList = $crawler->filter('#mainContent > ul')->last()->filter('a');
             foreach ($enumerationMembersList as $member) {
                 if (strpos($member->getAttribute('class'), 'ext') === false) {
                     $enumerationMembers[] = ltrim(preg_replace('/http[s]*:\/\/schema.org\//', '', $member->getAttribute('href')), '/');
@@ -934,8 +950,8 @@ final class Generator
 
         return [
             'ancestors' => $ancestors,
-            'comment' => $crawler->filter('[property="rdfs:comment"]')->first()->text(),
-            'comment_plain' => strip_tags($crawler->filter('[property="rdfs:comment"]')->first()->text()),
+            'comment' => $crawler->filter('#infoblock .description')->first()->text(),
+            'comment_plain' => strip_tags($crawler->filter('#infoblock .description')->first()->text()),
             'id' => $id,
             'label' => $id,
             'specific_properties' => $specificProperties,
@@ -958,16 +974,16 @@ final class Generator
         $crawler = new Crawler($response->getBody()->__toString());
 
         $ranges = [];
-        $rangeIncludes = $crawler->filter('[property="rangeIncludes"]');
+        $rangeIncludes = $crawler->filter('#values a.core');
         foreach ($rangeIncludes as $rangeInclude) {
             $ranges[] = ltrim(preg_replace('/http[s]*:\/\/schema.org\//', '', $rangeInclude->getAttribute('href')), '/');
         }
 
         return [
-            'comment' => $crawler->filter('[property="rdfs:comment"]')->first()->text(),
-            'comment_plain' => strip_tags($crawler->filter('[property="rdfs:comment"]')->first()->text()),
-            'id' => $crawler->filter('[property="rdfs:label"]')->first()->text(),
-            'label' => $crawler->filter('[property="rdfs:label"]')->first()->text(),
+            'comment' => $crawler->filter('#infoblock .description')->first()->text(),
+            'comment_plain' => strip_tags($crawler->filter('#infoblock .description')->first()->text()),
+            'id' => $crawler->filter('#infoblock #infohead h1')->first()->text(),
+            'label' => $crawler->filter('#infoblock #infohead h1')->first()->text(),
             'ranges' => $ranges,
             'url' => $client->getConfig('base_uri').$href,
         ];
