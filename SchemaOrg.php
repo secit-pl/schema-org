@@ -16,14 +16,23 @@ class SchemaOrg
     /**
      * Convert schema.org type to the json-ld string.
      *
-     * @param Type\TypeInterface $thing
-     * @param bool               $addScriptTag Wrap returned json-ld with the <script type="application/ld+json"></script> tag
+     * @param Type\TypeInterface|array $thing
+     * @param bool $addScriptTag Wrap returned json-ld with the <script type="application/ld+json"></script> tag
      *
      * @return string
      */
     public function toJsonLd($thing, $addScriptTag = true)
     {
-        $return = json_encode($this->toJsonLdDataArray($thing));
+        if (is_array($thing)) {
+            $jsonData = [];
+            foreach ($thing as $thingItem) {
+                $jsonData[] = $this->toJsonLdDataArray($thingItem);
+            }
+        } else {
+            $jsonData = $this->toJsonLdDataArray($thing);
+        }
+
+        $return = json_encode($jsonData, JSON_THROW_ON_ERROR);
         if ($addScriptTag) {
             return '<script type="application/ld+json">'.$return.'</script>';
         }
