@@ -21,7 +21,7 @@ class SchemaOrg
      *
      * @return string
      */
-    public function toJsonLd(Type\TypeInterface $thing, $addScriptTag = true)
+    public function toJsonLd($thing, $addScriptTag = true)
     {
         $return = json_encode($this->toJsonLdDataArray($thing));
         if ($addScriptTag) {
@@ -38,7 +38,7 @@ class SchemaOrg
      *
      * @return array
      */
-    public function toJsonLdDataArray(Type\TypeInterface $thing)
+    public function toJsonLdDataArray($thing)
     {
         $jsonLd = ['@context' => 'http://schema.org'];
 
@@ -52,7 +52,7 @@ class SchemaOrg
      *
      * @return array
      */
-    protected function typeToJsonLd(Type\TypeInterface $type)
+    protected function typeToJsonLd($type)
     {
         $typeName = (new \ReflectionClass($type))->getShortName();
         if (strlen($typeName) > 4 && substr($typeName, -4) === 'Type') {
@@ -102,7 +102,7 @@ class SchemaOrg
      *
      * @return string
      */
-    protected function dataTypeToJsonLd(DataType\DataTypeInterface $dataType)
+    protected function dataTypeToJsonLd($dataType)
     {
         return $dataType->getValue();
     }
@@ -114,7 +114,7 @@ class SchemaOrg
      *
      * @return array|string
      */
-    protected function propertyToJsonLd(Property\PropertyInterface $property)
+    protected function propertyToJsonLd($property)
     {
         return $this->valueToJsonLd($property->getValue());
     }
