@@ -434,7 +434,9 @@ final class Generator
 
         $instanceCheckConditions = [];
         foreach ($data['ranges'] as $range) {
-            if (isset($dataTypes[$range])) {
+            if ($range === 'array') {
+                $instanceCheckConditions[] = 'is_array($value)';
+            } elseif (isset($dataTypes[$range])) {
                 $class->addUseStatement('SecIT\\SchemaOrg\\Mapping\\DataType');
                 $instanceCheckConditions[] = '$value instanceof DataType\\'.$this->getDataTypeClassName($range);
             } else {
@@ -972,6 +974,7 @@ final class Generator
     {
         $response = $client->get($href);
         $crawler = new Crawler($response->getBody()->__toString());
+        $id = $crawler->filter('#infoblock #infohead h1')->first()->text();
 
         $ranges = [];
         $rangeIncludes = $crawler->filter('#values a.core');
@@ -979,11 +982,16 @@ final class Generator
             $ranges[] = ltrim(preg_replace('/http[s]*:\/\/schema.org\//', '', $rangeInclude->getAttribute('href')), '/');
         }
 
+        // allow mainEntity to be an array to match https://developers.google.com/search/docs/appearance/structured-data/faqpage#examples
+        if ($id === 'mainEntity') {
+            $ranges[] = 'array';
+        }
+
         return [
             'comment' => $crawler->filter('#infoblock .description')->first()->text(),
             'comment_plain' => strip_tags($crawler->filter('#infoblock .description')->first()->text()),
-            'id' => $crawler->filter('#infoblock #infohead h1')->first()->text(),
-            'label' => $crawler->filter('#infoblock #infohead h1')->first()->text(),
+            'id' => $id,
+            'label' => $id,
             'ranges' => $ranges,
             'url' => $client->getConfig('base_uri').$href,
         ];

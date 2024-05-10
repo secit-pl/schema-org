@@ -27,6 +27,6 @@ class MainEntityProperty extends AbstractProperty {
 	 * @return bool
 	 */
 	public function isValueValid($value) {
-		return $value instanceof Type\ThingType;
+		return $value instanceof Type\ThingType || is_array($value);
 	}
 }
