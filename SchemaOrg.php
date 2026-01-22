@@ -49,7 +49,7 @@ class SchemaOrg
      */
     public function toJsonLdDataArray($thing)
     {
-        $jsonLd = ['@context' => 'http://schema.org'];
+        $jsonLd = ['@context' => 'https://schema.org'];
 
         return $jsonLd + $this->typeToJsonLd($thing);
     }
