@@ -13,6 +13,8 @@ use SecIT\SchemaOrg\Mapping\Type;
  */
 class SchemaOrg
 {
+    public $serializeThingTypeAsString = false;
+
     /**
      * Convert schema.org type to the json-ld string.
      *
@@ -66,6 +68,10 @@ class SchemaOrg
         $typeName = (new \ReflectionClass($type))->getShortName();
         if (strlen($typeName) > 4 && substr($typeName, -4) === 'Type') {
             $typeName = substr($typeName, 0, -4);
+        }
+
+        if ($typeName === 'Thing' && $this->serializeThingTypeAsString) {
+            return $type->getId();
         }
 
         $jsonLd = [
